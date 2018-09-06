@@ -132,28 +132,6 @@
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
-preview true
-filename "MyDefinitions.tex"
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-% tex and latex macros
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
 filename "Preamble/Preamble.tex"
 
 \end_inset
@@ -164,7 +142,7 @@ status open
 
 \begin_layout Plain Layout
 
-% includes the title, author, copyright
+% Title, author, committee, copyright
 \end_layout
 
 \end_inset
@@ -175,6 +153,7 @@ status open
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
+preview true
 filename "Preamble/Abstract.tex"
 
 \end_inset
@@ -185,7 +164,7 @@ status open
 
 \begin_layout Plain Layout
 
-% the abstract text
+% Abstract text
 \end_layout
 
 \end_inset
@@ -206,7 +185,7 @@ status open
 
 \begin_layout Plain Layout
 
-% the acknowledgements text
+% Acknowledgements text
 \end_layout
 
 \end_inset
@@ -227,8 +206,7 @@ status open
 
 \begin_layout Plain Layout
 
-% The document begins here.
- Starts the preliminary (roman numbered) pages
+% Preliminary (roman numbered) pages
 \end_layout
 
 \end_inset
@@ -237,14 +215,41 @@ status open
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "MainMatter/MainMatter.tex"
+
+\end_inset
+
+
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
+% Main (arabic numbered) pages
+\end_layout
 
-\backslash
-mainmatter % starts the main (arabic numbered) pages
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+preview true
+filename "MyDefinitions.tex"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+% Latex macros
 \end_layout
 
 \end_inset
