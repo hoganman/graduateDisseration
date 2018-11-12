@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass csuthesisLyx
 \use_default_options true
 \maintain_unincluded_children false
@@ -9,16 +11,18 @@
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -48,6 +52,7 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_minted 0
 \index Index
 \shortcut idx
 \color #008000
@@ -56,7 +61,10 @@
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
@@ -73,14 +81,41 @@
 Introduction
 \end_layout
 
+\begin_layout Standard
+\align center
+
+\shape italic
+\lang american
+Chose trop vue n'est chère tenue
+\end_layout
+
+\begin_layout Standard
+\align center
+A thing too much seen is little prized
+\end_layout
+
+\begin_layout Standard
+\align center
+French proverb
+\end_layout
+
 \begin_layout Section
 Some Helpful Pointers
 \end_layout
 
 \begin_layout Standard
-This section is to help those of you new to LyX and provide some (hopefully)
+This section is to help those of you new to \SpecialChar LyX
+ and provide some (hopefully)
  helpful pointers that will save you time when writing.
  
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abe:2011ks"
+literal "false"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -88,7 +123,8 @@ Equations
 \end_layout
 
 \begin_layout Standard
-There are several different equation formats that can be used in LyX.
+There are several different equation formats that can be used in \SpecialChar LyX
+.
  
 \end_layout
 
@@ -176,8 +212,9 @@ This is the abbreviated text that will appear in the List of Figures.
 \end_inset
 
 This is an example figure.
- LyX will automatically convert the imported image to the correct format!
- An abbreviated description of the figure to appear in the the List of Figures
+ \SpecialChar LyX
+ will automatically convert the imported image to the correct format! An
+ abbreviated description of the figure to appear in the the List of Figures
  can be set using the Insert>Short Title option.
 \end_layout
 
@@ -195,7 +232,8 @@ This is an example figure.
 Some have asked about correctly formatting images so that they appear correct
  when rendered as a PDF.
  Figure shows the maximum pixel size that can be used in a figure when imported
- into LyX.
+ into \SpecialChar LyX
+.
 \end_layout
 
 \begin_layout Standard
