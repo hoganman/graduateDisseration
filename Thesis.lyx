@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass csuthesisLyx
 \begin_preamble
 % ams math packages
@@ -52,6 +54,9 @@
   pagebackref,
   bookmarksopen,
   bookmarksnumbered]{hyperref}
+
+\usepackage{sectsty}
+\chapterfont{\centering}
 \end_preamble
 \options doctor
 \use_default_options true
@@ -60,16 +65,18 @@
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman palatino
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "palatino" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format pdf2
 \output_sync 0
@@ -108,6 +115,12 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_minted 0
+\branch Introduction
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
 \index Index
 \shortcut idx
 \color #008000
@@ -116,7 +129,10 @@
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
@@ -258,9 +274,43 @@ status open
 \end_layout
 
 \begin_layout Standard
+\begin_inset Branch Introduction
+inverted 0
+status open
+
+\begin_layout Chapter
+
+\size large
+Introduction
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\shape italic
+\lang american
+Chose trop vue n'est chère tenue
+\end_layout
+
+\begin_layout Standard
+\align center
+A thing too much seen is little prized
+\end_layout
+
+\begin_layout Standard
+\align center
+French proverb
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
 filename "Chapters/Introduction.lyx"
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -276,17 +326,6 @@ options "ColostateThesisBibStylePlain"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\start_of_appendix
-\begin_inset CommandInset include
-LatexCommand input
-filename "Appendices/AppendixA.lyx"
-
-\end_inset
-
- 
 \end_layout
 
 \end_body
