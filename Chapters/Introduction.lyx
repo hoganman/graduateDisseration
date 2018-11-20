@@ -78,11 +78,6 @@
 \begin_body
 
 \begin_layout Standard
-\align center
-
-\end_layout
-
-\begin_layout Standard
 This describes the thesis
 \end_layout
 
@@ -96,7 +91,7 @@ The history of the neutrino can be traced back to electron energy spectrum
 \begin_inset Formula $\beta$
 \end_inset
 
--Decay.
+-decay.
  While measurements of 
 \begin_inset Formula $\alpha$
 \end_inset
@@ -105,11 +100,11 @@ The history of the neutrino can be traced back to electron energy spectrum
 \begin_inset Formula $\gamma$
 \end_inset
 
--decay of atomic nuclei showed discreate spectral lines, the electron (
+-decay of atomic nuclei showed discrete spectral lines, the electron (
 \begin_inset Formula $\beta$
 \end_inset
 
- particle) exhibited a continous energy spectrum.
+ particle) exhibited a continuous energy spectrum.
  Experimentally, there were two observed particles in each decay process
  and classical physics dictated that the outgoing daughter particles should
  have discrete energies.
@@ -117,7 +112,7 @@ The history of the neutrino can be traced back to electron energy spectrum
 \begin_inset Formula $\beta$
 \end_inset
 
--decay sprectrum was not this way possed a fundamental problem for physicists
+-decay spectrum was not this way posed a fundamental problem for physicists
  in the mid-1910s and later, was energy conserved? Two solutions were postulated
 : either the 
 \begin_inset Quotes eld
@@ -137,9 +132,15 @@ literal "false"
 \begin_inset Quotes erd
 \end_inset
 
- The latter solution was proposed by Wolfgang Pauli in a letter to a group
- of physicists meeting in Tübingen, modern Germany dated 4 December 1930
- where he called his proposed neutral particle a 
+ The latter solution was supported by Wolfgang Pauli in a letter dated 4
+ December 1930 to a group of physicists meeting in Tübingen, modern Germany,
+ where he first proposed what we would call a neutrino today
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+In W Pauli's December 1930 letter, he referred to his proposed particle
+ as the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -147,7 +148,42 @@ neutron
 \begin_inset Quotes erd
 \end_inset
 
-, what we would call a neutrino today.
+, which is not the same neutron we know of today.
+ At that point in time, the neutral particles inside the atomic nucleus,
+ also called 
+\begin_inset Quotes eld
+\end_inset
+
+neutrons
+\begin_inset Quotes erd
+\end_inset
+
+, had not been discovered, let alone understood.
+ The neutron, which was discovered in 1932 by James Chadwick, has been formally
+ associated as the neutral, cousin particle to the proton.
+ It would be Enrico Fermi who would coin the particle in W Pauli's letter
+ and solution to the 
+\begin_inset Formula $\beta$
+\end_inset
+
+-decay spectrum a 
+\begin_inset Quotes eld
+\end_inset
+
+neutrino
+\begin_inset Quotes erd
+\end_inset
+
+, meaning 
+\shape italic
+little neutral one
+\shape default
+.
+\end_layout
+
+\end_inset
+
+.
  Pauli's solution also predicted that the undetected neutrino would have
  
 \begin_inset Formula $\frac{1}{2}$
@@ -159,13 +195,79 @@ neutron
 \end_inset
 
 -decay did not conserve angular momentum.
- The existance of the neutrino and validation of Pauli's predictions would
+ The existence of the neutrino and validation of Pauli's predictions would
  not experimentally verified for another 20 years.
  
 \end_layout
 
 \begin_layout Standard
-Neutrinos is a fundamental particle that has no electric charge
+The neutrino was first discovered in 1953 by Clyde Cowan and Frederick Reines
+ using a nuclear reactor in South Carolina, U.S.A..
+ Since then three types of neutrinos have been observed and from unique
+ sources like the Sun and a supernova.
+ Neutrino physics continues to be an active region of physics since neutrinos
+ are unique probes to processes otherwise inaccessible in laboratories.
+ For instance in the depths of the Sun's core where fusion occurs and neutrinos
+ are created, neutrinos are able to travel through the ultra hot 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+todo{how hot?}
+\end_layout
+
+\end_inset
+
+ medium of the core and outer layers of the Sun and reach us on Earth.
+ 
+\end_layout
+
+\begin_layout Standard
+Neutrinos rarely interact with normal matter, meaning that they travel essential
+ly unimpeded towards one's particle detector.
+ The rarity of such interactions can be illustrated with the fact that given
+ nearly 70
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+todo{verify number}
+\end_layout
+
+\end_inset
+
+ billion neutrinos per square centimeter (the size of your thumbnail) per
+ second are incident on the Earth from the Sun, statistically one solar
+ neutrino can harmlessly interact with an individual.
+ So this begs the question: how does one detect a neutrino? The short answer
+ is one needs a ultra large volume of matter and a large enough flux of
+ neutrinos in its path just to detect one given today's technology.
+ 
+\end_layout
+
+\begin_layout Standard
+Scientists continue to be interested in neutrinos due to properties they
+ exhibit.
+ One of the more recent and surprising aspects about neutrinos is their
+ ability to undergo 
+\begin_inset Quotes eld
+\end_inset
+
+flavor oscillations
+\begin_inset Quotes erd
+\end_inset
+
+ where a neutrino of definite flavor (type) is created and later observed
+ as a different flavor.
+ The impact of such oscillations could help explain the observed matter
+ and anti-matter asymmetry in the Universe.
+ 
 \end_layout
 
 \end_body
