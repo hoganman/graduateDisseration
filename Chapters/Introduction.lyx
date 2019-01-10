@@ -185,12 +185,8 @@ little neutral one
 
 .
  Pauli's solution also predicted that the undetected neutrino would have
- 
-\begin_inset Formula $\frac{1}{2}$
-\end_inset
-
--spin, a quantum mechanical property of matter, since the observed particles
- in 
+ half-integer spin, a quantum mechanical property of matter, since the observed
+ particles in 
 \begin_inset Formula $\beta$
 \end_inset
 
@@ -208,20 +204,12 @@ The neutrino was first discovered in 1953 by Clyde Cowan and Frederick Reines
  Neutrino physics continues to be an active region of physics since neutrinos
  are unique probes to processes otherwise inaccessible in laboratories.
  For instance in the depths of the Sun's core where fusion occurs and neutrinos
- are created, neutrinos are able to travel through the ultra hot 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-todo{how hot?}
-\end_layout
-
+ are created, neutrinos are able to travel through the ultra dense and hot
+ medium of the core (over 
+\begin_inset Formula $10^{7}$
 \end_inset
 
- medium of the core and outer layers of the Sun and reach us on Earth.
+ degrees Kelvin) and outer layers of the Sun and reach us on Earth.
  
 \end_layout
 
@@ -229,22 +217,24 @@ todo{how hot?}
 Neutrinos rarely interact with normal matter, meaning that they travel essential
 ly unimpeded towards one's particle detector.
  The rarity of such interactions can be illustrated with the fact that given
- nearly 70
-\begin_inset ERT
-status open
+ nearly 
+\begin_inset Formula $7.0\times10^{10}\text{ neutrinos}/\text{cm}^{2}/\text{sec}$
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
 
 \begin_layout Plain Layout
-
-
-\backslash
-todo{verify number}
+To give some perspective to this number, this means 70 billion neutrinos
+ are travelling every second through an area similar to one's own thumb
+ nail.
 \end_layout
 
 \end_inset
 
- billion neutrinos per square centimeter (the size of your thumbnail) per
- second are incident on the Earth from the Sun, statistically one solar
- neutrino can harmlessly interact with an individual.
+ are incident on the Earth from the Sun, statistically one solar neutrino
+ can harmlessly interact with an individual.
  So this begs the question: how does one detect a neutrino? The short answer
  is one needs a ultra large volume of matter and a large enough flux of
  neutrinos in its path just to detect one given today's technology.
@@ -283,8 +273,107 @@ The Standard Model (SM) of particle physics is the theory that describes
 known
 \shape default
  fundamental forces of the Universe.
- Each force in the SM is mediated by a elementary particle called a gauge
- boson.
+ Each force in the SM has at least one 
+\begin_inset Quotes eld
+\end_inset
+
+force carrier
+\begin_inset Quotes erd
+\end_inset
+
+ particle that mediates the interactions between particles.
+ The force carriers are formally called gauge bosons which indicates they
+ are particles with interger 
+\begin_inset Formula $(0,1,2,...)$
+\end_inset
+
+ spin.
+ The weak nuclear gauge bosons, the W and Z, couple to neutrinos as well
+ as the other fermions, particles with half-integer 
+\begin_inset Formula $\left(\frac{1}{2},\frac{3}{2},\frac{5}{2},...\right)$
+\end_inset
+
+ spin, in the SM.
+ All the elementary particles of the SM are shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:TheStandardModel"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/StandardModel.png
+	lyxscale 25
+	width 3.5in
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+The Standard Model of particle physics
+\end_layout
+
+\end_inset
+
+The Standard Model of particle physics consists of six quarks, six leptons,
+ and five gauge bosons including the Higgs boson.
+ The focus of this thesis are the neutrinos which are classified according
+ to their charged, more massive Lepton cousins.
+ This graphic was originally submitted on Symmetry Magazine
+\begin_inset CommandInset citation
+LatexCommand cite
+key "RiesselmannSM"
+literal "false"
+
+\end_inset
+
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:TheStandardModel"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Neutrinos are electrically neutral, massless particles catagorized into
+ three generations based on their charged, more massive Lepton cousins.
  
 \end_layout
 
