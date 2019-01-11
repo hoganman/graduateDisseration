@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass csuthesisLyx
+\textclass /Hitachi/Documents/graduateDisseration/csuthesisLyx
 \begin_preamble
 % ams math packages
 \usepackage[cmex10]{amsmath}
@@ -57,6 +57,8 @@
 
 \usepackage{sectsty}
 \chapterfont{\centering}
+
+\usepackage{braket}
 \end_preamble
 \options doctor
 \use_default_options true
@@ -254,19 +256,14 @@ status open
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
-preview true
-filename "MyDefinitions.tex"
+filename "LyxMathMacros.lyx"
 
 \end_inset
 
 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-% Latex macros
-\end_layout
+\begin_inset CommandInset include
+LatexCommand input
+filename "LyxTextMacros.lyx"
 
 \end_inset
 

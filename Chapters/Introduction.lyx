@@ -372,9 +372,628 @@ name "fig:TheStandardModel"
 \end_layout
 
 \begin_layout Standard
-Neutrinos are electrically neutral, massless particles catagorized into
+Neutrinos are electrically neutral, massless particles categorized into
  three generations based on their charged, more massive Lepton cousins.
  
+\end_layout
+
+\begin_layout Subsection
+Neutrino Oscillations
+\end_layout
+
+\begin_layout Subsubsection
+Derivation
+\end_layout
+
+\begin_layout Standard
+The phenomenon of neutrino oscillations can be described with elementary
+ Quantum Mechanics.
+ Beginning with the Schrödinger Equation in Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:schroeqn"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned}-\frac{\hbar}{i}\partderiv t\diracket{\psi(\mathbf{r},t)} & =\hat{H}\diracket{\psi(\mathbf{r},t)}\end{aligned}
+,\label{eq:schroeqn}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\hat{H}$
+\end_inset
+
+ is the Hamiltonian for the physical system.
+ If we consider a massive neutrino of mass 
+\begin_inset Formula $m_{j}$
+\end_inset
+
+ in its rest frame, the Hamiltonian acting on 
+\begin_inset Formula $\diracket{\psi_{j}}$
+\end_inset
+
+ becomes
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\hat{H}\diracket{\psi_{j}(\mathbf{r},t)}=E_{j}\diracket{\psi_{j}(t)},\label{eq:schroeqntimeindep}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $E_{j}$
+\end_inset
+
+ is the energy of the neutrino 
+\begin_inset Formula $\diracket{\psi_{j}}$
+\end_inset
+
+.
+ If we substitute Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:schroeqntimeindep"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ into Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:schroeqn"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and solve for 
+\begin_inset Formula $\diracket{\psi(\mathbf{r},t)}$
+\end_inset
+
+, we obtain the following solution
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\diracket{\psi_{j}(\mathbf{r},t)}=\diracket{\psi_{j}(t)}=\diracket{\psi_{j}(t=0)}e^{-iE_{j}t/\hbar},\label{eq:schroeqnsolution}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\diracket{\psi_{j}(t=0)}$
+\end_inset
+
+ is the initial position of the neutrino.
+ For demonstration purposes, consider that there are only two eigenstates
+ labeled 
+\begin_inset Formula $\nu_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\nu_{2}$
+\end_inset
+
+ in the 
+\begin_inset Quotes eld
+\end_inset
+
+mass
+\begin_inset Quotes erd
+\end_inset
+
+ basis with definite mass 
+\begin_inset Formula $m_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $m_{2}$
+\end_inset
+
+, respectively.
+ Because experiments are only able to probe neutrinos in the 
+\begin_inset Quotes eld
+\end_inset
+
+flavor
+\begin_inset Quotes erd
+\end_inset
+
+ basis, denoted here by a Greek letter, we can postulate a linear transformation
+, 
+\begin_inset Formula $U$
+\end_inset
+
+, between the basis states given by Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:pmnstwodimgen"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{bmatrix}\nu_{\alpha}\\
+\nu_{\beta}
+\end{bmatrix}=\begin{bmatrix}U_{11} & U_{12}\\
+U_{21} & U_{22}
+\end{bmatrix}\begin{bmatrix}\nu_{1}\\
+\nu_{2}
+\end{bmatrix}\label{eq:pmnstwodimgen}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This linear transformation must be a unitary matrix 
+\begin_inset Formula $\left(U^{-1}=U^{*}\right)$
+\end_inset
+
+ since the states 
+\begin_inset Formula $\nu_{1,2}$
+\end_inset
+
+ constitute a complete orthonormal set in the mass basis.
+ With this unitary property, we can imagine 
+\begin_inset Formula $U$
+\end_inset
+
+ as a rotation matrix
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{bmatrix}\nu_{\alpha}\\
+\nu_{\beta}
+\end{bmatrix}=\begin{bmatrix}\cos(\theta) & \sin(\theta)\\
+-\sin(\theta) & \cos(\theta)
+\end{bmatrix}\begin{bmatrix}\nu_{1}\\
+\nu_{2}
+\end{bmatrix},\label{eq:pmnstwodimangle}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\theta$
+\end_inset
+
+ is the angle between the two bases.
+ We can imagine this transformation between bases as shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:twoflavorrotation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ If we create a neutrino of flavor 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ and observe it after a time 
+\begin_inset Formula $t=T>0$
+\end_inset
+
+, then the probability of observing it as flavor 
+\begin_inset Formula $\beta\neq\alpha$
+\end_inset
+
+ is given by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/RotationMatrix.png
+	lyxscale 25
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The depiction of two neutrino flavor change of basis using a rotation matrix.
+ Compare this with Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:pmnstwodimangle"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Depiction of Two Neutrino Flavor Change of Basis
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:twoflavorrotation"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned}\mathcal{P}\left(\nu_{\alpha}\rightarrow\nu_{\beta}\right) & =\left|\braket{\nu_{\alpha}(t=0)|\nu_{\beta}(t=T)}\right|^{2}\\
+ & =\left|\left(\cos(\theta)\diracbra{\nu_{1}(t=0)}+\sin(\theta)\diracbra{\nu_{2}(t=0)}\right)\right.\\
+ & \ \ \ \ \times\left.\left(-\sin(\theta)\diracket{\nu_{1}(t=T)}+\cos(\theta)\diracket{\nu_{2}(t=T)}\right)\right|^{2}\\
+ & =\left|\braket{\nu_{1}(0)|\nu_{1}(T)}(-cs)+\braket{\nu_{1}(0)|\nu_{2}(T)}(cc)\right.\\
+ & \ \ \ \ \left.+\braket{\nu_{2}(0)|\nu_{1}(T)}(-ss)+\braket{\nu_{2}(0)|\nu_{2}(T)}(sc)\right|^{2}
+\end{aligned}
+,\label{eq:prob2flavorexpanded}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where for simplicity 
+\begin_inset Formula $c=\cos(\theta)$
+\end_inset
+
+ and 
+\begin_inset Formula $s=\sin(\theta)$
+\end_inset
+
+.
+ Simplifying Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prob2flavorexpanded"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ results in Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prob2flavorsimplified"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathcal{P}\left(\nu_{\alpha}\rightarrow\nu_{\beta}\right)=\sin^{2}(2\theta)\sin^{2}\left(\frac{E_{1}-E_{2}}{4\hbar}T\right)\label{eq:prob2flavorsimplified}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The terminology of 
+\begin_inset Quotes eld
+\end_inset
+
+neutrino oscillations
+\begin_inset Quotes erd
+\end_inset
+
+ should be more apparent now since Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prob2flavorsimplified"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ demonstrates that the probability changes sinusoidally.
+ Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prob2flavorsimplified"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is not, however, terribly useful in the laboratory frame since it is hard
+ to make an experiment where the travel time an individual neutrino is well
+ known.
+ Instead, we can make useful approximations that are accessible in the laborator
+y frame.
+ Since neutrinos are nearly massless, they travel very close to the speed
+ of light.
+ Therefore we can replace time 
+\begin_inset Formula $T$
+\end_inset
+
+ with 
+\begin_inset Formula $L/c$
+\end_inset
+
+ where 
+\begin_inset Formula $L$
+\end_inset
+
+ is the distance between the neutrino origin and detection and 
+\begin_inset Formula $c$
+\end_inset
+
+ is now the speed of light in vacuum.
+ We can also approximate the energy of the mass eigenstate as 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned}E_{j} & =\left(m_{j}^{2}c^{4}+p_{j}^{2}c^{2}\right)^{\frac{1}{2}}=p_{j}c\left(1+\frac{m_{j}^{2}c^{2}}{p_{j}^{2}}\right)^{\frac{1}{2}}\\
+ & \approx p_{j}c\left(1+\frac{m_{j}^{2}c^{2}}{2p_{j}^{2}}+\mathcal{O}\left(\frac{m_{j}c}{p_{j}}\right)^{4}\right)\\
+ & \approx E_{\nu}+\frac{m_{j}^{2}c^{4}}{2E_{\nu}},
+\end{aligned}
+\label{eq:enuapprox}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where we have used the fact that 
+\begin_inset Formula $p_{j}\ll m_{j}c$
+\end_inset
+
+ and 
+\begin_inset Formula $p_{j}c\approx E_{\nu}$
+\end_inset
+
+ where 
+\begin_inset Formula $E_{\nu}$
+\end_inset
+
+ is the neutrino energy as measured in the laboratory.
+ Substituting all of our assumptions in Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prob2flavorsimplified"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, we get Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prob2flavornumerical"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned}\mathcal{\mathcal{P}}\left(\nu_{\alpha}\rightarrow\nu_{\beta}\right) & =\sin^{2}(2\theta)\sin^{2}\left(\frac{\Delta m_{21}^{2}c^{3}}{8\hbar}\frac{L}{E_{\nu}}\right)\\
+ & =\sin^{2}(2\theta)\sin^{2}\left(\frac{2\pi}{4.959}\frac{\Delta m_{21}^{2}}{\left[\text{eV}^{2}\right]}\frac{\nicefrac{L}{E_{\nu}}}{\left[\unitfrac{km}{GeV}\right]}\right),
+\end{aligned}
+\label{eq:prob2flavornumerical}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\Delta m_{21}^{2}=m_{2}^{2}-m_{1}^{2}$
+\end_inset
+
+ is the mass-squared difference between the mass states, and all the physical
+ constants have been evaluated in natural units (
+\begin_inset Formula $c=\hbar=1)$
+\end_inset
+
+.
+ We can compare Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prob2flavornumerical"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ with a time-varying sinusoid, 
+\begin_inset Formula $A\sin^{2}\left(2\pi ft\right)$
+\end_inset
+
+ of amplitude 
+\begin_inset Formula $A$
+\end_inset
+
+ and frequency 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ The oscillation probability has amplitude 
+\begin_inset Formula $\sin^{2}(2\theta)$
+\end_inset
+
+ and varies with frequency proportional to 
+\begin_inset Formula $\Delta m_{21}^{2}$
+\end_inset
+
+ as illustrated in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Two-flavor-oscillation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/TwoNeutrinoOscillations.png
+	lyxscale 33
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Two Flavor Oscillation Probability
+\end_layout
+
+\end_inset
+
+The two flavor oscillation probability as a function 
+\begin_inset Formula $L/E$
+\end_inset
+
+ is shown using an appropriate choice of 
+\begin_inset Formula $\Delta m_{21}^{2}$
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Two-flavor-oscillation"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
