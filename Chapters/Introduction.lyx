@@ -381,8 +381,79 @@ Neutrinos are electrically neutral, massless particles categorized into
 Neutrino Oscillations
 \end_layout
 
+\begin_layout Standard
+Neutrino oscillations were not a known phenomenon when neutrinos were incorporat
+ed into the Standard Model.
+ Outstanding problems were arising as the expected flux of neutrinos from
+ the Sun and atmosphere were too small.
+\end_layout
+
+\begin_layout Standard
+The first indication of neutrino oscillations was from the Ray Davis Homesteak
+ Mine experiment which began in the 1960s.
+ Ray Davis was an expert Chemist and designed a radiochemical experiment
+ to measure the flux of neutrinos from Sun.
+ The purpose of this experiment was to test John Bahcall's prediction of
+ the fusion rate in and neutrino flux from the Sun.
+ Measurements continued into the 1980s and showed that the flux of neutrinos
+ as measured at Homesteak was about 1/3 the expected rate and became known
+ as the 
+\begin_inset Quotes eld
+\end_inset
+
+Solar Neutrino Problem
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Ultimately vindicated by the confirmation of neutrino oscillations, the
+ Homesteak Mine measurements helped establish the Standard Solar Model.
+\end_layout
+
+\begin_layout Standard
+Another outstanding problem emerged with measurements of atmospheric neutrinos,
+ in particular muon and electron types.
+ Atmospheric neutrinos are produced when cosmic rays strike the atmosphere.
+ These collisions generate charged pions which decay dominantly into a muon
+ and neutrino.
+ The resulting muon in turn decays dominantly into an positron and two neutrinos
+ as shown in Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:atmdecaychain"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned}\piplus & \rightarrow\muplus+\numu\\
+\muplus & \rightarrow e^{+}+\nue+\numubar,
+\end{aligned}
+\label{eq:atmdecaychain}
+\end{equation}
+
+\end_inset
+
+In total the ratio of 
+\begin_inset Formula $\left(\numu+\antinumu\right)$
+\end_inset
+
+ to 
+\begin_inset Formula $\nuantinuparticle e$
+\end_inset
+
+ should equal 2:1, but there was observed deficit in muon type neutrinos.
+\end_layout
+
 \begin_layout Subsubsection
-Derivation
+Two Flavor Derivation
 \end_layout
 
 \begin_layout Standard
@@ -404,16 +475,12 @@ noprefix "false"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\begin{aligned}-\frac{\hbar}{i}\partderiv t\diracket{\psi(\mathbf{r},t)} & =\hat{H}\diracket{\psi(\mathbf{r},t)}\end{aligned}
-,\label{eq:schroeqn}
+\begin{aligned}-\frac{\hbar}{i}\partderiv t\diracket{\nu(\mathbf{r},t)} & =\hat{H}\diracket{\nu(\mathbf{r},t)}\end{aligned}
+\label{eq:schroeqn}
 \end{equation}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 where 
 \begin_inset Formula $\hat{H}$
 \end_inset
@@ -423,35 +490,32 @@ where
 \begin_inset Formula $m_{j}$
 \end_inset
 
- in its rest frame, the Hamiltonian acting on 
-\begin_inset Formula $\diracket{\psi_{j}}$
+ in its rest frame (free particle), the Hamiltonian becomes diagonal which
+ acting on 
+\begin_inset Formula $\diracket{\nu_{j}}$
 \end_inset
 
- becomes
+ results in the eigenvalue equation
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\hat{H}\diracket{\psi_{j}(\mathbf{r},t)}=E_{j}\diracket{\psi_{j}(t)},\label{eq:schroeqntimeindep}
+\hat{H}\diracket{\nu_{j}(\mathbf{r},t)}=E_{j}\diracket{\nu_{j}(\mathbf{r},t)}\label{eq:schroeqntimeindep}
 \end{equation}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 where 
 \begin_inset Formula $E_{j}$
 \end_inset
 
  is the energy of the neutrino 
-\begin_inset Formula $\diracket{\psi_{j}}$
+\begin_inset Formula $\diracket{\nu_{j}}$
 \end_inset
 
 .
- If we substitute Equation 
+ If we substitute 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:schroeqntimeindep"
@@ -461,7 +525,7 @@ noprefix "false"
 
 \end_inset
 
- into Equation 
+ into 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:schroeqn"
@@ -472,31 +536,55 @@ noprefix "false"
 \end_inset
 
  and solve for 
-\begin_inset Formula $\diracket{\psi(\mathbf{r},t)}$
+\begin_inset Formula $\diracket{\nu(\mathbf{r},t)}$
 \end_inset
 
-, we obtain the following solution
+, we obtain the following
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\diracket{\psi_{j}(\mathbf{r},t)}=\diracket{\psi_{j}(t)}=\diracket{\psi_{j}(t=0)}e^{-iE_{j}t/\hbar},\label{eq:schroeqnsolution}
+\diracket{\nu_{j}(\mathbf{r},t)}=e^{-iE_{j}t/\hbar}\diracket{\nu_{j}(\mathbf{r},t=0)}\label{eq:schroeqnsolution}
 \end{equation}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 where 
-\begin_inset Formula $\diracket{\psi_{j}(t=0)}$
+\begin_inset Formula $\diracket{\nu_{j}(\mathbf{r},t=0)}$
 \end_inset
 
- is the initial position of the neutrino.
- For demonstration purposes, consider that there are only two eigenstates
- labeled 
+ is created with momentum 
+\begin_inset Formula $\mathbf{p}$
+\end_inset
+
+ at the origin 
+\begin_inset Formula $\mathbf{r}=0$
+\end_inset
+
+.
+ The time-independent solution to 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:schroeqn"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is a plane-wave given by
+\begin_inset Formula 
+\begin{equation}
+\diracket{\nu_{j}(\mathbf{r},t=0)}=e^{i\mathbf{p}\cdot\mathbf{r}/\hbar}\diracket{\nu_{j}}.\label{eq:schroeqnsolutiontimeindep}
+\end{equation}
+
+\end_inset
+
+Before being able to describe neutrino oscillations, we must define our
+ basis states.
+ For this example, consider that there are only two eigenstates, labeled
+ 
 \begin_inset Formula $\nu_{1}$
 \end_inset
 
@@ -504,7 +592,7 @@ where
 \begin_inset Formula $\nu_{2}$
 \end_inset
 
- in the 
+, in the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -521,7 +609,8 @@ mass
 \end_inset
 
 , respectively.
- Because experiments are only able to probe neutrinos in the 
+ However, experiments can produce neutrinos, as well as probe them, only
+ of definite 
 \begin_inset Quotes eld
 \end_inset
 
@@ -529,12 +618,41 @@ flavor
 \begin_inset Quotes erd
 \end_inset
 
- basis, denoted here by a Greek letter, we can postulate a linear transformation
-, 
+, denoted by a Greek letter subscript 
+\begin_inset Formula $\lambda$
+\end_inset
+
+.
+ Let the generated neutrino, which is a linear superposition of mass states
+ 1 and 2, have momentum 
+\begin_inset Formula $\mathbf{p}$
+\end_inset
+
+ and flavor 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+ Since both mass eigenstates share the same momentum momentum 
+\begin_inset Formula $\mathbf{p}$
+\end_inset
+
+ (but not energy!), the exponential term in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:schroeqnsolutiontimeindep"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is an overall phase that will cancel out later.
+ We can postulate a linear transformation, 
 \begin_inset Formula $U$
 \end_inset
 
-, between the basis states given by Equation 
+, between the basis states given by 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:pmnstwodimgen"
@@ -561,12 +679,8 @@ U_{21} & U_{22}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 This linear transformation must be a unitary matrix 
-\begin_inset Formula $\left(U^{-1}=U^{*}\right)$
+\begin_inset Formula $\left(U^{-1}=U^{\dagger},\dagger=\text{transpose conjugate}\right)$
 \end_inset
 
  since the states 
@@ -586,19 +700,16 @@ This linear transformation must be a unitary matrix
 \begin{equation}
 \begin{bmatrix}\nu_{\alpha}\\
 \nu_{\beta}
-\end{bmatrix}=\begin{bmatrix}\cos(\theta) & \sin(\theta)\\
+\end{bmatrix}=\begin{bmatrix}\begin{array}{rr}
+\cos(\theta) & \sin(\theta)\\
 -\sin(\theta) & \cos(\theta)
-\end{bmatrix}\begin{bmatrix}\nu_{1}\\
+\end{array}\end{bmatrix}\begin{bmatrix}\nu_{1}\\
 \nu_{2}
 \end{bmatrix},\label{eq:pmnstwodimangle}
 \end{equation}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 where 
 \begin_inset Formula $\theta$
 \end_inset
@@ -631,6 +742,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
+\align left
 \begin_inset Float figure
 wide false
 sideways false
@@ -640,7 +752,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Figures/Introduction/RotationMatrix.png
-	lyxscale 25
+	lyxscale 50
 	scale 50
 
 \end_inset
@@ -653,7 +765,7 @@ status open
 
 \begin_layout Plain Layout
 The depiction of two neutrino flavor change of basis using a rotation matrix.
- Compare this with Equation 
+ Compare this with 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:pmnstwodimangle"
@@ -703,15 +815,11 @@ name "fig:twoflavorrotation"
  & =\left|\braket{\nu_{1}(0)|\nu_{1}(T)}(-cs)+\braket{\nu_{1}(0)|\nu_{2}(T)}(cc)\right.\\
  & \ \ \ \ \left.+\braket{\nu_{2}(0)|\nu_{1}(T)}(-ss)+\braket{\nu_{2}(0)|\nu_{2}(T)}(sc)\right|^{2}
 \end{aligned}
-,\label{eq:prob2flavorexpanded}
+\label{eq:prob2flavorexpanded}
 \end{equation}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 where for simplicity 
 \begin_inset Formula $c=\cos(\theta)$
 \end_inset
@@ -721,7 +829,7 @@ where for simplicity
 \end_inset
 
 .
- Simplifying Equation 
+ Evaluating all inner products and simplifying terms in 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:prob2flavorexpanded"
@@ -731,7 +839,7 @@ noprefix "false"
 
 \end_inset
 
- results in Equation 
+ results in 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:prob2flavorsimplified"
@@ -741,7 +849,7 @@ noprefix "false"
 
 \end_inset
 
-.
+ below.
 \end_layout
 
 \begin_layout Standard
@@ -775,19 +883,9 @@ noprefix "false"
 \end_inset
 
  demonstrates that the probability changes sinusoidally.
- Equation 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:prob2flavorsimplified"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- is not, however, terribly useful in the laboratory frame since it is hard
- to make an experiment where the travel time an individual neutrino is well
- known.
+ This equation is not, however, terribly useful in the laboratory frame
+ since it is hard to make an experiment where the travel time an individual
+ neutrino is well known.
  Instead, we can make useful approximations that are accessible in the laborator
 y frame.
  Since neutrinos are nearly massless, they travel very close to the speed
@@ -824,12 +922,8 @@ y frame.
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 where we have used the fact that 
-\begin_inset Formula $p_{j}\ll m_{j}c$
+\begin_inset Formula $p_{j}\gg m_{j}c$
 \end_inset
 
  and 
@@ -854,7 +948,7 @@ noprefix "false"
 , we get Equation 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:prob2flavornumerical"
+reference "eq:prob2flavorapprox"
 plural "false"
 caps "false"
 noprefix "false"
@@ -867,63 +961,89 @@ noprefix "false"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\begin{aligned}\mathcal{\mathcal{P}}\left(\nu_{\alpha}\rightarrow\nu_{\beta}\right) & =\sin^{2}(2\theta)\sin^{2}\left(\frac{\Delta m_{21}^{2}c^{3}}{8\hbar}\frac{L}{E_{\nu}}\right)\\
- & =\sin^{2}(2\theta)\sin^{2}\left(\frac{2\pi}{4.959}\frac{\Delta m_{21}^{2}}{\left[\text{eV}^{2}\right]}\frac{\nicefrac{L}{E_{\nu}}}{\left[\unitfrac{km}{GeV}\right]}\right),
-\end{aligned}
-\label{eq:prob2flavornumerical}
+\begin{aligned}\mathcal{\mathcal{P}}\left(\nu_{\alpha}\rightarrow\nu_{\beta}\right) & =\sin^{2}(2\theta)\sin^{2}\left(\frac{\Delta m^{2}c^{3}}{8\hbar}\frac{L}{E_{\nu}}\right),\end{aligned}
+\label{eq:prob2flavorapprox}
 \end{equation}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 where 
-\begin_inset Formula $\Delta m_{21}^{2}=m_{2}^{2}-m_{1}^{2}$
+\begin_inset Formula $\Delta m^{2}=m_{2}^{2}-m_{1}^{2}$
 \end_inset
 
- is the mass-squared difference between the mass states, and all the physical
- constants have been evaluated in natural units (
+ is the mass-squared difference between the mass states.
+ If we evaluate all the physical constants in natural units (
 \begin_inset Formula $c=\hbar=1)$
 \end_inset
 
-.
- We can compare Equation 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:prob2flavornumerical"
-plural "false"
-caps "false"
-noprefix "false"
+ and choose appropriate units for 
+\begin_inset Formula $\Delta m^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $L$
+\end_inset
+
+, and 
+\begin_inset Formula $E_{\nu}$
+\end_inset
+
+, we arrive at the following expression
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathcal{\mathcal{P}}\left(\nu_{\alpha}\rightarrow\nu_{\beta}\right)=\sin^{2}(2\theta)\sin^{2}\left(1.27\frac{\Delta m^{2}}{\left[\text{eV}^{2}\right]}\frac{\nicefrac{L}{E_{\nu}}}{\left[\nicefrac{\text{km}}{\text{GeV}}\right]}\right)\text{ [natural units]}
+\]
 
 \end_inset
 
- with a time-varying sinusoid, 
-\begin_inset Formula $A\sin^{2}\left(2\pi ft\right)$
-\end_inset
-
- of amplitude 
-\begin_inset Formula $A$
-\end_inset
-
- and frequency 
-\begin_inset Formula $f$
-\end_inset
-
-.
- The oscillation probability has amplitude 
+which more clearly demonstrates the Physics in oscillations.
+ The oscillation probability has an amplitude of 
 \begin_inset Formula $\sin^{2}(2\theta)$
 \end_inset
 
- and varies with frequency proportional to 
-\begin_inset Formula $\Delta m_{21}^{2}$
+ and varies with frequency inversely proportional to 
+\begin_inset Formula $\Delta m^{2}$
 \end_inset
 
  as illustrated in Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Two-flavor-oscillation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $L$
+\end_inset
+
+ and 
+\begin_inset Formula $E_{\nu}$
+\end_inset
+
+ are the only controllable parameters for an oscillation experiment, probing
+ 
+\begin_inset Formula $\theta$
+\end_inset
+
+ or 
+\begin_inset Formula $\Delta m^{2}$
+\end_inset
+
+ can be difficult unless the experiment can probe a large range of 
+\begin_inset Formula $L/E_{\nu}$
+\end_inset
+
+ as shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Two-flavor-oscillation-2"
 plural "false"
 caps "false"
 noprefix "false"
@@ -943,8 +1063,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename Figures/Introduction/TwoNeutrinoOscillations.png
-	lyxscale 33
-	scale 50
+	lyxscale 50
+	width 49text%
 
 \end_inset
 
@@ -959,20 +1079,35 @@ status open
 status open
 
 \begin_layout Plain Layout
-Two Flavor Oscillation Probability
+Survival and Disappearance Probability
 \end_layout
 
 \end_inset
 
-The two flavor oscillation probability as a function 
+Two flavor oscillation probability as a function 
 \begin_inset Formula $L/E$
 \end_inset
 
- is shown using an appropriate choice of 
-\begin_inset Formula $\Delta m_{21}^{2}$
+ is shown using 
+\begin_inset Formula $\theta=20^{\circ}$
+\end_inset
+
+ and 
+\begin_inset Formula $\Delta m^{2}=\unit[10^{-3}]{eV^{2}}$
 \end_inset
 
 .
+ The spacing between adjacent peaks/troughs is proportional to the inverse
+ of 
+\begin_inset Formula $\Delta m^{2}$
+\end_inset
+
+.
+ Note that 
+\begin_inset Formula $\mathcal{P}\left(\nu_{\alpha}\rightarrow\nu_{\alpha}\right)=1-\mathcal{P}\left(\nu_{\alpha}\rightarrow\nu_{\beta}\right)$
+\end_inset
+
+ since the oscillation probability must always sum to 1.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Two-flavor-oscillation"
@@ -987,9 +1122,216 @@ name "fig:Two-flavor-oscillation"
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/OscillationProb2FlavorLog.png
+	lyxscale 50
+	width 49text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Logarithmic Plot of the Two Flavor Survival Probability
+\end_layout
+
+\end_inset
+
+Logarithmic plot of the survival probability 
+\begin_inset Formula $\left(1-\mathcal{P}\left(\nu_{\alpha}\rightarrow\nu_{\beta}\right)=\mathcal{P}\left(\nu_{\alpha}\rightarrow\nu_{\alpha}\right)\right)$
+\end_inset
+
+ over a wide range of 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $L/E$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ values for 
+\begin_inset Formula $\theta=40^{\circ}$
+\end_inset
+
+.
+ The arrows above the plot roughly denote three possible cases: (a) no oscillati
+ons (
+\begin_inset Formula $L/E\ll1/\Delta m^{2})$
+\end_inset
+
+; (b) sensitivity to oscillations 
+\begin_inset Formula $(L/E\sim1/\Delta m^{2})$
+\end_inset
+
+; (c) only average measurement 
+\begin_inset Formula $(L/E\gg1/\Delta m^{2})$
+\end_inset
+
+.
+ Image originally inspired by 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Schmitz1997"
+literal "false"
+
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Two-flavor-oscillation-2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Three Flavor Oscillations
+\end_layout
+
+\begin_layout Standard
+In the general case of oscillations using a 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ mixing matrix, the unitary transformation can be written as a rotation
+ matrix with 
+\begin_inset Formula $\frac{n}{2}(n-1)$
+\end_inset
+
+ weak mixing angles with 
+\begin_inset Formula $\frac{1}{2}(n-2)(n-1)$
+\end_inset
+
+ Charge-Parity (CP) violating phases.
+ In addition, oscillations are dictated by a total of 
+\begin_inset Formula $n-1$
+\end_inset
+
+ mass-squared splittings.
+ The flavored mixing matrix model is the 
+\begin_inset Formula $3\times3$
+\end_inset
+
+ Maki-Nakagawa-Sakata-Pontecorvo (MNSP) matrix, also known as the PMNS matrix.
+ This means there are three (3) mixing angles, one (1) CP violating phase,
+ and two (2) mass-squared splittings.
+ The MNSP parameterization is best understood in the context of the history
+ of neutrino oscillation discoveries.
+\end_layout
+
+\begin_layout Standard
+Solar
+\begin_inset Formula 
+\[
+U_{\text{sol}}=\begin{bmatrix}\cos(\theta_{\text{sol}}) & \sin(\theta_{\text{sol}})\\
+-\sin(\theta_{\text{sol}}) & \cos(\theta_{\text{sol}})
+\end{bmatrix}\rightarrow\begin{bmatrix}\begin{array}{rrr}
+\cos(\theta_{21}) & \sin(\theta_{21}) & 0\\
+-\sin(\theta_{21}) & \cos(\theta_{21}) & 0\\
+0 & 0 & 1
+\end{array}\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U_{\text{atm}}=\begin{bmatrix}\cos(\theta_{\text{atm}}) & \sin(\theta_{\text{atm}})\\
+-\sin(\theta_{\text{atm}}) & \cos(\theta_{\text{atm}})
+\end{bmatrix}\rightarrow\begin{bmatrix}\begin{array}{rrr}
+1 & 0 & 0\\
+0 & \cos(\theta_{32}) & \sin(\theta_{32})\\
+0 & -\sin(\theta_{32}) & \cos(\theta_{32})
+\end{array}\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U_{\text{reactor}}=\begin{bmatrix}\cos(\theta_{31}) & 0 & \sin(\theta_{31})e^{i\delta_{\text{CP}}}\\
+0 & 1 & 0\\
+-\sin(\theta_{31})e^{-i\delta_{\text{CP}}} & 0 & \cos(\theta_{31})
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U_{\text{Majorana}}=\begin{bmatrix}1 & 0 & 0\\
+0 & e^{i\alpha} & 0\\
+0 & 0 & e^{i\beta}
+\end{bmatrix}
+\]
 
 \end_inset
 

@@ -95,6 +95,14 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
+\newcommand{\nuantinuparticle}[1]{\stackrel{(-)}{\nu}_{#1}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
 \newcommand{\particle}[2]{#1^{#2}}
 \end_inset
 
@@ -240,7 +248,15 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\diracket}[1]{\left|#1\right\rangle}
+\newcommand{\Dm}[2]{\Delta m_{#1#2}^{2}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\diracket}[1]{\left|#1\right\rangle }
 {\left|#1\right\rangle }
 \end_inset
 
@@ -249,7 +265,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\diracbra}[1]{\left\langle#1\right|}
+\newcommand{\diracbra}[1]{\left\langle #1\right|}
 {\left\langle #1\right|}
 \end_inset
 
