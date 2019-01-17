@@ -95,7 +95,8 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\nuantinuparticle}[1]{\stackrel{(-)}{\nu}_{#1}}
+\newcommand{\nuantinuparticle}[1]{\ ^{{\scriptscriptstyle ({\scriptstyle -}\!}}\negmedspace\negmedspace\negmedspace\nu^{{\scriptscriptstyle )}}_{#1}}
+{\stackrel{(-)}{\nu_{#1}}}
 \end_inset
 
 
@@ -134,7 +135,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\numu}{\nuparticle{\mu}}
+\newcommand{\numu}{\nu_{\mu}}
 \end_inset
 
 
@@ -241,6 +242,32 @@
 \begin_layout Standard
 \begin_inset FormulaMacro
 \newcommand{\partderiv}[1]{\frac{\partial}{\partial#1}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\ss}[1]{s_{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sss}[1]{s_{#1}^{2}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\cc}[1]{c_{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ccc}[1]{c_{#1}^{2}}
 \end_inset
 
 
