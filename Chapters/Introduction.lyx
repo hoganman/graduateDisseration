@@ -529,74 +529,7 @@ In the limiting case of vanishing mass
 \begin_inset Formula $\left(m\rightarrow0\right)$
 \end_inset
 
-, as in the SM, the equations decouple.
- We now have enough information to make two very important insights about
- neutrinos in the SM.
-\end_layout
-
-\begin_layout Standard
-The first important fact is that a neutrino spinor is always LH in weak
- interactions.
- That is to say a weakly interacting neutrino is LH and antineutrino is
- RH as shown in 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:chiraloperators"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
- There are no mechanisms in the SM for RH neutrinos and LH antineutrinos.
- If we also distribute 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:chiraloperators"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- and examine each term under parity transformation, we see that 
-\begin_inset Formula $\psi$
-\end_inset
-
- is a vector (by definition) and 
-\begin_inset Formula $\gamma^{5}\psi$
-\end_inset
-
- is a axial (pseudo)vector.
- This vector minus axial (V-A) construction is what allows for parity and
- charge-parity (CP) violation with weak interactions.
- 
-\end_layout
-
-\begin_layout Standard
-The second important insight is that the chirality and helicity of the neutrino
- the same for 
-\begin_inset Formula $m\rightarrow0$
-\end_inset
-
-.
- Helicity is the projection of a particle's spin vector on its momentum
- vector 
-\begin_inset Formula 
-\begin{equation}
-\mathcal{H}=\frac{\boldsymbol{\sigma}\cdot\mathbf{P}}{\left|\mathbf{P}\right|}\label{eq:helicityoperator}
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Formula $\mathbf{P}$
-\end_inset
-
- is the momentum of the particle.
- For a free, massless neutrino in the momentum basis, the Dirac Equation
- becomes
+, as in the SM, the free particle equations decouple into
 \begin_inset Formula 
 \begin{equation}
 \begin{aligned}\left(\frac{E}{c}-\boldsymbol{\sigma}\cdot\boldsymbol{P}\right)\psi_{\text{RH}} & =0\\
@@ -607,7 +540,130 @@ where
 
 \end_inset
 
-Since 
+We now have enough information to make two very important insights about
+ neutrinos in the SM.
+\end_layout
+
+\begin_layout Standard
+The first important fact is that a weakly interacting neutrino has positive
+ energy 
+\begin_inset Formula $E=\left|\boldsymbol{P}\right|c$
+\end_inset
+
+ and is always LH as shown in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:chiraloperators"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ The antineutrino is RH and has negative energy 
+\begin_inset Formula $(-E=\left|\boldsymbol{P}\right|c)$
+\end_inset
+
+ which is interpreted to mean it travels backwards in time.
+ Since neutrinos are nearly massless, there are no mechanisms for RH neutrinos
+ and LH antineutrinos.
+ Understanding the handedness of a particle is visualized in Figure
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/ChiralityPionDecay.png
+	lyxscale 50
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Helicity of Neutrino Through Decay of Charged Pi Mesons
+\end_layout
+
+\end_inset
+
+Decay of a charged pi meson into a muon and neutrino show the direction
+ of the momentum 
+\begin_inset Formula $\boldsymbol{P}$
+\end_inset
+
+ and spin 
+\begin_inset Formula $\boldsymbol{\sigma}$
+\end_inset
+
+ of the outgoing particles.
+ Since a pion at rest has zero (0) angular momentum, the system of daughter
+ particles must have net zero angular momentum as well.
+ A neutrino (antineutrino) is a right- (left-) handed helicity particle
+ since its spin is (anti-)parallel to its momentum.
+ Application of charge and parity (CP) converts all the particles into their
+ respective antiparticles.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:DecayOfPion"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+The second important insight is that the chirality and helicity of the neutrino
+ the same for 
+\begin_inset Formula $m\rightarrow0$
+\end_inset
+
+.
+ A particle's helicity is the projection of the spin vector on its momentum
+ vector given as
+\begin_inset Formula 
+\begin{equation}
+\mathcal{H}=\frac{\boldsymbol{\sigma}\cdot\mathbf{P}}{\left|\mathbf{P}\right|}\label{eq:helicityoperator}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\boldsymbol{\sigma}$
+\end_inset
+
+ is the spin vector and 
+\begin_inset Formula $\mathbf{P}$
+\end_inset
+
+ is the 3-momentum of the particle.
+ Since 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:diraceqnchiralmassless"
@@ -618,7 +674,7 @@ noprefix "false"
 \end_inset
 
  commutes 
-\begin_inset Formula $\left([A,B]=AB-BA\right)$
+\begin_inset Formula $\left([\hat{A},\hat{B}]=\hat{A}\hat{B}-\hat{B}\hat{A}\right)$
 \end_inset
 
  with 
@@ -629,12 +685,19 @@ noprefix "false"
 \begin_inset Formula $\psi_{\text{LH,RH}}$
 \end_inset
 
- are eigenstates of the helicity operater with eigenvalues 
+ are eigenstates of the helicity operator with eigenvalues 
 \begin_inset Formula $\pm1$
 \end_inset
 
 .
  
+\end_layout
+
+\begin_layout Standard
+The observation of only LH neutrinos and RH antineutrinos gives rise to
+ the vector minus axial (V-A) construction of weak interactions.
+ is what allows for parity and charge-parity (CP) violation with weak interactio
+ns
 \end_layout
 
 \begin_layout Subsection
@@ -643,7 +706,7 @@ Neutrino Oscillations
 
 \begin_layout Standard
 Neutrino oscillations were not a known phenomenon when neutrinos were incorporat
-ed into the Standard Model.
+ed into the SM.
  Outstanding problems were arising as the expected flux of neutrinos from
  the Sun and atmosphere were too small.
 \end_layout
@@ -2175,20 +2238,555 @@ and
 
 \end_inset
 
-The probability of 
+As a full example of three-flavor oscillations, the survival probability
+ of a muon type neutrino is given by 
 \begin_inset Formula 
 \begin{equation}
 \begin{aligned}\mathcal{P}\left(\nuantinuparticle{\mu}\rightarrow\nuantinuparticle{\mu}\right)=1-4 & \left(\sss{12}\ccc{23}+\sss{13}\sss{23}\ccc{12}+2\ss{12}\ss{13}\ss{23}\cc{12}\cc{23}\cos\delta_{\text{CP}}\right)\sss{23}\ccc{13}\sin^{2}\phi_{31}\\
 -4 & \left(\ccc{12}\ccc{23}+\sss{13}\sss{23}\sss{12}-2\ss{12}\ss{13}\ss{23}\cc{12}\cc{23}\cos\delta_{\text{CP}}\right)\sss{23}\ccc{13}\sin^{2}\phi_{32}\\
 -4 & \left(\sss{12}\ccc{23}+\sss{13}\sss{23}\ccc{12}+2\ss{12}\ss{13}\ss{23}\cc{12}\cc{23}\cos\delta_{\text{CP}}\right)\\
-\times & \left(\ccc{12}\ccc{23}+\sss{13}\sss{23}\sss{12}-2\ss{12}\ss{13}\ss{23}\cc{12}\cc{23}\cos\delta_{\text{CP}}\right)\sin^{2}\phi_{21}
+\times & \left(\ccc{12}\ccc{23}+\sss{13}\sss{23}\sss{12}-2\ss{12}\ss{13}\ss{23}\cc{12}\cc{23}\cos\delta_{\text{CP}}\right)\sin^{2}\phi_{21}.
 \end{aligned}
 \label{eq:numu2numuthreeflavorfull}
 \end{equation}
 
 \end_inset
 
- with 
+
+\end_layout
+
+\begin_layout Standard
+Best measurements of the oscillations parameters is given in Table
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Value
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Units
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Normal Hierarchy
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Inverted Hierarchy
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Dm 32=\Delta m_{\text{atm}}^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2.51\pm0.05$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-2.56\pm0.04$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $10^{-3}\text{ eV}^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row bottomspace="default">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Dm 21=\Delta m_{\text{sol}}^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $7.53\pm0.18$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $10^{-5}\text{ eV}^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row bottomspace="default">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sin^{2}\left(\theta_{21}\right)$
+\end_inset
+
+=
+\begin_inset Formula $\sin^{2}\left(\theta_{\text{sol}}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.307_{-0.012}^{+0.013}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sin^{2}\left(\theta_{32}\right)$
+\end_inset
+
+=
+\begin_inset Formula $\sin^{2}\left(\theta_{\text{atm}}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Q1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.592_{-0.030}^{+0.023}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Q2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.597_{-0.030}^{+0.024}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Q1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.421_{-0.025}^{+0.033}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Q2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.417_{-0.028}^{+0.025}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sin^{2}\left(\theta_{31}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2.12\pm0.08$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $10^{-2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" bottomspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\delta_{\text{CP}}\negthinspace^{\dagger}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $217_{-28}^{+40}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $280_{-28}^{+25}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+All values are combined values from the Particle Data Group 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Tanabashi2018"
+literal "false"
+
+\end_inset
+
+.
+ 
+\begin_inset Formula $\dagger$
+\end_inset
+
+Taken from 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Esteban:2018azc"
+literal "false"
+
+\end_inset
+
+ since no best fit value is available from the Particle Data Group.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

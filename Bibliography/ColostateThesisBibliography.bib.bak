@@ -884,6 +884,22 @@
   Page                     = {333}
 }
 
+@Article{Esteban:2018azc,
+  Title                    = {Global analysis of three-flavour neutrino oscillations:
+ synergies and tensions in the determination of $\theta_{23},
+ \delta_\text{CP}$, and the mass ordering},
+  Author                   = {Esteban, Ivan and Gonzalez-Garcia, M. C. and
+ Hernandez-Cabezudo, Alvaro and Maltoni, Michele and
+ Schwetz, Thomas},
+  Year                     = {2018},
+
+  Archiveprefix            = {arXiv},
+  Eprint                   = {1811.05487},
+  Primaryclass             = {hep-ph},
+  Reportnumber             = {IFT-UAM/CSIC-18-112, YITP-SB-18-34},
+  Slaccitation             = {%%CITATION = ARXIV:1811.05487;%%}
+}
+
 @Article{Ferrari:2005zk,
   Title                    = {{FLUKA: A multi-particle transport code}},
   Author                   = {A. Ferrari and P. R. Sala and A. Fasso and J. Ranft},
@@ -1765,7 +1781,7 @@
   Editor                   = {Foster, B. and Kolb, E.W.},
   Publisher                = {CRC Press, Boca Raton, FL.},
   Year                     = {2012},
-  Edition                  = {2},
+  Edition                  = {2nd},
 
   Owner                    = {mhogan},
   Timestamp                = {2019.01.15}
