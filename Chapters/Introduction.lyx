@@ -6,6 +6,7 @@
 \origin unavailable
 \textclass csuthesisLyx
 \use_default_options true
+\master ../Thesis.lyx
 \maintain_unincluded_children false
 \language english
 \language_package default
@@ -57,6 +58,10 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -288,8 +293,12 @@ force carrier
 \end_inset
 
  spin.
- The weak nuclear gauge bosons, the W and Z, couple to neutrinos as well
- as the other fermions, particles with half-integer 
+ The weak nuclear gauge bosons, the charged 
+\begin_inset Formula $W^{\pm}$
+\end_inset
+
+ and neutral Z, couple to neutrinos as well as the other fermions, particles
+ with half-integer 
 \begin_inset Formula $\left(\frac{1}{2},\frac{3}{2},\frac{5}{2},...\right)$
 \end_inset
 
@@ -318,7 +327,7 @@ status open
 \begin_inset Graphics
 	filename Figures/Introduction/StandardModel.png
 	lyxscale 25
-	width 3.5in
+	height 17theight%
 
 \end_inset
 
@@ -338,14 +347,18 @@ The Standard Model of particle physics
 
 \end_inset
 
-The Standard Model of particle physics consists of six quarks, six leptons,
- and five gauge bosons including the Higgs boson.
+The Standard Model of particle physics consists of six quarks (up, down,
+ strange, charm, bottom, and top), six leptons (electron, muon, tau, electron
+ neutrino, muon neutrino, and tau neutrino), four force propagating bosons
+ (gluon, photon, W, and Z), and the Higgs boson.
+ The quarks, electron, muon, tau, W, and Z all gain mass through the Higgs
+ field.
  The focus of this thesis are the neutrinos which are classified according
  to their charged, more massive Lepton cousins.
- This graphic was originally submitted on Symmetry Magazine
+ Image taken from 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "RiesselmannSM"
+key "Adams:2013qkq"
 literal "false"
 
 \end_inset
@@ -374,8 +387,69 @@ name "fig:TheStandardModel"
 \begin_layout Standard
 Neutrinos in the SM are electrically neutral, massless particles categorized
  into three generations based on their charged, more massive Lepton cousins.
- They are believed to follow the free-particle Dirac Equation which is given
- by
+ What follows is a brief introduction to neutrino interactions as well as
+ some of their fundamental properties.
+\end_layout
+
+\begin_layout Subsubsection
+Neutrino Weak Interactions
+\end_layout
+
+\begin_layout Standard
+The name 
+\begin_inset Quotes eld
+\end_inset
+
+weak force
+\begin_inset Quotes erd
+\end_inset
+
+ comes from the fact that this force is has a much smaller effective range
+ than the electromagnetic and strong nuclear forces.
+ This is due to the weak mediating bosons, the W and Z, being massive particles
+ unlike the massless gluon (g) and photon (
+\begin_inset Formula $\gamma$
+\end_inset
+
+).
+ The W/Z have masses of 80/90 
+\begin_inset Formula $\text{GeV/c}^{2}$
+\end_inset
+
+, which is more massive than all the elementary particles except for the
+ top quark.
+ For weak interactions to occur at energies far below the masses of the
+ W and Z, the interaction time must be infinitesimally small as dictated
+ by the Heisenberg Uncertainty Principle
+\begin_inset Formula 
+\begin{equation}
+\Delta E\Delta t\gtrsim\hbar\label{eq:heisenberguncertainty}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\Delta E$
+\end_inset
+
+ is the energy of the particle and 
+\begin_inset Formula $\Delta t$
+\end_inset
+
+ is the time which the particle exists.
+ Interactions involving either of the two charged W bosons are called charged
+ current (CC) interactions since a electrical current is exchanged.
+ The same cannot be said of the neutral Z boson, and so interactions with
+ the Z are called neutral current (NC).
+\end_layout
+
+\begin_layout Subsubsection
+Neutrino Chirality
+\end_layout
+
+\begin_layout Standard
+Neutrinos are believed to follow the free-particle Dirac Equation which
+ is given by
 \begin_inset Formula 
 \begin{equation}
 \left[i\hbar\sum_{\mu=0}^{3}\gamma^{\mu}\partial_{\mu}-mc\right]\psi=0\label{eq:diraceqn}
@@ -545,7 +619,61 @@ We now have enough information to make two very important insights about
 \end_layout
 
 \begin_layout Standard
-The first important fact is that a weakly interacting neutrino has positive
+The first important insight is that the chirality and helicity of the neutrino
+ the same for 
+\begin_inset Formula $m\rightarrow0$
+\end_inset
+
+.
+ A particle's helicity is the projection of the spin vector on its momentum
+ vector given as
+\begin_inset Formula 
+\begin{equation}
+\mathcal{H}=\frac{\boldsymbol{\sigma}\cdot\mathbf{P}}{\left|\mathbf{P}\right|}\label{eq:helicityoperator}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\boldsymbol{\sigma}$
+\end_inset
+
+ is the spin vector and 
+\begin_inset Formula $\mathbf{P}$
+\end_inset
+
+ is the 3-momentum of the particle.
+ Since 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:diraceqnchiralmassless"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ commutes 
+\begin_inset Formula $\left(\left[\hat{A},\hat{B}\right]=\hat{A}\hat{B}-\hat{B}\hat{A}\right)$
+\end_inset
+
+ with 
+\begin_inset Formula $\mathcal{H},$
+\end_inset
+
+ 
+\begin_inset Formula $\psi_{\text{LH,RH}}$
+\end_inset
+
+ are eigenstates of the helicity operator with eigenvalues 
+\begin_inset Formula $\pm1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The second important fact is that a weakly interacting neutrino has positive
  energy 
 \begin_inset Formula $E=\left|\boldsymbol{P}\right|c$
 \end_inset
@@ -568,7 +696,25 @@ noprefix "false"
  which is interpreted to mean it travels backwards in time.
  Since neutrinos are nearly massless, there are no mechanisms for RH neutrinos
  and LH antineutrinos.
- Understanding the handedness of a particle is visualized in Figure
+ The helicity of the neutrino is visualized in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:DecayOfPion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ which shows the decay of a pion at rest into a muon and neutrino.
+ Since a pion has net zero (0) spin, the spin vectors of the daughters must
+ also sum to zero.
+ The neutrino's helicity (-1) and hence LH chirality is inferred by the
+ positively charged muon of which has +1 helicity.
+ To confirm the antineutrino's RH chirality (+1) requires both a charge
+ (C) conjugation and parity (P) transformation.
+ A C conjugation transforms all particles into their corresponding antiparticles
+ while P transformation inverts all spatial coordinates.
 \begin_inset Float figure
 wide false
 sideways false
@@ -639,65 +785,23 @@ name "fig:DecayOfPion"
 \end_layout
 
 \begin_layout Standard
-The second important insight is that the chirality and helicity of the neutrino
- the same for 
-\begin_inset Formula $m\rightarrow0$
-\end_inset
-
-.
- A particle's helicity is the projection of the spin vector on its momentum
- vector given as
-\begin_inset Formula 
-\begin{equation}
-\mathcal{H}=\frac{\boldsymbol{\sigma}\cdot\mathbf{P}}{\left|\mathbf{P}\right|}\label{eq:helicityoperator}
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Formula $\boldsymbol{\sigma}$
-\end_inset
-
- is the spin vector and 
-\begin_inset Formula $\mathbf{P}$
-\end_inset
-
- is the 3-momentum of the particle.
- Since 
+The observation of only LH neutrinos and RH antineutrinos are an important
+ feature in the SM.
+ The weak force allows for P and CP violation due to its vector minus axial-vect
+or (V-A) construction which is how a LH neutrino is described in 
 \begin_inset CommandInset ref
 LatexCommand eqref
-reference "eq:diraceqnchiralmassless"
+reference "eq:chiraloperators"
 plural "false"
 caps "false"
 noprefix "false"
 
 \end_inset
 
- commutes 
-\begin_inset Formula $\left([\hat{A},\hat{B}]=\hat{A}\hat{B}-\hat{B}\hat{A}\right)$
-\end_inset
-
- with 
-\begin_inset Formula $\mathcal{H},$
-\end_inset
-
- 
-\begin_inset Formula $\psi_{\text{LH,RH}}$
-\end_inset
-
- are eigenstates of the helicity operator with eigenvalues 
-\begin_inset Formula $\pm1$
-\end_inset
-
 .
- 
-\end_layout
-
-\begin_layout Standard
-The observation of only LH neutrinos and RH antineutrinos gives rise to
- the vector minus axial (V-A) construction of weak interactions.
- is what allows for parity and charge-parity (CP) violation with weak interactio
-ns
+ Further observation of CP violation is being explored with neutrinos through
+ a process called neutrino oscillations.
+ This will be explained in the next subsection.
 \end_layout
 
 \begin_layout Subsection
@@ -705,10 +809,11 @@ Neutrino Oscillations
 \end_layout
 
 \begin_layout Standard
-Neutrino oscillations were not a known phenomenon when neutrinos were incorporat
-ed into the SM.
- Outstanding problems were arising as the expected flux of neutrinos from
- the Sun and atmosphere were too small.
+Neutrino oscillations are the observation of a neutrino produced of definite
+ flavor and later observed as a different flavor.
+ A deficit of neutrinos were observed for a number of atmospheric and solar
+ neutrino experiments and the effect became more pronounced as the distance
+ from the source increased.
 \end_layout
 
 \begin_layout Standard
@@ -724,22 +829,52 @@ The first indication of neutrino oscillations was from the Ray Davis Homesteak
 \begin_inset Quotes eld
 \end_inset
 
-Solar Neutrino Problem
+Solar Neutrino Problem.
 \begin_inset Quotes erd
 \end_inset
 
-.
- Ultimately vindicated by the confirmation of neutrino oscillations, the
- Homesteak Mine measurements helped establish the Standard Solar Model.
+ The primary solutions were either the neutrino capture cross section is
+ lacking or the solar model was incorrect.
+ The Sudbury Neutrino Observatory (SNO) was able to resolve this by making
+ a model-independent measurement of the solar neutrino flux.
+ The SNO 
+\begin_inset Formula $\nue$
+\end_inset
+
+CC/NC ratio is given by 
+\begin_inset Formula $0.301\pm0.033$
+\end_inset
+
+, which confirmed that only 30% of neutrinos arrive as 
+\begin_inset Formula $\nue$
+\end_inset
+
+ on Earth, firmly established that the majority of neutrinos arrive as the
+ wrong flavor.
 \end_layout
 
 \begin_layout Standard
 Another outstanding problem emerged with measurements of atmospheric neutrinos,
  in particular muon and electron types.
- Atmospheric neutrinos are produced when cosmic rays strike the atmosphere.
- These collisions generate neutrinos through different decay channels.
- In total the ratio of muon to electron neutrinos should equal 2:1, but
- there was observed deficit in muon type neutrinos.
+ Atmospheric neutrinos are produced when high energy cosmic rays strike
+ atmospheric particles.
+ These cosmic ray collisions generate mostly pions and kaons that decay
+ into neutrinos.
+ When trying to measure the 
+\begin_inset Formula $\numu/\nue$
+\end_inset
+
+ ratio and comparing that with expected ratio, there was a significant deficit.
+ This was particularly a problem as a function of the zenith angle for the
+ Super-Kamiokande experiment.
+\end_layout
+
+\begin_layout Standard
+While the phenomenon of neutrino oscillations has understood for decades,
+ it is not incorporated into the SM since oscillations require the neutrino
+ has mass.
+ The reasons why neutrino oscillations require massive neutrinos is explained
+ in the next subsection.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1711,7 +1846,7 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="7" columns="5">
-<features tabularvalignment="middle">
+<features booktabs="true" tabularvalignment="middle">
 <column alignment="left" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="left" valignment="top">
@@ -2212,10 +2347,11 @@ Unfortunately, neutrino oscillations are not able to probe the Majorana
 
  particles is an open question and is being explored by non-oscillation
  experiments.
+ The full three flavor oscillation probability is given by
 \begin_inset Formula 
 \begin{equation}
-\begin{aligned}\mathcal{P}\left(\nu_{\alpha}\rightarrow\nu_{\beta}\right)=\delta_{\alpha\beta}-4 & \sum_{j=1}^{3}\left[\sum_{i=j+1}^{3}\text{Re}\left(K_{\alpha\beta,ij}\right)\sin^{2}\left(\phi_{ij}\right)\right]\\
-+4 & \sum_{j=1}^{3}\left[\sum_{i=j+1}^{3}\text{Im}\left(K_{\alpha\beta,ij}\right)\sin\left(\phi_{ij}\right)\cos\left(\phi_{ij}\right)\right]
+\begin{aligned}\mathcal{P}\left(\nu_{\alpha}\rightarrow\nu_{\beta}\right)=\delta_{\alpha\beta}-4 & \sum_{j=1}^{3}\left[\sum_{i>j}^{3}\text{Re}\left(K_{\alpha\beta,ij}\right)\sin^{2}\left(\phi_{ij}\right)\right]\\
++4 & \sum_{j=1}^{3}\left[\sum_{i>j}^{3}\text{Im}\left(K_{\alpha\beta,ij}\right)\sin\left(\phi_{ij}\right)\cos\left(\phi_{ij}\right)\right]
 \end{aligned}
 \label{eq:threeflavorprobgeneral}
 \end{equation}
@@ -2230,7 +2366,7 @@ K_{\alpha\beta,ij}=U_{\alpha i}U_{\beta_{i}}^{*}U_{\alpha j}^{*}U_{\beta j}\labe
 
 \end_inset
 
-and
+encapsulates the MNSP matrix elements and
 \begin_inset Formula 
 \begin{equation}
 \phi_{ij}=\frac{\Dm ijc^{3}}{4\hbar}\frac{L}{E_{\nu}}.\label{eq:threeflavorprobgeneralphi}
@@ -2238,34 +2374,226 @@ and
 
 \end_inset
 
-As a full example of three-flavor oscillations, the survival probability
- of a muon type neutrino is given by 
+Since CP violation means that 
+\begin_inset Formula $\mathcal{P}\left(\nuparticle{\alpha}\rightarrow\nuparticle{\beta\neq\alpha}\right)\neq\mathcal{P}\left(\antinuparticle{\alpha}\rightarrow\antinuparticle{\beta\neq\alpha}\right),$
+\end_inset
+
+ CP violating (conserving) terms must be an odd (even) function of 
+\begin_inset Formula $\delta_{\text{CP}}$
+\end_inset
+
+.
+ As an example, consider the survival probability of a muon type neutrinos
+ is given by 
 \begin_inset Formula 
 \begin{equation}
-\begin{aligned}\mathcal{P}\left(\nuantinuparticle{\mu}\rightarrow\nuantinuparticle{\mu}\right)=1-4 & \left(\sss{12}\ccc{23}+\sss{13}\sss{23}\ccc{12}+2\ss{12}\ss{13}\ss{23}\cc{12}\cc{23}\cos\delta_{\text{CP}}\right)\sss{23}\ccc{13}\sin^{2}\phi_{31}\\
--4 & \left(\ccc{12}\ccc{23}+\sss{13}\sss{23}\sss{12}-2\ss{12}\ss{13}\ss{23}\cc{12}\cc{23}\cos\delta_{\text{CP}}\right)\sss{23}\ccc{13}\sin^{2}\phi_{32}\\
--4 & \left(\sss{12}\ccc{23}+\sss{13}\sss{23}\ccc{12}+2\ss{12}\ss{13}\ss{23}\cc{12}\cc{23}\cos\delta_{\text{CP}}\right)\\
-\times & \left(\ccc{12}\ccc{23}+\sss{13}\sss{23}\sss{12}-2\ss{12}\ss{13}\ss{23}\cc{12}\cc{23}\cos\delta_{\text{CP}}\right)\sin^{2}\phi_{21}.
+\begin{aligned}\mathcal{P}\left(\nuantinuparticle{\mu}\rightarrow\nuantinuparticle{\mu}\right)=1-4 & \sss{23}\ccc{13}\left(V_{\cos\delta_{\text{CP}}}\right)\sin^{2}\phi_{31}\\
+-4 & \sss{23}\ccc{13}\left(Z_{\cos\delta_{\text{CP}}}\right)\sin^{2}\phi_{32}\\
+-4 & \left(V_{\cos\delta_{\text{CP}}}\right)\left(Z_{\cos\delta_{\text{CP}}}\right)\sin^{2}\phi_{21}
 \end{aligned}
 \label{eq:numu2numuthreeflavorfull}
 \end{equation}
 
 \end_inset
 
+where
+\begin_inset Formula 
+\begin{equation}
+V_{\cos\delta_{\text{CP}}}=\sss{12}\ccc{23}+\sss{13}\sss{23}\ccc{12}+2\ss{12}\ss{13}\ss{23}\cc{12}\cc{23}\cos\delta_{\text{CP}}\label{eq:Vcosdelta}
+\end{equation}
 
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+Z_{\cos\delta_{\text{CP}}}=\ccc{12}\ccc{23}+\sss{13}\sss{23}\sss{12}-2\ss{12}\ss{13}\ss{23}\cc{12}\cc{23}\cos\delta_{\text{CP}}\label{eq:Zcosdelta}
+\end{equation}
+
+\end_inset
+
+and 
+\begin_inset Formula $\nuantinuparticle{\mu}$
+\end_inset
+
+ represents either 
+\begin_inset Formula $\numu$
+\end_inset
+
+ or 
+\begin_inset Formula $\antinumu$
+\end_inset
+
+.
+ Since all CP violating terms in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:numu2numuthreeflavorfull"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ are even functions of 
+\begin_inset Formula $\deltacp$
+\end_inset
+
+, this channel does not offer insights into CP violation.
+ However, it through appearance measurements that CP violation can probed.
+ The appearance probability of electron neutrinos types from muon types
+ is given by
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned}\mathcal{P}\left(\nuantinuparticle{\mu}\rightarrow\nuantinuparticle e\right)= & 4\ccc{13}\sss{13}\sss{23}\sin^{2}\phi_{31}\\
+ & +8\left(X_{\cos\delta_{\text{CP}}}\right)\cos\phi_{23}\sin\phi_{31}\sin\phi_{21}\\
+ & \overset{_{(+)}}{-}\underset{\text{CP violating}}{8\underbrace{\left(Y_{\sin\delta_{\text{CP}}}\right)}}\sin\phi_{32}\sin\phi_{31}\sin\phi_{21}\\
+ & +4\left(Z_{\cos\delta_{\text{CP}}}\right)\sss{12}\ccc{13}\sin^{2}\phi_{21}
+\end{aligned}
+\label{eq:numu2nuethreeflavorfull}
+\end{equation}
+
+\end_inset
+
+where
+\begin_inset Formula 
+\begin{equation}
+X_{\cos\delta_{\text{CP}}}=\ccc{13}\ss{12}\ss{12}\ss{23}\left(\cc{12}\cc{23}\cos\delta_{\text{CP}}-\ss{12}\ss{13}\right)\label{eq:Xcosdelta}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+Y_{\sin\delta_{\text{CP}}}=\frac{1}{8}\sin\left(2\theta_{12}\right)\sin\left(2\theta_{13}\right)\sin\left(2\theta_{23}\right)\cc{13}\sin\delta_{\text{CP}}\label{eq:Ysindelta}
+\end{equation}
+
+\end_inset
+
+and (+) represents the sign change from neutrinos to antineutrinos.
+ The CP violating term 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Ysindelta"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is also known as the Jarlskog Invariant and is a measure of CP violation
+ independent of the mixing parameterization
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Jarlskog1985"
+literal "false"
+
+\end_inset
+
+.
+ This oscillation channel are of primary importance in accelerator and atmospher
+ic neutrino oscillation experiments.
 \end_layout
 
 \begin_layout Standard
-Best measurements of the oscillations parameters is given in Table
+Traveling through matter also increases the sensitivity of oscillation measureme
+nts.
+ Known as the Mikheyev-Smirnov-Wolfenstein (MSW) effect, any oscillations
+ is affected by coherent forward scattering of neutrinos with electrons
+ in the media.
+ The MSW effect alters the oscillation probability as a function of the
+ baseline, electron density, and neutrino energy.
+ Taking the example of electron appearance in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:numu2nuethreeflavorfull"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, the MSW effect to first order is 
+\begin_inset Formula 
+\begin{equation}
+\mathcal{P}\left(\nuantinuparticle{\mu}\rightarrow\nuantinuparticle e\right)\rightarrow\eqref{eq:numu2nuethreeflavorfull}+\left(8\ccc{13}\sss{13}\sss{23}\right)\left(1-2\sss{13}\right)\frac{\alpha}{\Dm 31}\left(\sin^{2}\phi_{31}\overset{_{(+)}}{-}\phi_{31}\cos\phi_{32}\sin\phi_{31}\right)\label{eq:numu2nuethreeflavormasseffect}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula 
+\begin{equation}
+\alpha=2\sqrt{2}G_{F}n_{e}E_{\nu}\label{eq:alphaMSW}
+\end{equation}
+
+\end_inset
+
+and 
+\begin_inset Formula $G_{F}$
+\end_inset
+
+ is the Fermi constant and 
+\begin_inset Formula $n_{e}$
+\end_inset
+
+ is the average electron density of the Earth which the neutrinos travel
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevD.56.3093"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+While most of the parameters that describe neutrino oscillations, there
+ are a couple of degeneracies to unravel as well as precise measurement
+ of 
+\begin_inset Formula $\deltacp$
+\end_inset
+
+.
+ While the two mass-squared splittings are known, it is unknown whether
+ 
+\begin_inset Formula $m_{3}$
+\end_inset
+
+ is greater or less than 
+\begin_inset Formula $m_{1}$
+\end_inset
+
+.
+ This problem is known as the mass hierarchy problem.
+ Also oscillations are insensitive to octant of 
+\begin_inset Formula $\theta_{23}$
+\end_inset
+
+.
+ Best measurements of the oscillations parameters is given in Table 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "tab:mnspparameters"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \begin_inset Float table
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="8" columns="4">
-<features tabularvalignment="middle">
+<features booktabs="true" tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -2280,20 +2608,20 @@ Parameter
 
 \end_inset
 </cell>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Value
+Normal Hierarchy
 \end_layout
 
 \end_inset
 </cell>
-<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Inverted Hierarchy
 \end_layout
 
 \end_inset
@@ -2322,7 +2650,7 @@ Units
 \begin_inset Text
 
 \begin_layout Plain Layout
-Normal Hierarchy
+value
 \end_layout
 
 \end_inset
@@ -2331,7 +2659,7 @@ Normal Hierarchy
 \begin_inset Text
 
 \begin_layout Plain Layout
-Inverted Hierarchy
+value
 \end_layout
 
 \end_inset
@@ -2347,7 +2675,7 @@ Inverted Hierarchy
 </cell>
 </row>
 <row topspace="default" bottomspace="default">
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2359,7 +2687,7 @@ Inverted Hierarchy
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2371,7 +2699,7 @@ Inverted Hierarchy
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2383,7 +2711,7 @@ Inverted Hierarchy
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2503,7 +2831,7 @@ Inverted Hierarchy
 \begin_inset Formula $\sin^{2}\left(\theta_{\text{atm}}\right)$
 \end_inset
 
- 
+
 \end_layout
 
 \end_inset
@@ -2522,7 +2850,7 @@ Inverted Hierarchy
 \begin_inset Text
 
 \begin_layout Plain Layout
-Q1
+O1:
 \end_layout
 
 \end_inset
@@ -2545,7 +2873,7 @@ Q1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Q2
+O2:
 \end_layout
 
 \end_inset
@@ -2586,7 +2914,7 @@ Q2
 \begin_inset Text
 
 \begin_layout Plain Layout
-Q1
+O1:
 \end_layout
 
 \end_inset
@@ -2609,7 +2937,7 @@ Q1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Q2
+O2:
 \end_layout
 
 \end_inset
@@ -2698,7 +3026,7 @@ Q2
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\delta_{\text{CP}}\negthinspace^{\dagger}$
+\begin_inset Formula $\delta_{\text{CP}}$
 \end_inset
 
 
@@ -2734,7 +3062,7 @@ Q2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+degrees
 \end_layout
 
 \end_inset
@@ -2751,28 +3079,145 @@ Q2
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-All values are combined values from the Particle Data Group 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Table of Best Fit MNSP Parameters Split by Normal and Inverted hierarchy
+\end_layout
+
+\end_inset
+
+Table of best fit MNSP parameters split by normal and inverted hierarchy.
+ O1 and O2 correspond to the first octant (
+\begin_inset Formula $\theta\in(0,\nicefrac{\pi}{2})$
+\end_inset
+
+) or second octant (
+\begin_inset Formula $\theta\in(\nicefrac{\pi}{2},\nicefrac{\pi}{4})$
+\end_inset
+
+).
+ All values except for 
+\begin_inset Formula $\deltacp$
+\end_inset
+
+ are combined values from the Particle Data Group and 
+\begin_inset Formula $\deltacp$
+\end_inset
+
+ is from the 2018 NuFit analysis 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Tanabashi2018"
+key "Tanabashi2018,Esteban:2018azc"
 literal "false"
 
 \end_inset
 
 .
- 
-\begin_inset Formula $\dagger$
-\end_inset
-
-Taken from 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Esteban:2018azc"
-literal "false"
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:mnspparameters"
 
 \end_inset
 
- since no best fit value is available from the Particle Data Group.
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/Introduction/FlavorComponentsOfMassStates.png
+	lyxscale 25
+	height 15theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/Introduction/MassComponentsOfFlavorStates.png
+	lyxscale 25
+	height 15theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset

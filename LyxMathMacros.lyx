@@ -95,7 +95,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\nuantinuparticle}[1]{\ ^{{\scriptscriptstyle ({\scriptstyle -}\!}}\negmedspace\negmedspace\negmedspace\nu^{{\scriptscriptstyle )}}_{#1}}
+\newcommand{\nuantinuparticle}[1]{\ ^{{\scriptscriptstyle ({\scriptstyle -}\!}}\negmedspace\negmedspace\negmedspace\nu_{#1}^{{\scriptscriptstyle )}}}
 {\stackrel{(-)}{\nu_{#1}}}
 \end_inset
 
@@ -268,6 +268,24 @@
 
 \begin_inset FormulaMacro
 \newcommand{\ccc}[1]{c_{#1}^{2}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\deltacp}{\delta_{\text{CP}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cdcp}{\cos\deltacp}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sdcp}{\sin\deltacp}
 \end_inset
 
 
