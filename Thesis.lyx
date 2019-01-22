@@ -112,7 +112,7 @@
 \use_package undertilde 0
 \cite_engine basic
 \cite_engine_type default
-\biblio_style plain
+\biblio_style apsrev
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -133,8 +133,8 @@
 \topmargin 1in
 \rightmargin 1in
 \bottommargin 1in
-\secnumdepth 2
-\tocdepth 2
+\secnumdepth 3
+\tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
 \is_math_indent 0

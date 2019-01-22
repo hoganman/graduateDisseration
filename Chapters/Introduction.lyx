@@ -267,6 +267,13 @@ flavor oscillations
 
 \begin_layout Subsection
 Neutrinos in the Standard Model
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:nuSM"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -287,13 +294,21 @@ force carrier
 \end_inset
 
  particle that mediates the interactions between particles.
- The force carriers are formally called gauge bosons which indicates they
- are particles with integer 
+ The force carriers are formally called 
+\begin_inset Quotes eld
+\end_inset
+
+gauge bosons
+\begin_inset Quotes erd
+\end_inset
+
+ which indicates they are particles with integer 
 \begin_inset Formula $(0,1,2,...)$
 \end_inset
 
- spin.
- The weak nuclear gauge bosons, the charged 
+ spin that come in temporary but unobservable existence to mediate the interacti
+on.
+ The weak nuclear bosons, the charged 
 \begin_inset Formula $W^{\pm}$
 \end_inset
 
@@ -303,9 +318,9 @@ force carrier
 \end_inset
 
  spin, in the SM.
- All the elementary particles of the SM are shown in Figure 
+ All the elementary particles of the SM are shown in 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "fig:TheStandardModel"
 plural "false"
 caps "false"
@@ -327,7 +342,7 @@ status open
 \begin_inset Graphics
 	filename Figures/Introduction/StandardModel.png
 	lyxscale 25
-	height 17theight%
+	height 25theight%
 
 \end_inset
 
@@ -387,12 +402,68 @@ name "fig:TheStandardModel"
 \begin_layout Standard
 Neutrinos in the SM are electrically neutral, massless particles categorized
  into three generations based on their charged, more massive Lepton cousins.
- What follows is a brief introduction to neutrino interactions as well as
+ The neutrino and charged lepton pair into a 
+\begin_inset Quotes eld
+\end_inset
+
+weak isospin doublet
+\begin_inset Quotes erd
+\end_inset
+
+ in the SM.
+ These doublets are locally gauge invariant under a SU(2)
+\begin_inset Formula $\times$
+\end_inset
+
+U(1) symmetry which leads to the required existence of the photon and W
+ and Z bosons
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+A gauge theory describes ways to measure physical forces or fields through
+ interactions between elementary particles.
+ The electric or magnetic fields for example can only be probed by charged
+ particles.
+ In the realm of quantum field theories, fields are postulated to permeate
+ everywhere and it is excitations of these fields which produce experimental
+ observables.
+ Fields are constructed using the Lagrangian formalism and altered using
+ gauge transformations.
+ If altering the Lagrangian in some way does not affect the observables,
+ this is referred to as a gauge invariance.
+ Local gauge invariance means that under the constraints of the experiment,
+ certain gauge transformations do not affect the observables.
+ The allowed locally gauge invariant transformations require knowledge of
+ its underlying Lie, or symmetry, group.
+ With the weak isospin doublets, the Lie groups are SU(2)
+\begin_inset Formula $\times$
+\end_inset
+
+U(1) where SU(2) is the special unitary group of 2x2 unitary matrices, and
+ U(1) is the unitary (circle) group consisting of complex numbers of magnitude
+ 1.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+What follows is a brief introduction to neutrino interactions as well as
  some of their fundamental properties.
 \end_layout
 
 \begin_layout Subsubsection
 Neutrino Weak Interactions
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Neutrino-Weak-Interactions"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -418,9 +489,17 @@ weak force
 
 , which is more massive than all the elementary particles except for the
  top quark.
- For weak interactions to occur at energies far below the masses of the
- W and Z, the interaction time must be infinitesimally small as dictated
- by the Heisenberg Uncertainty Principle
+ For weak interactions to occur at energies far below the masses (also called
+ 
+\begin_inset Quotes eld
+\end_inset
+
+off-shell
+\begin_inset Quotes erd
+\end_inset
+
+) of the W and Z, the interaction time must be infinitesimally small as
+ dictated by the Heisenberg Uncertainty Principle
 \begin_inset Formula 
 \begin{equation}
 \Delta E\Delta t\gtrsim\hbar\label{eq:heisenberguncertainty}
@@ -437,14 +516,188 @@ where
 \end_inset
 
  is the time which the particle exists.
- Interactions involving either of the two charged W bosons are called charged
- current (CC) interactions since a electrical current is exchanged.
- The same cannot be said of the neutral Z boson, and so interactions with
- the Z are called neutral current (NC).
+\end_layout
+
+\begin_layout Standard
+Weak interactions are classified into two classes: charged current (CC)
+ and neutral current (NC).
+ CC interactions involve one of the two charged W bosons and change the
+ incoming neutrino of flavor 
+\begin_inset Formula $\nu_{l}$
+\end_inset
+
+ 
+\begin_inset Formula $(l=e,\mu,\tau)$
+\end_inset
+
+ into a electrically charged lepton of flavor 
+\begin_inset Formula $l$
+\end_inset
+
+ or vice-versa.
+ The same cannot be said of NC interactions which exchange a neutral Z boson.
+ NC interactions do not change the flavor of the incoming particles and
+ are therefore flavor agnostic.
+ An example of each interaction type is shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:CCNCInteractions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/MuonDecayJaxoDraw.png
+	lyxscale 25
+	height 25theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Muon Decay
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/NCScatteringJaxoDraw.png
+	lyxscale 25
+	height 25theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nu+e^{-}$
+\end_inset
+
+ NC Scattering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+CC And NC Feynman Diagrams
+\end_layout
+
+\end_inset
+
+Left: Muon decay 
+\begin_inset Formula $\left(\mu^{-}\rightarrow\numu\antinue e^{-}\right)$
+\end_inset
+
+ Feynman diagram with time increasing from bottom to top.
+ This is a charged current process that converts a muon into a muon neutrino
+ via the emission of a W boson.
+ Due to a conserved quantum number called lepton number, the W must emit
+ an electron and electron neutrino pair.
+ Right: Neutral current interaction Feynman diagram where time increases
+ from left to right.
+ This is a neutral current interaction where a neutrino of arbitrary flavor
+ 
+\begin_inset Formula $X$
+\end_inset
+
+ scatters off an electron via the emission of a Z boson.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:CCNCInteractions"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
-Neutrino Chirality
+Chirality
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Chirality"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -495,7 +748,7 @@ where
 
 The solutions to 
 \begin_inset CommandInset ref
-LatexCommand eqref
+LatexCommand formatted
 reference "eq:diraceqn"
 plural "false"
 caps "false"
@@ -531,7 +784,7 @@ The chiral operators
 
  in 
 \begin_inset CommandInset ref
-LatexCommand eqref
+LatexCommand formatted
 reference "eq:chiralprojections"
 plural "false"
 caps "false"
@@ -572,7 +825,7 @@ and
  are LH and RH chiral spinors.
  Using 
 \begin_inset CommandInset ref
-LatexCommand eqref
+LatexCommand formatted
 reference "eq:chiraloperators"
 plural "false"
 caps "false"
@@ -645,7 +898,7 @@ where
  is the 3-momentum of the particle.
  Since 
 \begin_inset CommandInset ref
-LatexCommand eqref
+LatexCommand formatted
 reference "eq:diraceqnchiralmassless"
 plural "false"
 caps "false"
@@ -680,7 +933,7 @@ The second important fact is that a weakly interacting neutrino has positive
 
  and is always LH as shown in 
 \begin_inset CommandInset ref
-LatexCommand eqref
+LatexCommand formatted
 reference "eq:chiraloperators"
 plural "false"
 caps "false"
@@ -696,9 +949,9 @@ noprefix "false"
  which is interpreted to mean it travels backwards in time.
  Since neutrinos are nearly massless, there are no mechanisms for RH neutrinos
  and LH antineutrinos.
- The helicity of the neutrino is visualized in Figure 
+ The helicity of the neutrino is visualized in 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "fig:DecayOfPion"
 plural "false"
 caps "false"
@@ -725,7 +978,7 @@ status open
 \begin_inset Graphics
 	filename Figures/Introduction/ChiralityPionDecay.png
 	lyxscale 50
-	width 50text%
+	height 25theight%
 
 \end_inset
 
@@ -790,7 +1043,7 @@ The observation of only LH neutrinos and RH antineutrinos are an important
  The weak force allows for P and CP violation due to its vector minus axial-vect
 or (V-A) construction which is how a LH neutrino is described in 
 \begin_inset CommandInset ref
-LatexCommand eqref
+LatexCommand formatted
 reference "eq:chiraloperators"
 plural "false"
 caps "false"
@@ -806,6 +1059,13 @@ noprefix "false"
 
 \begin_layout Subsection
 Neutrino Oscillations
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Neutrino-Oscillations"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -814,6 +1074,7 @@ Neutrino oscillations are the observation of a neutrino produced of definite
  A deficit of neutrinos were observed for a number of atmospheric and solar
  neutrino experiments and the effect became more pronounced as the distance
  from the source increased.
+ Oscillations established that one or more neutrinos have non-zero mass.
 \end_layout
 
 \begin_layout Standard
@@ -850,7 +1111,15 @@ CC/NC ratio is given by
 \end_inset
 
  on Earth, firmly established that the majority of neutrinos arrive as the
- wrong flavor.
+ wrong flavor
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Zuber2012"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -867,18 +1136,27 @@ Another outstanding problem emerged with measurements of atmospheric neutrinos,
  ratio and comparing that with expected ratio, there was a significant deficit.
  This was particularly a problem as a function of the zenith angle for the
  Super-Kamiokande experiment.
+ It was the first experiment to perform a neutrino oscillation analysis
+ that successfully explained the deficit.
 \end_layout
 
 \begin_layout Standard
 While the phenomenon of neutrino oscillations has understood for decades,
- it is not incorporated into the SM since oscillations require the neutrino
- has mass.
+ it is not incorporated formally into the SM since oscillations require
+ the neutrino has mass.
  The reasons why neutrino oscillations require massive neutrinos is explained
  in the next subsection.
 \end_layout
 
 \begin_layout Subsubsection
 Two Flavor Derivation
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Two-Flavor-Derivation"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -886,7 +1164,7 @@ The phenomenon of neutrino oscillations can be described with elementary
  Quantum Mechanics.
  Beginning with the Schrödinger Equation in 
 \begin_inset CommandInset ref
-LatexCommand eqref
+LatexCommand formatted
 reference "eq:schroeqn"
 plural "false"
 caps "false"
@@ -942,7 +1220,7 @@ where
 .
  If we substitute 
 \begin_inset CommandInset ref
-LatexCommand eqref
+LatexCommand formatted
 reference "eq:schroeqntimeindep"
 plural "false"
 caps "false"
@@ -952,7 +1230,7 @@ noprefix "false"
 
  into 
 \begin_inset CommandInset ref
-LatexCommand eqref
+LatexCommand formatted
 reference "eq:schroeqn"
 plural "false"
 caps "false"
@@ -990,7 +1268,7 @@ where
 .
  The time-independent solution to 
 \begin_inset CommandInset ref
-LatexCommand eqref
+LatexCommand formatted
 reference "eq:schroeqn"
 plural "false"
 caps "false"
@@ -1064,7 +1342,7 @@ flavor
 
  (but not energy!), the exponential term in 
 \begin_inset CommandInset ref
-LatexCommand eqref
+LatexCommand formatted
 reference "eq:schroeqnsolutiontimeindep"
 plural "false"
 caps "false"
@@ -1079,7 +1357,7 @@ noprefix "false"
 
 , between the basis states given by 
 \begin_inset CommandInset ref
-LatexCommand eqref
+LatexCommand formatted
 reference "eq:pmnstwodimgen"
 plural "false"
 caps "false"
@@ -1140,9 +1418,9 @@ where
 \end_inset
 
  is the angle between the two bases.
- We can imagine this transformation between bases as shown in Figure 
+ We can imagine this transformation between bases as shown in 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "fig:twoflavorrotation"
 plural "false"
 caps "false"
@@ -1178,7 +1456,7 @@ status open
 \begin_inset Graphics
 	filename Figures/Introduction/RotationMatrix.png
 	lyxscale 50
-	scale 50
+	height 25theight%
 
 \end_inset
 
@@ -1256,7 +1534,7 @@ where for simplicity
 .
  Evaluating all inner products and simplifying terms in 
 \begin_inset CommandInset ref
-LatexCommand eqref
+LatexCommand formatted
 reference "eq:prob2flavorexpanded"
 plural "false"
 caps "false"
@@ -1266,7 +1544,7 @@ noprefix "false"
 
  results in 
 \begin_inset CommandInset ref
-LatexCommand eqref
+LatexCommand formatted
 reference "eq:prob2flavorsimplified"
 plural "false"
 caps "false"
@@ -1299,7 +1577,7 @@ neutrino oscillations
 
  should be more apparent now since 
 \begin_inset CommandInset ref
-LatexCommand eqref
+LatexCommand formatted
 reference "eq:prob2flavorsimplified"
 plural "false"
 caps "false"
@@ -1362,7 +1640,7 @@ where we have used the fact that
  is the neutrino energy as measured in the laboratory.
  Substituting all of our assumptions in 
 \begin_inset CommandInset ref
-LatexCommand eqref
+LatexCommand formatted
 reference "eq:prob2flavorsimplified"
 plural "false"
 caps "false"
@@ -1372,7 +1650,7 @@ noprefix "false"
 
 , we get 
 \begin_inset CommandInset ref
-LatexCommand eqref
+LatexCommand formatted
 reference "eq:prob2flavorapprox"
 plural "false"
 caps "false"
@@ -1433,9 +1711,9 @@ which more clearly demonstrates the Physics in oscillations.
 \begin_inset Formula $\Delta m^{2}$
 \end_inset
 
- as illustrated in Figure 
+ as illustrated in 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "fig:Two-flavor-oscillation"
 plural "false"
 caps "false"
@@ -1465,9 +1743,9 @@ noprefix "false"
 \begin_inset Formula $L/E_{\nu}$
 \end_inset
 
- as shown in Figure 
+ as shown in 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "fig:Two-flavor-oscillation-2"
 plural "false"
 caps "false"
@@ -1489,7 +1767,7 @@ status open
 \begin_inset Graphics
 	filename Figures/Introduction/TwoNeutrinoOscillations.png
 	lyxscale 50
-	width 49text%
+	height 25theight%
 
 \end_inset
 
@@ -1564,7 +1842,7 @@ status open
 \begin_inset Graphics
 	filename Figures/Introduction/OscillationProb2FlavorLog.png
 	lyxscale 50
-	width 49text%
+	height 25theight%
 
 \end_inset
 
@@ -1667,6 +1945,13 @@ name "fig:Two-flavor-oscillation-2"
 
 \begin_layout Subsubsection
 Three Flavor Oscillations
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Three-Flavor-Oscillations"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1746,7 +2031,7 @@ literal "false"
  The MNSP matrix is decomposed into separate rotation matrices as given
  by 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "eq:mnspdecomposed"
 plural "false"
 caps "false"
@@ -1826,9 +2111,9 @@ sol
 
 's, respectively.
  The sensitivity of neutrino oscillations for different sources is given
- in Table 
+ in 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "tab:SensitivityOscill"
 plural "false"
 caps "false"
@@ -1849,7 +2134,7 @@ status open
 <features booktabs="true" tabularvalignment="middle">
 <column alignment="left" valignment="top">
 <column alignment="center" valignment="top">
-<column alignment="left" valignment="top">
+<column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="left" valignment="top">
 <row>
@@ -1857,6 +2142,8 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Source
 \end_layout
 
@@ -1866,19 +2153,9 @@ Source
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Species
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\overline{E}$
-\end_inset
-
- [GeV]
 \end_layout
 
 \end_inset
@@ -1887,10 +2164,24 @@ Species
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $L$
-\end_inset
 
- [km]
+\series bold
+Baseline 
+\series default
+[km]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Mean Energy 
+\series default
+[GeV]
 \end_layout
 
 \end_inset
@@ -1899,6 +2190,8 @@ Species
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 \begin_inset Formula $\min\left(\Delta m^{2}\right)\ \left[\text{eV}^{2}\right]$
 \end_inset
 
@@ -1930,11 +2223,11 @@ Reactor
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\sim10^{-3}$
+\begin_inset Formula $1$
 \end_inset
 
 
@@ -1946,7 +2239,7 @@ Reactor
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $1$
+\begin_inset Formula $\sim10^{-3}$
 \end_inset
 
 
@@ -1989,11 +2282,11 @@ Reactor
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\sim10^{-3}$
+\begin_inset Formula $100$
 \end_inset
 
 
@@ -2005,7 +2298,7 @@ Reactor
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $100$
+\begin_inset Formula $\sim10^{-3}$
 \end_inset
 
 
@@ -2048,11 +2341,11 @@ Accelerator
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\sim1$
+\begin_inset Formula $1$
 \end_inset
 
 
@@ -2064,7 +2357,7 @@ Accelerator
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $1$
+\begin_inset Formula $\sim1$
 \end_inset
 
 
@@ -2107,11 +2400,11 @@ Accelerator
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\sim1$
+\begin_inset Formula $10^{3}$
 \end_inset
 
 
@@ -2123,7 +2416,7 @@ Accelerator
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $10^{3}$
+\begin_inset Formula $\sim1$
 \end_inset
 
 
@@ -2170,11 +2463,11 @@ Atmospheric
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\sim1$
+\begin_inset Formula $10^{4}$
 \end_inset
 
 
@@ -2186,7 +2479,7 @@ Atmospheric
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $10^{4}$
+\begin_inset Formula $\sim1$
 \end_inset
 
 
@@ -2229,11 +2522,11 @@ Sun
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\sim10^{-3}$
+\begin_inset Formula $1.5\times10^{8}$
 \end_inset
 
 
@@ -2245,7 +2538,7 @@ Sun
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $1.5\times10^{8}$
+\begin_inset Formula $\sim10^{-3}$
 \end_inset
 
 
@@ -2321,13 +2614,23 @@ If neutrinos are their own antiparticles, they do not follow the Dirac Equation
 \begin_inset Formula $n-1$
 \end_inset
 
-) more CP violating phases to the MNSP matrix
+) more CP violating phases to the MNSP matrix in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "eq:mnspdecomposed"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-U_{\text{MNSP}}\rightarrow\eqref{eq:mnspdecomposed}\times\stackrel{U_{\text{Majorana}}}{\overbrace{\begin{bmatrix}1 & 0 & 0\\
+U_{\text{MNSP}}\rightarrow U_{\text{MNSP}}\times\stackrel{U_{\text{Majorana}}}{\overbrace{\begin{bmatrix}1 & 0 & 0\\
 0 & e^{i\alpha} & 0\\
 0 & 0 & e^{i\beta}
 \end{bmatrix}}}\label{eq:mnspdecomposedmajorana}
@@ -2383,8 +2686,16 @@ Since CP violation means that
 \end_inset
 
 .
- As an example, consider the survival probability of a muon type neutrinos
- is given by 
+ Consider the following examples, muon neutrino disappearance and muon neutrino
+ to electron neutrino appearance.
+\end_layout
+
+\begin_layout Paragraph
+Muon Neutrino Disappearance
+\end_layout
+
+\begin_layout Standard
+The probability of a muon type neutrinos disappearing is given by 
 \begin_inset Formula 
 \begin{equation}
 \begin{aligned}\mathcal{P}\left(\nuantinuparticle{\mu}\rightarrow\nuantinuparticle{\mu}\right)=1-4 & \sss{23}\ccc{13}\left(V_{\cos\delta_{\text{CP}}}\right)\sin^{2}\phi_{31}\\
@@ -2439,8 +2750,37 @@ noprefix "false"
 \begin_inset Formula $\deltacp$
 \end_inset
 
-, this channel does not offer insights into CP violation.
- However, it through appearance measurements that CP violation can probed.
+, this channel does not offer insights into CP violation in a vacuum
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+When going to through matter however, the oscillation probability is affected.
+ This is explained more in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsubsec:Matter-Effects"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Electron Neutrino Appearance
+\end_layout
+
+\begin_layout Standard
+While CP violation is not observable in muon neutrino disappearance, it
+ turns is with electron neutrino appearance.
  The appearance probability of electron neutrinos types from muon types
  is given by
 \begin_inset Formula 
@@ -2458,7 +2798,7 @@ noprefix "false"
 where
 \begin_inset Formula 
 \begin{equation}
-X_{\cos\delta_{\text{CP}}}=\ccc{13}\ss{12}\ss{12}\ss{23}\left(\cc{12}\cc{23}\cos\delta_{\text{CP}}-\ss{12}\ss{13}\right)\label{eq:Xcosdelta}
+X_{\cos\delta_{\text{CP}}}=\ccc{13}\ss{12}\ss{13}\ss{23}\left(\cc{12}\cc{23}\cos\delta_{\text{CP}}-\ss{12}\ss{13}\right)\label{eq:Xcosdelta}
 \end{equation}
 
 \end_inset
@@ -2474,7 +2814,7 @@ Y_{\sin\delta_{\text{CP}}}=\frac{1}{8}\sin\left(2\theta_{12}\right)\sin\left(2\t
 and (+) represents the sign change from neutrinos to antineutrinos.
  The CP violating term 
 \begin_inset CommandInset ref
-LatexCommand eqref
+LatexCommand formatted
 reference "eq:Ysindelta"
 plural "false"
 caps "false"
@@ -2497,93 +2837,6 @@ ic neutrino oscillation experiments.
 \end_layout
 
 \begin_layout Standard
-Traveling through matter also increases the sensitivity of oscillation measureme
-nts.
- Known as the Mikheyev-Smirnov-Wolfenstein (MSW) effect, any oscillations
- is affected by coherent forward scattering of neutrinos with electrons
- in the media.
- The MSW effect alters the oscillation probability as a function of the
- baseline, electron density, and neutrino energy.
- Taking the example of electron appearance in 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:numu2nuethreeflavorfull"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-, the MSW effect to first order is 
-\begin_inset Formula 
-\begin{equation}
-\mathcal{P}\left(\nuantinuparticle{\mu}\rightarrow\nuantinuparticle e\right)\rightarrow\eqref{eq:numu2nuethreeflavorfull}+\left(8\ccc{13}\sss{13}\sss{23}\right)\left(1-2\sss{13}\right)\frac{\alpha}{\Dm 31}\left(\sin^{2}\phi_{31}\overset{_{(+)}}{-}\phi_{31}\cos\phi_{32}\sin\phi_{31}\right)\label{eq:numu2nuethreeflavormasseffect}
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Formula 
-\begin{equation}
-\alpha=2\sqrt{2}G_{F}n_{e}E_{\nu}\label{eq:alphaMSW}
-\end{equation}
-
-\end_inset
-
-and 
-\begin_inset Formula $G_{F}$
-\end_inset
-
- is the Fermi constant and 
-\begin_inset Formula $n_{e}$
-\end_inset
-
- is the average electron density of the Earth which the neutrinos travel
-\begin_inset CommandInset citation
-LatexCommand cite
-key "PhysRevD.56.3093"
-literal "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-While most of the parameters that describe neutrino oscillations, there
- are a couple of degeneracies to unravel as well as precise measurement
- of 
-\begin_inset Formula $\deltacp$
-\end_inset
-
-.
- While the two mass-squared splittings are known, it is unknown whether
- 
-\begin_inset Formula $m_{3}$
-\end_inset
-
- is greater or less than 
-\begin_inset Formula $m_{1}$
-\end_inset
-
-.
- This problem is known as the mass hierarchy problem.
- Also oscillations are insensitive to octant of 
-\begin_inset Formula $\theta_{23}$
-\end_inset
-
-.
- Best measurements of the oscillations parameters is given in Table 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "tab:mnspparameters"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
 \begin_inset Float table
 wide false
 sideways false
@@ -2603,6 +2856,8 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Parameter
 \end_layout
 
@@ -2612,6 +2867,8 @@ Parameter
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Normal Hierarchy
 \end_layout
 
@@ -2621,6 +2878,8 @@ Normal Hierarchy
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Inverted Hierarchy
 \end_layout
 
@@ -2630,6 +2889,8 @@ Inverted Hierarchy
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Units
 \end_layout
 
@@ -2650,6 +2911,8 @@ Units
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 value
 \end_layout
 
@@ -2659,6 +2922,8 @@ value
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 value
 \end_layout
 
@@ -2859,7 +3124,7 @@ O1:
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.592_{-0.030}^{+0.023}$
+\begin_inset Formula $0.417_{-0.028}^{+0.025}$
 \end_inset
 
 
@@ -2946,7 +3211,7 @@ O2:
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.417_{-0.028}^{+0.025}$
+\begin_inset Formula $0.592_{-0.030}^{+0.023}$
 \end_inset
 
 
@@ -2982,7 +3247,7 @@ O2:
 \begin_inset Formula $\sin^{2}\left(\theta_{31}\right)$
 \end_inset
 
- 
+
 \end_layout
 
 \end_inset
@@ -3115,6 +3380,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:mnspparameters"
@@ -3129,13 +3395,80 @@ name "tab:mnspparameters"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Current and next generation experiments aim to improve knowledge of the
+ mixing parameters.
+ There are a couple of degeneracies to unravel as well as precise measurement
+ of 
+\begin_inset Formula $\deltacp$
+\end_inset
+
+.
+ While the two defined mass-squared splittings 
+\begin_inset Formula $\Dm 21=\Delta m_{\text{sol}}^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\Dm 32=\Delta m_{\text{atm}}^{2}$
+\end_inset
+
+ are known, it is unknown which eigenstates are more massive.
+ This problem is known as the mass hierarchy problem and is illustrated
+ in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Mass-hierarchy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Normal hierarchy refers to the case where 
+\begin_inset Formula $m_{3}>m_{2}>m_{1}$
+\end_inset
+
+whereas the inverted hierarchy has 
+\begin_inset Formula $m_{2}>m_{1}>m_{3}$
+\end_inset
+
+.
+ Also knowledge if 
+\begin_inset Formula $\theta_{23}$
+\end_inset
+
+ is in the first octant 
+\begin_inset Formula $\theta\in(0,\nicefrac{\pi}{2})$
+\end_inset
+
+ or second octant 
+\begin_inset Formula $\theta\in(\nicefrac{\pi}{2},\nicefrac{\pi}{4})$
+\end_inset
+
+ requires large statistics.
+ Finally the value of 
+\begin_inset Formula $\deltacp$
+\end_inset
+
+ is quite uncertain with values in the 3rd and 4th quadrants.
+ Best fit measurements of the oscillations parameters is given in Table
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:mnspparameters"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -3151,10 +3484,11 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename Figures/Introduction/FlavorComponentsOfMassStates.png
 	lyxscale 25
-	height 15theight%
+	height 25theight%
 
 \end_inset
 
@@ -3165,6 +3499,21 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Mass hierarchy as shown in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "deGouvea:2013onf"
+literal "false"
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Mass-hierarchy"
+
+\end_inset
+
 
 \end_layout
 
@@ -3182,10 +3531,11 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename Figures/Introduction/MassComponentsOfFlavorStates.png
 	lyxscale 25
-	height 15theight%
+	height 25theight%
 
 \end_inset
 
@@ -3196,15 +3546,26 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Mass eigenstate components as shown in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Adams:2013qkq"
+literal "false"
 
-\end_layout
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Mass-eigenstate-components"
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
 
@@ -3217,6 +3578,76 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Mass hierarchy Problem And MNSP Representation
+\end_layout
+
+\end_inset
+
+Left: the mass hierarchy problem is such that while the solar and atmospheric
+ mixing mass-squared differences are clearly defined, the absolute mass
+ scale is unknown.
+ Since 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $m_{2}>m_{1}$
+\end_inset
+
+ by definition, it is currently unknown if 
+\begin_inset Formula $m_{3}$
+\end_inset
+
+ is more or less massive than 
+\begin_inset Formula $m_{2}$
+\end_inset
+
+, or even massless! Notice the colored bars for each mass eigenstate which
+ corresponded to the approximate flavor content of the neutrino.
+ For example, state 
+\begin_inset Quotes eld
+\end_inset
+
+2
+\begin_inset Quotes erd
+\end_inset
+
+ has about equal three portions of all three flavors.
+ Right: the mass eigenstate components of each flavor eigenstate.
+ This is a complementary demonstration of the MNSP matrix.
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:masshierarchy"
+
+\end_inset
+
 
 \end_layout
 
@@ -3225,9 +3656,113 @@ status open
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
+
+\begin_layout Subsubsection
+Matter Effects
+\begin_inset CommandInset label
+LatexCommand label
+name "subsubsec:Matter-Effects"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Traveling through matter also increases the sensitivity of oscillation measureme
+nts.
+ Known as the Mikheyev-Smirnov-Wolfenstein (MSW) effect, all oscillations
+ are affected by coherent forward scattering of neutrinos with electrons
+ in the media.
+ The MSW effect alters the oscillation probability as a function of the
+ electron density and increases in magnitude as baseline with neutrino energy.
+ Taking the example of 
+\begin_inset Formula $\nuantinuparticle{\mu}\rightarrow\nuantinuparticle e$
+\end_inset
+
+ from 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "eq:numu2numuthreeflavorfull"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, the MSW effect to first order is 
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned}\mathcal{P}\left(\nuantinuparticle{\mu}\rightarrow\nuantinuparticle e\right)\rightarrow & \mathcal{P}\left(\nuantinuparticle{\mu}\rightarrow\nuantinuparticle e\right)+\frac{8\alpha}{\Dm 31}\left(\ccc{13}\sss{13}\sss{23}\right)\left(1-2\sss{13}\right)\\
+ & \times\left(\sin^{2}\phi_{31}\overset{_{(+)}}{-}\underset{\phi_{31}}{\underbrace{\left(\frac{\Dm 31c^{3}}{4\hbar}\frac{L}{E_{\nu}}\right)}}\cos\phi_{32}\sin\phi_{31}\right)
+\end{aligned}
+\label{eq:numu2nuethreeflavormasseffect}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula 
+\begin{equation}
+\alpha=2\sqrt{2}G_{F}n_{e}E_{\nu}\label{eq:alphaMSW}
+\end{equation}
+
+\end_inset
+
+and 
+\begin_inset Formula $G_{F}$
+\end_inset
+
+ is the Fermi constant and 
+\begin_inset Formula $n_{e}$
+\end_inset
+
+ is the average electron density of the Earth which the neutrinos travel
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevD.56.3093"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Implications of CP Violation
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Implications-of-CP"
 
 \end_inset
 

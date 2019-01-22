@@ -301,8 +301,7 @@
 }
 
 @Article{Adams:2013qkq,
-  Title                    = {{The Long-Baseline Neutrino Experiment: Exploring
- Fundamental Symmetries of the Universe}},
+  Title                    = {{The Long-Baseline Neutrino Experiment: Exploring Fundamental Symmetries of the Universe}},
   Author                   = {Adams, C. and others},
   Year                     = {2013},
   Note                     = {arXiv:1307.7335}
@@ -913,9 +912,7 @@
   Title                    = {Global analysis of three-flavour neutrino oscillations:
  synergies and tensions in the determination of $\theta_{23},
  \delta_\text{CP}$, and the mass ordering},
-  Author                   = {Esteban, Ivan and Gonzalez-Garcia, M. C. and
- Hernandez-Cabezudo, Alvaro and Maltoni, Michele and
- Schwetz, Thomas},
+  Author                   = {Esteban, I. and others},
   Year                     = {2018},
   Note                     = {arXiv:1811.05487},
 
@@ -1094,9 +1091,7 @@
 @InProceedings{deGouvea:2013onf,
   Title                    = {{Working Group Report: Neutrinos}},
   Author                   = {de Gouvea, A. and others},
-  Booktitle                = {{Proceedings, 2013 Community Summer Study on the Future
- of U.S. Particle Physics: Snowmass on the Mississippi
- (CSS2013): Minneapolis, MN, USA, July 29-August 6, 2013}},
+  Booktitle                = {{Proceedings, 2013 Community Summer Study on the Future of U.S. Particle Physics: Snowmass on the Mississippi (CSS2013)}},
   Year                     = {2013},
   Note                     = {arXiv:1310.4340}
 }
