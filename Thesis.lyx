@@ -10,6 +10,7 @@
 \usepackage[cmex10]{amsmath}
 \usepackage{amssymb}
 \usepackage{amsthm}
+%\usepackage[showframe]{geometry}
 
 % graphics packages
 \usepackage{graphicx} % remove pdftex if you are not compiling to pdf
@@ -60,7 +61,7 @@
 
 \usepackage{braket}
 \end_preamble
-\options doctor
+\options doctor,showframe
 \use_default_options true
 \maintain_unincluded_children false
 \language english
