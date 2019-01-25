@@ -3860,8 +3860,57 @@ name "sec:T2KExperiment"
 \end_layout
 
 \begin_layout Standard
-The Tokai-to-Kamioka (T2K) is long baseline neutrino oscillation experiment
- hosted in Japan.
+The Tokai-to-Kamioka (T2K) experiment is a long baseline, neutrino oscillation
+ experiment hosted in Japan
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abe:2011ks"
+literal "false"
+
+\end_inset
+
+ as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:T2KBirdsEye"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ It is the successor experiment to the KEK-to-Kamioka neutrino oscillation
+ experiment also hosted in Japan.
+ T2K produces its high intensity, muon neutrino pure beam at the Japan Proton
+ Accelerator Complex (J-PARC), a world class particle accelerator facility.
+ The beam is directed at the Super-Kamiokande
+\begin_inset CommandInset citation
+LatexCommand cite
+key "FUKUDA2003418"
+literal "false"
+
+\end_inset
+
+ detector which is 295 km away from the source.
+ Along the beamline at 280m from the beam source are a series of near detectors
+ called ND280
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1063/1.3274192"
+literal "false"
+
+\end_inset
+
+ to observe and characterize the unoscillated beam.
+ The beam is designed to maximize the 
+\begin_inset Formula $\numu\rightarrow\nue$
+\end_inset
+
+ probability at the 295km baseline using a neutrino energy spectrum sharply
+ peaked at 0.6GeV.
+ This spectrum is achieved by directing the center of the beam 2.5 degrees
+ from Super-Kamiokande.
 \end_layout
 
 \begin_layout Standard
@@ -3874,7 +3923,7 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename Figures/Introduction/T2KBirdsEye.png
-	lyxscale 25
+	lyxscale 50
 	width 100text%
 
 \end_inset
@@ -3886,15 +3935,22 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Birds eye view of the T2K experiment
-\end_layout
+Birds eye view of the T2K experiment on the Japanese archipelago.
+ An intense beam of neutrinos are produced at the J-PARC site (bottom right
+ red box) using high energy protons.
+ The beam is directed towards the Super-Kamiokande detector (top left blue
+ box) at a distance of 295 km away from J-PARC.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:T2KBirdsEye"
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
 
@@ -3904,12 +3960,92 @@ Birds eye view of the T2K experiment
 \end_layout
 
 \begin_layout Standard
-The number of reconstructed neutrino events of flavor 
-\begin_inset Formula $l$
+T2K was primarily designed to measure the last unknown MNSP mixing angle
+ 
+\begin_inset Formula $\theta_{13}$
 \end_inset
 
- observed at the far detector is sum of all true charged current (CC) 
-\begin_inset Formula $S_{\nu_{l}}^{\text{FD}}$
+, which was thought to be nearly zero.
+ In addition it set out to measure to high precision the atmospheric mixing
+ parameters, 
+\begin_inset Formula $\theta_{23}$
+\end_inset
+
+ and 
+\begin_inset Formula $\Dm 23$
+\end_inset
+
+.
+ One of its early successes was a landmark 7.3
+\begin_inset Formula $\sigma$
+\end_inset
+
+ measurement of a non-zero 
+\begin_inset Formula $\theta_{13}$
+\end_inset
+
+ using the electron-neutrino appearance measurement
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abe:2013hdq"
+literal "false"
+
+\end_inset
+
+.
+ It continues to be a world leader in oscillation physics and as of 2018
+ rejects CP conserving values (
+\begin_inset Formula $\deltacp=0,\pi)$
+\end_inset
+
+ at the 
+\begin_inset Formula $2\sigma$
+\end_inset
+
+ level
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevLett.121.171802"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The following topics will be discussed in the following order.
+ First a look at J-PARC and how neutrinos are produced.
+ Next a detailed look at the T2K near detectors which is used in this thesis.
+ This is followed by a discussion on Super-Kamiokande, the T2K far detector.
+ The final topic is the basics of an oscillation analysis using a near and
+ far detector.
+\end_layout
+
+\begin_layout Subsection
+Neutrino Production at J-PARC
+\end_layout
+
+\begin_layout Subsection
+T2K Near Detectors
+\end_layout
+
+\begin_layout Subsection
+Far Detector: Super-Kamiokande
+\end_layout
+
+\begin_layout Subsection
+Oscillation Analysis
+\end_layout
+
+\begin_layout Standard
+The number of reconstructed neutrino events of flavor 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ observed at the far detector (FD) is sum of all true charged current (CC)
+ events 
+\begin_inset Formula $S_{\nu_{\alpha}}^{\text{FD}}$
 \end_inset
 
  and backgrounds 
@@ -3919,7 +4055,7 @@ The number of reconstructed neutrino events of flavor
 
 \begin_inset Formula 
 \[
-N_{\nu_{l}}^{\text{FD}}=S_{\nu_{l}}^{\text{FD}}+B
+N_{\nu_{\alpha}}^{\text{FD}}=S_{\nu_{\alpha}}^{\text{FD}}+B
 \]
 
 \end_inset
@@ -3930,7 +4066,9 @@ where
 \begin_layout Standard
 \begin_inset Formula 
 \[
-S_{\nu_{l}}^{\text{FD}}\rightarrow S_{\nu_{l}}^{\text{FD}}\left(p_{l},\theta_{l},\vec{o}\right)=\sum_{\text{bin }i}\sum_{\beta}\mathcal{P}_{\nu_{\beta}\rightarrow\nu_{l}}\left(E_{\nu,i},\vec{o}\right)\times\sigma_{\text{\nu_{l}CC}}\left(E_{\nu,i}\right)\times\Phi_{\nu_{l}}^{\text{FD}}\times T^{\text{FD}}\times\epsilon^{\text{FD}}\left(p_{l},\theta_{l}\right)
+\begin{aligned}S_{\nu_{\alpha}}^{\text{FD}}\rightarrow S_{\nu_{\alpha}}^{\text{FD}}\left(p_{\alpha},\theta_{\alpha};\vec{o}\right) & =\sum_{i}\sum_{\beta}\mathcal{P}_{\nu_{\beta}\rightarrow\nu_{\alpha}}\left(E_{\nu,i};\vec{o}\right)\times\sigma_{\nu_{\alpha}}^{\text{CC}}\left(E_{\nu,i}\right)\\
+ & \times\Phi_{\nu_{\alpha}}^{\text{FD}}\left(E_{\nu,i}\right)\times T^{\text{FD}}\times\epsilon^{\text{FD}}\left(p_{\alpha},\theta_{\alpha}\right)
+\end{aligned}
 \]
 
 \end_inset
@@ -3938,24 +4076,12 @@ S_{\nu_{l}}^{\text{FD}}\rightarrow S_{\nu_{l}}^{\text{FD}}\left(p_{l},\theta_{l}
 where
 \begin_inset Formula 
 \[
-\sigma_{\nu_{l}}^{\text{CC}}\left(\Enu\right)=\sum_{\text{mode}}\left[\sigma_{\nu_{l}}^{\text{CC}}\left(\Enu\right)\right]_{\text{mode}}
+\sigma_{\nu_{\alpha}}^{\text{CC}}\left(\Enu\right)=\sum_{\text{mode}}\left[\sigma\left(\Enu\right)\right]_{\nu_{\alpha}\text{CC mode}}
 \]
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Subsection
-Neutrino Production
-\end_layout
-
-\begin_layout Subsection
-Near Detectors
-\end_layout
-
-\begin_layout Subsection
-Far Detector
 \end_layout
 
 \end_body
