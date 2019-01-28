@@ -9,6 +9,23 @@
   Year                     = {2018}
 }
 
+@Article{PhysRevLett.121.171802,
+  Title                    = {Search for CP Violation in Neutrino and Antineutrino Oscillations by the T2K Experiment with $2.2\ifmmode\times\else\texttimes\fi{}{10}^{21}$ Protons on Target},
+  Author                   = {Abe, K. and others},
+  Journal                  = {Phys. Rev. Lett.},
+  Year                     = {2018},
+
+  Month                    = {Oct},
+  Pages                    = {171802},
+  Volume                   = {121},
+
+  Doi                      = {10.1103/PhysRevLett.121.171802},
+  Issue                    = {17},
+  Numpages                 = {9},
+  Publisher                = {American Physical Society},
+  Url                      = {https://link.aps.org/doi/10.1103/PhysRevLett.121.171802}
+}
+
 @Article{Abe:2017bay,
   Title                    = {{Updated T2K measurements of muon neutrino and
  antineutrino disappearance using 1.5$\times$10$^{21}$
@@ -793,6 +810,21 @@
   Slaccitation             = {%%CITATION = ARXIV:1106.1344;%%}
 }
 
+@Electronic{JPARCCenter2019,
+  Title                    = {What is J-PARC?},
+
+  Address                  = {shirane2-4, shirakata,tokaimura,naka-gun ibaraki 319-1195,JAPAN},
+  Author                   = {J-PARC Center},
+  Language                 = {English},
+  Month                    = {January},
+  Note                     = {\url{https://j-parc.jp/researcher/en/about/what/index.html}, Accessed on 26 January 2019},
+  Organization             = {Japan Atomic Energy Agency},
+  Year                     = {2019},
+
+  Owner                    = {mhogan},
+  Timestamp                = {2019.01.26}
+}
+
 @Article{e910,
   Title                    = {{Pion production by protons on a thin beryllium target at 6.4-Ge, 12.3-GeV/c, and 17.5-GeV/c incident proton momenta}},
   Author                   = {Chemakin, I. and others},
@@ -1015,8 +1047,8 @@
 
 @Article{FUKUDA2003418,
   Title                    = {The Super-Kamiokande detector},
-  Author                   = {Fukuda, S. and others},
-  Journal                  = {Nucl. Instrum. Methods Phys. Res.},
+  Author                   = {S. Fukuda and others},
+  Journal                  = {Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment},
   Year                     = {2003},
   Number                   = {2},
   Pages                    = {418 - 462},
@@ -1213,6 +1245,19 @@
   Primaryclass             = {hep-ex},
   Publisher                = {American Physical Society},
   Url                      = {https://link.aps.org/doi/10.1103/PhysRevLett.113.261802}
+}
+
+@InProceedings{Igarashi:2016wyi,
+  Title                    = {{Recent Progress of J-PARC MR Beam Commissioning and
+ Operation}},
+  Author                   = {Igarashi, Susumu},
+  Booktitle                = {{Proceedings, 57th ICFA Advanced Beam Dynamics Workshop
+ on High-Intensity and High-Brightness Hadron Beams
+ (HB2016): Malm\"{o}, Sweden, July 3-8, 2016}},
+  Year                     = {2016},
+  Pages                    = {MOAM6P60},
+
+  Doi                      = {10.18429/JACoW-HB2016-MOAM6P60}
 }
 
 @Article{Jarlskog1985,
@@ -1691,6 +1736,23 @@
   Note                     = {P0D NC Elastic with Pull PID. Good reference}
 }
 
+@Article{PhysRevAccelBeams.21.024203,
+  Title                    = {Simulation, measurement, and mitigation of beam instability caused by the kicker impedance in the 3-GeV rapid cycling synchrotron at the Japan Proton Accelerator Research Complex},
+  Author                   = {Saha, P. K. and others},
+  Journal                  = {Phys. Rev. Accel. Beams},
+  Year                     = {2018},
+
+  Month                    = {Feb},
+  Pages                    = {024203},
+  Volume                   = {21},
+
+  Doi                      = {10.1103/PhysRevAccelBeams.21.024203},
+  Issue                    = {2},
+  Numpages                 = {20},
+  Publisher                = {American Physical Society},
+  Url                      = {https://link.aps.org/doi/10.1103/PhysRevAccelBeams.21.024203}
+}
+
 @Article{0038-5670-34-5-A08,
   Title                    = {Violation of CP invariance, C asymmetry, and baryon asymmetry of the universe},
   Author                   = {Andrei D Sakharov},
@@ -1722,6 +1784,21 @@
 
   Owner                    = {mhogan},
   Timestamp                = {2019.01.13}
+}
+
+@Article{SEKIGUCHI201557,
+  Title                    = {Development and operational experience of magnetic horn system for T2K experiment},
+  Author                   = {T. Sekiguchi and others},
+  Journal                  = {Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment},
+  Year                     = {2015},
+  Pages                    = {57 - 80},
+  Volume                   = {789},
+
+  Abstract                 = {A magnetic horn system to be operated at a pulsed current of 320kA and to survive high-power proton beam operation at 750kW was developed for the T2K experiment. The first set of T2K magnetic horns was operated for over 12 million pulses during the four years of operation from 2010 to 2013, under a maximum beam power of 230kW, and 6.63×1020 protons were exposed to the production target. No significant damage was observed throughout this period. This successful operation of the T2K magnetic horns led to the discovery of the νμ→νe oscillation phenomenon in 2013 by the T2K experiment. In this paper, details of the design, construction, and operation experience of the T2K magnetic horns are described.},
+  Doi                      = {https://doi.org/10.1016/j.nima.2015.04.008},
+  ISSN                     = {0168-9002},
+  Keywords                 = {Magnetic horn, Neutrino, Beamline, T2K, J-PARC},
+  Url                      = {http://www.sciencedirect.com/science/article/pii/S0168900215004672}
 }
 
 @Article{Singh:1992dc,
@@ -1869,6 +1946,18 @@
 
   Owner                    = {mhogan},
   Timestamp                = {2019.01.15}
+}
+
+@Book{Yamazaki2003,
+  Title                    = {Accelerator technical design report for high-intensity proton accelerator facility project, J-PARC},
+  Editor                   = {Y. Yamazaki},
+  Publisher                = {Japan Atomic Energy Research Institute},
+  Year                     = {2003},
+  Number                   = {2002-013},
+
+  Institution              = {KEK},
+  Type                     = {Report},
+  Url                      = {https://cds.cern.ch/record/747209}
 }
 
 @comment{jabref-meta: databaseType:bibtex;}

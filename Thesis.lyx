@@ -10,7 +10,7 @@
 \usepackage[cmex10]{amsmath}
 \usepackage{amssymb}
 \usepackage{amsthm}
-%\usepackage[showframe]{geometry}
+
 
 % graphics packages
 \usepackage{graphicx} % remove pdftex if you are not compiling to pdf

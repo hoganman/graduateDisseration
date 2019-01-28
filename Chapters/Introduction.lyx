@@ -328,20 +328,17 @@ noprefix "false"
 
 \end_inset
 
-.
-\end_layout
 
-\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figures/Introduction/StandardModel.png
-	lyxscale 25
+	lyxscale 50
 	height 25theight%
 
 \end_inset
@@ -396,7 +393,7 @@ name "fig:TheStandardModel"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
@@ -548,14 +545,11 @@ noprefix "false"
 
 \end_inset
 
-.
-\end_layout
 
-\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -585,10 +579,6 @@ Muon Decay
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -624,10 +614,6 @@ status open
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -680,13 +666,9 @@ name "fig:CCNCInteractions"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Subsubsection
@@ -959,19 +941,11 @@ noprefix "false"
 
 \end_inset
 
- which shows the decay of a pion at rest into a muon and neutrino.
- Since a pion has net zero (0) spin, the spin vectors of the daughters must
- also sum to zero.
- The neutrino's helicity (-1) and hence LH chirality is inferred by the
- positively charged muon of which has +1 helicity.
- To confirm the antineutrino's RH chirality (+1) requires both a charge
- (C) conjugation and parity (P) transformation.
- A C conjugation transforms all particles into their corresponding antiparticles
- while P transformation inverts all spatial coordinates.
+
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1028,12 +1002,17 @@ name "fig:DecayOfPion"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
+ which shows the decay of a pion at rest into a muon and neutrino.
+ Since a pion has net zero (0) spin, the spin vectors of the daughters must
+ also sum to zero.
+ The neutrino's helicity (-1) and hence LH chirality is inferred by the
+ positively charged muon of which has +1 helicity.
+ To confirm the antineutrino's RH chirality (+1) requires both a charge
+ (C) conjugation and parity (P) transformation.
+ A C conjugation transforms all particles into their corresponding antiparticles
+ while P transformation inverts all spatial coordinates.
  
 \end_layout
 
@@ -1428,28 +1407,11 @@ noprefix "false"
 
 \end_inset
 
-.
- If we create a neutrino of flavor 
-\begin_inset Formula $\alpha$
-\end_inset
 
- and observe it after a time 
-\begin_inset Formula $t=T>0$
-\end_inset
-
-, then the probability of observing it as flavor 
-\begin_inset Formula $\beta\neq\alpha$
-\end_inset
-
- is given by
-\end_layout
-
-\begin_layout Standard
-\align left
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1503,13 +1465,26 @@ name "fig:twoflavorrotation"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
+.
+ If we create a neutrino of flavor 
+\begin_inset Formula $\alpha$
+\end_inset
 
+ and observe it after a time 
+\begin_inset Formula $t=T>0$
+\end_inset
+
+, then the probability of observing it as flavor 
+\begin_inset Formula $\beta\neq\alpha$
+\end_inset
+
+ is given by
+\end_layout
+
+\begin_layout Standard
+\align left
 \begin_inset Formula 
 \begin{equation}
 \begin{aligned}\mathcal{P}\left(\nu_{\alpha}\rightarrow\nu_{\beta}\right) & =\left|\braket{\nu_{\alpha}(t=0)|\nu_{\beta}(t=T)}\right|^{2}\\
@@ -1721,46 +1696,11 @@ noprefix "false"
 
 \end_inset
 
-.
- Since 
-\begin_inset Formula $L$
-\end_inset
 
- and 
-\begin_inset Formula $E_{\nu}$
-\end_inset
-
- are the only controllable parameters for an oscillation experiment, probing
- 
-\begin_inset Formula $\theta$
-\end_inset
-
- or 
-\begin_inset Formula $\Delta m^{2}$
-\end_inset
-
- can be difficult unless the experiment can probe a large range of 
-\begin_inset Formula $L/E_{\nu}$
-\end_inset
-
- as shown in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:Two-flavor-oscillation-2"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1827,15 +1767,43 @@ name "fig:Two-flavor-oscillation"
 
 \end_inset
 
+.
+ Since 
+\begin_inset Formula $L$
+\end_inset
 
-\end_layout
+ and 
+\begin_inset Formula $E_{\nu}$
+\end_inset
 
-\begin_layout Standard
-\align center
+ are the only controllable parameters for an oscillation experiment, probing
+ 
+\begin_inset Formula $\theta$
+\end_inset
+
+ or 
+\begin_inset Formula $\Delta m^{2}$
+\end_inset
+
+ can be difficult unless the experiment can probe a large range of 
+\begin_inset Formula $L/E_{\nu}$
+\end_inset
+
+ as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Two-flavor-oscillation-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1940,7 +1908,7 @@ name "fig:Two-flavor-oscillation-2"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Subsubsection
@@ -2006,8 +1974,8 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-The most frequently used matrix parameterization is the Maki-Nakagawa-Sakata-Pon
-tecorvo (MNSP) matrix.
+The most frequently used matrix parameterization is the MNSP (MNSP: Maki-Nakagaw
+a-Sakata-Pontecorvo) matrix.
  Pontecorvo is accredited for first conceiving of neutrino oscillations,
  albeit between neutrino and anti-neutrinos
 \begin_inset CommandInset citation
@@ -2125,7 +2093,7 @@ noprefix "false"
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2142,8 +2110,6 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\series bold
 Source
 \end_layout
 
@@ -2153,8 +2119,6 @@ Source
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\series bold
 Species
 \end_layout
 
@@ -2164,9 +2128,9 @@ Species
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Baseline
 \series bold
-Baseline 
+ 
 \series default
 [km]
 \end_layout
@@ -2177,9 +2141,13 @@ Baseline
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Mean
 \series bold
-Mean Energy 
+ 
+\series default
+Energy
+\series bold
+ 
 \series default
 [GeV]
 \end_layout
@@ -2190,12 +2158,14 @@ Mean Energy
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\series bold
-\begin_inset Formula $\min\left(\Delta m^{2}\right)\ \left[\text{eV}^{2}\right]$
+\begin_inset Formula $\min\left(\Delta m^{2}\right)$
 \end_inset
 
- 
+ [eV
+\begin_inset Formula $^{2}$
+\end_inset
+
+]
 \end_layout
 
 \end_inset
@@ -2780,7 +2750,7 @@ Electron Neutrino Appearance
 
 \begin_layout Standard
 While CP violation is not observable in muon neutrino disappearance, it
- turns is with electron neutrino appearance.
+ is with electron neutrino appearance.
  The appearance probability of electron neutrinos types from muon types
  is given by
 \begin_inset Formula 
@@ -2840,7 +2810,7 @@ ic neutrino oscillation experiments.
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2944,7 +2914,7 @@ value
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\Dm32=\Delta m_{\text{atm}}^{2}$
+\begin_inset Formula $\Dm 32=\Delta m_{\text{atm}}^{2}$
 \end_inset
 
 
@@ -2994,7 +2964,7 @@ value
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\Dm21=\Delta m_{\text{sol}}^{2}$
+\begin_inset Formula $\Dm 21=\Delta m_{\text{sol}}^{2}$
 \end_inset
 
 
@@ -3410,11 +3380,11 @@ Current and next generation experiments aim to improve knowledge of the
 
 .
  While the two defined mass-squared splittings 
-\begin_inset Formula $\Dm21=\Delta m_{\text{sol}}^{2}$
+\begin_inset Formula $\Dm 21=\Delta m_{\text{sol}}^{2}$
 \end_inset
 
  and 
-\begin_inset Formula $\Dm32=\Delta m_{\text{atm}}^{2}$
+\begin_inset Formula $\Dm 32=\Delta m_{\text{atm}}^{2}$
 \end_inset
 
  are known, it is unknown which eigenstates are more massive.
@@ -3457,8 +3427,7 @@ whereas the inverted hierarchy has
 \end_inset
 
  is quite uncertain with values in the 3rd and 4th quadrants.
- Best fit measurements of the oscillations parameters is given in Table
- 
+ Best fit measurements of the oscillations parameters is given in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:mnspparameters"
@@ -3475,7 +3444,7 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Float figure
@@ -3678,8 +3647,6 @@ nts.
  Known as the Mikheyev-Smirnov-Wolfenstein (MSW) effect, all oscillations
  are affected by coherent forward scattering of neutrinos with electrons
  in the media.
- The MSW effect alters the oscillation probability as a function of the
- electron density and increases in magnitude as baseline with neutrino energy.
  Taking the example of 
 \begin_inset Formula $\nuantinuparticle{\mu}\rightarrow\nuantinuparticle e$
 \end_inset
@@ -3723,8 +3690,8 @@ noprefix "false"
 , the MSW effect to first order is 
 \begin_inset Formula 
 \begin{equation}
-\begin{aligned}\mathcal{P}\left(\nuantinuparticle{\mu}\rightarrow\nuantinuparticle e\right)\rightarrow & \mathcal{P}\left(\nuantinuparticle{\mu}\rightarrow\nuantinuparticle e\right)+\frac{8\alpha}{\Dm31}\left(\ccc{13}\sss{13}\sss{23}\right)\left(1-2\sss{13}\right)\\
- & \times\left(\sin^{2}\phi_{31}\overset{_{(+)}}{-}\underset{\phi_{31}}{\underbrace{\left(\frac{\Dm31c^{3}}{4\hbar}\frac{L}{E_{\nu}}\right)}}\cos\phi_{32}\sin\phi_{31}\right)
+\begin{aligned}\mathcal{P}\left(\nuantinuparticle{\mu}\rightarrow\nuantinuparticle e\right)\rightarrow & \mathcal{P}\left(\nuantinuparticle{\mu}\rightarrow\nuantinuparticle e\right)+\frac{8\alpha}{\Dm 31}\left(\ccc{13}\sss{13}\sss{23}\right)\left(1-2\sss{13}\right)\\
+ & \times\left(\sin^{2}\phi_{31}\overset{_{(+)}}{-}\underset{\phi_{31}}{\underbrace{\left(\frac{\Dm 31c^{3}}{4\hbar}\frac{L}{E_{\nu}}\right)}}\cos\phi_{32}\sin\phi_{31}\right)
 \end{aligned}
 \label{eq:numu2nuethreeflavormasseffect}
 \end{equation}
@@ -3756,6 +3723,18 @@ literal "false"
 \end_inset
 
 .
+ Carefully studying 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:numu2nuethreeflavormasseffect"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ reveals that the MSW effect alters the oscillation probability as a function
+ of the electron density and increases in magnitude with baseline.
 \end_layout
 
 \begin_layout Subsection
@@ -3884,7 +3863,7 @@ noprefix "false"
  experiment also hosted in Japan.
  T2K produces its high intensity, muon neutrino pure beam at the Japan Proton
  Accelerator Complex (J-PARC), a world class particle accelerator facility.
- The beam is directed at the Super-Kamiokande
+ The beam is directed at the Super-Kamiokande (SK)
 \begin_inset CommandInset citation
 LatexCommand cite
 key "FUKUDA2003418"
@@ -3910,7 +3889,7 @@ literal "false"
  probability at the 295km baseline using a neutrino energy spectrum sharply
  peaked at 0.6GeV.
  This spectrum is achieved by directing the center of the beam 2.5 degrees
- from Super-Kamiokande.
+ from SK.
 \end_layout
 
 \begin_layout Standard
@@ -3935,6 +3914,15 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Birds eye view of the T2K experiment on the Japanese archipelago
+\end_layout
+
+\end_inset
+
 Birds eye view of the T2K experiment on the Japanese archipelago.
  An intense beam of neutrinos are produced at the J-PARC site (bottom right
  red box) using high energy protons.
@@ -4015,8 +4003,8 @@ literal "false"
 
 \begin_layout Standard
 The following topics will be discussed in the following order.
- First a look at J-PARC and how neutrinos are produced.
- Next a detailed look at the T2K near detectors which is used in this thesis.
+ First a look how neutrinos are produced at J-PARC.
+ Next a detailed look at the T2K near detectors which are used in this thesis.
  This is followed by a discussion on Super-Kamiokande, the T2K far detector.
  The final topic is the basics of an oscillation analysis using a near and
  far detector.
@@ -4024,6 +4012,749 @@ The following topics will be discussed in the following order.
 
 \begin_layout Subsection
 Neutrino Production at J-PARC
+\end_layout
+
+\begin_layout Standard
+To facilitate the high intensity neutrino beam requirements for T2K, the
+ J-PARC site generates a high intensity proton beam through a series of
+ particle accelerators.
+ A bird's eye view of J-PARC can be seen in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:BirdsEyeJPARC"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/JPARCBirdsEye.png
+	lyxscale 50
+	width 49text%
+	height 25theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Bird's eye view of the J-PARC center
+\end_layout
+
+\end_inset
+
+Bird's eye view of the J-PARC center showing the primary components of its
+ accelerator programs.
+ To generate the high intensity neutrino beam, first the linear accelerator
+ (Linac, red) accelerates hydrogen ions (protons) into the 3 GeV Synchrotron
+ (also red) called the rapid-cycle synchrotron (RCS).
+ The RCS then injects some of its protons into the 50 GeV Sychrotron (yellow)
+ called the main ring (MR) which currently runs at 30 GeV.
+ Finally the MR protons are directed into a target material along the neutrino
+ beamline (teal)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "JPARCCenter2019"
+literal "false"
+
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:BirdsEyeJPARC"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ which highlights its different accelerators and facilities.
+ For this section, note that all beam energies are kinetic energies.
+\end_layout
+
+\begin_layout Standard
+Protons for the T2K beamline are first accelerated in the J-PARC linear
+ accelerator
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+A linear accelerator accelerates particles using time varying electric fields
+ along a one direction, terminal beamline.
+ Not only used in particle physics, they are also used in the medical field
+ to generate X-rays.
+\end_layout
+
+\end_inset
+
+ (linac) and rapid cycle synchrotron
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+A synchrotron is cyclic particle accelerator that relies on time varying
+ magnetic fields to accelerate particles.
+ Since they require many magnets and large spaces to operate, they are usually
+ operated at national laboratories for others uses as well like material
+ and life sciences.
+\end_layout
+
+\end_inset
+
+ (RCS).
+ Protons are initially extracted from a hydrogen ion (
+\begin_inset Formula $_{1}^{1}\text{H}^{+}$
+\end_inset
+
+) source.
+ Those protons are feed through a radio frequency (RF) quadropole magnet
+ and a series of linac elements as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subfig:LINAC"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Each linac element accelerates the protons using carefully coordinated
+ oscillating electric fields generated by RF pulses.
+ After travelling 240m along the linac, the protons are boosted to 400 MeV
+ and transported into the RCS.
+ The 348m circumference RCS then further boosts the protons to 3 GeV at
+ an operating frequency of 25 Hz.
+ While being accelerated, protons are aggregated into two bunches and focused
+ using particle collimators as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:3-GeV-RCS"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The next stage for the protons intended for the neutrino beamline is the
+ much larger main ring (MR) synchrotron as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:50-GeV-MR"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ which has a circumference of 1567m.
+ While nominally designed to boost protons to 50 GeV, it currently operates
+ at 30 GeV.
+ Protons are injected into the MR to form eight proton bunches (spill),
+ initially six when T2K first ran, before entering the neutrino beamline.
+ The total temporal width of the spill is approximately 
+\begin_inset Formula $0.5\mu\text{s}$
+\end_inset
+
+.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abe:2011ks"
+literal "false"
+
+\end_inset
+
+.
+ At a spill cycle frequency of 0.5Hz, the bunches are extracted from the
+ MR into the neutrino beamline.
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/JPARCLINAC.png
+	lyxscale 25
+	width 49text%
+	height 25theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+400 MeV linac
+\begin_inset CommandInset label
+LatexCommand label
+name "subfig:LINAC"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/JPARC3GeVRCS.png
+	lyxscale 50
+	width 49text%
+	height 25theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+3 GeV RCS
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:3-GeV-RCS"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/JPARCMR.png
+	lyxscale 30
+	width 50text%
+	height 25theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+50 GeV MR
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:50-GeV-MR"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Schematics of the J-PARC Accelerators
+\end_layout
+
+\end_inset
+
+Schematics of the J-PARC accelerators.
+ (a) The linac accelerates protons to 400 MeV of kinetic energy from the
+ ion source through linear accelerator (linac) elements
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Yamazaki2003"
+literal "false"
+
+\end_inset
+
+.
+ (b) Protons from the linac are collected into the rapid cycle synchrotron
+ (RCS) and accelerated to 3 GeV
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevAccelBeams.21.024203"
+literal "false"
+
+\end_inset
+
+.
+ (c) Protons from the RCS are injected into the main ring (MR) synchroton
+ which further accelerates the protons.
+ While the MR is designed for 50 GeV, it currently operates at 30 GeV.
+ For T2K, the protons are bunched in the MR and extracted into the 
+\begin_inset Quotes eld
+\end_inset
+
+Neutrino beamline
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Igarashi:2016wyi"
+literal "false"
+
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:schemeJPARC"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The neutrino beamline is designed to direct the protons toward SK and generate
+ neutrinos by impinging them on a cylindrical target.
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Neutrino-beamline"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows the process of proton extraction from the MR for both primary and
+ secondary neutrino beamlines.
+ In the primary beamline, a series of normal and superconducting magnets
+ steer the proton beam 
+\begin_inset Formula $80.7\text{\textdegree}$
+\end_inset
+
+ along a 104m radius of curvature.
+ The secondary beamline, better shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Secondary-beamline"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, illustrates the production of neutrinos.
+ The beam spill impinges on a graphite target at the target station, which
+ produces high energy pions like those produced from cosmic ray collisions
+ in the upper atmosphere.
+ To enhance the flux of neutrinos, a series of current pulsed, focusing
+ magnets called horns
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The name horn derives from the fact that the focusing magnets are shaped
+ like brass horns in a music ensemble or marching band.
+ One can think of these horns like a focusing lens for charged particles.
+\end_layout
+
+\end_inset
+
+ as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:T2K-horns"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ are used to focus pions of the correct charge towards SK.
+ The horns are pulsed at +250kA (-250kA) to select positively (negatively)
+ charged pions.
+ The focused pions are allowed to decay along a 96m long decay volume to
+ boost the daughter neutrinos along the beamline direction.
+ The decay volume needs to be as close to vacuum as possible to reduce pion
+ absorption and among other reasons, and thus it is filled with gaseous
+ helium at 1 atm for safety reasons.
+ Daughter muons of sufficient momentum 
+\begin_inset Formula $(>5\text{ GeV})$
+\end_inset
+
+ are further used to characterize the neutrino flux
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/JPARCNuBeamline.png
+	width 30text%
+	height 25theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Neutrino beamline
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Neutrino-beamline"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/JPARCNuBeamlineZoomed.png
+	width 30text%
+	height 25theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Secondary beamline
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Secondary-beamline"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/T2KHorns.png
+	width 30text%
+	height 25theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Beamline horns
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:T2K-horns"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The neutrino beamline at J-PARC consists of a primary and secondary beamline.
+ (a) The primary beamline redirects the protons towards the secondary beamline
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abe:2011ks"
+literal "false"
+
+\end_inset
+
+.
+ (b) In the secondary beamline, the protons are impinged on a cylindrical
+ target producing mostly pions.
+ The pions are focused using in sequence horns and decay in a long decay
+ volume.
+ Any non-decayed particles are stopped at the beam dump.
+ (c) A further zoomed in cross section of the target station showing the
+ target and focusing horns
+\begin_inset CommandInset citation
+LatexCommand cite
+key "SEKIGUCHI201557"
+literal "false"
+
+\end_inset
+
+.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+The neutrino beamline at J-PARC
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:JPARCNeutrinobeamline"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+J-PARC continues to improve the MR proton delivery since T2K begin in 2010.
+ T2K has run with both +250kA and -250kA horn currents with increasing beam
+ power over time.
+ Focusing positively charged pions with +250kA horn current is called forward
+ horn current (FHC) mode or 
+\begin_inset Formula $\nu$
+\end_inset
+
+-mode.
+ Similarly, using -250kA horn current is called reverse horn current (RHC)
+ or 
+\begin_inset Formula $\overline{\nu}$
+\end_inset
+
+-mode.
+ The aggregate running periods for T2K for both FHC and RHC are shown in
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:T2K-accumulated-POT"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/T2KPOTDelivery.png
+	width 50text%
+	height 25theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+T2K accumulated protons on target since 2010 shows a steady increase in
+ beam power over time.
+ The gap between Run2 and Run3 is due to the damage suffered at J-PARC after
+ the 2011 Tōhoku earthquake.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+T2K Accumulated Protons on Target
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:T2K-accumulated-POT"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ in units of protons on target (POT or PoT).
 \end_layout
 
 \begin_layout Subsection
