@@ -473,14 +473,25 @@ weak force
 \end_inset
 
  comes from the fact that this force is has a much smaller effective range
- than the electromagnetic and strong nuclear forces.
- This is due to the weak mediating bosons, the W and Z, being massive particles
- unlike the massless gluon (g) and photon (
+ than the electromagnetic, strong nuclear, and gravitational forces.
+ This is due to the weak mediating bosons, the 
+\begin_inset Formula $W^{\pm}$
+\end_inset
+
+ and 
+\begin_inset Formula $Z$
+\end_inset
+
+, being massive particles unlike the massless gluon (g) and photon (
 \begin_inset Formula $\gamma$
 \end_inset
 
 ).
- The W/Z have masses of 80/90 
+ The 
+\begin_inset Formula $W/Z$
+\end_inset
+
+ have masses of 80/90 
 \begin_inset Formula $\text{GeV/c}^{2}$
 \end_inset
 
@@ -495,8 +506,16 @@ off-shell
 \begin_inset Quotes erd
 \end_inset
 
-) of the W and Z, the interaction time must be infinitesimally small as
- dictated by the Heisenberg Uncertainty Principle
+) of the 
+\begin_inset Formula $W$
+\end_inset
+
+ and 
+\begin_inset Formula $Z$
+\end_inset
+
+, the interaction time must be infinitesimally small as dictated by the
+ Heisenberg Uncertainty Principle
 \begin_inset Formula 
 \begin{equation}
 \Delta E\Delta t\gtrsim\hbar\label{eq:heisenberguncertainty}
@@ -672,7 +691,7 @@ name "fig:CCNCInteractions"
 \end_layout
 
 \begin_layout Subsubsection
-Chirality
+Chirality: How Neutrinos are Left Handed
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:Chirality"
@@ -683,258 +702,19 @@ name "subsec:Chirality"
 \end_layout
 
 \begin_layout Standard
-Neutrinos are believed to follow the free-particle Dirac Equation which
- is given by
-\begin_inset Formula 
-\begin{equation}
-\left[i\hbar\sum_{\mu=0}^{3}\gamma^{\mu}\partial_{\mu}-mc\right]\psi=0\label{eq:diraceqn}
-\end{equation}
-
+Neutrinos are observed to have antiparallel momentum vectors 
+\begin_inset Formula $\boldsymbol{P}$
 \end_inset
 
-where
-\begin_inset Formula 
-\begin{equation}
-\gamma^{0}=\begin{bmatrix}I_{2} & 0\\
-0 & -I_{2}
-\end{bmatrix},\gamma^{1}=\begin{bmatrix}0 & \sigma_{x}\\
--\sigma_{x} & 0
-\end{bmatrix},\gamma^{2}=\begin{bmatrix}0 & \sigma_{y}\\
--\sigma_{y} & 0
-\end{bmatrix},\gamma^{3}=\begin{bmatrix}0 & \sigma_{z}\\
--\sigma_{z} & 0
-\end{bmatrix},\label{eq:gammamatrices}
-\end{equation}
-
+ to their spin vectors 
+\begin_inset Formula $\boldsymbol{\Sigma}$
 \end_inset
 
-
-\begin_inset Formula $I_{2}$
-\end_inset
-
- is the 
-\begin_inset Formula $2\times2$
-\end_inset
-
- identity matrix, 
-\begin_inset Formula $\sigma_{x,y,z}$
-\end_inset
-
- are the Pauli Spin matrices, and
-\begin_inset Formula 
-\begin{equation}
-\partial_{0}=\frac{1}{c}\partderiv t,\partial_{1}=\partderiv x,\partial_{2}=\partderiv y,\partial_{3}=\partderiv z.\label{eq:fourderivative}
-\end{equation}
-
-\end_inset
-
-The solutions to 
+ and the opposite is true for antineutrinos.
+ This property is called helicty and is given by 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "eq:diraceqn"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- are called Dirac spinors and can be written in terms of left-handed (LH)
- and right-handed (RH) components.
- Any spinor can be decomposed in LH and RH projections using a 
-\begin_inset Quotes eld
-\end_inset
-
-chiral
-\begin_inset Quotes erd
-\end_inset
-
- operator 
-\begin_inset Formula $\hat{O}$
-\end_inset
-
- as
-\begin_inset Formula 
-\begin{equation}
-\psi=\left(\hat{O}_{\text{LH}}+\hat{O}_{\text{RH}}\right)\psi.\label{eq:chiralprojections}
-\end{equation}
-
-\end_inset
-
-The chiral operators 
-\begin_inset Formula $\hat{O}_{\text{LH,RH}}$
-\end_inset
-
- in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "eq:chiralprojections"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- are defined as
-\begin_inset Formula 
-\begin{equation}
-\hat{O}_{\text{LH}}\psi=\frac{1}{2}(I_{4}-\gamma^{5})\psi=\psi_{\text{LH}}\quad\hat{O}_{\text{RH}}\psi=\frac{1}{2}(I_{4}+\gamma^{5})\psi=\psi_{\text{RH}}\label{eq:chiraloperators}
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Formula $I_{4}$
-\end_inset
-
- is the 
-\begin_inset Formula $4\times4$
-\end_inset
-
- identity matrix,
-\begin_inset Formula 
-\begin{equation}
-\gamma^{5}=i\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}=\begin{bmatrix}0 & I_{2}\\
-I_{2} & 0
-\end{bmatrix},\label{eq:gammafivedef}
-\end{equation}
-
-\end_inset
-
-and 
-\begin_inset Formula $\psi_{\text{LH,RH}}$
-\end_inset
-
- are LH and RH chiral spinors.
- Using 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "eq:chiraloperators"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-, the Dirac Equation then becomes after some manipulation
-\begin_inset Formula 
-\begin{equation}
-\begin{aligned}i\hbar\left(\frac{1}{c}\partderiv t-\boldsymbol{\sigma}\cdot\boldsymbol{\nabla}\right)\psi_{\text{RH}} & =m\gamma^{0}\psi_{\text{LH}}\\
-i\hbar\left(\frac{1}{c}\partderiv t+\boldsymbol{\sigma}\cdot\boldsymbol{\nabla}\right)\psi_{\text{LH}} & =m\gamma^{0}\psi_{\text{RH,}}
-\end{aligned}
-\label{eq:diraceqnchiral}
-\end{equation}
-
-\end_inset
-
-where
-\begin_inset Formula 
-\begin{equation}
-\boldsymbol{\sigma}\cdot\boldsymbol{\nabla}=\sum_{i=1}^{3}\sigma_{i}\nabla_{i}.\label{eq:matrixdotproduct}
-\end{equation}
-
-\end_inset
-
-In the limiting case of vanishing mass 
-\begin_inset Formula $\left(m\rightarrow0\right)$
-\end_inset
-
-, as in the SM, the free particle equations decouple into
-\begin_inset Formula 
-\begin{equation}
-\begin{aligned}\left(\frac{E}{c}-\boldsymbol{\sigma}\cdot\boldsymbol{P}\right)\psi_{\text{RH}} & =0\\
-\left(\frac{E}{c}+\boldsymbol{\sigma}\cdot\boldsymbol{P}\right)\psi_{\text{LH}} & =0.
-\end{aligned}
-\quad\left[\text{Momentum basis}\right]\label{eq:diraceqnchiralmassless}
-\end{equation}
-
-\end_inset
-
-We now have enough information to make two very important insights about
- neutrinos in the SM.
-\end_layout
-
-\begin_layout Standard
-The first important insight is that the chirality and helicity of the neutrino
- the same for 
-\begin_inset Formula $m\rightarrow0$
-\end_inset
-
-.
- A particle's helicity is the projection of the spin vector on its momentum
- vector given as
-\begin_inset Formula 
-\begin{equation}
-\mathcal{H}=\frac{\boldsymbol{\sigma}\cdot\mathbf{P}}{\left|\mathbf{P}\right|}\label{eq:helicityoperator}
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Formula $\boldsymbol{\sigma}$
-\end_inset
-
- is the spin vector and 
-\begin_inset Formula $\mathbf{P}$
-\end_inset
-
- is the 3-momentum of the particle.
- Since 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "eq:diraceqnchiralmassless"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- commutes 
-\begin_inset Formula $\left(\left[\hat{A},\hat{B}\right]=\hat{A}\hat{B}-\hat{B}\hat{A}\right)$
-\end_inset
-
- with 
-\begin_inset Formula $\mathcal{H},$
-\end_inset
-
- 
-\begin_inset Formula $\psi_{\text{LH,RH}}$
-\end_inset
-
- are eigenstates of the helicity operator with eigenvalues 
-\begin_inset Formula $\pm1$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-The second important fact is that a weakly interacting neutrino has positive
- energy 
-\begin_inset Formula $E=\left|\boldsymbol{P}\right|c$
-\end_inset
-
- and is always LH as shown in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "eq:chiraloperators"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
- The antineutrino is RH and has negative energy 
-\begin_inset Formula $(-E=\left|\boldsymbol{P}\right|c)$
-\end_inset
-
- which is interpreted to mean it travels backwards in time.
- Since neutrinos are nearly massless, there are no mechanisms for RH neutrinos
- and LH antineutrinos.
- The helicity of the neutrino is visualized in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:DecayOfPion"
+reference "eq:helicityoperator"
 plural "false"
 caps "false"
 noprefix "false"
@@ -942,6 +722,25 @@ noprefix "false"
 \end_inset
 
 
+\begin_inset Formula 
+\begin{equation}
+\mathcal{H}=\frac{\boldsymbol{\Sigma}\cdot\boldsymbol{P}}{\left|\boldsymbol{P}\right|}.\label{eq:helicityoperator}
+\end{equation}
+
+\end_inset
+
+While detecting neutrinos are hard as it is, the helicity is infered from
+ the daughter muon in charged pion decay.
+ Since a pion has net zero (0) spin, the spin vectors of the daughters must
+ also sum to zero.
+ The muon from a 
+\begin_inset Formula $\pion^{+}$
+\end_inset
+
+ decay has negative helicity (-1) hence the neutrino also has negative helicity.
+ To confirm the antineutrino's helicity is positive (+1), the interaction
+ requires both a charge (C) conjugation and parity (P) transformation as
+ shown in 
 \begin_inset Float figure
 wide false
 sideways false
@@ -1004,21 +803,477 @@ name "fig:DecayOfPion"
 
 \end_inset
 
- which shows the decay of a pion at rest into a muon and neutrino.
- Since a pion has net zero (0) spin, the spin vectors of the daughters must
- also sum to zero.
- The neutrino's helicity (-1) and hence LH chirality is inferred by the
- positively charged muon of which has +1 helicity.
- To confirm the antineutrino's RH chirality (+1) requires both a charge
- (C) conjugation and parity (P) transformation.
- A C conjugation transforms all particles into their corresponding antiparticles
- while P transformation inverts all spatial coordinates.
+
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:DecayOfPion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ A C conjugation is a linear transformation that transforms all particles
+ into their corresponding antiparticles while the P transformation inverts
+ all spatial coordinates.
+ Thus neutrinos are referred to 
+\shape italic
+left-handed
+\shape default
+ (LH) particles while antineutrinos are 
+\shape italic
+right-handed
+\shape default
+ (RH) particles.
+ It turns out helicity is a useful quantum number to describe neutrinos
+ and coincides with a properity called chirality.
+ To understand chirality and its relationship to helicity requires an analysis
+ of the Dirac Lagrangian and Dirac equation.
+\end_layout
+
+\begin_layout Standard
+The Dirac Lagrangian for a free particle field 
+\begin_inset Formula $\psi\left(x\right)$
+\end_inset
+
+ with half-integer spin can be written as
+\begin_inset Formula 
+\begin{equation}
+\mathcal{L}=\overline{\psi}\left(x\right)\left[\frac{i\hbar}{2}\sum_{\mu=0}^{3}\gamma^{\mu}\left(\overrightarrow{\partial_{\mu}}-\overleftarrow{\partial_{\mu}}\right)-mc\right]\psi\left(x\right)\label{eq:diraclagrangian}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\psi\left(x\right)$
+\end_inset
+
+ is a four-component vector (spinor) describing a particle and 
+\begin_inset Formula $\gamma^{\mu=0,1,2,3}$
+\end_inset
+
+ are a 
+\begin_inset Formula $4\times4$
+\end_inset
+
+ matrices.
+ Its adjoint field 
+\begin_inset Formula $\overline{\psi}\left(x\right)$
+\end_inset
+
+ is defined as 
+\begin_inset Formula 
+\begin{equation}
+\overline{\psi}\left(x\right)\equiv\psi^{\dagger}\left(x\right)\gamma^{0}\label{eq:adjointfield}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\dagger$
+\end_inset
+
+ denotes the conjugate transpose operations.
+ The 
+\begin_inset Formula $\overrightarrow{\partial_{\mu}}$
+\end_inset
+
+ operator is a four-vector defined as
+\begin_inset Formula 
+\begin{equation}
+\partial_{0}=\frac{1}{c}\partderiv t,\partial_{1}=\partderiv x,\partial_{2}=\partderiv y,\partial_{3}=\partderiv z\label{eq:fourderivative}
+\end{equation}
+
+\end_inset
+
+that acts only on the right of it while 
+\begin_inset Formula $\overleftarrow{\partial_{\mu}}$
+\end_inset
+
+ only acts on its left (i.e.
  
+\begin_inset Formula $\overline{\psi}\overleftarrow{\partial_{\mu}}=\partial_{\mu}\overline{\psi}$
+\end_inset
+
+).
+ The 
+\begin_inset Formula $\gamma^{\mu}$
+\end_inset
+
+ matrices are not unique and the choices influenece the representation of
+ the field 
+\begin_inset Formula $\psi\left(x\right)$
+\end_inset
+
+.
+ To describe the dynamics of the field 
+\begin_inset Formula $\psi\left(x\right)$
+\end_inset
+
+, one uses the Euler-Lagrange procedure for a set of 
+\begin_inset Formula $M$
+\end_inset
+
+equations
+\begin_inset Formula 
+\begin{equation}
+\partial_{\mu}\frac{\partial\mathcal{L}}{\partial\left(\partial_{\mu}\psi_{r}\right)}-\frac{\partial\mathcal{L}}{\partial\psi_{r}}=0\quad(r=0,1,2,\ldots,M-1,M)\label{eq:eulerlagrangegeneral}
+\end{equation}
+
+\end_inset
+
+ which in this case is
+\begin_inset Formula 
+\[
+\partial_{\mu}\frac{\partial\mathcal{L}}{\partial\left(\partial_{\mu}\overline{\psi}\right)}-\frac{\partial\mathcal{L}}{\partial\overline{\psi}}=0
+\]
+
+\end_inset
+
+and procedures the Dirac equation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\left[i\hbar\sum_{\mu=0}^{3}\gamma^{\mu}\partial_{\mu}-mc\right]\psi\left(x\right)=0.\label{eq:diraceqn}
+\end{equation}
+
+\end_inset
+
+The representation of the 
+\begin_inset Formula $\gamma^{\mu}$
+\end_inset
+
+ matrices that is useful here is the 
+\shape italic
+Chiral representation
+\shape default
+ (also called the 
+\shape italic
+Weyl representation
+\shape default
+) where
+\begin_inset Formula 
+\begin{equation}
+\gamma^{0}=\begin{bmatrix}0 & I_{2}\\
+-I_{2} & 0
+\end{bmatrix},\gamma^{1}=\begin{bmatrix}0 & \sigma_{x}\\
+-\sigma_{x} & 0
+\end{bmatrix},\gamma^{2}=\begin{bmatrix}0 & \sigma_{y}\\
+-\sigma_{y} & 0
+\end{bmatrix},\gamma^{3}=\begin{bmatrix}0 & \sigma_{z}\\
+-\sigma_{z} & 0
+\end{bmatrix},\label{eq:gammamatrices}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula $I_{2}$
+\end_inset
+
+ is the 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ identity matrix, 
+\begin_inset Formula $\sigma_{x,y,z}$
+\end_inset
+
+ are the Pauli Spin matrices given by
+\begin_inset Formula 
+\[
+\sigma_{x}=\sigma_{1}=\begin{pmatrix}0 & 1\\
+1 & 0
+\end{pmatrix},\quad\sigma_{y}=\sigma_{2}=\begin{pmatrix}0 & -i\\
+i & 0
+\end{pmatrix},\quad\sigma_{z}=\sigma_{3}=\begin{pmatrix}1 & 0\\
+0 & -1
+\end{pmatrix},.
+\]
+
+\end_inset
+
+The chirality matrix, 
+\begin_inset Formula $\gamma^{5}$
+\end_inset
+
+ (the fifth gamma matrix), is defined as
+\begin_inset Formula 
+\begin{equation}
+\gamma^{5}=i\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}=\begin{bmatrix}I_{2} & 0\\
+0 & -I_{2}
+\end{bmatrix},\label{eq:gammafivedef}
+\end{equation}
+
+\end_inset
+
+which is diagonal as well as a Hermitian matrix meaning that its eigenvalues
+ are real and observable.
+ Let eigenfunctions of the chirality matrix be denoted as 
+\begin_inset Formula $P$
+\end_inset
+
+ and 
+\begin_inset Formula $M$
+\end_inset
+
+ such that
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned}\gamma^{5}\psi_{P} & =+1\psi_{P}\\
+\gamma^{5}\psi_{M} & =-1\psi_{M}
+\end{aligned}
+,\label{eq:chiraloperatoreigenvalueequation}
+\end{equation}
+
+\end_inset
+
+now the solutions to 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "eq:diraceqn"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ are decomposed into 
+\begin_inset Formula $\psi_{P}$
+\end_inset
+
+ and 
+\begin_inset Formula $\psi_{M}$
+\end_inset
+
+ projections using a chiral projection operators 
+\begin_inset Formula $\hat{O}_{P,M}$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{equation}
+\psi=\left(\hat{O}_{P}+\hat{O}_{M}\right)\psi=\psi_{P}+\psi_{M}.\label{eq:chiralprojections}
+\end{equation}
+
+\end_inset
+
+The chiral operators are defined as
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned}\hat{O}_{M} & =\frac{1}{2}\left(I_{4}-\gamma^{5}\right)=\begin{pmatrix}0 & 0\\
+0 & I_{2}
+\end{pmatrix},\\
+\hat{O}_{P} & =\frac{1}{2}\left(I_{4}+\gamma^{5}\right)=\begin{pmatrix}I_{2} & 0\\
+0 & 0
+\end{pmatrix},
+\end{aligned}
+\label{eq:chiraloperators}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $I_{4}$
+\end_inset
+
+ is the 
+\begin_inset Formula $4\times4$
+\end_inset
+
+ identity matrix.
+ Using 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "eq:diraclagrangian"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "eq:eulerlagrangegeneral"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, the Dirac equation becomes a set of coupled equations
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned}i\hbar\sum_{\mu=0}^{3}\gamma^{\mu}\partial_{\mu}\psi_{P} & =mc\psi_{M},\\
+i\hbar\sum_{\mu=0}^{3}\gamma^{\mu}\partial_{\mu}\psi_{M} & =mc\psi_{P}
+\end{aligned}
+\label{eq:diraceqnchiral}
+\end{equation}
+
+\end_inset
+
+where dynamics are set by the mass.
+ Since the chiral projection operators are decompositions of the identity
+ matrix, the simplest nontrivial solutions to 
+\begin_inset Formula $\psi$
+\end_inset
+
+ is
+\begin_inset Formula 
+\begin{equation}
+\psi=\begin{pmatrix}\chi_{P}\\
+\chi_{M}
+\end{pmatrix}\label{eq:diracchiralspinorsgeneral}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\chi$
+\end_inset
+
+ represent two-component spinors.
+ The Dirac equation in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "eq:diraceqnchiral"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ can be rewritten as
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned}i\hbar\left[\frac{1}{c}\partderiv t+\boldsymbol{\sigma}\cdot\boldsymbol{\nabla}\right]\chi_{P} & =-mc\chi_{M},\\
+i\hbar\left[\frac{1}{c}\partderiv t-\boldsymbol{\sigma}\cdot\boldsymbol{\nabla}\right]\chi_{M} & =-mc\chi_{P},
+\end{aligned}
+\label{eq:diraceqnchiralspinors}
+\end{equation}
+
+\end_inset
+
+where
+\begin_inset Formula 
+\begin{equation}
+\boldsymbol{\sigma}\cdot\boldsymbol{\nabla}=\sigma_{x}\partderiv x+\sigma_{y}\partderiv y+\sigma_{z}\partderiv z.\label{eq:matrixdotproduct}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the limiting case of vanishing mass 
+\begin_inset Formula $\left(m\rightarrow0\right)$
+\end_inset
+
+, as in the SM, the free particle field equations in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "eq:diraceqnchiralspinors"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ decouple into
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned}\left(\frac{E}{c}+\boldsymbol{\sigma}\cdot\boldsymbol{P}\right)\chi_{P} & =0\\
+\left(\frac{E}{c}-\boldsymbol{\sigma}\cdot\boldsymbol{P}\right)\chi_{M} & =0.
+\end{aligned}
+\quad\left[\text{Momentum basis}\right]\label{eq:diraceqnchiralmassless}
+\end{equation}
+
+\end_inset
+
+We see that for massless neutrinos, 
+\begin_inset Formula $\chi_{P}$
+\end_inset
+
+ and hence 
+\begin_inset Formula $\psi_{P}$
+\end_inset
+
+, describe particles of negative energy 
+\begin_inset Formula $E=-\left|\boldsymbol{P}\right|c$
+\end_inset
+
+ which in the context of quantum field theory are interpretted as antiparticles
+ travelling backwards in time.
+ Conversely, 
+\begin_inset Formula $\chi_{M}$
+\end_inset
+
+ and 
+\begin_inset Formula $\psi_{M}$
+\end_inset
+
+ have positive energy 
+\begin_inset Formula $E=\left|\boldsymbol{P}\right|c$
+\end_inset
+
+ and are interpretted as particles travelling forward in time.
+ If one also multiplies 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "eq:diraceqnchiral"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ by 
+\begin_inset Formula $\gamma^{5}\gamma^{0}$
+\end_inset
+
+ and using the fact that the spin vector instead of being the Pauli Spin
+ matrices but is
+\begin_inset Formula 
+\[
+\boldsymbol{\Sigma}=\gamma^{0}\gamma^{k=1,2,3}\gamma^{5}=i\left(\gamma^{2}\gamma^{3},\gamma^{3}\gamma^{1},\gamma^{1}\gamma^{2}\right)
+\]
+
+\end_inset
+
+each decoupled equation becomes
+\begin_inset Formula 
+\[
+\frac{\boldsymbol{\Sigma}\cdot\boldsymbol{P}}{\left|\boldsymbol{P}\right|}\psi_{P,M}=\gamma^{5}\psi_{P,M}=\pm\psi_{P,M}
+\]
+
+\end_inset
+
+where one recognizes that the helicity operator is acting on a chiral state
+ and is an eigenvalue equation.
+ Thus the labels 
+\begin_inset Formula $M$
+\end_inset
+
+ and 
+\begin_inset Formula $P$
+\end_inset
+
+ actually are identical to the LH and RH, respectively, helicity labels
+ given ealier.
+ Therefore the neutrino is always a LH particle while the antineutrino is
+ a RH antiparticle.
 \end_layout
 
 \begin_layout Standard
 The observation of only LH neutrinos and RH antineutrinos are an important
  feature in the SM.
+ However, since neutrinos are known to have mass from oscillations, it is
+ theoretically possible to observe a RH neutrino and LH antineutrino.
  The weak force allows for P and CP violation due to its vector minus axial-vect
 or (V-A) construction which is how a LH neutrino is described in 
 \begin_inset CommandInset ref
@@ -2914,7 +3169,7 @@ value
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\Dm 32=\Delta m_{\text{atm}}^{2}$
+\begin_inset Formula $\Dm32=\Delta m_{\text{atm}}^{2}$
 \end_inset
 
 
@@ -2964,7 +3219,7 @@ value
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\Dm 21=\Delta m_{\text{sol}}^{2}$
+\begin_inset Formula $\Dm21=\Delta m_{\text{sol}}^{2}$
 \end_inset
 
 
@@ -4418,7 +4673,7 @@ noprefix "false"
  secondary neutrino beamlines.
  In the primary beamline, a series of normal and superconducting magnets
  steer the proton beam 
-\begin_inset Formula $80.7\text{\textdegree}$
+\begin_inset Formula $80.7\text{°}$
 \end_inset
 
  along a 104m radius of curvature.
