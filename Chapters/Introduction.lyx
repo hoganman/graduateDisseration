@@ -83,7 +83,7 @@
 \begin_body
 
 \begin_layout Standard
-This describes the thesis
+This describes the thesis.
 \end_layout
 
 \begin_layout Section
@@ -139,9 +139,9 @@ literal "false"
 
  The latter solution was supported by Wolfgang Pauli in a letter dated 4
  December 1930 to a group of physicists meeting in Tübingen, modern Germany,
- where he first proposed what we would call a neutrino today
+ where he first proposed the neutrino
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 In W Pauli's December 1930 letter, he referred to his proposed particle
@@ -153,7 +153,7 @@ neutron
 \begin_inset Quotes erd
 \end_inset
 
-, which is not the same neutron we know of today.
+, which is not the same neutron known of today.
  At that point in time, the neutral particles inside the atomic nucleus,
  also called 
 \begin_inset Quotes eld
@@ -171,7 +171,7 @@ neutrons
 \begin_inset Formula $\beta$
 \end_inset
 
--decay spectrum a 
+-decay spectrum as a 
 \begin_inset Quotes eld
 \end_inset
 
@@ -179,11 +179,15 @@ neutrino
 \begin_inset Quotes erd
 \end_inset
 
-, meaning 
+ meaning in Italian 
 \shape italic
 little neutral one
 \shape default
 .
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -226,20 +230,24 @@ ly unimpeded towards one's particle detector.
 \begin_inset Formula $7.0\times10^{10}\text{ neutrinos}/\text{cm}^{2}/\text{sec}$
 \end_inset
 
-
+ are incident on the Earth from the Sun
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 To give some perspective to this number, this means 70 billion neutrinos
  are travelling every second through an area similar to one's own thumb
  nail.
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \end_inset
 
- are incident on the Earth from the Sun, statistically one solar neutrino
- can harmlessly interact with an individual.
+, statistically one solar neutrino can harmlessly interact with an individual
+ in her lifetime.
  So this begs the question: how does one detect a neutrino? The short answer
  is one needs a ultra large volume of matter and a large enough flux of
  neutrinos in its path just to detect one given today's technology.
@@ -330,9 +338,10 @@ noprefix "false"
 
 
 \begin_inset Float figure
+placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -415,7 +424,7 @@ weak isospin doublet
 U(1) symmetry which leads to the required existence of the photon and W
  and Z bosons
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 A gauge theory describes ways to measure physical forces or fields through
@@ -437,9 +446,16 @@ A gauge theory describes ways to measure physical forces or fields through
 \begin_inset Formula $\times$
 \end_inset
 
-U(1) where SU(2) is the special unitary group of 2x2 unitary matrices, and
- U(1) is the unitary (circle) group consisting of complex numbers of magnitude
- 1.
+U(1) where SU(2) is the special unitary group of 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ unitary matrices, and U(1) is the unitary (circle) group consisting of
+ complex numbers of magnitude 1.
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -535,25 +551,21 @@ where
 \end_layout
 
 \begin_layout Standard
-Weak interactions are classified into two classes: charged current (CC)
- and neutral current (NC).
- CC interactions involve one of the two charged W bosons and change the
- incoming neutrino of flavor 
-\begin_inset Formula $\nu_{l}$
-\end_inset
-
- 
-\begin_inset Formula $(l=e,\mu,\tau)$
-\end_inset
-
+Weak interactions are classified into two classes of interactions: charged
+ current (CC) and neutral current (NC).
+ CC interactions involve a charged W boson and change the scattering neutrino
  into a electrically charged lepton of flavor 
 \begin_inset Formula $l$
 \end_inset
 
- or vice-versa.
+ where the flavor of the neutrino 
+\begin_inset Formula $\nu_{l}$
+\end_inset
+
+ is inferred from the charged lepton.
  The same cannot be said of NC interactions which exchange a neutral Z boson.
- NC interactions do not change the flavor of the incoming particles and
- are therefore flavor agnostic.
+ NC interactions are flavor agnostic since they do not produce a charged
+ lepton.
  An example of each interaction type is shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -566,9 +578,10 @@ noprefix "false"
 
 
 \begin_inset Float figure
+placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -654,7 +667,7 @@ CC And NC Feynman Diagrams
 
 \end_inset
 
-Left: Muon decay 
+(a) Muon decay 
 \begin_inset Formula $\left(\mu^{-}\rightarrow\numu\antinue e^{-}\right)$
 \end_inset
 
@@ -663,8 +676,8 @@ Left: Muon decay
  via the emission of a W boson.
  Due to a conserved quantum number called lepton number, the W must emit
  an electron and electron neutrino pair.
- Right: Neutral current interaction Feynman diagram where time increases
- from left to right.
+ (b) Neutral current interaction Feynman diagram where time increases from
+ left to right.
  This is a neutral current interaction where a neutrino of arbitrary flavor
  
 \begin_inset Formula $X$
@@ -742,9 +755,10 @@ While detecting neutrinos is hard as it is, the helicity is inferred from
  requires both a charge (C) conjugation and parity (P) transformation as
  shown in 
 \begin_inset Float figure
+placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1083,7 +1097,38 @@ where
 \end_inset
 
  identity matrix.
- Using 
+ Taken together 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "eq:chiralprojections"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "eq:chiraloperators"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ indicate the free neutrino field is a vector 
+\begin_inset Formula $\psi$
+\end_inset
+
+ minus axial vector 
+\begin_inset Formula $\gamma^{5}\psi$
+\end_inset
+
+, also referred to as V-A, under P transformations.
+ This feature is what allows for the weak force to violate P-symmetry and
+ CP-symmetry.
+ Refering back to
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "eq:diraclagrangian"
@@ -1202,7 +1247,8 @@ noprefix "false"
 
 \end_inset
 
-where the differential operators have been expressed as energy 
+where the differential operators have been evaluated as the particle's energy
+ 
 \begin_inset Formula $E$
 \end_inset
 
@@ -1263,7 +1309,7 @@ noprefix "false"
 
 \end_inset
 
-each decoupled equation becomes after some manipulation
+each decoupled equation becomes
 \begin_inset Formula 
 \begin{equation}
 \frac{\boldsymbol{\Sigma}\cdot\boldsymbol{P}}{\left|\boldsymbol{P}\right|}\psi_{P,M}=\gamma^{5}\psi_{P,M}=\pm\psi_{P,M},\label{eq:chiralhelicityrelationship}
@@ -1271,11 +1317,11 @@ each decoupled equation becomes after some manipulation
 
 \end_inset
 
-where one recognizes that helicity and chiral states are the same (
+where one recognizes that helicity and chiral states are the same for 
 \begin_inset Formula $m\rightarrow0$
 \end_inset
 
- only).
+ only.
  Thus the labels 
 \begin_inset Formula $M$
 \end_inset
@@ -1284,10 +1330,10 @@ where one recognizes that helicity and chiral states are the same (
 \begin_inset Formula $P$
 \end_inset
 
- actually are identical to the LH and RH helicity labels, respectively,
- given ealier.
- Using the results from before, a neutrino is always observed as a LH particle
- while the anti-neutrino is always observed as a RH antiparticle.
+ actually are identical to the LH and RH helicity labels, respectively.
+ Using the results on helicity from before, a neutrino is always observed
+ as a LH particle while the anti-neutrino is always observed as a RH antiparticl
+e.
 \end_layout
 
 \begin_layout Standard
@@ -1297,36 +1343,6 @@ The observation of only LH neutrinos and RH anti-neutrinos is an important
  theoretically possible to observe a RH neutrino and LH anti-neutrino.
  That would require boosting to a highly relativistic reference frame with
  respect to the laboratory.
-\end_layout
-
-\begin_layout Standard
-The free neutrino field is a construction of a vector minus axial vector,
- also referred to as V-A, as shown in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "eq:chiralprojections"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- and 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "eq:chiraloperators"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
- This feature is what allows for the weak force to violate P-symmetry and
- CP-symmetry.
- Further observation of CP violation is being explored with neutrinos through
- a process called neutrino oscillations.
- This will be explained in the next subsection.
 \end_layout
 
 \begin_layout Subsection
@@ -1349,7 +1365,7 @@ Neutrino oscillations are the observation of a neutrino produced of definite
  distance from their source increased.
  For neutrino oscillations to occur, at least one neutrino must be massive.
  This observation firmly established that the SM is wrong with its prediction
- of massless neutrinos
+ of massless neutrinos.
 \end_layout
 
 \begin_layout Standard
@@ -1422,10 +1438,10 @@ Another outstanding problem emerged with measurements of atmospheric neutrinos,
 \end_layout
 
 \begin_layout Standard
-While the phenomenon of neutrino oscillations has been understood for decades,
- it is not incorporated formally into the SM since oscillations require
- the neutrino has mass.
- The reasons why neutrino oscillations require massive neutrinos is explained
+While the phenomenon of neutrino oscillations has been understood for almost
+ three decades, it was not predicted since oscillations require the neutrino
+ has mass.
+ The reasons why neutrino oscillations require massive neutrinos are explained
  in the next subsection.
 \end_layout
 
@@ -1569,8 +1585,8 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-Before being able to describe neutrino oscillations, we must define our
- basis states.
+Before being able to describe neutrino oscillations, the basis states must
+ be defined.
  For this example, consider that there are only two eigenstates, labeled
  
 \begin_inset Formula $\nu_{1}$
@@ -1676,11 +1692,11 @@ This linear transformation must be a unitary matrix
 \end_inset
 
  constitute a complete orthonormal basis in the mass basis.
- With this unitary property, we can imagine 
+ With this unitary property, 
 \begin_inset Formula $U$
 \end_inset
 
- as a rotation matrix
+ can be written as a rotation matrix
 \end_layout
 
 \begin_layout Standard
@@ -1717,7 +1733,7 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1795,25 +1811,14 @@ name "fig:twoflavorrotation"
 \begin{equation}
 \begin{aligned}\mathcal{P}\left(\nu_{\alpha}\rightarrow\nu_{\beta}\right) & =\left|\braket{\nu_{\alpha}(t=0)|\nu_{\beta}(t=T)}\right|^{2}\\
  & =\left|\left(\cos(\theta)\diracbra{\nu_{1}(t=0)}+\sin(\theta)\diracbra{\nu_{2}(t=0)}\right)\right.\\
- & \ \ \ \ \times\left.\left(-\sin(\theta)\diracket{\nu_{1}(t=T)}+\cos(\theta)\diracket{\nu_{2}(t=T)}\right)\right|^{2}\\
- & =\left|\braket{\nu_{1}(0)|\nu_{1}(T)}(-cs)+\braket{\nu_{1}(0)|\nu_{2}(T)}(cc)\right.\\
- & \ \ \ \ \left.+\braket{\nu_{2}(0)|\nu_{1}(T)}(-ss)+\braket{\nu_{2}(0)|\nu_{2}(T)}(sc)\right|^{2}
+ & \times\left.\left(-\sin(\theta)\diracket{\nu_{1}(t=T)}+\cos(\theta)\diracket{\nu_{2}(t=T)}\right)\right|^{2}.
 \end{aligned}
 \label{eq:prob2flavorexpanded}
 \end{equation}
 
 \end_inset
 
-where for simplicity 
-\begin_inset Formula $c=\cos(\theta)$
-\end_inset
-
- and 
-\begin_inset Formula $s=\sin(\theta)$
-\end_inset
-
-.
- Evaluating all inner products and simplifying terms in 
+Evaluating all inner products and simplifying terms in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "eq:prob2flavorexpanded"
@@ -1868,17 +1873,17 @@ noprefix "false"
 
  demonstrates that the probability changes sinusoidally.
  This equation is not, however, terribly useful in the laboratory frame
- since it is hard to make an experiment where the travel time an individual
+ since it is hard to design an experiment where the travel time an individual
  neutrino is well known.
  Instead, one can make useful approximations that are accessible in the
  laboratory frame.
  Since neutrinos are nearly massless, they travel very close to the speed
  of light.
- Therefore we can replace time 
+ Therefore time 
 \begin_inset Formula $T$
 \end_inset
 
- with 
+ is replaced with 
 \begin_inset Formula $L/c$
 \end_inset
 
@@ -1906,7 +1911,7 @@ noprefix "false"
 
 \end_inset
 
-where for experiments 
+where for oscillation experiments 
 \begin_inset Formula $p_{j}\gg m_{j}c$
 \end_inset
 
@@ -1919,7 +1924,7 @@ where for experiments
 \end_inset
 
  is the neutrino energy as measured in the laboratory.
- Substituting the assumptions in 
+ Substituting these assumptions in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "eq:prob2flavorsimplified"
@@ -1994,7 +1999,7 @@ noprefix "false"
 
 \end_inset
 
-
+.
 \begin_inset Float figure
 wide false
 sideways false
@@ -2034,7 +2039,7 @@ Two flavor oscillation probability as a function
 \end_inset
 
  and 
-\begin_inset Formula $\Delta m^{2}=\unit[10^{-3}]{eV^{2}}$
+\begin_inset Formula $\Delta m^{2}=10^{-3}\text{ eV}^{2}/c^{4}$
 \end_inset
 
 .
@@ -2065,7 +2070,6 @@ name "fig:Two-flavor-oscillation"
 
 \end_inset
 
-.
  Since 
 \begin_inset Formula $L$
 \end_inset
@@ -2097,11 +2101,11 @@ noprefix "false"
 
 \end_inset
 
-
+.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2128,7 +2132,11 @@ Logarithmic Plot of the Two Flavor Survival Probability
 
 \end_inset
 
-Logarithmic plot of the survival probability 
+Logarithmic plot of the survival probability of flavor 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ 
 \begin_inset Formula $\left(1-\mathcal{P}\left(\nu_{\alpha}\rightarrow\nu_{\beta}\right)=\mathcal{P}\left(\nu_{\alpha}\rightarrow\nu_{\alpha}\right)\right)$
 \end_inset
 
@@ -2167,8 +2175,8 @@ Logarithmic plot of the survival probability
 \end_inset
 
 .
- The arrows above the plot roughly denote three possible cases: (a) no oscillati
-ons (
+ The arrows above the plot very roughly denote three possible cases: (a)
+ no oscillations (
 \begin_inset Formula $L/E\ll1/\Delta m^{2})$
 \end_inset
 
@@ -2206,7 +2214,7 @@ name "fig:Two-flavor-oscillation-2"
 
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -2267,7 +2275,7 @@ literal "false"
 \end_inset
 
 , which means there are three (3) mixing angles, one (1) CP violating phase,
- and two (2) mass-squared splittings.
+ and three (3) mass-squared splittings.
  
 \end_layout
 
@@ -2320,7 +2328,7 @@ c_{21} & s_{21} & 0\\
 -s_{21} & c_{21} & 0\\
 0 & 0 & 1
 \end{array}\end{bmatrix}}}\end{aligned}
-\label{eq:mnspdecomposed}
+,\label{eq:mnspdecomposed}
 \end{equation}
 
 \end_inset
@@ -2328,7 +2336,7 @@ c_{21} & s_{21} & 0\\
 where 
 \begin_inset Formula 
 \begin{equation}
-\cc{ij}=\cos\theta_{ij},\ss{ij}=\sin\theta_{ij},\label{eq:cossinshorthand}
+\cc{ij}=\cos\theta_{ij},\quad\ss{ij}=\sin\theta_{ij},\label{eq:cossinshorthand}
 \end{equation}
 
 \end_inset
@@ -2391,7 +2399,7 @@ noprefix "false"
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2459,11 +2467,11 @@ Energy
 \begin_inset Formula $\min\left(\Delta m^{2}\right)$
 \end_inset
 
- [eV
-\begin_inset Formula $^{2}$
+ 
+\begin_inset Formula $\left[\text{eV}{}^{2}\right]$
 \end_inset
 
-]
+
 \end_layout
 
 \end_inset
@@ -2882,17 +2890,15 @@ If neutrinos are their own antiparticles, they do not follow the Dirac Equation
 \begin_inset Formula $n-1$
 \end_inset
 
-) more CP violating phases to the MNSP matrix in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "eq:mnspdecomposed"
-plural "false"
-caps "false"
-noprefix "false"
-
+) more CP violating Majorana phases, 
+\begin_inset Formula $\alpha$
 \end_inset
 
+ and 
+\begin_inset Formula $\beta$
+\end_inset
 
+, to the MNSP matrix
 \end_layout
 
 \begin_layout Standard
@@ -2901,7 +2907,7 @@ noprefix "false"
 U_{\text{MNSP}}\rightarrow U_{\text{MNSP}}\times\stackrel{U_{\text{Majorana}}}{\overbrace{\begin{bmatrix}1 & 0 & 0\\
 0 & e^{i\alpha} & 0\\
 0 & 0 & e^{i\beta}
-\end{bmatrix}}}\label{eq:mnspdecomposedmajorana}
+\end{bmatrix}}}.\label{eq:mnspdecomposedmajorana}
 \end{equation}
 
 \end_inset
@@ -2918,7 +2924,10 @@ Unfortunately, neutrino oscillations are not able to probe the Majorana
 
  particles is an open question and is being explored by non-oscillation
  experiments.
- The full three flavor oscillation probability is given by
+\end_layout
+
+\begin_layout Standard
+The full three flavor oscillation probability is given by
 \begin_inset Formula 
 \begin{equation}
 \begin{aligned}\mathcal{P}\left(\nu_{\alpha}\rightarrow\nu_{\beta}\right)=\delta_{\alpha\beta}-4 & \sum_{j=1}^{3}\left[\sum_{i>j}^{3}\text{Re}\left(K_{\alpha\beta,ij}\right)\sin^{2}\left(\phi_{ij}\right)\right]\\
@@ -2949,21 +2958,21 @@ Since CP violation means that
 \begin_inset Formula $\mathcal{P}\left(\nuparticle{\alpha}\rightarrow\nuparticle{\beta\neq\alpha}\right)\neq\mathcal{P}\left(\antinuparticle{\alpha}\rightarrow\antinuparticle{\beta\neq\alpha}\right),$
 \end_inset
 
- CP violating (conserving) terms must be an odd (even) function of 
+ CP violating terms must be an odd function of 
 \begin_inset Formula $\delta_{\text{CP}}$
 \end_inset
 
 .
- Consider the following examples, muon neutrino disappearance and muon neutrino
+ Consider the following examples, muon neutrino survival and muon neutrino
  to electron neutrino appearance.
 \end_layout
 
 \begin_layout Paragraph
-Muon Neutrino Disappearance
+Muon Neutrino Survival
 \end_layout
 
 \begin_layout Standard
-The probability of a muon type neutrinos disappearing is given by 
+The probability of a muon type neutrinos surviving is given by 
 \begin_inset Formula 
 \begin{equation}
 \begin{aligned}\mathcal{P}\left(\nuantinuparticle{\mu}\rightarrow\nuantinuparticle{\mu}\right)=1-4 & \sss{23}\ccc{13}\left(V_{\cos\delta_{\text{CP}}}\right)\sin^{2}\phi_{31}\\
@@ -3020,7 +3029,7 @@ noprefix "false"
 
 , this channel does not offer insights into CP violation in a vacuum
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 When going to through matter however, the oscillation probability is affected.
@@ -3035,6 +3044,10 @@ noprefix "false"
 \end_inset
 
 .
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3125,9 +3138,10 @@ Current and next generation experiments aim to improve knowledge of the
  This problem is known as the mass hierarchy problem and is illustrated
  in 
 \begin_inset Float figure
+placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Float figure
@@ -3358,11 +3372,12 @@ noprefix "false"
 
 \end_inset
 
-
+.
 \begin_inset Float table
+placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3919,7 +3934,7 @@ name "tab:mnspparameters"
 
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -3934,8 +3949,8 @@ name "subsubsec:Matter-Effects"
 \end_layout
 
 \begin_layout Standard
-Traveling through matter also increases the sensitivity of oscillation measureme
-nts.
+Traveling through matter has the potential to increase the sensitivity of
+ oscillation measurements if the baseline is long enough.
  Known as the Mikheyev-Smirnov-Wolfenstein (MSW) effect, all oscillations
  are affected by coherent forward scattering of neutrinos with electrons
  in the media.
@@ -3983,7 +3998,7 @@ noprefix "false"
 \begin_inset Formula 
 \begin{equation}
 \begin{aligned}\mathcal{P}\left(\nuantinuparticle{\mu}\rightarrow\nuantinuparticle e\right)\rightarrow & \mathcal{P}\left(\nuantinuparticle{\mu}\rightarrow\nuantinuparticle e\right)+\frac{8\alpha}{\Dm 31}\left(\ccc{13}\sss{13}\sss{23}\right)\left(1-2\sss{13}\right)\\
- & \times\left(\sin^{2}\phi_{31}\overset{_{(+)}}{-}\underset{\phi_{31}}{\underbrace{\left(\frac{\Dm 31c^{3}}{4\hbar}\frac{L}{E_{\nu}}\right)}}\cos\phi_{32}\sin\phi_{31}\right)
+ & \times\left(\sin^{2}\phi_{31}\overset{_{(+)}}{-}\underset{\phi_{31}}{\underbrace{\left(\frac{\Dm 31c^{3}}{4\hbar}\frac{L}{E_{\nu}}\right)}}\cos\phi_{32}\sin\phi_{31}\right),
 \end{aligned}
 \label{eq:numu2nuethreeflavormasseffect}
 \end{equation}
@@ -4017,7 +4032,7 @@ literal "false"
 .
  Carefully studying 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "eq:numu2nuethreeflavormasseffect"
 plural "false"
 caps "false"
@@ -4041,8 +4056,8 @@ name "subsec:CPVMatter"
 \end_layout
 
 \begin_layout Standard
-To conclude the introduction on neutrinos, lets briefly examine the implications
- of CP violation.
+To conclude the introduction on neutrinos, it is important to examine the
+ implications of CP violation.
  The observation of CP violation in the lepton sector might provide critical
  insight into the origins of the matter.
  CP violation dictates that certain interactions behave differently between
@@ -4053,20 +4068,115 @@ To conclude the introduction on neutrinos, lets briefly examine the implications
 .
  The Big Bang Theory suggests that in the first fractions of a second of
  the Universe, equal amounts of matter and antimatter were created.
- However, observational evidence shows the Universe consists of baryonic
- matter (i.e.
- protons and neutrons).
- This is known as the Baryon Asymmetry of the Universe (BAU).
+ However, observational evidence shows the Universe consists of only 4.5%
+ baryonic matter (i.e.
+ protons and neutrons) from comoslogical models as shown in 
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/LambdaCDM.png
+	lyxscale 50
+	height 25theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Matter and energy content of the Universe display that while the Universe
+ consists of 4.5% of baryonic matter.
+ The rest of the Universe consists of non-baryonic matter called Dark Matter
+ and a form of energy called Dark Energy.
+ These inferred parameters are taken from the 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+CDM model, the simplest model that describes the cosmos
+\begin_inset CommandInset citation
+LatexCommand cite
+key "2011ApJS..192...18K"
+literal "false"
+
+\end_inset
+
+.
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Matter And Energy Content of the Universe
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Matter-Content-of-universe"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Matter-Content-of-universe"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ The anti-baryonic fraction of the baryonic matter is infinitessimally low
+ from external constraints on data from gamma-ray telescopes like Fermi-GLAST
+\begin_inset CommandInset citation
+LatexCommand cite
+key "vonBallmoos2014"
+literal "false"
+
+\end_inset
+
+.
+ This problem is known as the Baryon Asymmetry of the Universe (BAU).
 \end_layout
 
 \begin_layout Standard
 The process of Baryogenesis
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Baryogenesis is the mechanism by which matter and antimatter baryons are
  created in the early Universe.
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4085,11 +4195,15 @@ literal "false"
  but not to the level which resolves the BAU.
  Baryogenesis can be achieved by having Leptogenesis
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Leptogenesis is the mechanism by which leptons and anti-leptons are created
  in the early Universe.
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4140,55 +4254,12 @@ literal "false"
 
 \end_inset
 
- as shown in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:T2KBirdsEye"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
- It is the successor experiment to the KEK-to-Kamioka neutrino oscillation
- experiment also hosted in Japan.
- T2K produces its high intensity, muon neutrino pure beam at the Japan Proton
- Accelerator Complex (J-PARC), a world class particle accelerator facility.
- The beam is directed at the Super-Kamiokande (SK)
-\begin_inset CommandInset citation
-LatexCommand cite
-key "FUKUDA2003418"
-literal "false"
-
-\end_inset
-
- detector which is 295 km away from the source.
- Along the beamline at 280m from the beam source are a series of near detectors
- called ND280
-\begin_inset CommandInset citation
-LatexCommand cite
-key "doi:10.1063/1.3274192"
-literal "false"
-
-\end_inset
-
- to observe and characterize the unoscillated beam.
- The beam is designed to maximize the 
-\begin_inset Formula $\numu\rightarrow\nue$
-\end_inset
-
- probability at the 295km baseline using a neutrino energy spectrum sharply
- peaked at 0.6GeV.
- This spectrum is achieved by directing the center of the beam 2.5 degrees
- from SK.
-\end_layout
-
-\begin_layout Standard
+ as shown in
 \begin_inset Float figure
+placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4236,7 +4307,55 @@ name "fig:T2KBirdsEye"
 
 \end_inset
 
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:T2KBirdsEye"
+plural "false"
+caps "false"
+noprefix "false"
 
+\end_inset
+
+.
+ It is the successor experiment to the KEK-to-Kamioka neutrino oscillation
+ experiment also hosted in Japan.
+ T2K produces its high intensity, muon neutrino pure beam at the Japan Proton
+ Accelerator Complex (J-PARC), a world class particle accelerator facility.
+ The beam is directed at the Super-Kamiokande (SK)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "FUKUDA2003418"
+literal "false"
+
+\end_inset
+
+ detector which is 295 km away from the source.
+ Along the beamline at 280m from the beam source are a series of near detectors
+ called ND280
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1063/1.3274192"
+literal "false"
+
+\end_inset
+
+ to observe and characterize the unoscillated beam.
+ The beam is designed to maximize the 
+\begin_inset Formula $\numu\rightarrow\nue$
+\end_inset
+
+ probability at the 
+\begin_inset Formula $L=$
+\end_inset
+
+295 km baseline using a neutrino energy spectrum sharply peaked at 
+\begin_inset Formula $\Enu=0.6$
+\end_inset
+
+ GeV.
+ This spectrum is achieved by directing the center of the beam axis 2.5 degrees
+ off center from SK.
 \end_layout
 
 \begin_layout Standard
@@ -4252,7 +4371,7 @@ T2K was primarily designed to measure the last unknown MNSP mixing angle
 \end_inset
 
  and 
-\begin_inset Formula $\Dm23$
+\begin_inset Formula $\Dm 23$
 \end_inset
 
 .
@@ -4322,6 +4441,7 @@ noprefix "false"
 
 
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status collapsed
@@ -4393,20 +4513,24 @@ name "fig:BirdsEyeJPARC"
 Protons for the T2K beamline are first accelerated in the J-PARC linear
  accelerator
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 A linear accelerator accelerates particles using time varying electric fields
  along a one direction, terminal beamline.
  Not only used in particle physics, they are also used in the medical field
  to generate X-rays.
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \end_inset
 
- (linac) and rapid cycle synchrotron
+ (linac) and then the rapid cycle synchrotron
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 A synchrotron is cyclic particle accelerator that relies on time varying
@@ -4414,18 +4538,20 @@ A synchrotron is cyclic particle accelerator that relies on time varying
  Since they require many magnets and large spaces to operate, they are usually
  operated at national laboratories for others uses as well like material
  and life sciences.
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \end_inset
 
  (RCS).
- Protons are initially extracted from a hydrogen ion (
+ They are initially extracted from a hydrogen ion (
 \begin_inset Formula $_{1}^{1}\text{H}^{+}$
 \end_inset
 
-) source.
- Those protons are feed through a radio frequency (RF) quadropole magnet
- and a series of linac elements as shown in 
+) source and feed through a series of linac elements as shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "subfig:LINAC"
@@ -4436,9 +4562,10 @@ noprefix "false"
 \end_inset
 
 .
- Each linac element accelerates the protons using carefully coordinated
- oscillating electric fields generated by RF pulses.
- After travelling 240m along the linac, the protons are boosted to 400 MeV
+ Each linac element except for the initial quadrapole magnet apparatus accelerat
+es the protons using carefully coordinated oscillating electric fields generated
+ by radio frequency pulses.
+ After traveling 240m along the linac, the protons are boosted to 400 MeV
  and transported into the RCS.
  The 348m circumference RCS then further boosts the protons to 3 GeV at
  an operating frequency of 25 Hz.
@@ -4468,28 +4595,9 @@ noprefix "false"
 
 \end_inset
 
- which has a circumference of 1567m.
- While nominally designed to boost protons to 50 GeV, it currently operates
- at 30 GeV.
- Protons are injected into the MR to form eight proton bunches (spill),
- initially six when T2K first ran, before entering the neutrino beamline.
- The total temporal width of the spill is approximately 
-\begin_inset Formula $0.5\mu\text{s}$
-\end_inset
 
-.
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Abe:2011ks"
-literal "false"
-
-\end_inset
-
-.
- At a spill cycle frequency of 0.5Hz, the bunches are extracted from the
- MR into the neutrino beamline.
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status collapsed
@@ -4690,7 +4798,26 @@ name "fig:schemeJPARC"
 
 \end_inset
 
+ which has a circumference of 1567m.
+ While nominally designed to boost protons to 50 GeV, it currently operates
+ at 30 GeV.
+ Protons are injected into the MR to form eight proton bunches (spill),
+ initially six when T2K first ran, before entering the neutrino beamline.
+ The total temporal width of the spill is approximately 
+\begin_inset Formula $0.5\mu\text{s}$
+\end_inset
 
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abe:2011ks"
+literal "false"
+
+\end_inset
+
+.
+ At a spill cycle frequency of 0.5Hz, the bunches are extracted from the
+ MR into the neutrino beamline.
 \end_layout
 
 \begin_layout Standard
@@ -4731,12 +4858,16 @@ noprefix "false"
  To enhance the flux of neutrinos, a series of current pulsed, focusing
  magnets called horns
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 The name horn derives from the fact that the focusing magnets are shaped
  like brass horns in a music ensemble or marching band.
  One can think of these horns like a focusing lens for charged particles.
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4751,23 +4882,12 @@ noprefix "false"
 
 \end_inset
 
- are used to focus pions of the correct charge towards SK.
- The horns are pulsed at +250kA (-250kA) to select positively (negatively)
- charged pions.
- The focused pions are allowed to decay along a 96m long decay volume to
- boost the daughter neutrinos along the beamline direction.
- The decay volume needs to be as close to vacuum as possible to reduce pion
- absorption and among other reasons, and thus it is filled with gaseous
- helium at 1 atm for safety reasons.
- Daughter muons of sufficient momentum 
-\begin_inset Formula $(>5\text{ GeV})$
-\end_inset
 
- are further used to characterize the neutrino flux
 \begin_inset Float figure
+placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Float figure
@@ -4804,10 +4924,6 @@ name "fig:Neutrino-beamline"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -4848,10 +4964,6 @@ name "fig:Secondary-beamline"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -4953,13 +5065,21 @@ name "fig:JPARCNeutrinobeamline"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
-.
+ are used to focus pions of the correct charge towards SK.
+ The horns are pulsed at +250kA (-250kA) to select positively (negatively)
+ charged pions.
+ The focused pions are allowed to decay along a 96m long decay volume to
+ boost the daughter neutrinos along the beamline direction.
+ The decay volume needs to be as close to vacuum as possible to reduce pion
+ absorption and among other reasons, and thus it is filled with gaseous
+ helium at 1 atm for safety reasons.
+ Daughter muons of sufficient momentum 
+\begin_inset Formula $(>5\text{ GeV})$
+\end_inset
+
+ are further used to characterize the neutrino flux.
 \end_layout
 
 \begin_layout Standard
@@ -4991,6 +5111,7 @@ noprefix "false"
 
  
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status collapsed

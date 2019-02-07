@@ -185,10 +185,10 @@
 @Article{ingrid,
   Title                    = {Measurements of the T2K neutrino beam properties using the INGRID on-axis near detector},
   Author                   = {K. Abe and others},
-  Journal                  = {Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment},
+  Journal                  = {Nucl. Instrum. Meth.},
   Year                     = {2012},
   Pages                    = {211 - 223},
-  Volume                   = {694},
+  Volume                   = {A694},
 
   Doi                      = {https://doi.org/10.1016/j.nima.2012.03.023},
   ISSN                     = {0168-9002},
@@ -676,6 +676,23 @@
   Volume                   = {A221},
 
   Doi                      = {10.1016/S0168-9002(03)01368-8}
+}
+
+@Article{vonBallmoos2014,
+  Title                    = {Antimatter in the Universe: constraints from gamma-ray astronomy},
+  Author                   = {von Ballmoos, Peter},
+  Journal                  = {Hyperfine Interactions},
+  Year                     = {2014},
+
+  Month                    = {Oct},
+  Number                   = {1},
+  Pages                    = {91--100},
+  Volume                   = {228},
+
+  Day                      = {01},
+  Doi                      = {10.1007/s10751-014-1024-9},
+  ISSN                     = {1572-9540},
+  Url                      = {https://doi.org/10.1007/s10751-014-1024-9}
 }
 
 @Article{Benhar:2006wy,
@@ -1325,6 +1342,20 @@
   Address                  = {Stanford, California},
   Month                    = Sep,
   Number                   = {STAN-CS-83-980}
+}
+
+@Article{2011ApJS..192...18K,
+  Title                    = {{Seven-year Wilkinson Microwave Anisotropy Probe (WMAP) Observations: Cosmological Interpretation}},
+  Author                   = {Komatsu, E. and Others},
+  Journal                  = {apjs},
+  Year                     = {2011},
+
+  Month                    = feb,
+  Pages                    = {18},
+  Volume                   = {192},
+
+  Doi                      = {10.1088/0067-0049/192/2/18},
+  Eid                      = {18}
 }
 
 @Article{Kuusela:2015mzh,
