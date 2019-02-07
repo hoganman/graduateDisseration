@@ -702,7 +702,7 @@ name "subsec:Chirality"
 \end_layout
 
 \begin_layout Standard
-Neutrinos are observed to have antiparallel momentum vectors 
+Neutrinos are observed to have anti-parallel momentum vectors 
 \begin_inset Formula $\boldsymbol{P}$
 \end_inset
 
@@ -710,7 +710,7 @@ Neutrinos are observed to have antiparallel momentum vectors
 \begin_inset Formula $\boldsymbol{\Sigma}$
 \end_inset
 
- and the opposite is true for antineutrinos.
+ and the opposite is true for anti-neutrinos.
  This property is called helicty and is given by 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -729,7 +729,7 @@ noprefix "false"
 
 \end_inset
 
-While detecting neutrinos are hard as it is, the helicity is infered from
+While detecting neutrinos is hard as it is, the helicity is inferred from
  the daughter muon in charged pion decay.
  Since a pion has net zero (0) spin, the spin vectors of the daughters must
  also sum to zero.
@@ -738,7 +738,7 @@ While detecting neutrinos are hard as it is, the helicity is infered from
 \end_inset
 
  decay has negative helicity (-1) hence the neutrino also has negative helicity.
- To confirm the antineutrino's helicity is positive (+1), the interaction
+ To confirm the anti-neutrino's helicity is positive (+1), the interaction
  requires both a charge (C) conjugation and parity (P) transformation as
  shown in 
 \begin_inset Float figure
@@ -821,13 +821,13 @@ noprefix "false"
 \shape italic
 left-handed
 \shape default
- (LH) particles while antineutrinos are 
+ (LH) particles while anti-neutrinos are 
 \shape italic
 right-handed
 \shape default
  (RH) particles.
  It turns out helicity is a useful quantum number to describe neutrinos
- and coincides with a properity called chirality.
+ and coincides with a property called chirality.
  To understand chirality and its relationship to helicity requires an analysis
  of the Dirac Lagrangian and Dirac equation.
 \end_layout
@@ -849,16 +849,16 @@ where
 \begin_inset Formula $\psi\left(x\right)$
 \end_inset
 
- is a four-component vector (spinor) describing a particle and 
-\begin_inset Formula $\gamma^{\mu=0,1,2,3}$
+ is a four-component vector (spinor) describing a particle field and 
+\begin_inset Formula $\gamma^{\mu}$
 \end_inset
 
- are a 
+ are a set of four 
 \begin_inset Formula $4\times4$
 \end_inset
 
  matrices.
- Its adjoint field 
+ The adjoint field 
 \begin_inset Formula $\overline{\psi}\left(x\right)$
 \end_inset
 
@@ -874,7 +874,7 @@ where
 \begin_inset Formula $\dagger$
 \end_inset
 
- denotes the conjugate transpose operations.
+ denotes the conjugate and transpose operations.
  The 
 \begin_inset Formula $\overrightarrow{\partial_{\mu}}$
 \end_inset
@@ -901,37 +901,35 @@ that acts only on the right of it while
 \begin_inset Formula $\gamma^{\mu}$
 \end_inset
 
- matrices are not unique and the choices influenece the representation of
- the field 
-\begin_inset Formula $\psi\left(x\right)$
-\end_inset
-
-.
- To describe the dynamics of the field 
-\begin_inset Formula $\psi\left(x\right)$
-\end_inset
-
-, one uses the Euler-Lagrange procedure for a set of 
+ matrices are not unique and different representations dictate different
+ kinematic regimes.
+ The field equations are extracted from the Lagrangian using the Euler-Lagrange
+ procedure.
+ In general for a set of 
 \begin_inset Formula $M$
 \end_inset
 
-equations
+ fields, the field equation are given by
 \begin_inset Formula 
 \begin{equation}
-\partial_{\mu}\frac{\partial\mathcal{L}}{\partial\left(\partial_{\mu}\psi_{r}\right)}-\frac{\partial\mathcal{L}}{\partial\psi_{r}}=0\quad(r=0,1,2,\ldots,M-1,M)\label{eq:eulerlagrangegeneral}
+\partial_{\mu}\frac{\partial\mathcal{L}}{\partial\left(\partial_{\mu}\psi_{r}\right)}-\frac{\partial\mathcal{L}}{\partial\psi_{r}}=0\quad\left(r=0,1,2,\ldots,M-1,M\right).\label{eq:eulerlagrangegeneral}
 \end{equation}
 
 \end_inset
 
- which in this case is
+ For the Dirac Lagrangian, the field equation for 
+\begin_inset Formula $\psi$
+\end_inset
+
+ is given by
 \begin_inset Formula 
-\[
-\partial_{\mu}\frac{\partial\mathcal{L}}{\partial\left(\partial_{\mu}\overline{\psi}\right)}-\frac{\partial\mathcal{L}}{\partial\overline{\psi}}=0
-\]
+\begin{equation}
+\partial_{\mu}\frac{\partial\mathcal{L}}{\partial\left(\partial_{\mu}\overline{\psi}\right)}-\frac{\partial\mathcal{L}}{\partial\overline{\psi}}=0\label{eq:diracELequation}
+\end{equation}
 
 \end_inset
 
-and procedures the Dirac equation
+which yields the Dirac equation
 \end_layout
 
 \begin_layout Standard
@@ -946,7 +944,7 @@ The representation of the
 \begin_inset Formula $\gamma^{\mu}$
 \end_inset
 
- matrices that is useful here is the 
+ matrices that is useful to describe neutrinos is the 
 \shape italic
 Chiral representation
 \shape default
@@ -991,12 +989,12 @@ Weyl representation
 i & 0
 \end{pmatrix},\quad\sigma_{z}=\sigma_{3}=\begin{pmatrix}1 & 0\\
 0 & -1
-\end{pmatrix},.
+\end{pmatrix}.
 \]
 
 \end_inset
 
-The chirality matrix, 
+Using the Chiral representation, the chirality matrix, 
 \begin_inset Formula $\gamma^{5}$
 \end_inset
 
@@ -1010,9 +1008,9 @@ The chirality matrix,
 
 \end_inset
 
-which is diagonal as well as a Hermitian matrix meaning that its eigenvalues
- are real and observable.
- Let eigenfunctions of the chirality matrix be denoted as 
+which is diagonal as well as Hermitian meaning that its eigenvalues are
+ real and observable.
+ Let eigenfunctions of the chirality matrix be denoted with subscripts 
 \begin_inset Formula $P$
 \end_inset
 
@@ -1020,18 +1018,18 @@ which is diagonal as well as a Hermitian matrix meaning that its eigenvalues
 \begin_inset Formula $M$
 \end_inset
 
- such that
+ such that the eigenvalue equations are
 \begin_inset Formula 
 \begin{equation}
-\begin{aligned}\gamma^{5}\psi_{P} & =+1\psi_{P}\\
-\gamma^{5}\psi_{M} & =-1\psi_{M}
+\begin{aligned}\gamma^{5}\psi_{P} & =+1\psi_{P},\\
+\gamma^{5}\psi_{M} & =-1\psi_{M}.
 \end{aligned}
-,\label{eq:chiraloperatoreigenvalueequation}
+\label{eq:chiraloperatoreigenvalueequation}
 \end{equation}
 
 \end_inset
 
-now the solutions to 
+The field equation solutions to 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "eq:diraceqn"
@@ -1041,7 +1039,7 @@ noprefix "false"
 
 \end_inset
 
- are decomposed into 
+ can be decomposed into 
 \begin_inset Formula $\psi_{P}$
 \end_inset
 
@@ -1049,11 +1047,11 @@ noprefix "false"
 \begin_inset Formula $\psi_{M}$
 \end_inset
 
- projections using a chiral projection operators 
+ projections using two chiral projection operators 
 \begin_inset Formula $\hat{O}_{P,M}$
 \end_inset
 
- 
+ where
 \begin_inset Formula 
 \begin{equation}
 \psi=\left(\hat{O}_{P}+\hat{O}_{M}\right)\psi=\psi_{P}+\psi_{M}.\label{eq:chiralprojections}
@@ -1061,7 +1059,7 @@ noprefix "false"
 
 \end_inset
 
-The chiral operators are defined as
+The chiral operators are explicitly given by
 \begin_inset Formula 
 \begin{equation}
 \begin{aligned}\hat{O}_{M} & =\frac{1}{2}\left(I_{4}-\gamma^{5}\right)=\begin{pmatrix}0 & 0\\
@@ -1117,8 +1115,11 @@ i\hbar\sum_{\mu=0}^{3}\gamma^{\mu}\partial_{\mu}\psi_{M} & =mc\psi_{P}
 \end_inset
 
 where dynamics are set by the mass.
- Since the chiral projection operators are decompositions of the identity
- matrix, the simplest nontrivial solutions to 
+\end_layout
+
+\begin_layout Standard
+Since the chiral projection operators are decompositions of the identity
+ matrix, the simplest nontrivial solution to 
 \begin_inset Formula $\psi$
 \end_inset
 
@@ -1137,7 +1138,17 @@ where
 \end_inset
 
  represent two-component spinors.
- The Dirac equation in 
+ Using 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:diracchiralspinorsgeneral"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ the Dirac equation in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "eq:diraceqnchiral"
@@ -1147,7 +1158,7 @@ noprefix "false"
 
 \end_inset
 
- can be rewritten as
+ can again be rewritten as
 \begin_inset Formula 
 \begin{equation}
 \begin{aligned}i\hbar\left[\frac{1}{c}\partderiv t+\boldsymbol{\sigma}\cdot\boldsymbol{\nabla}\right]\chi_{P} & =-mc\chi_{M},\\
@@ -1166,15 +1177,11 @@ where
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 In the limiting case of vanishing mass 
 \begin_inset Formula $\left(m\rightarrow0\right)$
 \end_inset
 
-, as in the SM, the free particle field equations in 
+, as is in the SM, the free particle field equations in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "eq:diraceqnchiralspinors"
@@ -1187,15 +1194,24 @@ noprefix "false"
  decouple into
 \begin_inset Formula 
 \begin{equation}
-\begin{aligned}\left(\frac{E}{c}+\boldsymbol{\sigma}\cdot\boldsymbol{P}\right)\chi_{P} & =0\\
-\left(\frac{E}{c}-\boldsymbol{\sigma}\cdot\boldsymbol{P}\right)\chi_{M} & =0.
+\begin{aligned}\left(\frac{E}{c}+\boldsymbol{\sigma}\cdot\boldsymbol{P}\right)\chi_{P} & =0,\\
+\left(\frac{E}{c}-\boldsymbol{\sigma}\cdot\boldsymbol{P}\right)\chi_{M} & =0,
 \end{aligned}
-\quad\left[\text{Momentum basis}\right]\label{eq:diraceqnchiralmassless}
+\label{eq:diraceqnchiralmassless}
 \end{equation}
 
 \end_inset
 
-We see that for massless neutrinos, 
+where the differential operators have been expressed as energy 
+\begin_inset Formula $E$
+\end_inset
+
+ and momentum three-vector 
+\begin_inset Formula $\boldsymbol{P}$
+\end_inset
+
+.
+ For massless neutrinos, 
 \begin_inset Formula $\chi_{P}$
 \end_inset
 
@@ -1207,13 +1223,9 @@ We see that for massless neutrinos,
 \begin_inset Formula $E=-\left|\boldsymbol{P}\right|c$
 \end_inset
 
- which in the context of quantum field theory are interpretted as antiparticles
- travelling backwards in time.
+ which in the context of quantum field theory are interpreted as antiparticles
+ traveling backwards in time.
  Conversely, 
-\begin_inset Formula $\chi_{M}$
-\end_inset
-
- and 
 \begin_inset Formula $\psi_{M}$
 \end_inset
 
@@ -1221,8 +1233,11 @@ We see that for massless neutrinos,
 \begin_inset Formula $E=\left|\boldsymbol{P}\right|c$
 \end_inset
 
- and are interpretted as particles travelling forward in time.
- If one also multiplies 
+ and which means they are particles traveling forward in time.
+\end_layout
+
+\begin_layout Standard
+If one also multiplies 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "eq:diraceqnchiral"
@@ -1236,25 +1251,31 @@ noprefix "false"
 \begin_inset Formula $\gamma^{5}\gamma^{0}$
 \end_inset
 
- and using the fact that the spin vector instead of being the Pauli Spin
- matrices but is
+ and using the fact that the spin operator 
+\begin_inset Formula $\boldsymbol{\boldsymbol{\Sigma}}$
+\end_inset
+
+ is
 \begin_inset Formula 
-\[
-\boldsymbol{\Sigma}=\gamma^{0}\gamma^{k=1,2,3}\gamma^{5}=i\left(\gamma^{2}\gamma^{3},\gamma^{3}\gamma^{1},\gamma^{1}\gamma^{2}\right)
-\]
+\begin{equation}
+\boldsymbol{\Sigma}=i\left(\gamma^{2}\gamma^{3},\gamma^{3}\gamma^{1},\gamma^{1}\gamma^{2}\right)=\gamma^{0}\gamma^{k}\gamma^{5}\quad\left(k=1,2,3\right)\label{eq:spinoperatorgammamatrices}
+\end{equation}
 
 \end_inset
 
-each decoupled equation becomes
+each decoupled equation becomes after some manipulation
 \begin_inset Formula 
-\[
-\frac{\boldsymbol{\Sigma}\cdot\boldsymbol{P}}{\left|\boldsymbol{P}\right|}\psi_{P,M}=\gamma^{5}\psi_{P,M}=\pm\psi_{P,M}
-\]
+\begin{equation}
+\frac{\boldsymbol{\Sigma}\cdot\boldsymbol{P}}{\left|\boldsymbol{P}\right|}\psi_{P,M}=\gamma^{5}\psi_{P,M}=\pm\psi_{P,M},\label{eq:chiralhelicityrelationship}
+\end{equation}
 
 \end_inset
 
-where one recognizes that the helicity operator is acting on a chiral state
- and is an eigenvalue equation.
+where one recognizes that helicity and chiral states are the same (
+\begin_inset Formula $m\rightarrow0$
+\end_inset
+
+ only).
  Thus the labels 
 \begin_inset Formula $M$
 \end_inset
@@ -1263,19 +1284,34 @@ where one recognizes that the helicity operator is acting on a chiral state
 \begin_inset Formula $P$
 \end_inset
 
- actually are identical to the LH and RH, respectively, helicity labels
+ actually are identical to the LH and RH helicity labels, respectively,
  given ealier.
- Therefore the neutrino is always a LH particle while the antineutrino is
- a RH antiparticle.
+ Using the results from before, a neutrino is always observed as a LH particle
+ while the anti-neutrino is always observed as a RH antiparticle.
 \end_layout
 
 \begin_layout Standard
-The observation of only LH neutrinos and RH antineutrinos are an important
+The observation of only LH neutrinos and RH anti-neutrinos is an important
  feature in the SM.
  However, since neutrinos are known to have mass from oscillations, it is
- theoretically possible to observe a RH neutrino and LH antineutrino.
- The weak force allows for P and CP violation due to its vector minus axial-vect
-or (V-A) construction which is how a LH neutrino is described in 
+ theoretically possible to observe a RH neutrino and LH anti-neutrino.
+ That would require boosting to a highly relativistic reference frame with
+ respect to the laboratory.
+\end_layout
+
+\begin_layout Standard
+The free neutrino field is a construction of a vector minus axial vector,
+ also referred to as V-A, as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "eq:chiralprojections"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "eq:chiraloperators"
@@ -1286,6 +1322,8 @@ noprefix "false"
 \end_inset
 
 .
+ This feature is what allows for the weak force to violate P-symmetry and
+ CP-symmetry.
  Further observation of CP violation is being explored with neutrinos through
  a process called neutrino oscillations.
  This will be explained in the next subsection.
@@ -1305,10 +1343,13 @@ name "subsec:Neutrino-Oscillations"
 \begin_layout Standard
 Neutrino oscillations are the observation of a neutrino produced of definite
  flavor and later observed as a different flavor.
- A deficit of neutrinos were observed for a number of atmospheric and solar
- neutrino experiments and the effect became more pronounced as the distance
- from the source increased.
- Oscillations established that one or more neutrinos have non-zero mass.
+ This phenomenon was first observed as a deficit of neutrinos for a number
+ of atmospheric and solar neutrino experiments.
+ The deficit also seemed more pronounced for atmospheric neutrinos as the
+ distance from their source increased.
+ For neutrino oscillations to occur, at least one neutrino must be massive.
+ This observation firmly established that the SM is wrong with its prediction
+ of massless neutrinos
 \end_layout
 
 \begin_layout Standard
@@ -1317,7 +1358,9 @@ The first indication of neutrino oscillations was from the Ray Davis Homesteak
  Ray Davis was an expert Chemist and designed a radiochemical experiment
  to measure the flux of neutrinos from Sun.
  The purpose of this experiment was to test John Bahcall's prediction of
- the fusion rate in and neutrino flux from the Sun.
+ the fusion rate in the Sun and neutrino flux from it as well.
+ Davis' experiment would need to operate for many years to collect enough
+ statistics due to expected low capture rate.
  Measurements continued into the 1980s and showed that the flux of neutrinos
  as measured at Homesteak was about 1/3 the expected rate and became known
  as the 
@@ -1328,24 +1371,25 @@ Solar Neutrino Problem.
 \begin_inset Quotes erd
 \end_inset
 
- The primary solutions were either the neutrino capture cross section is
- lacking or the solar model was incorrect.
- The Sudbury Neutrino Observatory (SNO) was able to resolve this by making
- a model-independent measurement of the solar neutrino flux.
- The SNO 
+ The primary solutions were either the the solar model was incorrect or
+ the neutrino capture cross section is incorrect somehow.
+ The Sudbury Neutrino Observatory (SNO) was able to resolve this problem
+ by making a model-independent measurement of the solar neutrino flux.
+ SNO observed a 
 \begin_inset Formula $\nue$
 \end_inset
 
-CC/NC ratio is given by 
+CC-to-NC ratio of 
 \begin_inset Formula $0.301\pm0.033$
 \end_inset
 
-, which confirmed that only 30% of neutrinos arrive as 
+, which confirmed that only about 30% of neutrinos arrive as 
 \begin_inset Formula $\nue$
 \end_inset
 
- on Earth, firmly established that the majority of neutrinos arrive as the
- wrong flavor
+ flavors on Earth.
+ Saying this another way, the majority of neutrinos arrive as the wrong
+ flavor
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Zuber2012"
@@ -1367,15 +1411,18 @@ Another outstanding problem emerged with measurements of atmospheric neutrinos,
 \begin_inset Formula $\numu/\nue$
 \end_inset
 
- ratio and comparing that with expected ratio, there was a significant deficit.
+ ratio and comparing that with expected ratio, there was another significant
+ deficit.
  This was particularly a problem as a function of the zenith angle for the
- Super-Kamiokande experiment.
+ Super-Kamiokande (SK) experiment.
+ SK is a 50kt tank of pure water lined with thousands of photomultiplier
+ tubes designed to observe solar and atmospheric neutrinos.
  It was the first experiment to perform a neutrino oscillation analysis
  that successfully explained the deficit.
 \end_layout
 
 \begin_layout Standard
-While the phenomenon of neutrino oscillations has understood for decades,
+While the phenomenon of neutrino oscillations has been understood for decades,
  it is not incorporated formally into the SM since oscillations require
  the neutrino has mass.
  The reasons why neutrino oscillations require massive neutrinos is explained
@@ -1394,8 +1441,8 @@ name "subsec:Two-Flavor-Derivation"
 \end_layout
 
 \begin_layout Standard
-The phenomenon of neutrino oscillations can be described with elementary
- Quantum Mechanics.
+The phenomenon of neutrino oscillations can be described with elementary,
+ non-relativistic Quantum Mechanics.
  Beginning with the Schrödinger Equation in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -1412,7 +1459,7 @@ noprefix "false"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\begin{aligned}-\frac{\hbar}{i}\partderiv t\diracket{\nu(\mathbf{r},t)} & =\hat{H}\diracket{\nu(\mathbf{r},t)}\end{aligned}
+\begin{aligned}-\frac{\hbar}{i}\partderiv t\diracket{\nu(\mathbf{r},t)} & =\hat{H}\diracket{\nu(\mathbf{r},t)},\end{aligned}
 \label{eq:schroeqn}
 \end{equation}
 
@@ -1422,13 +1469,13 @@ where
 \begin_inset Formula $\hat{H}$
 \end_inset
 
- is the Hamiltonian for the physical system.
- If we consider a massive neutrino of mass 
+ is the Hamiltonian for the physical system, one considers a massive neutrino
+ of mass 
 \begin_inset Formula $m_{j}$
 \end_inset
 
- in its rest frame (free particle), the Hamiltonian becomes diagonal which
- acting on 
+ in its rest frame (free particle).
+ The Hamiltonian is diagonal in this case, which acting on 
 \begin_inset Formula $\diracket{\nu_{j}}$
 \end_inset
 
@@ -1438,7 +1485,7 @@ where
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\hat{H}\diracket{\nu_{j}(\mathbf{r},t)}=E_{j}\diracket{\nu_{j}(\mathbf{r},t)}\label{eq:schroeqntimeindep}
+\hat{H}\diracket{\nu_{j}(\mathbf{r},t)}=E_{j}\diracket{\nu_{j}(\mathbf{r},t)},\label{eq:schroeqntimeindep}
 \end{equation}
 
 \end_inset
@@ -1452,7 +1499,7 @@ where
 \end_inset
 
 .
- If we substitute 
+ Substituting 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "eq:schroeqntimeindep"
@@ -1472,17 +1519,17 @@ noprefix "false"
 
 \end_inset
 
- and solve for 
+ and solving for 
 \begin_inset Formula $\diracket{\nu(\mathbf{r},t)}$
 \end_inset
 
-, we obtain the following
+, one obtains the following
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\diracket{\nu_{j}(\mathbf{r},t)}=e^{-iE_{j}t/\hbar}\diracket{\nu_{j}(\mathbf{r},t=0)}\label{eq:schroeqnsolution}
+\diracket{\nu_{j}(\mathbf{r},t)}=e^{-iE_{j}t/\hbar}\diracket{\nu_{j}(\mathbf{r},t=0)},\label{eq:schroeqnsolution}
 \end{equation}
 
 \end_inset
@@ -1518,6 +1565,10 @@ noprefix "false"
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
 Before being able to describe neutrino oscillations, we must define our
  basis states.
  For this example, consider that there are only two eigenstates, labeled
@@ -1585,7 +1636,7 @@ noprefix "false"
 \end_inset
 
  is an overall phase that will cancel out later.
- We can postulate a linear transformation, 
+ One can postulate a linear transformation, 
 \begin_inset Formula $U$
 \end_inset
 
@@ -1624,7 +1675,7 @@ This linear transformation must be a unitary matrix
 \begin_inset Formula $\nu_{1,2}$
 \end_inset
 
- constitute a complete orthonormal set in the mass basis.
+ constitute a complete orthonormal basis in the mass basis.
  With this unitary property, we can imagine 
 \begin_inset Formula $U$
 \end_inset
@@ -1637,7 +1688,7 @@ This linear transformation must be a unitary matrix
 \begin{equation}
 \begin{bmatrix}\nu_{\alpha}\\
 \nu_{\beta}
-\end{bmatrix}=\begin{bmatrix}\begin{array}{rr}
+\end{bmatrix}=\begin{bmatrix}\begin{array}{rc}
 \cos(\theta) & \sin(\theta)\\
 -\sin(\theta) & \cos(\theta)
 \end{array}\end{bmatrix}\begin{bmatrix}\nu_{1}\\
@@ -1652,7 +1703,7 @@ where
 \end_inset
 
  is the angle between the two bases.
- We can imagine this transformation between bases as shown in 
+ One can imagine this transformation between bases as shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:twoflavorrotation"
@@ -1723,7 +1774,7 @@ name "fig:twoflavorrotation"
 \end_inset
 
 .
- If we create a neutrino of flavor 
+ Creating a neutrino of flavor 
 \begin_inset Formula $\alpha$
 \end_inset
 
@@ -1731,7 +1782,7 @@ name "fig:twoflavorrotation"
 \begin_inset Formula $t=T>0$
 \end_inset
 
-, then the probability of observing it as flavor 
+, the probability of observing it as flavor 
 \begin_inset Formula $\beta\neq\alpha$
 \end_inset
 
@@ -1819,8 +1870,8 @@ noprefix "false"
  This equation is not, however, terribly useful in the laboratory frame
  since it is hard to make an experiment where the travel time an individual
  neutrino is well known.
- Instead, we can make useful approximations that are accessible in the laborator
-y frame.
+ Instead, one can make useful approximations that are accessible in the
+ laboratory frame.
  Since neutrinos are nearly massless, they travel very close to the speed
  of light.
  Therefore we can replace time 
@@ -1840,7 +1891,7 @@ y frame.
 \end_inset
 
  is now the speed of light in vacuum.
- We can also approximate the energy of the mass eigenstate as 
+ One can also approximate the energy of the mass eigenstate as 
 \end_layout
 
 \begin_layout Standard
@@ -1855,7 +1906,7 @@ y frame.
 
 \end_inset
 
-where we have used the fact that 
+where for experiments 
 \begin_inset Formula $p_{j}\gg m_{j}c$
 \end_inset
 
@@ -1868,7 +1919,7 @@ where we have used the fact that
 \end_inset
 
  is the neutrino energy as measured in the laboratory.
- Substituting all of our assumptions in 
+ Substituting the assumptions in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "eq:prob2flavorsimplified"
@@ -1878,17 +1929,7 @@ noprefix "false"
 
 \end_inset
 
-, we get 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "eq:prob2flavorapprox"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-
+, the oscillation probability is given by
 \end_layout
 
 \begin_layout Standard
@@ -1905,11 +1946,13 @@ where
 \end_inset
 
  is the mass-squared difference between the mass states.
- If we evaluate all the physical constants in natural units (
+ For a momentum consider evaluating all the physical constants in natural
+ units (
 \begin_inset Formula $c=\hbar=1)$
 \end_inset
 
- and choose appropriate units for 
+.
+ An appropriate choice of units for 
 \begin_inset Formula $\Delta m^{2}$
 \end_inset
 
@@ -1921,7 +1964,7 @@ where
 \begin_inset Formula $E_{\nu}$
 \end_inset
 
-, we arrive at the following expression
+ results in
 \end_layout
 
 \begin_layout Standard
@@ -1932,7 +1975,7 @@ where
 
 \end_inset
 
-which more clearly demonstrates the Physics in oscillations.
+which more clearly demonstrates the Physics in neutrino oscillations.
  The oscillation probability has an amplitude of 
 \begin_inset Formula $\sin^{2}(2\theta)$
 \end_inset
@@ -2963,7 +3006,7 @@ and
 .
  Since all CP violating terms in 
 \begin_inset CommandInset ref
-LatexCommand eqref
+LatexCommand formatted
 reference "eq:numu2numuthreeflavorfull"
 plural "false"
 caps "false"
@@ -3036,7 +3079,7 @@ Y_{\sin\delta_{\text{CP}}}=\frac{1}{8}\sin\left(2\theta_{12}\right)\sin\left(2\t
 
 \end_inset
 
-and (+) represents the sign change from neutrinos to antineutrinos.
+and (+) represents the sign change from neutrinos to anti-neutrinos.
  The CP violating term 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -3062,6 +3105,260 @@ ic neutrino oscillation experiments.
 \end_layout
 
 \begin_layout Standard
+Current and next generation experiments aim to improve knowledge of the
+ mixing parameters.
+ There are a couple of degeneracies to unravel as well as precise measurement
+ of 
+\begin_inset Formula $\deltacp$
+\end_inset
+
+.
+ While the two defined mass-squared splittings 
+\begin_inset Formula $\Dm 21=\Delta m_{\text{sol}}^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\Dm 32=\Delta m_{\text{atm}}^{2}$
+\end_inset
+
+ are known, it is unknown which eigenstates are more massive.
+ This problem is known as the mass hierarchy problem and is illustrated
+ in 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/FlavorComponentsOfMassStates.png
+	lyxscale 25
+	height 25theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mass hierarchy as shown in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "deGouvea:2013onf"
+literal "false"
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Mass-hierarchy"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/MassComponentsOfFlavorStates.png
+	lyxscale 25
+	height 25theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mass eigenstate components as shown in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Adams:2013qkq"
+literal "false"
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Mass-eigenstate-components"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Mass hierarchy Problem And MNSP Representation
+\end_layout
+
+\end_inset
+
+Left: the mass hierarchy problem is such that while the solar and atmospheric
+ mixing mass-squared differences are clearly defined, the absolute mass
+ scale is unknown.
+ Since 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $m_{2}>m_{1}$
+\end_inset
+
+ by definition, it is currently unknown if 
+\begin_inset Formula $m_{3}$
+\end_inset
+
+ is more or less massive than 
+\begin_inset Formula $m_{2}$
+\end_inset
+
+, or even massless! Notice the colored bars for each mass eigenstate which
+ corresponded to the approximate flavor content of the neutrino.
+ For example, state 
+\begin_inset Quotes eld
+\end_inset
+
+2
+\begin_inset Quotes erd
+\end_inset
+
+ has about equal three portions of all three flavors.
+ Right: the mass eigenstate components of each flavor eigenstate.
+ This is a complementary demonstration of the MNSP matrix.
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:masshierarchy"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Mass-hierarchy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Normal hierarchy refers to the case where 
+\begin_inset Formula $m_{3}>m_{2}>m_{1}$
+\end_inset
+
+whereas the inverted hierarchy has 
+\begin_inset Formula $m_{2}>m_{1}>m_{3}$
+\end_inset
+
+.
+ Also knowledge if 
+\begin_inset Formula $\theta_{23}$
+\end_inset
+
+ is in the first octant 
+\begin_inset Formula $\theta\in(0,\nicefrac{\pi}{2})$
+\end_inset
+
+ or second octant 
+\begin_inset Formula $\theta\in(\nicefrac{\pi}{2},\nicefrac{\pi}{4})$
+\end_inset
+
+ requires large statistics.
+ Finally the value of 
+\begin_inset Formula $\deltacp$
+\end_inset
+
+ is quite uncertain with values in the 3rd and 4th quadrants.
+ Best fit measurements of the oscillations parameters is given in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:mnspparameters"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
 \begin_inset Float table
 wide false
 sideways false
@@ -3169,7 +3466,7 @@ value
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\Dm32=\Delta m_{\text{atm}}^{2}$
+\begin_inset Formula $\Dm 32=\Delta m_{\text{atm}}^{2}$
 \end_inset
 
 
@@ -3219,7 +3516,7 @@ value
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\Dm21=\Delta m_{\text{sol}}^{2}$
+\begin_inset Formula $\Dm 21=\Delta m_{\text{sol}}^{2}$
 \end_inset
 
 
@@ -3622,267 +3919,7 @@ name "tab:mnspparameters"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-Current and next generation experiments aim to improve knowledge of the
- mixing parameters.
- There are a couple of degeneracies to unravel as well as precise measurement
- of 
-\begin_inset Formula $\deltacp$
-\end_inset
-
 .
- While the two defined mass-squared splittings 
-\begin_inset Formula $\Dm 21=\Delta m_{\text{sol}}^{2}$
-\end_inset
-
- and 
-\begin_inset Formula $\Dm 32=\Delta m_{\text{atm}}^{2}$
-\end_inset
-
- are known, it is unknown which eigenstates are more massive.
- This problem is known as the mass hierarchy problem and is illustrated
- in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:Mass-hierarchy"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
- Normal hierarchy refers to the case where 
-\begin_inset Formula $m_{3}>m_{2}>m_{1}$
-\end_inset
-
-whereas the inverted hierarchy has 
-\begin_inset Formula $m_{2}>m_{1}>m_{3}$
-\end_inset
-
-.
- Also knowledge if 
-\begin_inset Formula $\theta_{23}$
-\end_inset
-
- is in the first octant 
-\begin_inset Formula $\theta\in(0,\nicefrac{\pi}{2})$
-\end_inset
-
- or second octant 
-\begin_inset Formula $\theta\in(\nicefrac{\pi}{2},\nicefrac{\pi}{4})$
-\end_inset
-
- requires large statistics.
- Finally the value of 
-\begin_inset Formula $\deltacp$
-\end_inset
-
- is quite uncertain with values in the 3rd and 4th quadrants.
- Best fit measurements of the oscillations parameters is given in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "tab:mnspparameters"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/Introduction/FlavorComponentsOfMassStates.png
-	lyxscale 25
-	height 25theight%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Mass hierarchy as shown in 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "deGouvea:2013onf"
-literal "false"
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Mass-hierarchy"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/Introduction/MassComponentsOfFlavorStates.png
-	lyxscale 25
-	height 25theight%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Mass eigenstate components as shown in 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Adams:2013qkq"
-literal "false"
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Mass-eigenstate-components"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Mass hierarchy Problem And MNSP Representation
-\end_layout
-
-\end_inset
-
-Left: the mass hierarchy problem is such that while the solar and atmospheric
- mixing mass-squared differences are clearly defined, the absolute mass
- scale is unknown.
- Since 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-
-\begin_inset Formula $m_{2}>m_{1}$
-\end_inset
-
- by definition, it is currently unknown if 
-\begin_inset Formula $m_{3}$
-\end_inset
-
- is more or less massive than 
-\begin_inset Formula $m_{2}$
-\end_inset
-
-, or even massless! Notice the colored bars for each mass eigenstate which
- corresponded to the approximate flavor content of the neutrino.
- For example, state 
-\begin_inset Quotes eld
-\end_inset
-
-2
-\begin_inset Quotes erd
-\end_inset
-
- has about equal three portions of all three flavors.
- Right: the mass eigenstate components of each flavor eigenstate.
- This is a complementary demonstration of the MNSP matrix.
-
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:masshierarchy"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsubsection
@@ -4215,7 +4252,7 @@ T2K was primarily designed to measure the last unknown MNSP mixing angle
 \end_inset
 
  and 
-\begin_inset Formula $\Dm 23$
+\begin_inset Formula $\Dm23$
 \end_inset
 
 .
