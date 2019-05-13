@@ -4254,12 +4254,12 @@ literal "false"
 
 \end_inset
 
- as shown in
+ as shown in 
 \begin_inset Float figure
 placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -4307,7 +4307,7 @@ name "fig:T2KBirdsEye"
 
 \end_inset
 
- 
+
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:T2KBirdsEye"
@@ -4430,18 +4430,8 @@ To facilitate the high intensity neutrino beam requirements for T2K, the
  J-PARC site generates a high intensity proton beam through a series of
  particle accelerators.
  A bird's eye view of J-PARC can be seen in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:BirdsEyeJPARC"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-
 \begin_inset Float figure
-placement h
+placement t
 wide false
 sideways false
 status collapsed
@@ -4505,99 +4495,23 @@ name "fig:BirdsEyeJPARC"
 
 \end_inset
 
+
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:BirdsEyeJPARC"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
  which highlights its different accelerators and facilities.
  For this section, note that all beam energies are kinetic energies.
 \end_layout
 
 \begin_layout Standard
-Protons for the T2K beamline are first accelerated in the J-PARC linear
- accelerator
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-A linear accelerator accelerates particles using time varying electric fields
- along a one direction, terminal beamline.
- Not only used in particle physics, they are also used in the medical field
- to generate X-rays.
-\begin_inset VSpace defskip
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- (linac) and then the rapid cycle synchrotron
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-A synchrotron is cyclic particle accelerator that relies on time varying
- magnetic fields to accelerate particles.
- Since they require many magnets and large spaces to operate, they are usually
- operated at national laboratories for others uses as well like material
- and life sciences.
-\begin_inset VSpace defskip
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- (RCS).
- They are initially extracted from a hydrogen ion (
-\begin_inset Formula $_{1}^{1}\text{H}^{+}$
-\end_inset
-
-) source and feed through a series of linac elements as shown in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "subfig:LINAC"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
- Each linac element except for the initial quadrapole magnet apparatus accelerat
-es the protons using carefully coordinated oscillating electric fields generated
- by radio frequency pulses.
- After traveling 240m along the linac, the protons are boosted to 400 MeV
- and transported into the RCS.
- The 348m circumference RCS then further boosts the protons to 3 GeV at
- an operating frequency of 25 Hz.
- While being accelerated, protons are aggregated into two bunches and focused
- using particle collimators as shown in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:3-GeV-RCS"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-The next stage for the protons intended for the neutrino beamline is the
- much larger main ring (MR) synchrotron as shown in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:50-GeV-MR"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-
 \begin_inset Float figure
-placement h
+placement t
 wide false
 sideways false
 status collapsed
@@ -4630,7 +4544,7 @@ status open
 400 MeV linac
 \begin_inset CommandInset label
 LatexCommand label
-name "subfig:LINAC"
+name "fig:LINAC"
 
 \end_inset
 
@@ -4798,6 +4712,95 @@ name "fig:schemeJPARC"
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
+Protons for the T2K beamline are first accelerated in the J-PARC linear
+ accelerator
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+A linear accelerator accelerates particles using time varying electric fields
+ along a one direction, terminal beamline.
+ Not only used in particle physics, they are also used in the medical field
+ to generate X-rays.
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ (linac) and then the rapid cycle synchrotron
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+A synchrotron is cyclic particle accelerator that relies on time varying
+ magnetic fields to accelerate particles.
+ Since they require many magnets and large spaces to operate, they are usually
+ operated at national laboratories for others uses as well like material
+ and life sciences.
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ (RCS).
+ They are initially extracted from a hydrogen ion (
+\begin_inset Formula $_{1}^{1}\text{H}^{-}$
+\end_inset
+
+) source and feed through a series of linac elements as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:LINAC"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Each linac element except for the initial quadrapole magnet apparatus accelerat
+es the protons using carefully coordinated oscillating electric fields generated
+ by radio frequency pulses.
+ After traveling 240m along the linac, the protons are boosted to 400 MeV
+ and transported into the RCS.
+ The 348m circumference RCS then further boosts the protons to 3 GeV at
+ an operating frequency of 25 Hz.
+ While being accelerated, protons are aggregated into two bunches and focused
+ using particle collimators as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:3-GeV-RCS"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The next stage for the protons intended for the neutrino beamline is the
+ much larger main ring (MR) synchrotron as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:50-GeV-MR"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
  which has a circumference of 1567m.
  While nominally designed to boost protons to 50 GeV, it currently operates
  at 30 GeV.
@@ -4821,70 +4824,8 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-The neutrino beamline is designed to direct the protons toward SK and generate
- neutrinos by impinging them on a cylindrical target.
- 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:Neutrino-beamline"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- shows the process of proton extraction from the MR for both primary and
- secondary neutrino beamlines.
- In the primary beamline, a series of normal and superconducting magnets
- steer the proton beam 
-\begin_inset Formula $80.7\text{°}$
-\end_inset
-
- along a 104m radius of curvature.
- The secondary beamline, better shown in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:Secondary-beamline"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-, illustrates the production of neutrinos.
- The beam spill impinges on a graphite target at the target station, which
- produces high energy pions like those produced from cosmic ray collisions
- in the upper atmosphere.
- To enhance the flux of neutrinos, a series of current pulsed, focusing
- magnets called horns
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-The name horn derives from the fact that the focusing magnets are shaped
- like brass horns in a music ensemble or marching band.
- One can think of these horns like a focusing lens for charged particles.
-\begin_inset VSpace defskip
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- as shown in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:T2K-horns"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-
 \begin_inset Float figure
-placement h
+placement t
 wide false
 sideways false
 status collapsed
@@ -5067,49 +5008,254 @@ name "fig:JPARCNeutrinobeamline"
 
 \end_inset
 
- are used to focus pions of the correct charge towards SK.
- The horns are pulsed at +250kA (-250kA) to select positively (negatively)
- charged pions.
- The focused pions are allowed to decay along a 96m long decay volume to
- boost the daughter neutrinos along the beamline direction.
- The decay volume needs to be as close to vacuum as possible to reduce pion
- absorption and among other reasons, and thus it is filled with gaseous
- helium at 1 atm for safety reasons.
- Daughter muons of sufficient momentum 
-\begin_inset Formula $(>5\text{ GeV})$
-\end_inset
 
- are further used to characterize the neutrino flux.
 \end_layout
 
 \begin_layout Standard
-J-PARC continues to improve the MR proton delivery since T2K begin in 2010.
- T2K has run with both +250kA and -250kA horn currents with increasing beam
- power over time.
- Focusing positively charged pions with +250kA horn current is called forward
- horn current (FHC) mode or 
-\begin_inset Formula $\nu$
-\end_inset
-
--mode.
- Similarly, using -250kA horn current is called reverse horn current (RHC)
- or 
-\begin_inset Formula $\overline{\nu}$
-\end_inset
-
--mode.
- The aggregate running periods for T2K for both FHC and RHC are shown in
+The neutrino beamline is designed to direct the protons toward SK and generate
+ neutrinos by impinging them on a cylindrical target.
  
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "fig:T2K-accumulated-POT"
+reference "fig:Neutrino-beamline"
 plural "false"
 caps "false"
 noprefix "false"
 
 \end_inset
 
- 
+ shows the process of proton extraction from the MR for both primary and
+ secondary neutrino beamlines.
+ In the primary beamline, a series of normal and superconducting magnets
+ steer the proton beam away from the MR first along a 54m preparation section
+ and then a 147m arc section to bend the beam towards SK.
+ A final focusing section in the primary beamline focuses the protons into
+ the secondary beam while directing it downwards 
+\begin_inset Formula $3.637\text{\textdegree}$
+\end_inset
+
+ with respect to the local horizontal.
+ Since a well tuned and stable proton beam is necessary for neutrino production,
+ numerous beam monitors are installed along the primary beamline to measure
+ any losses.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement t
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/horn2.png
+	width 30text%
+	height 25theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A graphite target being extracted from the target station
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:targetstation"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/horn1.png
+	width 30text%
+	height 25theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A magnetic focusing horn
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:focusinghorn"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Shown are photos of work performed on the target station.
+ (a) The graphite rod being extracted from the target station is shown in
+ the black-dashed box.
+ (b) One focusing horn in T2K.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Photographs of the Target Station
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:JPARCTargetStationPhotos"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The secondary beamline marks the end of the proton beam and production of
+ a neutrino beam.
+ In the secondary beamline, as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Secondary-beamline"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, it consists of a target station, a decay volume for the outgoing particles
+ from the target station, and a beam dump for any remaining particles.
+ The target station houses a 91.4cm long, 2.6cm diameter, and 
+\begin_inset Formula $1.8\text{g/cm}^{3}$
+\end_inset
+
+ graphite rod which corresponds to 1.9 radiation lengths.
+ When the protons impinge the target, strong (nuclear) interactions produce
+ pi-mesons (pions) and ka-mesons (kaons).
+ like those produced from cosmic ray collisions in the upper atmosphere.
+ To enhance the flux of neutrinos, a series of three current pulsed, focusing
+ magnets called horns
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The name horn derives from the fact that the focusing magnets are shaped
+ like brass horns in a music ensemble or marching band.
+ One can think of these horns like a focusing lens for charged particles.
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:T2K-horns"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ are used to focus the mesons of the correct charge towards SK.
+ Photographs of a graphite target and focusing horn are shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:JPARCTargetStationPhotos"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ The horns are pulsed at +250kA (-250kA) to select positively (negatively)
+ charged pions.
+ The focused pions are allowed to decay along the 96m long decay volume
+ as to boost the daughter neutrinos along the secondary beamline direction.
+ For safety reasons, the decay volume is filled with gaseous helium at 1
+ atm of pressure which has a low pion absorption rate.
+ The outgoing byproducts in the decay volume should be muons and neutrinos
+ boosted towards SK.
+ Any remaining particles are captured at the beam dump except for daughter
+ muons of 
+\begin_inset Formula $>5\text{ GeV/c}$
+\end_inset
+
+ momentum.
+ These high momentum muons are further used to characterize the neutrino
+ flux
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abe:2011ks"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement h
 wide false
@@ -5161,9 +5307,35 @@ name "fig:T2K-accumulated-POT"
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
 
+ 
 \end_layout
+
+\begin_layout Standard
+J-PARC continues to improve the MR proton delivery since T2K begin in 2010.
+ T2K has run with both +250kA and -250kA horn currents with increasing beam
+ power over time.
+ Focusing positively charged pions with +250kA horn current is called forward
+ horn current (FHC) mode or 
+\begin_inset Formula $\nu$
+\end_inset
+
+-mode.
+ Similarly, using -250kA horn current is called reverse horn current (RHC)
+ or 
+\begin_inset Formula $\overline{\nu}$
+\end_inset
+
+-mode.
+ The aggregate running periods for T2K for both FHC and RHC are shown in
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:T2K-accumulated-POT"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
