@@ -1475,7 +1475,7 @@ noprefix "false"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\begin{aligned}-\frac{\hbar}{i}\partderiv t\diracket{\nu(\mathbf{r},t)} & =\hat{H}\diracket{\nu(\mathbf{r},t)},\end{aligned}
+\begin{aligned}-\frac{\hbar}{i}\frac{d}{dt}\diracket{\nu(\mathbf{r},t)} & =\hat{H}\diracket{\nu(\mathbf{r},t)},\end{aligned}
 \label{eq:schroeqn}
 \end{equation}
 
@@ -4656,8 +4656,8 @@ Schematics of the J-PARC Accelerators
 \end_inset
 
 Schematics of the J-PARC accelerators.
- (a) The linac accelerates protons to 400 MeV of kinetic energy from the
- ion source through linear accelerator (linac) elements
+ (a) The linac accelerates hydrogen ions to 181 MeV of kinetic energy, designed
+ for 400 MeV, from the ion source through linear accelerator (linac) elements
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Yamazaki2003"
@@ -4753,11 +4753,12 @@ A synchrotron is cyclic particle accelerator that relies on time varying
 \end_inset
 
  (RCS).
- They are initially extracted from a hydrogen ion (
+ Hydrogen ions (
 \begin_inset Formula $_{1}^{1}\text{H}^{-}$
 \end_inset
 
-) source and feed through a series of linac elements as shown in 
+) are extracted from plasma in a electrical discharge chamber and feed through
+ a series of linac elements as shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:LINAC"
@@ -4769,10 +4770,12 @@ noprefix "false"
 
 .
  Each linac element except for the initial quadrapole magnet apparatus accelerat
-es the protons using carefully coordinated oscillating electric fields generated
+es the ions using carefully coordinated oscillating electric fields generated
  by radio frequency pulses.
- After traveling 240m along the linac, the protons are boosted to 400 MeV
- and transported into the RCS.
+ After traveling 240m along the linac, the ions have been boosted to 181
+ MeV of kinetic energy and transported into the RCS.
+ In transit to the RCS, the ions are stripped of their electrons via charge
+ stripping foils.
  The 348m circumference RCS then further boosts the protons to 3 GeV at
  an operating frequency of 25 Hz.
  While being accelerated, protons are aggregated into two bunches and focused
@@ -4834,7 +4837,7 @@ status collapsed
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -4874,7 +4877,7 @@ name "fig:Neutrino-beamline"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -4914,7 +4917,7 @@ name "fig:Secondary-beamline"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -5031,7 +5034,7 @@ noprefix "false"
  and then a 147m arc section to bend the beam towards SK.
  A final focusing section in the primary beamline focuses the protons into
  the secondary beam while directing it downwards 
-\begin_inset Formula $3.637\text{\textdegree}$
+\begin_inset Formula $3.637\text{°}$
 \end_inset
 
  with respect to the local horizontal.
@@ -5235,16 +5238,27 @@ noprefix "false"
  as to boost the daughter neutrinos along the secondary beamline direction.
  For safety reasons, the decay volume is filled with gaseous helium at 1
  atm of pressure which has a low pion absorption rate.
- The outgoing byproducts in the decay volume should be muons and neutrinos
- boosted towards SK.
- Any remaining particles are captured at the beam dump except for daughter
- muons of 
+ The daughter particles in the decay volume should be mostly muons and muon-neut
+rinos traveling towards SK.
+ An beam dump is placed at the end of the decay volume to stop particles
+ that have not yet decayed to prevent uncontrolled for decay products from
+ contaminating the beam.
+\end_layout
+
+\begin_layout Standard
+Along both beamlines are numerous monitors and timing systems to observe
+ the proton beam to ensure stable production of neutrinos.
+ Proton beam monitors are placed along the primary beamline to ensure the
+ proton beam is properly steered into the secondary beamline.
+ An optical transition radiation monitor is situated around the target to
+ observe any protons not intersecting with the target region itself.
+ The last monitor along the secondary beamline is the a muon monitor (MUMON),
+ which is placed downstream of the beam dump to observe the daughter muons
+ of 
 \begin_inset Formula $>5\text{ GeV/c}$
 \end_inset
 
- momentum.
- These high momentum muons are further used to characterize the neutrino
- flux
+ momentum
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Abe:2011ks"
@@ -5253,6 +5267,51 @@ literal "false"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+In order to provide timing information for the neutrino beam at SK, a global
+ positioning system (GPS) is used to synchronize clocks at SK and J-PARC.
+ Any event outside the beam timing window are rejected in the T2K oscillation
+ analysis, and so having precise timing information for the neutrino beam
+ is critical for the experiment.
+ The GPS has an internal accuracy of 50ns, or about 
+\begin_inset Formula $\sim150\text{m}$
+\end_inset
+
+ assuming the neutrinos are traveling near the speed of light.
+ This is well within the time it takes for any neutrino to travel the 295km
+ between J-PARC and SK.
+\end_layout
+
+\begin_layout Standard
+J-PARC continues to improve the MR proton delivery since T2K begin in 2010.
+ T2K has run with both +250kA and -250kA horn currents with increasing beam
+ power over time.
+ Focusing positively charged pions with +250kA horn current is called forward
+ horn current (FHC) mode or 
+\begin_inset Formula $\nu$
+\end_inset
+
+-mode.
+ Similarly, using -250kA horn current is called reverse horn current (RHC)
+ or 
+\begin_inset Formula $\overline{\nu}$
+\end_inset
+
+-mode.
+ The aggregate running periods for T2K for both FHC and RHC are shown in
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:T2K-accumulated-POT"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ in units of protons on target (POT or PoT).
 \end_layout
 
 \begin_layout Standard
@@ -5309,48 +5368,39 @@ name "fig:T2K-accumulated-POT"
 
 \end_inset
 
- 
+
+\end_layout
+
+\begin_layout Subsection
+Neutrino Near Detectors
 \end_layout
 
 \begin_layout Standard
-J-PARC continues to improve the MR proton delivery since T2K begin in 2010.
- T2K has run with both +250kA and -250kA horn currents with increasing beam
- power over time.
- Focusing positively charged pions with +250kA horn current is called forward
- horn current (FHC) mode or 
-\begin_inset Formula $\nu$
-\end_inset
+T2K has a near detector (ND) site at J-PARC that is designed specifically
+ observe the neutrinos in flight.
+ The site is located 280m away from the production target which is before
+ oscillations occur.
+ The primary detector is an off-axis, magnetized tracking detector called
+ ND280.
+ Separate to ND280 is a separate array of detector cells together called
+ the Interactive Neutrino Grid (INGRID) which measures the neutrino beam
+ profile.
+ Both ND280 and INGRID are housed together in a pit at the ND site.
+\end_layout
 
--mode.
- Similarly, using -250kA horn current is called reverse horn current (RHC)
- or 
-\begin_inset Formula $\overline{\nu}$
-\end_inset
+\begin_layout Subsubsection
+INGRID
+\end_layout
 
--mode.
- The aggregate running periods for T2K for both FHC and RHC are shown in
- 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:T2K-accumulated-POT"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- in units of protons on target (POT or PoT).
+\begin_layout Subsubsection
+ND280
 \end_layout
 
 \begin_layout Subsection
-T2K Near Detectors
+Neutrino Far Detector: Super-Kamiokande
 \end_layout
 
-\begin_layout Subsection
-Far Detector: Super-Kamiokande
-\end_layout
-
-\begin_layout Subsection
+\begin_layout Subsubsection
 Oscillation Analysis
 \end_layout
 
@@ -5359,8 +5409,7 @@ The number of reconstructed neutrino events of flavor
 \begin_inset Formula $\alpha$
 \end_inset
 
- observed at the far detector (FD) is sum of all true charged current (CC)
- events 
+ observed at SK is sum of all true charged current (CC) events 
 \begin_inset Formula $S_{\nu_{\alpha}}^{\text{FD}}$
 \end_inset
 
@@ -5371,7 +5420,7 @@ The number of reconstructed neutrino events of flavor
 
 \begin_inset Formula 
 \[
-N_{\nu_{\alpha}}^{\text{FD}}=S_{\nu_{\alpha}}^{\text{FD}}+B
+N_{\nu_{\alpha}}^{\text{SK}}=S_{\nu_{\alpha}}^{\text{SK}}+B
 \]
 
 \end_inset
@@ -5382,17 +5431,10 @@ where
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\begin{aligned}S_{\nu_{\alpha}}^{\text{FD}}\rightarrow S_{\nu_{\alpha}}^{\text{FD}}\left(p_{\alpha},\theta_{\alpha};\vec{o}\right) & =\sum_{i}\sum_{\beta}\mathcal{P}_{\nu_{\beta}\rightarrow\nu_{\alpha}}\left(E_{\nu,i};\vec{o}\right)\times\sigma_{\nu_{\alpha}}^{\text{CC}}\left(E_{\nu,i}\right)\\
- & \times\Phi_{\nu_{\alpha}}^{\text{FD}}\left(E_{\nu,i}\right)\times T^{\text{FD}}\times\epsilon^{\text{FD}}\left(p_{\alpha},\theta_{\alpha}\right)
+\begin{aligned}S_{\nu_{\alpha}}^{\text{SK}} & =\sum_{i}\sum_{\beta}\sum_{m}\mathcal{P}_{\nu_{\beta}\rightarrow\nu_{\alpha}}\left(E_{\nu,i};\vec{o}\right)\times\sigma_{\nu_{\alpha}}^{m}\left(E_{\nu,i}\right)\\
+ & \times\Phi_{\nu_{\alpha}}^{\text{SK}}\left(E_{\nu,i}\right)\times T^{\text{SK}}\times\epsilon^{\text{SK}}\left(p_{\alpha},\theta_{\alpha}\right)
 \end{aligned}
-\]
-
-\end_inset
-
-where
-\begin_inset Formula 
-\[
-\sigma_{\nu_{\alpha}}^{\text{CC}}\left(\Enu\right)=\sum_{\text{mode}}\left[\sigma\left(\Enu\right)\right]_{\nu_{\alpha}\text{CC mode}}
+,
 \]
 
 \end_inset
