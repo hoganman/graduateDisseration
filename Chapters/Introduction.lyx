@@ -64,6 +64,21 @@
 \filename_suffix 0
 \color #faf0e6
 \end_branch
+\branch IntroductionT2KNeutrinoProduction
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch IntroductionT2KNearDetectors
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch IntroductionT2KFarDetector
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
 \index Index
 \shortcut idx
 \color #008000
@@ -91,10 +106,6 @@
 \end_header
 
 \begin_body
-
-\begin_layout Standard
-This describes the thesis.
-\end_layout
 
 \begin_layout Standard
 \begin_inset Branch IntroductionNeutrinos
@@ -356,12 +367,12 @@ noprefix "false"
 
 \end_inset
 
-
+.
 \begin_inset Float figure
-placement h
+placement t
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -422,7 +433,7 @@ name "fig:TheStandardModel"
 
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Standard
@@ -444,7 +455,7 @@ weak isospin doublet
 U(1) symmetry which leads to the required existence of the photon and W
  and Z bosons
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 A gauge theory describes ways to measure physical forces or fields through
@@ -596,12 +607,12 @@ noprefix "false"
 
 \end_inset
 
-
+.
 \begin_inset Float figure
-placement h
+placement t
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -720,7 +731,7 @@ name "fig:CCNCInteractions"
 
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -774,11 +785,40 @@ While detecting neutrinos is hard as it is, the helicity is inferred from
  To confirm the anti-neutrino's helicity is positive (+1), the interaction
  requires both a charge (C) conjugation and parity (P) transformation as
  shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:DecayOfPion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ A C conjugation is a linear transformation that transforms all particles
+ into their corresponding antiparticles while the P transformation inverts
+ all spatial coordinates.
+ Thus neutrinos are referred to 
+\shape italic
+left-handed
+\shape default
+ (LH) particles while anti-neutrinos are 
+\shape italic
+right-handed
+\shape default
+ (RH) particles.
+ It turns out helicity is a useful quantum number to describe neutrinos
+ and coincides with a property called chirality.
+ To understand chirality and its relationship to helicity requires an analysis
+ of the Dirac Lagrangian and Dirac equation.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
-placement h
+placement t
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -838,32 +878,6 @@ name "fig:DecayOfPion"
 \end_inset
 
 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:DecayOfPion"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
- A C conjugation is a linear transformation that transforms all particles
- into their corresponding antiparticles while the P transformation inverts
- all spatial coordinates.
- Thus neutrinos are referred to 
-\shape italic
-left-handed
-\shape default
- (LH) particles while anti-neutrinos are 
-\shape italic
-right-handed
-\shape default
- (RH) particles.
- It turns out helicity is a useful quantum number to describe neutrinos
- and coincides with a property called chirality.
- To understand chirality and its relationship to helicity requires an analysis
- of the Dirac Lagrangian and Dirac equation.
 \end_layout
 
 \begin_layout Standard
@@ -1760,7 +1774,7 @@ status open
 \begin_inset Graphics
 	filename Figures/Introduction/RotationMatrix.png
 	lyxscale 50
-	height 25theight%
+	height 20theight%
 
 \end_inset
 
@@ -1931,6 +1945,78 @@ noprefix "false"
 
 \end_inset
 
+
+\begin_inset Float figure
+placement t
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/TwoNeutrinoOscillations.png
+	lyxscale 50
+	height 25theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Survival and Disappearance Probability
+\end_layout
+
+\end_inset
+
+Two flavor oscillation probability as a function 
+\begin_inset Formula $L/E$
+\end_inset
+
+ is shown using 
+\begin_inset Formula $\theta=20^{\circ}$
+\end_inset
+
+ and 
+\begin_inset Formula $\Delta m^{2}=10^{-3}\text{ eV}^{2}/c^{4}$
+\end_inset
+
+.
+ The spacing between adjacent peaks/troughs is proportional to the inverse
+ of 
+\begin_inset Formula $\Delta m^{2}$
+\end_inset
+
+.
+ Note that 
+\begin_inset Formula $\mathcal{P}\left(\nu_{\alpha}\rightarrow\nu_{\alpha}\right)=1-\mathcal{P}\left(\nu_{\alpha}\rightarrow\nu_{\beta}\right)$
+\end_inset
+
+ since the oscillation probability must always sum to 1.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Two-flavor-oscillation"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 where for oscillation experiments 
 \begin_inset Formula $p_{j}\gg m_{j}c$
 \end_inset
@@ -2020,76 +2106,6 @@ noprefix "false"
 \end_inset
 
 .
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/Introduction/TwoNeutrinoOscillations.png
-	lyxscale 50
-	height 25theight%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Survival and Disappearance Probability
-\end_layout
-
-\end_inset
-
-Two flavor oscillation probability as a function 
-\begin_inset Formula $L/E$
-\end_inset
-
- is shown using 
-\begin_inset Formula $\theta=20^{\circ}$
-\end_inset
-
- and 
-\begin_inset Formula $\Delta m^{2}=10^{-3}\text{ eV}^{2}/c^{4}$
-\end_inset
-
-.
- The spacing between adjacent peaks/troughs is proportional to the inverse
- of 
-\begin_inset Formula $\Delta m^{2}$
-\end_inset
-
-.
- Note that 
-\begin_inset Formula $\mathcal{P}\left(\nu_{\alpha}\rightarrow\nu_{\alpha}\right)=1-\mathcal{P}\left(\nu_{\alpha}\rightarrow\nu_{\beta}\right)$
-\end_inset
-
- since the oscillation probability must always sum to 1.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Two-flavor-oscillation"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
  Since 
 \begin_inset Formula $L$
 \end_inset
@@ -2123,9 +2139,10 @@ noprefix "false"
 
 .
 \begin_inset Float figure
+placement t
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2417,6 +2434,7 @@ noprefix "false"
 
 .
 \begin_inset Float table
+placement t
 wide false
 sideways false
 status open
@@ -3049,7 +3067,7 @@ noprefix "false"
 
 , this channel does not offer insights into CP violation in a vacuum
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 When going to through matter however, the oscillation probability is affected.
@@ -3075,93 +3093,12 @@ noprefix "false"
 .
 \end_layout
 
-\begin_layout Paragraph
-Electron Neutrino Appearance
-\end_layout
-
 \begin_layout Standard
-While CP violation is not observable in muon neutrino disappearance, it
- is with electron neutrino appearance.
- The appearance probability of electron neutrinos types from muon types
- is given by
-\begin_inset Formula 
-\begin{equation}
-\begin{aligned}\mathcal{P}\left(\nuantinuparticle{\mu}\rightarrow\nuantinuparticle e\right)= & 4\ccc{13}\sss{13}\sss{23}\sin^{2}\phi_{31}\\
- & +8\left(X_{\cos\delta_{\text{CP}}}\right)\cos\phi_{23}\sin\phi_{31}\sin\phi_{21}\\
- & \overset{_{(+)}}{-}\underset{\text{CP violating}}{8\underbrace{\left(Y_{\sin\delta_{\text{CP}}}\right)}}\sin\phi_{32}\sin\phi_{31}\sin\phi_{21}\\
- & +4\left(Z_{\cos\delta_{\text{CP}}}\right)\sss{12}\ccc{13}\sin^{2}\phi_{21}
-\end{aligned}
-\label{eq:numu2nuethreeflavorfull}
-\end{equation}
-
-\end_inset
-
-where
-\begin_inset Formula 
-\begin{equation}
-X_{\cos\delta_{\text{CP}}}=\ccc{13}\ss{12}\ss{13}\ss{23}\left(\cc{12}\cc{23}\cos\delta_{\text{CP}}-\ss{12}\ss{13}\right)\label{eq:Xcosdelta}
-\end{equation}
-
-\end_inset
-
-
-\begin_inset Formula 
-\begin{equation}
-Y_{\sin\delta_{\text{CP}}}=\frac{1}{8}\sin\left(2\theta_{12}\right)\sin\left(2\theta_{13}\right)\sin\left(2\theta_{23}\right)\cc{13}\sin\delta_{\text{CP}}\label{eq:Ysindelta}
-\end{equation}
-
-\end_inset
-
-and (+) represents the sign change from neutrinos to anti-neutrinos.
- The CP violating term 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "eq:Ysindelta"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- is also known as the Jarlskog Invariant and is a measure of CP violation
- independent of the mixing parameterization
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Jarlskog1985"
-literal "false"
-
-\end_inset
-
-.
- This oscillation channel are of primary importance in accelerator and atmospher
-ic neutrino oscillation experiments.
-\end_layout
-
-\begin_layout Standard
-Current and next generation experiments aim to improve knowledge of the
- mixing parameters.
- There are a couple of degeneracies to unravel as well as precise measurement
- of 
-\begin_inset Formula $\deltacp$
-\end_inset
-
-.
- While the two defined mass-squared splittings 
-\begin_inset Formula $\Dm 21=\Delta m_{\text{sol}}^{2}$
-\end_inset
-
- and 
-\begin_inset Formula $\Dm 32=\Delta m_{\text{atm}}^{2}$
-\end_inset
-
- are known, it is unknown which eigenstates are more massive.
- This problem is known as the mass hierarchy problem and is illustrated
- in 
 \begin_inset Float figure
-placement h
+placement t
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Float figure
@@ -3345,6 +3282,90 @@ name "fig:masshierarchy"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Paragraph
+Electron Neutrino Appearance
+\end_layout
+
+\begin_layout Standard
+While CP violation is not observable in muon neutrino disappearance, it
+ is with electron neutrino appearance.
+ The appearance probability of electron neutrinos types from muon types
+ is given by
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned}\mathcal{P}\left(\nuantinuparticle{\mu}\rightarrow\nuantinuparticle e\right)= & 4\ccc{13}\sss{13}\sss{23}\sin^{2}\phi_{31}\\
+ & +8\left(X_{\cos\delta_{\text{CP}}}\right)\cos\phi_{23}\sin\phi_{31}\sin\phi_{21}\\
+ & \overset{_{(+)}}{-}\underset{\text{CP violating}}{8\underbrace{\left(Y_{\sin\delta_{\text{CP}}}\right)}}\sin\phi_{32}\sin\phi_{31}\sin\phi_{21}\\
+ & +4\left(Z_{\cos\delta_{\text{CP}}}\right)\sss{12}\ccc{13}\sin^{2}\phi_{21}
+\end{aligned}
+\label{eq:numu2nuethreeflavorfull}
+\end{equation}
+
+\end_inset
+
+where
+\begin_inset Formula 
+\begin{equation}
+X_{\cos\delta_{\text{CP}}}=\ccc{13}\ss{12}\ss{13}\ss{23}\left(\cc{12}\cc{23}\cos\delta_{\text{CP}}-\ss{12}\ss{13}\right)\label{eq:Xcosdelta}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+Y_{\sin\delta_{\text{CP}}}=\frac{1}{8}\sin\left(2\theta_{12}\right)\sin\left(2\theta_{13}\right)\sin\left(2\theta_{23}\right)\cc{13}\sin\delta_{\text{CP}}\label{eq:Ysindelta}
+\end{equation}
+
+\end_inset
+
+and (+) represents the sign change from neutrinos to anti-neutrinos.
+ The CP violating term 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "eq:Ysindelta"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is also known as the Jarlskog Invariant and is a measure of CP violation
+ independent of the mixing parameterization
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Jarlskog1985"
+literal "false"
+
+\end_inset
+
+.
+ This oscillation channel are of primary importance in accelerator and atmospher
+ic neutrino oscillation experiments.
+\end_layout
+
+\begin_layout Standard
+Current and next generation experiments aim to improve knowledge of the
+ mixing parameters.
+ There are a couple of degeneracies to unravel as well as precise measurement
+ of 
+\begin_inset Formula $\deltacp$
+\end_inset
+
+.
+ While the two defined mass-squared splittings 
+\begin_inset Formula $\Dm 21=\Delta m_{\text{sol}}^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\Dm 32=\Delta m_{\text{atm}}^{2}$
+\end_inset
+
+ are known, it is unknown which eigenstates are more massive.
+ This problem is known as the mass hierarchy problem and is illustrated
+ in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:Mass-hierarchy"
@@ -3394,10 +3415,10 @@ noprefix "false"
 
 .
 \begin_inset Float table
-placement h
+placement t
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -4092,7 +4113,7 @@ To conclude the introduction on neutrinos, it is important to examine the
  baryonic matter (i.e.
  protons and neutrons) from comoslogical models as shown in 
 \begin_inset Float figure
-placement h
+placement t
 wide false
 sideways false
 status open
@@ -4184,7 +4205,7 @@ literal "false"
 \begin_layout Standard
 The process of Baryogenesis
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Baryogenesis is the mechanism by which matter and antimatter baryons are
@@ -4211,7 +4232,7 @@ literal "false"
  but not to the level which resolves the BAU.
  Baryogenesis can be achieved by having Leptogenesis
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Leptogenesis is the mechanism by which leptons and anti-leptons are created
@@ -4450,6 +4471,11 @@ The following topics will be discussed in the following order.
  far detector.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Branch IntroductionT2KNeutrinoProduction
+inverted 0
+status collapsed
+
 \begin_layout Subsection
 Neutrino Production at J-PARC
 \end_layout
@@ -4619,42 +4645,8 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-The next stage for the protons intended for the neutrino beamline is the
- much larger main ring (MR) synchrotron as shown in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:50-GeV-MR"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- which has a circumference of 1567m.
- While nominally designed to boost protons to 50 GeV, it currently operates
- at 30 GeV.
- Protons are injected into the MR to form eight proton bunches (spill),
- initially six when T2K first ran, before entering the neutrino beamline.
- The total temporal width of the spill is approximately 
-\begin_inset Formula $0.5\mu\text{s}$
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Abe:2011ks"
-literal "false"
-
-\end_inset
-
-.
- At a spill cycle frequency of 0.5Hz, the bunches are extracted from the
- MR into the neutrino beamline.
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
-placement !t
+placement t
 wide false
 sideways false
 status collapsed
@@ -4671,9 +4663,7 @@ status open
 \begin_inset Graphics
 	filename Figures/Introduction/JPARCLINAC.png
 	lyxscale 25
-	width 49text%
-	height 25theight%
-	keepAspectRatio
+	width 30text%
 
 \end_inset
 
@@ -4712,9 +4702,7 @@ status open
 \begin_inset Graphics
 	filename Figures/Introduction/JPARC3GeVRCS.png
 	lyxscale 50
-	width 49text%
-	height 25theight%
-	keepAspectRatio
+	width 30text%
 
 \end_inset
 
@@ -4740,9 +4728,6 @@ name "fig:3-GeV-RCS"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Float figure
 wide false
 sideways false
@@ -4753,8 +4738,7 @@ status open
 \begin_inset Graphics
 	filename Figures/Introduction/JPARCMR.png
 	lyxscale 30
-	width 50text%
-	height 25theight%
+	width 30text%
 
 \end_inset
 
@@ -4859,37 +4843,42 @@ name "fig:schemeJPARC"
 \end_layout
 
 \begin_layout Standard
-The neutrino beamline is designed to direct the protons toward SK and generate
- neutrinos by impinging them on a cylindrical target.
- 
+The next stage for the protons intended for the neutrino beamline is the
+ much larger main ring (MR) synchrotron as shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "fig:Neutrino-beamline"
+reference "fig:50-GeV-MR"
 plural "false"
 caps "false"
 noprefix "false"
 
 \end_inset
 
- shows the process of proton extraction from the MR for both primary and
- secondary neutrino beamlines.
- In the primary beamline, a series of normal and superconducting magnets
- steer the proton beam away from the MR first along a 54m preparation section
- and then a 147m arc section to bend the beam towards SK.
- A final focusing section in the primary beamline focuses the protons into
- the secondary beam while directing it downwards 
-\begin_inset Formula $3.637\text{°}$
+ which has a circumference of 1567m.
+ While nominally designed to boost protons to 50 GeV, it currently operates
+ at 30 GeV.
+ Protons are injected into the MR to form eight proton bunches (spill),
+ initially six when T2K first ran, before entering the neutrino beamline.
+ The total temporal width of the spill is approximately 
+\begin_inset Formula $0.5\mu\text{s}$
 \end_inset
 
- with respect to the local horizontal.
- Since a well tuned and stable proton beam is necessary for neutrino production,
- numerous beam monitors are installed along the primary beamline to measure
- any losses.
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abe:2011ks"
+literal "false"
+
+\end_inset
+
+.
+ At a spill cycle frequency of 0.5Hz, the bunches are extracted from the
+ MR into the neutrino beamline.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
-placement !t
+placement t
 wide false
 sideways false
 status collapsed
@@ -4906,8 +4895,6 @@ status collapsed
 \begin_inset Graphics
 	filename Figures/Introduction/JPARCNuBeamline.png
 	width 30text%
-	height 25theight%
-	keepAspectRatio
 
 \end_inset
 
@@ -4946,8 +4933,6 @@ status collapsed
 \begin_inset Graphics
 	filename Figures/Introduction/JPARCNuBeamlineZoomed.png
 	width 30text%
-	height 25theight%
-	keepAspectRatio
 
 \end_inset
 
@@ -4986,8 +4971,6 @@ status collapsed
 \begin_inset Graphics
 	filename Figures/Introduction/T2KHorns.png
 	width 30text%
-	height 25theight%
-	keepAspectRatio
 
 \end_inset
 
@@ -5077,78 +5060,32 @@ name "fig:JPARCNeutrinobeamline"
 \end_layout
 
 \begin_layout Standard
-The secondary beamline marks the end of the proton beam and production of
- a neutrino beam.
- In the secondary beamline, as shown in 
+The neutrino beamline is designed to direct the protons toward SK and generate
+ neutrinos by impinging them on a cylindrical target.
+ 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "fig:Secondary-beamline"
+reference "fig:Neutrino-beamline"
 plural "false"
 caps "false"
 noprefix "false"
 
 \end_inset
 
-, it consists of a target station, a decay volume for the outgoing particles
- from the target station, and a beam dump for any remaining particles.
- The target station houses a 91.4cm long, 2.6cm diameter, and 
-\begin_inset Formula $1.8\text{g/cm}^{3}$
+ shows the process of proton extraction from the MR for both primary and
+ secondary neutrino beamlines.
+ In the primary beamline, a series of normal and superconducting magnets
+ steer the proton beam away from the MR first along a 54m preparation section
+ and then a 147m arc section to bend the beam towards SK.
+ A final focusing section in the primary beamline focuses the protons into
+ the secondary beam while directing it downwards 
+\begin_inset Formula $3.637\text{°}$
 \end_inset
 
- graphite rod which corresponds to 1.9 radiation lengths.
- When the protons impinge the target, strong (nuclear) interactions produce
- pi-mesons (pions) and ka-mesons (kaons).
- like those produced from cosmic ray collisions in the upper atmosphere.
- To enhance the flux of neutrinos, a series of three current pulsed, focusing
- magnets called horns
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-The name horn derives from the fact that the focusing magnets are shaped
- like brass horns in a music ensemble or marching band.
- One can think of these horns like a focusing lens for charged particles.
-\begin_inset VSpace defskip
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- as shown in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:T2K-horns"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- are used to focus the mesons of the correct charge towards SK.
- Photographs of a graphite target and focusing horn are shown in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:JPARCTargetStationPhotos"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
- The horns are pulsed at +250kA (-250kA) to select positively (negatively)
- charged pions.
- The focused pions are allowed to decay along the 96m long decay volume
- as to boost the daughter neutrinos along the secondary beamline direction.
- For safety reasons, the decay volume is filled with gaseous helium at 1
- atm of pressure which has a low pion absorption rate.
- The daughter particles in the decay volume should be mostly muons and muon-neut
-rinos traveling towards SK.
- An beam dump is placed at the end of the decay volume to stop particles
- that have not yet decayed to prevent uncontrolled for decay products from
- contaminating the beam.
+ with respect to the local horizontal.
+ Since a well tuned and stable proton beam is necessary for neutrino production,
+ numerous beam monitors are installed along the primary beamline to measure
+ any losses.
 \end_layout
 
 \begin_layout Standard
@@ -5279,6 +5216,138 @@ name "fig:JPARCTargetStationPhotos"
 \end_layout
 
 \begin_layout Standard
+The secondary beamline marks the end of the proton beam and production of
+ a neutrino beam.
+ In the secondary beamline, as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Secondary-beamline"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, it consists of a target station, a decay volume for the outgoing particles
+ from the target station, and a beam dump for any remaining particles.
+ The target station houses a 91.4cm long, 2.6cm diameter, and 
+\begin_inset Formula $1.8\text{g/cm}^{3}$
+\end_inset
+
+ graphite rod which corresponds to 1.9 radiation lengths.
+ When the protons impinge the target, strong (nuclear) interactions produce
+ pi-mesons (pions) and ka-mesons (kaons).
+ like those produced from cosmic ray collisions in the upper atmosphere.
+ To enhance the flux of neutrinos, a series of three current pulsed, focusing
+ magnets called horns
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The name horn derives from the fact that the focusing magnets are shaped
+ like brass horns in a music ensemble or marching band.
+ One can think of these horns like a focusing lens for charged particles.
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:T2K-horns"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ are used to focus the mesons of the correct charge towards SK.
+ Photographs of a graphite target and focusing horn are shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:JPARCTargetStationPhotos"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ The horns are pulsed at +250kA (-250kA) to select positively (negatively)
+ charged pions.
+ The focused pions are allowed to decay along the 96m long decay volume
+ as to boost the daughter neutrinos along the secondary beamline direction.
+ For safety reasons, the decay volume is filled with gaseous helium at 1
+ atm of pressure which has a low pion absorption rate.
+ The daughter particles in the decay volume should be mostly muons and muon-neut
+rinos traveling towards SK.
+ An beam dump is placed at the end of the decay volume to stop particles
+ that have not yet decayed to prevent uncontrolled for decay products from
+ contaminating the beam.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement !t
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/T2KPOTDelivery.png
+	width 50text%
+	height 25theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+T2K accumulated protons on target since 2010 shows a steady increase in
+ beam power over time.
+ The gap between Run2 and Run3 is due to the damage suffered at J-PARC after
+ the 2011 Tōhoku earthquake.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+T2K Accumulated Protons on Target
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:T2K-accumulated-POT"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Along both beamlines are numerous monitors and timing systems to observe
  the proton beam to ensure stable production of neutrinos.
  Proton beam monitors are placed along the primary beamline to ensure the
@@ -5347,63 +5416,6 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement !t
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/Introduction/T2KPOTDelivery.png
-	width 50text%
-	height 25theight%
-	keepAspectRatio
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-T2K accumulated protons on target since 2010 shows a steady increase in
- beam power over time.
- The gap between Run2 and Run3 is due to the damage suffered at J-PARC after
- the 2011 Tōhoku earthquake.
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-T2K Accumulated Protons on Target
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:T2K-accumulated-POT"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 In addition the proton beam intensity, as measured in kW (energy/proton/second),
  has been increased over time which increases the number of neutrino interaction
 s observed at SK.
@@ -5415,34 +5427,40 @@ kA is the preferred horn current in both FHC and RHC modes, the horns were
  run briefly at +205kA when operations resumed after 2011 Tōhoku earthquake.
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch IntroductionT2KNearDetectors
+inverted 0
+status open
+
 \begin_layout Subsection
-Neutrino Near Detectors
+Neutrino Near Detectors: ND280
 \end_layout
 
 \begin_layout Standard
 T2K has a near detector (ND) site at J-PARC that is designed specifically
  observe the neutrinos in flight.
- The site is located 280m away from the production target which is before
- oscillations occur.
- The primary detector is an off-axis, magnetized tracking detector called
- ND280.
- Separate to ND280 is a separate array of detector cells together called
- the Interactive Neutrino Grid (INGRID) which measures the neutrino beam
- profile.
- Both ND280 and INGRID are housed together in a pit at the ND site.
-\end_layout
-
-\begin_layout Subsubsection
-INGRID
+ The purpose of a ND site is due to large uncertainties from the neutrino
+ flux in previous neutrino oscillation experiments.
+ The site is called ND280 and is located 280m away from the production target.
+ The primary detector is an off-axis, magnetized tracking detector.
+ A separate detector array called the Interactive Neutrino Grid (INGRID)
+ measures the neutrino beam profile.
+ Both on-axis and off-axis detectors are housed together in a pit at ND280.
+ While the reliable photo-multiplier tube (PMT) technology was used in previous
+ scintillator-based detectors, T2K needed a different technology to work
+ in the strong magnetic field environment of the off-axis detector.
+ A commercial light sensor called a multi-pixel photon counter (MPPC) was
+ developed specifically for T2K operational needs.
 \end_layout
 
 \begin_layout Standard
-The on-axis near detector called the Interactive Neutrino Grid (INGRID)
- is a tracking scintillator detector designed to directly measure the neutrino
- beam profile.
- As shown in 
 \begin_inset Float figure
-placement !t
+placement t
 wide false
 sideways false
 status collapsed
@@ -5452,7 +5470,7 @@ status collapsed
 \begin_inset Graphics
 	filename Figures/Introduction/INGRID.png
 	lyxscale 25
-	height 33theight%
+	width 30text%
 
 \end_inset
 
@@ -5511,6 +5529,25 @@ Schematic of INGRID
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+What follows from here is a description of the MPPC technology used in T2K.
+ Next is a description of INGRID and its purpose at ND280.
+ The final topic is the primary off-axis, magnetized detector.
+ From here on unless specified, INGRID will refer only to the on-axis ND
+ and ND280 will refer only to off-axis ND.
+\end_layout
+
+\begin_layout Subsubsection
+On-Axis Detector
+\end_layout
+
+\begin_layout Standard
+The on-axis near detector called the Interactive Neutrino Grid (INGRID)
+ is a tracking scintillator detector designed to directly measure the neutrino
+ beam profile.
+ As shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:INGRID"
@@ -5535,11 +5572,8 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-INGRID is continually monitored to ensure the neutrino beam center is properly
- aligned at its designed center.
- Diagnostic plots such as 
 \begin_inset Float figure
-placement !t
+placement t
 wide false
 sideways false
 status collapsed
@@ -5548,7 +5582,9 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename Figures/Introduction/INGRIDBeamProfile.png
+	width 60text%
 	height 20theight%
+	keepAspectRatio
 
 \end_inset
 
@@ -5601,6 +5637,12 @@ INGRID Beam Profile
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+INGRID is continually monitored to ensure the neutrino beam center is properly
+ aligned at its designed center.
+ Diagnostic plots such as 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:INGRIDBeamProfile"
@@ -5610,12 +5652,25 @@ noprefix "false"
 
 \end_inset
 
- are collected on a monthly basis to ensure that the neutrino flux at SK
- is consistent with T2K's design.
+ are collected on a monthly basis to ensure that the neutrino flux at Super-Kami
+okande (SK) is consistent with T2K's design.
  A history of the beam profile and event rate on INGRID between January
  2010 and October 2016 is shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:INGRIDBeamProfileHistory"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
-placement !t
+placement t
 wide false
 sideways false
 status collapsed
@@ -5625,7 +5680,7 @@ status collapsed
 \begin_inset Graphics
 	filename Figures/Introduction/INGRIDBeamProfileHistory.png
 	lyxscale 45
-	height 30theight%
+	width 60text%
 
 \end_inset
 
@@ -5638,8 +5693,9 @@ status collapsed
 \begin_layout Plain Layout
 INGRID interaction event rate and beam profiles are shown.
  The top panel shows the event rate for the three different horn currents.
- The middle and bottom panels show the horizontal and vertical beam directions,
- respectively.
+ The middle and bottom panels show the horizontal and vertical beam directions
+ with respect to the beam center, respectively.
+ A deviation of 1 mrad corresponds to a little under 30 cm.
  The error bars shown are the statistical errors on the mean.
 \begin_inset Argument 1
 status open
@@ -5668,9 +5724,59 @@ name "fig:INGRIDBeamProfileHistory"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsubsection
+Off-Axis Detector
+\end_layout
+
+\begin_layout Standard
+The primary near detector for T2K, ND280, is an off-axis, magnetized tracking
+ detector.
+ It is a collection of different detector technologies designed to facilitate
+ three measurement goals:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\numu$
+\end_inset
+
+ flux at SK,
+\end_layout
+
+\begin_layout Enumerate
+Irreducible 
+\begin_inset Formula $\nue$
+\end_inset
+
+ background flux at SK, and
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\numu$
+\end_inset
+
+ interaction backgrounds and cross sections for the 
+\begin_inset Formula $\numu\rightarrow\nue$
+\end_inset
+
+ search.
+\end_layout
+
+\begin_layout Standard
+ND280 consists of the pi-zero detector (
+\begin_inset Formula $\pod$
+\end_inset
+
+), the tracker region consisting of a fine grain detector (FGD) and time
+ projection chamber (TPC), a electromagentic calorimeter (ECal), and side
+ muon range detector (SMRD).
+ The ND280 subdetectors are instrumented inside the recycled UA1/NOMAD magnet
+ with the SMRD in the magnetic field return yoke itself.
+ A schematic of the different detector components of ND280 is shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "fig:INGRIDBeamProfileHistory"
+reference "fig:ND280Exploded"
 plural "false"
 caps "false"
 noprefix "false"
@@ -5680,9 +5786,194 @@ noprefix "false"
 .
 \end_layout
 
-\begin_layout Subsubsection
-ND280
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/ND280Exploded-Text-White.png
+	lyxscale 75
+	width 50text%
+
+\end_inset
+
+
 \end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+An exploded view of the ND280 off-axis detector.
+ The magnetic field is generated from the Solenoid Coil via an electrical
+ current which produces a dipole magnetic field of strength 0.2 T.
+ The field is designed to return to the Magnetic Yoke.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ND280Exploded"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Schematic of the Off-Axis Near Detector ND280
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ND280 is designed to exploit the magnetic field system to extract particle
+ charge identification and momentum measurements in the TPC.
+ The magnetic field is generated using solenoid coils to generate a dipole
+ field of strength 0.2 T, which is highly uniform near the center of the
+ detector
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+0.2 T is a powerful magnetic field.
+ According to the The US/UK World Magnetic Model for 2015-2020, the magnetic
+ field strength on the surface of the Earth is about 0.
+\begin_inset Formula $294385$
+\end_inset
+
+ Gauss or 
+\begin_inset Formula $2.94385\times10^{-5}$
+\end_inset
+
+ T.
+ So the field inside ND280 is about 6800 times more forceful than the Earth's
+ influence
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Chulliat2015"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+.
+ However, it has significant deviations from 0.2 T when close the solenoid
+ edges.
+ The field was measured thoroughly to produce a 3D model which has been
+ also compared with measurements in ND280 interior as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:ND280magneticfieldmapping"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/ND280BFieldDeviations.png
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Each of the magnetic field components (x, y and z, respectively) are compared
+ between a fit of the data and the actual measurements near the center of
+ ND280.
+ The systematic uncertainty on the field is extracted from the RMS of the
+ mapping
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abe:2011ks"
+literal "false"
+
+\end_inset
+
+.
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+ND280 Magnetic Field Deviations from a Data Fit
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ND280magneticfieldmapping"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch IntroductionT2KFarDetector
+inverted 0
+status collapsed
 
 \begin_layout Subsection
 Neutrino Far Detector: Super-Kamiokande
@@ -5724,6 +6015,11 @@ where
 \end{aligned}
 ,
 \]
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 

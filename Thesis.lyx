@@ -162,7 +162,7 @@
 \begin_layout Standard
 \begin_inset Branch PreambleAndMainMatter
 inverted 0
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset CommandInset include
