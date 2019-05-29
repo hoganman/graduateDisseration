@@ -126,6 +126,11 @@
 \filename_suffix 0
 \color #faf0e6
 \end_branch
+\branch PreambleAndMainMatter
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
 \index Index
 \shortcut idx
 \color #008000
@@ -153,6 +158,11 @@
 \end_header
 
 \begin_body
+
+\begin_layout Standard
+\begin_inset Branch PreambleAndMainMatter
+inverted 0
+status open
 
 \begin_layout Standard
 \begin_inset CommandInset include
@@ -260,6 +270,11 @@ status open
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
@@ -286,6 +301,13 @@ status open
 
 \size large
 Introduction
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Introduction"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

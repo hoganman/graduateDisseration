@@ -54,6 +54,16 @@
 \justification true
 \use_refstyle 0
 \use_minted 0
+\branch IntroductionNeutrinos
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch IntroductionT2K
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
 \index Index
 \shortcut idx
 \color #008000
@@ -86,8 +96,20 @@
 This describes the thesis.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Branch IntroductionNeutrinos
+inverted 0
+status collapsed
+
 \begin_layout Section
 Introduction to Neutrinos
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Introduction-to-Neutrinos"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -236,8 +258,7 @@ status open
 
 \begin_layout Plain Layout
 To give some perspective to this number, this means 70 billion neutrinos
- are travelling every second through an area similar to one's own thumb
- nail.
+ are traveling every second through an area similar to one's own thumb nail.
 \begin_inset VSpace defskip
 \end_inset
 
@@ -270,7 +291,6 @@ flavor oscillations
  as a different flavor.
  The impact of such oscillations could help explain the observed matter
  and anti-matter asymmetry in the Universe.
- 
 \end_layout
 
 \begin_layout Subsection
@@ -724,7 +744,7 @@ Neutrinos are observed to have anti-parallel momentum vectors
 \end_inset
 
  and the opposite is true for anti-neutrinos.
- This property is called helicty and is given by 
+ This property is called helicity and is given by 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "eq:helicityoperator"
@@ -4135,10 +4155,6 @@ name "fig:Matter-Content-of-universe"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -4233,6 +4249,16 @@ literal "false"
 .
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch IntroductionT2K
+inverted 0
+status open
+
 \begin_layout Section
 Tokai-to-Kamioka Experiment
 \begin_inset CommandInset label
@@ -4255,8 +4281,59 @@ literal "false"
 \end_inset
 
  as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:T2KBirdsEye"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ It is the successor experiment to the KEK-to-Kamioka neutrino oscillation
+ experiment also hosted in Japan.
+ T2K produces its high intensity, muon neutrino pure beam at the Japan Proton
+ Accelerator Complex (J-PARC), a world class particle accelerator facility.
+ The beam is directed at the Super-Kamiokande (SK)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "FUKUDA2003418"
+literal "false"
+
+\end_inset
+
+ detector which is 295 km away from the source.
+ Along the beamline at 280m from the beam source are a series of near detectors
+ called ND280
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1063/1.3274192"
+literal "false"
+
+\end_inset
+
+ to observe and characterize the unoscillated beam.
+ The beam is designed to maximize the 
+\begin_inset Formula $\numu\rightarrow\nue$
+\end_inset
+
+ probability at the 
+\begin_inset Formula $L=$
+\end_inset
+
+295 km baseline using a neutrino energy spectrum sharply peaked at 
+\begin_inset Formula $\Enu=0.6$
+\end_inset
+
+ GeV.
+ This spectrum is achieved by directing the center of the beam axis 2.5 degrees
+ off center from SK.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
-placement h
+placement t
 wide false
 sideways false
 status collapsed
@@ -4308,54 +4385,6 @@ name "fig:T2KBirdsEye"
 \end_inset
 
 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:T2KBirdsEye"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
- It is the successor experiment to the KEK-to-Kamioka neutrino oscillation
- experiment also hosted in Japan.
- T2K produces its high intensity, muon neutrino pure beam at the Japan Proton
- Accelerator Complex (J-PARC), a world class particle accelerator facility.
- The beam is directed at the Super-Kamiokande (SK)
-\begin_inset CommandInset citation
-LatexCommand cite
-key "FUKUDA2003418"
-literal "false"
-
-\end_inset
-
- detector which is 295 km away from the source.
- Along the beamline at 280m from the beam source are a series of near detectors
- called ND280
-\begin_inset CommandInset citation
-LatexCommand cite
-key "doi:10.1063/1.3274192"
-literal "false"
-
-\end_inset
-
- to observe and characterize the unoscillated beam.
- The beam is designed to maximize the 
-\begin_inset Formula $\numu\rightarrow\nue$
-\end_inset
-
- probability at the 
-\begin_inset Formula $L=$
-\end_inset
-
-295 km baseline using a neutrino energy spectrum sharply peaked at 
-\begin_inset Formula $\Enu=0.6$
-\end_inset
-
- GeV.
- This spectrum is achieved by directing the center of the beam axis 2.5 degrees
- off center from SK.
 \end_layout
 
 \begin_layout Standard
@@ -4430,6 +4459,20 @@ To facilitate the high intensity neutrino beam requirements for T2K, the
  J-PARC site generates a high intensity proton beam through a series of
  particle accelerators.
  A bird's eye view of J-PARC can be seen in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:BirdsEyeJPARC"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ which highlights its different accelerators and facilities.
+ For this section, note that all beam energies are kinetic energies.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement t
 wide false
@@ -4467,7 +4510,7 @@ Bird's eye view of the J-PARC center showing the primary components of its
  To generate the high intensity neutrino beam, first the linear accelerator
  (Linac, red) accelerates hydrogen ions (protons) into the 3 GeV Synchrotron
  (also red) called the rapid-cycle synchrotron (RCS).
- The RCS then injects some of its protons into the 50 GeV Sychrotron (yellow)
+ The RCS then injects some of its protons into the 50 GeV Synchrotron (yellow)
  called the main ring (MR) which currently runs at 30 GeV.
  Finally the MR protons are directed into a target material along the neutrino
  beamline (teal)
@@ -4496,22 +4539,122 @@ name "fig:BirdsEyeJPARC"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Protons for the T2K beamline are first accelerated in the J-PARC linear
+ accelerator
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+A linear accelerator accelerates particles using time varying electric fields
+ along a one direction, terminal beamline.
+ Not only used in particle physics, they are also used in the medical field
+ to generate X-rays.
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ (linac) and then the rapid cycle synchrotron
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+A synchrotron is cyclic particle accelerator that relies on time varying
+ magnetic fields to accelerate particles.
+ Since they require many magnets and large spaces to operate, they are usually
+ operated at national laboratories for others uses as well like material
+ and life sciences.
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ (RCS).
+ Hydrogen ions (
+\begin_inset Formula $_{1}^{1}\text{H}^{-}$
+\end_inset
+
+) are extracted from plasma in a electrical discharge chamber and feed through
+ a series of linac elements as shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "fig:BirdsEyeJPARC"
+reference "fig:LINAC"
 plural "false"
 caps "false"
 noprefix "false"
 
 \end_inset
 
- which highlights its different accelerators and facilities.
- For this section, note that all beam energies are kinetic energies.
+.
+ Each linac element except for the initial quadrapole magnet apparatus accelerat
+es the ions using carefully coordinated oscillating electric fields generated
+ by radio frequency pulses.
+ After traveling 240m along the linac, the ions have been boosted to 181
+ MeV of kinetic energy and transported into the RCS.
+ In transit to the RCS, the ions are stripped of their electrons via charge
+ stripping foils.
+ The 348m circumference RCS then further boosts the protons to 3 GeV at
+ an operating frequency of 25 Hz.
+ While being accelerated, protons are aggregated into two bunches and focused
+ using particle collimators as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:3-GeV-RCS"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The next stage for the protons intended for the neutrino beamline is the
+ much larger main ring (MR) synchrotron as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:50-GeV-MR"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ which has a circumference of 1567m.
+ While nominally designed to boost protons to 50 GeV, it currently operates
+ at 30 GeV.
+ Protons are injected into the MR to form eight proton bunches (spill),
+ initially six when T2K first ran, before entering the neutrino beamline.
+ The total temporal width of the spill is approximately 
+\begin_inset Formula $0.5\mu\text{s}$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abe:2011ks"
+literal "false"
+
+\end_inset
+
+.
+ At a spill cycle frequency of 0.5Hz, the bunches are extracted from the
+ MR into the neutrino beamline.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
-placement t
+placement !t
 wide false
 sideways false
 status collapsed
@@ -4676,7 +4819,7 @@ literal "false"
 \end_inset
 
 .
- (c) Protons from the RCS are injected into the main ring (MR) synchroton
+ (c) Protons from the RCS are injected into the main ring (MR) synchrotron
  which further accelerates the protons.
  While the MR is designed for 50 GeV, it currently operates at 30 GeV.
  For T2K, the protons are bunched in the MR and extracted into the 
@@ -4716,124 +4859,43 @@ name "fig:schemeJPARC"
 \end_layout
 
 \begin_layout Standard
-Protons for the T2K beamline are first accelerated in the J-PARC linear
- accelerator
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-A linear accelerator accelerates particles using time varying electric fields
- along a one direction, terminal beamline.
- Not only used in particle physics, they are also used in the medical field
- to generate X-rays.
-\begin_inset VSpace defskip
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- (linac) and then the rapid cycle synchrotron
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-A synchrotron is cyclic particle accelerator that relies on time varying
- magnetic fields to accelerate particles.
- Since they require many magnets and large spaces to operate, they are usually
- operated at national laboratories for others uses as well like material
- and life sciences.
-\begin_inset VSpace defskip
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- (RCS).
- Hydrogen ions (
-\begin_inset Formula $_{1}^{1}\text{H}^{-}$
-\end_inset
-
-) are extracted from plasma in a electrical discharge chamber and feed through
- a series of linac elements as shown in 
+The neutrino beamline is designed to direct the protons toward SK and generate
+ neutrinos by impinging them on a cylindrical target.
+ 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "fig:LINAC"
+reference "fig:Neutrino-beamline"
 plural "false"
 caps "false"
 noprefix "false"
 
 \end_inset
 
-.
- Each linac element except for the initial quadrapole magnet apparatus accelerat
-es the ions using carefully coordinated oscillating electric fields generated
- by radio frequency pulses.
- After traveling 240m along the linac, the ions have been boosted to 181
- MeV of kinetic energy and transported into the RCS.
- In transit to the RCS, the ions are stripped of their electrons via charge
- stripping foils.
- The 348m circumference RCS then further boosts the protons to 3 GeV at
- an operating frequency of 25 Hz.
- While being accelerated, protons are aggregated into two bunches and focused
- using particle collimators as shown in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:3-GeV-RCS"
-plural "false"
-caps "false"
-noprefix "false"
-
+ shows the process of proton extraction from the MR for both primary and
+ secondary neutrino beamlines.
+ In the primary beamline, a series of normal and superconducting magnets
+ steer the proton beam away from the MR first along a 54m preparation section
+ and then a 147m arc section to bend the beam towards SK.
+ A final focusing section in the primary beamline focuses the protons into
+ the secondary beam while directing it downwards 
+\begin_inset Formula $3.637\text{°}$
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Standard
-The next stage for the protons intended for the neutrino beamline is the
- much larger main ring (MR) synchrotron as shown in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:50-GeV-MR"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- which has a circumference of 1567m.
- While nominally designed to boost protons to 50 GeV, it currently operates
- at 30 GeV.
- Protons are injected into the MR to form eight proton bunches (spill),
- initially six when T2K first ran, before entering the neutrino beamline.
- The total temporal width of the spill is approximately 
-\begin_inset Formula $0.5\mu\text{s}$
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Abe:2011ks"
-literal "false"
-
-\end_inset
-
-.
- At a spill cycle frequency of 0.5Hz, the bunches are extracted from the
- MR into the neutrino beamline.
+ with respect to the local horizontal.
+ Since a well tuned and stable proton beam is necessary for neutrino production,
+ numerous beam monitors are installed along the primary beamline to measure
+ any losses.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
-placement t
+placement !t
 wide false
 sideways false
 status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Float figure
 wide false
 sideways false
@@ -5015,37 +5077,83 @@ name "fig:JPARCNeutrinobeamline"
 \end_layout
 
 \begin_layout Standard
-The neutrino beamline is designed to direct the protons toward SK and generate
- neutrinos by impinging them on a cylindrical target.
- 
+The secondary beamline marks the end of the proton beam and production of
+ a neutrino beam.
+ In the secondary beamline, as shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "fig:Neutrino-beamline"
+reference "fig:Secondary-beamline"
 plural "false"
 caps "false"
 noprefix "false"
 
 \end_inset
 
- shows the process of proton extraction from the MR for both primary and
- secondary neutrino beamlines.
- In the primary beamline, a series of normal and superconducting magnets
- steer the proton beam away from the MR first along a 54m preparation section
- and then a 147m arc section to bend the beam towards SK.
- A final focusing section in the primary beamline focuses the protons into
- the secondary beam while directing it downwards 
-\begin_inset Formula $3.637\text{°}$
+, it consists of a target station, a decay volume for the outgoing particles
+ from the target station, and a beam dump for any remaining particles.
+ The target station houses a 91.4cm long, 2.6cm diameter, and 
+\begin_inset Formula $1.8\text{g/cm}^{3}$
 \end_inset
 
- with respect to the local horizontal.
- Since a well tuned and stable proton beam is necessary for neutrino production,
- numerous beam monitors are installed along the primary beamline to measure
- any losses.
+ graphite rod which corresponds to 1.9 radiation lengths.
+ When the protons impinge the target, strong (nuclear) interactions produce
+ pi-mesons (pions) and ka-mesons (kaons).
+ like those produced from cosmic ray collisions in the upper atmosphere.
+ To enhance the flux of neutrinos, a series of three current pulsed, focusing
+ magnets called horns
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The name horn derives from the fact that the focusing magnets are shaped
+ like brass horns in a music ensemble or marching band.
+ One can think of these horns like a focusing lens for charged particles.
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:T2K-horns"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ are used to focus the mesons of the correct charge towards SK.
+ Photographs of a graphite target and focusing horn are shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:JPARCTargetStationPhotos"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ The horns are pulsed at +250kA (-250kA) to select positively (negatively)
+ charged pions.
+ The focused pions are allowed to decay along the 96m long decay volume
+ as to boost the daughter neutrinos along the secondary beamline direction.
+ For safety reasons, the decay volume is filled with gaseous helium at 1
+ atm of pressure which has a low pion absorption rate.
+ The daughter particles in the decay volume should be mostly muons and muon-neut
+rinos traveling towards SK.
+ An beam dump is placed at the end of the decay volume to stop particles
+ that have not yet decayed to prevent uncontrolled for decay products from
+ contaminating the beam.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
-placement t
+placement !t
 wide false
 sideways false
 status collapsed
@@ -5171,81 +5279,6 @@ name "fig:JPARCTargetStationPhotos"
 \end_layout
 
 \begin_layout Standard
-The secondary beamline marks the end of the proton beam and production of
- a neutrino beam.
- In the secondary beamline, as shown in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:Secondary-beamline"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-, it consists of a target station, a decay volume for the outgoing particles
- from the target station, and a beam dump for any remaining particles.
- The target station houses a 91.4cm long, 2.6cm diameter, and 
-\begin_inset Formula $1.8\text{g/cm}^{3}$
-\end_inset
-
- graphite rod which corresponds to 1.9 radiation lengths.
- When the protons impinge the target, strong (nuclear) interactions produce
- pi-mesons (pions) and ka-mesons (kaons).
- like those produced from cosmic ray collisions in the upper atmosphere.
- To enhance the flux of neutrinos, a series of three current pulsed, focusing
- magnets called horns
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-The name horn derives from the fact that the focusing magnets are shaped
- like brass horns in a music ensemble or marching band.
- One can think of these horns like a focusing lens for charged particles.
-\begin_inset VSpace defskip
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- as shown in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:T2K-horns"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- are used to focus the mesons of the correct charge towards SK.
- Photographs of a graphite target and focusing horn are shown in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:JPARCTargetStationPhotos"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
- The horns are pulsed at +250kA (-250kA) to select positively (negatively)
- charged pions.
- The focused pions are allowed to decay along the 96m long decay volume
- as to boost the daughter neutrinos along the secondary beamline direction.
- For safety reasons, the decay volume is filled with gaseous helium at 1
- atm of pressure which has a low pion absorption rate.
- The daughter particles in the decay volume should be mostly muons and muon-neut
-rinos traveling towards SK.
- An beam dump is placed at the end of the decay volume to stop particles
- that have not yet decayed to prevent uncontrolled for decay products from
- contaminating the beam.
-\end_layout
-
-\begin_layout Standard
 Along both beamlines are numerous monitors and timing systems to observe
  the proton beam to ensure stable production of neutrinos.
  Proton beam monitors are placed along the primary beamline to ensure the
@@ -5285,23 +5318,22 @@ In order to provide timing information for the neutrino beam at SK, a global
 \end_layout
 
 \begin_layout Standard
-J-PARC continues to improve the MR proton delivery since T2K begin in 2010.
- T2K has run with both +250kA and -250kA horn currents with increasing beam
- power over time.
- Focusing positively charged pions with +250kA horn current is called forward
- horn current (FHC) mode or 
+J-PARC continues to improve the proton delivery and neutrino modes since
+ T2K begin in 2010.
+ T2K has run in two horn current modes: 
 \begin_inset Formula $\nu$
 \end_inset
 
--mode.
- Similarly, using -250kA horn current is called reverse horn current (RHC)
- or 
-\begin_inset Formula $\overline{\nu}$
+-mode and 
+\begin_inset Formula $\numubar$
 \end_inset
 
 -mode.
- The aggregate running periods for T2K for both FHC and RHC are shown in
- 
+ Focusing positively charged pions with +250kA horn current is called forward
+ horn current (FHC) mode.
+ Similarly, using -250kA horn current is called reverse horn current (RHC)
+ mode.
+ The aggregate running of T2K for both FHC and RHC modes are shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:T2K-accumulated-POT"
@@ -5311,12 +5343,12 @@ noprefix "false"
 
 \end_inset
 
- in units of protons on target (POT or PoT).
+ in units of protons on target (POT).
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
-placement h
+placement !t
 wide false
 sideways false
 status collapsed
@@ -5371,6 +5403,18 @@ name "fig:T2K-accumulated-POT"
 
 \end_layout
 
+\begin_layout Standard
+In addition the proton beam intensity, as measured in kW (energy/proton/second),
+ has been increased over time which increases the number of neutrino interaction
+s observed at SK.
+ Note that while 
+\begin_inset Formula $\pm250$
+\end_inset
+
+kA is the preferred horn current in both FHC and RHC modes, the horns were
+ run briefly at +205kA when operations resumed after 2011 Tōhoku earthquake.
+\end_layout
+
 \begin_layout Subsection
 Neutrino Near Detectors
 \end_layout
@@ -5390,6 +5434,250 @@ T2K has a near detector (ND) site at J-PARC that is designed specifically
 
 \begin_layout Subsubsection
 INGRID
+\end_layout
+
+\begin_layout Standard
+The on-axis near detector called the Interactive Neutrino Grid (INGRID)
+ is a tracking scintillator detector designed to directly measure the neutrino
+ beam profile.
+ As shown in 
+\begin_inset Float figure
+placement !t
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/INGRID.png
+	lyxscale 25
+	height 33theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A schematic of INGRID shows the arrangement of the tracking scintillating
+ modules.
+ There are 16 identical modules total with seven in the vertical row, seven
+ in the horizontal row, and two at off-axis positions.
+ INGRID is capable of measuring the neutrino beam in a transverse area of
+ 10m 
+\begin_inset Formula $\times$
+\end_inset
+
+ 10 m.
+ With the vertical row upstream of the horizontal row, the designed beam
+ center intersects each row's center module
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ingrid"
+literal "false"
+
+\end_inset
+
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:INGRID"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Schematic of INGRID
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:INGRID"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, it is a cross grid of tracking modules centered at the designed neutrino
+ beam center (
+\begin_inset Formula $\theta=0$
+\end_inset
+
+).
+ Each module consists of alternating layers of iron plates and scintillator
+ bars except for the two most downstream scintillating layers which lack
+ iron plates.
+ Veto planes also surround each module to prevent false signals to trigger.
+ To monitor the beam asymmetry, two separate modules are placed off the
+ grid axis.
+\end_layout
+
+\begin_layout Standard
+INGRID is continually monitored to ensure the neutrino beam center is properly
+ aligned at its designed center.
+ Diagnostic plots such as 
+\begin_inset Float figure
+placement !t
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/INGRIDBeamProfile.png
+	height 20theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A beam profile taken with INGRID in April 2010 shows the Gaussian nature
+ of the beam.
+ The errors on the data points are about 
+\begin_inset Formula $1\%$
+\end_inset
+
+.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ingrid"
+literal "false"
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:INGRIDBeamProfile"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+INGRID Beam Profile
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:INGRIDBeamProfile"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ are collected on a monthly basis to ensure that the neutrino flux at SK
+ is consistent with T2K's design.
+ A history of the beam profile and event rate on INGRID between January
+ 2010 and October 2016 is shown in 
+\begin_inset Float figure
+placement !t
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/INGRIDBeamProfileHistory.png
+	lyxscale 45
+	height 30theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+INGRID interaction event rate and beam profiles are shown.
+ The top panel shows the event rate for the three different horn currents.
+ The middle and bottom panels show the horizontal and vertical beam directions,
+ respectively.
+ The error bars shown are the statistical errors on the mean.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+INGRID Event Rate
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:INGRIDBeamProfileHistory"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:INGRIDBeamProfileHistory"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsubsection
@@ -5436,6 +5724,11 @@ where
 \end{aligned}
 ,
 \]
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
