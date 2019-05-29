@@ -10,7 +10,7 @@
 \usepackage[cmex10]{amsmath}
 \usepackage{amssymb}
 \usepackage{amsthm}
-
+\usepackage[version=3]{mhchem}
 
 % graphics packages
 \usepackage{graphicx} % remove pdftex if you are not compiling to pdf

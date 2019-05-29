@@ -174,7 +174,7 @@ literal "false"
  December 1930 to a group of physicists meeting in Tübingen, modern Germany,
  where he first proposed the neutrino
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 In W Pauli's December 1930 letter, he referred to his proposed particle
@@ -265,7 +265,7 @@ ly unimpeded towards one's particle detector.
 
  are incident on the Earth from the Sun
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 To give some perspective to this number, this means 70 billion neutrinos
@@ -544,7 +544,10 @@ weak force
 
 , which is more massive than all the elementary particles except for the
  top quark.
- For weak interactions to occur at energies far below the masses (also called
+\end_layout
+
+\begin_layout Standard
+For weak interactions to occur at energies far below the masses (also called
  
 \begin_inset Quotes eld
 \end_inset
@@ -579,6 +582,66 @@ where
 \end_inset
 
  is the time which the particle exists.
+ As an example, consider a neutrino of energy of 1 GeV emitting a Z-boson
+ of off-shell energy, 
+\begin_inset Formula $\Delta E=1$
+\end_inset
+
+ GeV like shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:CCNCInteractions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ The lifetime of that boson is about 
+\begin_inset Formula $10^{-25}$
+\end_inset
+
+ seconds according to 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:heisenberguncertainty"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ In general, the probability that a massive particle of mass 
+\begin_inset Formula $M$
+\end_inset
+
+ will be created from the collision of two particles is given by a relativistic
+ Breit–Wigner distribution
+\begin_inset Formula 
+\begin{equation}
+f(M)\propto\frac{1}{\left(\left(M^{2}-M_{0}^{2}\right)c^{4}\right)^{2}+\left(M_{0}c^{2}\Gamma\right)^{2}},\label{eq:BreitWigner}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+ is the rest mass and 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ is the decay width of the particle in units of energy.
+ For 
+\begin_inset Formula $M\ll M_{0}$
+\end_inset
+
+, the probability of creating that particle will be infinitesimally small.
+ Therefore to observe a single weak interaction requires a large amount
+ of weakly interacting particles.
 \end_layout
 
 \begin_layout Standard
@@ -619,7 +682,7 @@ status collapsed
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -651,7 +714,7 @@ Muon Decay
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3522,7 +3585,7 @@ value
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\Dm 32=\Delta m_{\text{atm}}^{2}$
+\begin_inset Formula $\Dm32=\Delta m_{\text{atm}}^{2}$
 \end_inset
 
 
@@ -3572,7 +3635,7 @@ value
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\Dm 21=\Delta m_{\text{sol}}^{2}$
+\begin_inset Formula $\Dm21=\Delta m_{\text{sol}}^{2}$
 \end_inset
 
 
@@ -5450,12 +5513,9 @@ T2K has a near detector (ND) site at J-PARC that is designed specifically
  The primary detector is an off-axis, magnetized tracking detector.
  A separate detector array called the Interactive Neutrino Grid (INGRID)
  measures the neutrino beam profile.
- Both on-axis and off-axis detectors are housed together in a pit at ND280.
- While the reliable photo-multiplier tube (PMT) technology was used in previous
- scintillator-based detectors, T2K needed a different technology to work
- in the strong magnetic field environment of the off-axis detector.
- A commercial light sensor called a multi-pixel photon counter (MPPC) was
- developed specifically for T2K operational needs.
+ Both on-axis and off-axis detectors extensively utilize a commercial light
+ sensor called a multi-pixel photon counter (MPPC) for the light collection
+ in the scintillator-based detectors.
 \end_layout
 
 \begin_layout Standard
@@ -5540,6 +5600,104 @@ What follows from here is a description of the MPPC technology used in T2K.
 \end_layout
 
 \begin_layout Subsubsection
+Multi-pixel photon counter (MPPC)
+\end_layout
+
+\begin_layout Standard
+While the reliable photo-multiplier tube (PMT) technology was used in previous
+ scintillator-based detectors, T2K needed a different technology to work
+ in the strong magnetic field environment.
+ T2K selected a commercially available silicon photomultiplier sensor developed
+ by the Hamamatsu corporation called a MPPC.
+ A MPPC is a compact device containing many sensitive avalanche photodiode
+ pixels that act as Geiger micro-counters.
+ They are well matched with the spectral emission of wavelength-shifting
+ (WLS) fibers used to collect the scintillator light in ND280 and operate
+ in a strong magnetic field environment.
+ T2K utilizes specialized 667-pixel MPPCs with an effective area of 
+\begin_inset Formula $1.3\text{ mm}\times1.3\text{ mm}$
+\end_inset
+
+ as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:T2KMPPC"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement t
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/MPPC.png
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Photographs of the specially designed MPPC used in T2K.
+ A magnified face view is shown on the left with an entire unit shown on
+ the right
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abe:2011ks"
+literal "false"
+
+\end_inset
+
+.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Photographs of the T2K MPPC
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:T2KMPPC"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
 On-Axis Detector
 \end_layout
 
@@ -5566,9 +5724,33 @@ noprefix "false"
  Each module consists of alternating layers of iron plates and scintillator
  bars except for the two most downstream scintillating layers which lack
  iron plates.
- Veto planes also surround each module to prevent false signals to trigger.
  To monitor the beam asymmetry, two separate modules are placed off the
  grid axis.
+\end_layout
+
+\begin_layout Standard
+Each scintillating bar consists of scintillator-doped polystyrene which
+ emits light when a charged particle deposits energy in the media.
+ Each bar contains a single wavelength-shifting (WLS) fiber to collect and
+ shift the light to a different energy.
+ The light is collected at a single MPPC device and converted into an electrical
+ signal.
+ In order to enhance the collection efficiency, a reflective 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ce{TiO_2}
+\end_layout
+
+\end_inset
+
+ doped polystyrene shell surrounds each bar.
+ Bars are assembled into planes to provide tracking capabilities.
+ Veto planes also surround each module to prevent false signals to trigger.
 \end_layout
 
 \begin_layout Standard
@@ -5764,30 +5946,8 @@ Irreducible
 \end_layout
 
 \begin_layout Standard
-ND280 consists of the pi-zero detector (
-\begin_inset Formula $\pod$
-\end_inset
-
-), the tracker region consisting of a fine grain detector (FGD) and time
- projection chamber (TPC), a electromagentic calorimeter (ECal), and side
- muon range detector (SMRD).
- The ND280 subdetectors are instrumented inside the recycled UA1/NOMAD magnet
- with the SMRD in the magnetic field return yoke itself.
- A schematic of the different detector components of ND280 is shown in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:ND280Exploded"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
+placement t
 wide false
 sideways false
 status collapsed
@@ -5836,58 +5996,21 @@ Schematic of the Off-Axis Near Detector ND280
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-ND280 is designed to exploit the magnetic field system to extract particle
- charge identification and momentum measurements in the TPC.
- The magnetic field is generated using solenoid coils to generate a dipole
- field of strength 0.2 T, which is highly uniform near the center of the
- detector
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-0.2 T is a powerful magnetic field.
- According to the The US/UK World Magnetic Model for 2015-2020, the magnetic
- field strength on the surface of the Earth is about 0.
-\begin_inset Formula $294385$
+ND280 consists of the pi-zero detector (
+\begin_inset Formula $\pod$
 \end_inset
 
- Gauss or 
-\begin_inset Formula $2.94385\times10^{-5}$
-\end_inset
-
- T.
- So the field inside ND280 is about 6800 times more forceful than the Earth's
- influence
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Chulliat2015"
-literal "false"
-
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-.
- However, it has significant deviations from 0.2 T when close the solenoid
- edges.
- The field was measured thoroughly to produce a 3D model which has been
- also compared with measurements in ND280 interior as shown in 
+), the tracker region consisting of a fine grain detector (FGD) and time
+ projection chamber (TPC), a electromagentic calorimeter (ECal), and side
+ muon range detector (SMRD).
+ The ND280 subdetectors are instrumented inside the recycled UA1/NOMAD magnet
+ with the SMRD in the magnetic field return yoke itself.
+ A schematic of the different detector components of ND280 is shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "fig:ND280magneticfieldmapping"
+reference "fig:ND280Exploded"
 plural "false"
 caps "false"
 noprefix "false"
@@ -5899,9 +6022,10 @@ noprefix "false"
 
 \begin_layout Standard
 \begin_inset Float figure
+placement t
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -5956,13 +6080,61 @@ name "fig:ND280magneticfieldmapping"
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
 
+
+\end_layout
+
+\begin_layout Standard
+ND280 is designed to exploit the magnetic field system to extract particle
+ charge identification and momentum measurements in the TPC.
+ The magnetic field is generated using solenoid coils to generate a dipole
+ field of strength 0.2 T, which is highly uniform near the center of the
+ detector
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+0.2 T is a powerful magnetic field.
+ According to the The US/UK World Magnetic Model for 2015-2020, the magnetic
+ field strength on the surface of the Earth is about 0.
+\begin_inset Formula $294385$
+\end_inset
+
+ Gauss or 
+\begin_inset Formula $2.94385\times10^{-5}$
+\end_inset
+
+ T.
+ So the field inside ND280 is about 6800 times more forceful than the Earth's
+ influence
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Chulliat2015"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \end_inset
 
+.
+ However, it has significant deviations from 0.2 T when close the solenoid
+ edges.
+ The field was measured thoroughly to produce a 3D model which has been
+ also compared with measurements in ND280 interior as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:ND280magneticfieldmapping"
+plural "false"
+caps "false"
+noprefix "false"
 
+\end_inset
+
+.
 \end_layout
 
 \end_inset
