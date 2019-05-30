@@ -110,7 +110,7 @@
 \begin_layout Standard
 \begin_inset Branch IntroductionNeutrinos
 inverted 0
-status collapsed
+status open
 
 \begin_layout Section
 Introduction to Neutrinos
@@ -1225,7 +1225,7 @@ noprefix "false"
 , also referred to as V-A, under P transformations.
  This feature is what allows for the weak force to violate P-symmetry and
  CP-symmetry.
- Refering back to
+ Referring back to
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "eq:diraclagrangian"
@@ -2358,7 +2358,7 @@ literal "false"
 .
  This all assumes that neutrinos obey the Dirac Equation, or that they are
  not their own antiparticles.
- The flavored mixing model is the 
+ The favored mixing model is the 
 \begin_inset Formula $3\times3$
 \end_inset
 
@@ -2374,8 +2374,9 @@ literal "false"
 \begin_inset Formula $\nutau$
 \end_inset
 
-, which means there are three (3) mixing angles, one (1) CP violating phase,
- and three (3) mass-squared splittings.
+.
+ This means that there are three (3) mixing angles, one (1) CP violating
+ phase, and three (3) mass-squared splittings.
  
 \end_layout
 
@@ -3585,7 +3586,7 @@ value
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\Dm32=\Delta m_{\text{atm}}^{2}$
+\begin_inset Formula $\Dm 32=\Delta m_{\text{atm}}^{2}$
 \end_inset
 
 
@@ -3635,7 +3636,7 @@ value
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\Dm21=\Delta m_{\text{sol}}^{2}$
+\begin_inset Formula $\Dm 21=\Delta m_{\text{sol}}^{2}$
 \end_inset
 
 
@@ -4174,7 +4175,7 @@ To conclude the introduction on neutrinos, it is important to examine the
  the Universe, equal amounts of matter and antimatter were created.
  However, observational evidence shows the Universe consists of only 4.5%
  baryonic matter (i.e.
- protons and neutrons) from comoslogical models as shown in 
+ protons and neutrons) from cosmological models as shown in 
 \begin_inset Float figure
 placement t
 wide false
@@ -4252,7 +4253,7 @@ noprefix "false"
 \end_inset
 
 .
- The anti-baryonic fraction of the baryonic matter is infinitessimally low
+ The anti-baryonic fraction of the baryonic matter is infinitesimally low
  from external constraints on data from gamma-ray telescopes like Fermi-GLAST
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -5445,8 +5446,8 @@ In order to provide timing information for the neutrino beam at SK, a global
 \end_inset
 
  assuming the neutrinos are traveling near the speed of light.
- This is well within the time it takes for any neutrino to travel the 295km
- between J-PARC and SK.
+ This is well within the time it takes for any neutrino to travel the 295
+ km between J-PARC and SK.
 \end_layout
 
 \begin_layout Standard
@@ -5461,9 +5462,9 @@ J-PARC continues to improve the proton delivery and neutrino modes since
 \end_inset
 
 -mode.
- Focusing positively charged pions with +250kA horn current is called forward
+ Focusing positively charged pions with +250 kA horn current is called forward
  horn current (FHC) mode.
- Similarly, using -250kA horn current is called reverse horn current (RHC)
+ Similarly, using -250 kA horn current is called reverse horn current (RHC)
  mode.
  The aggregate running of T2K for both FHC and RHC modes are shown in 
 \begin_inset CommandInset ref
@@ -5486,7 +5487,7 @@ s observed at SK.
 \begin_inset Formula $\pm250$
 \end_inset
 
-kA is the preferred horn current in both FHC and RHC modes, the horns were
+ kA is the preferred horn current in both FHC and RHC modes, the horns were
  run briefly at +205kA when operations resumed after 2011 Tōhoku earthquake.
 \end_layout
 
@@ -6003,7 +6004,7 @@ ND280 consists of the pi-zero detector (
 \end_inset
 
 ), the tracker region consisting of a fine grain detector (FGD) and time
- projection chamber (TPC), a electromagentic calorimeter (ECal), and side
+ projection chamber (TPC), an electromagnetic calorimeter (ECal), and side
  muon range detector (SMRD).
  The ND280 subdetectors are instrumented inside the recycled UA1/NOMAD magnet
  with the SMRD in the magnetic field return yoke itself.
@@ -6011,6 +6012,56 @@ ND280 consists of the pi-zero detector (
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:ND280Exploded"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The ND280 magnetic field is generated using electrical current fed through
+ solenoid coils to generate a dipole field of strength 0.2 T in the x direction.
+ The field is highly uniform near the center of the detector
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+0.2 T is a powerful magnetic field.
+ According to the The US/UK World Magnetic Model for 2015-2020, the magnetic
+ field strength on the surface of the Earth is about 0.
+\begin_inset Formula $294385$
+\end_inset
+
+ Gauss or 
+\begin_inset Formula $2.94385\times10^{-5}$
+\end_inset
+
+ T.
+ So the field inside ND280 is about 6800 times more forceful than the Earth's
+ influence
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Chulliat2015"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ which is where the majority of the TPC system is located.
+ However, it has significant deviations from 0.2 T when close the solenoid
+ edges.
+ The field was measured thoroughly to produce a 3D model which has been
+ also compared with measurements in ND280 interior as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:ND280magneticfieldmapping"
 plural "false"
 caps "false"
 noprefix "false"
@@ -6086,55 +6137,76 @@ name "fig:ND280magneticfieldmapping"
 \end_layout
 
 \begin_layout Standard
-ND280 is designed to exploit the magnetic field system to extract particle
- charge identification and momentum measurements in the TPC.
- The magnetic field is generated using solenoid coils to generate a dipole
- field of strength 0.2 T, which is highly uniform near the center of the
- detector
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-0.2 T is a powerful magnetic field.
- According to the The US/UK World Magnetic Model for 2015-2020, the magnetic
- field strength on the surface of the Earth is about 0.
-\begin_inset Formula $294385$
+The focus of this thesis are the 
+\begin_inset Formula $\pod$
 \end_inset
 
- Gauss or 
-\begin_inset Formula $2.94385\times10^{-5}$
+ and the TPC since they are the primary subdetectors used in the analysis.
+ The 
+\begin_inset Formula $\pod$
 \end_inset
 
- T.
- So the field inside ND280 is about 6800 times more forceful than the Earth's
- influence
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Chulliat2015"
-literal "false"
-
-\end_inset
-
-.
+ serves as a massive target for the incident neutrino beam and the TPC serves
+ to measure the charge and momentum of the outgoing particles.
 \end_layout
 
+\begin_layout Standard
+The TPC achieves both sets of measurements by utilizing the surrounding
+ magnetic field.
+ A particle of charge 
+\begin_inset Formula $q$
 \end_inset
 
-.
- However, it has significant deviations from 0.2 T when close the solenoid
- edges.
- The field was measured thoroughly to produce a 3D model which has been
- also compared with measurements in ND280 interior as shown in 
+, rest mass 
+\begin_inset Formula $m_{0}$
+\end_inset
+
+, and velocity 
+\begin_inset Formula $\mathbf{v}$
+\end_inset
+
+ under the influence of an external electric and magnetic fields, 
+\begin_inset Formula $\mathbf{E}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathbf{B}$
+\end_inset
+
+, respectively, experiences a force given by 
 \begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:ND280magneticfieldmapping"
+LatexCommand eqref
+reference "eq:Lorentzforce"
 plural "false"
 caps "false"
 noprefix "false"
 
 \end_inset
 
-.
+
+\begin_inset Formula 
+\begin{equation}
+\frac{d\left(\gamma\left(\boldsymbol{\beta}\right)m_{0}\boldsymbol{\beta}c\right)}{dt}=q\left(\mathbf{E}+\boldsymbol{\beta}c\times\mathbf{B}\right),\label{eq:Lorentzforce}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\boldsymbol{\beta}$
+\end_inset
+
+ is the velocity of the particle as a fraction of the speed of light 
+\begin_inset Formula $c$
+\end_inset
+
+ and 
+\begin_inset Formula $\gamma(\beta)=\left(1-\beta^{2}\right)^{\nicefrac{-1}{2}}$
+\end_inset
+
+is the relativistic Lorentz factor.
+ Since the electric and magnetic fields are parallel in the TPC, a particle
+ is forced in transverse directions.
+ A helix model is 
 \end_layout
 
 \end_inset
