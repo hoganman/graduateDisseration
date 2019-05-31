@@ -110,7 +110,7 @@
 \begin_layout Standard
 \begin_inset Branch IntroductionNeutrinos
 inverted 0
-status collapsed
+status open
 
 \begin_layout Section
 Introduction to Neutrinos
@@ -6345,11 +6345,320 @@ and thus measuring the direction and radius of curvature inside the field
 \end_layout
 
 \begin_layout Subsubsection
-Off Axis Pi-zero detector (
+Off Axis pi-zero detector (
 \begin_inset Formula $\pod$
 \end_inset
 
 )
+\end_layout
+
+\begin_layout Standard
+The pi-zero detector (
+\begin_inset Formula $\pod$
+\end_inset
+
+) is a plastic scintillator based tracking calorimeter inside the ND280
+ magnet region.
+ It is designed to measure the neutral current (NC) process 
+\begin_inset Formula $\numu+N\rightarrow\numu+N+\pizero+X$
+\end_inset
+
+ on water which was expected to be a significant background in the 
+\begin_inset Formula $\nue$
+\end_inset
+
+ appearance search in the likelihood that 
+\begin_inset Formula $\theta_{13}\approx0$
+\end_inset
+
+.
+ The 
+\begin_inset Formula $\pod$
+\end_inset
+
+ is a dynamic detector which can be filled or drained of water enabling
+ the determination of water target (WT) cross sections.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/P0D_NIM_Cartoon.png
+	lyxscale 75
+	width 30text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schematic of the 
+\begin_inset Formula $\pod$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "subfig:p0dschematic"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/P0DBars.png
+	lyxscale 50
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schematic of a 
+\begin_inset Formula $\pod$
+\end_inset
+
+ module
+\begin_inset CommandInset label
+LatexCommand label
+name "subfig:p0dmoduleschematic"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schematics of the 
+\begin_inset Formula $\pod$
+\end_inset
+
+.
+ Left: insets detail the Water Target and ECal layers.
+ Right: A view of a 
+\begin_inset Formula $\pod$
+\end_inset
+
+ module illustrating the orthogonal layout of the scintillating planes.
+ Both: the neutrino beam is coming from the left.
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Schematic of the 
+\begin_inset Formula $\pod$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:pod"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A representation of the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ is shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:pod"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ The four primary regions inside the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ in order of upstream to downstream of the neutrino beam are the upstream
+ ECal (USECal), upstream water target (WT), central WT, and central ECal
+ (CECal).
+ The WT region consists of fillable water bags interleaved between two orthogona
+l scintillating bar planes.
+ The orientation of each 
+\begin_inset Formula $\pod$
+\end_inset
+
+ module (
+\begin_inset Formula $\pod$
+\end_inset
+
+ule) and bar itself are better seen in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subfig:p0dmoduleschematic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:P0Dbar"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Brass sheets were inserted between the bags and Y-direction scintillating
+ planes to decrease the radiation designed in the WT region to fully contain
+ 
+\begin_inset Formula $\pizero$
+\end_inset
+
+ decay photons.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/P0DBarTop.png
+	lyxscale 50
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A cross section of a 
+\begin_inset Formula $\pod$
+\end_inset
+
+ scintillating bar.
+ The base and height is 33 mm long and 17 mm high.
+ The wavelength shifting fiber is inserted in the bored hole which is half-way
+ between the base and tip.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:P0Dbar"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+A cross section of a 
+\begin_inset Formula $\pod$
+\end_inset
+
+ scintillating bar
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
