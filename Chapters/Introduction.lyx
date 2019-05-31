@@ -110,7 +110,7 @@
 \begin_layout Standard
 \begin_inset Branch IntroductionNeutrinos
 inverted 0
-status open
+status collapsed
 
 \begin_layout Section
 Introduction to Neutrinos
@@ -3586,7 +3586,7 @@ value
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\Dm 32=\Delta m_{\text{atm}}^{2}$
+\begin_inset Formula $\Dm32=\Delta m_{\text{atm}}^{2}$
 \end_inset
 
 
@@ -3636,7 +3636,7 @@ value
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\Dm 21=\Delta m_{\text{sol}}^{2}$
+\begin_inset Formula $\Dm21=\Delta m_{\text{sol}}^{2}$
 \end_inset
 
 
@@ -5511,7 +5511,8 @@ T2K has a near detector (ND) site at J-PARC that is designed specifically
  The purpose of a ND site is due to large uncertainties from the neutrino
  flux in previous neutrino oscillation experiments.
  The site is called ND280 and is located 280m away from the production target.
- The primary detector is an off-axis, magnetized tracking detector.
+ The primary detector is an off-axis, magnetized tracking detector consisting
+ of different subdetectors.
  A separate detector array called the Interactive Neutrino Grid (INGRID)
  measures the neutrino beam profile.
  Both on-axis and off-axis detectors extensively utilize a commercial light
@@ -5595,8 +5596,19 @@ Schematic of INGRID
 \begin_layout Standard
 What follows from here is a description of the MPPC technology used in T2K.
  Next is a description of INGRID and its purpose at ND280.
- The final topic is the primary off-axis, magnetized detector.
- From here on unless specified, INGRID will refer only to the on-axis ND
+ This is followed by a general description primary off-axis, magnetized
+ detector.
+ This subsection is finished with descriptions of two subdetectors in the
+ off axis detector.
+ The first and second being the pi-zero detector (
+\begin_inset Formula $\pod$
+\end_inset
+
+) and time projection chamber (TPC), respectively.
+\end_layout
+
+\begin_layout Standard
+From here on unless specified, INGRID will refer only to the on-axis ND
  and ND280 will refer only to off-axis ND.
 \end_layout
 
@@ -5910,7 +5922,7 @@ name "fig:INGRIDBeamProfileHistory"
 \end_layout
 
 \begin_layout Subsubsection
-Off-Axis Detector
+Off-Axis Detector Summary
 \end_layout
 
 \begin_layout Standard
@@ -6022,17 +6034,30 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
+The focus of this thesis are the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ and the TPC since they are the primary subdetectors used in the analysis.
+ The 
+\begin_inset Formula $\pod$
+\end_inset
+
+ serves as a massive target for the incident neutrino beam and the TPC serves
+ to measure the charge and momentum of the outgoing particles.
+\end_layout
+
+\begin_layout Standard
 The ND280 magnetic field is generated using electrical current fed through
- solenoid coils to generate a dipole field of strength 0.2 T in the x direction.
- The field is highly uniform near the center of the detector
+ solenoid coils to generate a dipole field of strength 0.2 T
 \begin_inset Foot
 status collapsed
 
 \begin_layout Plain Layout
-0.2 T is a powerful magnetic field.
+This is a powerful magnetic field.
  According to the The US/UK World Magnetic Model for 2015-2020, the magnetic
- field strength on the surface of the Earth is about 0.
-\begin_inset Formula $294385$
+ field strength on the surface of the Earth is about 
+\begin_inset Formula $0.294385$
 \end_inset
 
  Gauss or 
@@ -6054,11 +6079,16 @@ literal "false"
 
 \end_inset
 
- which is where the majority of the TPC system is located.
- However, it has significant deviations from 0.2 T when close the solenoid
- edges.
- The field was measured thoroughly to produce a 3D model which has been
- also compared with measurements in ND280 interior as shown in 
+ in the x direction.
+ The field is highly uniform near the center of the detector which is where
+ the majority of the TPC system is located.
+ However, it has significant deviations from 0.2 T near the solenoid edges.
+ In order to fully understand the field inside ND280, a precise 3D model
+ was generated using a machine controlled Hall probe.
+ The operating field strength during the mapping process was 0.07 T due to
+ power restrictions at the time.
+ The model was then compared with measurements in the TPC region as shown
+ in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:ND280magneticfieldmapping"
@@ -6069,6 +6099,12 @@ noprefix "false"
 \end_inset
 
 .
+ After scaling the model to the nominal operating strength of 0.2 T, a fractional
+ uncertainty of 
+\begin_inset Formula $10^{-3}$
+\end_inset
+
+ or uncertainty of 2 Gauss in each direction was obtained.
 \end_layout
 
 \begin_layout Standard
@@ -6137,22 +6173,8 @@ name "fig:ND280magneticfieldmapping"
 \end_layout
 
 \begin_layout Standard
-The focus of this thesis are the 
-\begin_inset Formula $\pod$
-\end_inset
-
- and the TPC since they are the primary subdetectors used in the analysis.
- The 
-\begin_inset Formula $\pod$
-\end_inset
-
- serves as a massive target for the incident neutrino beam and the TPC serves
- to measure the charge and momentum of the outgoing particles.
-\end_layout
-
-\begin_layout Standard
-The TPC achieves both sets of measurements by utilizing the surrounding
- magnetic field.
+The ND280 magnetic field permits the measurements of particle charge and
+ momentum.
  A particle of charge 
 \begin_inset Formula $q$
 \end_inset
@@ -6173,40 +6195,161 @@ The TPC achieves both sets of measurements by utilizing the surrounding
 \begin_inset Formula $\mathbf{B}$
 \end_inset
 
-, respectively, experiences a force given by 
+, respectively, experiences a force 
+\begin_inset Formula $\mathbf{F}$
+\end_inset
+
+ given by the Lorentz force equation
+\begin_inset Formula 
+\begin{equation}
+\mathbf{F}=q\left(\mathbf{E}+\mathbf{v}\times\mathbf{B}\right).\label{eq:Lorentzforce}
+\end{equation}
+
+\end_inset
+
+Assuming for now that there is no external electric field, the force on
+ the particle is 
+\begin_inset Formula 
+\begin{equation}
+\mathbf{F}=q\mathbf{v}\times\mathbf{B},\label{eq:LorentzforceNoE}
+\end{equation}
+
+\end_inset
+
+which is both orthogonal to 
+\begin_inset Formula $\mathbf{v}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathbf{B}$
+\end_inset
+
+.
+ Since the mechanical work on a particle in a magnetic field is zero, the
+ particle's energy is unchanged (
+\begin_inset Formula $\left|\mathbf{v}\right|$
+\end_inset
+
+ = 
+\begin_inset Formula $v$
+\end_inset
+
+ = constant).
+ Newton's Second Law allows us to rewrite the force as an change in momentum
+ 
+\begin_inset Formula $\mathbf{P}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned}\mathbf{F} & =\frac{d\mathbf{P}}{dt}\\
+ & =\frac{d}{dt}\left(\gamma(v)m_{0}\mathbf{v}\right)\\
+ & =m_{0}\mathbf{v}\left(\frac{d\gamma(v)}{dt}\right)+\gamma(v)m_{0}\left(\frac{d\mathbf{v}}{dt}\right)\\
+ & =m_{0}\mathbf{v}\left(\frac{d\gamma(v)}{dv}\right)\cancelto{0}{\left(\frac{dv}{dt}\right)}+\gamma(v)m_{0}\mathbf{a}\\
+ & =\gamma(v)m_{0}\mathbf{\mathbf{a}},
+\end{aligned}
+\label{eq:relativisticforceInBfield}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\mathbf{P=\gamma}(v)m_{0}\mathbf{v}$
+\end_inset
+
+ is the relativistic momentum and 
+\begin_inset Formula $\gamma(v)=\left(1-\left(v/c\right)^{2}\right)^{\nicefrac{-1}{2}}$
+\end_inset
+
+ is the Lorentz factor for relativistic particles.
+ For uniform circular motion, the magnitude of the acceleration is given
+ by 
+\begin_inset Formula 
+\begin{equation}
+\left|\mathbf{a}\right|=v^{2}/R\label{eq:uniformcircularmotion}
+\end{equation}
+
+\end_inset
+
+where R is the radius of curvature for the circle.
+ Combining 
 \begin_inset CommandInset ref
 LatexCommand eqref
-reference "eq:Lorentzforce"
+reference "eq:uniformcircularmotion"
 plural "false"
 caps "false"
 noprefix "false"
 
 \end_inset
 
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:relativisticforceInBfield"
+plural "false"
+caps "false"
+noprefix "false"
 
+\end_inset
+
+ with some algebra yields
 \begin_inset Formula 
 \begin{equation}
-\frac{d\left(\gamma\left(\boldsymbol{\beta}\right)m_{0}\boldsymbol{\beta}c\right)}{dt}=q\left(\mathbf{E}+\boldsymbol{\beta}c\times\mathbf{B}\right),\label{eq:Lorentzforce}
+R=\frac{\gamma(v)m_{0}v}{q\left|\mathbf{B}\right|\sin\theta_{\mathbf{vB}}},\label{eq:radiusofcurvature}
 \end{equation}
 
 \end_inset
 
 where 
-\begin_inset Formula $\boldsymbol{\beta}$
+\begin_inset Formula $\theta_{\mathbf{vB}}$
 \end_inset
 
- is the velocity of the particle as a fraction of the speed of light 
-\begin_inset Formula $c$
+ is the angle between 
+\begin_inset Formula $\mathbf{v}$
 \end_inset
 
  and 
-\begin_inset Formula $\gamma(\beta)=\left(1-\beta^{2}\right)^{\nicefrac{-1}{2}}$
+\begin_inset Formula $\mathbf{B}$
 \end_inset
 
-is the relativistic Lorentz factor.
- Since the electric and magnetic fields are parallel in the TPC, a particle
- is forced in transverse directions.
- A helix model is 
+.
+ The numerator of 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:radiusofcurvature"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is recognized as the magnitude of the momentum 
+\begin_inset Formula $\left|\mathbf{P}\right|$
+\end_inset
+
+.
+ Some further rearrangement yields
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\left|\mathbf{P}\right|=q\left|\mathbf{B}\right|R\sin\theta_{\mathbf{vB}},\label{eq:momentuminmagneticfield}
+\end{equation}
+
+\end_inset
+
+and thus measuring the direction and radius of curvature inside the field
+ provides the charge and momentum, respectively, as desired.
+\end_layout
+
+\begin_layout Subsubsection
+Off Axis Pi-zero detector (
+\begin_inset Formula $\pod$
+\end_inset
+
+)
 \end_layout
 
 \end_inset
