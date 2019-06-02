@@ -4180,7 +4180,7 @@ To conclude the introduction on neutrinos, it is important to examine the
 placement t
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -6267,7 +6267,7 @@ where
  by 
 \begin_inset Formula 
 \begin{equation}
-\left|\mathbf{a}\right|=v^{2}/R\label{eq:uniformcircularmotion}
+\left|\mathbf{a}\right|=v^{2}/R,\label{eq:uniformcircularmotion}
 \end{equation}
 
 \end_inset
@@ -6363,7 +6363,20 @@ The pi-zero detector (
 \begin_inset Formula $\numu+N\rightarrow\numu+N+\pizero+X$
 \end_inset
 
- on water which was expected to be a significant background in the 
+ on water where 
+\begin_inset Formula $N$
+\end_inset
+
+ is a nucleus and 
+\begin_inset Formula $X$
+\end_inset
+
+ is any set of final state particles.
+ NC 
+\begin_inset Formula $\pizero$
+\end_inset
+
+ was expected to be a significant background in the 
 \begin_inset Formula $\nue$
 \end_inset
 
@@ -6382,16 +6395,17 @@ The pi-zero detector (
 
 \begin_layout Standard
 \begin_inset Float figure
+placement t
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -6435,7 +6449,7 @@ name "subfig:p0dschematic"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -6547,34 +6561,9 @@ noprefix "false"
 \end_inset
 
 .
- The four primary regions inside the 
-\begin_inset Formula $\pod$
-\end_inset
-
- in order of upstream to downstream of the neutrino beam are the upstream
- ECal (USECal), upstream water target (WT), central WT, and central ECal
- (CECal).
- The WT region consists of fillable water bags interleaved between two orthogona
-l scintillating bar planes.
- The orientation of each 
-\begin_inset Formula $\pod$
-\end_inset
-
- module (
-\begin_inset Formula $\pod$
-\end_inset
-
-ule) and bar itself are better seen in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "subfig:p0dmoduleschematic"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- and 
+ The active detector components are very similar to INGRID's design where
+ scintillation light is captured by a WSF and counted by a MPPC.
+ What is different is that each bar is triangular in shape as shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:P0Dbar"
@@ -6585,26 +6574,396 @@ noprefix "false"
 \end_inset
 
 .
- Brass sheets were inserted between the bags and Y-direction scintillating
- planes to decrease the radiation designed in the WT region to fully contain
+ A plane of 134 horizontal and 129 vertical bar together to form a 
+\begin_inset Formula $\pod$
+\end_inset
+
+ module (
+\begin_inset Formula $\podule$
+\end_inset
+
+) as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subfig:p0dmoduleschematic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ The 
+\begin_inset Formula $\pod$
+\end_inset
+
+ dimensions are 
+\begin_inset Formula $2.298\times2.468\times2.350\text{m}^{3}$
+\end_inset
+
+, in XYZ respectively, with a total mass of ∼1900 kg of water and 3570 kg
+ of other material.
  
+\begin_inset Formula $\podule$
+\end_inset
+
+s are arranged into three primary regions.
+ The water target (WT) region contains 26 
+\begin_inset Formula $\podule$
+\end_inset
+
+s interleaved between bags of water 2.8 cm thick when filled and 1.3 mm thick
+ brass sheets designed to help contain 
 \begin_inset Formula $\pizero$
 \end_inset
 
  decay photons.
+ The last two regions are the upstream ECal (USECal) central ECal (CECal).
+ Each ECal region contains 7 
+\begin_inset Formula $\podule$
+\end_inset
+
+s with steel sheets clad with lead between them
+\begin_inset CommandInset citation
+LatexCommand cite
+key "AbePhyRevD9652017"
+literal "false"
+
+\end_inset
+
+.
+ An elemental composition of the WT is shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:P0DWaterTargetMass"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
+\begin_inset Float table
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
 \align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="3">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Element
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Symbol
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fraction [%]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Carbon
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+45.0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Oxygen
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+O
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+29.9
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Copper
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cu
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14.3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hydrogen
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+H
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Zinc
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Zn
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.6
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Chlorine
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cl
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Titanium
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ti
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Elemental composition of 
+\begin_inset Formula $\pod$
+\end_inset
+
+ water target region.
+ The table is sorted from top to bottom by fraction of mass.
+ This table was originally produced in Reference 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "AbePhyRevD9652017"
+literal "false"
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:P0DWaterTargetMass"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $\pod$
+\end_inset
+
+ Water Target Mass Composition
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement t
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename Figures/Introduction/P0DBarTop.png
-	lyxscale 50
 	width 30text%
 
 \end_inset

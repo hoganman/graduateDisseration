@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass /Hitachi/Documents/graduateDisseration/csuthesisLyx
+\textclass csuthesisLyx
 \use_default_options true
 \maintain_unincluded_children false
 \language english
@@ -81,6 +81,15 @@
 \begin_inset FormulaMacro
 \newcommand{\pod}{\text{P}\text{Ø}\text{D}}
 {\text{P}\text{Ø}\text{D}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\podule}{\text{P}\text{Ø}\text{Dule}}
+{\text{P}\text{Ø}\text{Dule}}
 \end_inset
 
 

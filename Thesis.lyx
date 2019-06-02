@@ -230,13 +230,6 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "FrontMatter/FrontMatter.tex"
-
-\end_inset
-
-
 \begin_inset ERT
 status open
 
@@ -245,25 +238,76 @@ status open
 % Preliminary (roman numbered) pages
 \end_layout
 
+\begin_layout Plain Layout
+
+
+\backslash
+frontmatter
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+maketitle            % insert title page
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+makemycopyright      % insert copyright page
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+makeabstract         % insert abstract page 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+makeacknowledgements % insert acknowledgements page 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tableofcontents      % insert table of contents 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+listoftables         % insert list of tables (optional) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+listoffigures        % insert list of figures (optional)
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "MainMatter/MainMatter.tex"
-
-\end_inset
-
-
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-% Main (arabic numbered) pages
+
+\backslash
+mainmatter % Main (arabic numbered) pages
 \end_layout
 
 \end_inset
