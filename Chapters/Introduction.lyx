@@ -495,15 +495,16 @@ U(1) where SU(2) is the special unitary group of
 \end_layout
 
 \begin_layout Standard
-What follows is a brief introduction to neutrino interactions as well as
- some of their fundamental properties.
+What follows is a brief introduction to weak interactions.
+ This is followed by a exploration on the nature of neutrino handedness.
+ Then this is proceeded by a discussion on neutrino scattering with matter.
 \end_layout
 
 \begin_layout Subsubsection
-Neutrino Weak Interactions
+Weak Interactions
 \begin_inset CommandInset label
 LatexCommand label
-name "subsec:Neutrino-Weak-Interactions"
+name "subsec:Weak-Interactions"
 
 \end_inset
 
@@ -671,6 +672,9 @@ noprefix "false"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement t
 wide false
@@ -1440,6 +1444,192 @@ The observation of only LH neutrinos and RH anti-neutrinos is an important
  theoretically possible to observe a RH neutrino and LH anti-neutrino.
  That would require boosting to a highly relativistic reference frame with
  respect to the laboratory.
+\end_layout
+
+\begin_layout Subsubsection
+Neutrino Scattering with Matter
+\end_layout
+
+\begin_layout Standard
+Charged current (CC) neutrino interactions on nuclear particles are the
+ interactions used in this thesis.
+ While interactions with valence electrons is possible, they are far less
+ common in large, subatomic particle detectors.
+ CC neutrino-nuclear interactions produce an outgoing charged lepton and
+ hadronic particle(s).
+ Due to the V-A nature of the Weak force, neutrinos and antineutrinos couple
+ to the left-handed d/u quarks and right-handed 
+\begin_inset Formula $\overline{\text{u}}$
+\end_inset
+
+/
+\begin_inset Formula $\overline{\text{d}}$
+\end_inset
+
+ quarks.
+ Shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:nuquarkinteractions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is a neutrino (antineutrino) scattering off a 
+\shape italic
+free
+\shape default
+ 
+\begin_inset Formula $d$
+\end_inset
+
+ (
+\begin_inset Formula $u$
+\end_inset
+
+) quark.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/NumuScatteringOndQuark.png
+	lyxscale 50
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\numu+d\rightarrow\muminus+u$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/NumubarScatteringOnuQuark.png
+	lyxscale 50
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\numubar+u\rightarrow\muplus+d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Feynman diagrams showing the s-channel interactions for neutrinos (a) and
+ antineutrinos (b) on a free quark.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:nuquarkinteractions"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+S-channel Interactions on Free Quarks
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The cross section are given by
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned}\frac{d^{2}\sigma}{dxdy}\left(\numu N\rightarrow\muminus X\right) & =\frac{G^{2}xs}{2\pi}\left(Q(x)+\left(1-y\right)^{2}\overline{Q}(x)\right)\\
+\frac{d^{2}\sigma}{dxdy}\left(\numubar N\rightarrow\muplus X\right) & =\frac{G^{2}xs}{2\pi}\left(\overline{Q}(x)+\left(1-y\right)^{2}Q(x)\right),
+\end{aligned}
+\label{eq:nuantinucrosssection}
+\end{equation}
+
+\end_inset
+
+where
+\begin_inset Formula 
+\[
+\begin{aligned}x & =\frac{-q^{2}}{2M_{N}\left(E_{\nu}-E_{\mu}\right)}\\
+y & =1-\frac{E_{\mu}}{E_{\nu}},
+\end{aligned}
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -4342,7 +4532,7 @@ literal "false"
 \begin_layout Standard
 \begin_inset Branch IntroductionT2K
 inverted 0
-status open
+status collapsed
 
 \begin_layout Section
 Tokai-to-Kamioka Experiment
