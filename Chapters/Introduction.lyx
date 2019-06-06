@@ -110,7 +110,7 @@
 \begin_layout Standard
 \begin_inset Branch IntroductionNeutrinos
 inverted 0
-status collapsed
+status open
 
 \begin_layout Section
 Introduction to Neutrinos
@@ -1453,43 +1453,12 @@ Neutrino Scattering with Matter
 \begin_layout Standard
 Charged current (CC) neutrino interactions on nuclear particles are the
  interactions used in this thesis.
+ These interactions produce an outgoing charged lepton and a variety of
+ hadronic states.
  While interactions with valence electrons is possible, they are far less
  common in large, subatomic particle detectors.
- CC neutrino-nuclear interactions produce an outgoing charged lepton and
- hadronic particle(s).
- Due to the V-A nature of the Weak force, neutrinos and antineutrinos couple
- to the left-handed d/u quarks and right-handed 
-\begin_inset Formula $\overline{\text{u}}$
-\end_inset
-
-/
-\begin_inset Formula $\overline{\text{d}}$
-\end_inset
-
- quarks.
- Shown in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:nuquarkinteractions"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- is a neutrino (antineutrino) scattering off a 
-\shape italic
-free
-\shape default
- 
-\begin_inset Formula $d$
-\end_inset
-
- (
-\begin_inset Formula $u$
-\end_inset
-
-) quark.
+ However, the physics of neutrino-electron scattering is very similar to
+ neutrino-nucleus scattering.
 \end_layout
 
 \begin_layout Standard
@@ -1500,16 +1469,8 @@ status collapsed
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
 \begin_inset Graphics
-	filename Figures/Introduction/NumuScatteringOndQuark.png
-	lyxscale 50
+	filename Figures/Introduction/NueEScattering.png
 	width 30text%
 
 \end_inset
@@ -1521,66 +1482,22 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Formula $\numu+d\rightarrow\muminus+u$
+The definition of 
+\begin_inset Formula $\theta$
 \end_inset
 
-
-\end_layout
-
+ in 
+\begin_inset Formula $\nue+e^{-}$
 \end_inset
 
-
-\end_layout
-
+ (shown) and 
+\begin_inset Formula $\nuebar+e^{-}$
 \end_inset
 
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/Introduction/NumubarScatteringOnuQuark.png
-	lyxscale 50
-	width 30text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Formula $\numubar+u\rightarrow\muplus+d$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Feynman diagrams showing the s-channel interactions for neutrinos (a) and
- antineutrinos (b) on a free quark.
+ (not shown) scattering.
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:nuquarkinteractions"
+name "fig:NuEElectronScattering"
 
 \end_inset
 
@@ -1589,7 +1506,10 @@ name "fig:nuquarkinteractions"
 status open
 
 \begin_layout Plain Layout
-S-channel Interactions on Free Quarks
+\begin_inset Formula $\nue+e^{-}$
+\end_inset
+
+ Scattering
 \end_layout
 
 \end_inset
@@ -1599,6 +1519,10 @@ S-channel Interactions on Free Quarks
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -1608,28 +1532,187 @@ S-channel Interactions on Free Quarks
 \end_layout
 
 \begin_layout Standard
-The cross section are given by
+Consider neutrino-electron scattering, the cross section for 
+\begin_inset Formula $\nu_{e}+e^{-}$
+\end_inset
+
+ is given by
 \begin_inset Formula 
 \begin{equation}
-\begin{aligned}\frac{d^{2}\sigma}{dxdy}\left(\numu N\rightarrow\muminus X\right) & =\frac{G^{2}xs}{2\pi}\left(Q(x)+\left(1-y\right)^{2}\overline{Q}(x)\right)\\
-\frac{d^{2}\sigma}{dxdy}\left(\numubar N\rightarrow\muplus X\right) & =\frac{G^{2}xs}{2\pi}\left(\overline{Q}(x)+\left(1-y\right)^{2}Q(x)\right),
-\end{aligned}
-\label{eq:nuantinucrosssection}
+\frac{d\sigma}{d\Omega}=\frac{G^{2}s}{4\pi^{2}},\label{eq:NuEScattering}
 \end{equation}
 
 \end_inset
 
-where
+where 
+\begin_inset Formula $G$
+\end_inset
+
+ is the Fermi constant and 
+\begin_inset Formula $s$
+\end_inset
+
+ is the center of mass energy squared.
+ Due to the V-A nature of the Weak force, neutrinos couple to LH particles
+ and RH antiparticles.
+ The outgoing particles are isotropically distributed in the center-of-mass
+ frame since the initial and final spin state of the system is 
+\begin_inset Formula $J=0$
+\end_inset
+
+.
+ Compare 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:NuEScattering"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ with the cross section for 
+\begin_inset Formula $\antinue+e^{-}$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{equation}
+\frac{d\sigma}{d\Omega}=\frac{G^{2}s}{16\pi^{2}}\left(1-\cos\theta\right)^{2},\label{eq:ANuEScattering}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\theta$
+\end_inset
+
+ is the observed scattering angle of the electron as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:NuEElectronScattering"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Since the total spin of the 
+\begin_inset Formula $\antinue+e^{-}$
+\end_inset
+
+ system is 
+\begin_inset Formula $J=1$
+\end_inset
+
+ with z-projection 
+\begin_inset Formula $J_{z}=1$
+\end_inset
+
+, the antineutrino is preferentially forward scattered.
+ Integrating over all angles, the cross sections come out to
 \begin_inset Formula 
 \[
-\begin{aligned}x & =\frac{-q^{2}}{2M_{N}\left(E_{\nu}-E_{\mu}\right)}\\
-y & =1-\frac{E_{\mu}}{E_{\nu}},
-\end{aligned}
+\sigma\left(\antinue+e^{-}\right)=\frac{1}{3}\sigma\left(\nue+e^{-}\right).
 \]
 
 \end_inset
 
+The factor 
+\begin_inset Formula $\nicefrac{1}{3}$
+\end_inset
 
+ arises from the fact that angular momentum conservation forbids the 
+\begin_inset Formula $J_{z}=-1$
+\end_inset
+
+ and 
+\begin_inset Formula $0$
+\end_inset
+
+ states for 
+\begin_inset Formula $\antinue+e^{-}$
+\end_inset
+
+ scattering.
+ The same 
+\begin_inset Formula $\nicefrac{1}{3}$
+\end_inset
+
+ factor arises between 
+\begin_inset Formula $\numu+d\rightarrow\muminus+u$
+\end_inset
+
+ and 
+\begin_inset Formula $\numubar+u\rightarrow\muplus+d$
+\end_inset
+
+ scattering.
+\end_layout
+
+\begin_layout Standard
+In neutrino-nuclear scattering, the simple picture of free quarks must be
+ replaced with the reality of the nuclear medium.
+ Interactions with a single quark are still possible, but nuclear effects
+ can alter the products of the interactions.
+ The kinematics of the particles involved can be altered as well as the
+ existence of a particle can be change depending on the point of interaction.
+ Distinctions must be made in neutrino physics between point-like interactions
+ (
+\begin_inset Formula $\nue+e^{-}$
+\end_inset
+
+) and post 
+\begin_inset Quotes eld
+\end_inset
+
+final state interactions
+\begin_inset Quotes erd
+\end_inset
+
+ (FSI) which are observable in an experiment.
+\end_layout
+
+\begin_layout Standard
+Neutrino-nuclear scattering presented in this thesis come in three primary
+ CC varieties: quasi-elastic (CCQE), deep inelastic scattering (CCDIS),
+ and single pion production (CC
+\begin_inset Formula $1\pion$
+\end_inset
+
+).
+ CCQE interactions refer to the process where an incoming neutrino (antineutrino
+) and neutron (proton) produce a charged lepton and proton (neutron).
+ This process is thought of classically to have approximate mass conservation
+ between the proton-neutron states (
+\begin_inset Formula $\Delta m=1.29$
+\end_inset
+
+ MeV/
+\begin_inset Formula $c^{2}$
+\end_inset
+
+).
+ CCQE interactions are the lowest energy CC interaction with a nucleon.
+ While CCQE models work well for low-Z atoms like hydrogen, they do not
+ extend well into many nucleon atoms.
+ CCDIS is a high energy transfer process that shatters the nucleus apart
+ which has the observation of many post-FSI hadrons.
+ Modeling CCDIS can be challenging due to FSI and the uncertainty of the
+ possible initial states of the nucleus.
+ Finally CC
+\begin_inset Formula $1\pion$
+\end_inset
+
+ interactions refer to processes where a post-FSI charged pion is experimentally
+ observed presumably from the decay of resonance state like the 
+\begin_inset Formula $\Delta(1232)$
+\end_inset
+
+ baryon.
+ These interactions are not well understood currently since they occur in
+ the transition between CCQE and CCDIS interaction modes.
 \end_layout
 
 \begin_layout Subsection
@@ -1665,8 +1748,11 @@ The first indication of neutrino oscillations was from the Ray Davis Homesteak
  Davis' experiment would need to operate for many years to collect enough
  statistics due to expected low capture rate.
  Measurements continued into the 1980s and showed that the flux of neutrinos
- as measured at Homesteak was about 1/3 the expected rate and became known
- as the 
+ as measured at Homesteak was about 
+\begin_inset Formula $\nicefrac{1}{3}$
+\end_inset
+
+ the expected rate and became known as the 
 \begin_inset Quotes eld
 \end_inset
 
