@@ -4618,7 +4618,7 @@ literal "false"
 \begin_layout Standard
 \begin_inset Branch IntroductionT2K
 inverted 0
-status collapsed
+status open
 
 \begin_layout Section
 Tokai-to-Kamioka Experiment
@@ -6296,6 +6296,8 @@ ND280 consists of the pi-zero detector (
  muon range detector (SMRD).
  The ND280 subdetectors are instrumented inside the recycled UA1/NOMAD magnet
  with the SMRD in the magnetic field return yoke itself.
+ All but the FGD is instrumented with the same scintillating-bar bar technology
+ collected by MPPCs.
  A schematic of the different detector components of ND280 is shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -6620,6 +6622,17 @@ and thus measuring the direction and radius of curvature inside the field
  provides the charge and momentum, respectively, as desired.
 \end_layout
 
+\begin_layout Standard
+The ND280 data acquisition (DAQ) consists of a MIDAS framework to monitor
+ and control data collection.
+ The primary client of the DAQ is to merge data and package it for long
+ term storage.
+ In parallel to it is the Global Slow Control (GSC) system which measures
+ temperatures, voltages, and other physical quantities.
+ Together the DAQ and GSC help scientists consistently produce high quality
+ data and maintain the overall stability of the detector.
+\end_layout
+
 \begin_layout Subsubsection
 Off Axis pi-zero detector (
 \begin_inset Formula $\pod$
@@ -6629,11 +6642,12 @@ Off Axis pi-zero detector (
 \end_layout
 
 \begin_layout Standard
-The pi-zero detector (
+The 
 \begin_inset Formula $\pod$
 \end_inset
 
-) is a plastic scintillator based tracking calorimeter inside the ND280
+ is the primary detector used a neutrino target in this thesis.
+ It is a plastic scintillator based tracking calorimeter inside the ND280
  magnet region.
  It is designed to measure the neutral current (NC) process 
 \begin_inset Formula $\numu+N\rightarrow\numu+N+\pizero+X$
@@ -6674,7 +6688,7 @@ The pi-zero detector (
 placement t
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -6879,6 +6893,11 @@ noprefix "false"
 
 , in XYZ respectively, with a total mass of ∼1900 kg of water and 3570 kg
  of other material.
+ The total mass of the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ is approximately 15,800 kg when the bags are full of water.
  
 \begin_inset Formula $\podule$
 \end_inset
@@ -7234,7 +7253,7 @@ status open
 placement t
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -7294,6 +7313,36 @@ A cross section of a
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+The readout electronics for the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ is based on the Trip-T application specific integrated circuit (ASIC) shared
+ among the SMRD, ECals, and INGRID.
+ Signals from 64 MPPCs are routed to Trip-T front end boards (TFB) that
+ each house 4 Trip-T ASICs.
+ Each Trip-T collects the MPPC charge in 23 programmable integration cycles.
+\end_layout
+
+\begin_layout Standard
+The TFB are readout to back-end electronics which control the TFBs and synchroni
+ze clocks.
+ A total of six readout merger module (RMM) electronics receive TFB the
+ data and control each TFB ASIC.
+ RMM timing are synchronized with a cosmic trigger module and a slave clock
+ module (SCM), of which both are synchronized with a master clock module
+ from the beamline.
+ Synchronizing the RMMs with the SCM allows for the Trip-T ASIC integration
+ windows to match with the beam.
+ The RMMs are responsible for distributing the TFB data to the DAQ system
+ for storage.
+\end_layout
+
+\begin_layout Subsubsection
+Off Axis Time Projection Chamber (TPC)
 \end_layout
 
 \end_inset
