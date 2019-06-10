@@ -5775,7 +5775,7 @@ s observed at SK.
 \begin_layout Standard
 \begin_inset Branch IntroductionT2KNearDetectors
 inverted 0
-status open
+status collapsed
 
 \begin_layout Subsection
 Neutrino Near Detectors: ND280
@@ -6144,7 +6144,7 @@ noprefix "false"
 placement t
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -6390,7 +6390,7 @@ noprefix "false"
 placement t
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -6620,17 +6620,6 @@ noprefix "false"
 
 and thus measuring the direction and radius of curvature inside the field
  provides the charge and momentum, respectively, as desired.
-\end_layout
-
-\begin_layout Standard
-The ND280 data acquisition (DAQ) consists of a MIDAS framework to monitor
- and control data collection.
- The primary client of the DAQ is to merge data and package it for long
- term storage.
- In parallel to it is the Global Slow Control (GSC) system which measures
- temperatures, voltages, and other physical quantities.
- Together the DAQ and GSC help scientists consistently produce high quality
- data and maintain the overall stability of the detector.
 \end_layout
 
 \begin_layout Subsubsection
@@ -7337,12 +7326,171 @@ ze clocks.
  from the beamline.
  Synchronizing the RMMs with the SCM allows for the Trip-T ASIC integration
  windows to match with the beam.
- The RMMs are responsible for distributing the TFB data to the DAQ system
- for storage.
+ The RMMs are responsible for distributing the TFB data to the data acquisition
+ (DAQ) system for storage.
+\end_layout
+
+\begin_layout Standard
+The ND280 DAQ consists of a MIDAS framework to monitor and control data
+ collection.
+ The primary client of the DAQ is to merge data and package it for long
+ term storage.
+ In parallel to it is the Global Slow Control (GSC) system which measures
+ temperatures, voltages, and other physical quantities.
+ Together the DAQ and GSC help scientists consistently produce high quality
+ data and maintain the overall stability of the detector.
 \end_layout
 
 \begin_layout Subsubsection
 Off Axis Time Projection Chamber (TPC)
+\end_layout
+
+\begin_layout Standard
+The ND280 TPC is designed to provide momenta measurements as discussed above,
+ high resolution particle counting capabilities, and particle identification
+ based on energy deposition.
+ The latter most aspect is not utilized in this thesis.
+ The TPC is divided into three volumes separated by the two FGD volumes.
+ Each TPC volume (
+\begin_inset Formula $2.3\times2.4\times1.0\ \text{m}^{3}$
+\end_inset
+
+) consists of an inner box that holds an argon-based gas and an outer box
+ that holds an insulating 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ce{CO_2}
+\end_layout
+
+\end_inset
+
+ gas.
+ The inner gas mixture is 3000 L of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ce{Ar}:
+\backslash
+ce{CF_4}:i
+\backslash
+ce{C_4}
+\backslash
+ce{H_10}
+\end_layout
+
+\end_inset
+
+ (95:3:2) gas.
+ It was selected for its high speed, low diffusion, and good performance
+ with the micromegas
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abe:2011ks"
+literal "false"
+
+\end_inset
+
+.
+ A simplified schematic of the TPC is shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:TPC"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/TPC.png
+	lyxscale 75
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cut-away drawing of a TPC volume in ND280
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abe:2011ks"
+literal "false"
+
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:TPC"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Cut-Away Drawing of a TPC Volume in ND280
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As charged particles traverse the inner TPC volume, they create ionization
+ electrons in the gas which drift towards readout planes away from a central
+ cathode.
+ The electron drift acceleration is rapid due to the strong 5 kV/cm electric
+ field present.
+ Drift electrons are multiplied and sampled by micromega detectors that
+ line the sides of the TPC, providing nearly 3 
+\begin_inset Formula $\text{m}^{2}$
+\end_inset
+
+ of active surface coverage.
+ Arrival times of the electrons provide timing information to give a full
+ three dimensional portrait of the events.
 \end_layout
 
 \end_inset
@@ -7353,7 +7501,7 @@ Off Axis Time Projection Chamber (TPC)
 \begin_layout Standard
 \begin_inset Branch IntroductionT2KFarDetector
 inverted 0
-status collapsed
+status open
 
 \begin_layout Subsection
 Neutrino Far Detector: Super-Kamiokande
