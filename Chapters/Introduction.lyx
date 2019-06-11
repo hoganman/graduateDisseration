@@ -110,7 +110,7 @@
 \begin_layout Standard
 \begin_inset Branch IntroductionNeutrinos
 inverted 0
-status open
+status collapsed
 
 \begin_layout Section
 Introduction to Neutrinos
@@ -4687,7 +4687,17 @@ literal "false"
 \begin_inset Formula $\Enu=0.6$
 \end_inset
 
- GeV.
+ GeV as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:T2K-unoscillated-flux"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
  This spectrum is achieved by directing the center of the beam axis 2.5 degrees
  off center from SK.
 \end_layout
@@ -4803,6 +4813,74 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/OffAxisFluxUnoscillatedNumu.png
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The T2K unoscillated 
+\begin_inset Formula $\numu$
+\end_inset
+
+ flux at SK at the off-axis angle of 
+\begin_inset Formula $2.5\textdegree$
+\end_inset
+
+.
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+The T2K Unoscillated 
+\begin_inset Formula $\numu$
+\end_inset
+
+ Flux at SK
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:T2K-unoscillated-flux"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 The following topics will be discussed in the following order.
  First a look how neutrinos are produced at J-PARC.
  Next a detailed look at the T2K near detectors which are used in this thesis.
@@ -4814,7 +4892,7 @@ The following topics will be discussed in the following order.
 \begin_layout Standard
 \begin_inset Branch IntroductionT2KNeutrinoProduction
 inverted 0
-status collapsed
+status open
 
 \begin_layout Subsection
 Neutrino Production at J-PARC
@@ -7507,6 +7585,180 @@ status open
 Neutrino Far Detector: Super-Kamiokande
 \end_layout
 
+\begin_layout Standard
+The Super-Kamioka neutrino detection experiment (Super-Kamiokande) is the
+ dedicated far detector for the T2K experiment.
+ Sitting at 295 km away from the neutrino source with a 1 km overburden,
+ it is well designed to detect the elusive neutrino.
+ Containing about 50 kt of pure water, is it lined with PMTs in both an
+ inner and veto outer detector as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Diagram-of-SK"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/SKDrawing.png
+	width 30text%
+	height 30theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagram of the Super-Kamiokande detector consisting mainly of the inner
+ and outer detector segments.
+ The boundary between the two segments is cylindrical scaffolding used to
+ mount photomultiplier tubes and optically isolate the segments.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagram-of-SK"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Diagram of the Super-Kamiokande Detector
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+When charged particles travel through the water, a Cherenkov radiation cone
+ is produced.
+ The sharpness of the cone edge is an unique ID for the particle species
+ that produced it.
+ An electron produces a fuzzy edge since it experiences many large multi-scatter
+s off the water molecules.
+ A muon on the other hand produces a sharp edge since it is much more massive
+ and less perturbed by the molecules.
+ Both types of events are shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Representative-T2K-events"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ By determining the particle that produced it and isolating the event during
+ the T2K beam, the neutrino flavor is deduced.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/SKEventDisplay.png
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Representative T2K events in Super-Kamiokande for (a) a muon-like ring and
+ (b) an electron-like ring.
+ Both figures show Super-Kamiokande unrolled onto a plane with each colored
+ point representing a PMT.
+ The color of each PMT corresponds to the amount of charge collected.
+ In upper right corner shows the same unrolled hit map for the veto outer
+ detector.
+ White crosses indicate the location of the reconstructed vertex.
+ A solid diamond marks the location where a ray parallel to the beam would
+ intersect the detector wall starting from the vertex.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Representative T2K Events in Super-Kamiokande
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Representative-T2K-events"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Events from SK are not used in this analysis.
+ However, the goal of this analysis is to try to improve T2K's sensitivity
+ to the currently unknown oscillation parameters.
+ Therefore having some background on the oscillation analysis is relevant.
+\end_layout
+
 \begin_layout Subsubsection
 Oscillation Analysis
 \end_layout
@@ -7538,10 +7790,9 @@ where
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\begin{aligned}S_{\nu_{\alpha}}^{\text{SK}} & =\sum_{i}\sum_{\beta}\sum_{m}\mathcal{P}_{\nu_{\beta}\rightarrow\nu_{\alpha}}\left(E_{\nu,i};\vec{o}\right)\times\sigma_{\nu_{\alpha}}^{m}\left(E_{\nu,i}\right)\\
- & \times\Phi_{\nu_{\alpha}}^{\text{SK}}\left(E_{\nu,i}\right)\times T^{\text{SK}}\times\epsilon^{\text{SK}}\left(p_{\alpha},\theta_{\alpha}\right)
+\begin{aligned}S_{\nu_{\alpha}}^{\text{SK}} & =\sum_{i=1}^{M}\left\{ \sum_{\lambda=e,\mu,\tau}\left[\mathcal{P}_{\nu_{\lambda}\rightarrow\nu_{\alpha}}\left(E_{\nu,i};\vec{o}\right)\right]\times\sum_{t}\left[\sigma_{\nu_{\alpha}}^{t}\left(E_{\nu,i}\right)\cdot t_{N}\right]\right.\\
+ & \left.\times\Phi_{\nu_{\alpha}}^{\text{SK}}\left(E_{\nu,i}\right)\times\epsilon\left(p_{\alpha},\theta_{\alpha}\right)\right\} ,
 \end{aligned}
-,
 \]
 
 \end_inset
