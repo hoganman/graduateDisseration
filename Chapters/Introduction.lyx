@@ -110,7 +110,7 @@
 \begin_layout Standard
 \begin_inset Branch IntroductionNeutrinos
 inverted 0
-status collapsed
+status open
 
 \begin_layout Section
 Introduction to Neutrinos
@@ -1539,7 +1539,7 @@ Consider neutrino-electron scattering, the cross section for
  is given by
 \begin_inset Formula 
 \begin{equation}
-\frac{d\sigma}{d\Omega}=\frac{G^{2}s}{4\pi^{2}},\label{eq:NuEScattering}
+\frac{d\sigma}{d\Omega}=\left(\frac{G\hbar c}{2\pi}\right)^{2}s,\label{eq:NuEScattering}
 \end{equation}
 
 \end_inset
@@ -1578,7 +1578,7 @@ noprefix "false"
  
 \begin_inset Formula 
 \begin{equation}
-\frac{d\sigma}{d\Omega}=\frac{G^{2}s}{16\pi^{2}}\left(1-\cos\theta\right)^{2},\label{eq:ANuEScattering}
+\frac{d\sigma}{d\Omega}=\left(\frac{G\hbar c}{4\pi}\right)^{2}\left(1-\cos\theta\right)^{2}s,\label{eq:ANuEScattering}
 \end{equation}
 
 \end_inset
@@ -4618,7 +4618,7 @@ literal "false"
 \begin_layout Standard
 \begin_inset Branch IntroductionT2K
 inverted 0
-status open
+status collapsed
 
 \begin_layout Section
 Tokai-to-Kamioka Experiment
