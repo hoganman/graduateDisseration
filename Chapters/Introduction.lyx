@@ -110,7 +110,7 @@
 \begin_layout Standard
 \begin_inset Branch IntroductionNeutrinos
 inverted 0
-status open
+status collapsed
 
 \begin_layout Section
 Introduction to Neutrinos
@@ -4675,6 +4675,8 @@ literal "false"
 \end_inset
 
  to observe and characterize the unoscillated beam.
+ This thesis uses data from ND280 detector to test for increased sensitivity
+ to beam characterization.
  The beam is designed to maximize the 
 \begin_inset Formula $\numu\rightarrow\nue$
 \end_inset
@@ -4885,14 +4887,12 @@ The following topics will be discussed in the following order.
  First a look how neutrinos are produced at J-PARC.
  Next a detailed look at the T2K near detectors which are used in this thesis.
  This is followed by a discussion on Super-Kamiokande, the T2K far detector.
- The final topic is the basics of an oscillation analysis using a near and
- far detector.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Branch IntroductionT2KNeutrinoProduction
 inverted 0
-status open
+status collapsed
 
 \begin_layout Subsection
 Neutrino Production at J-PARC
@@ -5853,7 +5853,7 @@ s observed at SK.
 \begin_layout Standard
 \begin_inset Branch IntroductionT2KNearDetectors
 inverted 0
-status collapsed
+status open
 
 \begin_layout Subsection
 Neutrino Near Detectors: ND280
@@ -5862,8 +5862,12 @@ Neutrino Near Detectors: ND280
 \begin_layout Standard
 T2K has a near detector (ND) site at J-PARC that is designed specifically
  observe the neutrinos in flight.
- The purpose of a ND site is due to large uncertainties from the neutrino
- flux in previous neutrino oscillation experiments.
+ The purpose of a ND site is to 
+\shape italic
+constrain the neutrino flux and interaction rate
+\shape default
+ at SK in order to reduce the impact of their systematic uncertainties in
+ the oscillation analysis.
  The site is called ND280 and is located 280m away from the production target.
  The primary detector is an off-axis, magnetized tracking detector consisting
  of different subdetectors.
@@ -5872,6 +5876,10 @@ T2K has a near detector (ND) site at J-PARC that is designed specifically
  Both on-axis and off-axis detectors extensively utilize a commercial light
  sensor called a multi-pixel photon counter (MPPC) for the light collection
  in the scintillator-based detectors.
+\end_layout
+
+\begin_layout Standard
+The analysis in this thesis uses the data provided by off-axis ND.
 \end_layout
 
 \begin_layout Standard
@@ -6283,7 +6291,7 @@ Off-Axis Detector Summary
 The primary near detector for T2K, ND280, is an off-axis, magnetized tracking
  detector.
  It is a collection of different detector technologies designed to facilitate
- three measurement goals:
+ three primary measurements:
 \end_layout
 
 \begin_layout Enumerate
@@ -7571,6 +7579,39 @@ As charged particles traverse the inner TPC volume, they create ionization
  three dimensional portrait of the events.
 \end_layout
 
+\begin_layout Subsubsection
+Track Reconstruction in ND280
+\end_layout
+
+\begin_layout Standard
+The goal of track reconstruction software is to capture the shape and history
+ of energy deposited in the detector.
+ Since ND280 is collection of different technologies, highly specific algorithms
+ and models are used to identify track-like patterns.
+ Since this analysis uses neutrino events incident in the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ and cross into the TPC, an unified and coherent reconstruction model.
+ A reconstruction package called 
+\begin_inset Quotes eld
+\end_inset
+
+Global
+\begin_inset Quotes erd
+\end_inset
+
+ is designed to combine all ND280 information for this purpose.
+\end_layout
+
+\begin_layout Standard
+For 
+\begin_inset Formula $\pod$
+\end_inset
+
+ tracks, 
+\end_layout
+
 \end_inset
 
 
@@ -7579,7 +7620,7 @@ As charged particles traverse the inner TPC volume, they create ionization
 \begin_layout Standard
 \begin_inset Branch IntroductionT2KFarDetector
 inverted 0
-status open
+status collapsed
 
 \begin_layout Subsection
 Neutrino Far Detector: Super-Kamiokande
