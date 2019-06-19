@@ -59,7 +59,7 @@
   Slaccitation             = {%%CITATION = ARXIV:1707.01048;%%}
 }
 
-@Article{Abe2017,
+@Article{AbePhyRevD9652017,
   Title                    = {Measurement of $\nu_\mu$ and $\overline{\nu}_\mu$ charged current inclusive cross sections and their ratio with the T2K off-axis near detector},
   Author                   = {Abe, K. and Others},
   Journal                  = {PHYSICAL REVIEW D},
@@ -144,6 +144,26 @@
   Slaccitation             = {%%CITATION = ARXIV:1502.05199;%%}
 }
 
+@Article{Abe2015c,
+  Title                    = {Measurements of neutrino oscillation in appearance and disappearance channels by the T2K experiment with $6.6\ifmmode\times\else\texttimes\fi{}1{0}^{20}$ protons on target},
+  Author                   = {Abe, K. and Others},
+  Journal                  = {Phys. Rev. D},
+  Year                     = {2015},
+
+  Month                    = {Apr},
+  Pages                    = {072010},
+  Volume                   = {91},
+
+  __markedentry            = {[mhogan:6]},
+  Doi                      = {10.1103/PhysRevD.91.072010},
+  Issue                    = {7},
+  Numpages                 = {50},
+  Owner                    = {mhogan},
+  Publisher                = {American Physical Society},
+  Timestamp                = {2019.06.18},
+  Url                      = {https://link.aps.org/doi/10.1103/PhysRevD.91.072010}
+}
+
 @Article{Abe:2013hdq,
   Title                    = {{Observation of Electron Neutrino Appearance in a Muon
  Neutrino Beam}},
@@ -191,6 +211,23 @@
   Numpages                 = {34},
   Publisher                = {American Physical Society},
   Url                      = {https://link.aps.org/doi/10.1103/PhysRevD.87.012001}
+}
+
+@Article{Abe2012,
+  Title                    = {Measurements of the T2K neutrino beam properties using the INGRID on-axis near detector},
+  Author                   = {K. Abe and others},
+  Journal                  = {Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment},
+  Year                     = {2012},
+  Pages                    = {211 - 223},
+  Volume                   = {694},
+
+  __markedentry            = {[mhogan:6]},
+  Doi                      = {https://doi.org/10.1016/j.nima.2012.03.023},
+  ISSN                     = {0168-9002},
+  Keywords                 = {Neutrino oscillation, T2K, Neutrino beam, Neutrino detector, Extruded scintillator, Wavelength shifting fiber},
+  Owner                    = {mhogan},
+  Timestamp                = {2019.06.18},
+  Url                      = {http://www.sciencedirect.com/science/article/pii/S0168900212002987}
 }
 
 @Article{ingrid,
@@ -307,6 +344,22 @@
   Primaryclass             = {physics.ins-det},
   Reportnumber             = {FERMILAB-DESIGN-2016-02},
   Slaccitation             = {%%CITATION = ARXIV:1512.06148;%%}
+}
+
+@Article{Acciarri2015,
+  Title                    = {{Long-Baseline Neutrino Facility (LBNF) and Deep Underground Neutrino Experiment (DUNE)}},
+  Author                   = {Acciarri, R. and Others},
+  Year                     = {2015},
+
+  __markedentry            = {[mhogan:6]},
+  Archiveprefix            = {arXiv},
+  Collaboration            = {DUNE},
+  Eprint                   = {1512.06148},
+  Owner                    = {mhogan},
+  Primaryclass             = {physics.ins-det},
+  Reportnumber             = {FERMILAB-DESIGN-2016-02},
+  Slaccitation             = {%%CITATION = ARXIV:1512.06148;%%},
+  Timestamp                = {2019.06.18}
 }
 
 @Article{Acciarri:2014gev,
@@ -778,6 +831,34 @@
   Slaccitation             = {%%CITATION = ARXIV:1705.03791;%%}
 }
 
+@Article{Betancourt2017,
+  Title                    = {{Direct Measurement of Nuclear Dependence of Charged Current Quasielastic-like Neutrino Interactions using MINERvA}},
+  Author                   = {Betancourt, M. and others},
+  Year                     = {2017},
+
+  __markedentry            = {[mhogan:6]},
+  Archiveprefix            = {arXiv},
+  Collaboration            = {MINERvA},
+  Eprint                   = {1705.03791},
+  Owner                    = {mhogan},
+  Primaryclass             = {hep-ex},
+  Reportnumber             = {FERMILAB-PUB-17-154-ND},
+  Slaccitation             = {%%CITATION = ARXIV:1705.03791;%%},
+  Timestamp                = {2019.06.18}
+}
+
+@Standard{Bienstock2018,
+  Title                    = {{Assessing the effect of cross-section model uncertainties on the T2K oscillation analyses with simulated data studies using the BANFF, MaCh3, P-Theta and VALOR frameworks}},
+  Author                   = {Bienstock, S. and others},
+  Month                    = {May},
+  Note                     = {\href{https://www.t2k.org/docs/technotes/331}{T2K-TN-331\ v5}},
+  Year                     = {2018},
+
+  __markedentry            = {[mhogan:6]},
+  Owner                    = {mhogan},
+  Timestamp                = {2019.04.27}
+}
+
 @Article{Bodek:1981wr,
   Title                    = {{Further Studies of Fermi Motion Effects in Lepton
  Scattering from Nuclear Targets}},
@@ -815,6 +896,18 @@
   Volume                   = {120}
 }
 
+@Standard{Bolognesi2017,
+  Title                    = {NIWG model and uncertainties for 2017 oscillation analysis},
+  Author                   = {S. Bolognesi and Others},
+  Month                    = {April},
+  Note                     = {\href{https://www.t2k.org/docs/technotes/315}{T2K-TN-315\ v5}},
+  Year                     = {2017},
+
+  __markedentry            = {[mhogan:6]},
+  Owner                    = {mhogan},
+  Timestamp                = {2019.01.31}
+}
+
 @Article{GEANT3,
   Author                   = {R. Brun and F. Carminati and S. Giani},
   Journal                  = {CERN-W5013},
@@ -836,6 +929,36 @@
   Eprint                   = {1106.1344},
   Primaryclass             = {hep-ph},
   Slaccitation             = {%%CITATION = ARXIV:1106.1344;%%}
+}
+
+@Standard{Campbell2018,
+  Title                    = {Measurement of the $\nu_\mu$ CC-0$\pi$ Double Differential Cross Section on Water in the P\O{}D},
+  Institution              = {{Colorado State University, Fort Collins, Colorado, USA}},
+  Organization             = {T2K},
+  Author                   = {Campbell, T.},
+  Month                    = {February},
+  Note                     = {\href{https://www.t2k.org/docs/technotes/328}{T2K-TN-328}},
+  Type                     = {Tech. Note},
+  Year                     = {2018},
+
+  __markedentry            = {[mhogan:6]},
+  Owner                    = {mhogan},
+  Timestamp                = {2018.10.16}
+}
+
+@Standard{Campbell2014,
+  Title                    = {Analysis of $\nu_\mu$ Charged Current Inclusive Events in the P\O{}D in Runs 1+2+3+4},
+  Institution              = {{{Colorado State University, Fort Collins, Colorado, USA} and {University of Colorado Boulder, Boulder, USA}}},
+  Organization             = {T2K},
+  Author                   = {Campbell, T. and Others},
+  Month                    = {Mar},
+  Note                     = {\href{https://www.t2k.org/docs/technotes/080}{T2K-TN-80\ v4}},
+  Type                     = {Tech. Note},
+  Year                     = {2014},
+
+  __markedentry            = {[mhogan:6]},
+  Owner                    = {mhogan},
+  Timestamp                = {2018.10.04}
 }
 
 @Electronic{JPARCCenter2019,
@@ -914,6 +1037,20 @@
   Address                  = {Stanford, California},
   Month                    = Aug,
   Number                   = {SATN-CS-1013}
+}
+
+@Standard{Das2014,
+  Title                    = {Measurement of Induced Charged Current Cross Section on Water using the P\O{}D and TPC},
+  Institution              = {{Colorado State University, Fort Collins, Colorado, USA}},
+  Organization             = {T2K},
+  Author                   = {Das, R. and Others},
+  Month                    = {November},
+  Note                     = {\href{https://www.t2k.org/docs/technotes/100}{T2K-TN-100}},
+  Year                     = {2014},
+
+  __markedentry            = {[mhogan:6]},
+  Owner                    = {mhogan},
+  Timestamp                = {2018.10.16}
 }
 
 @Article{Delorme:1985ps,
@@ -1050,6 +1187,19 @@
   Slaccitation             = {%%CITATION = ARXIV:1305.2243;%%}
 }
 
+@Misc{Firestone1999,
+  Title                    = {Periodic Table for the Table of Isotopes},
+
+  Author                   = {Richard B. Firestone},
+  HowPublished             = {\url{http://ie.lbl.gov/elem/per00_c.pdf}},
+  Month                    = {November},
+  Year                     = {1999},
+
+  __markedentry            = {[mhogan:6]},
+  Owner                    = {mhogan},
+  Timestamp                = {2019.06.18}
+}
+
 @Misc{website:PeriodicTable,
   Title                    = {Periodic Table for the Table of Isotopes},
 
@@ -1164,6 +1314,21 @@
   Slaccitation             = {%%CITATION = NUCL-TH/9711009;%%}
 }
 
+@Standard{Gilje2012,
+  Title                    = {Geometry and Mass of the $\pi^{0}$ Detector in the ND280 Basket},
+  Institution              = {Stoney Brook University, New York, USA},
+  Organization             = {T2K},
+  Author                   = {Gilje, K.},
+  Month                    = {Apr},
+  Note                     = {\href{https://www.t2k.org/docs/technotes/073}{T2K-TN-73\ v3.1}},
+  Type                     = {Tech. Note},
+  Year                     = {2012},
+
+  __markedentry            = {[mhogan:6]},
+  Owner                    = {mhogan},
+  Timestamp                = {2018.10.04}
+}
+
 @Article{Gluck:1998xa,
   Title                    = {{Dynamical parton distributions revisited}},
   Author                   = {Gluck, M. and Reya, E. and Vogt, A.},
@@ -1227,6 +1392,31 @@
   Issue                    = {4}
 }
 
+@Standard{Hartz2016,
+  Title                    = {{Constraining the Flux and Cross Section Models with Data from the ND280 Detector using FGD1 and FGD2 for the 2016 Joint Oscillation Analysis}},
+  Author                   = {Hartz, M. and Others},
+  Month                    = {June},
+  Note                     = {\href{https://www.t2k.org/docs/technotes/230}{T2K-TN-230\ v3}},
+  Type                     = {Tech Note},
+  Year                     = {2016},
+
+  __markedentry            = {[mhogan:6]},
+  Owner                    = {mhogan},
+  Timestamp                = {2019.04.27}
+}
+
+@Standard{Hartz2015,
+  Title                    = {Constraining the Flux and Cross Section Models with Data from the ND280 Detector for the 2014/15 Oscillation Analysis},
+  Author                   = {Hartz, M. and Others},
+  Month                    = {May},
+  Note                     = {\href{https://www.t2k.org/docs/technotes/220}{T2K-TN-220\ v4}},
+  Year                     = {2015},
+
+  __markedentry            = {[mhogan:6]},
+  Owner                    = {mhogan},
+  Timestamp                = {2019.01.31}
+}
+
 @Article{Hayato:2009,
   Title                    = {{A neutrino interaction simulation program library NEUT}},
   Author                   = {Hayato, Yoshinari},
@@ -1283,6 +1473,19 @@
   Primaryclass             = {hep-ex},
   Publisher                = {American Physical Society},
   Url                      = {https://link.aps.org/doi/10.1103/PhysRevLett.113.261802}
+}
+
+@Standard{Hillairet2011,
+  Title                    = {ND280 Reconstruction},
+  Organization             = {T2K},
+  Author                   = {Hillairet, A. and Others},
+  Month                    = {Nov},
+  Note                     = {\href{https://www.t2k.org/docs/technotes/072}{T2K-TN-72\ v1}},
+  Year                     = {2011},
+
+  __markedentry            = {[mhogan:6]},
+  Owner                    = {mhogan},
+  Timestamp                = {2018.10.05}
 }
 
 @InProceedings{Igarashi:2016wyi,
@@ -1363,6 +1566,18 @@
   Address                  = {Stanford, California},
   Month                    = Sep,
   Number                   = {STAN-CS-83-980}
+}
+
+@Standard{Koga2017,
+  Title                    = {Comparison between BANFF post fit results and on-axis detectors},
+  Author                   = {Koga, T.},
+  Type                     = {Tech. Note},
+  Url                      = {\href{https://www.t2k.org/docs/technotes/335}{T2K-TN-335}},
+  Year                     = {2017},
+
+  __markedentry            = {[mhogan:6]},
+  Owner                    = {mhogan},
+  Timestamp                = {2019.04.16}
 }
 
 @Article{2011ApJS..192...18K,
@@ -1476,6 +1691,18 @@
   Eprint                   = {0812.4543},
   Primaryclass             = {hep-ex},
   Slaccitation             = {%%CITATION = ARXIV:0812.4543;%%}
+}
+
+@Standard{Mahn2017,
+  Title                    = {Implementation of new cross section parameters for the 2017 oscillation analysis},
+  Author                   = {Mahn, K. and Others},
+  Note                     = {\href{https://www.t2k.org/docs/technotes/307}{T2K-TN-307}},
+  Type                     = {Tech. Note},
+  Year                     = {2017},
+
+  __markedentry            = {[mhogan:6]},
+  Owner                    = {mhogan},
+  Timestamp                = {2019.06.18}
 }
 
 @Article{Maki1962,
@@ -1952,6 +2179,21 @@
   Number                   = {95041}
 }
 
+@Standard{Wikstroem2018,
+  Title                    = {Global Kalman vertexing in ND280},
+  Institution              = {DPNC, Universit ́e de Gen`eve, Geneva, Switzerland and Lancaster University},
+  Organization             = {T2K},
+  Author                   = {Wikstr\"om, G. and Finch, A.},
+  Month                    = {Feb},
+  Note                     = {\href{https://www.t2k.org/docs/technotes/046}{T2K-TN-46\ v3}},
+  Type                     = {Tech. Note},
+  Year                     = {2018},
+
+  __markedentry            = {[mhogan:6]},
+  Owner                    = {mhogan},
+  Timestamp                = {2018.10.04}
+}
+
 @Article{Wolcott:2015hda,
   Title                    = {{Measurement of electron neutrino quasielastic and
  quasielasticlike scattering on hydrocarbon at $\langle
@@ -1980,6 +2222,30 @@
   Note                     = {nue identification using longitudinal and transverse track energy deposition},
 
   Institution              = {Stanford University}
+}
+
+@Standard{Yuan2016,
+  Title                    = {Double Differential Measurement of the Flux Averaged $\nu_\mu$ CC0Pi Cross Section on Water},
+  Institution              = {University of Colorado Boulder, Boulder, USA},
+  Organization             = {T2K},
+  Author                   = {Yuan, T. and Others},
+  Month                    = {Aug},
+  Note                     = {\href{https://www.t2k.org/docs/technotes/258}{T2K-TN-258\ v4.6.1}},
+  Type                     = {Tech. Note},
+  Year                     = {2016},
+
+  __markedentry            = {[mhogan:6]},
+  Abstract                 = {This note details a measurement of the CC0 π cross section on water using interactions in the
+Pi-Zero (PØD) subdetector of ND280 with 5.8 × 10 20 protons on target. A selection of ν μ
+charged-current events occurring within the PØD is described. The charged, outgoing tracks are required to
+enter and be identifed by the Tracker. The cross section is determined using an iterative Bayesian
+unfolding technique. By separating the dataset into time periods when the PØD is filled with water
+and when it is empty, a subtraction method provides a distribution of
+ν μ interactions on water only. Systematic uncertainties on the neutrino flux, interaction model, and detector simulation are
+propagated numerically within the unfolding framework.},
+  Edition                  = {4.6.1},
+  Owner                    = {mhogan},
+  Timestamp                = {2019.06.18}
 }
 
 @Article{GCALOR,

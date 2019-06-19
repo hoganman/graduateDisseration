@@ -1,0 +1,1380 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass csuthesisLyx
+\begin_preamble
+% ams math packages
+\usepackage[cmex10]{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+% graphics packages
+\usepackage{graphicx} % remove pdftex if you are not compiling to pdf
+%\graphicspath{{./figures/}} % this places all graphics in the figures subdirectory
+
+% allowed graphics extensions
+% uncomment if you prefer to add extension in \includegraphics
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+
+% allows the creation of subfigures
+\usepackage[caption=false]{subfig}
+
+% book tables are simple and look nice
+\usepackage{booktabs}
+
+% for specifying urls and links
+\usepackage{url}
+\urlstyle{same} % same style as regular text
+
+% for defining colors
+\usepackage{xcolor}
+
+%\usepackage[labelformat=empty]{caption}
+%\usepackage{subcaption}
+\usepackage{lmodern}
+\usepackage{csquotes}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{hepunits}
+\usepackage{hepnames}
+\usepackage{physics}
+
+\usepackage[%
+  pdfpagelabels,
+  pdfusetitle,
+  %hidelinks,
+  %colorlinks=true,
+  %pdfborder={0 0 0},
+  linkcolor=blue,
+  filecolor=magenta,
+  urlcolor=cyan,
+  pagebackref,
+  bookmarksopen,
+  bookmarksnumbered]{hyperref}
+
+\usepackage{sectsty}
+\chapterfont{\centering}
+
+\usepackage{braket}
+\end_preamble
+\use_default_options true
+\master ../Thesis.lyx
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "palatino" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format pdf2
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\pdf_title "HoganThesis"
+\pdf_author "Matthew Hogan"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize letterpaper
+\use_geometry true
+\use_package amsmath 0
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 0
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\branch BANFFLikelihoodIntroduction
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch BANFFLikelihoodMotivation
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch BANFFLikelihoodIntroToPDFs
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch BANFFLikelihoodTestStatistic
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Branch BANFFLikelihoodIntroduction
+inverted 0
+status open
+
+\begin_layout Standard
+The BANFF likelihood maximization procedure is a binned likelihood maximization
+ of the ND280 data.
+ In a ND280 and Super-Kamiokande (SK) joint fit, the measurements from both
+ detectors are considered along with their respective nuisance parameters.
+ This approach is more computationally expensive compared to the Markov
+ Chain Monte Carlo analysis (MaCh3) which will not be explained here.
+ The BANFF likelihood maximization, hitherto referred to as the 
+\begin_inset Quotes eld
+\end_inset
+
+BANFF-fit
+\begin_inset Quotes erd
+\end_inset
+
+, includes nuisance parameters that affect the measurement of the oscillation
+ parameters, but are not physics goals of the T2K experiment.
+ The BANFF-fit parameters and their respective covariances are then used
+ as inputs in the oscillation analysis.
+ This 
+\begin_inset Quotes eld
+\end_inset
+
+divide-and-conquer
+\begin_inset Quotes erd
+\end_inset
+
+ approach allows for more rapidly completed studies on the effects of model
+ parameters and biases present.
+ Also this approach should provide the same result with a joint ND280 and
+ SK analysis as is performed in MaCh3.
+ However, information encoded in the ND280 measurements for shared nuisance
+ parameters like the neutrino flux is inevitably lost in the BANFF-fit.
+\end_layout
+
+\begin_layout Standard
+The modern BANFF-fit likelihood is described in detail in TN-220
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Hartz2015"
+literal "false"
+
+\end_inset
+
+.
+ It uses a frequentist approach to find the best nuisance parameter set
+ to maximize a binned likelihood.
+ Subsequent updates to the BANFF analysis
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hartz2016,Bienstock2017,Bienstock2018"
+literal "false"
+
+\end_inset
+
+ increase the sample sizes and systematic parameterizations.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch BANFFLikelihoodMotivation
+inverted 0
+status open
+
+\begin_layout Subsection
+Motivation
+\end_layout
+
+\begin_layout Standard
+Curve fitting is commonly found in the particle physics community literature
+ due to the need to compare two models or constrain unknown model parameters
+ using one or more histograms.
+ For the first case, this involves two competing models, 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+ and 
+\begin_inset Formula $H_{1}$
+\end_inset
+
+, in order to establish if the data supports new Physics (
+\begin_inset Formula $H_{1}$
+\end_inset
+
+) not predicted in the Standard Model (
+\begin_inset Formula $H_{0}$
+\end_inset
+
+).
+ The second case finds the 
+\begin_inset Quotes eld
+\end_inset
+
+best
+\begin_inset Quotes erd
+\end_inset
+
+ set of the model predictions, 
+\begin_inset Formula $\theta$
+\end_inset
+
+, that match the data as is the case for the BANFF-fit.
+ In both cases, chi-squared tests are performed to provide goodness of fit,
+ parameter estimation (also referred to as 
+\begin_inset Quotes eld
+\end_inset
+
+best fit parameters
+\begin_inset Quotes erd
+\end_inset
+
+), and error/confidence estimation.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch BANFFLikelihoodIntroToPDFs
+inverted 0
+status open
+
+\begin_layout Subsection
+Introduction to Conditional PDFs and Likelihoods
+\end_layout
+
+\begin_layout Standard
+Consider the problem of extracting physics parameters 
+\begin_inset Formula $\vec{y}$
+\end_inset
+
+ given some data vector 
+\begin_inset Formula $\vec{N}$
+\end_inset
+
+.
+ The conditional probability density function (PDF) 
+\begin_inset Formula $\mathcal{P}$
+\end_inset
+
+ to measure these parameters is given as
+\begin_inset Formula 
+\begin{equation}
+\prob{\vec{y}\left|\vec{N}\right.}=\frac{\mathcal{L}\left(\left.\vec{N}\right|\vec{y}\right)\prob{\vec{y}}}{\int\mathcal{L}\left(\left.\vec{N}\right|\vec{x}\right)\prob{\vec{x}}d\vec{x}},\label{eq:pdfgeneral}
+\end{equation}
+
+\end_inset
+
+where anything right of a vertical line represents a condition on the probabilit
+y, 
+\begin_inset Formula $\mathcal{L}\left(\left.\vec{N}\right|\vec{y}\right)$
+\end_inset
+
+ is the likelihood of the model with parameters 
+\begin_inset Formula $\vec{y}$
+\end_inset
+
+, 
+\begin_inset Formula $\prob{\vec{y}}$
+\end_inset
+
+ is the probability for the model, and the denominator is the normalization
+ over all possible constraints on the observations.
+ A frequentist interpretation of a PDF is a proportion of outcomes of repeated
+ trials or experiments.
+ A likelihood function is an expression of the probability of observing
+ data as a function of the model parameters in their appropriate ranges.
+\end_layout
+
+\begin_layout Standard
+One arrives at 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:pdfgeneral"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ by using the definition of compound probabilities
+\begin_inset Formula 
+\begin{equation}
+\prob{A,B}=\prob{B\left|A\right.}\prob A\label{eq:compoundpdfrule}
+\end{equation}
+
+\end_inset
+
+to evaluate 
+\begin_inset Formula $\prob{\vec{y}\left|\vec{N}\right.}$
+\end_inset
+
+ as
+\begin_inset Formula 
+\begin{equation}
+\prob{\underset{B}{\underbrace{\vec{y}}}\left|\underset{A}{\underbrace{\vec{N}}}\right.}=\frac{\prob{\vec{N},\vec{y}}}{\prob{\vec{N}}}\label{eq:pdfproof1}
+\end{equation}
+
+\end_inset
+
+with the denominator here is recognized as the normalization of the PDF.
+ The compound PDF 
+\begin_inset Formula $\prob{\vec{N},\vec{y}}$
+\end_inset
+
+ can expanded using Bayes' theorem which states
+\begin_inset Formula 
+\begin{equation}
+\prob{A\left|B\right.}\prob B=\prob{B\left|A\right.}\prob A,\label{eq:bayestheorem}
+\end{equation}
+
+\end_inset
+
+ and combined with 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:compoundpdfrule"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ yielding
+\begin_inset Formula 
+\begin{equation}
+\prob{\underset{A}{\underbrace{\vec{N}}},\underset{B}{\underbrace{\vec{y}}}}=\prob{\left.\vec{N}\right|\vec{y}}\times\prob{\vec{y}},\label{eq:pdfproof2}
+\end{equation}
+
+\end_inset
+
+where the PDFs to the left and right of the 
+\begin_inset Formula $\times$
+\end_inset
+
+ operator are recognized as the likelihoods and priors, respectively.
+ Combining resulting in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:pdfproof1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:pdfproof2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ reproduces the original expression of 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:pdfgeneral"
+plural "false"
+caps "true"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch BANFFLikelihoodTestStatistic
+inverted 0
+status open
+
+\begin_layout Subsection
+BANFF Fit Test Statistic
+\end_layout
+
+\begin_layout Standard
+For the BANFF fit, one considers the problem of trying to maximize the agreement
+ between measured and predicted data histograms.
+ This is equivalent to maximizing a binned likelihood function 
+\begin_inset Formula $\mathcal{L}$
+\end_inset
+
+ of the data given the a set of parameters that predict the measured rate.
+ The use of likelihood functions in fits to histogram is explained further
+ in reference 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "baker-cousins"
+literal "false"
+
+\end_inset
+
+ and the PDG review on Statistics.
+ By invoking Wilks' theorem, also known as the likelihood ratio theorem,
+ the likelihood maximization procedure is converted into a minimization
+ problem involving a test statistic denoted as a chi-squared.
+ Below is an explanation of the BANFF test statistic, 
+\begin_inset Formula $\Delta\chi^{2}$
+\end_inset
+
+, and its systematic model terms.
+\end_layout
+
+\begin_layout Standard
+Consider many binned samples that select different charged current topologies.
+ A convenient choice of observables for all the samples are the outgoing
+ charged lepton 
+\begin_inset Formula $l$
+\end_inset
+
+ momentum 
+\begin_inset Formula $P_{l}$
+\end_inset
+
+ and angle 
+\begin_inset Formula $\cos\theta_{l}$
+\end_inset
+
+ as measured in ND280.
+ Much of this is also documented in TN-220
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hartz2015"
+literal "false"
+
+\end_inset
+
+ where additional details can be found.
+ For each 
+\begin_inset Formula $\left(P_{l},\cos\theta_{l}\right)$
+\end_inset
+
+ analysis bin 
+\begin_inset Formula $i=1,2,\ldots,M-1,M$
+\end_inset
+
+, the likelihood is given by
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned}\mathcal{L}\left(\vec{N}^{d}\left|\vec{N}^{p}\right.\right) & =\left(\prod_{i=1}^{M}\left(\vec{N}_{i}^{p}\right)^{\vec{N}_{i}^{d}}\frac{e^{-\vec{N}_{i}^{p}}}{\vec{N}_{i}^{d}!}\right)\end{aligned}
+\label{eq:likelihoodPoisson}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\vec{N}_{i}^{d}$
+\end_inset
+
+ is the number of observed data events in the 
+\begin_inset Formula $i$
+\end_inset
+
+th bin and 
+\begin_inset Formula $\vec{N}_{i}^{p}$
+\end_inset
+
+ is the number of predicted events as a function of nuisance parameters
+ in the 
+\begin_inset Formula $i$
+\end_inset
+
+th bin.
+ One recognizes the likelihood function in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:likelihoodPoisson"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ as a product of Poisson distributions with each corresponding to bins 
+\begin_inset Formula $i=1,2,\ldots,M-1,M$
+\end_inset
+
+.
+ The sets of dependent nuisance parameters, also sometimes called systematics,
+ that affect the predicted event rate are
+\end_layout
+
+\begin_layout Itemize
+cross section physics models, labeled as 
+\begin_inset Quotes eld
+\end_inset
+
+xsec
+\begin_inset Quotes erd
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Itemize
+neutrino flux, and
+\end_layout
+
+\begin_layout Itemize
+detector biases and inefficiencies.
+\end_layout
+
+\begin_layout Standard
+Given these three sets of systematics, the number of predicted CC events
+ from any neutrino flavor 
+\begin_inset Formula $\nu_{l}$
+\end_inset
+
+ at ND280 is calculated using the general formula
+\begin_inset Formula 
+\begin{equation}
+N_{\nu_{l}}=\underset{\text{Flux}}{\underbrace{\Phi_{\nu_{l}}}}\left[\sum_{t}\underset{\text{Interactions}}{\underbrace{\left(\sigma_{\nu_{l}}^{t}M_{t}\right)}}\right]\underset{\text{Efficiency}}{\underbrace{\epsilon_{\nu_{l}}}},\label{eq:n-predicted-general}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\Phi_{\nu_{l}}$
+\end_inset
+
+ is the flux of 
+\begin_inset Formula $l$
+\end_inset
+
+ flavor neutrinos, 
+\begin_inset Formula $\sigma_{\nu_{l}}^{t}$
+\end_inset
+
+ is the cross section of the interaction for neutrino flavor 
+\begin_inset Formula $l$
+\end_inset
+
+ on target 
+\begin_inset Formula $t$
+\end_inset
+
+, 
+\begin_inset Formula $M_{t}$
+\end_inset
+
+ is the number of 
+\begin_inset Formula $t$
+\end_inset
+
+ targets, and 
+\begin_inset Formula $\epsilon_{\nu_{l}}$
+\end_inset
+
+ is the total efficiency to reconstruct and properly identify the event
+ as 
+\begin_inset Formula $\nu_{l}$
+\end_inset
+
+CC interactions.
+ Since the cross section is a measure of interaction probability in units
+ of area, multiplication of 
+\begin_inset Formula $M_{t}$
+\end_inset
+
+ represents the effective cross sectional area of material 
+\begin_inset Formula $t$
+\end_inset
+
+ in the detector.
+ Each term in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:n-predicted-general"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is modeled carefully and the efficiency term is estimated using Monte Carlo
+ (MC) simulations and control samples.
+ The number of predicted events from the MC for a given analysis bin 
+\begin_inset Formula $i$
+\end_inset
+
+ is given by
+\begin_inset Formula 
+\begin{equation}
+\vec{N}_{i}^{p}\left(\flux,\xsec,\systematics\right)=w_{i}^{\text{POT}}\left(\systematics\right)_{i}^{\text{Det}}\sum_{j=1}^{N_{i}^{\text{MC}}}\left[\sum_{k=1}^{N^{\text{Flux}}}\left(\delta_{j,k}^{\text{Flux}}\left(\flux\right)_{k}^{\text{Flux}}\right)\prod_{l=1}^{N^{\text{xSyst}}}w_{j,l}\left(\left(\xsec\right)_{l}^{\text{xsec}}\right)\right].\label{eq:n-predicted-BANFF}
+\end{equation}
+
+\end_inset
+
+Here 
+\begin_inset Formula $w_{i}^{\text{POT}}$
+\end_inset
+
+ is the protons on target (POT) weight for the 
+\begin_inset Formula $i$
+\end_inset
+
+th analysis which normalizes the MC statistics to expected data statistics.
+ To account for the detector inefficiencies, the 
+\begin_inset Formula $\left(\systematics\right)_{i}^{\text{Det}}$
+\end_inset
+
+ parameters are normalization parameters that vary the total number of predicted
+ events in the 
+\begin_inset Formula $i$
+\end_inset
+
+th bin.
+ Each 
+\begin_inset Formula $\left(\systematics\right)_{i}^{\text{Det}}$
+\end_inset
+
+ is determined prior to the fit by surveying over a large number of toy
+ experiments with the detector systematics varied in each.
+ The sum over 
+\begin_inset Formula $j=1,2,\ldots,N_{i}^{\text{MC}}-1,N_{i}^{\text{MC}}$
+\end_inset
+
+ considers the contribution of all MC events in the 
+\begin_inset Formula $i$
+\end_inset
+
+th analysis bin.
+ The 
+\begin_inset Formula $\left(\flux\right)_{k}^{\text{Flux}}$
+\end_inset
+
+ parameters, out of a total of 
+\begin_inset Formula $N^{\text{Flux}}$
+\end_inset
+
+, are flux normalization systematics for each flux bin.
+ Since the flux bins are categorized not only by neutrino energy, but also
+ by flavor and horn current, the 
+\begin_inset Formula $\delta_{j,k}^{\text{Flux}}$
+\end_inset
+
+ term in the sum over 
+\begin_inset Formula $k$
+\end_inset
+
+ selects the correct flux bin.
+ The parameters 
+\begin_inset Formula $w_{j,l}$
+\end_inset
+
+ are pre-calculated weights as a function for the 
+\begin_inset Formula $l$
+\end_inset
+
+th cross section model, 
+\begin_inset Formula $\left(\xsec\right)_{l}^{\text{xsec}}$
+\end_inset
+
+, with a total of 
+\begin_inset Formula $N^{\text{xSyst}}$
+\end_inset
+
+ cross section model terms.
+ Different 
+\begin_inset Formula $t$
+\end_inset
+
+ target materials have separate cross section parameters.
+ Also the number of targets 
+\begin_inset Formula $M_{t}$
+\end_inset
+
+ can vary via detector systematics.
+\end_layout
+
+\begin_layout Standard
+Using the likelihood ratio test theorem, a test statistic is defined as
+ taking -2 times the natural logarithm of the ratio of predicted to observed
+ likelihoods
+\begin_inset Formula 
+\begin{equation}
+\Delta\chi_{\text{LLR}}^{2}=-2\log\frac{\mathcal{L}\left(\vec{N}^{d}\left|\vec{N}^{p}\right.\right)}{\mathcal{L}\left(\vec{N}^{d}\left|\vec{N}^{d}\right.\right)},\label{eq:LLHRatio}
+\end{equation}
+
+\end_inset
+
+where this test statistic 
+\begin_inset Formula $\Delta\chi_{\text{LLR}}^{2}$
+\end_inset
+
+ obeys a true chi-squared distribution for asymptotically large statistics
+ and the likelihood functions are of the form 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:likelihoodPoisson"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ The denominator in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:LLHRatio"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is the MC predicted probability which assumes the best maximum likelihood
+ estimate is the number of observed events.
+ Penalty terms from the cross section, flux, and detector systematics are
+ included in order to prevent overfitting of the data.
+ The new test statistic for all of ND280, 
+\begin_inset Formula $\Delta\chi_{\ND280}^{2}$
+\end_inset
+
+, is given by
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned}\Delta\chi_{\ND280}^{2} & =\Delta\chi_{\text{LLR}}^{2}+\Delta\chi_{\text{xsec}}^{2}+\Delta\chi_{\text{Flux}}^{2}+\Delta\chi_{\text{Det}}^{2}\\
+ & -2\left(\log\frac{\mathcal{L}\left(\vec{N}^{d}\left|\vec{N}^{p}\right.\right)}{\mathcal{L}\left(\vec{N}^{d}\left|\vec{N}^{d}\right.\right)}+\log\underset{\text{xsec}}{\underbrace{\pi\left(\xsec\right)}}+\log\underset{\text{Flux}}{\underbrace{\pi\left(\flux\right)}}+\log\underset{\text{Det}}{\underbrace{\pi\left(\systematics\right)}}\right),
+\end{aligned}
+\label{eq:LLHRatioWithPenaltyTerms}
+\end{equation}
+
+\end_inset
+
+where each of the PDFs 
+\begin_inset Formula $\pi\left(\vec{y}=\xsec,\flux,\systematics\right)$
+\end_inset
+
+ are assumed multivariate normal distributions
+\begin_inset Formula 
+\begin{equation}
+\pi(\vec{y})=C_{y}e^{\left(-\frac{1}{2}\Delta\vec{y}\cdot V_{y}^{-1}\cdot\Delta\vec{y}^{T}\right)},\label{eq:nuisancepriorgaussian}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula $\Delta\vec{y}$
+\end_inset
+
+ is a vector with the difference between the current/explored and nominal
+ set of vector parameters 
+\begin_inset Formula $\vec{y}$
+\end_inset
+
+, 
+\begin_inset Formula $T$
+\end_inset
+
+ corresponds to the transpose operator, and the normalization is given by
+\begin_inset Formula 
+\begin{equation}
+C_{y}=\left(\left(2\pi\right)^{k_{y}}\det\left(V_{y}\right)\right)^{-\frac{1}{2}}\label{eq:nuisancepriorgaussiannormalization}
+\end{equation}
+
+\end_inset
+
+with 
+\begin_inset Formula $V_{y}$
+\end_inset
+
+ being the covariance matrix for a vector 
+\begin_inset Formula $\vec{y}$
+\end_inset
+
+ with 
+\begin_inset Formula $k_{y}$
+\end_inset
+
+ rows.
+ The expanded form of the test statistic 
+\begin_inset Formula $\Delta\chi_{\ND280}^{2}$
+\end_inset
+
+ is given by
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned}\Delta\chi_{\ND280}^{2} & =2\sum_{i=1}^{M}\left[\vec{N}_{i}^{p}-\vec{N}_{i}^{d}+\vec{N}_{i}^{d}\log\left(\frac{\vec{N}_{i}^{d}}{\vec{N}_{i}^{p}}\right)\right]\\
+ & +\Delta\xsec\cdot\left(V_{x}^{-1}\right)\cdot\Delta\xsec^{T}+\Delta\flux\cdot\left(V_{b}^{-1}\right)\cdot\Delta\flux^{T}+\Delta\systematics\cdot\left(V_{d}^{-1}\right)\cdot\Delta\systematics^{T}
+\end{aligned}
+\label{eq:BANFFDeltaChiSqr}
+\end{equation}
+
+\end_inset
+
+where the 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\cdot$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ is the matrix multiplication operator.
+ It must be stated that the test statistic 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:BANFFDeltaChiSqr"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ purposefully 
+\shape italic
+excludes normalization terms
+\shape default
+.
+ Once the global minimum of the test statistic is found, the postfit covariance
+ matrix 
+\begin_inset Formula $V$
+\end_inset
+
+ is calculated as the inverse of the Hessian matrix 
+\begin_inset Formula $H$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+V_{i,j}\left(\hat{\vec{y}}\right)=\left(H_{i,j}\right)^{-1}=\left(\left.\frac{\partial^{2}}{\partial y_{i}\partial y_{j}}\left(\Delta\chi_{\ND280}^{2}\right)\right|_{\vec{y}=\hat{\vec{y}}}\right)^{-1}\label{eq:HessianMatrix}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $y_{i},y_{j}\in\vec{y}$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{\vec{y}}$
+\end_inset
+
+ is the maximum likelihood estimate for the parameters 
+\begin_inset Formula $\vec{y}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Flux, Cross Section, and Detector Systematics
+\end_layout
+
+\begin_layout Standard
+Below is a description for each of the systematics in the BANFF likelihood
+ and test statistic penalty terms.
+ First is a description of flux, followed by the cross section, and finally
+ the detector systematics.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Flux
+\series default
+: The flux weight is binned as a function of neutrino energy, horn current/polar
+ity (FHC and RHC), and neutrino flavor (
+\begin_inset Formula $\numu$
+\end_inset
+
+, 
+\begin_inset Formula $\numubar$
+\end_inset
+
+, 
+\begin_inset Formula $\nue$
+\end_inset
+
+, and 
+\begin_inset Formula $\nuebar$
+\end_inset
+
+).
+ There are 50 ND280 and 50 SK parameters with an associated covariance matrix
+ as shown in 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/BANFFLikelihood/BANFF_Flux_matrix.png
+	lyxscale 50
+	width 49text%
+	height 49theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+BANFF pre-fit flux covariance matrix shown with respective detector, horn
+ current, and neutrino flavor.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:BANFF-pre-fit-flux-covariance"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+BANFF Pre-fit Flux Covariance Matrix
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:BANFF-pre-fit-flux-covariance"
+plural "false"
+caps "true"
+noprefix "false"
+
+\end_inset
+
+.
+ The binning and covariance matrix is provided by the T2K flux group prior
+ to the BANFF analysis.
+ Each flux bin is assigned a normalization parameter with initial value
+ of one (1) for all events in that neutrino energy bin.
+ A value of 1.1 indicates that any event in that energy bin has an additional
+ weight of 1.1, or 10% increase in events.
+ An example of the flux normalizations and uncertainties used in the 2017
+ analysis are shown in 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/BANFFLikelihood/FluxParametersPrePostFitTN324.png
+	lyxscale 50
+	width 75text%
+	height 49theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+BANFF ND280 flux 
+\begin_inset Formula $\numu$
+\end_inset
+
+ and 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ binning parameters from T2K-TN-324 data post-fit results.
+ The uncertainties are extracted from the pre-fit and post-fit covariance
+ matrices.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:BANFF-ND280-flux"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+BANFF ND280 NuMu and ANuMu Flux Binning Parameters
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:BANFF-ND280-flux"
+plural "false"
+caps "true"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Cross Section
+\series default
+: There are a number of cross section model systematics implemented in BANFF
+ to account for the uncertainties in cross section measurements.
+ The cross section models used in this analysis are the 2017 Neutrino Interactio
+ns Working Group (NIWG) parameterization, which is a canonical set of parameters
+ and covariance matrix shared among all analyses in T2K.
+ A technical description of the 2017 parameterization is given in TN-315
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bolognesi2017"
+literal "false"
+
+\end_inset
+
+ and TN-307
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mahn2017"
+literal "false"
+
+\end_inset
+
+.
+ There are a total of 25 cross section parameters for interactions like
+ meson exchange current that affect the shape and normalization of the cross
+ section.
+ The cross section correlation matrix is shown in 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/BANFFLikelihood/BANFFXsecPrefitCorrelation.png
+	lyxscale 50
+	width 49text%
+	height 25theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cross section parameters pre-fit correlation matrix from the 2017 BANFF
+ analysis.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Cross-section-correlations-prefit"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+Cross Section Parameters Pre-fit Correlation Matrix
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Cross-section-correlations-prefit"
+plural "false"
+caps "true"
+noprefix "false"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bienstock2017"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Detector Systematic Errors
+\series default
+: Detector systematics are implemented in BANFF to account for uncertainties
+ in detector efficiencies.
+ Since neutrino interaction events can migrate from sample-to-sample, bin-to-bin
+, or both depending on the relevant systematics, numerous toy experiments
+ are performed by varying parameters that model known detector systematics.
+\end_layout
+
+\begin_layout Standard
+After many toy experiments, a covariance matrix among the bins is constructed
+ considering correlations and statistical errors.
+ This detector covariance matrix is fractional to be consistent with the
+ definitions for the flux and cross section covariance matrices.
+ The detector covariance matrix, 
+\begin_inset Formula $\sigma_{\text{Det}}^{2}$
+\end_inset
+
+, between bins 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ given explicitly as
+\begin_inset Formula 
+\begin{equation}
+\sigma_{\text{Det}}^{2}\left(x,y\right)=\frac{1}{x_{\text{Nom}}}\frac{1}{y_{\text{Nom}}}\left(\sigma_{\text{Cov}}^{2}\left(x,y\right)+\sigma_{\text{Stat}}^{2}\left(x,y\right)\right),\label{eq:detectorcovariance}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Quotes eld
+\end_inset
+
+Nom
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+Cov
+\begin_inset Quotes erd
+\end_inset
+
+, and 
+\begin_inset Quotes eld
+\end_inset
+
+Stat
+\begin_inset Quotes erd
+\end_inset
+
+ refer to the nominal MC prediction, covariance, and statistical uncertainties
+ for bins 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+, respectively.
+ The nominal bin expectation for bin 
+\begin_inset Formula $x$
+\end_inset
+
+ is
+\begin_inset Formula 
+\begin{equation}
+x_{\text{Nom}}=\sum_{k=1}^{N_{x}^{\text{MC}}}w_{k},\label{eq:bin-nominal}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $N_{x}^{\text{MC}}$
+\end_inset
+
+ being the number of predicted MC events in the bin and 
+\begin_inset Formula $w_{k}$
+\end_inset
+
+ being the product of all the weights applied to the 
+\begin_inset Formula $k$
+\end_inset
+
+th event (see 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:n-predicted-BANFF"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ for all possible weights).
+ The covariance and statistical terms are given by
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned}\sigma_{\text{Cov}}^{2}\left(x,y\right) & =\frac{1}{N_{\text{Toy}}}\sum_{t=1}^{N_{\text{Toy}}}\left(x_{t}-\overline{x}\right)\left(y_{t}-\overline{y}\right)\\
+\sigma_{\text{Stat}}^{2}\left(x,y\right) & =\delta\left(x,y\right)\sum_{k=1}^{N_{x}^{\text{MC}}}w_{k}^{2},
+\end{aligned}
+\label{eq:detector-cov-terms}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $N_{\text{Toy}}$
+\end_inset
+
+ is the number of toy experiments, 
+\begin_inset Formula $\overline{x}$
+\end_inset
+
+ is the mean of the all the toy experiments in bin 
+\begin_inset Formula $x$
+\end_inset
+
+, and 
+\begin_inset Formula $\delta(x,y)$
+\end_inset
+
+ is the Kronecker delta function.
+ Additional uncertainties like fake data contributions are added to the
+ covariance in quadrature.
+\end_layout
+
+\begin_layout Standard
+While there could be one detector systematic normalization for each analysis
+ bin, also called a observable normalization, a single one can be assigned
+ to multiple analysis bins to reduce the number of fit parameters.
+ This procedure requires careful consideration of the shared detector systematic
+s among analysis bins.
+ A considerable drawback to designing normalizations in this way is that
+ not all detector systematics are Gaussian with respect to the observables
+ 
+\begin_inset Formula $\left(P_{l},\cos\theta_{l}\right)$
+\end_inset
+
+, and so the covariance matrix may not be an accurate representation of
+ the detector systematics.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -4618,7 +4618,7 @@ literal "false"
 \begin_layout Standard
 \begin_inset Branch IntroductionT2K
 inverted 0
-status collapsed
+status open
 
 \begin_layout Section
 Tokai-to-Kamioka Experiment
@@ -7753,10 +7753,8 @@ name "fig:Representative-T2K-events"
 \end_layout
 
 \begin_layout Standard
-Events from SK are not used in this analysis.
- However, the goal of this analysis is to try to improve T2K's sensitivity
- to the currently unknown oscillation parameters.
- Therefore having some background on the oscillation analysis is relevant.
+While events from SK are not used in this analysis, the goal is to try to
+ improve T2K's sensitivity to the currently unknown oscillation parameters.
 \end_layout
 
 \begin_layout Subsubsection
@@ -7779,7 +7777,7 @@ The number of reconstructed neutrino events of flavor
 
 \begin_inset Formula 
 \[
-N_{\nu_{\alpha}}^{\text{SK}}=S_{\nu_{\alpha}}^{\text{SK}}+B
+N_{\nu_{\alpha}}=S_{\nu_{\alpha}}+B
 \]
 
 \end_inset
@@ -7790,8 +7788,8 @@ where
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\begin{aligned}S_{\nu_{\alpha}}^{\text{SK}} & =\sum_{i=1}^{M}\left\{ \sum_{\lambda=e,\mu,\tau}\left[\mathcal{P}_{\nu_{\lambda}\rightarrow\nu_{\alpha}}\left(E_{\nu,i};\vec{o}\right)\right]\times\sum_{t}\left[\sigma_{\nu_{\alpha}}^{t}\left(E_{\nu,i}\right)\cdot t_{N}\right]\right.\\
- & \left.\times\Phi_{\nu_{\alpha}}^{\text{SK}}\left(E_{\nu,i}\right)\times\epsilon\left(p_{\alpha},\theta_{\alpha}\right)\right\} ,
+\begin{aligned}S_{\nu_{\alpha}} & =\sum_{i=1}^{M}\left\{ \sum_{\lambda=e,\mu,\tau}\left[\mathcal{P}_{\nu_{\lambda}\rightarrow\nu_{\alpha}}\left(E_{\nu,i};\vec{o}\right)\right]\times\sum_{t}\left[\sigma_{\nu_{\alpha}}^{t}\left(E_{\nu,i}\right)\cdot t_{N}\right]\right.\\
+ & \left.\times\Phi_{\nu_{\alpha}}\left(E_{\nu,i}\right)\times\epsilon\left(p_{\alpha},\theta_{\alpha}\right)\right\} ,
 \end{aligned}
 \]
 

@@ -1,0 +1,686 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass csuthesisLyx
+\begin_preamble
+% ams math packages
+\usepackage[cmex10]{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+% graphics packages
+\usepackage{graphicx} % remove pdftex if you are not compiling to pdf
+%\graphicspath{{./figures/}} % this places all graphics in the figures subdirectory
+
+% allowed graphics extensions
+% uncomment if you prefer to add extension in \includegraphics
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+
+% allows the creation of subfigures
+\usepackage[caption=false]{subfig}
+
+% book tables are simple and look nice
+\usepackage{booktabs}
+
+% for specifying urls and links
+\usepackage{url}
+\urlstyle{same} % same style as regular text
+
+% for defining colors
+\usepackage{xcolor}
+
+%\usepackage[labelformat=empty]{caption}
+%\usepackage{subcaption}
+\usepackage{lmodern}
+\usepackage{csquotes}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{hepunits}
+\usepackage{hepnames}
+\usepackage{physics}
+
+\usepackage[%
+  pdfpagelabels,
+  pdfusetitle,
+  %hidelinks,
+  %colorlinks=true,
+  %pdfborder={0 0 0},
+  linkcolor=blue,
+  filecolor=magenta,
+  urlcolor=cyan,
+  pagebackref,
+  bookmarksopen,
+  bookmarksnumbered]{hyperref}
+
+\usepackage{sectsty}
+\chapterfont{\centering}
+
+\usepackage{braket}
+\end_preamble
+\use_default_options true
+\master ../Thesis.lyx
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "palatino" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format pdf2
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\pdf_title "HoganThesis"
+\pdf_author "Matthew Hogan"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize letterpaper
+\use_geometry true
+\use_package amsmath 0
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 0
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\branch Introduction
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Subsection
+\begin_inset Formula $\pod$
+\end_inset
+
+ Samples Fit Binning
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Formula $\pod$
+\end_inset
+
+ ND280 BANFF fit uses the samples described in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:P0DSelections"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ The bin edges are tabulated below.
+\end_layout
+
+\begin_layout Itemize
+FHC 
+\begin_inset Formula $\numu$
+\end_inset
+
+CC 1-Track bin edges:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $p$
+\end_inset
+
+ [GeV/c]: 0, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 1, 1.25, 1.5, 2, 3, 4, 5.5, 30
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ : -1, 0.7, 0.8 , 0.88, 0.94, 0.96, 0.975, 0.99, 1
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+FHC 
+\begin_inset Formula $\numu$
+\end_inset
+
+CC N-Tracks bin edges:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $p$
+\end_inset
+
+ [GeV/c]: 0, 0.4, 0.5, 0.6, 0.7, 0.8, 1, 1.2, 1.5, 1.8, 2.2, 2.7, 3.5, 5, 10, 30
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ : -1, 0.65, 0.77, 0.85, 0.9, 0.94, 0.97, 0.99, 1
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+RHC 
+\begin_inset Formula $\numubar$
+\end_inset
+
+CC 1-Track bin edges:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $p$
+\end_inset
+
+ [GeV/c]: 0, 0.4, 0.5, 0.6, 0.7, 0.8, 1, 1.25, 1.5, 2, 3, 30
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ : -1, 0.82, 0.87, 0.9, 0.93, 0.95, 0.97, 0.99, 1
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+RHC 
+\begin_inset Formula $\numubar$
+\end_inset
+
+CC N-Tracks bin edges:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $p$
+\end_inset
+
+ [GeV/c]:0, 0.5, 0.9, 1.25, 1.6, 2, 3, 8, 30
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ : -1, 0.8, 0.89, 0.95, 0.97, 0.99, 1
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+RHC 
+\begin_inset Formula $\numu$
+\end_inset
+
+CC 1-Track bin edges:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $p$
+\end_inset
+
+ [GeV/c]: 0, 0.4, 0.6, 0.8, 1.1, 2, 10
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ : -1, 0.78, 0.84, 0.89, 0.92, 0.95, 0.97, 0.98, 0.99, 1
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+RHC 
+\begin_inset Formula $\numu$
+\end_inset
+
+CC N-Tracks bin edges:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $p$
+\end_inset
+
+ [GeV/c]:0, 0.4, 0.6, 0.8, 1, 1.5, 2, 3, 10
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ : -1, 0.7, 0.8, 0.85, 0.9, 0.94, 0.965, 0.98, 0.99, 1
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Fit Binning Determination
+\end_layout
+
+\begin_layout Standard
+The fit binning is designed to optimized to ensure at least 1 predicted
+ Monte Carlo (MC) event in each bin when scaled to the collected data POT.
+ The fit bins must also account for detector smearing effects.
+ In order to mitigate smearing and event migration, the reconstructed kinematics
+ were examined to their MC truth value using only correctly identified leptons
+ in one-dimensional kinematic slices.
+ Since the MC provides about 10
+\begin_inset Formula $\times$
+\end_inset
+
+ the data statistics, the statistical uncertainty for each bin should be
+ negligible for high statistics regions.
+ The kinematics are scanned across their full relevant spaces in order to
+ understand the needed width for a fit bin.
+ The first fit bin is always defined from the kinematic maximum.
+\end_layout
+
+\begin_layout Standard
+For the momentum bins, the momentum resolution is compared to MC truth.
+ The momentum resolution is defined as
+\begin_inset Formula 
+\[
+R(r,t)=\frac{r-t}{t},
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $r$
+\end_inset
+
+ is the reconstructed momentum and 
+\begin_inset Formula $t$
+\end_inset
+
+ is the true value.
+ The momentum was scanned in finite bin widths with the mean and standard
+ deviation of the resolution 
+\begin_inset Formula $R$
+\end_inset
+
+ extracted.
+ The mean and standard deviation are used as a proxy for the true bias and
+ true resolution, respectively.
+ In addition, a bootstrapping algorithm was employed to understand the accuracy
+ of the sample estimates.
+ Bootstrapping in this context is sampling over all relevant values of true
+ momentum and randomly replacing the values.
+ For each scanned bin, at least 1000 bootstrapping sampling with replacement
+ was performed.
+ In the case of large variances in the bootstrapping samples, additional
+ 10000 sampling with replacement were performed.
+ The results for analyzing the FHC 
+\begin_inset Formula $\numu$
+\end_inset
+
+CC 1-Track selection is shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:MomentumKinematicsBootstrappingNumuCC1Track"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/P0DBANFFParameterization/MomentumKinematicsNumuCC1Track.png
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Momentum event distribution
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/P0DBANFFParameterization/MomentumKinematicsUncertaintiesNumuCC1Track.png
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Momentum resolution
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The momentum event distribution and uncertainty for FHC 
+\begin_inset Formula $\numu$
+\end_inset
+
+CC 1-Track events is shown above.
+ Only correctly identified muons are shown.
+ (a) The number of events per unit momentum is scaled to 
+\begin_inset Formula $10^{20}$
+\end_inset
+
+ POT which is the approximate scale for all the samples in this analysis.
+ A dashed line indicates the maximum of the peak.
+ (b) The resolution of the momentum measurement is shown for a wide region
+ of momenta.
+ In the inset is the resolution zoomed near the momentum distribution maximum.
+ Like in (a), a dashed line shows the momentum maximum.
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $\pod$
+\end_inset
+
+ Momenta Resolutions Used for Fit Binning
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:MomentumKinematicsBootstrappingNumuCC1Track"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The angle bins are treated in an almost identical manner.
+ While the fit bins and physics parameterized in 
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+, the angle with respect to the z-axis, the detector smearing is a function
+ of the angle 
+\begin_inset Formula $\theta.$
+\end_inset
+
+ In addition, since the angle can be nearly zero for the most forward-going
+ tracks, the resolution was not used to characterize the angular uncertainties.
+ Instead, the difference between the true and reconstructed angle were analyzed
+ as shown in .
+ The mean and standard deviation were studied.
+ Bootstrapping was again used to quantify the accuracy of the mean and standard
+ deviation.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/P0DBANFFParameterization/AngleKinematicsNumuCC1Track.png
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Angular event distribution
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/P0DBANFFParameterization/AngleKinematicsUncertaintiesNumuCC1Track.png
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Angular residuals
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The angular event distribution and uncertainty for FHC 
+\begin_inset Formula $\numu$
+\end_inset
+
+CC 1-Track events is shown above.
+ Only correctly identified muons are shown.
+ (a) The number of angular events is scaled to 
+\begin_inset Formula $10^{20}$
+\end_inset
+
+ POT which is the approximate scale for all the samples in this analysis.
+ A dashed line indicates the maximum of the peak.
+ (b) The residual of the angular measurement is shown up to where there
+ are sufficient statistics.
+ Like in (a), a dashed line shows the momentum maximum.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $\pod$
+\end_inset
+
+ Angular Residuals Used for Fit Binning
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:AngularKinematicsBootstrappingNumuCC1Track"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

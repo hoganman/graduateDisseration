@@ -105,6 +105,10 @@
 \end_layout
 
 \begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -184,6 +188,66 @@ done}{{{
 Large
 \backslash
 checkmark}}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+numutitle}{
+\backslash
+texorpdfstring{$
+\backslash
+nu_{
+\backslash
+mu}$}{NuMu}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+numubartitle}{
+\backslash
+texorpdfstring{$
+\backslash
+overline{
+\backslash
+nu}_{
+\backslash
+mu}$}{ANuMu}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+anumutitle}{
+\backslash
+texorpdfstring{$
+\backslash
+overline{
+\backslash
+nu}_{
+\backslash
+mu}$}{ANuMu}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+podtitle}{
+\backslash
+texorpdfstring{PØD}{P0D}}
 \end_layout
 
 \end_inset
