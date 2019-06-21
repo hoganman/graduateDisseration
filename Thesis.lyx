@@ -138,7 +138,7 @@
 \color #faf0e6
 \end_branch
 \branch P0DSelections
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -153,21 +153,26 @@
 \color #faf0e6
 \end_branch
 \branch FitterValidation
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch FitterResults
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch P0DFDGComparisons
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch Discussion
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch AppendixApplicationOfWeights
 \selected 0
 \filename_suffix 0
 \color #faf0e6
@@ -395,7 +400,7 @@ name "chap:Introduction"
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Quote
 \align center
 
 \shape italic
@@ -403,7 +408,7 @@ name "chap:Introduction"
 Chose trop vue n'est chère tenue
 \end_layout
 
-\begin_layout Standard
+\begin_layout Quote
 \align center
 A thing too much seen is little prized
 \end_layout
@@ -668,6 +673,31 @@ filename "Chapters/Discussion.lyx"
 LatexCommand bibtex
 bibfiles "Bibliography/ColostateThesisBibliography"
 options "ColostateThesisBibStylePlain"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\start_of_appendix
+\begin_inset Branch AppendixApplicationOfWeights
+inverted 0
+status open
+
+\begin_layout Chapter
+Application of Weights
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "Appendices/ApplicationOfWeights.lyx"
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
