@@ -110,7 +110,7 @@
 \begin_layout Standard
 \begin_inset Branch IntroductionNeutrinos
 inverted 0
-status collapsed
+status open
 
 \begin_layout Section
 Introduction to Neutrinos
@@ -151,8 +151,8 @@ The history of the neutrino can be traced back to electron energy spectrum
 \end_inset
 
 -decay spectrum was not this way posed a fundamental problem for physicists
- in the mid-1910s and later, was energy conserved? Two solutions were postulated
-: either the 
+ in the mid-1910s that energy was not conserved.
+ Two solutions were postulated: either the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -170,7 +170,7 @@ literal "false"
 \begin_inset Quotes erd
 \end_inset
 
- The latter solution was supported by Wolfgang Pauli in a letter dated 4
+ The latter solution was proposed by Wolfgang Pauli in a letter dated 4
  December 1930 to a group of physicists meeting in Tübingen, modern Germany,
  where he first proposed the neutrino
 \begin_inset Foot
@@ -239,11 +239,19 @@ little neutral one
 \end_layout
 
 \begin_layout Standard
-The neutrino was first discovered in 1953 by Clyde Cowan and Frederick Reines
+The neutrino was first observed in 1953 by Clyde Cowan and Frederick Reines
  using a nuclear reactor in South Carolina, U.S.A..
- Since then three types of neutrinos have been observed and from unique
- sources like the Sun and a supernova.
- Neutrino physics continues to be an active region of physics since neutrinos
+ Since then three types or 
+\begin_inset Quotes eld
+\end_inset
+
+flavors
+\begin_inset Quotes erd
+\end_inset
+
+ of neutrinos and antineutrinos have been observed from accelerators and
+ also from unique sources like the Sun and a supernova.
+ Neutrino physics continues to be an active area of physics since neutrinos
  are unique probes to processes otherwise inaccessible in laboratories.
  For instance in the depths of the Sun's core where fusion occurs and neutrinos
  are created, neutrinos are able to travel through the ultra dense and hot
@@ -279,16 +287,16 @@ To give some perspective to this number, this means 70 billion neutrinos
 \end_inset
 
 , statistically one solar neutrino can harmlessly interact with an individual
- in her lifetime.
+ in their lifetime.
  So this begs the question: how does one detect a neutrino? The short answer
- is one needs a ultra large volume of matter and a large enough flux of
- neutrinos in its path just to detect one given today's technology.
+ is one requires a large enough flux of neutrinos passing through a large
+ dense volume of matter just to detect one given today's technology.
  
 \end_layout
 
 \begin_layout Standard
-Scientists continue to be interested in neutrinos due to properties they
- exhibit.
+Scientists continue to be interested in neutrinos due to the unusual properties
+ they exhibit.
  One of the more recent and surprising aspects about neutrinos is their
  ability to undergo 
 \begin_inset Quotes eld
@@ -300,8 +308,9 @@ flavor oscillations
 
  where a neutrino of definite flavor (type) is created and later observed
  as a different flavor.
- The impact of such oscillations could help explain the observed matter
- and anti-matter asymmetry in the Universe.
+ The impact of differences between neutrino and antineutrino oscillations
+ could help explain the observed matter and anti-matter asymmetry in the
+ Universe which one of the most profound mysteries in physics today.
 \end_layout
 
 \begin_layout Subsection
@@ -316,10 +325,12 @@ name "subsec:nuSM"
 \end_layout
 
 \begin_layout Standard
-The Standard Model (SM) of particle physics is the theory that describes
- the electromagnetic, strong nuclear, and weak nuclear forces and the elementary
- particles therein.
- These three forces and the gravitational force constitute the four 
+The Standard Model (SM) of particle physics is the theory of elementary
+ or fundamental particle constituents and the forces between them.
+ These standard model forces are the electromagnetic, weak and strong.
+ String theory, which is not yet tested, attempts to incorporate the gravitation
+al force.
+ The SM forces and the gravitational force constitute the four 
 \shape italic
 known
 \shape default
@@ -345,8 +356,7 @@ gauge bosons
 \begin_inset Formula $(0,1,2,...)$
 \end_inset
 
- spin that come in temporary but unobservable existence to mediate the interacti
-on.
+ spin that mediate the interaction.
  The weak nuclear bosons, the charged 
 \begin_inset Formula $W^{\pm}$
 \end_inset
@@ -452,8 +462,17 @@ weak isospin doublet
 \begin_inset Formula $\times$
 \end_inset
 
-U(1) symmetry which leads to the required existence of the photon and W
- and Z bosons
+U(1) symmetry which leads to the postulated existence of the photon, the
+ 
+\begin_inset Formula $W^{\pm}$
+\end_inset
+
+ and 
+\begin_inset Formula $Z$
+\end_inset
+
+ bosons.
+ They are necessary to enable local gauge invariance
 \begin_inset Foot
 status collapsed
 
@@ -520,8 +539,8 @@ weak force
 \begin_inset Quotes erd
 \end_inset
 
- comes from the fact that this force is has a much smaller effective range
- than the electromagnetic, strong nuclear, and gravitational forces.
+ comes from the fact that this force is much weaker than the electromagnetic
+ and strong nuclear forces.
  This is due to the weak mediating bosons, the 
 \begin_inset Formula $W^{\pm}$
 \end_inset
@@ -536,7 +555,7 @@ weak force
 
 ).
  The 
-\begin_inset Formula $W/Z$
+\begin_inset Formula $W^{\pm}/Z$
 \end_inset
 
  have masses of 80/90 
@@ -558,7 +577,7 @@ off-shell
 \end_inset
 
 ) of the 
-\begin_inset Formula $W$
+\begin_inset Formula $W^{\pm}$
 \end_inset
 
  and 
@@ -648,8 +667,8 @@ where
 \begin_layout Standard
 Weak interactions are classified into two classes of interactions: charged
  current (CC) and neutral current (NC).
- CC interactions involve a charged W boson and change the scattering neutrino
- into a electrically charged lepton of flavor 
+ The CC interactions involve a charged W boson and change the scattering
+ neutrino into a electrically charged lepton of flavor 
 \begin_inset Formula $l$
 \end_inset
 
@@ -659,7 +678,7 @@ Weak interactions are classified into two classes of interactions: charged
 
  is inferred from the charged lepton.
  The same cannot be said of NC interactions which exchange a neutral Z boson.
- NC interactions are flavor agnostic since they do not produce a charged
+ The NC interactions are flavor agnostic since they do not produce a charged
  lepton.
  An example of each interaction type is shown in 
 \begin_inset CommandInset ref
@@ -679,14 +698,14 @@ noprefix "false"
 placement t
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -718,13 +737,13 @@ Muon Decay
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figures/Introduction/NCScatteringJaxoDraw.png
-	lyxscale 25
+	lyxscale 75
 	height 25theight%
 
 \end_inset
@@ -813,15 +832,15 @@ name "subsec:Chirality"
 \end_layout
 
 \begin_layout Standard
-Neutrinos are observed to have anti-parallel momentum vectors 
-\begin_inset Formula $\boldsymbol{P}$
-\end_inset
-
- to their spin vectors 
+Neutrinos are observed to have their spin direction vectors 
 \begin_inset Formula $\boldsymbol{\Sigma}$
 \end_inset
 
- and the opposite is true for anti-neutrinos.
+ opposite to their momentum 
+\begin_inset Formula $\boldsymbol{P}$
+\end_inset
+
+ and this is reversed for anti-neutrinos.
  This property is called helicity and is given by 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -840,8 +859,12 @@ noprefix "false"
 
 \end_inset
 
-While detecting neutrinos is hard as it is, the helicity is inferred from
- the daughter muon in charged pion decay.
+Although neutrino detection is difficult, the neutrino helicity is readily
+ inferred from the decay of the daughter muon in the pion decay, 
+\begin_inset Formula $\pion^{\pm}\rightarrow\mu^{\pm}+\nuantinuparticle{\mu}$
+\end_inset
+
+.
  Since a pion has net zero (0) spin, the spin vectors of the daughters must
  also sum to zero.
  The muon from a 
@@ -1678,7 +1701,7 @@ final state interactions
 \begin_inset Quotes erd
 \end_inset
 
- (FSI) which are observable in an experiment.
+ (FSI) are what is actually observable in an experiment.
 \end_layout
 
 \begin_layout Standard
@@ -1701,7 +1724,7 @@ Neutrino-nuclear scattering presented in this thesis come in three primary
 \end_inset
 
 ).
- CCQE interactions are the lowest energy CC interaction with a nucleon.
+ The CCQE interactions are the lowest energy CC interaction with a nucleon.
  While CCQE models work well for low-Z atoms like hydrogen, they do not
  extend well into many nucleon atoms.
  CCDIS is a high energy transfer process that shatters the nucleus apart
@@ -1734,32 +1757,40 @@ name "subsec:Neutrino-Oscillations"
 \end_layout
 
 \begin_layout Standard
-Neutrino oscillations are the observation of a neutrino produced of definite
- flavor and later observed as a different flavor.
+Neutrino oscillations are the observation of a neutrino produced with a
+ particular, definite flavor and later observed as a different flavor.
  This phenomenon was first observed as a deficit of neutrinos for a number
  of atmospheric and solar neutrino experiments.
  The deficit also seemed more pronounced for atmospheric neutrinos as the
  distance from their source increased.
  For neutrino oscillations to occur, at least one neutrino must be massive.
- This observation firmly established that the SM is wrong with its prediction
+ This observation firmly established that the SM is wrong with its assumption
  of massless neutrinos.
 \end_layout
 
 \begin_layout Standard
-The first indication of neutrino oscillations was from the Ray Davis Homesteak
- Mine experiment which began in the 1960s.
- Ray Davis was an expert Chemist and designed a radiochemical experiment
+The first indication of neutrino oscillations was from the Ray Davis Homestake
+ Mine experiment 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "1998ApJ...496..505C"
+literal "false"
+
+\end_inset
+
+which began in the 1960s.
+ Ray Davis was an expert chemist and designed a radiochemical experiment
  to measure the flux of neutrinos from Sun.
  The purpose of this experiment was to test John Bahcall's prediction of
  the fusion rate in the Sun and neutrino flux from it as well.
  Davis' experiment would need to operate for many years to collect enough
  statistics due to expected low capture rate.
  Measurements continued into the 1980s and showed that the flux of neutrinos
- as measured at Homesteak was about 
+ as measured at Homesteak and this was about 
 \begin_inset Formula $\nicefrac{1}{3}$
 \end_inset
 
- the expected rate and became known as the 
+ the expected rate and this became known as the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1767,8 +1798,8 @@ Solar Neutrino Problem.
 \begin_inset Quotes erd
 \end_inset
 
- The primary solutions were either the the solar model was incorrect or
- the neutrino capture cross section is incorrect somehow.
+ The primary solutions were either the solar model was incorrect or the
+ neutrino capture cross section was incorrect.
  The Sudbury Neutrino Observatory (SNO) was able to resolve this problem
  by making a model-independent measurement of the solar neutrino flux.
  SNO observed a 
@@ -1818,11 +1849,21 @@ Another outstanding problem emerged with measurements of atmospheric neutrinos,
 \end_layout
 
 \begin_layout Standard
-While the phenomenon of neutrino oscillations has been understood for almost
- three decades, it was not predicted since oscillations require the neutrino
- has mass.
- The reasons why neutrino oscillations require massive neutrinos are explained
- in the next subsection.
+The observation of neutrino oscillations is relatively new, or about three
+ decades old.
+ Bruno Pontecorvo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Pontecorvo:1957cp"
+literal "false"
+
+\end_inset
+
+ first proposed such a mechanism in 1957 between neutrinos and antineutrinos
+ much like known neutral K-mesons oscillations.
+ However, oscillations between flavored neutrinos was not expected since
+ it requires the neutrino to have mass.
+ The reasons why are explained in the next subsection.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1994,15 +2035,7 @@ mass
 
 , respectively.
  However, experiments can produce neutrinos, as well as probe them, only
- of definite 
-\begin_inset Quotes eld
-\end_inset
-
-flavor
-\begin_inset Quotes erd
-\end_inset
-
-, denoted by a Greek letter subscript 
+ in a definite flavor state, denoted by a Greek letter subscript 
 \begin_inset Formula $\lambda$
 \end_inset
 
@@ -2190,8 +2223,8 @@ name "fig:twoflavorrotation"
 \begin_inset Formula 
 \begin{equation}
 \begin{aligned}\mathcal{P}\left(\nu_{\alpha}\rightarrow\nu_{\beta}\right) & =\left|\braket{\nu_{\alpha}(t=0)|\nu_{\beta}(t=T)}\right|^{2}\\
- & =\left|\left(\cos(\theta)\diracbra{\nu_{1}(t=0)}+\sin(\theta)\diracbra{\nu_{2}(t=0)}\right)\right.\\
- & \times\left.\left(-\sin(\theta)\diracket{\nu_{1}(t=T)}+\cos(\theta)\diracket{\nu_{2}(t=T)}\right)\right|^{2}.
+ & =\left|\left\{ \cos(\theta)\diracbra{\nu_{1}(t=0)}+\sin(\theta)\diracbra{\nu_{2}(t=0)}\right\} \right.\\
+ & \times\left.\left\{ -\sin(\theta)\diracket{\nu_{1}(t=T)}+\cos(\theta)\diracket{\nu_{2}(t=T)}\right\} \right|^{2}.
 \end{aligned}
 \label{eq:prob2flavorexpanded}
 \end{equation}
@@ -2251,7 +2284,12 @@ noprefix "false"
 
 \end_inset
 
- demonstrates that the probability changes sinusoidally.
+ demonstrates that the probability changes sinusoidally as a function of
+ time 
+\begin_inset Formula $T$
+\end_inset
+
+.
  This equation is not, however, terribly useful in the laboratory frame
  since it is hard to design an experiment where the travel time an individual
  neutrino is well known.
@@ -2700,14 +2738,14 @@ noprefix "false"
  
 \begin_inset Formula 
 \begin{equation}
-\begin{aligned}U_{\text{MNSP}} & =\stackrel{U_{\text{atm}}}{\overbrace{\begin{bmatrix}\begin{array}{rrr}
+\begin{aligned}U_{\text{MNSP}} & =\stackrel{U_{32}=U_{\text{atm}}}{\overbrace{\begin{bmatrix}\begin{array}{rrr}
 1 & 0 & 0\\
 0 & c_{32} & s_{32}\\
 0 & -s_{32} & c_{32}
-\end{array}\end{bmatrix}}}\times\stackrel{U_{\text{rea}}}{\overbrace{\begin{bmatrix}c_{31} & 0 & s_{31}e^{i\delta_{\text{CP}}}\\
+\end{array}\end{bmatrix}}}\times\stackrel{U_{31}=U_{\text{rea}}}{\overbrace{\begin{bmatrix}c_{31} & 0 & s_{31}e^{i\delta_{\text{CP}}}\\
 0 & 1 & 0\\
 -s_{31}e^{-i\delta_{\text{CP}}} & 0 & c_{31}
-\end{bmatrix}}}\times\stackrel{U_{\text{sol}}}{\overbrace{\begin{bmatrix}\begin{array}{rrr}
+\end{bmatrix}}}\times\stackrel{U_{21}=U_{\text{sol}}}{\overbrace{\begin{bmatrix}\begin{array}{rrr}
 c_{21} & s_{21} & 0\\
 -s_{21} & c_{21} & 0\\
 0 & 0 & 1
@@ -2730,8 +2768,12 @@ and
 \end_inset
 
  represents the CP violating phase.
- Each rotation matrix represents the different sources for neutrino oscillations
- experiments with 
+ Each rotation matrix 
+\begin_inset Formula $U_{ij}$
+\end_inset
+
+ represents the different sources for neutrino oscillations experiments
+ with 
 \begin_inset Quotes eld
 \end_inset
 
@@ -3307,8 +3349,16 @@ Unfortunately, neutrino oscillations are not able to probe the Majorana
 \begin_inset Formula $\nu\neq\overline{\nu})$
 \end_inset
 
- particles is an open question and is being explored by non-oscillation
- experiments.
+ particles is an open question and is being explored by neutrinoless double
+ beta decay experiments
+\begin_inset CommandInset citation
+LatexCommand cite
+key "1982PhRvD..25.2951S"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -3398,21 +3448,12 @@ and
 \end_inset
 
 .
- Since all CP violating terms in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "eq:numu2numuthreeflavorfull"
-plural "false"
-caps "false"
-noprefix "false"
-
+ If a definitive measurement of 
+\begin_inset Formula $\prob{\numu\rightarrow\numu}\neq\prob{\numubar\rightarrow\numubar}$
 \end_inset
 
- are even functions of 
-\begin_inset Formula $\deltacp$
-\end_inset
-
-, this channel does not offer insights into CP violation in a vacuum
+ in vacuum occurs, this implies that the combined C, P and time (CPT) symmetry
+ is violated
 \begin_inset Foot
 status collapsed
 
@@ -3636,8 +3677,10 @@ Electron Neutrino Appearance
 \end_layout
 
 \begin_layout Standard
-While CP violation is not observable in muon neutrino disappearance, it
- is with electron neutrino appearance.
+The previous subsection briefly explored the muon disappearance probability,
+ which is not tested as a channel for CP violation.
+ Electron neutrino appearance, however, does provide insight into CP violation
+ in the lepton sector.
  The appearance probability of electron neutrinos types from muon types
  is given by
 \begin_inset Formula 
@@ -3689,8 +3732,8 @@ literal "false"
 \end_inset
 
 .
- This oscillation channel are of primary importance in accelerator and atmospher
-ic neutrino oscillation experiments.
+ This oscillation channel are of primary importance in current and future
+ proposed accelerator and atmospheric neutrino oscillation experiments.
 \end_layout
 
 \begin_layout Standard
@@ -4339,9 +4382,16 @@ name "subsubsec:Matter-Effects"
 \begin_layout Standard
 Traveling through matter has the potential to increase the sensitivity of
  oscillation measurements if the baseline is long enough.
- Known as the Mikheyev-Smirnov-Wolfenstein (MSW) effect, all oscillations
- are affected by coherent forward scattering of neutrinos with electrons
- in the media.
+ Known as the Mikheyev-Smirnov-Wolfenstein (MSW) effect 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevD.17.2369"
+literal "false"
+
+\end_inset
+
+, all oscillations are affected by coherent forward scattering of neutrinos
+ with electrons in the media.
  Taking the example of 
 \begin_inset Formula $\nuantinuparticle{\mu}\rightarrow\nuantinuparticle e$
 \end_inset
@@ -4463,7 +4513,7 @@ To conclude the introduction on neutrinos, it is important to examine the
 placement t
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4481,8 +4531,8 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Matter and energy content of the Universe display that while the Universe
- consists of 4.5% of baryonic matter.
+Display of the matter and energy content of the Universe.
+ The observed content is 4.5% of baryonic matter.
  The rest of the Universe consists of non-baryonic matter called Dark Matter
  and a form of energy called Dark Energy.
  These inferred parameters are taken from the 
@@ -4503,7 +4553,7 @@ literal "false"
 status open
 
 \begin_layout Plain Layout
-Matter And Energy Content of the Universe
+Display of the matter and energy content of the Universe
 \end_layout
 
 \end_inset
@@ -5486,7 +5536,7 @@ name "fig:JPARCNeutrinobeamline"
 
 \begin_layout Standard
 The neutrino beamline is designed to direct the protons toward SK and generate
- neutrinos by impinging them on a cylindrical target.
+ neutrinos by striking them on a cylindrical target.
  
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -5660,8 +5710,12 @@ noprefix "false"
 \end_inset
 
  graphite rod which corresponds to 1.9 radiation lengths.
- When the protons impinge the target, strong (nuclear) interactions produce
- pi-mesons (pions) and ka-mesons (kaons).
+ When the protons strike the target, strong (nuclear) interactions produce
+ pi(
+\begin_inset Formula $\pi$
+\end_inset
+
+)-mesons (pions) and K-mesons (kaons).
  like those produced from cosmic ray collisions in the upper atmosphere.
  To enhance the flux of neutrinos, a series of three current pulsed, focusing
  magnets called horns
@@ -5710,7 +5764,7 @@ noprefix "false"
  atm of pressure which has a low pion absorption rate.
  The daughter particles in the decay volume should be mostly muons and muon-neut
 rinos traveling towards SK.
- An beam dump is placed at the end of the decay volume to stop particles
+ A beam dump is placed at the end of the decay volume to stop particles
  that have not yet decayed to prevent uncontrolled for decay products from
  contaminating the beam.
 \end_layout
@@ -5868,13 +5922,14 @@ Neutrino Near Detectors: ND280
 
 \begin_layout Standard
 T2K has a near detector (ND) site at J-PARC that is designed specifically
- observe the neutrinos in flight.
+ observe the neutrinos in flight aimed at Super-K.
  The purpose of a ND site is to 
 \shape italic
 constrain the neutrino flux and interaction rate
 \shape default
  at SK in order to reduce the impact of their systematic uncertainties in
  the oscillation analysis.
+ The analysis in this thesis uses the data provided by othe ff-axis ND.
  The site is called ND280 and is located 280m away from the production target.
  The primary detector is an off-axis, magnetized tracking detector consisting
  of different subdetectors.
@@ -5883,10 +5938,6 @@ constrain the neutrino flux and interaction rate
  Both on-axis and off-axis detectors extensively utilize a commercial light
  sensor called a multi-pixel photon counter (MPPC) for the light collection
  in the scintillator-based detectors.
-\end_layout
-
-\begin_layout Standard
-The analysis in this thesis uses the data provided by off-axis ND.
 \end_layout
 
 \begin_layout Standard
@@ -5963,12 +6014,13 @@ Schematic of INGRID
 \end_layout
 
 \begin_layout Standard
-What follows from here is a description of the MPPC technology used in T2K.
+The following subsections begin with a description of the MPPC technology
+ used in T2K.
  Next is a description of INGRID and its purpose at ND280.
  This is followed by a general description primary off-axis, magnetized
  detector.
- This subsection is finished with descriptions of two subdetectors in the
- off axis detector.
+ The last two subsections are descriptions of two primary subdetectors in
+ the off axis detector.
  The first and second being the pi-zero detector (
 \begin_inset Formula $\pod$
 \end_inset
@@ -6106,7 +6158,7 @@ noprefix "false"
  Each module consists of alternating layers of iron plates and scintillator
  bars except for the two most downstream scintillating layers which lack
  iron plates.
- To monitor the beam asymmetry, two separate modules are placed off the
+ To monitor any beam asymmetry, two separate modules are placed off the
  grid axis.
 \end_layout
 
@@ -6204,8 +6256,8 @@ INGRID Beam Profile
 \end_layout
 
 \begin_layout Standard
-INGRID is continually monitored to ensure the neutrino beam center is properly
- aligned at its designed center.
+INGRID is continuously operated to check that the neutrino beam center was
+ properly aligned at its designed center.
  Diagnostic plots such as 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -6295,7 +6347,7 @@ Off-Axis Detector Summary
 \end_layout
 
 \begin_layout Standard
-The primary near detector for T2K, ND280, is an off-axis, magnetized tracking
+The near detector in T2K is ND280, which is an off-axis, magnetized tracking
  detector.
  It is a collection of different detector technologies designed to facilitate
  three primary measurements:
@@ -6405,11 +6457,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-The focus of this thesis are the 
+The analysis in this thesis use measurements from the primary subdetectors,
+ the 
 \begin_inset Formula $\pod$
 \end_inset
 
- and the TPC since they are the primary subdetectors used in the analysis.
+ and the TPC.
  The 
 \begin_inset Formula $\pod$
 \end_inset
@@ -6761,8 +6814,9 @@ The
 \begin_inset Formula $\pod$
 \end_inset
 
- is a dynamic detector which can be filled or drained of water enabling
- the determination of water target (WT) cross sections.
+ is a modifiable detector which can be filled or drained of water during
+ data taking, enabling the determination of water target (WT) cross sections
+ by comparing water-in data with water-out data.
 \end_layout
 
 \begin_layout Standard
@@ -7439,9 +7493,9 @@ Off Axis Time Projection Chamber (TPC)
 \end_layout
 
 \begin_layout Standard
-The ND280 TPC is designed to provide momenta measurements as discussed above,
- high resolution particle counting capabilities, and particle identification
- based on energy deposition.
+The ND280 TPC is designed to provide momenta measurements of charged particle
+ tracks as discussed above, high resolution particle counting capabilities,
+ and particle identification based on energy deposition.
  The latter most aspect is not utilized in this thesis.
  The TPC is divided into three volumes separated by the two FGD volumes.
  Each TPC volume (
@@ -7627,7 +7681,7 @@ For
 \begin_layout Standard
 \begin_inset Branch IntroductionT2KFarDetector
 inverted 0
-status collapsed
+status open
 
 \begin_layout Subsection
 Neutrino Far Detector: Super-Kamiokande
@@ -7717,10 +7771,10 @@ When charged particles travel through the water, a Cherenkov radiation cone
  is produced.
  The sharpness of the cone edge is an unique ID for the particle species
  that produced it.
- An electron produces a fuzzy edge since it experiences many large multi-scatter
-s off the water molecules.
+ An electron produces a fuzzy edge since it experiences many large multiple
+ scatterings off the water molecules.
  A muon on the other hand produces a sharp edge since it is much more massive
- and less perturbed by the molecules.
+ and thus less perturbed by the water molecules.
  Both types of events are shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -7802,7 +7856,10 @@ name "fig:Representative-T2K-events"
 
 \begin_layout Standard
 While events from SK are not used in this analysis, the goal is to try to
- improve T2K's sensitivity to the currently unknown oscillation parameters.
+ improve T2K's parameters which depend on comparing the Near Detector neutrino
+ measurements to the Far Detector neutrino measurements.
+ Having some background on the oscillations analysis is relevant and discussed
+ in the next section.
 \end_layout
 
 \begin_layout Subsubsection
@@ -7825,7 +7882,7 @@ The number of reconstructed neutrino events of flavor
 
 \begin_inset Formula 
 \[
-N_{\nu_{\alpha}}=S_{\nu_{\alpha}}+B
+N_{\nu_{\lambda}}=S_{\nu_{\alpha}}+B
 \]
 
 \end_inset

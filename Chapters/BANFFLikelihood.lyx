@@ -175,11 +175,14 @@ status open
 
 \begin_layout Standard
 The BANFF likelihood maximization procedure is a binned likelihood maximization
- of the ND280 data.
- In a ND280 and Super-Kamiokande (SK) joint fit, the measurements from both
- detectors are considered along with their respective nuisance parameters.
- This approach is more computationally expensive compared to the Markov
- Chain Monte Carlo analysis (MaCh3) which will not be explained here.
+ fitting of the ND280 data.
+ This is separate from the fitting the Super-Kamiokande (SK) data.
+ In a joint fit, the measurements from both detectors are considered along
+ with their respective nuisance parameters.
+ This approach is more computationally expensive since the time to perform
+ a fit increases non-linearly with increasing the number of fit parameters.
+ However it is developed in an alternate method called the Markov Chain
+ Monte Carlo analysis (MaCh3) and this will not be explained here.
  The BANFF likelihood maximization, hitherto referred to as the 
 \begin_inset Quotes eld
 \end_inset
@@ -209,7 +212,20 @@ divide-and-conquer
 \end_layout
 
 \begin_layout Standard
-The modern BANFF-fit likelihood is described in detail in TN-220
+The modern BANFF-fit likelihood is described in detail in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+todo{Insert PRD instead}
+\end_layout
+
+\end_inset
+
+TN-220
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Hartz2015"
@@ -220,15 +236,8 @@ literal "false"
 .
  It uses a frequentist approach to find the best nuisance parameter set
  to maximize a binned likelihood.
- Subsequent updates to the BANFF analysis
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Hartz2016,Bienstock2017,Bienstock2018"
-literal "false"
-
-\end_inset
-
- increase the sample sizes and systematic parameterizations.
+ Subsequent updates to the BANFF-fit have increased the sample sizes and
+ systematic parameterizations.
 \end_layout
 
 \end_inset
@@ -560,11 +569,12 @@ noprefix "false"
 
 \end_inset
 
- as a product of Poisson distributions with each corresponding to bins 
-\begin_inset Formula $i=1,2,\ldots,M-1,M$
+ as a product of Poisson distributions, since this is counting data measured
+ in 
+\begin_inset Formula $M$
 \end_inset
 
-.
+ analysis bins.
  The sets of dependent nuisance parameters, also sometimes called systematics,
  that affect the predicted event rate are
 \end_layout
@@ -598,7 +608,7 @@ Given these three sets of systematics, the number of predicted CC events
  at ND280 is calculated using the general formula
 \begin_inset Formula 
 \begin{equation}
-N_{\nu_{l}}=\underset{\text{Flux}}{\underbrace{\Phi_{\nu_{l}}}}\left[\sum_{t}\underset{\text{Interactions}}{\underbrace{\left(\sigma_{\nu_{l}}^{t}M_{t}\right)}}\right]\underset{\text{Efficiency}}{\underbrace{\epsilon_{\nu_{l}}}},\label{eq:n-predicted-general}
+N_{\nu_{l}}=\underset{\text{Flux per area}}{\underbrace{\Phi_{\nu_{l}}}}\left[\sum_{t}\underset{\text{Effective area}}{\underbrace{\left(\sigma_{\nu_{l}}^{t}M_{t}\right)}}\right]\underset{\text{Efficiency}}{\underbrace{\epsilon_{\nu_{l}}}},\label{eq:n-predicted-general}
 \end{equation}
 
 \end_inset
@@ -1071,7 +1081,20 @@ BANFF ND280 flux
 \begin_inset Formula $\numubar$
 \end_inset
 
- binning parameters from T2K-TN-324 data post-fit results.
+ binning parameters from 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+todo{Insert PRD ref}
+\end_layout
+
+\end_inset
+
+TN-324 data post-fit results.
  The uncertainties are extracted from the pre-fit and post-fit covariance
  matrices.
 \begin_inset CommandInset label
@@ -1124,7 +1147,20 @@ Cross Section
  The cross section models used in this analysis are the 2017 Neutrino Interactio
 ns Working Group (NIWG) parameterization, which is a canonical set of parameters
  and covariance matrix shared among all analyses in T2K.
- A technical description of the 2017 parameterization is given in TN-315
+ A technical description of the 2017 parameterization is given in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+todo{insert PRD ref}
+\end_layout
+
+\end_inset
+
+TN-315
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Bolognesi2017"
@@ -1367,8 +1403,8 @@ s among analysis bins.
 \begin_inset Formula $\left(P_{l},\cos\theta_{l}\right)$
 \end_inset
 
-, and so the covariance matrix may not be an accurate representation of
- the detector systematics.
+, and so the covariance matrix is not an exact representation of the detector
+ systematics.
 \end_layout
 
 \end_inset
