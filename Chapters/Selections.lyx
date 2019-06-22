@@ -1359,6 +1359,13 @@ noprefix "false"
 
 \begin_layout Section
 Selection Kinematics
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Selection-Kinematics"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1397,12 +1404,28 @@ numutitle{}
 \end_inset
 
  FHC CC 1-Track
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:numuFHCCC1Trk"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-This selection provides the CCQE-enriched samples in FHC mode.
- Figure XX display the momentum and angular distributions that are inputs
- to BANFF.
+This selection provides the CCQE-like samples in FHC mode.
+ 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:numuFHCCC1TrkReco"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ display the momentum and angular distributions that are inputs to BANFF.
  In the majority of cases, the lepton candidate is the true muon.
  The underlying true kinematics, 
 \begin_inset Formula $E_{\nu}$
@@ -1412,8 +1435,17 @@ This selection provides the CCQE-enriched samples in FHC mode.
 \begin_inset Formula $Q^{2}$
 \end_inset
 
-, of the interactions are shown below which are of theoretical importance
- in the cross section and flux models.
+, of the interactions are shown in 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:numuFHCCC1TrkTrue"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ which are of theoretical importance in the cross section and flux models.
 \end_layout
 
 \begin_layout Standard
@@ -1421,7 +1453,7 @@ This selection provides the CCQE-enriched samples in FHC mode.
 placement t
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1446,7 +1478,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Water-out
 \end_layout
 
 \end_inset
@@ -1478,7 +1510,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Water-out
 \end_layout
 
 \end_inset
@@ -1514,7 +1546,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Water-in
 \end_layout
 
 \end_inset
@@ -1546,7 +1578,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Water-in
 \end_layout
 
 \end_inset
@@ -1566,7 +1598,7 @@ status open
 \begin_inset Formula $\numu$
 \end_inset
 
- FHC CC 1-Track in 
+ in FHC CC 1-Track in 
 \begin_inset Formula $P$
 \end_inset
 
@@ -1575,10 +1607,47 @@ status open
 \end_inset
 
  distributions broken down by true NEUT interaction modes.
- The top figures (a) and (b) are water-out mode.
- The bottom (c) and (d) figures are water-in mode.
+ The top figures (a) and (b) are for 
+\begin_inset Formula $\pod$
+\end_inset
+
+ water-out mode.
+ The bottom (c) and (d) figures are 
+\begin_inset Formula $\pod$
+\end_inset
+
+ water-in mode.
  Each distribution is normalized to the FHC POT collected between run periods
  2 - 8.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numutitle{}
+\end_layout
+
+\end_inset
+
+ FHC CC 1-Track Reconstructed Kinematics
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:numuFHCCC1TrkReco"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1592,20 +1661,18 @@ status open
 \end_layout
 
 \begin_layout Standard
-In this selection are a modest fraction of non-CCQE interactions.
- The largest contamination is single pion interactions (
-\begin_inset Formula $1\pion$
+An interesting CCQE-like topology in this selection are 
+\begin_inset Quotes eld
 \end_inset
 
-), which can happen for a number of reasons.
- First when the final state pion is produced, it is subject to final state
- interactions (FSI) where a pion can be absorbed or scatter in or out of
- the nucleus.
- In addition, a pion might not be reconstructed as a track in the 
-\begin_inset Formula $\pod$
+2 particle 2 hole
+\begin_inset Quotes erd
 \end_inset
 
- if its energy is below reconstruction threshold.
+ (2p2h) events where neutrino scatters off a correlated (aka nearby and
+ interacting) nucleon pair.
+ Interaction model for 2p2h are included the BANFF fit whose model uncertainties
+ are quite large in T2K.
 \end_layout
 
 \begin_layout Standard
@@ -1613,7 +1680,7 @@ In this selection are a modest fraction of non-CCQE interactions.
 placement t
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1638,7 +1705,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Neutrino Energy
 \end_layout
 
 \end_inset
@@ -1670,6 +1737,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+True 
+\begin_inset Formula $Q^{2}$
+\end_inset
+
 
 \end_layout
 
@@ -1690,7 +1761,7 @@ status open
 \begin_inset Formula $\numu$
 \end_inset
 
- FHC CC 1-Track 
+ in FHC CC 1-Track true 
 \begin_inset Formula $E_{\nu}$
 \end_inset
 
@@ -1699,7 +1770,36 @@ status open
 \end_inset
 
  distributions broken down by true NEUT interaction modes.
- Water-out mode is displayed here only.
+ Water-out mode is displayed here only with the last bin shown as overflow.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numutitle{}
+\end_layout
+
+\end_inset
+
+ FHC CC 1-Track True Kinematics
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:numuFHCCC1TrkTrue"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1713,19 +1813,23 @@ status open
 \end_layout
 
 \begin_layout Standard
-Another interesting topology captured by this selection are called 
-\begin_inset Quotes eld
+This selection contains a modest fraction of non-CCQE interactions.
+ The largest contamination is single pion interactions (
+\begin_inset Formula $1\pion$
 \end_inset
 
-2 particle 2 hole
-\begin_inset Quotes erd
+), which can happen for a number of reasons.
+ First when the final state pion is produced, it is subject to final state
+ interactions (FSI) where a pion can be absorbed or scatter in or out of
+ the nucleus.
+ In addition, a pion might not be reconstructed as a track in the 
+\begin_inset Formula $\pod$
 \end_inset
 
- (2p2h) events where neutrino scatters off a correlated (aka nearby and
- interacting) nucleon pair.
- Interaction model for 2p2h are included the BANFF fit whose model uncertainties
- currently are largely unconstrained in T2K.
- 
+ if its energy is below reconstruction threshold.
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -1734,7 +1838,7 @@ status open
 
 \backslash
 todo{Add comparison between p0d CC-0pi paper and this analysis for validation.
- Include efficiency and purity from HL2.}
+ Include 2D numu CCQE efficiency and purity from HL2.}
 \end_layout
 
 \end_inset
@@ -1756,19 +1860,35 @@ numutitle{}
 \end_inset
 
  FHC CC N-Tracks
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:numuFHCCCNTrk"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-This selection provides not CCQE (CCnQE) samples in FHC mode.
- Figures below describe the momentum and angular distributions that are
- inputs to BANFF.
- Since this selection is not optimized for any particular topology, there
+This selection provides non-CCQE samples in FHC mode inputs to BANFF.
+ The reconstructed momentum and angular distributions are shown in 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:numuFHCCCNTrkReco"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Since this selection is not optimized for any particular CC topology, there
  are a variety of interactions modes present including 1
 \begin_inset Formula $\pion$
 \end_inset
 
-, multiple pion (
-\begin_inset Formula $N\pion$
+, multiple pion (N
+\begin_inset Formula $\pion$
 \end_inset
 
 ) and deep inelastic scattering (DIS).
@@ -1781,7 +1901,7 @@ This selection provides not CCQE (CCnQE) samples in FHC mode.
 placement t
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1926,7 +2046,7 @@ Water-in mode
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC 
+ FHC CC N-Tracks 
 \begin_inset Formula $P$
 \end_inset
 
@@ -1939,6 +2059,35 @@ Water-in mode
  The bottom (c) and (d) figures are water-in mode.
  Each distribution is normalized to the FHC POT collected between run periods
  2 - 8.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numutitle{}
+\end_layout
+
+\end_inset
+
+ FHC CC N-Tracks Reconstructed Kinematics
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:numuFHCCCNTrkReco"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1952,13 +2101,24 @@ Water-in mode
 \end_layout
 
 \begin_layout Standard
-The fundamental kinematics of the selection are shown below.
- The selection is still 
+The fundamental kinematics of the selection are shown in 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:numuFHCCCNTrkTrue"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ The selection captures the high energy tail of the neutrino flux which
+ is relatively 
 \begin_inset Formula $\numu$
 \end_inset
 
--pure with some higher energy NC events.
- Models that describe the 
+-pure.
+ True kinematics that describe the 
 \begin_inset Formula $1\pion,$
 \end_inset
 
@@ -1966,19 +2126,24 @@ The fundamental kinematics of the selection are shown below.
 \begin_inset Formula $N\pion$
 \end_inset
 
-, and DIS cross sections are parameterized in 
+, and DIS models are parameterized in 
 \begin_inset Formula $Q^{2}$
 \end_inset
 
- and the invariant hadronic system mass 
+ and the hadronic system mass 
 \begin_inset Formula $W$
 \end_inset
 
- where
+.
+ The invariant 
+\begin_inset Formula $W$
+\end_inset
+
+ is defined as
 \begin_inset Formula 
-\[
-W^{2}=M_{N}^{2}+2M_{N}\left(E_{\nu}-E_{l}\right)-Q^{2},
-\]
+\begin{equation}
+W^{2}=M_{N}^{2}+2M_{N}\left(E_{\nu}-E_{l}\right)-Q^{2},\label{eq:hadronicsystemmassW}
+\end{equation}
 
 \end_inset
 
@@ -1986,11 +2151,62 @@ where
 \begin_inset Formula $M_{N}$
 \end_inset
 
- is the mass of the incident nucleon and 
+ is the mass of the struck nucleon and 
 \begin_inset Formula $E_{l}$
 \end_inset
 
  is the energy of the outgoing lepton.
+ A dominant mode in the selection are 
+\begin_inset Formula $1\pion$
+\end_inset
+
+ events from a 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ resonance which has a rest mass of 
+\begin_inset Formula $1.232$
+\end_inset
+
+ GeV/
+\begin_inset Formula $\csq$
+\end_inset
+
+.
+ The 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ resonance is clearly seen in the 
+\begin_inset Formula $W$
+\end_inset
+
+ distribution in 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:numuFHCCCNTrkTrue"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Higher order resonance states are present as well.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+todo{Add 2D eff and purity numu CC-Inclusive plots from HL2.}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1998,7 +2214,7 @@ where
 placement t
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2023,7 +2239,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+True Neutrino Energy
 \end_layout
 
 \end_inset
@@ -2055,6 +2271,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+True 
+\begin_inset Formula $Q^{2}$
+\end_inset
+
 
 \end_layout
 
@@ -2087,6 +2307,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+True 
+\begin_inset Formula $W$
+\end_inset
+
 
 \end_layout
 
@@ -2108,7 +2332,7 @@ status open
 \end_inset
 
  FHC CC N-Tracks true kinematics broken down by true NEUT interaction modes.
- Sub-figures (a), (b), and (c) show the neutrino energy, 
+ Sub-figures (a), (b), and (c) show the true neutrino energy, 
 \begin_inset Formula $Q^{2}$
 \end_inset
 
@@ -2117,6 +2341,38 @@ status open
 \end_inset
 
  distributions, respectively.
+ Water-out mode is displayed here only with the last bin used as overflow
+ is shown in (a) and (b).
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numutitle{}
+\end_layout
+
+\end_inset
+
+ FHC CC N-Tracks True Kinematics
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:numuFHCCCNTrkTrue"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2143,12 +2399,34 @@ numubartitle{}
 \end_inset
 
  RHC CC 1-Track
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:numubarRHCCC1Trk"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-This selection provides the CCQE-enriched samples in RHC mode.
- Figures below display the momentum and angular distributions that are inputs
- to BANFF.
+This selection provides the 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ CCQE-like samples in RHC mode that are inputs to BANFF.
+ 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:numubarRHCCC1TrkReco"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ below display the momentum and angular distributions.
+ The OOFV background tracks are mostly high momentum protons reaching into
+ the TPC.
  The underlying true kinematics, 
 \begin_inset Formula $E_{\nu}$
 \end_inset
@@ -2157,7 +2435,36 @@ This selection provides the CCQE-enriched samples in RHC mode.
 \begin_inset Formula $Q^{2}$
 \end_inset
 
-, of the interactions are shown below.
+, of the interactions are shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:numubarRHCCC1TrkTrue"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ We see this is a 
+\begin_inset Formula $\numubar$
+\end_inset
+
+-pure selection with a mixture of 2p2h and 
+\begin_inset Formula $1\pion$
+\end_inset
+
+ events similar to the results previously seen in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:numuFHCCC1Trk"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -2165,7 +2472,7 @@ This selection provides the CCQE-enriched samples in RHC mode.
 placement t
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2190,7 +2497,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Water-out
 \end_layout
 
 \end_inset
@@ -2222,7 +2529,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Water-out
 \end_layout
 
 \end_inset
@@ -2258,7 +2565,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Water-in
 \end_layout
 
 \end_inset
@@ -2290,7 +2597,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Water-in
 \end_layout
 
 \end_inset
@@ -2320,11 +2627,57 @@ status open
 
  distributions broken down by true NEUT interaction modes.
  The top and bottom figures are water-out and water-in mode, respectively.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numubartitle{}
+\end_layout
+
+\end_inset
+
+ RHC CC 1-Track Reconstructed Kinematics
 \end_layout
 
 \end_inset
 
 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:numubarRHCCC1TrkReco"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+todo{Insert 2D efficiency and purity numubar CCQE efficiency plots from
+ HL2.}
 \end_layout
 
 \end_inset
@@ -2362,7 +2715,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+True Neutrino Energy
 \end_layout
 
 \end_inset
@@ -2394,6 +2747,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+True 
+\begin_inset Formula $Q^{2}$
+\end_inset
+
 
 \end_layout
 
@@ -2414,7 +2771,7 @@ status open
 \begin_inset Formula $\numubar$
 \end_inset
 
- in RHC CC 1-Track
+ in RHC CC 1-Track true
 \begin_inset Formula $E_{\nu}$
 \end_inset
 
@@ -2425,6 +2782,37 @@ status open
  distributions.
  Sub-figure (a) is broken down by true neutrino flavor with (b) broken by
  more specific NEUT interaction modes.
+ Water-out mode is displayed here only with the last bin used as overflow.
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numubartitle{}
+\end_layout
+
+\end_inset
+
+ RHC CC 1-Track True Kinematics
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:numubarRHCCC1TrkTrue"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2502,7 +2890,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Water-out
 \end_layout
 
 \end_inset
@@ -2534,7 +2922,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Water-out
 \end_layout
 
 \end_inset
@@ -2557,7 +2945,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/air/numubarRHC/CCNTracks/FluxAndEventWeights/numubarRHCCCNTracksWaterOut_recoP_mu_MC_only_NEUTCCQELike_rhc_air_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubarRHC/CCNTracks/FluxAndEventWeights/numubarRHCCCNTracksWaterIn_recoP_mu_MC_only_NEUTCCQELike_rhc_water_FluxAndEventWeights.png
 	lyxscale 50
 	width 33text%
 
@@ -2570,7 +2958,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Water-in
 \end_layout
 
 \end_inset
@@ -2602,7 +2990,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Water-in
 \end_layout
 
 \end_inset
@@ -2645,11 +3033,28 @@ status open
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+todo{Insert 2D efficiency and purity numubar CC-Inc  plots from HL2.
+ This means the flavor MUST be numubar.}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement t
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2819,7 +3224,7 @@ This selection provides the wrong-sign (
 placement t
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2987,11 +3392,28 @@ status open
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+todo{Insert 2D efficiency and purity numu CCQE  plots from HL2.
+ This means the flavor MUST be numu.}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement t
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3135,7 +3557,7 @@ This selection provides the
 placement t
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3303,11 +3725,28 @@ status open
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+todo{Insert 2D efficiency and purity numu CC-Inc  plots from HL2.
+ This means the flavor MUST be numu.}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement t
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center

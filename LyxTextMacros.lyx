@@ -105,6 +105,15 @@
 \end_layout
 
 \begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\csq}{\text{c}^{2}}
+{\text{c}^{2}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
