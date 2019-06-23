@@ -1222,6 +1222,15 @@
   Year                     = {1999}
 }
 
+@Article{Formaggio:2013kya,
+  Title                    = {{From eV to EeV: Neutrino Cross Sections Across Energy Scales}},
+  Author                   = {Formaggio, J. A. and Zeller, G. P.},
+  Journal                  = {Rev. Mod. Phys.},
+  Year                     = {2012},
+  Pages                    = {1307-1341},
+  Volume                   = {84}
+}
+
 @Article{fuchs:dvi,
   Title                    = {Device Independent File Format},
   Author                   = {David Fuchs},
@@ -2247,6 +2256,23 @@
   Primaryclass             = {hep-ex},
   Reportnumber             = {FERMILAB-PUB-15-399-ND},
   Slaccitation             = {%%CITATION = ARXIV:1509.05729;%%}
+}
+
+@Article{PhysRevD.17.2369,
+  Title                    = {Neutrino oscillations in matter},
+  Author                   = {Wolfenstein, L.},
+  Journal                  = {Phys. Rev. D},
+  Year                     = {1978},
+
+  Month                    = {May},
+  Pages                    = {2369--2374},
+  Volume                   = {17},
+
+  Doi                      = {10.1103/PhysRevD.17.2369},
+  Issue                    = {9},
+  Numpages                 = {0},
+  Publisher                = {American Physical Society},
+  Url                      = {https://link.aps.org/doi/10.1103/PhysRevD.17.2369}
 }
 
 @PhdThesis{MINOSyang,

@@ -3054,7 +3054,7 @@ todo{Insert 2D efficiency and purity numubar CC-Inc  plots from HL2.
 placement t
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3068,7 +3068,7 @@ status open
 \begin_inset Graphics
 	filename Figures/SamplesAndSelections/air/numubarRHC/CCNTracks/FluxAndEventWeights/numubarRHCCCNTracksWaterOut_trueE_nu_MC_only_TrueNuPDG_rhc_air_FluxAndEventWeights.png
 	lyxscale 50
-	width 33text%
+	width 30text%
 
 \end_inset
 
@@ -3100,7 +3100,7 @@ status open
 \begin_inset Graphics
 	filename Figures/SamplesAndSelections/air/numubarRHC/CCNTracks/FluxAndEventWeights/numubarRHCCCNTracksWaterOut_trueQ2_MC_only_NEUTCCQELike_rhc_air_FluxAndEventWeights.png
 	lyxscale 50
-	width 33text%
+	width 30text%
 
 \end_inset
 
@@ -3132,7 +3132,7 @@ status open
 \begin_inset Graphics
 	filename Figures/SamplesAndSelections/air/numubarRHC/CCNTracks/FluxAndEventWeights/numubarRHCCCNTracksWaterOut_trueW_MC_only_NEUTAntiNuReactionCodes_rhc_air_FluxAndEventWeights.png
 	lyxscale 50
-	width 25text%
+	width 30text%
 
 \end_inset
 
@@ -3163,12 +3163,16 @@ status open
 \begin_inset Formula $\numubar$
 \end_inset
 
- in RHC 
+ in RHC CC N-Tracks 
 \begin_inset Formula $E_{\nu}$
 \end_inset
 
- and 
+, 
 \begin_inset Formula $Q^{2}$
+\end_inset
+
+, and 
+\begin_inset Formula $W$
 \end_inset
 
  distributions broken down by true NEUT interaction modes.

@@ -624,7 +624,7 @@ noprefix "false"
 
  seconds according to 
 \begin_inset CommandInset ref
-LatexCommand eqref
+LatexCommand formatted
 reference "eq:heisenberguncertainty"
 plural "false"
 caps "false"
@@ -5914,7 +5914,7 @@ s observed at SK.
 \begin_layout Standard
 \begin_inset Branch IntroductionT2KNearDetectors
 inverted 0
-status open
+status collapsed
 
 \begin_layout Subsection
 Neutrino Near Detectors: ND280
@@ -7710,15 +7710,13 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figures/Introduction/SKDrawing.png
-	width 30text%
-	height 30theight%
-	keepAspectRatio
+	width 60text%
 
 \end_inset
 
@@ -7858,45 +7856,459 @@ name "fig:Representative-T2K-events"
 While events from SK are not used in this analysis, the goal is to try to
  improve T2K's parameters which depend on comparing the Near Detector neutrino
  measurements to the Far Detector neutrino measurements.
- Having some background on the oscillations analysis is relevant and discussed
- in the next section.
+ Therefore having some background on the oscillation analysis will illustrate
+ ND280's utility and discussed in the next section.
 \end_layout
 
-\begin_layout Subsubsection
-Oscillation Analysis
+\begin_layout Subsection
+ND Constraint
 \end_layout
 
 \begin_layout Standard
-The number of reconstructed neutrino events of flavor 
+As started before, the primary goals of T2K are measure to measure the oscillati
+on parameters 
+\begin_inset Formula $\theta_{13}$
+\end_inset
+
+, 
+\begin_inset Formula $\theta_{23}$
+\end_inset
+
+, and 
+\begin_inset Formula $\Delta m_{23}^{2}$
+\end_inset
+
+.
+ This is performed by fitting the oscillation parameters to the number of
+ observed flavored neutrinos at SK.
+ The number of reconstructed neutrino events of flavor 
 \begin_inset Formula $\alpha$
 \end_inset
 
- observed at SK is sum of all true charged current (CC) events 
-\begin_inset Formula $S_{\nu_{\alpha}}^{\text{FD}}$
+, 
+\begin_inset Formula $N_{\nu_{\alpha}}$
 \end_inset
 
- and backgrounds 
+, observed is 
+\begin_inset Formula 
+\begin{equation}
+N_{\nu_{\alpha}}=B+S_{\nu_{\alpha}}\label{eq:Nsigplusbkg}
+\end{equation}
+
+\end_inset
+
+where 
 \begin_inset Formula $B$
 \end_inset
 
-
-\begin_inset Formula 
-\[
-N_{\nu_{\lambda}}=S_{\nu_{\alpha}}+B
-\]
-
+ are all misidentified 
+\begin_inset Formula $\nu_{\alpha}$
 \end_inset
 
-where
+ events and 
+\begin_inset Formula $S_{\nu_{\alpha}}$
+\end_inset
+
+is the number of true events.
+ The expected rate given by
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
-\begin{aligned}S_{\nu_{\alpha}} & =\sum_{i=1}^{M}\left\{ \sum_{\lambda=e,\mu,\tau}\left[\mathcal{P}_{\nu_{\lambda}\rightarrow\nu_{\alpha}}\left(E_{\nu,i};\vec{o}\right)\right]\times\sum_{t}\left[\sigma_{\nu_{\alpha}}^{t}\left(E_{\nu,i}\right)\cdot t_{N}\right]\right.\\
- & \left.\times\Phi_{\nu_{\alpha}}\left(E_{\nu,i}\right)\times\epsilon\left(p_{\alpha},\theta_{\alpha}\right)\right\} ,
+\begin{equation}
+\begin{aligned}S_{\nu_{\alpha}} & =\sum_{\lambda=e,\mu}\left[\mathcal{P}_{\nu_{\lambda}\rightarrow\nu_{\alpha}}\left(E_{\nu};\vec{o}\right)\right]\times\sum_{t}\left[\sigma_{\nu_{\alpha}}^{t}\left(E_{\nu}\right)\cdot t_{N}\right]\\
+ & \times\Phi_{\nu_{\alpha}}\left(E_{\nu}\right)\times\epsilon\left(p_{\alpha},\theta_{\alpha}\right),
 \end{aligned}
-\]
+\label{eq:Nsig}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\vec{o}$
+\end_inset
+
+ is a vector of the oscillation parameters from 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:threeflavorprobgeneral"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:threeflavorprobgeneral"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\sigma_{\nu_{\alpha}}^{t}$
+\end_inset
+
+ is the cross section for 
+\begin_inset Formula $\nu_{\alpha}$
+\end_inset
+
+ on target 
+\begin_inset Formula $t$
+\end_inset
+
+, 
+\begin_inset Formula $t_{N}$
+\end_inset
+
+ is the number of targets of type 
+\begin_inset Formula $t$
+\end_inset
+
+, 
+\begin_inset Formula $\Phi_{\nu_{\alpha}}$
+\end_inset
+
+ is the flux of neutrinos, and 
+\begin_inset Formula $\epsilon\left(p_{\alpha},\theta_{\alpha}\right)$
+\end_inset
+
+ is the efficiency of reconstructing and correctly categorizing the event
+ as a function of momentum 
+\begin_inset Formula $p$
+\end_inset
+
+ and angle 
+\begin_inset Formula $\theta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement t
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/SKFHCnumu.png
+	lyxscale 25
+	width 45text%
+	special page=14
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\numu$
+\end_inset
+
+ in FHC
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/SKFHCnue.png
+	lyxscale 25
+	width 45text%
+	special page=14
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nue$
+\end_inset
+
+ in FHC
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/SKRHCnumubar.png
+	lyxscale 25
+	width 45text%
+	special page=14
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\numubar$
+\end_inset
+
+ in RHC
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/SKRHCnuebar.png
+	lyxscale 25
+	width 45text%
+	special page=14
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nuebar$
+\end_inset
+
+ in RHC
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Predicted and best fit measurements for the SK flux.
+ The horizontal axes are the neutrino energy and the vertical axes are the
+ fractional change in the flux normalization.
+ These figures were taken from the 2017 T2K oscillation analysis 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abe:2017vif"
+literal "false"
+
+\end_inset
+
+.
+ A value 1.1 corresponds to a 10% increase in the number of predicted events.
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Predicted and Best Fit Measurements for the SK Flux
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:PredictedBestFitSKFlux"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Having a large, sensitive ND like ND280 in line with beam provides critical
+ constraints to the flux and cross sections in the oscillation analysis.
+ Without ND280, the fractional uncertainty on the flux rate is about ~10%
+ per energy bin.
+ Adding the ND constraint reduces the uncertainty to about ~5% as seen in
+ 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:PredictedBestFitSKFlux"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ There are numerous cross section channels that affect T2K's sensitivity
+ to the oscillation parameters, with the most important being CCQE and CCQE-like
+ interactions as shown in .
+ At energies near the 
+\begin_inset Formula $\nue$
+\end_inset
+
+ appearance probability maximum, 
+\begin_inset Formula $E_{\nu}=$
+\end_inset
+
+0.6 GeV, the CCQE interaction is largest contributor to the inclusive cross
+ section as shown in 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:PredictedCCincxsec"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/ZellerXSec.png
+	lyxscale 50
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Predicted CC inclusive scattering cross section at T2K relevant energies.
+ Only the most common final state modes are shown.
+ A thick, red line indicates the T2K 
+\begin_inset Formula $\nue$
+\end_inset
+
+ appearance probability maximum.
+ For CCQE-like interactions, they usually include the emission of nucleons.
+ Resonance states and DIS interactions produce 
+\begin_inset Formula $1\pi$
+\end_inset
+
+, N
+\begin_inset Formula $\pion$
+\end_inset
+
+ and kaon final states as well.
+ Combined, the inclusive cross section increases linearly with energy.
+ This image was edited and originally produced by Formaggio and Zeller
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Formaggio:2013kya"
+literal "false"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Predicted CCInc Cross Section at T2K Energies
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:PredictedCCincxsec"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \end_inset
 
