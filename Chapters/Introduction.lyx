@@ -641,7 +641,7 @@ noprefix "false"
  Breit–Wigner distribution
 \begin_inset Formula 
 \begin{equation}
-f(M)\propto\frac{1}{\left(\left(M^{2}-M_{0}^{2}\right)c^{4}\right)^{2}+\left(M_{0}c^{2}\Gamma\right)^{2}},\label{eq:BreitWigner}
+f(M)\propto\frac{1}{\left(M^{2}-M_{0}^{2}\right)^{2}c^{4}+M_{0}^{2}\Gamma^{2}},\label{eq:BreitWigner}
 \end{equation}
 
 \end_inset
@@ -654,7 +654,7 @@ where
 \begin_inset Formula $\Gamma$
 \end_inset
 
- is the decay width of the particle in units of energy.
+ is the decay width of the particle.
  For 
 \begin_inset Formula $M\ll M_{0}$
 \end_inset
@@ -712,7 +712,9 @@ status open
 \begin_inset Graphics
 	filename Figures/Introduction/MuonDecayJaxoDraw.png
 	lyxscale 25
+	width 30text%
 	height 25theight%
+	keepAspectRatio
 
 \end_inset
 
@@ -744,7 +746,9 @@ status open
 \begin_inset Graphics
 	filename Figures/Introduction/NCScatteringJaxoDraw.png
 	lyxscale 75
+	width 30text%
 	height 25theight%
+	keepAspectRatio
 
 \end_inset
 
@@ -833,7 +837,7 @@ name "subsec:Chirality"
 
 \begin_layout Standard
 Neutrinos are observed to have their spin direction vectors 
-\begin_inset Formula $\boldsymbol{\Sigma}$
+\begin_inset Formula $\boldsymbol{\sigma}$
 \end_inset
 
  opposite to their momentum 
@@ -854,7 +858,7 @@ noprefix "false"
 
 \begin_inset Formula 
 \begin{equation}
-\mathcal{H}=\frac{\boldsymbol{\Sigma}\cdot\boldsymbol{P}}{\left|\boldsymbol{P}\right|}.\label{eq:helicityoperator}
+\mathcal{H}=\frac{\boldsymbol{\sigma}\cdot\boldsymbol{P}}{\left|\boldsymbol{P}\right|}.\label{eq:helicityoperator}
 \end{equation}
 
 \end_inset
@@ -1422,13 +1426,13 @@ noprefix "false"
 \end_inset
 
  and using the fact that the spin operator 
-\begin_inset Formula $\boldsymbol{\boldsymbol{\Sigma}}$
+\begin_inset Formula $\boldsymbol{\boldsymbol{\sigma}}$
 \end_inset
 
  is
 \begin_inset Formula 
 \begin{equation}
-\boldsymbol{\Sigma}=i\left(\gamma^{2}\gamma^{3},\gamma^{3}\gamma^{1},\gamma^{1}\gamma^{2}\right)=\gamma^{0}\gamma^{k}\gamma^{5}\quad\left(k=1,2,3\right)\label{eq:spinoperatorgammamatrices}
+\boldsymbol{\sigma}=i\left(\gamma^{2}\gamma^{3},\gamma^{3}\gamma^{1},\gamma^{1}\gamma^{2}\right)=\gamma^{0}\gamma^{k}\gamma^{5}\quad\left(k=1,2,3\right)\label{eq:spinoperatorgammamatrices}
 \end{equation}
 
 \end_inset
@@ -1436,7 +1440,7 @@ noprefix "false"
 each decoupled equation becomes
 \begin_inset Formula 
 \begin{equation}
-\frac{\boldsymbol{\Sigma}\cdot\boldsymbol{P}}{\left|\boldsymbol{P}\right|}\psi_{P,M}=\gamma^{5}\psi_{P,M}=\pm\psi_{P,M},\label{eq:chiralhelicityrelationship}
+\frac{\boldsymbol{\sigma}\cdot\boldsymbol{P}}{\left|\boldsymbol{P}\right|}\psi_{P,M}=\gamma^{5}\psi_{P,M}=\pm\psi_{P,M},\label{eq:chiralhelicityrelationship}
 \end{equation}
 
 \end_inset
@@ -1726,12 +1730,14 @@ Neutrino-nuclear scattering presented in this thesis come in three primary
 ).
  The CCQE interactions are the lowest energy CC interaction with a nucleon.
  While CCQE models work well for low-Z atoms like hydrogen, they do not
- extend well into many nucleon atoms.
- CCDIS is a high energy transfer process that shatters the nucleus apart
- which has the observation of many post-FSI hadrons.
+ extend well into many nucleon atoms due to similar observable final state
+ nucleons.
+ The CCDIS interaction, also called CC Other, is a high energy transfer
+ process that shatters the nucleus apart which has the observation of many
+ post-FSI hadrons.
  Modeling CCDIS can be challenging due to FSI and the uncertainty of the
  possible initial states of the nucleus.
- Finally CC
+ Finally, CC
 \begin_inset Formula $1\pion$
 \end_inset
 
@@ -7710,7 +7716,7 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -8192,10 +8198,26 @@ name "fig:PredictedBestFitSKFlux"
 \end_layout
 
 \begin_layout Standard
-Having a large, sensitive ND like ND280 in line with beam provides critical
- constraints to the flux and cross sections in the oscillation analysis.
+
+\shape italic
+Having a large, sensitive off-axis ND like ND280 provides critical constraints
+ to the neutrino flux in the oscillation analysis
+\shape default
+.
+ This includes the oscillation channel 
+\begin_inset Formula $\numu\rightarrow\nue$
+\end_inset
+
+, but also the intrinsic 
+\begin_inset Formula $\nuantinuparticle e$
+\end_inset
+
+ background in the T2K beam.
+ These neutrinos interact the same way an oscillated neutrino would at SK.
  Without ND280, the fractional uncertainty on the flux rate is about ~10%
  per energy bin.
+ These constraints are obtained from MUMON discussed above and the NA61/SHINE
+ experiment.
  Adding the ND constraint reduces the uncertainty to about ~5% as seen in
  
 \begin_inset CommandInset ref
@@ -8208,9 +8230,16 @@ noprefix "false"
 \end_inset
 
 .
- There are numerous cross section channels that affect T2K's sensitivity
+\end_layout
+
+\begin_layout Standard
+There are numerous cross section channels that affect T2K's sensitivity
  to the oscillation parameters, with the most important being CCQE and CCQE-like
- interactions as shown in .
+ interactions collectively called CC 0
+\begin_inset Formula $\pion$
+\end_inset
+
+.
  At energies near the 
 \begin_inset Formula $\nue$
 \end_inset
@@ -8219,8 +8248,8 @@ noprefix "false"
 \begin_inset Formula $E_{\nu}=$
 \end_inset
 
-0.6 GeV, the CCQE interaction is largest contributor to the inclusive cross
- section as shown in 
+0.6 GeV, the CCQE interaction is the largest contributor to the neutrino
+ cross section for T2K relevant energies as shown in 
 \begin_inset CommandInset ref
 LatexCommand vref
 reference "fig:PredictedCCincxsec"
@@ -8231,6 +8260,92 @@ noprefix "false"
 \end_inset
 
 .
+ The CCQE model is important historically since it well predicts the neutrino
+ energy in low-Z, bubble chamber data.
+\end_layout
+
+\begin_layout Standard
+However there are CCQE-like interactions that require parameterization since
+ they produce final states similar topologies to true CCQE events.
+ The T2K experiment models CCQE-like interactions using correlated nucleon
+ interactions with the lowest ordering pair scattering called 
+\begin_inset Quotes eld
+\end_inset
+
+2 particle, 2 hole
+\begin_inset Quotes erd
+\end_inset
+
+ (2p2h) interactions
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The name 2p2h originates from Condensed Matter Physics which motivated the
+ model.
+ In solid state matter, a 
+\begin_inset Quotes eld
+\end_inset
+
+hole
+\begin_inset Quotes erd
+\end_inset
+
+ refers to the absence of an electron in a valence band.
+ In the High Energy Physics context, 2p2h considers an interacting pair
+ of nucleons (2p) scattering from an incoming particle.
+ The imparted energy on the pair excites them to higher energy states leaving
+ two 
+\begin_inset Quotes eld
+\end_inset
+
+hole
+\begin_inset Quotes erd
+\end_inset
+
+ states (2h) behind.
+\end_layout
+
+\end_inset
+
+.
+ Higher order correlated nucleon scattering called 
+\begin_inset Quotes eld
+\end_inset
+
+Random Phase Approximation
+\begin_inset Quotes erd
+\end_inset
+
+ (RPA) is modeled as a functional correction to the scattering cross section.
+\end_layout
+
+\begin_layout Standard
+The canonical T2K CC 
+\begin_inset Formula $0\pion$
+\end_inset
+
+ interaction model is, however, problematic due to model deficiencies to
+ accurately predict the neutrino energy.
+ At best, the CC 
+\begin_inset Formula $0\pion$
+\end_inset
+
+ model is an effective model with improvements still being explored.
+ Measurements at ND280 of continue to push the limits of the CC 
+\begin_inset Formula $0\pion$
+\end_inset
+
+ with high angular acceptance and zero proton multiplicities.
+\end_layout
+
+\begin_layout Standard
+The other exclusive channels considered are resonance states More recently
+ has T2K explored using CC1
+\begin_inset Formula $\pion$
+\end_inset
+
+ final states at SK to further improve its oscillation measurements.
 \end_layout
 
 \begin_layout Standard
@@ -8262,7 +8377,8 @@ Predicted CC inclusive scattering cross section at T2K relevant energies.
 \end_inset
 
  appearance probability maximum.
- For CCQE-like interactions, they usually include the emission of nucleons.
+ For CCQE-like interactions, they usually include the emission of one or
+ more nucleons.
  Resonance states and DIS interactions produce 
 \begin_inset Formula $1\pi$
 \end_inset
@@ -8271,9 +8387,13 @@ Predicted CC inclusive scattering cross section at T2K relevant energies.
 \begin_inset Formula $\pion$
 \end_inset
 
- and kaon final states as well.
+ (multi-
+\begin_inset Formula $\pion$
+\end_inset
+
+) and kaon final states as well.
  Combined, the inclusive cross section increases linearly with energy.
- This image was edited and originally produced by Formaggio and Zeller
+ This image was edited and originally produced by Formaggio and Zeller 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Formaggio:2013kya"
@@ -8281,7 +8401,7 @@ literal "false"
 
 \end_inset
 
-
+.
 \begin_inset Argument 1
 status open
 
