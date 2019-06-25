@@ -12,6 +12,7 @@
 \usepackage{amsthm}
 \usepackage[version=3]{mhchem}
 \usepackage{cancel}
+\usepackage{tocbibind}
 
 % graphics packages
 \usepackage{graphicx} % remove pdftex if you are not compiling to pdf

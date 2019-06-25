@@ -1037,23 +1037,27 @@ Momentum lost in the
 \begin_inset Formula $\pod$
 \end_inset
 
- is estimated by summing the energy loss 
-\begin_inset Formula $\left(dT/dx\right)$
+ is estimated by first summing the total energy loss, 
+\begin_inset Formula $\Delta T$
 \end_inset
 
- in along the track path 
-\begin_inset Formula $dx$
+, along the track path 
+\begin_inset Formula $\mathcal{C}$
 \end_inset
 
-
+ 
 \begin_inset Formula 
 \begin{equation}
-\Delta T=\int\left(\frac{dT}{dx}\right)dx.\label{eq:energyloss}
+\Delta T=\int_{\mathcal{C}}\left(\frac{dT}{dx}\right)dx.\label{eq:energyloss}
 \end{equation}
 
 \end_inset
 
-Using the chain rule, we can convert the energy loss into momentum loss
+Using the chain rule, we can convert the energy loss function, 
+\begin_inset Formula $dT/dx$
+\end_inset
+
+, into momentum loss
 \begin_inset Formula 
 \begin{equation}
 \begin{aligned}\frac{dT}{dx} & =\left(\frac{dT}{dP}\right)\left(\frac{dP}{dx}\right)\\
@@ -1069,7 +1073,7 @@ where
 \begin_inset Formula $\beta$
 \end_inset
 
- is the particle velocity as a ratio of the speed of light 
+ is the changing particle velocity as a ratio of the speed of light 
 \begin_inset Formula $c$
 \end_inset
 
@@ -1078,24 +1082,29 @@ where
  loss now as a momentum loss
 \begin_inset Formula 
 \[
-\Delta P_{\pod}=\int\left(\frac{dP}{dx}\right)dx=\frac{1}{c}\int\left[\left(\frac{dT}{dx}\right)\frac{1}{\beta}\right]dx.
+\Delta P_{\pod}=\int_{C}\left(\frac{dP}{dx}\right)dx=\frac{1}{c}\int_{\mathcal{C}}\left[\left(\frac{dT}{dx}\right)\frac{1}{\beta(x)}\right]dx.
 \]
 
 \end_inset
 
-Since we cannot take infinitesimally small steps along the track, we must
- replace the integral with a sum and 
+Since the reconstructed track's path 
+\begin_inset Formula $\mathcal{C}$
+\end_inset
+
+ is not infinitesimally precise due to inherent detector resolution, we
+ must replace the integral with a sum and 
 \begin_inset Formula $dx\rightarrow\Delta x$
 \end_inset
 
- to arrive at the expression of the momentum loss estimate in the 
+.
+ We then arrive at the expression of the momentum loss estimate in the 
 \begin_inset Formula $\pod$
 \end_inset
 
- 
+ as
 \begin_inset Formula 
 \begin{equation}
-P=P_{\text{TPC}}+\frac{1}{c}\sum_{t}\left[\left(\frac{dT}{dx}\right)\left(\frac{\Delta x}{\beta}\right)\right]_{t}.\label{eq:momentumP0DFull}
+P=P_{\text{TPC}}+\frac{1}{c}\sum_{t}\left[\left(\frac{dT}{dx}\right)\left(\frac{\Delta x}{\beta(x)}\right)\right]_{t}.\label{eq:momentumP0DFull}
 \end{equation}
 
 \end_inset
@@ -1106,7 +1115,7 @@ For most tracks entering the TPC, they will be highly relativistic in the
 \end_inset
 
  (
-\begin_inset Formula $\beta(x)\approx1$
+\begin_inset Formula $\beta\approx1$
 \end_inset
 
 ), and 
@@ -1119,7 +1128,7 @@ noprefix "false"
 
 \end_inset
 
- becomes 
+ simplifies to 
 \begin_inset Formula 
 \begin{equation}
 P=P_{\text{TPC}}+\frac{1}{c}\sum_{t}\left[\left(\frac{dT}{dx}\right)\Delta x\right]_{t}\label{eq:momentumP0DSimplified}
@@ -1673,6 +1682,7 @@ An interesting CCQE-like topology in this selection are
  interacting) nucleon pair.
  Interaction model for 2p2h are included the BANFF fit whose model uncertainties
  are quite large in T2K.
+ Therefore these events could reduce the 2p2h model uncertainties.
 \end_layout
 
 \begin_layout Standard
@@ -1870,7 +1880,7 @@ name "subsec:numuFHCCCNTrk"
 \end_layout
 
 \begin_layout Standard
-This selection provides non-CCQE samples in FHC mode inputs to BANFF.
+This selection provides non-CCQE-like samples in FHC mode inputs to BANFF.
  The reconstructed momentum and angular distributions are shown in 
 \begin_inset CommandInset ref
 LatexCommand vref
@@ -2046,7 +2056,7 @@ Water-in mode
 \begin_inset Formula $\numu$
 \end_inset
 
- FHC CC N-Tracks 
+ in FHC CC N-Tracks 
 \begin_inset Formula $P$
 \end_inset
 
@@ -2075,7 +2085,7 @@ numutitle{}
 
 \end_inset
 
- FHC CC N-Tracks Reconstructed Kinematics
+ in FHC CC N-Tracks Reconstructed Kinematics
 \end_layout
 
 \end_inset
@@ -2193,6 +2203,22 @@ noprefix "false"
 
 .
  Higher order resonance states are present as well.
+\end_layout
+
+\begin_layout Standard
+The origin of the mis-identified particles, in particular the pions, becomes
+ more clear since this is a high 
+\begin_inset Formula $Q^{2}$
+\end_inset
+
+ selection.
+ Multiple pion and DIS events can produce a negatively charged pion.
+ For high 
+\begin_inset Formula $Q^{2}$
+\end_inset
+
+ interactions topologies, the energy transfer to the final hadronic state
+ can produce a higher energy pion than the true muon.
  
 \begin_inset ERT
 status open
@@ -2228,7 +2254,7 @@ status open
 \begin_inset Graphics
 	filename Figures/SamplesAndSelections/air/numu/CCNTracks/FluxAndEventWeights/numuCCNTracksWaterOut_trueE_nu_MC_only_TrueNuPDG_fhc_air_FluxAndEventWeights.png
 	lyxscale 50
-	width 25text%
+	width 30text%
 
 \end_inset
 
@@ -2260,7 +2286,7 @@ status open
 \begin_inset Graphics
 	filename Figures/SamplesAndSelections/air/numu/CCNTracks/FluxAndEventWeights/numuCCNTracksWaterOut_trueQ2_MC_only_NEUTCCQELike_fhc_air_FluxAndEventWeights.png
 	lyxscale 50
-	width 25text%
+	width 30text%
 
 \end_inset
 
@@ -2296,7 +2322,7 @@ status open
 \begin_inset Graphics
 	filename Figures/SamplesAndSelections/air/numu/CCNTracks/FluxAndEventWeights/numuCCNTracksWaterOut_trueW_MC_only_NEUTNuReactionCodes_fhc_air_FluxAndEventWeights.png
 	lyxscale 50
-	width 25text%
+	width 30text%
 
 \end_inset
 
@@ -2331,7 +2357,7 @@ True
 \begin_inset Formula $\numu$
 \end_inset
 
- FHC CC N-Tracks true kinematics broken down by true NEUT interaction modes.
+ in FHC CC N-Tracks true kinematics broken down by true interaction modes.
  Sub-figures (a), (b), and (c) show the true neutrino energy, 
 \begin_inset Formula $Q^{2}$
 \end_inset
@@ -2360,7 +2386,7 @@ numutitle{}
 
 \end_inset
 
- FHC CC N-Tracks True Kinematics
+ in FHC CC N-Tracks True Kinematics
 \end_layout
 
 \end_inset
@@ -2414,7 +2440,7 @@ This selection provides the
 \end_inset
 
  CCQE-like samples in RHC mode that are inputs to BANFF.
- 
+ In 
 \begin_inset CommandInset ref
 LatexCommand vref
 reference "fig:numubarRHCCC1TrkReco"
@@ -2424,10 +2450,25 @@ noprefix "false"
 
 \end_inset
 
- below display the momentum and angular distributions.
- The OOFV background tracks are mostly high momentum protons reaching into
- the TPC.
- The underlying true kinematics, 
+ displays the momentum and angular distributions for this selection.
+ The selection is 
+\begin_inset Formula $\numubar$
+\end_inset
+
+-pure with the selected lepton candidate being positively charged muons.
+ The OOFV background tracks are high momentum (
+\begin_inset Formula $>1$
+\end_inset
+
+ GeV/
+\begin_inset Formula $\csq$
+\end_inset
+
+) protons reaching into the TPC.
+\end_layout
+
+\begin_layout Standard
+The underlying true kinematics, 
 \begin_inset Formula $E_{\nu}$
 \end_inset
 
@@ -2446,15 +2487,11 @@ noprefix "false"
 \end_inset
 
 .
- We see this is a 
-\begin_inset Formula $\numubar$
+ We see a similar true reaction composition to the 
+\begin_inset Formula $\numu$
 \end_inset
 
--pure selection with a mixture of 2p2h and 
-\begin_inset Formula $1\pion$
-\end_inset
-
- events similar to the results previously seen in 
+ in FHC selection in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "subsec:numuFHCCC1Trk"
@@ -2465,6 +2502,11 @@ noprefix "false"
 \end_inset
 
 .
+ Most reactions are true CCQE with a mixture of 2p2h and 
+\begin_inset Formula $1\pion$
+\end_inset
+
+ events.
 \end_layout
 
 \begin_layout Standard
@@ -2626,7 +2668,10 @@ Water-in
 \end_inset
 
  distributions broken down by true NEUT interaction modes.
- The top and bottom figures are water-out and water-in mode, respectively.
+ The top figures (a) and (b) are water-out mode while the bottom (c) and
+ (d) figures are water-in mode.
+ Each distribution is normalized to the RHC POT collected between run periods
+ 2 - 8.
 \begin_inset Argument 1
 status open
 
@@ -2643,7 +2688,7 @@ numubartitle{}
 
 \end_inset
 
- RHC CC 1-Track Reconstructed Kinematics
+ in RHC CC 1-Track Reconstructed Kinematics
 \end_layout
 
 \end_inset
@@ -2690,7 +2735,7 @@ todo{Insert 2D efficiency and purity numubar CCQE efficiency plots from
 placement t
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2842,10 +2887,51 @@ numubartitle{}
 \end_layout
 
 \begin_layout Standard
-This selection provides the non-CCQE-like samples in RHC mode.
- Figures below display the momentum and angular distributions that are inputs
- to BANFF.
- The underlying true kinematics, 
+This selection provides the 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ non-CCQE-like samples in RHC mode.
+ 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:numubarRHCCCNTrkReco"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ displays the momentum and angular distributions that are inputs to BANFF.
+ The most striking feature of this selection is the the number of mis-identified
+ events.
+ In particular protons are selected the HMPT when they become minimum ionizing
+ particles, which is around 
+\begin_inset Formula $1.3$
+\end_inset
+
+ GeV
+\begin_inset Formula $/\csq$
+\end_inset
+
+.
+ At these energies protons can escape into the TPC since it deposits less
+ energy per unit length.
+ In addition, the intrinsic 
+\begin_inset Formula $\numu$
+\end_inset
+
+ background contribution is comparable to the desired 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ flavor.
+ These two features would need to addressed in the next iteration of the
+ analysis.
+\end_layout
+
+\begin_layout Standard
+The underlying true kinematics, 
 \begin_inset Formula $E_{\nu}$
 \end_inset
 
@@ -2857,7 +2943,54 @@ This selection provides the non-CCQE-like samples in RHC mode.
 \begin_inset Formula $W$
 \end_inset
 
- of the interactions are shown below.
+ of the interactions are shown in 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:numubarRHCCCNTrkTrue"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Here we see in better detail the origin of the 
+\begin_inset Formula $\numu$
+\end_inset
+
+ contamination.
+ As a function of increasing energy, the 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ content is decreasing while the relative 
+\begin_inset Formula $\numu$
+\end_inset
+
+ contribution is increasing.
+ The 
+\begin_inset Formula $\numu$
+\end_inset
+
+ events are also have a 
+\begin_inset Formula $Q^{2}$
+\end_inset
+
+ content which explains the significant number proton main track events.
+ For the hadronic final states, the shape of the 
+\begin_inset Formula $\numubar$
+\end_inset
+
+-induced resonances is similar to what we saw in the 
+\begin_inset Formula $\numu$
+\end_inset
+
+ in FHC CC N-Tracks selections.
+ Interestingly, the 
+\begin_inset Formula $\numu$
+\end_inset
+
+ background hadronic states are do not peak in any one region.
 \end_layout
 
 \begin_layout Standard
@@ -2865,7 +2998,7 @@ This selection provides the non-CCQE-like samples in RHC mode.
 placement t
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3010,7 +3143,7 @@ Water-in
 \begin_inset Formula $\numubar$
 \end_inset
 
- RHC CC N-Tracks 
+ in RHC CC N-Tracks 
 \begin_inset Formula $P$
 \end_inset
 
@@ -3019,7 +3152,39 @@ Water-in
 \end_inset
 
  distributions broken down by true NEUT interaction modes.
- The top and bottom figures are water-out and water-in mode, respectively.
+ The top figures (a) and (b) are water-out mode.
+ The bottom (c) and (d) figures are water-in mode.
+ Each distribution is normalized to the FHC POT collected between run periods
+ 2 - 8.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numubartitle{}
+\end_layout
+
+\end_inset
+
+ in RHC CC N-Tracks Reconstructed Kinematics
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:numubarRHCCCNTrkReco"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3176,6 +3341,46 @@ status open
 \end_inset
 
  distributions broken down by true NEUT interaction modes.
+ Sub-figures (a), (b), and (c) show the true neutrino energy, 
+\begin_inset Formula $Q^{2}$
+\end_inset
+
+, and 
+\begin_inset Formula $W$
+\end_inset
+
+ distributions, respectively.
+ Water-out mode is displayed here only with the last bin used as overflow
+ is shown in (a) and (b).
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numubartitle{}
+\end_layout
+
+\end_inset
+
+ in RHC CC N-Tracks True Kinematics
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:numubarRHCCCNTrkTrue"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3764,7 +3969,7 @@ status open
 \begin_inset Graphics
 	filename Figures/SamplesAndSelections/air/numubkgRHC/CCNTracks/FluxAndEventWeights/numubkgRHCCCNTracksWaterOut_trueE_nu_MC_only_TrueNuPDG_rhc_air_FluxAndEventWeights.png
 	lyxscale 50
-	width 33text%
+	width 30text%
 
 \end_inset
 
@@ -3796,7 +4001,7 @@ status open
 \begin_inset Graphics
 	filename Figures/SamplesAndSelections/air/numubkgRHC/CCNTracks/FluxAndEventWeights/numubkgRHCCCNTracksWaterOut_trueQ2_MC_only_NEUTCCQELike_rhc_air_FluxAndEventWeights.png
 	lyxscale 50
-	width 33text%
+	width 30text%
 
 \end_inset
 
@@ -3828,7 +4033,7 @@ status open
 \begin_inset Graphics
 	filename Figures/SamplesAndSelections/air/numubkgRHC/CCNTracks/FluxAndEventWeights/numubkgRHCCCNTracksWaterOut_trueW_MC_only_NEUTNuReactionCodes_rhc_air_FluxAndEventWeights.png
 	lyxscale 50
-	width 25text%
+	width 30text%
 
 \end_inset
 
