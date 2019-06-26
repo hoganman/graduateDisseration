@@ -152,7 +152,7 @@ This section describes the development of
 \begin_inset Formula $\antinumu$
 \end_inset
 
-CC Inclusive selections in both FHC and RHC beam configuration for 
+ CC Inclusive selections in both FHC and RHC beam configuration for 
 \begin_inset Formula $\pod$
 \end_inset
 
@@ -166,23 +166,22 @@ CC Inclusive selections in both FHC and RHC beam configuration for
 \begin_inset Formula $\pod$
 \end_inset
 
- and TPC1.
- The first such analyses were T2K-TN-80 and T2K-TN-100 which described the
- 
+ and the TPC.
+ The first such analysis was the 
 \begin_inset Formula $\numu$
 \end_inset
 
- CC Inclusive event selection and, later, cross-section analysis using ND280
- Production 5 software, respectively
+ CC Inclusive cross-section using the previous ND280 simulation and reconstructi
+on software called Production 5
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Campbell:2014,Das2014"
+key "Das2016"
 literal "false"
 
 \end_inset
 
 .
- These analyzes relied on each sub-detector's reconstruction software and
+ That analysis relied on each sub-detector's reconstruction software and
  developed a track matching algorithm since the ND280 
 \begin_inset Quotes eld
 \end_inset
@@ -191,46 +190,258 @@ Global
 \begin_inset Quotes erd
 \end_inset
 
- reconstruction matching was problematic in Production 5.
- As the inter-detector matching reconstruction improved in 
-\begin_inset Quotes eld
+ reconstruction matching was problematic in that software production.
+ Another cross section analysis measuring the cross section ratio of 
+\begin_inset Formula $\numubar/\numu$
 \end_inset
 
-Global
-\begin_inset Quotes erd
-\end_inset
-
-, two 
-\begin_inset Formula $\cczeropi$
-\end_inset
-
- cross section analyzes, T2K-TN-258 and T2K-TN-328, were developed that
- also used the CC Inclusive selection as pre-selection cuts
+ also used this technique with the modern T2K Production 6 software
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Yuan:2016,Campbell2017"
+key "AbePhyRevD9652017"
 literal "false"
 
 \end_inset
 
 .
- The selections described in this technical note also employ the same pre-select
-ion cuts.
- What follows from here in this section is a layout of the following topic
- discussions.
+ As the inter-detector matching reconstruction improved in Global, two cross
+ section analyzes, 
+\begin_inset Formula $\numu$
+\end_inset
+
+ CC 
+\begin_inset Formula $0\pi$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevD.97.012001"
+literal "false"
+
+\end_inset
+
+ and 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ CC 
+\begin_inset Formula $0\pi$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "AbeForthcoming,Campbell2018a"
+literal "false"
+
+\end_inset
+
+, were developed that also used the CC Inclusive selection as pre-selection
+ cuts.
+ These pre-selection cuts are well validated and have published results
+ as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:numuandnumubarCC0pi"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.The selections described in this thesis also employ the same pre-selection
+ cuts with the latest stable Global reconstruction software, Production
+ 6.
+ What follows from here in this section is a layout of the following topics.
 \end_layout
 
 \begin_layout Standard
-The first topic discussed in this section is a description of the 
-\begin_inset Formula $\pizero$
+\begin_inset Float figure
+placement t
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/cc0pi_selection.png
+	lyxscale 50
+	width 30text%
+
 \end_inset
 
- Detector (
-\begin_inset Formula $\pod)$
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\numu$
 \end_inset
 
-.
- The next topic is the event reconstruction using the 
+ CC 0
+\begin_inset Formula $\pi$
+\end_inset
+
+ Selection
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevD.97.012001"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/numubarcc0pi_selection.png
+	lyxscale 25
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\numubar$
+\end_inset
+
+ CC 0
+\begin_inset Formula $\pi$
+\end_inset
+
+ Selection
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Campbell2018a"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Data and MC distributions of the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ water-in 
+\begin_inset Formula $\numu$
+\end_inset
+
+ and 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ CC 
+\begin_inset Formula $0\pi$
+\end_inset
+
+ signal selections.
+ They importantly share the same pre-selection cuts as this analysis.
+ The plots have been normalized to data POT and are sorted into various
+ truth topologies.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:numuandnumubarCC0pi"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Data and MC distributions of the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numutitle{}
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numubartitle{}
+\end_layout
+
+\end_inset
+
+ water-in CC signal selections
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The first topic is the event reconstruction using the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -283,92 +494,43 @@ CCQE-like
 \begin_inset Quotes erd
 \end_inset
 
- events in the Tracker region and has been extended to operate with all
- of ND280.
+ events in the Tracker, FGD+TPC, region and has been extended to operate
+ with all of ND280.
  A brief description of the Global reconstruction is described below.
- First the specific detector technologies and electronics of ND280 are explained.
- That is followed by the calibration procedure to properly tune each detector's
- response.
- And finally a general outline of the reconstruction algorithms to form
- tracks and vertices in ND280 is presented.
-\end_layout
-
-\begin_layout Standard
-ND280 events are first collected in the form of electronic signals from
- either multipixel photon counters (MPPCs) in the scintillator-based sub-detecto
-rs or charge collection planes of the time projection chambers (TPCs).
- MPPCs were chosen for the scintillator-based sub-detectors since they are
- insensitive to the strong 0.2T magnetic field present in ND280.
- The 
-\begin_inset Formula $\pod$
-\end_inset
-
-, ECals, and SMRD all share the same 
-\begin_inset Quotes eld
-\end_inset
-
-Trip-T
-\begin_inset Quotes erd
-\end_inset
-
- frontend board (TFB) electronics of which collect the photoelectrons released
- when photons interact with a pixel in the MPPCs.
- The FGDs operate with the same MPPC technology while using different frontend
- electronics.
- The TPCs utilize a locally strong electric field to collect ionization
- electrons from an Argon-based gas.
- Collected charge in the TPCs are collected and enhanced using micromega
- technology
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Abe:2011ks"
-literal "false"
-
-\end_inset
-
-.
- With the collected information from each sub-detector, the next step is
- the data calibration.
-\end_layout
-
-\begin_layout Standard
-Data calibration in ND280 is the process where the charge and timing information
- collected from each sub-detector is adjusted to match with expected parameters.
- This is an important process that takes into account environmental changes,
- aging effects, and other behavior that might be present.
- Calibration data is collected frequently before and during operational
- runtime and is stored in a database for later use.
- A common calibration is to measure the detector's cosmic ray response since
- most cosmic rays deposit the same energy per unit length.
- After the data has been calibrated, reconstruction algorithms now attempt
- to find charged particle tracks in the data.
 \end_layout
 
 \begin_layout Standard
 The Global reconstruction is a software package that attempts to recognize
  patterns of data to form tracks and find vertices for those tracks.
  Particle shower reconstruction in Global will not be discussed in this
- TN since no shower objects are used.
- Each sub-detector reconstruction is run to seeds Global's track matching
+ thesis since no shower objects are considered.
+ Each sub-detector reconstruction is run as the seed to Global's track matching
  algorithms.
- Global attempts to then re-fit sub-detector tracks using a Kalman filter
- while correcting for particle energy loss as a function of length (
+ For the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ selections, Global attempts to re-fit the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ track using a Kalman filter while correcting for particle energy loss as
+ a function of length (
 \begin_inset Formula $dT/dx$
 \end_inset
 
-) and multi-scattering processes.
- A vertex is then associated with the re-fit track using another Kalman
- filter algorithm.
- A further detailed description of the track matching and vertex finding
- algorithms for Global is described in T2K-TN-46
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Wikstrom:2018"
-literal "false"
-
+) and multiple scattering processes.
+ A 
+\begin_inset Formula $\pod$
 \end_inset
 
-.
+ vertex is then associated with the re-fit track using another Kalman filter
+ algorithm.
+ Matching tracks between the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ and the TPC is done automatically in the ND280 Global fit.
 \end_layout
 
 \end_inset
@@ -424,7 +586,7 @@ This following sections will describe the precuts common to all CC Inclusive
 \end_layout
 
 \begin_layout Subsection
-Pre-Selection Cuts
+Precuts
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:Precuts"
@@ -435,56 +597,38 @@ name "subsec:Precuts"
 \end_layout
 
 \begin_layout Standard
-The pre-selection (
-\begin_inset Quotes eld
-\end_inset
-
-precuts
-\begin_inset Quotes erd
-\end_inset
-
-) were initially developed to select 
+The precuts were initially developed to select 
 \begin_inset Formula $\numu$
 \end_inset
 
-CC Inclusive using the 
+ CC Inclusive using the 
 \begin_inset Formula $\pod$
 \end_inset
 
- and TPC sub-detector reconstruction softwares separately
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Campbell:2014"
-literal "false"
-
-\end_inset
-
-.
+ and TPC sub-detector reconstruction softwares separately.
  They were then used with the Global reconstruction software for the 
 \begin_inset Formula $\numu$
 \end_inset
 
-
+ 
 \begin_inset Formula $\cczeropi$
 \end_inset
 
- selection in the FHC beam configuration as described in technical note
- T2K-TN-258
+ selection in the FHC beam configuration
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Yuan:2016"
+key "PhysRevD.97.012001"
 literal "false"
 
 \end_inset
 
 .
- The description and flow of the precuts are described here as well since
- there is an incomplete description of the selection precuts.
- 
+ The description and sequence of the precuts is described below.
 \end_layout
 
 \begin_layout Standard
-The precuts are performed on each bunch per beam spill as follows
+The following precuts are checked on the collected data from each Trip-T
+ integration cycle as follows:
 \end_layout
 
 \begin_layout Enumerate
@@ -542,7 +686,15 @@ The TPC reconstruction gathers vertical and horizontal hits into clusters
  position that is more accurate than the individual readout pads.
  A node is constructed out of each cluster with associated track state informati
 on.
- The set of nodes are used to fit the track helix
+ The set of nodes are used to fit the track into a 
+\begin_inset Quotes eld
+\end_inset
+
+helix
+\begin_inset Quotes erd
+\end_inset
+
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Hillairet2011"
@@ -957,6 +1109,7 @@ Corridor Volume
 status open
 
 \begin_layout Plain Layout
+The 
 \begin_inset Formula $\pod$
 \end_inset
 
@@ -1079,11 +1232,15 @@ where
 
 .
  The fundamental theorem of Calculus permits the us to write the energy
- loss now as a momentum loss
+ loss now as a momentum loss along the track's path 
+\begin_inset Formula $\mathcal{C}$
+\end_inset
+
+ as
 \begin_inset Formula 
-\[
-\Delta P_{\pod}=\int_{C}\left(\frac{dP}{dx}\right)dx=\frac{1}{c}\int_{\mathcal{C}}\left[\left(\frac{dT}{dx}\right)\frac{1}{\beta(x)}\right]dx.
-\]
+\begin{equation}
+\Delta P_{\pod}=\int_{\mathcal{C}}\left(\frac{dP}{dx}\right)dx=\frac{1}{c}\int_{\mathcal{C}}\left[\left(\frac{dT}{dx}\right)\frac{1}{\beta(x)}\right]dx.\label{eq:momentumP0DOnly}
+\end{equation}
 
 \end_inset
 
@@ -1397,6 +1554,8 @@ noprefix "false"
 \end_inset
 
 .
+ There will be no data events shown to prevent any potential biases that
+ exist between the data and MC.
 \end_layout
 
 \begin_layout Subsection
@@ -1412,7 +1571,7 @@ numutitle{}
 
 \end_inset
 
- FHC CC 1-Track
+ in FHC CC 1-Track
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:numuFHCCC1Trk"
@@ -1426,7 +1585,7 @@ name "subsec:numuFHCCC1Trk"
 This selection provides the CCQE-like samples in FHC mode.
  
 \begin_inset CommandInset ref
-LatexCommand vref
+LatexCommand formatted
 reference "fig:numuFHCCC1TrkReco"
 plural "false"
 caps "false"
@@ -1435,26 +1594,58 @@ noprefix "false"
 \end_inset
 
  display the momentum and angular distributions that are inputs to BANFF.
- In the majority of cases, the lepton candidate is the true muon.
- The underlying true kinematics, 
-\begin_inset Formula $E_{\nu}$
+ In the majority of cases, the lepton candidate is the true muon, making
+ this a very pure 
+\begin_inset Formula $\numu$
 \end_inset
 
- and 
-\begin_inset Formula $Q^{2}$
-\end_inset
-
-, of the interactions are shown in 
+ sample.
+ We can examine the efficiencies and purities differentially for the selection
+ in 
 \begin_inset CommandInset ref
-LatexCommand vref
-reference "fig:numuFHCCC1TrkTrue"
+LatexCommand formatted
+reference "fig:numuFHCCC1TrkRecoEffPur"
 plural "false"
 caps "false"
 noprefix "false"
 
 \end_inset
 
- which are of theoretical importance in the cross section and flux models.
+.
+ The efficiency, 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+, and purity, 
+\begin_inset Formula $\rho$
+\end_inset
+
+, are defined as
+\begin_inset Formula 
+\begin{equation}
+\epsilon=\frac{N_{\text{Selected}}^{\text{True}}}{N^{\text{True}}}\quad\rho=\frac{N_{\text{Selected}}^{\text{True}}}{N_{\text{Selected}}},\label{eq:effpur}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $N_{\text{Selected}}^{\text{True}}$
+\end_inset
+
+ is the number of true, selected events, 
+\begin_inset Formula $N^{\text{True}}$
+\end_inset
+
+ is the number of true events, and 
+\begin_inset Formula $N_{\text{Selected}}$
+\end_inset
+
+ is the number of selected events.
+ They demonstrate that the purity is highest near 
+\begin_inset Formula $0.5$
+\end_inset
+
+ GeV/c with the efficiency highly dependent on the track angle.
 \end_layout
 
 \begin_layout Standard
@@ -1604,6 +1795,7 @@ Water-in
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+The 
 \begin_inset Formula $\numu$
 \end_inset
 
@@ -1632,6 +1824,7 @@ Water-in
 status open
 
 \begin_layout Plain Layout
+The 
 \begin_inset ERT
 status open
 
@@ -1644,7 +1837,7 @@ numutitle{}
 
 \end_inset
 
- FHC CC 1-Track Reconstructed Kinematics
+ in FHC CC 1-Track Reconstructed Kinematics
 \end_layout
 
 \end_inset
@@ -1670,7 +1863,26 @@ name "fig:numuFHCCC1TrkReco"
 \end_layout
 
 \begin_layout Standard
-An interesting CCQE-like topology in this selection are 
+The underlying true kinematics, 
+\begin_inset Formula $E_{\nu}$
+\end_inset
+
+ and 
+\begin_inset Formula $Q^{2}$
+\end_inset
+
+, of the interactions are shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:numuFHCCC1TrkTrue"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ which are of theoretical importance in the cross section and flux models.An
+ interesting CCQE-like topology in this selection are 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1683,6 +1895,179 @@ An interesting CCQE-like topology in this selection are
  Interaction model for 2p2h are included the BANFF fit whose model uncertainties
  are quite large in T2K.
  Therefore these events could reduce the 2p2h model uncertainties.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/air/numu/CC1Track/FluxAndEventWeights/eff.png
+	lyxscale 50
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+True CCQE Efficiency
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/air/numu/CC1Track/FluxAndEventWeights/pur.png
+	lyxscale 50
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+True CCQE Purity
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The 
+\begin_inset Formula $\numu$
+\end_inset
+
+ in FHC CC 1-Track true CCQE efficiency and purity in reconstructed kinematics.
+ The true events are those that are 
+\begin_inset Formula $\numu$
+\end_inset
+
+ CCQE at the vertex and the selected lepton candidate is a true 
+\begin_inset Formula $\muminus$
+\end_inset
+
+.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+The 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numutitle{}
+\end_layout
+
+\end_inset
+
+ in FHC CC 1-Track CCQE Efficiency and Purity
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:numuFHCCC1TrkRecoEffPur"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This selection contains a modest fraction of non-CCQE interactions.
+ The largest contamination is single pion interactions (
+\begin_inset Formula $1\pion$
+\end_inset
+
+), which can happen primarily for a couple of reasons.
+ Firstly, when the final state pion is produced, it is subject to final
+ state interactions (FSI) where a pion can be absorbed or scattered in the
+ nucleus.
+ Secondly, and more importantly, a pion might not be reconstructed as a
+ track in the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ if its energy is below reconstruction threshold.
+ Together, the large 
+\begin_inset Formula $1\pion$
+\end_inset
+
+ background might the collective sensitivity to the CC 
+\begin_inset Formula $0\pi$
+\end_inset
+
+ and CC 
+\begin_inset Formula $1\pi$
+\end_inset
+
+ model parameters.
 \end_layout
 
 \begin_layout Standard
@@ -1768,6 +2153,7 @@ True
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+The 
 \begin_inset Formula $\numu$
 \end_inset
 
@@ -1785,6 +2171,7 @@ True
 status open
 
 \begin_layout Plain Layout
+The 
 \begin_inset ERT
 status open
 
@@ -1823,23 +2210,6 @@ name "fig:numuFHCCC1TrkTrue"
 \end_layout
 
 \begin_layout Standard
-This selection contains a modest fraction of non-CCQE interactions.
- The largest contamination is single pion interactions (
-\begin_inset Formula $1\pion$
-\end_inset
-
-), which can happen for a number of reasons.
- First when the final state pion is produced, it is subject to final state
- interactions (FSI) where a pion can be absorbed or scatter in or out of
- the nucleus.
- In addition, a pion might not be reconstructed as a track in the 
-\begin_inset Formula $\pod$
-\end_inset
-
- if its energy is below reconstruction threshold.
-\end_layout
-
-\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -1847,8 +2217,7 @@ status open
 
 
 \backslash
-todo{Add comparison between p0d CC-0pi paper and this analysis for validation.
- Include 2D numu CCQE efficiency and purity from HL2.}
+todo{Add comparison between p0d CC-0pi paper and this analysis for validation.}
 \end_layout
 
 \end_inset
@@ -1883,7 +2252,7 @@ name "subsec:numuFHCCCNTrk"
 This selection provides non-CCQE-like samples in FHC mode inputs to BANFF.
  The reconstructed momentum and angular distributions are shown in 
 \begin_inset CommandInset ref
-LatexCommand vref
+LatexCommand formatted
 reference "fig:numuFHCCCNTrkReco"
 plural "false"
 caps "false"
@@ -2053,6 +2422,7 @@ Water-in mode
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+The 
 \begin_inset Formula $\numu$
 \end_inset
 
@@ -2073,6 +2443,7 @@ Water-in mode
 status open
 
 \begin_layout Plain Layout
+The 
 \begin_inset ERT
 status open
 
@@ -2111,9 +2482,179 @@ name "fig:numuFHCCCNTrkReco"
 \end_layout
 
 \begin_layout Standard
+We can examine the efficiencies and purities differentially for the selection
+ in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:numuFHCCCNTrkRecoEffPur"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ The true signal here is any 
+\begin_inset Formula $\numu$
+\end_inset
+
+ CC interaction except 
+\begin_inset Formula $\numu$
+\end_inset
+
+ CCQE which the CC 1-Track is designed to select.
+ The efficiency is high for the higher momenta and higher angle tracks suggestin
+g this is a high 
+\begin_inset Formula $Q^{2}$
+\end_inset
+
+ selection.
+ In addition, the purity is around ~70% in this region.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/air/numu/CCNTracks/FluxAndEventWeights/eff.png
+	lyxscale 50
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+True CC non-QE Efficiency
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/air/numu/CCNTracks/FluxAndEventWeights/pur.png
+	lyxscale 50
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+True non-CCQE Purity
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The 
+\begin_inset Formula $\numu$
+\end_inset
+
+ in FHC CC 1-Track true CCQE efficiency and purity in reconstructed kinematics.
+ The true events are any 
+\begin_inset Formula $\numu$
+\end_inset
+
+ CC interaction except 
+\begin_inset Formula $\numu$
+\end_inset
+
+ CCQE at the vertex and the selected lepton candidate is a true 
+\begin_inset Formula $\muminus$
+\end_inset
+
+.
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+The 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numutitle{}
+\end_layout
+
+\end_inset
+
+ in FHC CC N-Tracks CC non-QE Efficiency and Purity
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:numuFHCCCNTrkRecoEffPur"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 The fundamental kinematics of the selection are shown in 
 \begin_inset CommandInset ref
-LatexCommand vref
+LatexCommand formatted
 reference "fig:numuFHCCCNTrkTrue"
 plural "false"
 caps "false"
@@ -2193,7 +2734,7 @@ where
 
  distribution in 
 \begin_inset CommandInset ref
-LatexCommand vref
+LatexCommand formatted
 reference "fig:numuFHCCCNTrkTrue"
 plural "false"
 caps "false"
@@ -2202,7 +2743,8 @@ noprefix "false"
 \end_inset
 
 .
- Higher order resonance states are present as well.
+ Higher order resonance states are present as well since there are no cuts
+ to distinguish minimum ionizing particles, muons and pions, from protons.
 \end_layout
 
 \begin_layout Standard
@@ -2219,20 +2761,6 @@ The origin of the mis-identified particles, in particular the pions, becomes
 
  interactions topologies, the energy transfer to the final hadronic state
  can produce a higher energy pion than the true muon.
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-todo{Add 2D eff and purity numu CC-Inclusive plots from HL2.}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -2354,6 +2882,7 @@ True
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+The 
 \begin_inset Formula $\numu$
 \end_inset
 
@@ -2374,6 +2903,7 @@ True
 status open
 
 \begin_layout Plain Layout
+The 
 \begin_inset ERT
 status open
 
@@ -2442,7 +2972,7 @@ This selection provides the
  CCQE-like samples in RHC mode that are inputs to BANFF.
  In 
 \begin_inset CommandInset ref
-LatexCommand vref
+LatexCommand formatted
 reference "fig:numubarRHCCC1TrkReco"
 plural "false"
 caps "false"
@@ -2456,7 +2986,8 @@ noprefix "false"
 \end_inset
 
 -pure with the selected lepton candidate being positively charged muons.
- The OOFV background tracks are high momentum (
+ There is a large OOFV background from proton tracks.
+ They are high momentum (
 \begin_inset Formula $>1$
 \end_inset
 
@@ -2464,49 +2995,8 @@ noprefix "false"
 \begin_inset Formula $\csq$
 \end_inset
 
-) protons reaching into the TPC.
-\end_layout
-
-\begin_layout Standard
-The underlying true kinematics, 
-\begin_inset Formula $E_{\nu}$
-\end_inset
-
- and 
-\begin_inset Formula $Q^{2}$
-\end_inset
-
-, of the interactions are shown in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:numubarRHCCC1TrkTrue"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
- We see a similar true reaction composition to the 
-\begin_inset Formula $\numu$
-\end_inset
-
- in FHC selection in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "subsec:numuFHCCC1Trk"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
- Most reactions are true CCQE with a mixture of 2p2h and 
-\begin_inset Formula $1\pion$
-\end_inset
-
- events.
+) tracks which, at these energies, are become minimum ionizing and can reach
+ into the TPC.
 \end_layout
 
 \begin_layout Standard
@@ -2656,6 +3146,7 @@ Water-in
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+The 
 \begin_inset Formula $\numubar$
 \end_inset
 
@@ -2676,6 +3167,7 @@ Water-in
 status open
 
 \begin_layout Plain Layout
+The 
 \begin_inset ERT
 status open
 
@@ -2714,6 +3206,122 @@ name "fig:numubarRHCCC1TrkReco"
 \end_layout
 
 \begin_layout Standard
+We can examine the efficiencies and purities differentially for the selection
+ in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:numubarRHCCC1TrkRecoEffPur"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, The two distributions are very similar to the 
+\begin_inset Formula $\numu$
+\end_inset
+
+ in FHC CC 1-Track efficiencies and purities, with the efficiency being
+ relatively high (90%) for high statistics regions.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/air/numubarRHC/CC1Track/FluxAndEventWeights/eff.png
+	lyxscale 50
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+True CCQE Efficiency
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/air/numubarRHC/CC1Track/FluxAndEventWeights/pur.png
+	lyxscale 50
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+True CCQE Purity
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ in RHC CC 1-Track true CCQE efficiency and purity in reconstructed kinematics.
+ The true events are 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ CCQE at the vertex and the selected lepton candidate is a true 
+\begin_inset Formula $\muplus$
+\end_inset
+
+.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+The 
 \begin_inset ERT
 status open
 
@@ -2721,13 +3329,99 @@ status open
 
 
 \backslash
-todo{Insert 2D efficiency and purity numubar CCQE efficiency plots from
- HL2.}
+numubartitle{}
+\end_layout
+
+\end_inset
+
+ in RHC CC 1-Track CCQE Efficiency and Purity
 \end_layout
 
 \end_inset
 
 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:numubarRHCCC1TrkRecoEffPur"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The underlying true kinematics, 
+\begin_inset Formula $E_{\nu}$
+\end_inset
+
+ and 
+\begin_inset Formula $Q^{2}$
+\end_inset
+
+, of the interactions are shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:numubarRHCCC1TrkTrue"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ We see a similar true reaction composition to the 
+\begin_inset Formula $\numu$
+\end_inset
+
+ in FHC selection in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:numuFHCCC1Trk"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Most reactions are true CCQE with a mixture of 2p2h and 
+\begin_inset Formula $1\pion$
+\end_inset
+
+ events.
+ As previously seen in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:numuFHCCC1Trk"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, the significant 
+\begin_inset Formula $1\pi$
+\end_inset
+
+ contamination may the BANFF reduce the sensitivity both CC 
+\begin_inset Formula $0\pi$
+\end_inset
+
+ and CC 
+\begin_inset Formula $1\pi$
+\end_inset
+
+ model parameters.
 \end_layout
 
 \begin_layout Standard
@@ -2813,6 +3507,7 @@ True
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+The 
 \begin_inset Formula $\numubar$
 \end_inset
 
@@ -2833,6 +3528,7 @@ True
 status open
 
 \begin_layout Plain Layout
+The 
 \begin_inset ERT
 status open
 
@@ -2845,7 +3541,7 @@ numubartitle{}
 
 \end_inset
 
- RHC CC 1-Track True Kinematics
+ in RHC CC 1-Track True Kinematics
 \end_layout
 
 \end_inset
@@ -2906,17 +3602,16 @@ noprefix "false"
  The most striking feature of this selection is the the number of mis-identified
  events.
  In particular protons are selected the HMPT when they become minimum ionizing
- particles, which is around 
+ particles, which is about 
 \begin_inset Formula $1.3$
 \end_inset
 
- GeV
-\begin_inset Formula $/\csq$
+ GeV/c.
+ At these energies protons can escape the 
+\begin_inset Formula $\pod$
 \end_inset
 
-.
- At these energies protons can escape into the TPC since it deposits less
- energy per unit length.
+ into the TPC since it deposits less energy per unit length.
  In addition, the intrinsic 
 \begin_inset Formula $\numu$
 \end_inset
@@ -2926,71 +3621,8 @@ noprefix "false"
 \end_inset
 
  flavor.
- These two features would need to addressed in the next iteration of the
- analysis.
-\end_layout
-
-\begin_layout Standard
-The underlying true kinematics, 
-\begin_inset Formula $E_{\nu}$
-\end_inset
-
-, 
-\begin_inset Formula $Q^{2}$
-\end_inset
-
-, and 
-\begin_inset Formula $W$
-\end_inset
-
- of the interactions are shown in 
-\begin_inset CommandInset ref
-LatexCommand vref
-reference "fig:numubarRHCCCNTrkTrue"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
- Here we see in better detail the origin of the 
-\begin_inset Formula $\numu$
-\end_inset
-
- contamination.
- As a function of increasing energy, the 
-\begin_inset Formula $\numubar$
-\end_inset
-
- content is decreasing while the relative 
-\begin_inset Formula $\numu$
-\end_inset
-
- contribution is increasing.
- The 
-\begin_inset Formula $\numu$
-\end_inset
-
- events are also have a 
-\begin_inset Formula $Q^{2}$
-\end_inset
-
- content which explains the significant number proton main track events.
- For the hadronic final states, the shape of the 
-\begin_inset Formula $\numubar$
-\end_inset
-
--induced resonances is similar to what we saw in the 
-\begin_inset Formula $\numu$
-\end_inset
-
- in FHC CC N-Tracks selections.
- Interestingly, the 
-\begin_inset Formula $\numu$
-\end_inset
-
- background hadronic states are do not peak in any one region.
+ These two features should be addressed to increase the utility of the selection
+ for the next iteration of the analysis.
 \end_layout
 
 \begin_layout Standard
@@ -3140,6 +3772,7 @@ Water-in
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+The 
 \begin_inset Formula $\numubar$
 \end_inset
 
@@ -3160,6 +3793,7 @@ Water-in
 status open
 
 \begin_layout Plain Layout
+The 
 \begin_inset ERT
 status open
 
@@ -3198,6 +3832,134 @@ name "fig:numubarRHCCCNTrkReco"
 \end_layout
 
 \begin_layout Standard
+We can examine the efficiencies and purities differentially for the selection
+ in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:numuFHCCCNTrkRecoEffPur"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ The true signal here is any 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ CC interaction except 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ CCQE which the CC 1-Track is designed to select.
+ As seen before, both the efficiency and purity are low where statistics
+ are relevant.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/air/numubarRHC/CCNTracks/FluxAndEventWeights/eff.png
+	lyxscale 50
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+True CC non-QE Efficiency
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/air/numubarRHC/CCNTracks/FluxAndEventWeights/pur.png
+	lyxscale 50
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+True non-CCQE Purity
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ in RHC CC N-Tracks true CC non-QE efficiency and purity in reconstructed
+ kinematics.
+ The true events are any 
+\begin_inset Formula $\numu$
+\end_inset
+
+ CC interaction except 
+\begin_inset Formula $\numu$
+\end_inset
+
+ CCQE at the vertex and the selected lepton candidate is a true 
+\begin_inset Formula $\muminus$
+\end_inset
+
+.
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+The 
 \begin_inset ERT
 status open
 
@@ -3205,8 +3967,29 @@ status open
 
 
 \backslash
-todo{Insert 2D efficiency and purity numubar CC-Inc  plots from HL2.
- This means the flavor MUST be numubar.}
+numubartitle{}
+\end_layout
+
+\end_inset
+
+ in RHC CC N-Tracks CC non-QE Efficiency and Purity
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:numubarRHCCCNTrkRecoEffPur"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3215,11 +3998,74 @@ todo{Insert 2D efficiency and purity numubar CC-Inc  plots from HL2.
 \end_layout
 
 \begin_layout Standard
+The underlying true kinematics, 
+\begin_inset Formula $E_{\nu}$
+\end_inset
+
+, 
+\begin_inset Formula $Q^{2}$
+\end_inset
+
+, and 
+\begin_inset Formula $W$
+\end_inset
+
+ of the interactions are shown in 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:numubarRHCCCNTrkTrue"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Here we see in better detail the origin of the 
+\begin_inset Formula $\numu$
+\end_inset
+
+ contamination.
+ As a function of increasing energy, the 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ content is decreasing while the relative 
+\begin_inset Formula $\numu$
+\end_inset
+
+ contribution is increasing.
+ The 
+\begin_inset Formula $\numu$
+\end_inset
+
+ events are also have a 
+\begin_inset Formula $Q^{2}$
+\end_inset
+
+ content which explains the significant number proton main track events.
+ For the hadronic final states, the shape of the 
+\begin_inset Formula $\numubar$
+\end_inset
+
+-induced resonances is similar to what we saw in the 
+\begin_inset Formula $\numu$
+\end_inset
+
+ in FHC CC N-Tracks selections.
+ Interestingly, the 
+\begin_inset Formula $\numu$
+\end_inset
+
+ background hadronic states are do not peak in any one region.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement t
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3244,7 +4090,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+True Neutrino Energy
 \end_layout
 
 \end_inset
@@ -3276,6 +4122,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+True 
+\begin_inset Formula $Q^{2}$
+\end_inset
+
 
 \end_layout
 
@@ -3308,6 +4158,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+True 
+\begin_inset Formula $W$
+\end_inset
+
 
 \end_layout
 
@@ -3325,6 +4179,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+The 
 \begin_inset Formula $\numubar$
 \end_inset
 
@@ -3356,6 +4211,7 @@ status open
 status open
 
 \begin_layout Plain Layout
+The 
 \begin_inset ERT
 status open
 
@@ -3410,22 +4266,31 @@ numutitle{}
 \end_layout
 
 \begin_layout Standard
-This selection provides the wrong-sign (
+This selection provides the 
 \begin_inset Formula $\numu$
 \end_inset
 
-) background CCQE-enriched samples in RHC mode.
- Figures below display the momentum and angular distributions that are inputs
- to BANFF.
- The underlying true kinematics, 
-\begin_inset Formula $E_{\nu}$
+ in RHC, also called wrong-sign background, CCQE-like samples.
+ 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:numuRHCCC1TrkReco"
+plural "false"
+caps "false"
+noprefix "false"
+
 \end_inset
 
- and 
-\begin_inset Formula $Q^{2}$
+ displays the momentum and angular distributions that are inputs to BANFF.
+ We can see this is a relatively low-angle, forward going selection compared
+ to previous selections.
+ Importantly the selection is 
+\begin_inset Formula $\numu$
 \end_inset
 
-, of the interactions are shown below.
+-pure which should help constrain the wrong-sign background in BANFF.
+ However, the CCQE purity is modest given number of correctly identified
+ lepton candidates.
 \end_layout
 
 \begin_layout Standard
@@ -3458,7 +4323,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Water-out
 \end_layout
 
 \end_inset
@@ -3490,7 +4355,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Water-out
 \end_layout
 
 \end_inset
@@ -3526,7 +4391,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Water-in
 \end_layout
 
 \end_inset
@@ -3558,7 +4423,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Water-in
 \end_layout
 
 \end_inset
@@ -3575,6 +4440,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+The 
 \begin_inset Formula $\numu$
 \end_inset
 
@@ -3587,7 +4453,40 @@ status open
 \end_inset
 
  distributions broken down by true NEUT interaction modes.
- The top and bottom figures are water-out and water-in mode, respectively.
+ The top figures (a) and (b) are water-out mode while the bottom (c) and
+ (d) figures are water-in mode.
+ Each distribution is normalized to the RHC POT collected between run periods
+ 2 - 8.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+The 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numubartitle{}
+\end_layout
+
+\end_inset
+
+ in RHC CC 1-Track Reconstructed Kinematics
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:numuRHCCC1TrkReco"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3601,6 +4500,123 @@ status open
 \end_layout
 
 \begin_layout Standard
+We can examine the efficiencies and purities differentially for the selection
+ in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:numuRHCCC1TrkRecoEffPur"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, The efficiency is similar to the 
+\begin_inset Formula $\numu$
+\end_inset
+
+ in FHC CC 1-Track efficiency.
+ As for the purity, it is roughly 70% in a banded region between low momenta,
+ low angle and high momenta, high angle tracks.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/air/numubkgRHC/CC1Track/FluxAndEventWeights/eff.png
+	lyxscale 50
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+True CCQE Efficiency
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/air/numubkgRHC/CC1Track/FluxAndEventWeights/pur.png
+	lyxscale 50
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+True CCQE Purity
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ in RHC CC 1-Track true CCQE efficiency and purity in reconstructed kinematics.
+ The true events are 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ CCQE at the vertex and the selected lepton candidate is a true 
+\begin_inset Formula $\muplus$
+\end_inset
+
+.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+The 
 \begin_inset ERT
 status open
 
@@ -3608,13 +4624,64 @@ status open
 
 
 \backslash
-todo{Insert 2D efficiency and purity numu CCQE  plots from HL2.
- This means the flavor MUST be numu.}
+numutitle{}
+\end_layout
+
+\end_inset
+
+ in RHC CC 1-Track CCQE Efficiency and Purity
 \end_layout
 
 \end_inset
 
 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:numuRHCCC1TrkRecoEffPur"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The underlying true kinematics, 
+\begin_inset Formula $E_{\nu}$
+\end_inset
+
+ and 
+\begin_inset Formula $Q^{2}$
+\end_inset
+
+, of the selection are shown in 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:numuRHCCC1TrkTrue"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Due to the flux of the wrong-sign background, the neutrino energy is not
+ sharply peaked at 0.6 GeV.
+ This explains the significant non-CCQE event contamination in the form
+ of 2p2h and 
+\begin_inset Formula $1\pion$
+\end_inset
+
+ interactions.
 \end_layout
 
 \begin_layout Standard
@@ -3647,7 +4714,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+True Neutrino Energy
 \end_layout
 
 \end_inset
@@ -3679,6 +4746,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+True 
+\begin_inset Formula $Q^{2}$
+\end_inset
+
 
 \end_layout
 
@@ -3696,20 +4767,46 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+The 
 \begin_inset Formula $\numu$
 \end_inset
 
- in RHC CC 1-Track
-\begin_inset Formula $E_{\nu}$
-\end_inset
-
- and 
-\begin_inset Formula $Q^{2}$
-\end_inset
-
- distributions.
+ in RHC CC 1-Track true kinematic distributions broken down by true NEUT
+ interaction modes.
  Sub-figure (a) is broken down by true neutrino flavor with (b) broken by
  more specific NEUT interaction modes.
+ Water-out mode is displayed here only with the last bin used as overflow.
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+The 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numutitle{}
+\end_layout
+
+\end_inset
+
+ in RHC CC 1-Track True Kinematics
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:numuRHCCC1TrkTrue"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3744,21 +4841,23 @@ This selection provides the
 \end_inset
 
  background non-CCQE-like samples in RHC mode.
- Figures below display the momentum and angular distributions that are inputs
- to BANFF.
- The underlying true kinematics, 
-\begin_inset Formula $E_{\nu}$
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:numuRHCCCNTrkReco"
+plural "false"
+caps "false"
+noprefix "false"
+
 \end_inset
 
-, 
-\begin_inset Formula $Q^{2}$
+ shows the momentum and angular distributions that are inputs to BANFF.
+ We can see the selection is relatively 
+\begin_inset Formula $\numu$
 \end_inset
 
-, and 
-\begin_inset Formula $W$
-\end_inset
-
- of the interactions are shown below.
+-pure with a significant mis-identified track rate.
+ Interestingly, the mis-identified pion tracks have a high-energy trail.
 \end_layout
 
 \begin_layout Standard
@@ -3791,7 +4890,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Water-out
 \end_layout
 
 \end_inset
@@ -3810,7 +4909,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/air/numubarRHC/CCNTracks/FluxAndEventWeights/numubarRHCCCNTracksWaterOut_recocosq_mu_MC_only_NEUTCCQELike_rhc_air_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/air/numubkgRHC/CCNTracks/FluxAndEventWeights/numubkgRHCCCNTracksWaterOut_recocosq_mu_MC_only_NEUTCCQELike_rhc_air_FluxAndEventWeights.png
 	lyxscale 50
 	width 33text%
 
@@ -3823,7 +4922,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Water-out
 \end_layout
 
 \end_inset
@@ -3846,7 +4945,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/air/numubkgRHC/CCNTracks/FluxAndEventWeights/numubkgRHCCCNTracksWaterOut_recoP_mu_MC_only_NEUTCCQELike_rhc_air_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubkgRHC/CCNTracks/FluxAndEventWeights/numubkgRHCCCNTracksWaterIn_recoP_mu_MC_only_NEUTCCQELike_rhc_water_FluxAndEventWeights.png
 	lyxscale 50
 	width 33text%
 
@@ -3859,7 +4958,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Water-in
 \end_layout
 
 \end_inset
@@ -3878,7 +4977,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numubarRHC/CCNTracks/FluxAndEventWeights/numubarRHCCCNTracksWaterIn_recocosq_mu_MC_only_LeptonCandidateTruePDG_rhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubkgRHC/CCNTracks/FluxAndEventWeights/numubkgRHCCCNTracksWaterIn_recocosq_mu_MC_only_LeptonCandidateTruePDG_rhc_water_FluxAndEventWeights.png
 	lyxscale 50
 	width 33text%
 
@@ -3891,7 +4990,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Water-in
 \end_layout
 
 \end_inset
@@ -3908,10 +5007,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+The 
 \begin_inset Formula $\numu$
 \end_inset
 
- RHC CC N-Tracks 
+ in RHC CC N-Tracks 
 \begin_inset Formula $P$
 \end_inset
 
@@ -3920,7 +5020,40 @@ status open
 \end_inset
 
  distributions broken down by true NEUT interaction modes.
- The top and bottom figures are water-out and water-in mode, respectively.
+ The top figures (a) and (b) are water-out mode.
+ The bottom (c) and (d) figures are water-in mode.
+ Each distribution is normalized to the FHC POT collected between run periods
+ 2 - 8.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+The 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numutitle{}
+\end_layout
+
+\end_inset
+
+ in RHC CC N-Tracks Reconstructed Kinematics
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:numuRHCCCNTrkReco"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3934,6 +5067,132 @@ status open
 \end_layout
 
 \begin_layout Standard
+We can examine the 
+\begin_inset Formula $\numu$
+\end_inset
+
+ CC non-QE efficiency and purity of the selection in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:numuRHCCCNTrkRecoEffPur"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ There is a reduction in the purity below 1.5 GeV/c due to the the 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ selections occupying the same phase space.
+ Fortunately, the distributions are relatively high above 1.5 GeV/c.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/mhogan/Documents/graduateDisseration/Chapters/Figures/SamplesAndSelections/air/numubkgRHC/CCNTracks/FluxAndEventWeights/eff.png
+	lyxscale 50
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+True CC non-QE Efficiency
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/mhogan/Documents/graduateDisseration/Chapters/Figures/SamplesAndSelections/air/numubkgRHC/CCNTracks/FluxAndEventWeights/pur.png
+	lyxscale 50
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+True non-CCQE Purity
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The 
+\begin_inset Formula $\numu$
+\end_inset
+
+ in RHC CC N-Tracks true CC non-QE efficiency and purity in reconstructed
+ kinematics.
+ The true events are any 
+\begin_inset Formula $\numu$
+\end_inset
+
+ CC interaction except 
+\begin_inset Formula $\numu$
+\end_inset
+
+ CCQE at the vertex and the selected lepton candidate is a true 
+\begin_inset Formula $\muminus$
+\end_inset
+
+.
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+The 
 \begin_inset ERT
 status open
 
@@ -3941,13 +5200,75 @@ status open
 
 
 \backslash
-todo{Insert 2D efficiency and purity numu CC-Inc  plots from HL2.
- This means the flavor MUST be numu.}
+numutitle{}
+\end_layout
+
+\end_inset
+
+ in RHC CC N-Tracks CC non-QE Efficiency and Purity
 \end_layout
 
 \end_inset
 
 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:numuRHCCCNTrkRecoEffPur"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The underlying true kinematics, 
+\begin_inset Formula $E_{\nu}$
+\end_inset
+
+, 
+\begin_inset Formula $Q^{2}$
+\end_inset
+
+, and 
+\begin_inset Formula $W$
+\end_inset
+
+, of the interactions are shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:numuRHCCCNTrkTrue"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ As we have seen before with the CC N-Tracks samples, these are high 
+\begin_inset Formula $E_{\nu}$
+\end_inset
+
+ events with large 
+\begin_inset Formula $Q^{2}$
+\end_inset
+
+ exchanges.
+ The invariant hadronic system displays the previously seen resonances,
+ with the largest still being from the 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ baryon.
 \end_layout
 
 \begin_layout Standard
@@ -3980,7 +5301,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+True Neutrino Energy
 \end_layout
 
 \end_inset
@@ -4012,6 +5333,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+True 
+\begin_inset Formula $Q^{2}$
+\end_inset
+
 
 \end_layout
 
@@ -4044,6 +5369,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+True 
+\begin_inset Formula $W$
+\end_inset
+
 
 \end_layout
 
@@ -4061,19 +5390,49 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+The 
 \begin_inset Formula $\numubar$
 \end_inset
 
- in RHC 
-\begin_inset Formula $E_{\nu}$
-\end_inset
-
- and 
+ in RHC CC N-Tracks true kinematics broken down by true NEUT interaction
+ modes.
+ Sub-figures (a), (b), and (c) show the true neutrino energy, 
 \begin_inset Formula $Q^{2}$
 \end_inset
 
- distributions broken down by true NEUT interaction modes.
+, and 
+\begin_inset Formula $W$
+\end_inset
+
+ distributions, respectively.
+ Water-out mode is displayed here only with the last bin used as overflow
+ is shown in (a) and (b).
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+The 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numubartitle{}
 \end_layout
+
+\end_inset
+
+ in RHC CC N-Tracks True Kinematics
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:numuRHCCCNTrkTrue"
 
 \end_inset
 
@@ -4083,6 +5442,37 @@ status open
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Summary of Selections
+\end_layout
+
+\begin_layout Standard
+We have examined the selection procedure described above produces some reasonabl
+y pure CCQE samples using the 1-Track cut.
+ By inverting that cut, we obtain some handles on other topologies like
+ CC 
+\begin_inset Formula $1\pi$
+\end_inset
+
+ and high 
+\begin_inset Formula $Q^{2}$
+\end_inset
+
+ CCDIS events.
+ Importantly is the ability to constrain the correct sign 
+\begin_inset Formula $\numu$
+\end_inset
+
+ and wrong sign backgrounds in RHC.
+ We can now move forward to the systematic uncertainties present in the
+ analysis.
 \end_layout
 
 \end_inset
