@@ -129,6 +129,174 @@ Flux Model
 \end_layout
 
 \begin_layout Standard
+The T2K neutrino flux model is a description of the neutrino beam spectrum
+ by run period and flavor.
+ This model includes simulations of the beam interactions and subsequent
+ hadron production at the target.
+ The predicted hadron production rate, including inside and outside the
+ target, is tuned based on the results from the NA61/SHINE replica target
+ experiment and other hadron production experiments.
+ The uncertainties in the unoscillated flux tuning are dominated on hadron
+ production.
+ Smaller effects on the unoscillated flux uncertainty include the proton
+ beam profile, off-axis angle, horn current, and horn alignment.
+ Further details about the flux model and uncertainties can be found here
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abe:2017vif"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The resultant flux and systematic bins are shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:UnoscillatedFluxSK"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ with their tabulated uncertainties in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Fluxbinning"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Binning is shared between ND280 and SK to yield 100 tuning (normalization)
+ parameters.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Systematics/SKFHCFlux.png
+	lyxscale 50
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Unoscillated FHC flux
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Systematics/SKRHCFlux.png
+	lyxscale 50
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Unoscillated RHC flux
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The T2K unoscillated neutrino flux prediction at SK for FHC (left) and RHC
+ (right) modes.
+ The shared ND280 and SK binning used for the flux systematic parameters
+ is also shown.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+The T2K Unoscillated Neutrino Flux Prediction at SK
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:UnoscillatedFluxSK"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="102" columns="4">
@@ -145,7 +313,25 @@ Flux Model
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The binning and indices used in the analysis for the flux.
+The flux binning and uncertainties used in the analysis.
+ This particular flux tuning model is 13a v2.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Flux Binning and Uncertainties Used in the Analysis
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Fluxbinning"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
