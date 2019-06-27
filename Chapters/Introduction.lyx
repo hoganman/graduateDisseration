@@ -995,11 +995,7 @@ where
 \begin_inset Formula $\gamma^{\mu}$
 \end_inset
 
- are a set of four 
-\begin_inset Formula $4\times4$
-\end_inset
-
- matrices.
+ are a set of four 4x4 matrices.
  The adjoint field 
 \begin_inset Formula $\overline{\psi}\left(x\right)$
 \end_inset

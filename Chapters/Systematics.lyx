@@ -124,7 +124,7 @@ literal "false"
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Flux Model
 \end_layout
 
@@ -4278,11 +4278,11 @@ Super-K
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Cross Section Model
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Detector Inefficiencies
 \end_layout
 
@@ -4297,7 +4297,7 @@ All the detector systematics in BANFF are evaluated as either observable
  of the outgoing muon in CC interactions.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Efficiency-like Systematics
 \end_layout
 
@@ -4379,7 +4379,7 @@ w_{\text{ineff}} & =\frac{1-\epsilon_{\text{Data}}^{\prime}}{1-\epsilon_{\text{M
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Observable Variation Systematics
 \end_layout
 
@@ -4418,7 +4418,7 @@ where
 .
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Normalization Systematics
 \end_layout
 

@@ -502,30 +502,6 @@ filename "Chapters/Selections.lyx"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Branch Systematics
-inverted 0
-status open
-
-\begin_layout Chapter
-Systematic Uncertainties
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "Chapters/Systematics.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset Branch P0DBANFFParameterization
 inverted 0
 status open
@@ -543,7 +519,14 @@ podtitle{}
 
 \end_inset
 
- in BANFF Parameterization
+ in BANFF Parameterization 
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:P0DinBANFF"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
