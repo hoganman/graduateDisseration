@@ -79,6 +79,14 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
+\newcommand{\antinu}{\overline{\nu}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
 \newcommand{\nuparticle}[1]{\nu_{#1}}
 \end_inset
 
@@ -95,8 +103,8 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\nuantinuparticle}[1]{\ ^{{\scriptscriptstyle ({\scriptstyle -}}}\negmedspace\negmedspace\negmedspace\nu_{#1}^{{\scriptscriptstyle )}}}
-{\stackrel{(-)}{\nu_{#1}}}
+\newcommand{\nuantinuparticle}[1]{^{{\scriptscriptstyle ({\scriptstyle -}}}\negmedspace\negmedspace\nu_{#1}^{{\scriptscriptstyle )}}}
+{\stackrel{(-)}{\nu}_{#1}}
 \end_inset
 
 

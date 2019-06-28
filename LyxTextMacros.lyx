@@ -201,6 +201,34 @@ checkmark}}}
 \backslash
 newcommand{
 \backslash
+nutitle}{
+\backslash
+texorpdfstring{$
+\backslash
+nu$}{Nu}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+Anutitle}{
+\backslash
+texorpdfstring{$
+\backslash
+overline{
+\backslash
+nu}$}{ANu}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
 numutitle}{
 \backslash
 texorpdfstring{$

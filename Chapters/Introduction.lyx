@@ -110,7 +110,7 @@
 \begin_layout Standard
 \begin_inset Branch IntroductionNeutrinos
 inverted 0
-status open
+status collapsed
 
 \begin_layout Section
 Introduction to Neutrinos
@@ -7862,6 +7862,11 @@ While events from SK are not used in this analysis, the goal is to try to
  ND280's utility and discussed in the next section.
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 ND Constraint
 \end_layout
@@ -8213,7 +8218,20 @@ Having a large, sensitive off-axis ND like ND280 provides critical constraints
  Without ND280, the fractional uncertainty on the flux rate is about ~10%
  per energy bin.
  These constraints are obtained from MUMON discussed above and the NA61/SHINE
- experiment.
+ experiment
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+todo{Insert ref}
+\end_layout
+
+\end_inset
+
+.
  Adding the ND constraint reduces the uncertainty to about ~5% as seen in
  
 \begin_inset CommandInset ref
@@ -8229,126 +8247,10 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-There are numerous cross section channels that affect T2K's sensitivity
- to the oscillation parameters, with the most important being CCQE and CCQE-like
- interactions collectively called CC 0
-\begin_inset Formula $\pion$
-\end_inset
-
-.
- At energies near the 
-\begin_inset Formula $\nue$
-\end_inset
-
- appearance probability maximum, 
-\begin_inset Formula $E_{\nu}=$
-\end_inset
-
-0.6 GeV, the CCQE interaction is the largest contributor to the neutrino
- cross section for T2K relevant energies as shown in 
-\begin_inset CommandInset ref
-LatexCommand vref
-reference "fig:PredictedCCincxsec"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
- The CCQE model is important historically since it well predicts the neutrino
- energy in low-Z, bubble chamber data.
-\end_layout
-
-\begin_layout Standard
-However there are CCQE-like interactions that require parameterization since
- they produce final states similar topologies to true CCQE events.
- The T2K experiment models CCQE-like interactions using correlated nucleon
- interactions with the lowest ordering pair scattering called 
-\begin_inset Quotes eld
-\end_inset
-
-2 particle, 2 hole
-\begin_inset Quotes erd
-\end_inset
-
- (2p2h) interactions
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-The name 2p2h originates from Condensed Matter Physics which motivated the
- model.
- In solid state matter, a 
-\begin_inset Quotes eld
-\end_inset
-
-hole
-\begin_inset Quotes erd
-\end_inset
-
- refers to the absence of an electron in a valence band.
- In the High Energy Physics context, 2p2h considers an interacting pair
- of nucleons (2p) scattering from an incoming particle.
- The imparted energy on the pair excites them to higher energy states leaving
- two 
-\begin_inset Quotes eld
-\end_inset
-
-hole
-\begin_inset Quotes erd
-\end_inset
-
- states (2h) behind.
-\end_layout
-
-\end_inset
-
-.
- Higher order correlated nucleon scattering called 
-\begin_inset Quotes eld
-\end_inset
-
-Random Phase Approximation
-\begin_inset Quotes erd
-\end_inset
-
- (RPA) is modeled as a functional correction to the scattering cross section.
-\end_layout
-
-\begin_layout Standard
-The canonical T2K CC 
-\begin_inset Formula $0\pion$
-\end_inset
-
- interaction model is, however, problematic due to model deficiencies to
- accurately predict the neutrino energy.
- At best, the CC 
-\begin_inset Formula $0\pion$
-\end_inset
-
- model is an effective model with improvements still being explored.
- Measurements at ND280 of continue to push the limits of the CC 
-\begin_inset Formula $0\pion$
-\end_inset
-
- with high angular acceptance and zero proton multiplicities.
-\end_layout
-
-\begin_layout Standard
-The other exclusive channels considered are resonance states More recently
- has T2K explored using CC1
-\begin_inset Formula $\pion$
-\end_inset
-
- final states at SK to further improve its oscillation measurements.
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -8422,18 +8324,49 @@ name "fig:PredictedCCincxsec"
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+T2K uses the NEUT
+\begin_inset Foot
+status collapsed
+
 \begin_layout Plain Layout
-
+NEUT is neither an initialism nor acronym
 \end_layout
 
 \end_inset
 
-
-\end_layout
+ program library to simulate neutrino interactions with nucleons and the
+ nucleus
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hayato2009"
+literal "false"
 
 \end_inset
 
+.
+ It was originally designed to simulate atmospheric neutrinos for the Kamioka
+ Nucleon Decay Experiment (Kamiokande).
+ Included in NEUT are numerous models for neutrino interactions on matter
+ and intra-medium hadron transport within the nucleus.
+\end_layout
 
+\begin_layout Standard
+
+\shape italic
+Using the ND280 constraint can tune the NEUT cross section model to best
+ match the T2K data
+\shape default
+.
+ The canonical T2K cross section model in NEUT is problematic due to model
+ deficiencies to accurately predict the neutrino energy.
+ The models implemented in NEUT, while being well studied in previous neutrino-n
+uclear Physics experiments, are known as effective models in T2K.
 \end_layout
 
 \end_inset
