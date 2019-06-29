@@ -283,7 +283,7 @@ status open
 \begin_inset Graphics
 	filename Figures/SamplesAndSelections/cc0pi_selection.png
 	lyxscale 50
-	width 30text%
+	height 20theight%
 
 \end_inset
 
@@ -330,7 +330,7 @@ status open
 \begin_inset Graphics
 	filename Figures/SamplesAndSelections/numubarcc0pi_selection.png
 	lyxscale 25
-	width 30text%
+	height 20theight%
 
 \end_inset
 
@@ -349,19 +349,6 @@ status open
 \end_inset
 
  Selection
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-todo{Fix my height}
-\end_layout
-
-\end_inset
-
-
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Campbell2018a"
@@ -2698,54 +2685,79 @@ POT Used in This Analysis
 
 \begin_layout Standard
 True interactions for these selections are generally divided into four interacti
-ons classes: neutrino CCQE (
+ons classes:
+\end_layout
+
+\begin_layout Itemize
+neutrino-induced CCQE (
 \begin_inset Formula $\nu$
 \end_inset
 
- CCQE), neutrino non-CCQE (
+ CCQE):
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Only NEUT generated neutrino-induced CCQE event at the interaction vertex
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+neutrino-induced non-CCQE (
 \begin_inset Formula $\nu$
 \end_inset
 
- non-CCQE), antineutrino CCQE (
+ non-CCQE),
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Any NEUT generated neutrino-induced CC and NC event 
+\shape italic
+except
+\shape default
+ neutrino-induced CCQE at the interaction vertex
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+antineutrino-induced CCQE (
 \begin_inset Formula $\overline{\nu}$
 \end_inset
 
- CCQE), and antineutrino non-CCQE (
+ CCQE)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Only NEUT generated antineutrino-induced CCQE event at the interaction vertex
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+antineutrino-induced non-CCQE (
 \begin_inset Formula $\overline{\nu}$
 \end_inset
 
- non-CCQE).
- A 
-\begin_inset Formula $\nu$
-\end_inset
+ non-CCQE)
+\end_layout
 
- (
-\begin_inset Formula $\antinu$
-\end_inset
+\begin_deeper
+\begin_layout Itemize
+Any NEUT generated antineutrino-induced CC and NC event 
+\shape italic
+except
+\shape default
+ antineutrino-induced CCQE at the interaction vertex
+\end_layout
 
-) CCQE interaction corresponds to a true NEUT generated neutrino (antineutrino)
- CCQE event at the interaction vertex.
- The 
-\begin_inset Formula $\nu$
-\end_inset
-
- (
-\begin_inset Formula $\antinu)$
-\end_inset
-
- non-CCQE events are neutrino (antineutrino) interactions but 
-\begin_inset Formula $\nu$
-\end_inset
-
- (
-\begin_inset Formula $\antinu)$
-\end_inset
-
- CCQE.
- A table of the specified NEUT reaction categories is given in 
+\end_deeper
+\begin_layout Standard
+An enlarged legend of these four interaction classes used in this analysis
+ is shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "tab:NuAntiNuNEUTReaction"
+reference "fig:EnlargedlegendsCCQEnonCCQE"
 plural "false"
 caps "false"
 noprefix "false"
@@ -2753,19 +2765,14 @@ noprefix "false"
 \end_inset
 
 .
- The non-CCQE category can be further divided among the dominant T2K CC
- and all NC interactions modes.
- Both general and specific NEUT categories are shown in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:EnlargedlegendsNEUT"
-plural "false"
-caps "false"
-noprefix "false"
-
+ Out of fiducial volume (OOFV) events refer to neutrino and antineutrino
+ interactions occuring in ND280, but not in the 
+\begin_inset Formula $\pod$
 \end_inset
 
-.
+ water target (WT) fiducial volume (FV).
+ Sand muons, similar to OOFV events, are any neutrino/antineutrino-induced
+ interaction truly occurring in the sand surrounding the ND280 pit.
 \end_layout
 
 \begin_layout Standard
@@ -2773,13 +2780,6 @@ noprefix "false"
 wide false
 sideways false
 status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
 
 \begin_layout Plain Layout
 \align center
@@ -2797,7 +2797,17 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-NEUT CCQE and non-CCQE
+NEUT CCQE and non-CCQE interactions legend
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+The NEUT Interaction CCQE and non-CCQE Legend
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:EnlargedlegendsCCQEnonCCQE"
@@ -2812,107 +2822,24 @@ name "fig:EnlargedlegendsCCQEnonCCQE"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-placement t
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/SamplesAndSelections/NEUTNuInteraction_legend.png
-	lyxscale 50
-	height 30theight%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-NEUT CC and NC interactions
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:EnlargedlegendsNEUTCCNC"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-The NEUT interaction legends used in this analysis.
- 
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-The NEUT Interaction Legends
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:EnlargedlegendsNEUT"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-The true particle associated with the main track is also analyzed here.
- Only charged particles are considered .
- The legends used are blown up , , and 
+The non-CCQE category can be further divided among the dominant T2K CC and
+ all NC interactions modes as enumerated in 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "fig:EnlargedlegendParticle"
+reference "tab:NuNEUTReaction"
 plural "false"
 caps "false"
 noprefix "false"
 
 \end_inset
 
-.
-\end_layout
 
-\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
@@ -2921,7 +2848,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="8" columns="3">
+<lyxtabular version="3" rows="11" columns="3">
 <features booktabs="true" tabularvalignment="middle">
 <column alignment="left" valignment="top">
 <column alignment="left" valignment="top">
@@ -2949,14 +2876,7 @@ Category
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\nu$
-\end_inset
-
- (
-\begin_inset Formula $\antinu$
-\end_inset
-
-) NEUT Codes
+NEUT Codes
 \end_layout
 
 \end_inset
@@ -2967,7 +2887,10 @@ Category
 \begin_inset Text
 
 \begin_layout Plain Layout
-CCQE
+\begin_inset Formula $\nu$
+\end_inset
+
+ CCQE
 \end_layout
 
 \end_inset
@@ -2988,11 +2911,7 @@ CCQE
 \begin_inset Formula $1$
 \end_inset
 
- (
-\begin_inset Formula $-1$
-\end_inset
 
-)
 \end_layout
 
 \end_inset
@@ -3012,7 +2931,10 @@ CCQE
 \begin_inset Text
 
 \begin_layout Plain Layout
-2p2h
+\begin_inset Formula $\nu$
+\end_inset
+
+ 2p2h
 \end_layout
 
 \end_inset
@@ -3024,11 +2946,7 @@ CCQE
 \begin_inset Formula $2$
 \end_inset
 
- (
-\begin_inset Formula $-2$
-\end_inset
 
-)
 \end_layout
 
 \end_inset
@@ -3048,7 +2966,10 @@ CCQE
 \begin_inset Text
 
 \begin_layout Plain Layout
-CC-
+\begin_inset Formula $\nu$
+\end_inset
+
+ CC-
 \begin_inset Formula $1\pi$
 \end_inset
 
@@ -3064,11 +2985,7 @@ CC-
 \begin_inset Formula $11\rightarrow16$
 \end_inset
 
- (
-\begin_inset Formula $-11\rightarrow-16$
-\end_inset
 
-)
 \end_layout
 
 \end_inset
@@ -3079,7 +2996,10 @@ CC-
 \begin_inset Text
 
 \begin_layout Plain Layout
-non-CCQE
+\begin_inset Formula $\nu$
+\end_inset
+
+ non-CCQE
 \end_layout
 
 \end_inset
@@ -3088,7 +3008,10 @@ non-CCQE
 \begin_inset Text
 
 \begin_layout Plain Layout
-CC-N
+\begin_inset Formula $\nu$
+\end_inset
+
+ CC-N
 \begin_inset Formula $\pi$
 \end_inset
 
@@ -3104,18 +3027,14 @@ CC-N
 \begin_inset Formula $21$
 \end_inset
 
- (
-\begin_inset Formula $-21$
-\end_inset
 
-)
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3128,7 +3047,10 @@ CC-N
 \begin_inset Text
 
 \begin_layout Plain Layout
-CC-DIS
+\begin_inset Formula $\nu$
+\end_inset
+
+ CC-DIS
 \end_layout
 
 \end_inset
@@ -3140,11 +3062,7 @@ CC-DIS
 \begin_inset Formula $26$
 \end_inset
 
- (
-\begin_inset Formula $26$
-\end_inset
 
-)
 \end_layout
 
 \end_inset
@@ -3164,7 +3082,10 @@ CC-DIS
 \begin_inset Text
 
 \begin_layout Plain Layout
-CC-Other
+\begin_inset Formula $\nu$
+\end_inset
+
+ CC-Other
 \end_layout
 
 \end_inset
@@ -3176,18 +3097,14 @@ CC-Other
 \begin_inset Formula $17,22,23$
 \end_inset
 
- (
-\begin_inset Formula $-17,-22,-23$
-\end_inset
 
-)
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3196,11 +3113,113 @@ CC-Other
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-NC
+\begin_inset Formula $\nu$
+\end_inset
+
+ NC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $31\rightarrow100$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\antinu$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1\rightarrow-100$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+OOFV
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-100\rightarrow100$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sand muons
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -3209,14 +3228,10 @@ NC
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $31\rightarrow100$
+\begin_inset Formula $-100\rightarrow100$
 \end_inset
 
- (
-\begin_inset Formula $-31\rightarrow-100$
-\end_inset
 
-)
 \end_layout
 
 \end_inset
@@ -3237,7 +3252,7 @@ NC
 status open
 
 \begin_layout Plain Layout
-The 
+The Expanded 
 \begin_inset ERT
 status open
 
@@ -3250,7 +3265,466 @@ nutitle{}
 
 \end_inset
 
+ NEUT Reactions Table
+\end_layout
+
+\end_inset
+
+The expanded 
+\begin_inset Formula $\nu$
+\end_inset
+
+ NEUT reactions table as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:EnlargedlegendsNEUTNuCCNC"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:NuNEUTReaction"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
  and 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:AntiNuNEUTReaction"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="3">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Category
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+NEUT Codes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\antinu$
+\end_inset
+
+ CCQE
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\antinu$
+\end_inset
+
+ 2p2h
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\antinu$
+\end_inset
+
+ CC-
+\begin_inset Formula $1\pi$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-11\rightarrow-16$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\antinu$
+\end_inset
+
+ non-CCQE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\antinu$
+\end_inset
+
+ CC-N
+\begin_inset Formula $\pi$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-21$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\antinu$
+\end_inset
+
+ CC-DIS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-26$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\antinu$
+\end_inset
+
+ CC-Other
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-17,-22,-23$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\antinu$
+\end_inset
+
+ NC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-31\rightarrow-100$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nu$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1\rightarrow100$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+OOFV
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-100\rightarrow100$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sand muons
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-100\rightarrow100$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+The Expanded 
 \begin_inset ERT
 status open
 
@@ -3263,23 +3737,29 @@ Anutitle{}
 
 \end_inset
 
- NEUT reactions
+ NEUT Reactions Table
 \end_layout
 
 \end_inset
 
-The 
-\begin_inset Formula $\nu$
-\end_inset
-
- and 
+The expanded 
 \begin_inset Formula $\antinu$
 \end_inset
 
- NEUT reactions.
+ NEUT reactions table as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:EnlargedlegendsNEUTAntiNuCCNC"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \begin_inset CommandInset label
 LatexCommand label
-name "tab:NuAntiNuNEUTReaction"
+name "tab:AntiNuNEUTReaction"
 
 \end_inset
 
@@ -3293,10 +3773,192 @@ name "tab:NuAntiNuNEUTReaction"
 
 \end_inset
 
+.
+ For neutrino-based selections, the legend shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:EnlargedlegendsNEUTNuCCNC"
+plural "false"
+caps "false"
+noprefix "false"
 
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/NEUTNuInteraction_legend.png
+	lyxscale 50
+	height 30theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The NEUT Neutrino interaction legends used in this analysis.
+ The labels are enumerated in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:NuNEUTReaction"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+The NEUT 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nutitle
+\end_layout
+
+\end_inset
+
+ Interaction Legend
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:EnlargedlegendsNEUTNuCCNC"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ is also used to describe the neutrino-induced interaction purity of the
+ selection.
+ Similarly for antineutrino-based selections, the legend shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:EnlargedlegendsNEUTAntiNuCCNC"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/NEUTAntiNuInteraction_legend.png
+	lyxscale 50
+	height 30theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The NEUT Antineutrino interaction legends used in this analysis.
+ The labels are enumerated in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:AntiNuNEUTReaction"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+The NEUT 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Anutitle{}
+\end_layout
+
+\end_inset
+
+ Interaction Legends
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:EnlargedlegendsNEUTAntiNuCCNC"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+is used for the same purpose.
 \end_layout
 
 \begin_layout Standard
+The true particle associated with the main track is also analyzed here as
+ shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:EnlargedlegendParticle"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
@@ -3318,7 +3980,17 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-True particle selected legend 
+True particle selected legend
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+True Particle Selected Legend
+\end_layout
+
+\end_inset
+
+ 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:EnlargedlegendParticle"
@@ -3335,7 +4007,44 @@ name "fig:EnlargedlegendParticle"
 
 \end_inset
 
+.
+ True particles include protons (p) and both negatively and positively charged
+ muons (
+\begin_inset Formula $\mu^{\pm}$
+\end_inset
 
+), pions (
+\begin_inset Formula $\pi^{\pm})$
+\end_inset
+
+, and electrons/positrons (
+\begin_inset Formula $e^{\pm})$
+\end_inset
+
+.
+ In addition, any electron and positron generated from pair production are
+ grouped together as 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $e^{\pm}/\gamma$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Particles that do not match any of these categories is labeled as 
+\begin_inset Quotes eld
+\end_inset
+
+other
+\begin_inset Quotes erd
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
@@ -3366,24 +4075,689 @@ This selection provides the CCQE-like samples in FHC mode.
  
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "fig:numuFHCCC1TrkReco"
+reference "fig:numuFHCCC1TrkRecoCCQE"
 plural "false"
 caps "true"
 noprefix "false"
 
 \end_inset
 
- displays the momentum and angular distributions that are inputs to BANFF.
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/air/numu/CC1Track/FluxAndEventWeights/numuCC1TrackWaterOut_recoP_mu_MC_only_NEUTCCQELike_fhc_air_FluxAndEventWeights.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
-In the majority of cases, the lepton candidate is the true muon, making
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Water-out Momentum
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/air/numu/CC1Track/FluxAndEventWeights/numuCC1TrackWaterOut_recocosq_mu_MC_only_NEUTCCQELike_fhc_air_FluxAndEventWeights.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Water-out 
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/water/numu/CC1Track/FluxAndEventWeights/numuCC1TrackWaterIn_recoP_mu_MC_only_NEUTCCQELike_fhc_water_FluxAndEventWeights.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Water-in Momentum
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/water/numu/CC1Track/FluxAndEventWeights/numuCC1TrackWaterIn_recocosq_mu_MC_only_NEUTCCQELike_fhc_water_FluxAndEventWeights.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Water-in 
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Lepton candidate reconstructed 
+\begin_inset Formula $P$
+\end_inset
+
+ and 
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ distributions for the 
+\begin_inset Formula $\numu$
+\end_inset
+
+ in FHC CC 1-Track selection for CCQE and non-CCQE interactions.
+ The top figures, (a) and (b), use the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ water-out MC and are normalized to the FHC water-out mode POT.
+ The bottom figures, (c) and (d), use the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ water-in MC and are normalized to the FHC water-in mode POT.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Reconstructed Kinematics for the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numutitle{}
+\end_layout
+
+\end_inset
+
+ in FHC CC 1-Track Selection for CCQE and non-CCQE Interactions
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:numuFHCCC1TrkRecoCCQE"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:numuFHCCC1TrkRecoParticle"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/air/numu/CC1Track/FluxAndEventWeights/numuCC1TrackWaterOut_recoP_mu_MC_only_LeptonCandidateTruePDG_fhc_air_FluxAndEventWeights.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Water-out Momentum
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/air/numu/CC1Track/FluxAndEventWeights/numuCC1TrackWaterOut_recocosq_mu_MC_only_LeptonCandidateTruePDG_fhc_air_FluxAndEventWeights.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Water-out 
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/water/numu/CC1Track/FluxAndEventWeights/numuCC1TrackWaterIn_recoP_mu_MC_only_LeptonCandidateTruePDG_fhc_water_FluxAndEventWeights.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Water-in Momentum
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/water/numu/CC1Track/FluxAndEventWeights/numuCC1TrackWaterIn_recocosq_mu_MC_only_LeptonCandidateTruePDG_fhc_water_FluxAndEventWeights.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Water-in 
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Lepton candidate reconstructed 
+\begin_inset Formula $P$
+\end_inset
+
+ and 
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ distributions for the 
+\begin_inset Formula $\numu$
+\end_inset
+
+ in FHC CC 1-Track selection for the true selected particle.
+ The top figures, (a) and (b), use the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ water-out MC and are normalized to the FHC water-out mode POT.
+ The bottom figures, (c) and (d), use the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ water-in MC and are normalized to the FHC water-in mode POT.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Reconstructed Kinematics for the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numutitle{}
+\end_layout
+
+\end_inset
+
+ in FHC CC 1-Track Selection for the True Selected Particle
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:numuFHCCC1TrkRecoParticle"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ displays the momentum and angular distributions that are inputs to BANFF.
+ In the majority of cases, the lepton candidate is the true muon, making
  this a very pure 
 \begin_inset Formula $\numu$
 \end_inset
 
  sample.
- We can examine the efficiencies and purities differentially for true 
+ Comparing between water-in and water-out modes, we see the reconstructed
+ kinematics are nearly identical.
+ Following this paragraph and the following sections, only the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ water-in mode will be shown.
+\end_layout
+
+\begin_layout Standard
+The underlying true kinematics, 
+\begin_inset Formula $E_{\nu}$
+\end_inset
+
+ and 
+\begin_inset Formula $Q^{2}$
+\end_inset
+
+, of the interactions are shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:numuFHCCC1TrkTrue"
+plural "false"
+caps "true"
+noprefix "false"
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/water/numu/CC1Track/FluxAndEventWeights/numuCC1TrackWaterIn_trueE_nu_MC_only_NEUTNuReactionCodes_fhc_water_FluxAndEventWeights.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+todo{Fix energy label}
+\end_layout
+
+\end_inset
+
+Neutrino Energy
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/water/numu/CC1Track/FluxAndEventWeights/numuCC1TrackWaterIn_trueQ2_MC_only_NEUTNuReactionCodes_fhc_water_FluxAndEventWeights.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+todo{Fix energy label}
+\end_layout
+
+\end_inset
+
+True 
+\begin_inset Formula $Q^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The 
+\begin_inset Formula $\numu$
+\end_inset
+
+ in FHC CC 1-Track true kinematics broken down by true NEUT interaction
+ modes.
+ Water-in mode is displayed here only with the last bin shown is used as
+ overflow.
+ The figures use the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ water-in MC and are normalized to the FHC water-in mode POT.
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+The 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numutitle{}
+\end_layout
+
+\end_inset
+
+ in FHC CC 1-Track True Kinematics
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:numuFHCCC1TrkTrue"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ which are of theoretical importance in the cross section and flux models.
+ An interesting CCQE-like topology in this selection are 2p2h events.
+ Interaction model uncertainties for 2p2h are quite large in T2K and are
+ included the BANFF fit.
+ Therefore these events could help reduce the 2p2h model uncertainties.
+\end_layout
+
+\begin_layout Standard
+This selection contains a modest fraction of non-CCQE interactions.
+ The largest contamination is 
+\begin_inset Formula $1\pion$
+\end_inset
+
+ interactions, which can happen primarily for a couple of reasons.
+ Firstly, when the final state pion is produced, it is subject to final
+ state interactions (FSI) where a pion can be absorbed or scattered in the
+ nucleus.
+ Secondly, and more importantly, a pion might not be reconstructed as a
+ track in the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ if its energy is below reconstruction threshold.
+ Together, the large 
+\begin_inset Formula $1\pion$
+\end_inset
+
+ background affects the CC 
+\begin_inset Formula $0\pi$
+\end_inset
+
+ and CC 
+\begin_inset Formula $1\pi$
+\end_inset
+
+ model parameters in the BANFF fit.
+\end_layout
+
+\begin_layout Standard
+We can examine the efficiencies and purities differentially for true 
 \begin_inset Formula $\numu$
 \end_inset
 
@@ -3397,11 +4771,163 @@ noprefix "false"
 
 \end_inset
 
- A careful distinction must be made here for interactions that are 
-\begin_inset Formula $\nu$
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/air/numu/CC1Track/FluxAndEventWeights/eff.png
+	lyxscale 50
+	width 45text%
+
 \end_inset
 
- CC but not .
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+True 
+\begin_inset Formula $\numu$
+\end_inset
+
+ CCQE Efficiency
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/air/numu/CC1Track/FluxAndEventWeights/pur.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+True 
+\begin_inset Formula $\numu$
+\end_inset
+
+ CCQE Purity
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The efficiency and purity of 
+\begin_inset Formula $\numu$
+\end_inset
+
+ CCQE interactions in the 
+\begin_inset Formula $\numu$
+\end_inset
+
+ in FHC CC 1-Track selection.
+ True events are defined as correctly matched 
+\begin_inset Formula $\muminus$
+\end_inset
+
+ tracks from 
+\begin_inset Formula $\numu$
+\end_inset
+
+-induced CCQE interactions at the vertex .
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Efficiency and Purity of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numutitle{}
+\end_layout
+
+\end_inset
+
+ CCQE Interactions in the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numutitle{}
+\end_layout
+
+\end_inset
+
+ in FHC CC 1-Track Selection
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:numuFHCCC1TrkRecoEffPur"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
  The efficiency, 
 \begin_inset Formula $\epsilon$
 \end_inset
@@ -3438,550 +4964,6 @@ where
  GeV/c with the efficiency highly dependent on the track angle.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Float figure
-placement t
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/SamplesAndSelections/air/numu/CC1Track/FluxAndEventWeights/numuCC1TrackWaterOut_recoP_mu_MC_only_NEUTCCQELike_fhc_air_FluxAndEventWeights.png
-	lyxscale 50
-	width 33text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Water-out
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/SamplesAndSelections/air/numu/CC1Track/FluxAndEventWeights/numuCC1TrackWaterOut_recocosq_mu_MC_only_NEUTCCQELike_fhc_air_FluxAndEventWeights.png
-	lyxscale 50
-	width 33text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Water-out
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numu/CC1Track/FluxAndEventWeights/numuCC1TrackWaterIn_recoP_mu_MC_only_LeptonCandidateTruePDG_fhc_water_FluxAndEventWeights.png
-	lyxscale 50
-	width 33text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Water-in
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numu/CC1Track/FluxAndEventWeights/numuCC1TrackWaterIn_recocosq_mu_MC_only_LeptonCandidateTruePDG_fhc_water_FluxAndEventWeights.png
-	lyxscale 50
-	width 33text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Water-in
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Lepton candidate reconstructed 
-\begin_inset Formula $P$
-\end_inset
-
- and 
-\begin_inset Formula $\cos\theta$
-\end_inset
-
- distributions for the 
-\begin_inset Formula $\numu$
-\end_inset
-
- in FHC CC 1-Track selection.
- The top figures, (a) and (b), are displaying the true neutrino interaction
- at the vertex and normalized to the FHC water-out mode POT.
- The bottom figures, (c) and (d), are displaying the true particle selected
- and POT normalized for the FHC water-in mode POT.
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Lepton Candidate Reconstructed Kinematics for the 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-numutitle{}
-\end_layout
-
-\end_inset
-
- in FHC CC 1-Track Selection
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:numuFHCCC1TrkReco"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The underlying true kinematics, 
-\begin_inset Formula $E_{\nu}$
-\end_inset
-
- and 
-\begin_inset Formula $Q^{2}$
-\end_inset
-
-, of the interactions are shown in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:numuFHCCC1TrkTrue"
-plural "false"
-caps "true"
-noprefix "false"
-
-\end_inset
-
- which are of theoretical importance in the cross section and flux models.
- An interesting CCQE-like topology in this selection are 2p2h events.
- Interaction model uncertainties for 2p2h are quite large in T2K and are
- included the BANFF fit.
- Therefore these events could help reduce the 2p2h model uncertainties.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/SamplesAndSelections/air/numu/CC1Track/FluxAndEventWeights/eff.png
-	lyxscale 50
-	width 33text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-True CCQE Efficiency
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/SamplesAndSelections/air/numu/CC1Track/FluxAndEventWeights/pur.png
-	lyxscale 50
-	width 33text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-True CCQE Purity
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-The efficiency and purity of CCQE interactions in the 
-\begin_inset Formula $\numu$
-\end_inset
-
- in FHC CC 1-Track selection.
- True events are defined as correctly matched 
-\begin_inset Formula $\muminus$
-\end_inset
-
- tracks from 
-\begin_inset Formula $\numu$
-\end_inset
-
--induced CCQE interactions at the vertex .
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Efficiency and Purity of CCQE Interactions in the 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-numutitle{}
-\end_layout
-
-\end_inset
-
- in FHC CC 1-Track selection
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:numuFHCCC1TrkRecoEffPur"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-This selection contains a modest fraction of non-CCQE interactions.
- The largest contamination is 
-\begin_inset Formula $1\pion$
-\end_inset
-
- interactions, which can happen primarily for a couple of reasons.
- Firstly, when the final state pion is produced, it is subject to final
- state interactions (FSI) where a pion can be absorbed or scattered in the
- nucleus.
- Secondly, and more importantly, a pion might not be reconstructed as a
- track in the 
-\begin_inset Formula $\pod$
-\end_inset
-
- if its energy is below reconstruction threshold.
- Together, the large 
-\begin_inset Formula $1\pion$
-\end_inset
-
- background affects the CC 
-\begin_inset Formula $0\pi$
-\end_inset
-
- and CC 
-\begin_inset Formula $1\pi$
-\end_inset
-
- model parameters in the BANFF fit.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement t
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/SamplesAndSelections/air/numu/CC1Track/FluxAndEventWeights/numuCC1TrackWaterOut_trueE_nu_MC_only_NEUTNuReactionCodes_fhc_air_FluxAndEventWeights.png
-	lyxscale 50
-	width 33text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Neutrino Energy
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/SamplesAndSelections/air/numu/CC1Track/FluxAndEventWeights/numuCC1TrackWaterOut_trueQ2_MC_only_NEUTNuReactionCodes_fhc_air_FluxAndEventWeights.png
-	lyxscale 50
-	width 33text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-True 
-\begin_inset Formula $Q^{2}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-The 
-\begin_inset Formula $\numu$
-\end_inset
-
- in FHC CC 1-Track true 
-\begin_inset Formula $E_{\nu}$
-\end_inset
-
- and 
-\begin_inset Formula $Q^{2}$
-\end_inset
-
- kinematics broken down by true NEUT interaction modes.
- Water-out mode is displayed here only with the last bin shown as overflow.
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-The 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-numutitle{}
-\end_layout
-
-\end_inset
-
- FHC CC 1-Track True Kinematics
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:numuFHCCC1TrkTrue"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection
 \begin_inset ERT
 status open
@@ -3995,7 +4977,7 @@ numutitle{}
 
 \end_inset
 
- FHC CC N-Tracks
+ in FHC CC N-Tracks
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:numuFHCCCNTrk"
@@ -4010,102 +4992,18 @@ This selection provides non-CCQE-like samples in FHC mode inputs to BANFF.
  The reconstructed momentum and angular distributions are shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "fig:numuFHCCCNTrkReco"
+reference "fig:numuFHCCCNTrkRecoCCQE"
 plural "false"
 caps "true"
 noprefix "false"
 
 \end_inset
 
-.
- Since this selection is not optimized for any particular CC topology, there
- are a variety of interactions modes present including 1
-\begin_inset Formula $\pion$
-\end_inset
-
-, multiple pion (N
-\begin_inset Formula $\pion$
-\end_inset
-
-) and deep inelastic scattering (DIS).
- There are a number of mis-identified lepton candidates in the form of electrons
- and pions.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement t
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/SamplesAndSelections/air/numu/CCNTracks/FluxAndEventWeights/numuCCNTracksWaterOut_recoP_mu_MC_only_LeptonCandidateTruePDG_fhc_air_FluxAndEventWeights.png
-	lyxscale 50
-	width 33text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Water-out mode
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
 
 \begin_inset Float figure
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/SamplesAndSelections/air/numu/CCNTracks/FluxAndEventWeights/numuCCNTracksWaterOut_recocosq_mu_MC_only_LeptonCandidateTruePDG_fhc_air_FluxAndEventWeights.png
-	lyxscale 50
-	width 33text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Water-out mode
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -4119,7 +5017,7 @@ status open
 \begin_inset Graphics
 	filename Figures/SamplesAndSelections/water/numu/CCNTracks/FluxAndEventWeights/numuCCNTracksWaterIn_recoP_mu_MC_only_NEUTCCQELike_fhc_water_FluxAndEventWeights.png
 	lyxscale 50
-	width 33text%
+	width 45text%
 
 \end_inset
 
@@ -4130,7 +5028,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Water-in mode
+Momentum
 \end_layout
 
 \end_inset
@@ -4151,7 +5049,7 @@ status open
 \begin_inset Graphics
 	filename Figures/SamplesAndSelections/water/numu/CCNTracks/FluxAndEventWeights/numuCCNTracksWaterIn_recocosq_mu_MC_only_NEUTCCQELike_fhc_water_FluxAndEventWeights.png
 	lyxscale 50
-	width 33text%
+	width 45text%
 
 \end_inset
 
@@ -4162,7 +5060,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Water-in mode
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4191,11 +5092,12 @@ Lepton candidate reconstructed
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC CC N-Tracks selection.
- The top figures, (a) and (b), are displaying the true neutrino interaction
- at the vertex and normalized to the FHC water-out mode POT.
- The bottom figures, (c) and (d), are displaying the true particle selected
- and POT normalized for the FHC water-in mode POT.
+ in FHC CC N-Tracks selection for CCQE and non-CCQE interactions.
+ The figures use the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ water-in MC and are normalized to the FHC water-in mode POT.
 \begin_inset Argument 1
 status open
 
@@ -4213,7 +5115,7 @@ numutitle{}
 
 \end_inset
 
- in FHC CC N-Track Selection
+ in FHC CC N-Tracks Selection for CCQE and non-CCQE Interactions
 \end_layout
 
 \end_inset
@@ -4221,7 +5123,7 @@ numutitle{}
 
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:numuFHCCCNTrkReco"
+name "fig:numuFHCCCNTrkRecoCCQE"
 
 \end_inset
 
@@ -4235,7 +5137,167 @@ name "fig:numuFHCCCNTrkReco"
 
 \end_inset
 
+ and 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:numuFHCCCNTrkRecoParticle"
+plural "false"
+caps "true"
+noprefix "false"
 
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/water/numu/CCNTracks/FluxAndEventWeights/numuCCNTracksWaterIn_recoP_mu_MC_only_LeptonCandidateTruePDG_fhc_water_FluxAndEventWeights.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Momentum
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/water/numu/CCNTracks/FluxAndEventWeights/numuCCNTracksWaterIn_recocosq_mu_MC_only_LeptonCandidateTruePDG_fhc_water_FluxAndEventWeights.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Lepton candidate reconstructed 
+\begin_inset Formula $P$
+\end_inset
+
+ and 
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ distributions for the 
+\begin_inset Formula $\numu$
+\end_inset
+
+ in FHC CC N-Tracks selection for the true selected particle.
+ The figures use the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ water-in MC and are normalized to the FHC water-in mode POT.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Lepton Candidate Reconstructed Kinematics for the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numutitle{}
+\end_layout
+
+\end_inset
+
+ in FHC CC N-Tracks Selection for the True Selected Particle
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:numuFHCCCNTrkRecoParticle"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ Since this selection is not optimized for any particular CC topology, there
+ are a variety of interactions modes present including 1
+\begin_inset Formula $\pion$
+\end_inset
+
+, multiple pion (N
+\begin_inset Formula $\pion$
+\end_inset
+
+) and deep inelastic scattering (DIS).
+ There are a number of mis-identified lepton candidates in the form of electrons
+ and pions.
 \end_layout
 
 \begin_layout Standard
@@ -4287,7 +5349,7 @@ status open
 \begin_inset Graphics
 	filename Figures/SamplesAndSelections/air/numu/CCNTracks/FluxAndEventWeights/eff.png
 	lyxscale 50
-	width 33text%
+	width 45text%
 
 \end_inset
 
@@ -4298,7 +5360,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-True CC non-QE Efficiency
+True 
+\begin_inset Formula $\numu$
+\end_inset
+
+ CC non-QE Efficiency
 \end_layout
 
 \end_inset
@@ -4319,7 +5385,7 @@ status open
 \begin_inset Graphics
 	filename Figures/SamplesAndSelections/air/numu/CCNTracks/FluxAndEventWeights/pur.png
 	lyxscale 50
-	width 33text%
+	width 45text%
 
 \end_inset
 
@@ -4330,7 +5396,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-True CC non-QE Purity
+True 
+\begin_inset Formula $\numu$
+\end_inset
+
+ CC non-QE Purity
 \end_layout
 
 \end_inset
@@ -4347,7 +5417,11 @@ True CC non-QE Purity
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The efficiency and purity of CC non-QE interactions in the 
+The efficiency and purity of 
+\begin_inset Formula $\numu$
+\end_inset
+
+ CC non-QE interactions in the 
 \begin_inset Formula $\numu$
 \end_inset
 
@@ -4365,7 +5439,7 @@ The efficiency and purity of CC non-QE interactions in the
 status open
 
 \begin_layout Plain Layout
-Efficiency and Purity of CCQE Interactions in the 
+Efficiency and Purity of 
 \begin_inset ERT
 status open
 
@@ -4378,7 +5452,20 @@ numutitle{}
 
 \end_inset
 
- in FHC CC N-Tracks selection
+ CCQE Interactions in the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numutitle{}
+\end_layout
+
+\end_inset
+
+ in FHC CC N-Tracks Selection
 \end_layout
 
 \end_inset
@@ -4415,12 +5502,11 @@ noprefix "false"
 \end_inset
 
 .
- The selection captures the high energy tail of the neutrino flux which
- is relatively 
+ The selection is relatively 
 \begin_inset Formula $\numu$
 \end_inset
 
--pure.
+-pure and captures the high energy tail of the neutrino flux.
  True kinematics that describe the 
 \begin_inset Formula $1\pion,$
 \end_inset
@@ -4438,14 +5524,23 @@ noprefix "false"
 \end_inset
 
 .
- The invariant 
-\begin_inset Formula $W$
+ Using 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:NuMuCCQE"
+plural "false"
+caps "false"
+noprefix "false"
+
 \end_inset
 
- is defined as
+, we can define the invariant mass of hadronic system as
 \begin_inset Formula 
 \begin{equation}
-W^{2}=M_{N}^{2}+2M_{N}\left(E_{\nu}-E_{l}\right)-Q^{2},\label{eq:hadronicsystemmassW}
+\begin{aligned}\left(Wc^{2}\right)^{2} & =\left(p+q\right)^{2}=p^{2}+2p\cdot q+q^{2}\\
+ & =\left(M_{N}c^{2}\right)^{2}+2\left(M_{N}c^{2}\right)\left(E_{\nu}-E_{l}\right)-Q^{2},
+\end{aligned}
+\label{eq:hadronicsystemmassW}
 \end{equation}
 
 \end_inset
@@ -4520,21 +5615,21 @@ The origin of the mis-identified particles, in particular the pions, becomes
 placement t
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/air/numu/CCNTracks/FluxAndEventWeights/numuCCNTracksWaterOut_trueE_nu_MC_only_TrueNuPDG_fhc_air_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numu/CCNTracks/FluxAndEventWeights/numuCCNTracksWaterIn_trueE_nu_MC_only_NEUTNuReactionCodes_fhc_water_FluxAndEventWeights.png
 	lyxscale 50
-	width 30text%
+	width 45text%
 
 \end_inset
 
@@ -4559,14 +5654,14 @@ True Neutrino Energy
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/air/numu/CCNTracks/FluxAndEventWeights/numuCCNTracksWaterOut_trueQ2_MC_only_NEUTCCQELike_fhc_air_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numu/CCNTracks/FluxAndEventWeights/numuCCNTracksWaterIn_trueQ2_MC_only_NEUTNuReactionCodes_fhc_water_FluxAndEventWeights.png
 	lyxscale 50
-	width 30text%
+	width 45text%
 
 \end_inset
 
@@ -4577,6 +5672,18 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+todo{Add missing}
+\end_layout
+
+\end_inset
+
 True 
 \begin_inset Formula $Q^{2}$
 \end_inset
@@ -4592,17 +5699,21 @@ True
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/air/numu/CCNTracks/FluxAndEventWeights/numuCCNTracksWaterOut_trueW_MC_only_NEUTNuReactionCodes_fhc_air_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numu/CCNTracks/FluxAndEventWeights/numuCCNTracksWaterIn_trueW_MC_only_NEUTNuReactionCodes_fhc_water_FluxAndEventWeights.png
 	lyxscale 50
-	width 30text%
+	width 45text%
 
 \end_inset
 
@@ -4638,18 +5749,14 @@ The
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC CC N-Tracks true kinematics broken down by true interaction modes.
- Sub-figures (a), (b), and (c) show the true neutrino energy, 
-\begin_inset Formula $Q^{2}$
+ in FHC CC N-Tracks true kinematics broken down by true NEUT interaction
+ modes.
+ The last bin shown in (a) and (b) is used as overflow.
+ The figures use the 
+\begin_inset Formula $\pod$
 \end_inset
 
-, and 
-\begin_inset Formula $W$
-\end_inset
-
- distributions, respectively.
- Water-out mode is displayed here only with the last bin used as overflow
- is shown in (a) and (b).
+ water-in MC and are normalized to the FHC water-in mode POT.
  
 \begin_inset Argument 1
 status open
@@ -4706,7 +5813,7 @@ numubartitle{}
 
 \end_inset
 
- RHC CC 1-Track
+ in RHC CC 1-Track
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:numubarRHCCC1Trk"
@@ -4732,99 +5839,12 @@ noprefix "false"
 
 \end_inset
 
- displays the momentum and angular distributions for this selection.
- The selection is 
-\begin_inset Formula $\numubar$
-\end_inset
 
--pure with the selected lepton candidate being positively charged muons.
- There is a large OOFV background from proton tracks.
- They are high momentum (
-\begin_inset Formula $>1$
-\end_inset
-
- GeV/
-\begin_inset Formula $\csq$
-\end_inset
-
-) tracks which, at these energies, are become minimum ionizing and can reach
- into the TPC.
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 placement t
 wide false
 sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
 status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/SamplesAndSelections/air/numubarRHC/CC1Track/FluxAndEventWeights/numubarRHCCC1TrackWaterOut_recoP_mu_MC_only_LeptonCandidateTruePDG_rhc_air_FluxAndEventWeights.png
-	lyxscale 50
-	width 33text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Water-out
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/SamplesAndSelections/air/numubarRHC/CC1Track/FluxAndEventWeights/numubarRHCCC1TrackWaterOut_recocosq_mu_MC_only_NEUTCCQELike_rhc_air_FluxAndEventWeights.png
-	lyxscale 50
-	width 33text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Water-out
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -4838,7 +5858,7 @@ status open
 \begin_inset Graphics
 	filename Figures/SamplesAndSelections/water/numubarRHC/CC1Track/FluxAndEventWeights/numubarRHCCC1TrackWaterIn_recoP_mu_MC_only_NEUTCCQELike_rhc_water_FluxAndEventWeights.png
 	lyxscale 50
-	width 33text%
+	width 45text%
 
 \end_inset
 
@@ -4849,7 +5869,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Water-in
+Momentum
 \end_layout
 
 \end_inset
@@ -4867,10 +5887,11 @@ status open
 
 \begin_layout Plain Layout
 \align center
+`
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numubarRHC/CC1Track/FluxAndEventWeights/numubarRHCCC1TrackWaterIn_recocosq_mu_MC_only_LeptonCandidateTruePDG_rhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubarRHC/CC1Track/FluxAndEventWeights/numubarRHCCC1TrackWaterIn_recocosq_mu_MC_only_NEUTCCQELike_rhc_water_FluxAndEventWeights.png
 	lyxscale 50
-	width 33text%
+	width 45text%
 
 \end_inset
 
@@ -4881,7 +5902,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Water-in
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4898,11 +5922,7 @@ Water-in
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The 
-\begin_inset Formula $\numubar$
-\end_inset
-
- in RHC CC 1-Track 
+Lepton candidate reconstructed 
 \begin_inset Formula $P$
 \end_inset
 
@@ -4910,16 +5930,21 @@ The
 \begin_inset Formula $\cos\theta$
 \end_inset
 
- distributions broken down by true NEUT interaction modes.
- The top figures (a) and (b) are water-out mode while the bottom (c) and
- (d) figures are water-in mode.
- Each distribution is normalized to the RHC POT collected between run periods
- 2 - 8.
+ distributions for the 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ in RHC CC 1-Track selection for CCQE and non-CCQE interactions.
+ The figures use the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ water-in MC and are normalized to the RHC water-in mode POT.
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-The 
+Reconstructed Kinematics for the 
 \begin_inset ERT
 status open
 
@@ -4932,7 +5957,7 @@ numubartitle{}
 
 \end_inset
 
- in RHC CC 1-Track Reconstructed Kinematics
+ in RHC CC 1-Track Selection for CCQE and non-CCQE Interactions
 \end_layout
 
 \end_inset
@@ -4954,7 +5979,170 @@ name "fig:numubarRHCCC1TrkReco"
 
 \end_inset
 
+ and 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:numubarRHCCC1TrkRecoParticle"
+plural "false"
+caps "false"
+noprefix "false"
 
+\end_inset
+
+
+\begin_inset Float figure
+placement t
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/water/numubarRHC/CC1Track/FluxAndEventWeights/numubarRHCCC1TrackWaterIn_recoP_mu_MC_only_LeptonCandidateTruePDG_rhc_water_FluxAndEventWeights.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Water-in
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+`
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/water/numubarRHC/CC1Track/FluxAndEventWeights/numubarRHCCC1TrackWaterIn_recocosq_mu_MC_only_LeptonCandidateTruePDG_rhc_water_FluxAndEventWeights.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Water-in
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Lepton candidate reconstructed 
+\begin_inset Formula $P$
+\end_inset
+
+ and 
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ distributions for the 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ in RHC CC 1-Track selection for the true selected particle.
+ The figures use the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ water-in MC and are normalized to the RHC water-in mode POT.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Reconstructed Kinematics for the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numubartitle{}
+\end_layout
+
+\end_inset
+
+ in RHC CC 1-Track Selection for the True Selected Particle
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:numubarRHCCC1TrkRecoParticle"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ display the momentum and angular distributions for this selection.
+ The selection is 
+\begin_inset Formula $\numubar$
+\end_inset
+
+-pure with the selected lepton candidate being positively charged muons.
+ There is a large OOFV background from proton tracks.
+ They are high momentum (
+\begin_inset Formula $>1$
+\end_inset
+
+ GeV/
+\begin_inset Formula $\csq$
+\end_inset
+
+) tracks which, at these energies, are become minimum ionizing and can reach
+ into the TPC.
 \end_layout
 
 \begin_layout Standard
@@ -4981,7 +6169,7 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4995,7 +6183,7 @@ status open
 \begin_inset Graphics
 	filename Figures/SamplesAndSelections/air/numubarRHC/CC1Track/FluxAndEventWeights/eff.png
 	lyxscale 50
-	width 30text%
+	width 45text%
 
 \end_inset
 
@@ -5006,7 +6194,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-True CCQE Efficiency
+True 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ CCQE Efficiency
 \end_layout
 
 \end_inset
@@ -5027,7 +6219,7 @@ status open
 \begin_inset Graphics
 	filename Figures/SamplesAndSelections/air/numubarRHC/CC1Track/FluxAndEventWeights/pur.png
 	lyxscale 50
-	width 30text%
+	width 45text%
 
 \end_inset
 
@@ -5038,7 +6230,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-True CCQE Purity
+True 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ CCQE Purity
 \end_layout
 
 \end_inset
@@ -5059,12 +6255,16 @@ The
 \begin_inset Formula $\numubar$
 \end_inset
 
- in RHC CC 1-Track true CCQE efficiency and purity in reconstructed kinematics.
+ in RHC CC 1-Track true 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ CCQE efficiency and purity in reconstructed kinematics.
  The true events are 
 \begin_inset Formula $\numubar$
 \end_inset
 
- CCQE at the vertex and the selected lepton candidate is a true 
+ CCQE at the vertex and the selected lepton candidate is the true 
 \begin_inset Formula $\muplus$
 \end_inset
 
@@ -5073,7 +6273,7 @@ The
 status open
 
 \begin_layout Plain Layout
-The 
+Efficiency and Purity of 
 \begin_inset ERT
 status open
 
@@ -5086,7 +6286,20 @@ numubartitle{}
 
 \end_inset
 
- in RHC CC 1-Track CCQE Efficiency and Purity
+ CCQE Interactions in the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numubartitle{}
+\end_layout
+
+\end_inset
+
+ in RHC CC 1-Track Selection
 \end_layout
 
 \end_inset
@@ -5181,7 +6394,7 @@ noprefix "false"
 placement t
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -5193,9 +6406,9 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/air/numubarRHC/CC1Track/FluxAndEventWeights/numubarRHCCC1TrackWaterOut_trueE_nu_MC_only_TrueNuPDG_rhc_air_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubarRHC/CC1Track/FluxAndEventWeights/numubarRHCCC1TrackWaterIn_trueE_nu_MC_only_NEUTAntiNuReactionCodes_rhc_water_FluxAndEventWeights.png
 	lyxscale 50
-	width 33text%
+	width 45text%
 
 \end_inset
 
@@ -5225,9 +6438,9 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/air/numubarRHC/CC1Track/FluxAndEventWeights/numubarRHCCC1TrackWaterOut_trueQ2_MC_only_NEUTAntiNuReactionCodes_rhc_air_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubarRHC/CC1Track/FluxAndEventWeights/numubarRHCCC1TrackWaterIn_trueQ2_MC_only_NEUTAntiNuReactionCodes_rhc_water_FluxAndEventWeights.png
 	lyxscale 50
-	width 33text%
+	width 45text%
 
 \end_inset
 
@@ -5260,22 +6473,18 @@ True
 
 \begin_layout Plain Layout
 The 
-\begin_inset Formula $\numubar$
+\begin_inset Formula $\antinumu$
 \end_inset
 
- in RHC CC 1-Track true
-\begin_inset Formula $E_{\nu}$
+ in RHC CC 1-Track true kinematics broken down by true NEUT interaction
+ modes.
+ Water-in mode is displayed here only with the last bin shown is used as
+ overflow.
+ The figures use the 
+\begin_inset Formula $\pod$
 \end_inset
 
- and 
-\begin_inset Formula $Q^{2}$
-\end_inset
-
- distributions.
- Sub-figure (a) is broken down by true neutrino flavor with (b) broken by
- more specific NEUT interaction modes.
- Water-out mode is displayed here only with the last bin used as overflow.
- 
+ water-in MC and are normalized to the RHC water-in mode POT.
 \begin_inset Argument 1
 status open
 
@@ -5331,7 +6540,7 @@ numubartitle{}
 
 \end_inset
 
- RHC CC N-Tracks
+ in RHC CC N-Tracks
 \end_layout
 
 \begin_layout Standard
@@ -5350,7 +6559,295 @@ noprefix "false"
 
 \end_inset
 
- displays the momentum and angular distributions that are inputs to BANFF.
+ 
+\begin_inset Float figure
+placement t
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/water/numubarRHC/CCNTracks/FluxAndEventWeights/numubarRHCCCNTracksWaterIn_recoP_mu_MC_only_NEUTCCQELike_rhc_water_FluxAndEventWeights.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Momentum
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/water/numubarRHC/CCNTracks/FluxAndEventWeights/numubarRHCCCNTracksWaterIn_recocosq_mu_MC_only_NEUTCCQELike_rhc_water_FluxAndEventWeights.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Lepton candidate reconstructed 
+\begin_inset Formula $P$
+\end_inset
+
+ and 
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ distributions for the 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ in RHC CC N-Tracks selection for CCQE and non-CCQE interactions.
+ The figures use the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ water-in MC and are normalized to the RHC water-in mode POT.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Lepton Candidate Reconstructed Kinematics for the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numubartitle{}
+\end_layout
+
+\end_inset
+
+ in RHC CC N-Tracks Selection for CCQE and non-CCQE Interactions
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:numubarRHCCCNTrkReco"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:numubarRHCCCNTrkRecoParticle"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset Float figure
+placement t
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/water/numubarRHC/CCNTracks/FluxAndEventWeights/numubarRHCCCNTracksWaterIn_recoP_mu_MC_only_LeptonCandidateTruePDG_rhc_water_FluxAndEventWeights.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Momentum
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/water/numubarRHC/CCNTracks/FluxAndEventWeights/numubarRHCCCNTracksWaterIn_recocosq_mu_MC_only_LeptonCandidateTruePDG_rhc_water_FluxAndEventWeights.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Lepton candidate reconstructed 
+\begin_inset Formula $P$
+\end_inset
+
+ and 
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ distributions for the 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ in RHC CC N-Tracks selection for the true selected particle.
+ The figures use the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ water-in MC and are normalized to the RHC water-in mode POT.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Lepton Candidate Reconstructed Kinematics for the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numubartitle{}
+\end_layout
+
+\end_inset
+
+ in RHC CC N-Tracks Selections for the True Selected Particle
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:numubarRHCCCNTrkRecoParticle"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ display the momentum and angular distributions that are inputs to BANFF.
  The most striking feature of this selection is the the number of mis-identified
  events.
  In particular protons are selected the HMPT when they become minimum ionizing
@@ -5375,212 +6872,6 @@ noprefix "false"
  flavor.
  These two features should be addressed to increase the utility of the selection
  for the next iteration of the analysis.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement t
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/SamplesAndSelections/air/numubarRHC/CCNTracks/FluxAndEventWeights/numubarRHCCCNTracksWaterOut_recoP_mu_MC_only_LeptonCandidateTruePDG_rhc_air_FluxAndEventWeights.png
-	lyxscale 50
-	width 33text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Water-out
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/SamplesAndSelections/air/numubarRHC/CCNTracks/FluxAndEventWeights/numubarRHCCCNTracksWaterOut_recocosq_mu_MC_only_NEUTCCQELike_rhc_air_FluxAndEventWeights.png
-	lyxscale 50
-	width 33text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Water-out
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numubarRHC/CCNTracks/FluxAndEventWeights/numubarRHCCCNTracksWaterIn_recoP_mu_MC_only_NEUTCCQELike_rhc_water_FluxAndEventWeights.png
-	lyxscale 50
-	width 33text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Water-in
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numubarRHC/CCNTracks/FluxAndEventWeights/numubarRHCCCNTracksWaterIn_recocosq_mu_MC_only_LeptonCandidateTruePDG_rhc_water_FluxAndEventWeights.png
-	lyxscale 50
-	width 33text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Water-in
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-The 
-\begin_inset Formula $\numubar$
-\end_inset
-
- in RHC CC N-Tracks 
-\begin_inset Formula $P$
-\end_inset
-
- and 
-\begin_inset Formula $\cos\theta$
-\end_inset
-
- distributions broken down by true NEUT interaction modes.
- The top figures (a) and (b) are water-out mode.
- The bottom (c) and (d) figures are water-in mode.
- Each distribution is normalized to the FHC POT collected between run periods
- 2 - 8.
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-The 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-numubartitle{}
-\end_layout
-
-\end_inset
-
- in RHC CC N-Tracks Reconstructed Kinematics
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:numubarRHCCCNTrkReco"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -5613,7 +6904,7 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -5627,7 +6918,7 @@ status open
 \begin_inset Graphics
 	filename Figures/SamplesAndSelections/air/numubarRHC/CCNTracks/FluxAndEventWeights/eff.png
 	lyxscale 50
-	width 30text%
+	width 45text%
 
 \end_inset
 
@@ -5638,7 +6929,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-True CC non-QE Efficiency
+True 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ CC non-QE Efficiency
 \end_layout
 
 \end_inset
@@ -5659,7 +6954,7 @@ status open
 \begin_inset Graphics
 	filename Figures/SamplesAndSelections/air/numubarRHC/CCNTracks/FluxAndEventWeights/pur.png
 	lyxscale 50
-	width 30text%
+	width 45text%
 
 \end_inset
 
@@ -5670,7 +6965,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-True non-CCQE Purity
+True 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ CC non-QE Purity
 \end_layout
 
 \end_inset
@@ -5694,15 +6993,15 @@ The
  in RHC CC N-Tracks true CC non-QE efficiency and purity in reconstructed
  kinematics.
  The true events are any 
-\begin_inset Formula $\numu$
+\begin_inset Formula $\antinumu$
 \end_inset
 
  CC interaction except 
 \begin_inset Formula $\numu$
 \end_inset
 
- CCQE at the vertex and the selected lepton candidate is a true 
-\begin_inset Formula $\muminus$
+ CCQE at the vertex and the selected lepton candidate is the true 
+\begin_inset Formula $\muplus$
 \end_inset
 
 .
@@ -5711,7 +7010,7 @@ The
 status open
 
 \begin_layout Plain Layout
-The 
+Efficiency and Purity of 
 \begin_inset ERT
 status open
 
@@ -5724,7 +7023,20 @@ numubartitle{}
 
 \end_inset
 
- in RHC CC N-Tracks CC non-QE Efficiency and Purity
+ CC non-QE Interactions in the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numubartitle{}
+\end_layout
+
+\end_inset
+
+ in RHC CC N-Tracks Selection
 \end_layout
 
 \end_inset
@@ -5762,7 +7074,7 @@ The underlying true kinematics,
 \begin_inset Formula $W$
 \end_inset
 
- of the interactions are shown in 
+, of the interactions are shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:numubarRHCCCNTrkTrue"
@@ -5817,7 +7129,7 @@ noprefix "false"
 placement t
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -5829,9 +7141,9 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/air/numubarRHC/CCNTracks/FluxAndEventWeights/numubarRHCCCNTracksWaterOut_trueE_nu_MC_only_TrueNuPDG_rhc_air_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubarRHC/CCNTracks/FluxAndEventWeights/numubarRHCCCNTracksWaterIn_trueE_nu_MC_only_NEUTAntiNuReactionCodes_rhc_water_FluxAndEventWeights.png
 	lyxscale 50
-	width 30text%
+	width 45text%
 
 \end_inset
 
@@ -5861,9 +7173,9 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/air/numubarRHC/CCNTracks/FluxAndEventWeights/numubarRHCCCNTracksWaterOut_trueQ2_MC_only_NEUTCCQELike_rhc_air_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubarRHC/CCNTracks/FluxAndEventWeights/numubarRHCCCNTracksWaterIn_trueQ2_MC_only_NEUTAntiNuReactionCodes_rhc_water_FluxAndEventWeights.png
 	lyxscale 50
-	width 30text%
+	width 45text%
 
 \end_inset
 
@@ -5874,6 +7186,18 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+todo{Regenerate with fixed x-range and label}
+\end_layout
+
+\end_inset
+
 True 
 \begin_inset Formula $Q^{2}$
 \end_inset
@@ -5889,6 +7213,10 @@ True
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Float figure
 wide false
 sideways false
@@ -5897,9 +7225,9 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/air/numubarRHC/CCNTracks/FluxAndEventWeights/numubarRHCCCNTracksWaterOut_trueW_MC_only_NEUTAntiNuReactionCodes_rhc_air_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubarRHC/CCNTracks/FluxAndEventWeights/numubarRHCCCNTracksWaterIn_trueW_MC_only_NEUTAntiNuReactionCodes_rhc_water_FluxAndEventWeights.png
 	lyxscale 50
-	width 30text%
+	width 45text%
 
 \end_inset
 
@@ -5910,6 +7238,18 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+todo{Add missing}
+\end_layout
+
+\end_inset
+
 True 
 \begin_inset Formula $W$
 \end_inset
@@ -5932,33 +7272,18 @@ True
 
 \begin_layout Plain Layout
 The 
-\begin_inset Formula $\numubar$
+\begin_inset Formula $\antinumu$
 \end_inset
 
- in RHC CC N-Tracks 
-\begin_inset Formula $E_{\nu}$
+ in RHC CC N-Tracks true kinematics broken down by true NEUT interaction
+ modes.
+ The last bin shown in (a) and (b) is used as overflow.
+ The figures use the 
+\begin_inset Formula $\pod$
 \end_inset
 
-, 
-\begin_inset Formula $Q^{2}$
-\end_inset
-
-, and 
-\begin_inset Formula $W$
-\end_inset
-
- distributions broken down by true NEUT interaction modes.
- Sub-figures (a), (b), and (c) show the true neutrino energy, 
-\begin_inset Formula $Q^{2}$
-\end_inset
-
-, and 
-\begin_inset Formula $W$
-\end_inset
-
- distributions, respectively.
- Water-out mode is displayed here only with the last bin used as overflow
- is shown in (a) and (b).
+ water-in MC and are normalized to the RHC water-in mode POT.
+ 
 \begin_inset Argument 1
 status open
 
@@ -6033,92 +7358,12 @@ noprefix "false"
 
 \end_inset
 
- displays the momentum and angular distributions that are inputs to BANFF.
- We can see this is a relatively low-angle, forward going selection compared
- to previous selections.
- Importantly the selection is 
-\begin_inset Formula $\numu$
-\end_inset
-
--pure which should help constrain the wrong-sign background in BANFF.
- However, the CCQE purity is modest given number of correctly identified
- lepton candidates.
-\end_layout
-
-\begin_layout Standard
+ 
 \begin_inset Float figure
 placement t
 wide false
 sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
 status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/SamplesAndSelections/air/numubkgRHC/CC1Track/FluxAndEventWeights/numubkgRHCCC1TrackWaterOut_recoP_mu_MC_only_LeptonCandidateTruePDG_rhc_air_FluxAndEventWeights.png
-	lyxscale 50
-	width 33text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Water-out
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/SamplesAndSelections/air/numubkgRHC/CC1Track/FluxAndEventWeights/numubkgRHCCC1TrackWaterOut_recocosq_mu_MC_only_NEUTCCQELike_rhc_air_FluxAndEventWeights.png
-	lyxscale 50
-	width 33text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Water-out
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -6132,7 +7377,7 @@ status open
 \begin_inset Graphics
 	filename Figures/SamplesAndSelections/water/numubkgRHC/CC1Track/FluxAndEventWeights/numubkgRHCCC1TrackWaterIn_recoP_mu_MC_only_NEUTCCQELike_rhc_water_FluxAndEventWeights.png
 	lyxscale 50
-	width 33text%
+	width 45text%
 
 \end_inset
 
@@ -6143,7 +7388,19 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Water-in
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+todo{Fix legend header}
+\end_layout
+
+\end_inset
+
+Momentum
 \end_layout
 
 \end_inset
@@ -6162,9 +7419,9 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numubkgRHC/CC1Track/FluxAndEventWeights/numubkgRHCCC1TrackWaterIn_recocosq_mu_MC_only_LeptonCandidateTruePDG_rhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubkgRHC/CC1Track/FluxAndEventWeights/numubkgRHCCC1TrackWaterIn_recocosq_mu_MC_only_NEUTCCQELike_rhc_water_FluxAndEventWeights.png
 	lyxscale 50
-	width 33text%
+	width 45text%
 
 \end_inset
 
@@ -6175,45 +7432,6 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Water-in
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-The 
-\begin_inset Formula $\numu$
-\end_inset
-
- in RHC CC 1-Track 
-\begin_inset Formula $P$
-\end_inset
-
- and 
-\begin_inset Formula $\cos\theta$
-\end_inset
-
- distributions broken down by true NEUT interaction modes.
- The top figures (a) and (b) are water-out mode while the bottom (c) and
- (d) figures are water-in mode.
- Each distribution is normalized to the RHC POT collected between run periods
- 2 - 8.
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-The 
 \begin_inset ERT
 status open
 
@@ -6221,12 +7439,68 @@ status open
 
 
 \backslash
-numubartitle{}
+todo{Fix legend header}
 \end_layout
 
 \end_inset
 
- in RHC CC 1-Track Reconstructed Kinematics
+
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Lepton candidate reconstructed 
+\begin_inset Formula $P$
+\end_inset
+
+ and 
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ distributions for the 
+\begin_inset Formula $\numu$
+\end_inset
+
+ in RHC CC 1-Track selection for CCQE and non-CCQE interactions.
+ The figures use the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ water-in MC and are normalized to the RHC water-in mode POT.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Reconstructed Kinematics for the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numutitle{}
+\end_layout
+
+\end_inset
+
+ in RHC CC 1-Track Selection for CCQE and non-CCQE Interactions
 \end_layout
 
 \end_inset
@@ -6248,7 +7522,190 @@ name "fig:numuRHCCC1TrkReco"
 
 \end_inset
 
+ and 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:numuRHCCC1TrkRecoParticle"
+plural "false"
+caps "false"
+noprefix "false"
 
+\end_inset
+
+ 
+\begin_inset Float figure
+placement t
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/water/numubkgRHC/CC1Track/FluxAndEventWeights/numubkgRHCCC1TrackWaterIn_recoP_mu_MC_only_LeptonCandidateTruePDG_rhc_water_FluxAndEventWeights.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+todo{Fix legend header}
+\end_layout
+
+\end_inset
+
+Momentum
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/water/numubkgRHC/CC1Track/FluxAndEventWeights/numubkgRHCCC1TrackWaterIn_recocosq_mu_MC_only_LeptonCandidateTruePDG_rhc_water_FluxAndEventWeights.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+todo{Fix legend header}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Lepton candidate reconstructed 
+\begin_inset Formula $P$
+\end_inset
+
+ and 
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ distributions for the 
+\begin_inset Formula $\numu$
+\end_inset
+
+ in RHC CC 1-Track selection for the true selected particle.
+ The figures use the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ water-in MC and are normalized to the RHC water-in mode POT.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Reconstructed Kinematics for the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numutitle{}
+\end_layout
+
+\end_inset
+
+ in RHC CC 1-Track Selection for the True Selected Particle
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:numuRHCCC1TrkRecoParticle"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ display the momentum and angular distributions that are inputs to BANFF.
+ We can see this is a relatively low-angle, forward going selection compared
+ to previous selections.
+ Importantly the selection is 
+\begin_inset Formula $\numu$
+\end_inset
+
+-pure which should help constrain the wrong-sign background in BANFF.
+ However, the CCQE purity is modest given number of correctly identified
+ lepton candidates.
 \end_layout
 
 \begin_layout Standard
@@ -6276,7 +7733,7 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -6290,7 +7747,7 @@ status open
 \begin_inset Graphics
 	filename Figures/SamplesAndSelections/air/numubkgRHC/CC1Track/FluxAndEventWeights/eff.png
 	lyxscale 50
-	width 30text%
+	width 45text%
 
 \end_inset
 
@@ -6301,7 +7758,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-True CCQE Efficiency
+True 
+\begin_inset Formula $\numu$
+\end_inset
+
+ CCQE Efficiency
 \end_layout
 
 \end_inset
@@ -6322,7 +7783,7 @@ status open
 \begin_inset Graphics
 	filename Figures/SamplesAndSelections/air/numubkgRHC/CC1Track/FluxAndEventWeights/pur.png
 	lyxscale 50
-	width 30text%
+	width 45text%
 
 \end_inset
 
@@ -6333,7 +7794,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-True CCQE Purity
+True 
+\begin_inset Formula $\numu$
+\end_inset
+
+ CCQE Purity
 \end_layout
 
 \end_inset
@@ -6351,16 +7816,20 @@ True CCQE Purity
 
 \begin_layout Plain Layout
 The 
-\begin_inset Formula $\numubar$
+\begin_inset Formula $\numu$
 \end_inset
 
- in RHC CC 1-Track true CCQE efficiency and purity in reconstructed kinematics.
+ in RHC CC 1-Track true 
+\begin_inset Formula $\numu$
+\end_inset
+
+ CCQE efficiency and purity in reconstructed kinematics.
  The true events are 
-\begin_inset Formula $\numubar$
+\begin_inset Formula $\numu$
 \end_inset
 
- CCQE at the vertex and the selected lepton candidate is a true 
-\begin_inset Formula $\muplus$
+ CCQE at the vertex and the selected lepton candidate is the true 
+\begin_inset Formula $\muminus$
 \end_inset
 
 .
@@ -6368,7 +7837,7 @@ The
 status open
 
 \begin_layout Plain Layout
-The 
+Efficiency and Purity of 
 \begin_inset ERT
 status open
 
@@ -6381,7 +7850,20 @@ numutitle{}
 
 \end_inset
 
- in RHC CC 1-Track CCQE Efficiency and Purity
+ CCQE Interactions in the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numutitle{}
+\end_layout
+
+\end_inset
+
+ in RHC CC 1-Track Selection
 \end_layout
 
 \end_inset
@@ -6441,7 +7923,7 @@ noprefix "false"
 placement t
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -6453,9 +7935,9 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/air/numubkgRHC/CC1Track/FluxAndEventWeights/numubkgRHCCC1TrackWaterOut_trueE_nu_MC_only_TrueNuPDG_rhc_air_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubkgRHC/CC1Track/FluxAndEventWeights/numubkgRHCCC1TrackWaterIn_trueE_nu_MC_only_NEUTNuReactionCodes_rhc_water_FluxAndEventWeights.png
 	lyxscale 50
-	width 33text%
+	width 45text%
 
 \end_inset
 
@@ -6466,6 +7948,18 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+todo{Fix legend header}
+\end_layout
+
+\end_inset
+
 True Neutrino Energy
 \end_layout
 
@@ -6485,9 +7979,9 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/air/numubkgRHC/CC1Track/FluxAndEventWeights/numubkgRHCCC1TrackWaterOut_trueQ2_MC_only_NEUTNuReactionCodes_rhc_air_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubkgRHC/CC1Track/FluxAndEventWeights/numubkgRHCCC1TrackWaterIn_trueQ2_MC_only_NEUTNuReactionCodes_rhc_water_FluxAndEventWeights.png
 	lyxscale 50
-	width 33text%
+	width 45text%
 
 \end_inset
 
@@ -6498,6 +7992,18 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+todo{Fix legend header}
+\end_layout
+
+\end_inset
+
 True 
 \begin_inset Formula $Q^{2}$
 \end_inset
@@ -6523,12 +8029,15 @@ The
 \begin_inset Formula $\numu$
 \end_inset
 
- in RHC CC 1-Track true kinematic distributions broken down by true NEUT
- interaction modes.
- Sub-figure (a) is broken down by true neutrino flavor with (b) broken by
- more specific NEUT interaction modes.
- Water-out mode is displayed here only with the last bin used as overflow.
- 
+ in RHC CC 1-Track true kinematics broken down by true NEUT interaction
+ modes.
+ Water-in mode is displayed here only with the last bin shown is used as
+ overflow.
+ The figures use the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ water-in MC and are normalized to the RHC water-in mode POT.
 \begin_inset Argument 1
 status open
 
@@ -6584,7 +8093,7 @@ numutitle{}
 
 \end_inset
 
- RHC CC N-Tracks
+ Background in RHC CC N-Tracks
 \end_layout
 
 \begin_layout Standard
@@ -6603,89 +8112,12 @@ noprefix "false"
 
 \end_inset
 
- shows the momentum and angular distributions that are inputs to BANFF.
- We can see the selection is relatively 
-\begin_inset Formula $\numu$
-\end_inset
 
--pure with a significant mis-identified track rate.
- Interestingly, the mis-identified pion tracks have a high-energy trail.
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 placement t
 wide false
 sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
 status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/SamplesAndSelections/air/numubkgRHC/CCNTracks/FluxAndEventWeights/numubkgRHCCCNTracksWaterOut_recoP_mu_MC_only_LeptonCandidateTruePDG_rhc_air_FluxAndEventWeights.png
-	lyxscale 50
-	width 33text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Water-out
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/SamplesAndSelections/air/numubkgRHC/CCNTracks/FluxAndEventWeights/numubkgRHCCCNTracksWaterOut_recocosq_mu_MC_only_NEUTCCQELike_rhc_air_FluxAndEventWeights.png
-	lyxscale 50
-	width 33text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Water-out
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -6699,7 +8131,7 @@ status open
 \begin_inset Graphics
 	filename Figures/SamplesAndSelections/water/numubkgRHC/CCNTracks/FluxAndEventWeights/numubkgRHCCCNTracksWaterIn_recoP_mu_MC_only_NEUTCCQELike_rhc_water_FluxAndEventWeights.png
 	lyxscale 50
-	width 33text%
+	width 45text%
 
 \end_inset
 
@@ -6710,7 +8142,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Water-in
+Momentum
 \end_layout
 
 \end_inset
@@ -6729,9 +8161,9 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numubkgRHC/CCNTracks/FluxAndEventWeights/numubkgRHCCCNTracksWaterIn_recocosq_mu_MC_only_LeptonCandidateTruePDG_rhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubkgRHC/CCNTracks/FluxAndEventWeights/numubkgRHCCCNTracksWaterIn_recocosq_mu_MC_only_NEUTCCQELike_rhc_water_FluxAndEventWeights.png
 	lyxscale 50
-	width 33text%
+	width 45text%
 
 \end_inset
 
@@ -6742,7 +8174,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Water-in
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -6759,11 +8194,7 @@ Water-in
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The 
-\begin_inset Formula $\numu$
-\end_inset
-
- in RHC CC N-Tracks 
+Lepton candidate reconstructed 
 \begin_inset Formula $P$
 \end_inset
 
@@ -6771,16 +8202,21 @@ The
 \begin_inset Formula $\cos\theta$
 \end_inset
 
- distributions broken down by true NEUT interaction modes.
- The top figures (a) and (b) are water-out mode.
- The bottom (c) and (d) figures are water-in mode.
- Each distribution is normalized to the FHC POT collected between run periods
- 2 - 8.
+ distributions for the 
+\begin_inset Formula $\numu$
+\end_inset
+
+ in RHC CC N-Tracks selection for CCQE and non-CCQE interactions.
+ The figures use the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ water-in MC and are normalized to the RHC water-in mode POT.
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-The 
+Reconstructed Kinematics for the 
 \begin_inset ERT
 status open
 
@@ -6793,7 +8229,7 @@ numutitle{}
 
 \end_inset
 
- in RHC CC N-Tracks Reconstructed Kinematics
+ in RHC CC N-Tracks Selection for CCQE and non-CCQE Interactions
 \end_layout
 
 \end_inset
@@ -6815,7 +8251,162 @@ name "fig:numuRHCCCNTrkReco"
 
 \end_inset
 
+ and 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:numuRHCCCNTrkRecoParticle"
+plural "false"
+caps "false"
+noprefix "false"
 
+\end_inset
+
+
+\begin_inset Float figure
+placement t
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/water/numubkgRHC/CCNTracks/FluxAndEventWeights/numubkgRHCCCNTracksWaterIn_recoP_mu_MC_only_LeptonCandidateTruePDG_rhc_water_FluxAndEventWeights.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Momentum
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/water/numubkgRHC/CCNTracks/FluxAndEventWeights/numubkgRHCCCNTracksWaterIn_recocosq_mu_MC_only_LeptonCandidateTruePDG_rhc_water_FluxAndEventWeights.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Lepton candidate reconstructed 
+\begin_inset Formula $P$
+\end_inset
+
+ and 
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ distributions for the 
+\begin_inset Formula $\numu$
+\end_inset
+
+ in RHC CC N-Tracks selection for the true selected particle.
+ The figures use the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ water-in MC and are normalized to the RHC water-in mode POT.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Reconstructed Kinematics for the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numutitle{}
+\end_layout
+
+\end_inset
+
+ in RHC CC N-Tracks Selection for the True Selected Particle
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:numuRHCCCNTrkRecoParticle"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+show the momentum and angular distributions that are inputs to BANFF.
+ We can see the selection is relatively 
+\begin_inset Formula $\numu$
+\end_inset
+
+-pure with a significant mis-identified track rate.
+ Interestingly, the mis-identified pion tracks have a high-energy trail.
 \end_layout
 
 \begin_layout Standard
@@ -6846,7 +8437,7 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -6860,7 +8451,7 @@ status open
 \begin_inset Graphics
 	filename /home/mhogan/Documents/graduateDisseration/Chapters/Figures/SamplesAndSelections/air/numubkgRHC/CCNTracks/FluxAndEventWeights/eff.png
 	lyxscale 50
-	width 30text%
+	width 45text%
 
 \end_inset
 
@@ -6871,7 +8462,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-True CC non-QE Efficiency
+True 
+\begin_inset Formula $\numu$
+\end_inset
+
+ CC non-QE Efficiency
 \end_layout
 
 \end_inset
@@ -6892,7 +8487,7 @@ status open
 \begin_inset Graphics
 	filename /home/mhogan/Documents/graduateDisseration/Chapters/Figures/SamplesAndSelections/air/numubkgRHC/CCNTracks/FluxAndEventWeights/pur.png
 	lyxscale 50
-	width 30text%
+	width 45text%
 
 \end_inset
 
@@ -6903,7 +8498,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-True non-CCQE Purity
+True 
+\begin_inset Formula $\numu$
+\end_inset
+
+ CC non-QE Purity
 \end_layout
 
 \end_inset
@@ -6934,7 +8533,7 @@ The
 \begin_inset Formula $\numu$
 \end_inset
 
- CCQE at the vertex and the selected lepton candidate is a true 
+ CCQE at the vertex and the selected lepton candidate is the true 
 \begin_inset Formula $\muminus$
 \end_inset
 
@@ -6944,7 +8543,7 @@ The
 status open
 
 \begin_layout Plain Layout
-The 
+Efficiency and Purity of 
 \begin_inset ERT
 status open
 
@@ -6957,7 +8556,20 @@ numutitle{}
 
 \end_inset
 
- in RHC CC N-Tracks CC non-QE Efficiency and Purity
+ CC non-QE Interactions in the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numutitle{}
+\end_layout
+
+\end_inset
+
+ in RHC CC N-Tracks Selection
 \end_layout
 
 \end_inset
@@ -7028,7 +8640,7 @@ noprefix "false"
 placement t
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -7040,9 +8652,9 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/air/numubkgRHC/CCNTracks/FluxAndEventWeights/numubkgRHCCCNTracksWaterOut_trueE_nu_MC_only_TrueNuPDG_rhc_air_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubkgRHC/CCNTracks/FluxAndEventWeights/numubkgRHCCCNTracksWaterIn_trueE_nu_MC_only_NEUTNuReactionCodes_rhc_water_FluxAndEventWeights.png
 	lyxscale 50
-	width 30text%
+	width 45text%
 
 \end_inset
 
@@ -7053,6 +8665,18 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+todo{Add missing plot}
+\end_layout
+
+\end_inset
+
 True Neutrino Energy
 \end_layout
 
@@ -7072,9 +8696,9 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/air/numubkgRHC/CCNTracks/FluxAndEventWeights/numubkgRHCCCNTracksWaterOut_trueQ2_MC_only_NEUTCCQELike_rhc_air_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubkgRHC/CCNTracks/FluxAndEventWeights/numubkgRHCCCNTracksWaterIn_trueQ2_MC_only_NEUTNuReactionCodes_rhc_water_FluxAndEventWeights.png
 	lyxscale 50
-	width 30text%
+	width 45text%
 
 \end_inset
 
@@ -7085,6 +8709,18 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+todo{Fix x-range and label}
+\end_layout
+
+\end_inset
+
 True 
 \begin_inset Formula $Q^{2}$
 \end_inset
@@ -7100,6 +8736,10 @@ True
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Float figure
 wide false
 sideways false
@@ -7108,9 +8748,9 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/air/numubkgRHC/CCNTracks/FluxAndEventWeights/numubkgRHCCCNTracksWaterOut_trueW_MC_only_NEUTNuReactionCodes_rhc_air_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubkgRHC/CCNTracks/FluxAndEventWeights/numubkgRHCCCNTracksWaterIn_trueW_MC_only_NEUTNuReactionCodes_rhc_water_FluxAndEventWeights.png
 	lyxscale 50
-	width 30text%
+	width 45text%
 
 \end_inset
 
@@ -7143,22 +8783,18 @@ True
 
 \begin_layout Plain Layout
 The 
-\begin_inset Formula $\numubar$
+\begin_inset Formula $\numu$
 \end_inset
 
  in RHC CC N-Tracks true kinematics broken down by true NEUT interaction
  modes.
- Sub-figures (a), (b), and (c) show the true neutrino energy, 
-\begin_inset Formula $Q^{2}$
+ The last bin shown in (a) and (b) is used as overflow.
+ The figures use the 
+\begin_inset Formula $\pod$
 \end_inset
 
-, and 
-\begin_inset Formula $W$
-\end_inset
-
- distributions, respectively.
- Water-out mode is displayed here only with the last bin used as overflow
- is shown in (a) and (b).
+ water-in MC and are normalized to the RHC water-in mode POT.
+ 
 \begin_inset Argument 1
 status open
 
@@ -7171,7 +8807,7 @@ status open
 
 
 \backslash
-numubartitle{}
+numutitle{}
 \end_layout
 
 \end_inset

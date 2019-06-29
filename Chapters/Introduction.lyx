@@ -110,7 +110,7 @@
 \begin_layout Standard
 \begin_inset Branch IntroductionNeutrinos
 inverted 0
-status collapsed
+status open
 
 \begin_layout Section
 Introduction to Neutrinos
@@ -1706,16 +1706,108 @@ final state interactions
 
 \begin_layout Standard
 Neutrino-nuclear scattering presented in this thesis come in three primary
- CC varieties: quasi-elastic (CCQE), deep inelastic scattering (CCDIS),
- and single pion production (CC
+ CC varieties: quasi-elastic (CCQE), deep inelastic scattering (CC-DIS),
+ and single pion production (CC-
 \begin_inset Formula $1\pion$
 \end_inset
 
 ).
- CCQE interactions refer to the process where an incoming neutrino (antineutrino
-) and neutron (proton) produce a charged lepton and proton (neutron).
- This process is thought of classically to have approximate mass conservation
- between the proton-neutron states (
+ The 
+\begin_inset Formula $\numu$
+\end_inset
+
+ CCQE interaction refers to the process where an incoming neutrino and neutron
+ (udd) scatter to produce a charged lepton and proton (uud) as shown in
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:NuMuCCQE"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/NumuScatteringOndQuark.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A 
+\begin_inset Formula $\numu$
+\end_inset
+
+-induced CCQE interaction.
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+A 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numutitle{}
+\end_layout
+
+\end_inset
+
+-Induced CCQE Interaction
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:NuMuCCQE"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+.
+ For 
+\begin_inset Formula $\antinumu$
+\end_inset
+
+ CCQE, the proton is converted to a neutron instead.
+ The CCQE interaction is the lowest energy CC interaction with a nucleon
+ and is thought of classically to have approximate mass conservation between
+ the proton-neutron states (
 \begin_inset Formula $\Delta m=1.29$
 \end_inset
 
@@ -1724,16 +1816,15 @@ Neutrino-nuclear scattering presented in this thesis come in three primary
 \end_inset
 
 ).
- The CCQE interactions are the lowest energy CC interaction with a nucleon.
- While CCQE models work well for low-Z atoms like hydrogen, they do not
- extend well into many nucleon atoms due to similar observable final state
- nucleons.
- The CCDIS interaction, also called CC Other, is a high energy transfer
+ While CCQE models work well to predict the neutrino energy for low-Z atoms
+ like hydrogen, they do not extend well into many nucleon atoms due to similar
+ observable final state nucleons.
+ The CC-DIS interaction, also called CC Other, is a high energy transfer
  process that shatters the nucleus apart which has the observation of many
  post-FSI hadrons.
  Modeling CCDIS can be challenging due to FSI and the uncertainty of the
  possible initial states of the nucleus.
- Finally, CC
+ Finally, CC-
 \begin_inset Formula $1\pion$
 \end_inset
 
@@ -4677,7 +4768,7 @@ literal "false"
 \begin_layout Standard
 \begin_inset Branch IntroductionT2K
 inverted 0
-status open
+status collapsed
 
 \begin_layout Section
 Tokai-to-Kamioka Experiment
