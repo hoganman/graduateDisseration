@@ -4588,18 +4588,6 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-todo{Fix energy label}
-\end_layout
-
-\end_inset
-
 Neutrino Energy
 \end_layout
 
@@ -4632,18 +4620,6 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-todo{Fix energy label}
-\end_layout
-
-\end_inset
-
 True 
 \begin_inset Formula $Q^{2}$
 \end_inset
@@ -5622,7 +5598,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -5648,13 +5624,17 @@ True Neutrino Energy
 
 \end_layout
 
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
 
 
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -5672,18 +5652,6 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-todo{Add missing}
-\end_layout
-
-\end_inset
-
 True 
 \begin_inset Formula $Q^{2}$
 \end_inset
@@ -5706,7 +5674,7 @@ True
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -6433,7 +6401,7 @@ True Neutrino Energy
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -7168,7 +7136,7 @@ True Neutrino Energy
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -7186,18 +7154,6 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-todo{Regenerate with fixed x-range and label}
-\end_layout
-
-\end_inset
-
 True 
 \begin_inset Formula $Q^{2}$
 \end_inset
@@ -7238,18 +7194,6 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-todo{Add missing}
-\end_layout
-
-\end_inset
-
 True 
 \begin_inset Formula $W$
 \end_inset
@@ -7388,18 +7332,6 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-todo{Fix legend header}
-\end_layout
-
-\end_inset
-
 Momentum
 \end_layout
 
@@ -7432,19 +7364,6 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-todo{Fix legend header}
-\end_layout
-
-\end_inset
-
-
 \begin_inset Formula $\cos\theta$
 \end_inset
 
@@ -7562,18 +7481,6 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-todo{Fix legend header}
-\end_layout
-
-\end_inset
-
 Momentum
 \end_layout
 
@@ -7606,19 +7513,6 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-todo{Fix legend header}
-\end_layout
-
-\end_inset
-
-
 \begin_inset Formula $\cos\theta$
 \end_inset
 
@@ -7948,18 +7842,6 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-todo{Fix legend header}
-\end_layout
-
-\end_inset
-
 True Neutrino Energy
 \end_layout
 
@@ -7974,7 +7856,7 @@ True Neutrino Energy
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -7992,18 +7874,6 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-todo{Fix legend header}
-\end_layout
-
-\end_inset
-
 True 
 \begin_inset Formula $Q^{2}$
 \end_inset
@@ -8665,18 +8535,6 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-todo{Add missing plot}
-\end_layout
-
-\end_inset
-
 True Neutrino Energy
 \end_layout
 
@@ -8709,18 +8567,6 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-todo{Fix x-range and label}
-\end_layout
-
-\end_inset
-
 True 
 \begin_inset Formula $Q^{2}$
 \end_inset
