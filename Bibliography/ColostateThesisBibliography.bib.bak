@@ -53,6 +53,23 @@
   Url                      = {https://link.aps.org/doi/10.1103/PhysRevLett.121.171802}
 }
 
+@Article{PhysRevLett.121.171802,
+  Title                    = {Search for $CP$ Violation in Neutrino and Antineutrino Oscillations by the T2K Experiment with $2.2\ifmmode\times\else\texttimes\fi{}{10}^{21}$ Protons on Target},
+  Author                   = {Abe, K. and Others},
+  Journal                  = {Phys. Rev. Lett.},
+  Year                     = {2018},
+
+  Month                    = {Oct},
+  Pages                    = {171802},
+  Volume                   = {121},
+
+  Doi                      = {10.1103/PhysRevLett.121.171802},
+  Issue                    = {17},
+  Numpages                 = {9},
+  Publisher                = {American Physical Society},
+  Url                      = {https://link.aps.org/doi/10.1103/PhysRevLett.121.171802}
+}
+
 @Article{Abe:2017bay,
   Title                    = {{Updated T2K measurements of muon neutrino and
  antineutrino disappearance using 1.5$\times$10$^{21}$
