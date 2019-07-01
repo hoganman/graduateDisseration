@@ -154,26 +154,31 @@
 \color #faf0e6
 \end_branch
 \branch FitterValidation
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch FitterResults
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch P0DFDGComparisons
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch Discussion
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixApplicationOfWeights
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch AppendixObsnorm
 \selected 0
 \filename_suffix 0
 \color #faf0e6
@@ -389,9 +394,9 @@ inverted 0
 status open
 
 \begin_layout Chapter
-
-\size large
 Introduction
+\size large
+
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Introduction"
@@ -471,6 +476,7 @@ inverted 0
 status open
 
 \begin_layout Chapter
+The 
 \begin_inset ERT
 status open
 
@@ -484,6 +490,13 @@ podtitle{}
 \end_inset
 
  Selections and Samples
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:P0DSelections"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -507,6 +520,7 @@ inverted 0
 status open
 
 \begin_layout Chapter
+The 
 \begin_inset ERT
 status open
 
@@ -519,7 +533,7 @@ podtitle{}
 
 \end_inset
 
- in BANFF Parameterization 
+-Only in BANFF Parameterization 
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:P0DinBANFF"
@@ -677,6 +691,43 @@ Application of Weights
 \begin_inset CommandInset include
 LatexCommand input
 filename "Appendices/ApplicationOfWeights.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch AppendixObsnorm
+inverted 0
+status open
+
+\begin_layout Chapter
+The 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+podtitle{}
+\end_layout
+
+\end_inset
+
+-Only Observable Normalizations
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "Appendices/Obsnorms.lyx"
 
 \end_inset
 

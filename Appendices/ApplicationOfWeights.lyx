@@ -157,17 +157,17 @@
 \color #faf0e6
 \end_branch
 \branch SelectionsKinematicsP0DWaterInCCInc
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch SelectionsKinematicsP0DWaterInCC1Track
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch SelectionsKinematicsP0DWaterInCCNTracks
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -238,7 +238,7 @@ This section shows the kinematic distributions for the
 \begin_layout Standard
 \begin_inset Branch SelectionsKinematicsP0DWaterOutCCInc
 inverted 0
-status collapsed
+status open
 
 \begin_layout Subsubsection
 CC Inclusive
@@ -4710,10 +4710,10 @@ name "fig:P0DairRHCnumuCCIncEnuTrueNEUTNuMode"
 \begin_layout Standard
 \begin_inset Branch SelectionsKinematicsP0DWaterOutCC1Track
 inverted 0
-status collapsed
+status open
 
 \begin_layout Subsubsection
-CC 1-Track (CCQE Enhanced)
+CC 1-Track
 \end_layout
 
 \begin_layout Paragraph
@@ -7809,10 +7809,10 @@ todo{Add figures here}
 \begin_layout Standard
 \begin_inset Branch SelectionsKinematicsP0DWaterOutCCNTracks
 inverted 0
-status collapsed
+status open
 
 \begin_layout Subsubsection
-CC N-Tracks (CCnQE Enhanced)
+CC N-Tracks
 \end_layout
 
 \begin_layout Standard
@@ -10747,7 +10747,7 @@ Text
 \begin_layout Standard
 \begin_inset Branch SelectionsKinematicsP0DWaterIn
 inverted 0
-status collapsed
+status open
 
 \begin_layout Subsection
 \begin_inset Formula $\pod$
@@ -16886,7 +16886,7 @@ Text
 \begin_layout Standard
 \begin_inset Branch SelectionsKinematicsP0DWaterInCCNTracks
 inverted 0
-status collapsed
+status open
 
 \begin_layout Subsubsection
 CC N-Tracks (CCnQE Enhanced)
