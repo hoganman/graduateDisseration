@@ -108,9 +108,31 @@
 \begin_body
 
 \begin_layout Standard
+\align center
+
+\shape italic
+\lang american
+Chose trop vue n'est chère tenue
+\end_layout
+
+\begin_layout Quote
+\align center
+A thing too much seen is little prized
+\end_layout
+
+\begin_layout Standard
+\align center
+French proverb
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Branch IntroductionNeutrinos
 inverted 0
-status open
+status collapsed
 
 \begin_layout Section
 Introduction to Neutrinos
@@ -912,7 +934,7 @@ right-handed
 placement t
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1495,7 +1517,7 @@ Charged current (CC) neutrino interactions on nuclear particles are the
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1732,7 +1754,7 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4005,7 +4027,7 @@ value
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\Dm32=\Delta m_{\text{atm}}^{2}$
+\begin_inset Formula $\Dm 32=\Delta m_{\text{atm}}^{2}$
 \end_inset
 
 
@@ -4055,7 +4077,7 @@ value
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\Dm21=\Delta m_{\text{sol}}^{2}$
+\begin_inset Formula $\Dm 21=\Delta m_{\text{sol}}^{2}$
 \end_inset
 
 
@@ -8310,15 +8332,10 @@ Having a large, sensitive off-axis ND like ND280 provides critical constraints
  per energy bin.
  These constraints are obtained from MUMON discussed above and the NA61/SHINE
  experiment
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-todo{Insert ref}
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abgrall:2016fs"
+literal "false"
 
 \end_inset
 

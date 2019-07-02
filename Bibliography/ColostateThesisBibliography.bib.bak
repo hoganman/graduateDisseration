@@ -19,6 +19,23 @@
   Year                     = {2018}
 }
 
+@Article{Abe2018,
+  Title                    = {Search for CP Violation in Neutrino and Antineutrino Oscillations by the T2K Experiment with $2.2\ifmmode\times\else\texttimes\fi{}{10}^{21}$ Protons on Target},
+  Author                   = {Abe, K. and others},
+  Journal                  = {Phys. Rev. Lett.},
+  Year                     = {2018},
+
+  Month                    = {Oct},
+  Pages                    = {171802},
+  Volume                   = {121},
+
+  Doi                      = {10.1103/PhysRevLett.121.171802},
+  Issue                    = {17},
+  Numpages                 = {9},
+  Publisher                = {American Physical Society},
+  Url                      = {https://link.aps.org/doi/10.1103/PhysRevLett.121.171802}
+}
+
 @Article{PhysRevD.97.012001,
   Title                    = {First measurement of the ${\ensuremath{\nu}}_{\ensuremath{\mu}}$ charged-current cross section on a water target without pions in the final state},
   Author                   = {Abe, K. and Others},
@@ -34,23 +51,6 @@
   Numpages                 = {16},
   Publisher                = {American Physical Society},
   Url                      = {https://link.aps.org/doi/10.1103/PhysRevD.97.012001}
-}
-
-@Article{PhysRevLett.121.171802,
-  Title                    = {Search for CP Violation in Neutrino and Antineutrino Oscillations by the T2K Experiment with $2.2\ifmmode\times\else\texttimes\fi{}{10}^{21}$ Protons on Target},
-  Author                   = {Abe, K. and others},
-  Journal                  = {Phys. Rev. Lett.},
-  Year                     = {2018},
-
-  Month                    = {Oct},
-  Pages                    = {171802},
-  Volume                   = {121},
-
-  Doi                      = {10.1103/PhysRevLett.121.171802},
-  Issue                    = {17},
-  Numpages                 = {9},
-  Publisher                = {American Physical Society},
-  Url                      = {https://link.aps.org/doi/10.1103/PhysRevLett.121.171802}
 }
 
 @Article{PhysRevLett.121.171802,
@@ -1014,6 +1014,18 @@
   __markedentry            = {[mhogan:6]},
   Owner                    = {mhogan},
   Timestamp                = {2018.10.04}
+}
+
+@Standard{Campbell2017,
+  Title                    = {The ANuMu/NuMu Cross Sections Ratio With the P0D+TPC Samples},
+  Institution              = {Colorado State University},
+  Organization             = {The T2K Experiment},
+  Author                   = {Campbell, T., Reinherz-Aronis, E., and Toki, W.},
+  Number                   = {T2K-TN-208},
+  Year                     = {2017},
+
+  Owner                    = {mhogan},
+  Timestamp                = {2019.07.01}
 }
 
 @Electronic{JPARCCenter2019,

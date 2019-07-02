@@ -4541,15 +4541,7 @@ name "fig:numuFHCCC1TrkRecoParticle"
 \end_layout
 
 \begin_layout Standard
-The underlying true kinematics, 
-\begin_inset Formula $E_{\nu}$
-\end_inset
-
- and 
-\begin_inset Formula $Q^{2}$
-\end_inset
-
-, of the interactions are shown in 
+The underlying true kinematics of the interactions are shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:numuFHCCC1TrkTrue"
@@ -4588,7 +4580,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Neutrino Energy
+True Neutrino Energy
 \end_layout
 
 \end_inset
@@ -4695,6 +4687,25 @@ name "fig:numuFHCCC1TrkTrue"
 \end_inset
 
  which are of theoretical importance in the cross section and flux models.
+ Using 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:NuMuCCQE"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ as reference, the true neutrino energy 
+\begin_inset Formula $E_{\nu}=k_{0}$
+\end_inset
+
+ and 4-momentum transfer 
+\begin_inset Formula $Q^{2}=-q^{2}$
+\end_inset
+
+.
  An interesting CCQE-like topology in this selection are 2p2h events.
  Interaction model uncertainties for 2p2h are quite large in T2K and are
  included the BANFF fit.
@@ -4833,7 +4844,7 @@ True
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The efficiency and purity of 
+The efficiency and purity in reconstructed kinematics of 
 \begin_inset Formula $\numu$
 \end_inset
 
@@ -5393,7 +5404,7 @@ True
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The efficiency and purity of 
+The efficiency and purity in reconstructed kinematics of 
 \begin_inset Formula $\numu$
 \end_inset
 
@@ -5514,7 +5525,7 @@ noprefix "false"
 \begin_inset Formula 
 \begin{equation}
 \begin{aligned}\left(Wc^{2}\right)^{2} & =\left(p+q\right)^{2}=p^{2}+2p\cdot q+q^{2}\\
- & =\left(M_{N}c^{2}\right)^{2}+2\left(M_{N}c^{2}\right)\left(E_{\nu}-E_{l}\right)-Q^{2},
+ & =\left(M_{N}c^{2}\right)^{2}+2\left(M_{N}c^{2}\right)\left(k_{0}-k_{0}^{\prime}\right)-Q^{2},
 \end{aligned}
 \label{eq:hadronicsystemmassW}
 \end{equation}
@@ -5526,10 +5537,14 @@ where
 \end_inset
 
  is the mass of the struck nucleon and 
-\begin_inset Formula $E_{l}$
+\begin_inset Formula $k_{0}$
 \end_inset
 
- is the energy of the outgoing lepton.
+/
+\begin_inset Formula $k_{0}^{\prime}$
+\end_inset
+
+ is the energy of the neutrino/outgoing lepton.
  A dominant mode in the selection are 
 \begin_inset Formula $1\pion$
 \end_inset
@@ -5538,15 +5553,7 @@ where
 \begin_inset Formula $\Delta$
 \end_inset
 
- resonance which has a rest mass of 
-\begin_inset Formula $1.232$
-\end_inset
-
- GeV/
-\begin_inset Formula $\csq$
-\end_inset
-
-.
+ resonance.
  The 
 \begin_inset Formula $\Delta$
 \end_inset
@@ -5563,6 +5570,14 @@ plural "false"
 caps "false"
 noprefix "false"
 
+\end_inset
+
+ which has a rest mass of 
+\begin_inset Formula $1.232$
+\end_inset
+
+ GeV/
+\begin_inset Formula $\csq$
 \end_inset
 
 .
@@ -6219,15 +6234,15 @@ True
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The 
+The efficiency and purity in reconstructed kinematics of 
 \begin_inset Formula $\numubar$
 \end_inset
 
- in RHC CC 1-Track true 
+ CCQE interactions in the 
 \begin_inset Formula $\numubar$
 \end_inset
 
- CCQE efficiency and purity in reconstructed kinematics.
+ in RHC CC 1-Track selection.
  The true events are 
 \begin_inset Formula $\numubar$
 \end_inset
@@ -6954,12 +6969,15 @@ True
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The 
+The efficiency and purity in reconstructed kinematics of 
 \begin_inset Formula $\numubar$
 \end_inset
 
- in RHC CC N-Tracks true CC non-QE efficiency and purity in reconstructed
- kinematics.
+ CC non-QE interactions in the 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ in RHC CC N-Track selections.
  The true events are any 
 \begin_inset Formula $\antinumu$
 \end_inset
@@ -7080,11 +7098,17 @@ noprefix "false"
 \begin_inset Formula $\numubar$
 \end_inset
 
--induced resonances is similar to what we saw in the 
-\begin_inset Formula $\numu$
+-induced resonances is similar to what we saw in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:numuFHCCCNTrkTrue"
+plural "false"
+caps "false"
+noprefix "false"
+
 \end_inset
 
- in FHC CC N-Tracks selections.
+766.
  Interestingly, the 
 \begin_inset Formula $\numu$
 \end_inset
@@ -7709,15 +7733,15 @@ True
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The 
+The efficiency and purity in reconstructed kinematics of 
 \begin_inset Formula $\numu$
 \end_inset
 
- in RHC CC 1-Track true 
+ CCQE interactions in the 
 \begin_inset Formula $\numu$
 \end_inset
 
- CCQE efficiency and purity in reconstructed kinematics.
+ in RHC CC 1-Track selection.
  The true events are 
 \begin_inset Formula $\numu$
 \end_inset
@@ -8276,7 +8300,8 @@ show the momentum and angular distributions that are inputs to BANFF.
 \end_inset
 
 -pure with a significant mis-identified track rate.
- Interestingly, the mis-identified pion tracks have a high-energy trail.
+ Interestingly, the mis-identified pion tracks have a high energy trail
+ since more neutrino energy is required to produce multiple tracks.
 \end_layout
 
 \begin_layout Standard
@@ -8389,12 +8414,15 @@ True
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The 
+The efficiency and purity in reconstructed kinematics of 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ CC non-QE interactions in the 
 \begin_inset Formula $\numu$
 \end_inset
 
- in RHC CC N-Tracks true CC non-QE efficiency and purity in reconstructed
- kinematics.
+ in RHC CC N-Tracks selection.
  The true events are any 
 \begin_inset Formula $\numu$
 \end_inset

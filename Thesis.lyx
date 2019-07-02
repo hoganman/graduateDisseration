@@ -406,27 +406,9 @@ name "chap:Introduction"
 
 \end_layout
 
-\begin_layout Quote
-\align center
-
-\shape italic
-\lang american
-Chose trop vue n'est chère tenue
-\end_layout
-
-\begin_layout Quote
-\align center
-A thing too much seen is little prized
-\end_layout
-
-\begin_layout Standard
-\align center
-French proverb
-\end_layout
-
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "Chapters/Introduction.lyx"
 
 \end_inset
@@ -442,7 +424,7 @@ filename "Chapters/Introduction.lyx"
 \begin_layout Standard
 \begin_inset Branch BANFFLikelihood
 inverted 0
-status open
+status collapsed
 
 \begin_layout Chapter
 BANFF Likelihood

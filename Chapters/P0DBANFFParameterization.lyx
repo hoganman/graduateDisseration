@@ -5588,7 +5588,7 @@ toy experiments
 
 \begin_layout Standard
 All the detector systematics are evaluated either as observable variations
- or efficiency weights.
+ or weights.
  An observable variation affects the physical observables of selected events
  like the calculated energy loss of a track in the 
 \begin_inset Formula $\pod$
@@ -5608,7 +5608,16 @@ noprefix "false"
 \end_inset
 
 .
- Description of the systematic treatments and new 
+ The TPC systematics are fully discussed in the following reference
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abe:2017vif"
+literal "false"
+
+\end_inset
+
+.
+ Description of the new 
 \begin_inset Formula $\pod$
 \end_inset
 
@@ -5624,7 +5633,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="13" columns="3">
+<lyxtabular version="3" rows="15" columns="3">
 <features booktabs="true" tabularvalignment="middle">
 <column alignment="left" valignment="top">
 <column alignment="center" valignment="top">
@@ -5891,7 +5900,65 @@ efficiency
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TPC Particle ID
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TPC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+observable variation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TPC track quality eff.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TPC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+efficiency
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5903,7 +5970,7 @@ efficiency
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5915,7 +5982,7 @@ efficiency
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5961,14 +6028,14 @@ observable variation
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 \begin_inset Formula $\pod$
 \end_inset
 
- OOFV
+ mass
 \end_layout
 
 \end_inset
@@ -5985,25 +6052,25 @@ observable variation
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-efficiency
+(see text)
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 \begin_inset Formula $\pod$
 \end_inset
 
- track veto
+-TPC matching eff.
 \end_layout
 
 \end_inset
@@ -6015,16 +6082,16 @@ efficiency
 \begin_inset Formula $\pod$
 \end_inset
 
-
++TPC
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-efficiency
+(see text)
 \end_layout
 
 \end_inset
@@ -6043,7 +6110,22 @@ efficiency
 \begin_layout Plain Layout
 List of detector systematic effects and the way each one is treated within
  the simulated samples to propagate the uncertainty.
- 
+ The systematics listed above the horizontal line are discussed in the following
+ reference
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevD.91.072010"
+literal "false"
+
+\end_inset
+
+.
+ The 
+\begin_inset Formula $\pod$
+\end_inset
+
+ mass and track matching systematics were not available in the BANFF framework
+ and treated as uncorrelated additions to the total covariance matrix.
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:List-of-detector"
@@ -6057,14 +6139,6 @@ status open
 \begin_layout Plain Layout
 List of Detector Systematic Effects and Treatment
 \end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "PhysRevD.91.072010"
-literal "false"
 
 \end_inset
 
@@ -6195,6 +6269,40 @@ w_{\text{ineff}} & =\frac{1-\epsilon_{\text{Data}}^{\prime}}{1-\epsilon_{\text{M
 \end_layout
 
 \begin_layout Standard
+Similar to efficiency-like systematic weights, normalization weights scale
+ the event rate for a particular systematic.
+ The normalization weight, 
+\begin_inset Formula $w_{\text{norm}}$
+\end_inset
+
+, is given by 
+\begin_inset Formula 
+\begin{equation}
+w_{\text{norm}}=\overline{w}\left(1+x\sigma_{w}\right),\label{eq:weightnorm}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\overline{w}$
+\end_inset
+
+ is the mean weight for the event, 
+\begin_inset Formula $\sigma_{w}$
+\end_inset
+
+ is the measured standard deviation of the systematic, and 
+\begin_inset Formula $x$
+\end_inset
+
+ is a normally distributed numbers 
+\begin_inset Formula $\mathcal{N}\left(\mu=0,\sigma^{2}=1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 Observable variation systematics are evaluated as alterations to physically
  measured quantities like momentum and energy.
  The systematic is evaluated using the following formula
@@ -6243,36 +6351,18 @@ where
 \end_layout
 
 \begin_layout Subsubsection
-The 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-podtitle{}
-\end_layout
-
-\end_inset
-
--Only Systematics
-\end_layout
-
-\begin_layout Subsubsection
 Detector Covariance Matrix
 \end_layout
 
 \begin_layout Standard
-After many toy experiments, a covariance matrix is constructed among the
- bins considering correlations and statistical errors.
- This covariance matrix, 
+After many toy experiments which vary the observables and weight, the number
+ of varied events per fit bin can be examined.
+ From here, bin normalizations and covariance terms are calculated.
+ The detector covariance matrix , 
 \begin_inset Formula $\sigma_{\text{Det}}^{2}$
 \end_inset
 
-, is a fractional covariance as to be consistent with the definition for
- the flux parameters and covariance matrix.
- The detector covariance matrix between bins 
+, between bins 
 \begin_inset Formula $x$
 \end_inset
 
@@ -6322,6 +6412,8 @@ Stat
 \end_inset
 
 , respectively.
+ This covariance matrix is a fractional covariance as to be consistent with
+ the definition for the flux parameters and covariance matrix.
  The nominal bin expectation for bin 
 \begin_inset Formula $x$
 \end_inset
@@ -6385,17 +6477,19 @@ where
 \end_inset
 
  is the Kronecker delta function.
- Additional uncertainties like fake data contributions are added to the
- covariance in quadrature.
+ Additional uncertainties would be added to the covariance terms in quadrature.
 \end_layout
 
 \begin_layout Standard
 While there could be one detector systematic normalization for each analysis
- bin, also called a observable normalization, a single one can be assigned
- to multiple analysis bins to reduce the number of fit parameters.
+ bin, a single one can be assigned to multiple analysis bins to reduce the
+ number of fit parameters.
  This procedure requires careful consideration of the shared detector systematic
 s among analysis bins.
- A considerable drawback to designing normalizations in this way is that
+\end_layout
+
+\begin_layout Standard
+A considerable drawback to designing normalizations in this way is that
  not all detector systematics are Gaussian with respect to the observables
  
 \begin_inset Formula $\left(P_{l},\cos\theta_{l}\right)$
@@ -6403,6 +6497,508 @@ s among analysis bins.
 
 , and so the covariance matrix is not an exact representation of the detector
  systematics.
+ To demonstrate this, representative results of varied number of events
+ in are shown in 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/P0DBANFFParameterization/P0DObsnormSpreadNumuCC1Trk.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\numu$
+\end_inset
+
+ in FHC CC 1-Track
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/P0DBANFFParameterization/P0DObsnormSpreadNumubarRHCCC1Trk.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\numubar$
+\end_inset
+
+ in RHC CC 1-Track
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/P0DBANFFParameterization/P0DObsnormSpreadNumubarRHCCCNTrks.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\numubar$
+\end_inset
+
+ in RHC CC N-Tracks
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/P0DBANFFParameterization/P0DObsnormSpreadNumuRHCCC1Trk.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\numu$
+\end_inset
+
+ in RHC CC 1-Track
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Event variations
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+The 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+podtitle{}
+\end_layout
+
+\end_inset
+
+-Only Systematics
+\end_layout
+
+\begin_layout Standard
+There are four new systematics in the BANFF that are considered for this
+ analysis as listed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:List-of-detector"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ All the new sources were analyzed in the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ 
+\begin_inset Formula $\numu$
+\end_inset
+
+ CC-
+\begin_inset Formula $0\pi$
+\end_inset
+
+ cross section analysis 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevD.97.012001"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The energy loss scale and resolution affect the measured momentum in the
+ 
+\begin_inset Formula $\pod$
+\end_inset
+
+ and are very significant sources of uncertainty.
+ In the 
+\begin_inset Formula $\numu$
+\end_inset
+
+ CC-
+\begin_inset Formula $0\pi$
+\end_inset
+
+ cross section analysis, the same as the 
+\begin_inset Formula $\numu$
+\end_inset
+
+ CC 1-Track selection in this thesis, the scale and resolution contributed
+ 1.3% and 6.7%, respectively, to the cross section uncertainty.
+ The large uncertainties arise from the uncertainty in the track path used
+ to integrate the energy loss from 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:momentumP0DFull"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The other two systematics, 
+\begin_inset Formula $\pod$
+\end_inset
+
+ mass and 
+\begin_inset Formula $\pod$
+\end_inset
+
+-TPC matching efficiency, were not available to analyze for toy experiments
+ variations.
+ They were not available to implement due to time constraints on the author.
+ Instead, they were treated as additional uncorrelated systematics on each
+ bin normalization uncertainty with the mean value remaining flux.
+ The covariance matrix is updated using in the following manner
+\begin_inset Formula 
+\begin{equation}
+\sigma_{\text{Det}}^{2}\left(x,y\right)\rightarrow\left(\frac{\sigma_{\text{Det}}^{2}\left(x,y\right)}{\overline{x}\overline{y}}+\widetilde{\sigma}_{\text{Mass}}^{2}+\widetilde{\sigma}_{\text{Match}}^{2}\right)\overline{x}\overline{y},\label{eq:covarupdatefrac}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\widetilde{\sigma}_{\text{Mass}}^{2}$
+\end_inset
+
+ is the fractional uncertainty in the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ mass and 
+\begin_inset Formula $\widetilde{\sigma}_{\text{Match}}^{2}$
+\end_inset
+
+ is the fractional uncertainty in the matching efficiency.
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Formula $\pod$
+\end_inset
+
+ mass uncertainty is a normalization systematic which affects the event
+ rate.
+ This is an especially challenging systematic since the water mass was not
+ accurately measured in each water bag due to faulty sensors used to measure
+ the water content.
+ Prior 
+\begin_inset Formula $\pod$
+\end_inset
+
+ analyses have estimated the mass uncertainty using similar toy experiment
+ techniques, but did not integrate them into the BANFF framework.
+ 
+\shape italic
+A conservative estimate of 
+\begin_inset Formula $\widetilde{\sigma}_{\text{Mass}}=2\%$
+\end_inset
+
+ was chosen based on the 1.5% uncertainty from the 
+\begin_inset Formula $\numu$
+\end_inset
+
+ CC-
+\begin_inset Formula $0\pi$
+\end_inset
+
+ cross section
+\shape default
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevD.97.012001"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Formula $\pod$
+\end_inset
+
+ and TPC matching efficiency is estimated to have a small systematic effect
+ on the analysis.
+ It was analyzed to have over a 99.8% data and MC efficiency in the single
+ track 
+\begin_inset Formula $\numu$
+\end_inset
+
+ CC-
+\begin_inset Formula $0\pi$
+\end_inset
+
+ analysis and thus neglected.
+ However, since this analysis includes multiple track selections, that matching
+ efficiency is unknown.
+ Also, it is hard to imagine a CS that could constrain it.
+ The best handle is from the private T2K technical note on the 
+\begin_inset Formula $\numubar/\numu$
+\end_inset
+
+ cross section analysis 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Campbell2017"
+literal "false"
+
+\end_inset
+
+ which estimated the uncertainty at less than 0.14% using its in-house matching
+ algorithm.
+ Since that is was single bin measurement and different matching algorithm,
+ the uncertainty is not guaranteed to remain constant across 
+\begin_inset Formula $(P,\cos\theta)$
+\end_inset
+
+ bins.
+ 
+\shape italic
+A conservative estimate of 
+\begin_inset Formula $\widetilde{\sigma}_{\text{Match}}=1\%$
+\end_inset
+
+ was chosen in order to account for the inherent uncertainty in this systematic
+\shape default
+.
+\end_layout
+
+\begin_layout Standard
+Together, the two additional sources of uncertainty increase each term in
+ the covariance matrix by 
+\begin_inset Formula $0.0005\overline{x}\overline{y}$
+\end_inset
+
+, which increases each bin normalization error by about 
+\begin_inset Formula $2.23\%$
+\end_inset
+
+.
+ The updated covariance matrix used in this analysis is shown in
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/P0DBANFFParameterization/P0DMass_TPCMatch_study/obsNorm_cov_updated.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/P0DBANFFParameterization/P0DMass_TPCMatch_study/obsNorm_cov_updatedoriginaldifference.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -6413,7 +7009,7 @@ s among analysis bins.
 \begin_layout Standard
 \begin_inset Branch P0DBANFFParameterizationXSEC
 inverted 0
-status open
+status collapsed
 
 \begin_layout Subsection
 Cross Section Model
@@ -6749,7 +7345,7 @@ status open
 
 \begin_layout Plain Layout
 Cross Section Model Fit Parameters in the BANFF Fit.
- If no prefit uncertainty is shown and also in 
+ If no prefit uncertainty is shown ,and also shown in 
 \color red
 red font
 \color inherit
