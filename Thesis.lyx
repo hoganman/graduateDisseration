@@ -57,7 +57,7 @@
   pagebackref,
   bookmarksopen,
   bookmarksnumbered]{hyperref}
-
+\usepackage{cleveref}
 \usepackage{sectsty}
 \chapterfont{\centering}
 
@@ -65,6 +65,11 @@
 \end_preamble
 \options doctor,showframe
 \use_default_options true
+\begin_modules
+fixltx2e
+fix-cm
+hanging
+\end_modules
 \maintain_unincluded_children false
 \language english
 \language_package default
@@ -191,8 +196,8 @@
 \topmargin 1in
 \rightmargin 1in
 \bottommargin 1in
-\secnumdepth 4
-\tocdepth 4
+\secnumdepth 5
+\tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
 \is_math_indent 0
@@ -200,7 +205,7 @@
 \quotes_style english
 \dynamic_quotes 0
 \papercolumns 1
-\papersides 1
+\papersides 2
 \paperpagestyle default
 \tracking_changes false
 \output_changes false
@@ -703,7 +708,14 @@ podtitle{}
 
 \end_inset
 
--Only Observable Normalizations
+-Only Bin Normalization Parameters
+\begin_inset CommandInset label
+LatexCommand label
+name "app:obsnorm"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

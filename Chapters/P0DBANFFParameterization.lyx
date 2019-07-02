@@ -218,7 +218,7 @@ This chapter is presented in the following order.
 \begin_layout Standard
 \begin_inset Branch P0DBANFFParameterizationFitBinning
 inverted 0
-status collapsed
+status open
 
 \begin_layout Section
 Fit Binning
@@ -246,27 +246,27 @@ noprefix "false"
 \end_inset
 
 , are tabulated below.
- Both water-in and water-out modes share the same bin edges.
+ There are a total 988 fit bins with water-in and water-out modes sharing
+ the same bin edges.
  The determination of the fit binning is discussed below.
 \end_layout
 
 \begin_layout Itemize
-FHC 
 \begin_inset Formula $\numu$
 \end_inset
 
-CC 1-Track bin edges:
+ in CC 1-Track fit bin edges:
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $p$
 \end_inset
 
  [GeV/c]: 0, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 1, 1.25, 1.5, 2, 3, 4, 5.5, 30
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $\cos\theta$
 \end_inset
 
@@ -275,22 +275,21 @@ CC 1-Track bin edges:
 
 \end_deeper
 \begin_layout Itemize
-FHC 
 \begin_inset Formula $\numu$
 \end_inset
 
-CC N-Tracks bin edges:
+ in FHC CC N-Tracks fit bin edges:
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $p$
 \end_inset
 
  [GeV/c]: 0, 0.4, 0.5, 0.6, 0.7, 0.8, 1, 1.2, 1.5, 1.8, 2.2, 2.7, 3.5, 5, 10, 30
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $\cos\theta$
 \end_inset
 
@@ -299,22 +298,21 @@ CC N-Tracks bin edges:
 
 \end_deeper
 \begin_layout Itemize
-RHC 
 \begin_inset Formula $\numubar$
 \end_inset
 
-CC 1-Track bin edges:
+ in RHC CC 1-Track fit bin edges:
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $p$
 \end_inset
 
  [GeV/c]: 0, 0.4, 0.5, 0.6, 0.7, 0.8, 1, 1.25, 1.5, 2, 3, 30
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $\cos\theta$
 \end_inset
 
@@ -323,22 +321,21 @@ CC 1-Track bin edges:
 
 \end_deeper
 \begin_layout Itemize
-RHC 
 \begin_inset Formula $\numubar$
 \end_inset
 
-CC N-Tracks bin edges:
+ in RHC CC N-Tracks fit bin edges:
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $p$
 \end_inset
 
- [GeV/c]:0, 0.5, 0.9, 1.25, 1.6, 2, 3, 8, 30
+ [GeV/c]: 0, 0.5, 0.9, 1.25, 1.6, 2, 3, 8, 30
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $\cos\theta$
 \end_inset
 
@@ -347,22 +344,21 @@ CC N-Tracks bin edges:
 
 \end_deeper
 \begin_layout Itemize
-RHC 
 \begin_inset Formula $\numu$
 \end_inset
 
-CC 1-Track bin edges:
+ in RHC CC 1-Track fit bin edges:
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $p$
 \end_inset
 
  [GeV/c]: 0, 0.4, 0.6, 0.8, 1.1, 2, 10
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $\cos\theta$
 \end_inset
 
@@ -371,22 +367,21 @@ CC 1-Track bin edges:
 
 \end_deeper
 \begin_layout Itemize
-RHC 
 \begin_inset Formula $\numu$
 \end_inset
 
-CC N-Tracks bin edges:
+ in RHC CC N-Tracks bin edges:
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $p$
 \end_inset
 
  [GeV/c]:0, 0.4, 0.6, 0.8, 1, 1.5, 2, 3, 10
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset Formula $\cos\theta$
 \end_inset
 
@@ -5554,7 +5549,7 @@ Super-K
 \begin_layout Standard
 \begin_inset Branch P0DBANFFParameterizationDetector
 inverted 0
-status collapsed
+status open
 
 \begin_layout Subsection
 Detector Inefficiencies Model
@@ -6351,13 +6346,17 @@ where
 \end_layout
 
 \begin_layout Subsubsection
-Detector Covariance Matrix
+Bin Normalizations and Covariance
 \end_layout
 
 \begin_layout Standard
-After many toy experiments which vary the observables and weight, the number
- of varied events per fit bin can be examined.
- From here, bin normalizations and covariance terms are calculated.
+After many toy experiments which vary the observables 
+\begin_inset Formula $(p,\cos\theta)$
+\end_inset
+
+ and their weights, the number of varied events per fit bin can be examined.
+ From here, the observable normalization (obsnorm) and covariance terms
+ are calculated.
  The detector covariance matrix , 
 \begin_inset Formula $\sigma_{\text{Det}}^{2}$
 \end_inset
@@ -6414,7 +6413,7 @@ Stat
 , respectively.
  This covariance matrix is a fractional covariance as to be consistent with
  the definition for the flux parameters and covariance matrix.
- The nominal bin expectation for bin 
+ The obsnorm expectation for bin 
 \begin_inset Formula $x$
 \end_inset
 
@@ -6478,31 +6477,255 @@ where
 
  is the Kronecker delta function.
  Additional uncertainties would be added to the covariance terms in quadrature.
+ This will be
 \end_layout
 
 \begin_layout Standard
-While there could be one detector systematic normalization for each analysis
- bin, a single one can be assigned to multiple analysis bins to reduce the
- number of fit parameters.
- This procedure requires careful consideration of the shared detector systematic
-s among analysis bins.
+While there could be one obsnorm for each analysis bin, a single obsnorm
+ can be assigned to multiple analysis bins.
+ The purpose is to reduce the number of fit parameters since the time to
+ fit increases non-linearly with the number of fit parameters and events.
+ Previously, the obsnorm edges were determined by combining fit bins with
+ 
+\begin_inset Quotes eld
+\end_inset
+
+similar
+\begin_inset Quotes erd
+\end_inset
+
+ covariance as defined in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:detectorcovariance"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ This method proved problematic since the fit bins with larger relatively
+ statistics were shared with the same obsnorm parameter.
+ This left the remaining low statistics regions of 
+\begin_inset Formula $(p,\cos\theta)$
+\end_inset
+
+ phase space more susceptible to systematic variations in the toy experiments.
 \end_layout
 
+\begin_layout Standard
+A new procedure was developed to improve the shortcomings of old procedure.
+ This procedure requires careful consideration of the statistical uncertainties
+ and shared detector systematics among analysis bins.
+ To start, all the fit bins are assigned a single obsnorm.
+ All steps after this are performed iteratively.
+ Starting from the obsnorm bin with the lowest statistical error, that bin
+ and an immediate adjacent bin are combined if the fractional error does
+ not differ by much more than a factor of 10.
+ In the case the unmerged bin normalizations differ by more than 10%, perform
+ the merge.
+ This procedure can be imagined as lowing the number of contours in a topographi
+c map while considering external constraints from other sensing data.
+ The finalized obsnorm bins are listed below and shown visually in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Cref{fig:Bin-normalization-edgesNumuFHC,fig:Bin-normalization-edgesNumubarRHC,fi
+g:Bin-normalization-edgesNuMuRHC}
+\end_layout
+
+\end_inset
+
+.
+ Their respective fit index and prefit values are tabulated in Appendix
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "app:obsnorm"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\numu$
+\end_inset
+
+ in FHC CC 1-Track bin normalization edges:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $p$
+\end_inset
+
+ [GeV/c]: 0, 0.4, 0.6, 0.8, 1.25, 2, 3, 4, 5.5, 30
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+: -1, 0.7, 0.8, 0.94, 0.975, 0.99, 1
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\numu$
+\end_inset
+
+ in FHC CC N-Tracks bin normalization edges:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $p$
+\end_inset
+
+ [GeV/c]: 0, 0.4, 0.6, 0.8, 1.2, 2.2, 3.5, 10, 30
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ : -1, 0.77, 0.85, 0.9, 0.97, 1
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\numubar$
+\end_inset
+
+ in RHC CC 1-Track bin normalization edges:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $p$
+\end_inset
+
+ [GeV/c]: 0, 0.5, 0.6, 0.8, 1.25, 2, 3, 30
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ : -1, 0.82, 0.9, 0.95, 0.99, 1
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\numubar$
+\end_inset
+
+ in RHC CC N-Tracks bin normalization edges:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $p$
+\end_inset
+
+ [GeV/c]: 0, 0.5, 0.9, 1.25, 1.6, 3, 30
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ : -1, 0.89, 0.95, 0.97, 0.99, 1
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\numu$
+\end_inset
+
+ in RHC CC T-track bin normalization edges:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $p$
+\end_inset
+
+ [GeV/c]: 0, 0.4, 0.6, 0.8, 1.1, 2, 10
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ : -1, 0.78, 0.84, 0.92, 0.95, 0.98, 0.99, 1
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\numu$
+\end_inset
+
+ in RHC CC N-Tracks bin normalization edges:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $p$
+\end_inset
+
+ [GeV/c]: 0, 0.6, 1, 1.5, 2, 10
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ : -1, 0.7, 0.8, 0.85, 0.98, 0.99, 1
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 A considerable drawback to designing normalizations in this way is that
  not all detector systematics are Gaussian with respect to the observables
  
-\begin_inset Formula $\left(P_{l},\cos\theta_{l}\right)$
+\begin_inset Formula $(P,\cos\theta)$
 \end_inset
 
 , and so the covariance matrix is not an exact representation of the detector
  systematics.
  To demonstrate this, representative results of varied number of events
  in are shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Representative-event-variations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ with an without the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ energy loss resolution systematic enabled.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -6549,6 +6772,45 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
+	filename Figures/P0DBANFFParameterization/P0DObsnormSpreadNumuCCNTrks.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\numu$
+\end_inset
+
+ in FHC CC N-Tracks
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
 	filename Figures/P0DBANFFParameterization/P0DObsnormSpreadNumubarRHCCC1Trk.png
 	lyxscale 50
 	width 45text%
@@ -6576,10 +6838,6 @@ status open
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-\align center
 \begin_inset Float figure
 wide false
 sideways false
@@ -6615,6 +6873,10 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Float figure
 wide false
 sideways false
@@ -6650,23 +6912,531 @@ status open
 \end_inset
 
 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/P0DBANFFParameterization/P0DObsnormSpreadNumuRHCCCNTrks.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Event variations
+\begin_inset Formula $\numu$
+\end_inset
+
+ in RHC CC N-Tracks
 \end_layout
 
 \end_inset
 
 
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Representative event variations in observable normalization bins.
+ Shown in each sub-figure is a particular observable normalization bin with
+ all the variations shown in blue.
+ Vertical dashed lines show the nominal, unvaried bin prediction and varied
+ mean of all toy experiments.
+ The ratio of the positions of each vertical line is the normalization predictio
+n.
+ An overlayed black, dashed gaussian with uncertainty from the covariance
+ matrix is shown to illustrate the estimate on the normalization uncertainty.
+ The result of disabling the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ energy loss resolution systematic is shown in red to illustrate its affect
+ on the mean and spread of toy experiments.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Representative-event-variations"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Representative Event Variations in Observable Normalization Bins
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+While the problem of a few obsnorm parameters having the majority of statistics
+ is still present, fluctuations in adjacent obsnorm parameters is minimized.
+ The detector systematic that had the largest effect on the obsnorm prediction
+ was the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ energy loss resolution.
+ With it, the event rate in each obsnorm bin varied in non-normally.
+ This effect can be seen in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Representative-event-variations"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/P0DBANFFParameterization/obsnorm/air/P0DFHCNumuCC1Tr.png
+	lyxscale 50
+	width 95text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\numu$
+\end_inset
+
+ in FHC CC 1-Track
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/P0DBANFFParameterization/obsnorm/air/P0DFHCNumuCCnTr.png
+	lyxscale 50
+	width 95text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\numu$
+\end_inset
+
+ in FHC CC N-Tracks
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Bin normalization edges for the 
+\begin_inset Formula $\numu$
+\end_inset
+
+ in FHC selections.
+ There are two plots shown for each sub-figure.
+ The left and right plots show the bin normalization if each fit bin had
+ a single bin normalization and the bin statistical fractional error, respective
+ly.
+ The dashed lines indicate the edges of the bin normalization parameters.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Bin-normalization-edgesNumuFHC"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Bin Normalization Edges for the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numutitle{}
+\end_layout
+
+\end_inset
+
+ in FHC Selections
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/P0DBANFFParameterization/obsnorm/air/P0DRHCANumuCC1Tr.png
+	lyxscale 50
+	width 95text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\numubar$
+\end_inset
+
+ in RHC CC 1-Track
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/P0DBANFFParameterization/obsnorm/air/P0DRHCANumuCCnTr.png
+	lyxscale 50
+	width 95text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\numubar$
+\end_inset
+
+ in RHC CC N-Tracks
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Bin normalization edges for the 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ in RHC selections.
+ There are two plots shown for each sub-figure.
+ The left and right plots show the bin normalization if each fit bin had
+ a single bin normalization and the bin statistical fractional error, respective
+ly.
+ The dashed lines indicate the edges of the bin normalization parameters.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Bin-normalization-edgesNumubarRHC"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Bin Normalization Edges for the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numubartitle{}
+\end_layout
+
+\end_inset
+
+ in RHC Selections
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/P0DBANFFParameterization/obsnorm/air/P0DRHCNumuCC1Tr.png
+	lyxscale 50
+	width 95text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\numu$
+\end_inset
+
+ in RHC CC 1-Track
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/P0DBANFFParameterization/obsnorm/air/P0DRHCNumuCCnTr.png
+	lyxscale 50
+	width 95text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\numu$
+\end_inset
+
+ in RHC CC N-Tracks
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Bin normalization edges for the 
+\begin_inset Formula $\numu$
+\end_inset
+
+ in RHC selections.
+ There are two plots shown for each sub-figure.
+ The left and right plots show the bin normalization if each fit bin had
+ a single bin normalization and the bin statistical fractional error, respective
+ly.
+ The dashed lines indicate the edges of the bin normalization parameters.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Bin-normalization-edgesNuMuRHC"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Bin Normalization Edges for the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numutitle{}
+\end_layout
+
+\end_inset
+
+ in RHC Selections
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -6774,7 +7544,7 @@ The other two systematics,
  The covariance matrix is updated using in the following manner
 \begin_inset Formula 
 \begin{equation}
-\sigma_{\text{Det}}^{2}\left(x,y\right)\rightarrow\left(\frac{\sigma_{\text{Det}}^{2}\left(x,y\right)}{\overline{x}\overline{y}}+\widetilde{\sigma}_{\text{Mass}}^{2}+\widetilde{\sigma}_{\text{Match}}^{2}\right)\overline{x}\overline{y},\label{eq:covarupdatefrac}
+\sigma_{\text{Det}}^{2}\left(x,y\right)\rightarrow\left(\frac{\sigma_{\text{Det}}^{2}\left(x,y\right)}{\overline{x}\cdot\overline{y}}+\widetilde{\sigma}_{\text{Mass}}^{2}+\widetilde{\sigma}_{\text{Match}}^{2}\right)\overline{x}\overline{y},\label{eq:covarupdatefrac}
 \end{equation}
 
 \end_inset
@@ -6891,7 +7661,7 @@ A conservative estimate of
 \begin_layout Standard
 Together, the two additional sources of uncertainty increase each term in
  the covariance matrix by 
-\begin_inset Formula $0.0005\overline{x}\overline{y}$
+\begin_inset Formula $0.0005\overline{x}\cdot\overline{y}$
 \end_inset
 
 , which increases each bin normalization error by about 
@@ -6899,7 +7669,17 @@ Together, the two additional sources of uncertainty increase each term in
 \end_inset
 
 .
- The updated covariance matrix used in this analysis is shown in
+ The updated covariance matrix used in this analysis is shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:The-updated-detector-covariance"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -6931,7 +7711,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Updated Covariance Matrix
 \end_layout
 
 \end_inset
@@ -6967,7 +7747,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Difference from Original Covariance
 \end_layout
 
 \end_inset
@@ -6984,6 +7764,24 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Updated detector covariance matrix (a) and the difference from the original
+ (b) ) .
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:The-updated-detector-covariance"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Detector Covariance Matrix
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
