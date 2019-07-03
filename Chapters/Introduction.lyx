@@ -123,10 +123,6 @@ A thing too much seen is little prized
 \begin_layout Standard
 \align center
 French proverb
-\begin_inset Newpage newpage
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -3861,11 +3857,11 @@ Current and next generation experiments aim to improve knowledge of the
 
 .
  While the two defined mass-squared splittings 
-\begin_inset Formula $\Dm 21=\Delta m_{\text{sol}}^{2}$
+\begin_inset Formula $\Dm21=\Delta m_{\text{sol}}^{2}$
 \end_inset
 
  and 
-\begin_inset Formula $\Dm 32=\Delta m_{\text{atm}}^{2}$
+\begin_inset Formula $\Dm32=\Delta m_{\text{atm}}^{2}$
 \end_inset
 
  are known, it is unknown which eigenstates are more massive.
@@ -4027,7 +4023,7 @@ value
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\Dm 32=\Delta m_{\text{atm}}^{2}$
+\begin_inset Formula $\Dm32=\Delta m_{\text{atm}}^{2}$
 \end_inset
 
 
@@ -4077,7 +4073,7 @@ value
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\Dm 21=\Delta m_{\text{sol}}^{2}$
+\begin_inset Formula $\Dm21=\Delta m_{\text{sol}}^{2}$
 \end_inset
 
 
@@ -4550,8 +4546,8 @@ noprefix "false"
 , the MSW effect to first order is 
 \begin_inset Formula 
 \begin{equation}
-\begin{aligned}\mathcal{P}\left(\nuantinuparticle{\mu}\rightarrow\nuantinuparticle e\right)\rightarrow & \mathcal{P}\left(\nuantinuparticle{\mu}\rightarrow\nuantinuparticle e\right)+\frac{8\alpha}{\Dm 31}\left(\ccc{13}\sss{13}\sss{23}\right)\left(1-2\sss{13}\right)\\
- & \times\left(\sin^{2}\phi_{31}\overset{_{(+)}}{-}\underset{\phi_{31}}{\underbrace{\left(\frac{\Dm 31c^{3}}{4\hbar}\frac{L}{E_{\nu}}\right)}}\cos\phi_{32}\sin\phi_{31}\right),
+\begin{aligned}\mathcal{P}\left(\nuantinuparticle{\mu}\rightarrow\nuantinuparticle e\right)\rightarrow & \mathcal{P}\left(\nuantinuparticle{\mu}\rightarrow\nuantinuparticle e\right)+\frac{8\alpha}{\Dm31}\left(\ccc{13}\sss{13}\sss{23}\right)\left(1-2\sss{13}\right)\\
+ & \times\left(\sin^{2}\phi_{31}\overset{_{(+)}}{-}\underset{\phi_{31}}{\underbrace{\left(\frac{\Dm31c^{3}}{4\hbar}\frac{L}{E_{\nu}}\right)}}\cos\phi_{32}\sin\phi_{31}\right),
 \end{aligned}
 \label{eq:numu2nuethreeflavormasseffect}
 \end{equation}
@@ -4790,7 +4786,7 @@ literal "false"
 \begin_layout Standard
 \begin_inset Branch IntroductionT2K
 inverted 0
-status collapsed
+status open
 
 \begin_layout Section
 Tokai-to-Kamioka Experiment
@@ -6029,7 +6025,7 @@ s observed at SK.
 \begin_layout Standard
 \begin_inset Branch IntroductionT2KNearDetectors
 inverted 0
-status collapsed
+status open
 
 \begin_layout Subsection
 Neutrino Near Detectors: ND280
@@ -8058,16 +8054,6 @@ noprefix "false"
 
 \end_inset
 
- 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:threeflavorprobgeneral"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
 , 
 \begin_inset Formula $\sigma_{\nu_{\alpha}}^{t}$
 \end_inset
@@ -8093,7 +8079,7 @@ noprefix "false"
 \end_inset
 
  is the flux of neutrinos, and 
-\begin_inset Formula $\epsilon\left(p_{\alpha},\theta_{\alpha}\right)$
+\begin_inset Formula $\epsilon\left(p_{\alpha},\cos\theta_{\alpha}\right)$
 \end_inset
 
  is the efficiency of reconstructing and correctly categorizing the event
@@ -8475,6 +8461,36 @@ Using the ND280 constraint can tune the NEUT cross section model to best
  deficiencies to accurately predict the neutrino energy.
  The models implemented in NEUT, while being well studied in previous neutrino-n
 uclear Physics experiments, are known as effective models in T2K.
+\end_layout
+
+\begin_layout Section
+Summary
+\end_layout
+
+\begin_layout Standard
+The Neutrino is an elusive particle to detect.
+ The relatively new oscillation phenomenon has opened up the possibility
+ of exploring fundamental questions of the Universe like CP violation.
+ In the T2K experiment, some of the uncertainties associated with neutrino
+ oscillations are being explored.
+ To facilitate these goals, constraining all forms of uncertainty in neutrino-nu
+clear interactions and flux help improve its sensitivity to the oscillation
+ predictions.
+\end_layout
+
+\begin_layout Standard
+This thesis is presented in the following order.
+ First is the ND280 constraint on the flux and cross section models using
+ the BANFF maximum likelihood fit.
+ Next is the description of the analysis samples that are used in the BANFF
+ fit.
+ With the samples defined, the parameterization of the fit bins and penalty
+ terms are defined for this analysis.
+ This is followed by the validation of the BANFF fit in a few scenarios.
+ Then the BANFF postfit results will be analyzed in relation to previous
+ analyses.
+ The final chapter is a discussion of the results and prospects for the
+ future.
 \end_layout
 
 \end_inset

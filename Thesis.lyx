@@ -159,17 +159,17 @@ hanging
 \color #faf0e6
 \end_branch
 \branch FitterValidation
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch FitterResults
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch P0DFDGComparisons
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -227,6 +227,25 @@ filename "LyxMathMacros.lyx"
 \begin_inset CommandInset include
 LatexCommand input
 filename "LyxTextMacros.lyx"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%%%add 
+\begin_inset Quotes eld
+\end_inset
+
+doctor,showframe
+\begin_inset Quotes erd
+\end_inset
+
+ to add a frame box%%%
+\end_layout
 
 \end_inset
 
@@ -429,7 +448,7 @@ filename "Chapters/Introduction.lyx"
 \begin_layout Standard
 \begin_inset Branch BANFFLikelihood
 inverted 0
-status collapsed
+status open
 
 \begin_layout Chapter
 BANFF Likelihood

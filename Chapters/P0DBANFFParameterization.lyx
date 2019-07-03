@@ -194,23 +194,16 @@ In addition to the likelihood ratio maximization, the BANFF fit includes
  model, and detector inefficiencies.
  This chapter explores the fit binning and penalty terms in the test statistic
  in this analysis.
- The sources of systematic uncertainties, hitherto referred to as 
-\begin_inset Quotes eld
-\end_inset
-
-systematics
-\begin_inset Quotes erd
-\end_inset
-
-, will be defined in order to understand their effect on any analysis.
+ The sources of systematic uncertainties, also referred to just as systematics,
+ will be defined in order to understand their effect on any analysis.
 \end_layout
 
 \begin_layout Standard
 This chapter is presented in the following order.
  The first section explores the method to define fit bins in the likelihood
  ratio.
- The second section is divided into subsections to define the parameterization
- of each penalty term in the test statistic.
+ The second section is divided into three subsections to define the parameteriza
+tion of each penalty term in the test statistic.
  The penalty terms discussed in order are the neutrino flux model, the detector
  inefficiencies, and lastly the cross section model.
 \end_layout
@@ -229,7 +222,7 @@ The
 \begin_inset Formula $\pod$
 \end_inset
 
- ND280 BANFF fit uses the samples described in Chapter 
+ ND280 BANFF fit uses the samples described in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "chap:P0DSelections"
@@ -412,10 +405,10 @@ The fit binning is optimized to ensure at least 1 predicted Monte Carlo
 \end_inset
 
  the data statistics, the statistical uncertainty for each bin should be
- negligible for high statistics regions.
+ negligible in high statistics regions.
  The kinematics are scanned across their full relevant spaces in order to
- understand the needed width for a fit bin.
- The first fit bin is always defined from the kinematic maximum.
+ understand the required width for a fit bin.
+ The first fit bin is always defined starting from the kinematic maximum.
 \end_layout
 
 \begin_layout Standard
@@ -436,7 +429,7 @@ where
 \begin_inset Formula $t$
 \end_inset
 
- is the true value.
+ is the true momentum.
  The momentum was scanned in finite bin widths with the mean and standard
  deviation of the resolution 
 \begin_inset Formula $R$
@@ -444,7 +437,7 @@ where
 
  extracted.
  The mean and standard deviation are used as a proxy for the true bias and
- true resolution, respectively.
+ resolution, respectively.
  In addition, a bootstrapping algorithm was employed to understand the accuracy
  of the sample estimates.
  Bootstrapping in this context is sampling over all relevant values of true
@@ -453,11 +446,11 @@ where
  was performed.
  In the case of large variances in the bootstrapping samples, additional
  10000 sampling with replacement were performed.
- The results for analyzing the FHC 
+ The results for analyzing the 
 \begin_inset Formula $\numu$
 \end_inset
 
-CC 1-Track selection is shown in 
+ in FHC CC 1-Track selection is shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:MomentumKinematicsBootstrappingNumuCC1Track"
@@ -540,13 +533,13 @@ Momentum resolution
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The momentum event distribution and uncertainty for FHC 
+The momentum event distribution and uncertainty for 
 \begin_inset Formula $\numu$
 \end_inset
 
-CC 1-Track events is shown above.
+ in FHC CC 1-Track events is shown above.
  Only correctly identified muons are shown.
- (a) The number of events per unit momentum is scaled to 
+ (a) The number of events is scaled to 
 \begin_inset Formula $10^{20}$
 \end_inset
 
@@ -596,7 +589,7 @@ The angle bins are treated in an almost identical manner.
 \begin_inset Formula $\cos\theta$
 \end_inset
 
- space, the detector smearing is a function of the angle 
+ space, the detector smearing is a function 
 \begin_inset Formula $\theta$
 \end_inset
 
@@ -615,7 +608,11 @@ noprefix "false"
 \end_inset
 
 .
- The mean and standard deviation were studied.
+ The mean and standard deviation were studied as before to set the fit 
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ bin edges.
  Bootstrapping was again used to quantify the accuracy of the mean and standard
  deviation.
 \end_layout
@@ -696,21 +693,21 @@ Angular residuals
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The angular event distribution and uncertainty for FHC 
+The angular event distribution and uncertainty for 
 \begin_inset Formula $\numu$
 \end_inset
 
-CC 1-Track events is shown above.
+ in FHC CC 1-Track events is shown above.
  Only correctly identified muons are shown.
- (a) The number of angular events is scaled to 
+ (a) The number of is scaled to 
 \begin_inset Formula $10^{20}$
 \end_inset
 
  POT which is the approximate scale for all the samples in this analysis.
- A dashed line indicates the maximum of the peak.
+ A dashed line indicates the track angle distribution maximum of the peak.
  (b) The residual of the angular measurement is shown up to where there
  are sufficient statistics.
- Like in (a), a dashed line shows the momentum maximum.
+ Like in (a), a dashed line shows the distribution maximum.
 \begin_inset Argument 1
 status open
 
@@ -776,13 +773,13 @@ This section expands on the definition of the penalty terms in the BANFF
 
  and TPC subdetectors.
  However, due to the different detector technologies, additional detector
- systematics will be incorporated.
+ inefficiency systematics will be incorporated.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Branch P0DBANFFParameterizationFlux
 inverted 0
-status collapsed
+status open
 
 \begin_layout Subsection
 Flux Model
@@ -794,8 +791,15 @@ The T2K neutrino flux model is a description of the neutrino beam spectrum
  This model includes simulations of the beam interactions and subsequent
  hadron production at the target.
  The predicted hadron production rate, including inside and outside the
- target, is tuned based on the results from the NA61/SHINE replica target
- experiment and other hadron production experiments.
+ target, is tuned based to the results from the NA61/SHINE
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abgrall:2016fs"
+literal "false"
+
+\end_inset
+
+ replica target experiment and other hadron production experiments.
  The uncertainties in the unoscillated flux tuning are dominated on hadron
  production.
  Smaller effects on the unoscillated flux uncertainty include the proton
@@ -1054,7 +1058,7 @@ Unoscillated Super-K RHC flux
 The T2K unoscillated neutrino flux prediction at SK for FHC (left) and RHC
  (right) modes.
  The shared ND280 and SK binning used for the flux systematic parameters
- is also shown.
+ is also shown below the plots.
 \begin_inset Argument 1
 status open
 
@@ -1088,7 +1092,7 @@ name "fig:UnoscillatedFluxSK"
 There are 50 ND280 and 50 SK flux parameters to yield a total of 100 flux
  normalizations.
  In addition, the bin edges are shared between the ND280 and SK.
- The SK flux and bin edges are shown in 
+ The SK neutrino flux and the flux bin edges are shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:UnoscillatedFluxSK"
@@ -1126,7 +1130,7 @@ noprefix "false"
 .
  Each flux bin is assigned with an initial value of one (1) for all events
  in that neutrino energy bin.
- A postfit value of 1.1 indicates that all events in that energy bin has
+ A postfit value of 1.1 indicates that all events in that energy bin have
  an additional weight of 1.1, signaling that the postfit prefers to increase
  that neutrino flux by 10%.
 \end_layout
@@ -1140,12 +1144,12 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="102" columns="4">
-<features islongtable="true" headTopDL="true" headBottomDL="true" longtabularalignment="center">
+<features islongtable="true" firstHeadTopDL="true" firstHeadBottomDL="true" headTopDL="true" headBottomDL="true" longtabularalignment="center">
 <column alignment="center" valignment="top" width="0pt">
 <column alignment="center" valignment="top" width="0pt">
 <column alignment="center" valignment="top" width="0pt">
 <column alignment="center" valignment="top" width="0pt">
-<row caption="true">
+<row endhead="true" endfirsthead="true" caption="true">
 <cell multicolumn="1" alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
@@ -1209,7 +1213,7 @@ name "tab:Fluxbinning"
 </cell>
 </row>
 <row endhead="true" endfirsthead="true">
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1220,7 +1224,7 @@ Bin index
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1231,7 +1235,7 @@ Beam mode
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1242,7 +1246,7 @@ Bin edges [GeV]
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1255,7 +1259,7 @@ Prefit
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1264,7 +1268,7 @@ Prefit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1277,7 +1281,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1286,7 +1290,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1301,7 +1305,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1310,7 +1314,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1319,7 +1323,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1328,7 +1332,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1343,7 +1347,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1352,7 +1356,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1361,7 +1365,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1370,7 +1374,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1385,7 +1389,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1394,7 +1398,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1403,7 +1407,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1412,7 +1416,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1427,7 +1431,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1436,7 +1440,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1445,7 +1449,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1454,7 +1458,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1469,7 +1473,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1478,7 +1482,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1487,7 +1491,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1496,7 +1500,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1511,7 +1515,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1520,7 +1524,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1529,7 +1533,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1538,7 +1542,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1553,7 +1557,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1562,7 +1566,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1571,7 +1575,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1580,7 +1584,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1595,7 +1599,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1604,7 +1608,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1613,7 +1617,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1622,7 +1626,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1637,7 +1641,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1646,7 +1650,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1655,7 +1659,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1664,7 +1668,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1679,7 +1683,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1688,7 +1692,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1697,7 +1701,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1706,7 +1710,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1721,7 +1725,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1730,7 +1734,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1743,7 +1747,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1752,7 +1756,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1767,7 +1771,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1776,7 +1780,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1785,7 +1789,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1794,7 +1798,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1809,7 +1813,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1818,7 +1822,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1827,7 +1831,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1836,7 +1840,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1851,7 +1855,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1860,7 +1864,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1869,7 +1873,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1878,7 +1882,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1893,7 +1897,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1902,7 +1906,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1911,7 +1915,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1920,7 +1924,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1935,7 +1939,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1944,7 +1948,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1957,7 +1961,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1966,7 +1970,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1981,7 +1985,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1990,7 +1994,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1999,7 +2003,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2008,7 +2012,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2023,7 +2027,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2032,7 +2036,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2041,7 +2045,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2050,7 +2054,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2065,7 +2069,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2074,7 +2078,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2083,7 +2087,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2092,7 +2096,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2107,7 +2111,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2116,7 +2120,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2125,7 +2129,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2134,7 +2138,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2149,7 +2153,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2158,7 +2162,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2167,7 +2171,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2176,7 +2180,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2191,7 +2195,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2200,7 +2204,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2209,7 +2213,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2218,7 +2222,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2233,7 +2237,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2242,7 +2246,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2255,7 +2259,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2264,7 +2268,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2279,7 +2283,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2288,7 +2292,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2297,7 +2301,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2306,7 +2310,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2321,7 +2325,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2330,7 +2334,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2343,7 +2347,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2352,7 +2356,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2367,7 +2371,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2376,7 +2380,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2385,7 +2389,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2394,7 +2398,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2409,7 +2413,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2418,7 +2422,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2427,7 +2431,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2436,7 +2440,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2451,7 +2455,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2460,7 +2464,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2469,7 +2473,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2478,7 +2482,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2493,7 +2497,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2502,7 +2506,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2511,7 +2515,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2520,7 +2524,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2535,7 +2539,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2544,7 +2548,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2557,7 +2561,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2566,7 +2570,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2581,7 +2585,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2590,7 +2594,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2599,7 +2603,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2608,7 +2612,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2623,7 +2627,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2632,7 +2636,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2641,7 +2645,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2650,7 +2654,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2665,7 +2669,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2674,7 +2678,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2683,7 +2687,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2692,7 +2696,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2707,7 +2711,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2716,7 +2720,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2725,7 +2729,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2734,7 +2738,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2749,7 +2753,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2758,7 +2762,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2767,7 +2771,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2776,7 +2780,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2791,7 +2795,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2800,7 +2804,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2809,7 +2813,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2818,7 +2822,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2833,7 +2837,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2842,7 +2846,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2851,7 +2855,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2860,7 +2864,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2875,7 +2879,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2884,7 +2888,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2893,7 +2897,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2902,7 +2906,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2917,7 +2921,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2926,7 +2930,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2935,7 +2939,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2944,7 +2948,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2959,7 +2963,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2968,7 +2972,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2977,7 +2981,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2986,7 +2990,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3001,7 +3005,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3010,7 +3014,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3023,7 +3027,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3032,7 +3036,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3047,7 +3051,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3056,7 +3060,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3065,7 +3069,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3074,7 +3078,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3089,7 +3093,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3098,7 +3102,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3111,7 +3115,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3120,7 +3124,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3135,7 +3139,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3144,7 +3148,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3153,7 +3157,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3162,7 +3166,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3177,7 +3181,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3186,7 +3190,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3195,7 +3199,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3204,7 +3208,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3219,7 +3223,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3228,7 +3232,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3237,7 +3241,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3246,7 +3250,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3261,7 +3265,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3270,7 +3274,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3279,7 +3283,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3288,7 +3292,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3303,7 +3307,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3312,7 +3316,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3321,7 +3325,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3330,7 +3334,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3345,7 +3349,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3354,7 +3358,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3363,7 +3367,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3372,7 +3376,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3387,7 +3391,7 @@ ND280
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3396,7 +3400,7 @@ ND280
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3409,7 +3413,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3418,7 +3422,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3433,7 +3437,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3442,7 +3446,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3451,7 +3455,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3460,7 +3464,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3475,7 +3479,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3484,7 +3488,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3493,7 +3497,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3502,7 +3506,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3517,7 +3521,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3526,7 +3530,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3535,7 +3539,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3544,7 +3548,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3559,7 +3563,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3568,7 +3572,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3577,7 +3581,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3586,7 +3590,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3601,7 +3605,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3610,7 +3614,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3619,7 +3623,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3628,7 +3632,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3643,7 +3647,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3652,7 +3656,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3661,7 +3665,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3670,7 +3674,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3685,7 +3689,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3694,7 +3698,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3703,7 +3707,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3712,7 +3716,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3727,7 +3731,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3736,7 +3740,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3745,7 +3749,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3754,7 +3758,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3769,7 +3773,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3778,7 +3782,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3787,7 +3791,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3796,7 +3800,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3811,7 +3815,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3820,7 +3824,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3829,7 +3833,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3838,7 +3842,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3853,7 +3857,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3862,7 +3866,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3875,7 +3879,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3884,7 +3888,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3899,7 +3903,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3908,7 +3912,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3917,7 +3921,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3926,7 +3930,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3941,7 +3945,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3950,7 +3954,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3959,7 +3963,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3968,7 +3972,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3983,7 +3987,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3992,7 +3996,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4001,7 +4005,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4010,7 +4014,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4025,7 +4029,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4034,7 +4038,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4043,7 +4047,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4052,7 +4056,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4067,7 +4071,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4076,7 +4080,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4089,7 +4093,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4098,7 +4102,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4113,7 +4117,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4122,7 +4126,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4131,7 +4135,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4140,7 +4144,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4155,7 +4159,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4164,7 +4168,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4173,7 +4177,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4182,7 +4186,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4197,7 +4201,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4206,7 +4210,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4215,7 +4219,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4224,7 +4228,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4239,7 +4243,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4248,7 +4252,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4257,7 +4261,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4266,7 +4270,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4281,7 +4285,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4290,7 +4294,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4299,7 +4303,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4308,7 +4312,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4323,7 +4327,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4332,7 +4336,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4341,7 +4345,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4350,7 +4354,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4365,7 +4369,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4374,7 +4378,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4387,7 +4391,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4396,7 +4400,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4411,7 +4415,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4420,7 +4424,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4429,7 +4433,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4438,7 +4442,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4453,7 +4457,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4462,7 +4466,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4475,7 +4479,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4484,7 +4488,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4499,7 +4503,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4508,7 +4512,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4517,7 +4521,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4526,7 +4530,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4541,7 +4545,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4550,7 +4554,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4559,7 +4563,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4568,7 +4572,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4583,7 +4587,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4592,7 +4596,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4601,7 +4605,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4610,7 +4614,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4625,7 +4629,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4634,7 +4638,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4643,7 +4647,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4652,7 +4656,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4667,7 +4671,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4676,7 +4680,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4689,7 +4693,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4698,7 +4702,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4713,7 +4717,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4722,7 +4726,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4731,7 +4735,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4740,7 +4744,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4755,7 +4759,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4764,7 +4768,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4773,7 +4777,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4782,7 +4786,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4797,7 +4801,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4806,7 +4810,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4815,7 +4819,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4824,7 +4828,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4839,7 +4843,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4848,7 +4852,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4857,7 +4861,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4866,7 +4870,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4881,7 +4885,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4890,7 +4894,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4899,7 +4903,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4908,7 +4912,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4923,7 +4927,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4932,7 +4936,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4941,7 +4945,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4950,7 +4954,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4965,7 +4969,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4974,7 +4978,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4983,7 +4987,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4992,7 +4996,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5007,7 +5011,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5016,7 +5020,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5025,7 +5029,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5034,7 +5038,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5049,7 +5053,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5058,7 +5062,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5067,7 +5071,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5076,7 +5080,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5091,7 +5095,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5100,7 +5104,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5109,7 +5113,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5118,7 +5122,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5133,7 +5137,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5142,7 +5146,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5155,7 +5159,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5164,7 +5168,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5179,7 +5183,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5188,7 +5192,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5197,7 +5201,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5206,7 +5210,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5221,7 +5225,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5230,7 +5234,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5243,7 +5247,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5252,7 +5256,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5267,7 +5271,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5276,7 +5280,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5285,7 +5289,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5294,7 +5298,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5309,7 +5313,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5318,7 +5322,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5327,7 +5331,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5336,7 +5340,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5351,7 +5355,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5360,7 +5364,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5369,7 +5373,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5378,7 +5382,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5393,7 +5397,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5402,7 +5406,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5411,7 +5415,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5420,7 +5424,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5435,7 +5439,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5444,7 +5448,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5453,7 +5457,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5462,7 +5466,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5477,7 +5481,7 @@ Super-K
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5486,7 +5490,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5495,7 +5499,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5504,7 +5508,7 @@ Super-K
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5557,7 +5561,7 @@ Detector Inefficiencies Model
 
 \begin_layout Standard
 In the BANFF fit, bin normalization parameters are used to evaluate the
- detector inefficiencies penalty term, 
+ detector inefficiency penalty term, 
 \begin_inset Formula $\Delta\chi_{\text{Det}}^{2}$
 \end_inset
 
@@ -6109,7 +6113,7 @@ List of detector systematic effects and the way each one is treated within
  reference
 \begin_inset CommandInset citation
 LatexCommand cite
-key "PhysRevD.91.072010"
+key "Abe:2017vif"
 literal "false"
 
 \end_inset
@@ -6167,15 +6171,15 @@ There are two types of systematic treatments in this analysis: observable
 \begin_layout Standard
 Efficiency-like systematics are treated as weights to the MC predictions
  in order to evaluate the uncertainty the systematic has on an analysis.
- They are based on studies comparing data and MC predictions in well known
- control samples (CS).
+ They are based on studies comparing data and MC predictions in control
+ samples (CS).
  A CS is designed to provide a reliable measurement with minimal influence
  from other dependent and independent factors.
  An example of a well established CS is a collection of single, isolated
  cosmic ray (muon) tracks to measure the energy loss in a detector.
  In general, a CS may have different properties than the analysis sample
  like event topology.
- In particular the cosmic ray CS cannot account for efficiency effects of
+ In particular the cosmic ray CS cannot account for efficiency effects if
  other tracks present.
  Therefore a model extrapolation is needed to map the CS to the analysis
  sample.
@@ -6213,7 +6217,7 @@ where
 \end_inset
 
 where 
-\begin_inset Formula $\sigma_{\epsilon_{\text{MC/Data}}}$
+\begin_inset Formula $\sigma_{\epsilon_{\text{MC}}}/\sigma_{\epsilon_{\text{Data}}}$
 \end_inset
 
  is the standard deviation of the efficiency of the MC/Data and 
@@ -6224,12 +6228,12 @@ where
 \begin_inset Formula $x_{\text{MC}}$
 \end_inset
 
- are different random, normally distributed numbers 
+ are different random normally distributed numbers from 
 \begin_inset Formula $\mathcal{N}\left(\mu=0,\sigma^{2}=1\right)$
 \end_inset
 
 .
- An weight is derived from the event depending if the event is selected,
+ A weight is derived from the event depending if the event is selected,
  
 \begin_inset Formula $w_{\text{eff}}$
 \end_inset
@@ -6239,17 +6243,7 @@ where
 \end_inset
 
 .
- These weights are given by 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:weighteff"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
+ These weights are given below
 \begin_inset Formula 
 \begin{equation}
 \begin{aligned}w_{\text{eff}} & =\frac{\epsilon_{\text{Data}}^{\prime}}{\epsilon_{\text{MC}}}\\
@@ -6261,40 +6255,6 @@ w_{\text{ineff}} & =\frac{1-\epsilon_{\text{Data}}^{\prime}}{1-\epsilon_{\text{M
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-Similar to efficiency-like systematic weights, normalization weights scale
- the event rate for a particular systematic.
- The normalization weight, 
-\begin_inset Formula $w_{\text{norm}}$
-\end_inset
-
-, is given by 
-\begin_inset Formula 
-\begin{equation}
-w_{\text{norm}}=\overline{w}\left(1+x\sigma_{w}\right),\label{eq:weightnorm}
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Formula $\overline{w}$
-\end_inset
-
- is the mean weight for the event, 
-\begin_inset Formula $\sigma_{w}$
-\end_inset
-
- is the measured standard deviation of the systematic, and 
-\begin_inset Formula $x$
-\end_inset
-
- is a normally distributed numbers 
-\begin_inset Formula $\mathcal{N}\left(\mu=0,\sigma^{2}=1\right)$
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Standard
@@ -6331,7 +6291,7 @@ where
 \begin_inset Formula $x$
 \end_inset
 
- is a random number from 
+ is a random, normal number from 
 \begin_inset Formula $\mathcal{N}\left(\mu=0,\sigma^{2}=1\right)$
 \end_inset
 
@@ -6357,7 +6317,7 @@ After many toy experiments which vary the observables
  and their weights, the number of varied events per fit bin can be examined.
  From here, the observable normalization (obsnorm) and covariance terms
  are calculated.
- The detector covariance matrix , 
+ The detector covariance matrix, 
 \begin_inset Formula $\sigma_{\text{Det}}^{2}$
 \end_inset
 
@@ -6372,7 +6332,7 @@ After many toy experiments which vary the observables
  is given as
 \begin_inset Formula 
 \begin{equation}
-\sigma_{\text{Det}}^{2}\left(x,y\right)=\frac{1}{x_{\text{Nom}}}\frac{1}{y_{\text{Nom}}}\left(\sigma_{\text{Cov}}^{2}\left(x,y\right)+\sigma_{\text{Stat}}^{2}\left(x,y\right)\right),\label{eq:detectorcovariance}
+\sigma_{\text{Det}}^{2}\left(x,y\right)=\left[\frac{1}{x_{\text{Nom}}}\right]\left[\frac{1}{y_{\text{Nom}}}\right]\left(\sigma_{\text{Cov}}^{2}\left(x,y\right)+\sigma_{\text{Stat}}^{2}\left(x,y\right)\right),\label{eq:detectorcovariance}
 \end{equation}
 
 \end_inset
@@ -6412,7 +6372,7 @@ Stat
 
 , respectively.
  This covariance matrix is a fractional covariance as to be consistent with
- the definition for the flux parameters and covariance matrix.
+ the definition for the flux covariance matrix.
  The obsnorm expectation for bin 
 \begin_inset Formula $x$
 \end_inset
@@ -6464,11 +6424,11 @@ where
 \end_inset
 
  is the number of toy experiments, 
-\begin_inset Formula $\overline{x}$
+\begin_inset Formula $\overline{x}/\overline{y}$
 \end_inset
 
  is the mean of the all the toy experiments in bin 
-\begin_inset Formula $x$
+\begin_inset Formula $x/y$
 \end_inset
 
 , and 
@@ -6494,18 +6454,8 @@ similar
 \begin_inset Quotes erd
 \end_inset
 
- covariance as defined in 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:detectorcovariance"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
- This method proved problematic since the fit bins with larger relatively
+ covariance.
+ This method proved problematic since the fit bins with relatively higher
  statistics were shared with the same obsnorm parameter.
  This left the remaining low statistics regions of 
 \begin_inset Formula $(p,\cos\theta)$
@@ -6515,19 +6465,113 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-A new procedure was developed to improve the shortcomings of old procedure.
- This procedure requires careful consideration of the statistical uncertainties
- and shared detector systematics among analysis bins.
- To start, all the fit bins are assigned a single obsnorm.
- All steps after this are performed iteratively.
- Starting from the obsnorm bin with the lowest statistical error, that bin
- and an immediate adjacent bin are combined if the fractional error does
- not differ by much more than a factor of 10.
- In the case the unmerged bin normalizations differ by more than 10%, perform
- the merge.
- This procedure can be imagined as lowing the number of contours in a topographi
-c map while considering external constraints from other sensing data.
- The finalized obsnorm bins are listed below and shown visually in 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/P0DBANFFParameterization/obsnorm/air/P0DFHCNumuCC1Tr.png
+	lyxscale 50
+	width 95text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\numu$
+\end_inset
+
+ in FHC CC 1-Track
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/P0DBANFFParameterization/obsnorm/air/P0DFHCNumuCCnTr.png
+	lyxscale 50
+	width 95text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\numu$
+\end_inset
+
+ in FHC CC N-Tracks
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Bin normalization edges for the 
+\begin_inset Formula $\numu$
+\end_inset
+
+ in FHC selections.
+ There are two plots shown for each sub-figure.
+ The left and right plots show the bin normalization and the bin statistical
+ fractional error, respectively, if each fit bin had a single bin normalization.
+ The dashed lines indicate the edges of the bin normalization parameters
+ finalized for this analysis.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Bin-normalization-edgesNumuFHC"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Bin Normalization Edges for the 
 \begin_inset ERT
 status open
 
@@ -6535,18 +6579,202 @@ status open
 
 
 \backslash
-Cref{fig:Bin-normalization-edgesNumuFHC,fig:Bin-normalization-edgesNumubarRHC,fi
-g:Bin-normalization-edgesNuMuRHC}
+numutitle{}
 \end_layout
 
 \end_inset
 
-.
- Their respective fit index and prefit values are tabulated in Appendix
- 
+ in FHC Selections
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A new procedure was developed to improve the shortcomings of old procedure
+ which requires careful consideration of the statistical uncertainties and
+ variations between obsnorm prefit values.
+ This procedure can be imagined as lowing the number of contours in a topographi
+c map while considering external constraints from other sensing data.
+ To start, initialize all the obsnorm bin edges to be the same as the fit
+ bin edges.
+ All steps after this are performed iteratively.
+ Starting from the obsnorm bin with the highest statistics, consider merging
+ it with all immediate adjacent bins.
+ Unless individual fractional errors differ significantly before the merge,
+ do not merge them.
+ In this analysis, a factor of 10 in fractional uncertainty was chosen to
+ describe the similarity between bins.
+ Additionally if the two unmerged bin normalizations differ by more than
+ 10%, perform the bin merging.
+ This step serves to smooth out the obsnorm prefit space.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/P0DBANFFParameterization/obsnorm/air/P0DRHCANumuCC1Tr.png
+	lyxscale 50
+	width 95text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\numubar$
+\end_inset
+
+ in RHC CC 1-Track
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/P0DBANFFParameterization/obsnorm/air/P0DRHCANumuCCnTr.png
+	lyxscale 50
+	width 95text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\numubar$
+\end_inset
+
+ in RHC CC N-Tracks
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Bin normalization edges for the 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ in RHC selections.
+ There are two plots shown for each sub-figure.
+ The left and right plots show the bin normalization and the bin statistical
+ fractional error, respectively, if each fit bin had a single bin normalization.
+ The dashed lines indicate the edges of the bin normalization parameters
+ finalized for this analysis.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Bin-normalization-edgesNumubarRHC"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Bin Normalization Edges for the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numubartitle{}
+\end_layout
+
+\end_inset
+
+ in RHC Selections
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+While the problem of a few obsnorm parameters having the majority of statistics
+ is still present, fluctuations between adjacent obsnorm parameters is iterative
+ly minimized.
+ The detector systematic that had the largest effect on the obsnorm prediction
+ was the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ energy loss resolution.
+ With it, the event rate in each obsnorm bin varied non-normally.
+ This effect can be seen in 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "app:obsnorm"
+reference "fig:Representative-event-variations"
 plural "false"
 caps "false"
 noprefix "false"
@@ -6556,155 +6784,166 @@ noprefix "false"
 .
 \end_layout
 
-\begin_layout Itemize
-\begin_inset Formula $\numu$
-\end_inset
-
- in FHC CC 1-Track bin normalization edges:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset Formula $p$
-\end_inset
-
- [GeV/c]: 0, 0.4, 0.6, 0.8, 1.25, 2, 3, 4, 5.5, 30
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $\cos\theta$
-\end_inset
-
-: -1, 0.7, 0.8, 0.94, 0.975, 0.99, 1
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-\begin_inset Formula $\numu$
-\end_inset
-
- in FHC CC N-Tracks bin normalization edges:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset Formula $p$
-\end_inset
-
- [GeV/c]: 0, 0.4, 0.6, 0.8, 1.2, 2.2, 3.5, 10, 30
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $\cos\theta$
-\end_inset
-
- : -1, 0.77, 0.85, 0.9, 0.97, 1
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-\begin_inset Formula $\numubar$
-\end_inset
-
- in RHC CC 1-Track bin normalization edges:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset Formula $p$
-\end_inset
-
- [GeV/c]: 0, 0.5, 0.6, 0.8, 1.25, 2, 3, 30
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $\cos\theta$
-\end_inset
-
- : -1, 0.82, 0.9, 0.95, 0.99, 1
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-\begin_inset Formula $\numubar$
-\end_inset
-
- in RHC CC N-Tracks bin normalization edges:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset Formula $p$
-\end_inset
-
- [GeV/c]: 0, 0.5, 0.9, 1.25, 1.6, 3, 30
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $\cos\theta$
-\end_inset
-
- : -1, 0.89, 0.95, 0.97, 0.99, 1
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-\begin_inset Formula $\numu$
-\end_inset
-
- in RHC CC T-track bin normalization edges:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset Formula $p$
-\end_inset
-
- [GeV/c]: 0, 0.4, 0.6, 0.8, 1.1, 2, 10
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $\cos\theta$
-\end_inset
-
- : -1, 0.78, 0.84, 0.92, 0.95, 0.98, 0.99, 1
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-\begin_inset Formula $\numu$
-\end_inset
-
- in RHC CC N-Tracks bin normalization edges:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset Formula $p$
-\end_inset
-
- [GeV/c]: 0, 0.6, 1, 1.5, 2, 10
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $\cos\theta$
-\end_inset
-
- : -1, 0.7, 0.8, 0.85, 0.98, 0.99, 1
-\end_layout
-
-\end_deeper
 \begin_layout Standard
-A considerable drawback to designing normalizations in this way is that
- not all detector systematics are Gaussian with respect to the observables
- 
-\begin_inset Formula $(P,\cos\theta)$
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/P0DBANFFParameterization/obsnorm/air/P0DRHCNumuCC1Tr.png
+	lyxscale 50
+	width 95text%
+
 \end_inset
 
-, and so the covariance matrix is not an exact representation of the detector
- systematics.
- To demonstrate this, representative results of varied number of events
- in are shown in 
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\numu$
+\end_inset
+
+ in RHC CC 1-Track
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/P0DBANFFParameterization/obsnorm/air/P0DRHCNumuCCnTr.png
+	lyxscale 50
+	width 95text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\numu$
+\end_inset
+
+ in RHC CC N-Tracks
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Bin normalization edges for the 
+\begin_inset Formula $\numu$
+\end_inset
+
+ in RHC selections.
+ There are two plots shown for each sub-figure.
+ The left and right plots show the bin normalization and the bin statistical
+ fractional error, respectively, if each fit bin had a single bin normalization.
+ The dashed lines indicate the edges of the bin normalization parameters
+ finalized for this analysis.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Bin-normalization-edgesNuMuRHC"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Bin Normalization Edges for the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numutitle{}
+\end_layout
+
+\end_inset
+
+ in RHC Selections
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A considerable drawback to designing normalizations in this way of varying
+ detector systematics in toy experiments is that not all detector systematics
+ affect the observables 
+\begin_inset Formula $(p,\cos\theta)$
+\end_inset
+
+ in the same way.
+ There are non-symmetric systematics and especially non normal in their
+ effects, and so the covariance matrix from 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:detectorcovariance"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is not an exact representation of the detector systematics.
+ To demonstrate this, results of varied number of events in are shown in
+ 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:Representative-event-variations"
@@ -6725,7 +6964,7 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -6953,21 +7192,21 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Representative event variations in observable normalization bins.
- Shown in each sub-figure is a particular observable normalization bin with
- all the variations shown in blue.
- Vertical dashed lines show the nominal, unvaried bin prediction and varied
- mean of all toy experiments.
- The ratio of the positions of each vertical line is the normalization predictio
-n.
- An overlayed black, dashed gaussian with uncertainty from the covariance
- matrix is shown to illustrate the estimate on the normalization uncertainty.
+Event variations in representative observable normalization bins.
+ Shown in each sub-figure the varied event rate from all toy experiments
+ in a particular observable normalization bin as shown in blue.
+ Vertical dashed lines show the unvaried MC prediction and varied mean of
+ all toy experiments.
+ The ratio of the horizontal positions of each vertical line is the prefit
+ normalization value for that bin.
+ A gaussian whose variance was extracted from covariance matrix is shown
+ to illustrate the bin's estimate on the normalization uncertainty.
  The result of disabling the 
 \begin_inset Formula $\pod$
 \end_inset
 
- energy loss resolution systematic is shown in red to illustrate its affect
- on the mean and spread of toy experiments.
+ energy loss resolution systematic is shown in red to illustrate its effect
+ on the mean and spread on the toy experiments.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -6980,7 +7219,7 @@ name "fig:Representative-event-variations"
 status open
 
 \begin_layout Plain Layout
-Representative Event Variations in Observable Normalization Bins
+Event Variations in Observable Normalization Bins
 \end_layout
 
 \end_inset
@@ -6999,19 +7238,26 @@ Representative Event Variations in Observable Normalization Bins
 \end_layout
 
 \begin_layout Standard
-While the problem of a few obsnorm parameters having the majority of statistics
- is still present, fluctuations in adjacent obsnorm parameters is minimized.
- The detector systematic that had the largest effect on the obsnorm prediction
- was the 
-\begin_inset Formula $\pod$
+The finalized obsnorm bins are listed below and shown visually in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Cref{fig:Bin-normalization-edgesNumuFHC,fig:Bin-normalization-edgesNumubarRHC,fi
+g:Bin-normalization-edgesNuMuRHC}
+\end_layout
+
 \end_inset
 
- energy loss resolution.
- With it, the event rate in each obsnorm bin varied in non-normally.
- This effect can be seen in 
+.
+ Their respective fit index and prefit values are tabulated in Appendix
+ 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "fig:Representative-event-variations"
+reference "app:obsnorm"
 plural "false"
 caps "false"
 noprefix "false"
@@ -7021,424 +7267,144 @@ noprefix "false"
 .
 \end_layout
 
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/P0DBANFFParameterization/obsnorm/air/P0DFHCNumuCC1Tr.png
-	lyxscale 50
-	width 95text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
+\begin_layout Itemize
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC CC 1-Track
+ in FHC CC 1-Track bin normalization edges:
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $p$
 \end_inset
 
-
+ [GeV/c]: 0, 0.4, 0.6, 0.8, 1.25, 2, 3, 4, 5.5, 30
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
+\begin_layout Itemize
+\begin_inset Formula $\cos\theta$
 \end_inset
 
-
+: -1, 0.7, 0.8, 0.94, 0.975, 0.99, 1
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/P0DBANFFParameterization/obsnorm/air/P0DFHCNumuCCnTr.png
-	lyxscale 50
-	width 95text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
+\end_deeper
+\begin_layout Itemize
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC CC N-Tracks
+ in FHC CC N-Tracks bin normalization edges:
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $p$
 \end_inset
 
-
+ [GeV/c]: 0, 0.4, 0.6, 0.8, 1.2, 2.2, 3.5, 10, 30
 \end_layout
 
+\begin_layout Itemize
+\begin_inset Formula $\cos\theta$
 \end_inset
 
-
+ : -1, 0.77, 0.85, 0.9, 0.97, 1
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Bin normalization edges for the 
-\begin_inset Formula $\numu$
-\end_inset
-
- in FHC selections.
- There are two plots shown for each sub-figure.
- The left and right plots show the bin normalization if each fit bin had
- a single bin normalization and the bin statistical fractional error, respective
-ly.
- The dashed lines indicate the edges of the bin normalization parameters.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Bin-normalization-edgesNumuFHC"
-
-\end_inset
-
-
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Bin Normalization Edges for the 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-numutitle{}
-\end_layout
-
-\end_inset
-
- in FHC Selections
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/P0DBANFFParameterization/obsnorm/air/P0DRHCANumuCC1Tr.png
-	lyxscale 50
-	width 95text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
+\end_deeper
+\begin_layout Itemize
 \begin_inset Formula $\numubar$
 \end_inset
 
- in RHC CC 1-Track
+ in RHC CC 1-Track bin normalization edges:
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $p$
 \end_inset
 
-
+ [GeV/c]: 0, 0.5, 0.6, 0.8, 1.25, 2, 3, 30
 \end_layout
 
+\begin_layout Itemize
+\begin_inset Formula $\cos\theta$
 \end_inset
 
-
+ : -1, 0.82, 0.9, 0.95, 0.99, 1
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/P0DBANFFParameterization/obsnorm/air/P0DRHCANumuCCnTr.png
-	lyxscale 50
-	width 95text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
+\end_deeper
+\begin_layout Itemize
 \begin_inset Formula $\numubar$
 \end_inset
 
- in RHC CC N-Tracks
+ in RHC CC N-Tracks bin normalization edges:
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $p$
 \end_inset
 
-
+ [GeV/c]: 0, 0.5, 0.9, 1.25, 1.6, 3, 30
 \end_layout
 
+\begin_layout Itemize
+\begin_inset Formula $\cos\theta$
 \end_inset
 
-
+ : -1, 0.89, 0.95, 0.97, 0.99, 1
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Bin normalization edges for the 
-\begin_inset Formula $\numubar$
-\end_inset
-
- in RHC selections.
- There are two plots shown for each sub-figure.
- The left and right plots show the bin normalization if each fit bin had
- a single bin normalization and the bin statistical fractional error, respective
-ly.
- The dashed lines indicate the edges of the bin normalization parameters.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Bin-normalization-edgesNumubarRHC"
-
-\end_inset
-
-
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Bin Normalization Edges for the 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-numubartitle{}
-\end_layout
-
-\end_inset
-
- in RHC Selections
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/P0DBANFFParameterization/obsnorm/air/P0DRHCNumuCC1Tr.png
-	lyxscale 50
-	width 95text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
+\end_deeper
+\begin_layout Itemize
 \begin_inset Formula $\numu$
 \end_inset
 
- in RHC CC 1-Track
+ in RHC CC T-track bin normalization edges:
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $p$
 \end_inset
 
-
+ [GeV/c]: 0, 0.4, 0.6, 0.8, 1.1, 2, 10
 \end_layout
 
+\begin_layout Itemize
+\begin_inset Formula $\cos\theta$
 \end_inset
 
-
+ : -1, 0.78, 0.84, 0.92, 0.95, 0.98, 0.99, 1
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/P0DBANFFParameterization/obsnorm/air/P0DRHCNumuCCnTr.png
-	lyxscale 50
-	width 95text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
+\end_deeper
+\begin_layout Itemize
 \begin_inset Formula $\numu$
 \end_inset
 
- in RHC CC N-Tracks
+ in RHC CC N-Tracks bin normalization edges:
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $p$
 \end_inset
 
-
+ [GeV/c]: 0, 0.6, 1, 1.5, 2, 10
 \end_layout
 
+\begin_layout Itemize
+\begin_inset Formula $\cos\theta$
 \end_inset
 
-
+ : -1, 0.7, 0.8, 0.85, 0.98, 0.99, 1
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Bin normalization edges for the 
-\begin_inset Formula $\numu$
-\end_inset
-
- in RHC selections.
- There are two plots shown for each sub-figure.
- The left and right plots show the bin normalization if each fit bin had
- a single bin normalization and the bin statistical fractional error, respective
-ly.
- The dashed lines indicate the edges of the bin normalization parameters.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Bin-normalization-edgesNuMuRHC"
-
-\end_inset
-
-
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Bin Normalization Edges for the 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-numutitle{}
-\end_layout
-
-\end_inset
-
- in RHC Selections
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
+\end_deeper
 \begin_layout Subsubsection
 The 
 \begin_inset ERT
@@ -7457,8 +7423,12 @@ podtitle{}
 \end_layout
 
 \begin_layout Standard
-There are four new systematics in the BANFF that are considered for this
- analysis as listed in 
+There are four new 
+\begin_inset Formula $\pod$
+\end_inset
+
+-only systematics that are considered for this BANFF fit analysis as listed
+ in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:List-of-detector"
@@ -7469,7 +7439,7 @@ noprefix "false"
 \end_inset
 
 .
- All the new sources were analyzed in the 
+ All the new sources were initially analyzed in the 
 \begin_inset Formula $\pod$
 \end_inset
 
@@ -7507,14 +7477,19 @@ The energy loss scale and resolution affect the measured momentum in the
 \begin_inset Formula $0\pi$
 \end_inset
 
- cross section analysis, the same as the 
+ cross section analysis, the same selection as the 
 \begin_inset Formula $\numu$
 \end_inset
 
- CC 1-Track selection in this thesis, the scale and resolution contributed
- 1.3% and 6.7%, respectively, to the cross section uncertainty.
- The large uncertainties arise from the uncertainty in the track path used
- to integrate the energy loss from 
+ in FHC CC 1-Track selection, the scale and resolution contributed 1.3% and
+ 6.7%, respectively, to the cross section uncertainty.
+ Those large uncertainties are due to the inherent design of the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ as a low resolution tracking detector.
+ Slight variations in the track reconstruction can significantly alter the
+ energy loss as measured in 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:momentumP0DFull"
@@ -7528,29 +7503,30 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-The other two systematics, 
+The remain systematics, the 
 \begin_inset Formula $\pod$
 \end_inset
 
- mass and 
+ mass and the 
 \begin_inset Formula $\pod$
 \end_inset
 
--TPC matching efficiency, were not available to analyze for toy experiments
+-TPC matching efficiency, were not available to analyze in toy experiments
  variations.
- They were not available to implement due to time constraints on the author.
+ They were not implemented in the BANFF framework and unavailable to implement
+ due to time constraints on the author.
  Instead, they were treated as additional uncorrelated systematics on each
- bin normalization uncertainty with the mean value remaining flux.
+ bin normalization uncertainty with the normalization value remaining fixed.
  The covariance matrix is updated using in the following manner
 \begin_inset Formula 
 \begin{equation}
-\sigma_{\text{Det}}^{2}\left(x,y\right)\rightarrow\left(\frac{\sigma_{\text{Det}}^{2}\left(x,y\right)}{\overline{x}\cdot\overline{y}}+\widetilde{\sigma}_{\text{Mass}}^{2}+\widetilde{\sigma}_{\text{Match}}^{2}\right)\overline{x}\overline{y},\label{eq:covarupdatefrac}
+\sigma_{\text{Det}}^{2}\left(x,y\right)\rightarrow\left(\frac{\sigma_{\text{Det}}^{2}\left(x,y\right)}{\overline{x}\cdot\overline{y}}+\widetilde{\sigma}_{\text{Mass}}^{2}+\widetilde{\sigma}_{\text{Match}}^{2}\right)\overline{x}\cdot\overline{y},\label{eq:covarupdatefrac}
 \end{equation}
 
 \end_inset
 
 where 
-\begin_inset Formula $\widetilde{\sigma}_{\text{Mass}}^{2}$
+\begin_inset Formula $\widetilde{\sigma}_{\text{Mass}}$
 \end_inset
 
  is the fractional uncertainty in the 
@@ -7558,7 +7534,7 @@ where
 \end_inset
 
  mass and 
-\begin_inset Formula $\widetilde{\sigma}_{\text{Match}}^{2}$
+\begin_inset Formula $\widetilde{\sigma}_{\text{Match}}$
 \end_inset
 
  is the fractional uncertainty in the matching efficiency.
@@ -7571,32 +7547,27 @@ The
 
  mass uncertainty is a normalization systematic which affects the event
  rate.
- This is an especially challenging systematic since the water mass was not
- accurately measured in each water bag due to faulty sensors used to measure
- the water content.
+ This is a challenging systematic for analyses of recent T2K data due to
+ increasingly faulty sensors to measure the water content.
+ The procedure to fill the water bags required filling them in unison to
+ prevent uneven bulging.
+ However, faulty sensors would provide poor quality data, hence bags were
+ under and overfilled.
  Prior 
 \begin_inset Formula $\pod$
 \end_inset
 
  analyses have estimated the mass uncertainty using similar toy experiment
  techniques, but did not integrate them into the BANFF framework.
- 
-\shape italic
-A conservative estimate of 
-\begin_inset Formula $\widetilde{\sigma}_{\text{Mass}}=2\%$
-\end_inset
-
- was chosen based on the 1.5% uncertainty from the 
+ In particular in the 
 \begin_inset Formula $\numu$
 \end_inset
 
- CC-
+ in CC-
 \begin_inset Formula $0\pi$
 \end_inset
 
- cross section
-\shape default
-
+ analysis
 \begin_inset CommandInset citation
 LatexCommand cite
 key "PhysRevD.97.012001"
@@ -7604,6 +7575,20 @@ literal "false"
 
 \end_inset
 
+, the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ mass had an 1.5% systematic effect on the cross section.
+ Since this estimate uses the same method of toy experiments, 
+\shape italic
+a conservative estimate of 
+\begin_inset Formula $\widetilde{\sigma}_{\text{Mass}}=2\%$
+\end_inset
+
+ was included in this analysis based on the 1.5% mass uncertainty in the
+ cross section
+\shape default
 .
 \end_layout
 
@@ -7641,9 +7626,9 @@ literal "false"
 
  which estimated the uncertainty at less than 0.14% using its in-house matching
  algorithm.
- Since that is was single bin measurement and different matching algorithm,
- the uncertainty is not guaranteed to remain constant across 
-\begin_inset Formula $(P,\cos\theta)$
+ Since that is was single bin measurement employing different matching algorithm
+, the uncertainty is not guaranteed to remain constant across 
+\begin_inset Formula $(p,\cos\theta)$
 \end_inset
 
  bins.
@@ -7765,7 +7750,7 @@ Difference from Original Covariance
 
 \begin_layout Plain Layout
 Updated detector covariance matrix (a) and the difference from the original
- (b) ) .
+ (b).
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:The-updated-detector-covariance"
@@ -7807,7 +7792,7 @@ Detector Covariance Matrix
 \begin_layout Standard
 \begin_inset Branch P0DBANFFParameterizationXSEC
 inverted 0
-status collapsed
+status open
 
 \begin_layout Subsection
 Cross Section Model
@@ -7837,7 +7822,7 @@ Exclusive Channels
 
 \begin_layout Standard
 The cross section models with the largest impact on T2K's oscillation sensitivit
-y are CCQE and CCQE-like interactions collectively called CC-0
+y are CCQE and CCQE-like interactions, collectively called CC-0
 \begin_inset Formula $\pion$
 \end_inset
 
@@ -7846,12 +7831,12 @@ y are CCQE and CCQE-like interactions collectively called CC-0
 \begin_inset Formula $\nue$
 \end_inset
 
- appearance probability maximum, 
+ appearance maximum, 
 \begin_inset Formula $E_{\nu}=$
 \end_inset
 
 0.6 GeV, the CCQE interaction is the largest contributor to the neutrino
- cross section for T2K relevant energies as shown in 
+ cross section as shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:PredictedCCincxsec"
@@ -7862,18 +7847,50 @@ noprefix "false"
 \end_inset
 
 .
- The CCQE model in NEUT is important historically since it well predicts
- the neutrino energy in low-Z, bubble chamber data.
+ The CCQE model in 
+\color black
+NEUT, the Llewellyn-Smith model 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "LlewellynSmith:1971uhs"
+literal "false"
+
+\end_inset
+
+
+\color inherit
+ is important historically since it has one unknow parameter called the
+ Axial Mass, 
+\begin_inset Formula $M_{A}^{\text{QE}}$
+\end_inset
+
+, and it well predicts the neutrino energy in low-Z, bubble chamber data.
+ Additionally, the nuclear medium is modeled as a relativistic Fermi gas
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Niewczas:2015iea"
+literal "false"
+
+\end_inset
+
+ with a Fermi momentum parameter 
+\begin_inset Formula $p_{F}$
+\end_inset
+
+.
+ Since the number of nucleons is higher in carbon (A=12) than oxygen (A=16),
+ two different Fermi momentum parameters are specified.
  There are current model deficiencies and theoretical challenges that make
- the CCQE model in NEUT an effective model.
+ this combined model in NEUT an effective model.
  As such, flat priors are applied to all CCQE parameters to prevent unintentiona
 l biases in the fit result.
 \end_layout
 
 \begin_layout Standard
 There are also CCQE-like interactions that require parameterization since
- they produce final states similar topologies to true CCQE events.
- The T2K currently experiment models CCQE-like interactions using correlated
+ they produce similar topologies to true CCQE events.
+ The T2K experiment currently models CCQE-like interactions involving correlated
  nucleon interactions with the lowest ordering pair scattering called 
 \begin_inset Quotes eld
 \end_inset
@@ -7890,7 +7907,7 @@ literal "false"
 
 \end_inset
 
- (2p2h) interactions
+ (2p2h)
 \begin_inset Foot
 status collapsed
 
@@ -7933,16 +7950,20 @@ hole
 
  interaction refers to the CC interaction mode where a neutrino scatters
  off neighboring and interacting nucleon pairs.
- Being relatively new and unconstrained in T2K, flat priors are also applied
- to 2p2h parameters.
- 
+ However being relatively new and unconstrained in T2K, flat priors are
+ also applied to all 2p2h normalization and shape parameters, with six in
+ all.
+
 \shape italic
-Thus all CC-
+ Thus all CC-
 \begin_inset Formula $0\pi$
 \end_inset
 
  cross section parameters are unconstrained in the fit, except where physically
  forbidden.
+ 
+\shape default
+ 
 \end_layout
 
 \begin_layout Standard
@@ -7971,14 +7992,42 @@ literal "false"
 \end_inset
 
  resonance decay into a nucleon and single pion.
- Harder to measure processes like neutral current (NC) and coherent pion
- production are included as well.
- Unlike the CC-
+ There are three parameters that describe the CC-
+\begin_inset Formula $1\pi$
+\end_inset
+
+, the resonant axial Mass 
+\begin_inset Formula $M_{A}^{\text{Res}},$
+\end_inset
+
+the axial form factor, 
+\begin_inset Formula $C_{A}^{5}$
+\end_inset
+
+, and the 
+\begin_inset Formula $\nicefrac{1}{2}$
+\end_inset
+
+-isospin background.
+ Again, this model is an effective model as mentioned in the original paper.
+ But unlike the CC-
 \begin_inset Formula $0\pi$
 \end_inset
 
  parameters, these and all subsequent models are constrained using Gaussian
  PDFs.
+\end_layout
+
+\begin_layout Standard
+Harder to measure processes like neutral current (NC) processes and high
+ energy CC normalizations are included as well.
+ There are two CC coherent (Coh) pion production normalization parameters,
+ one for C and O, and one for DIS.
+ There are two NC parameters, one for Coh pion production and other.
+ In order to maintain consistency between the ND280 constraint and oscillation
+ analysis, SK-only normalization parameters are also in the fit, but held
+ as fixed.
+ There are three fixed parameters of this nature.
 \end_layout
 
 \begin_layout Subsubsection
@@ -7998,13 +8047,21 @@ Random Phase Approximation
 \begin_inset Quotes erd
 \end_inset
 
- (RPA) is used as a functional to scale the neutrino-nucleon scattering
- cross section.
+ (RPA)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Co:2006wnm"
+literal "false"
+
+\end_inset
+
+ is used as a functional to scale the neutrino-nucleon scattering cross
+ section.
  The RPA model, as a function of 
 \begin_inset Formula $Q^{2}$
 \end_inset
 
-, is parameterized as a piece-wise low-
+, is parameterized as a 
 \begin_inset Formula $Q^{2}$
 \end_inset
 
@@ -8018,43 +8075,25 @@ Random Phase Approximation
 \end_layout
 
 \begin_layout Standard
-Pion interactions inside the nucleus called final state interactions (FSI)
- are considered in the analysis as well.
+Pion interactions inside the nucleus called final state interactions
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Golan:2012wx"
+literal "false"
+
+\end_inset
+
+ (FSI) are considered in the analysis as well.
  The FSI nuclear model accounts for inelastic (INEL) scattering, pion absorption
  (ABS), pion production (PROD), and charge exchange (CEX) cross sections.
-\end_layout
-
-\begin_layout Subsubsection
-Fit Parameters
+ There are a total of six FSI parameters in the fit.
 \end_layout
 
 \begin_layout Standard
-There are a total of 31 cross section parameters in the BANFF fit.
- The fit parameters are listed in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "tab:Cross-Section-Model"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- with associated correlation matrix in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:Cross-section-correlations-prefit"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -8105,54 +8144,64 @@ Cross Section Parameters Prefit Covariance Matrix
 
 \end_inset
 
-Following the definition of the flux and bin normalization parameters, cross
- section parameters are defined as fractional differences to nominal parameters.
- If a parameter has a prefit value of zero (0), the postfit value represents
- a fractional change from one (1).
+
+\end_layout
+
+\begin_layout Subsubsection
+Fit Parameters
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage clearpage
+There are a total of 31 cross section parameters in the BANFF fit.
+ The fit parameters are listed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Cross-Section-Model"
+plural "false"
+caps "false"
+noprefix "false"
+
 \end_inset
 
+ with the associated correlation matrix in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Cross-section-correlations-prefit"
+plural "false"
+caps "false"
+noprefix "false"
 
-\begin_inset Newpage newpage
 \end_inset
 
-
-\begin_inset Branch XSecBinsTable
-inverted 0
-status open
+.
+ Following the definition of the flux and bin normalization parameters,
+ cross section parameters are defined as fractional differences to nominal
+ parameters.
+\end_layout
 
 \begin_layout Standard
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="37" columns="5">
-<features islongtable="true" firstHeadBottomDL="true" headBottomDL="true" longtabularalignment="center">
-<column alignment="center" valignment="top" width="0pt">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top" width="0pt">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<row caption="true">
-<cell multicolumn="1" alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+If a parameter has a prefit value of zero (0), the postfit value represents
+ a fractional change from one (1) relative to the NEUT nominal value.
+ If no prefit uncertainty is shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Cross-Section-Model"
+plural "false"
+caps "false"
+noprefix "false"
 
-\begin_layout Plain Layout
-\begin_inset Caption Standard
+\end_inset
 
-\begin_layout Plain Layout
-Cross Section Model Fit Parameters in the BANFF Fit.
- If no prefit uncertainty is shown ,and also shown in 
+, and also shown in 
 \color red
 red font
 \color inherit
 , then the parameter had a flat prior assigned.
- A model parameter with an asterisk, 
-\begin_inset Formula $^{*}$
+ A model parameter with an asterisk 
+\begin_inset Formula $(^{*})$
 \end_inset
 
-, next to it is fixed in the fit.
+ next to it is fixed in the fit.
  Abbreviations used in this table are 
 \begin_inset Quotes eld
 \end_inset
@@ -8177,7 +8226,7 @@ Near
 \begin_inset Quotes erd
 \end_inset
 
- for ND280, and 
+ for ND280, 
 \begin_inset Quotes eld
 \end_inset
 
@@ -8185,9 +8234,53 @@ Far
 \begin_inset Quotes erd
 \end_inset
 
- for Super-Kamiokande.
+ for Super-Kamiokande, and 
+\begin_inset Quotes eld
+\end_inset
+
+bkg
+\begin_inset Quotes erd
+\end_inset
+
+ for background.
  Parameters with physical units are shown in both dimensionless and dimensional
  values for comparison.
+ Prefit values are relative to the NEUT nominal value.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset Branch XSecBinsTable
+inverted 0
+status open
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="37" columns="5">
+<features islongtable="true" firstHeadTopDL="true" firstHeadBottomDL="true" headTopDL="true" headBottomDL="true" longtabularalignment="center">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row endhead="true" endfirsthead="true" caption="true">
+<cell multicolumn="1" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cross section model parameters in the fit.
+ See the text for a full description.
  
 \begin_inset Argument 1
 status open
@@ -8310,7 +8403,7 @@ Prefit
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8319,7 +8412,7 @@ Prefit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8328,7 +8421,7 @@ Prefit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8337,7 +8430,7 @@ Prefit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8346,7 +8439,7 @@ Low energy INEL
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9527,8 +9620,8 @@ E scale
 \end_inset
 </cell>
 </row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<row newpage="true">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9537,7 +9630,7 @@ E scale
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9546,7 +9639,7 @@ E scale
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9555,7 +9648,7 @@ E scale
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9568,7 +9661,7 @@ U scale
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9718,7 +9811,7 @@ resonant
 \begin_inset Text
 
 \begin_layout Plain Layout
-production
+prodction
 \end_layout
 
 \end_inset
@@ -9753,11 +9846,66 @@ production
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 583
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I=
+\begin_inset Formula $\nicefrac{1}{2}$
+\end_inset
+
+ bkg.
+ norm.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-0.261\pm0.307$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+584
 \end_layout
 
 \end_inset
@@ -9775,67 +9923,12 @@ production
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-I=
-\begin_inset Formula $\nicefrac{1}{2}$
-\end_inset
-
- bkg.
- norm.
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $-0.261\pm0.307$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-584
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 Event rate
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9852,7 +9945,7 @@ CC-
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -10014,7 +10107,7 @@ status open
 
 
 \backslash
-ce{{12}^C}
+ce{^{12}C}
 \end_layout
 
 \end_inset
@@ -10078,7 +10171,7 @@ status open
 
 
 \backslash
-ce{{16}^O}
+ce{^{16}O}
 \end_layout
 
 \end_inset
