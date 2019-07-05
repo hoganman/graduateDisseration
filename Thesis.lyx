@@ -13,6 +13,7 @@
 \usepackage[version=3]{mhchem}
 \usepackage{cancel}
 \usepackage{tocbibind}
+\usepackage{pdflscape}
 
 % graphics packages
 \usepackage{graphicx} % remove pdftex if you are not compiling to pdf
@@ -184,6 +185,11 @@ hanging
 \color #faf0e6
 \end_branch
 \branch AppendixObsnorm
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch AppendixSigmaVariations
 \selected 1
 \filename_suffix 0
 \color #faf0e6
@@ -432,7 +438,7 @@ name "chap:Introduction"
 
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand input
+LatexCommand include
 filename "Chapters/Introduction.lyx"
 
 \end_inset
@@ -463,7 +469,7 @@ name "chap:BANFF-Likelihood"
 
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand input
+LatexCommand include
 filename "Chapters/BANFFLikelihood.lyx"
 
 \end_inset
@@ -507,7 +513,7 @@ name "chap:P0DSelections"
 
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand input
+LatexCommand include
 filename "Chapters/Selections.lyx"
 
 \end_inset
@@ -551,7 +557,7 @@ name "chap:P0DinBANFF"
 
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand input
+LatexCommand include
 filename "Chapters/P0DBANFFParameterization.lyx"
 
 \end_inset
@@ -575,7 +581,7 @@ Fitter Validation
 
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand input
+LatexCommand include
 filename "Chapters/FitterValidation.lyx"
 
 \end_inset
@@ -599,7 +605,7 @@ Fitter Results
 
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand input
+LatexCommand include
 filename "Chapters/FitterResults.lyx"
 
 \end_inset
@@ -635,7 +641,7 @@ podtitle{}
 
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand input
+LatexCommand include
 filename "Chapters/P0DFGDComparisons.lyx"
 
 \end_inset
@@ -659,7 +665,7 @@ Discussion
 
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand input
+LatexCommand include
 filename "Chapters/Discussion.lyx"
 
 \end_inset
@@ -695,7 +701,7 @@ Application of Weights
 
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand input
+LatexCommand include
 filename "Appendices/ApplicationOfWeights.lyx"
 
 \end_inset
@@ -739,8 +745,32 @@ name "app:obsnorm"
 
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand input
+LatexCommand include
 filename "Appendices/Obsnorms.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch AppendixSigmaVariations
+inverted 0
+status open
+
+\begin_layout Chapter
+Cross Section Parameters Variations
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Appendices/NSigmaVariations.lyx"
 
 \end_inset
 

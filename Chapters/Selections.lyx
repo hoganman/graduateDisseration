@@ -1072,7 +1072,7 @@ Corridor Volume
 \begin_inset Text
 
 \begin_layout Plain Layout
-1264
+-1264
 \end_layout
 
 \end_inset
@@ -4364,19 +4364,30 @@ noprefix "false"
 \end_inset
 
  displays the momentum and angular distributions that are inputs to BANFF.
+ Comparing between water-in and water-out modes, we see the reconstructed
+ kinematics are nearly identical.
  In the majority of cases, the lepton candidate is the true muon, making
  this a very pure 
 \begin_inset Formula $\numu$
 \end_inset
 
  sample.
- Comparing between water-in and water-out modes, we see the reconstructed
- kinematics are nearly identical.
+ We also see that there are non-CCQE events which will be better understood
+ in the coming paragraphs.
  Following this paragraph and the following sections, only the 
 \begin_inset Formula $\pod$
 \end_inset
 
- water-in mode will be shown.
+ water-in mode kinematics, i.e.
+ 
+\begin_inset Formula $p$
+\end_inset
+
+ and 
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+, will be shown.
 \end_layout
 
 \begin_layout Standard
@@ -4582,6 +4593,165 @@ numutitle{}
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:numuFHCCC1TrkRecoParticle"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The target nuclei between water-in and water-out modes is slightly different
+ as seen in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Vertex-position-numucc1trk"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ This is expected given that there is atmosphere instead of water in the
+ bags and the simulated neutrino-nucleus scattering target is either an
+ oxygen or hydrogen nucleus.
+ After carbon and oxygen as the most likely targets, copper in the brass
+ layers contribute a significant fraction of events.
+ The events on lead are true OOFV and primarily occur in the last 
+\begin_inset Formula $\podule$
+\end_inset
+
+.
+ Due to a software bug in the MC, coherent events on hydrogen were incorrectly
+ categorized and have their own category.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/VertexZPosition_WaterIn_NumuFHCCC1Track.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Water-in
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/VertexZPosition_WaterOut_NumuFHCCC1Track.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Water-out
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Vertex Z position of the 
+\begin_inset Formula $\numu$
+\end_inset
+
+ in FHC CC 1-Track selection broken down by true target nucleus.
+ The number of events increases with increasing Z since the probability
+ of an interaction increases as the neutrino crosses more media in the 
+\begin_inset Formula $\pod$
+\end_inset
+
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Vertex-position-numucc1trk"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Vertex Z Position of the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numutitle{}
+\end_layout
+
+\end_inset
+
+ in FHC CC 1-Track Selection
+\end_layout
 
 \end_inset
 
@@ -5214,6 +5384,20 @@ noprefix "false"
 ) and deep inelastic scattering (DIS).
  There are a number of mis-identified lepton candidates in the form of electrons
  and pions.
+ There is a relatively larger OOFV contamination compared with the 1-Track
+ selection with some events originating in the USECal as seen in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Vertex-position-numuccNtrk"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Otherwise, the vertex position and target materials are quite similar between
+ the 1-Track and N-Tracks selections.
 \end_layout
 
 \begin_layout Standard
@@ -5341,6 +5525,137 @@ numutitle{}
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:numuFHCCCNTrkRecoParticle"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/VertexZPosition_WaterIn_NumuFHCCCNTracks.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Water-in
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SamplesAndSelections/VertexZPosition_WaterOut_NumuFHCCCNTracks.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Water-out
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Vertex position of the 
+\begin_inset Formula $\numu$
+\end_inset
+
+ in FHC CC N-Tracks selection broken down by true target nucleus.
+ The number of events increases with increasing Z since the probability
+ of an interaction increases as the neutrino crosses more media in the 
+\begin_inset Formula $\pod$
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Vertex-position-numuccNtrk"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Vertex position of the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numutitle{}
+\end_layout
+
+\end_inset
+
+ in FHC CC N-Tracks Selection
+\end_layout
 
 \end_inset
 
