@@ -251,7 +251,7 @@ inverted 0
 status open
 
 \begin_layout Subsection
-Motivation
+Introduction to Conditional PDFs and Likelihoods
 \end_layout
 
 \begin_layout Standard
@@ -309,10 +309,6 @@ best fit parameters
 \begin_inset Branch BANFFLikelihoodIntroToPDFs
 inverted 0
 status open
-
-\begin_layout Subsection
-Introduction to Conditional PDFs and Likelihoods
-\end_layout
 
 \begin_layout Standard
 Consider the problem of extracting physics parameters 
@@ -467,7 +463,7 @@ noprefix "false"
 inverted 0
 status open
 
-\begin_layout Subsection
+\begin_layout Section
 BANFF Fit Test Statistic
 \end_layout
 

@@ -125,6 +125,26 @@
 \filename_suffix 0
 \color #faf0e6
 \end_branch
+\branch ValidationAsimiovEventRate
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch ValidationAsimovScans
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch ValidationAsimovFitResults
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch ValidationAsimov
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
 \index Index
 \shortcut idx
 \color #008000
@@ -154,11 +174,454 @@
 \begin_body
 
 \begin_layout Standard
-Fitter validation
+This chapter will present the validation of the BANFF fit using the MC as
+ input.
+ The first such test is using the nominal MC as the data, referred to as
+ an Asimov data fit.
+ The following two validation tests are fake data sets.
+ One alters the flux prediction and is referred to as the High Energy Neutrino
+ Flux Variation fake data set.
+ The other is the Resonant Single Pion Variation fake data set.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Branch ValidationAsimov
+inverted 0
+status open
+
 \begin_layout Section
-Asimov Fit
+Asimov Data Fit
+\end_layout
+
+\begin_layout Standard
+Asimov data refers replacing the ensemble of simulated data sets by a single
+ representative one
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cowan:2010js"
+literal "false"
+
+\end_inset
+
+.
+ In this analysis, this involves fitting the MC data set to itself for the
+ primary purpose of checking the closure of the fitting framework.
+ The Asimov set is produced with the same models as is implemented in the
+ fitter and has all parameters set to their prior central values as defined
+ in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "chap:P0DinBANFF"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Instead of statistically sampling from the MC, which can insert statistical
+ variations in the fit, the Asimov data set is created by scaling the set
+ down to the full T2K POT.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch ValidationAsimiovEventRate
+inverted 0
+status collapsed
+
+\begin_layout Subsection
+Event Rate Comparison
+\end_layout
+
+\begin_layout Standard
+Shown in Figure
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+~
+\backslash
+ref{tab:eventtable}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{landscape}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "Includes/Validation/EventTable.tex"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{landscape}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch ValidationAsimovScans
+inverted 0
+status open
+
+\begin_layout Subsection
+Test Statistic Scans
+\end_layout
+
+\begin_layout Standard
+In addition to comparing the event rate in each sample, test statistic scans
+ were checked in the Asimov data set.
+ The results of the scans are shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:TestStatisticScans"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ with comparisons between the 
+\begin_inset Formula $\pod$
+\end_inset
+
+-only samples and FGD-only samples shown.
+ It demonstrates that same penalties are applied between the 
+\begin_inset Formula $\pod$
+\end_inset
+
+-only and FGD-only analyses and the 
+\begin_inset Formula $\pod$
+\end_inset
+
+-only data set has similar discrimination power to the FGD-only.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Validation/Asimov/Flux03Sample.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Flux parameter 
+\series bold
+
+\begin_inset Formula $b_{3}$
+\end_inset
+
+ 
+\series default
+
+\begin_inset Formula $\Delta\chi_{\text{LLR}}^{2}$
+\end_inset
+
+ scan
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Validation/Asimov/FSIINELLOSample.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+FSI low energy inelastic 
+\begin_inset Formula $\Delta\chi_{\text{LLR}}^{2}$
+\end_inset
+
+ scan
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Validation/Asimov/Flux03Penalty.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Flux parameter 
+\series bold
+
+\begin_inset Formula $b_{3}$
+\end_inset
+
+ 
+\series default
+
+\begin_inset Formula $\Delta\chi_{\text{Flux}}^{2}$
+\end_inset
+
+ scan
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Validation/Asimov/FSIINELLOPenalty.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+FSI low energy inelastic 
+\begin_inset Formula $\Delta\chi_{\text{xsec}}^{2}$
+\end_inset
+
+ scan
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparison of 
+\begin_inset Formula $\Delta\chi^{2}$
+\end_inset
+
+ scans for variations in fit parameters in the Asimov set.
+ Two parameters are varied: parameter 3 (left) corresponding to a flux bin
+ and 562 (right) corresponding to a FSI parameter.
+ The top panel shows the change in the LLR test statistic 
+\begin_inset Formula $\Delta\chi_{\text{LLR}}^{2}$
+\end_inset
+
+ while the bottom panel shows the penalty terms.
+ In all sub-figures are comparisons between the BANFF/MaCH3 FGD 2017 results
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abe:2017vif"
+literal "false"
+
+\end_inset
+
+ against the BANFF 
+\begin_inset Formula $\pod$
+\end_inset
+
+-only results.
+ Special thanks goes to Clarence Wret (c.wret@rochester.edu) of the University
+ of Rochester for generating the plots.
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Test Statistic Scans for Variations of Fit Parameters in the Asimov Set
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:TestStatisticScans"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch ValidationAsimovFitResults
+inverted 0
+status open
+
+\begin_layout Subsection
+Fit Results
+\end_layout
+
+\begin_layout Standard
+The results of the Asimov fit are shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Asimov-fit-resultsND"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ to 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Asimov-fit-resultsXSEC"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ In order to provide a unified graphical representation for all the parameters,
+ some of the cross section parameters are adjusted to or around 1.
 \end_layout
 
 \begin_layout Standard
@@ -179,7 +642,7 @@ status collapsed
 \begin_inset Graphics
 	filename Figures/Validation/Asimov/nd_pf_numu_flux_parms.png
 	lyxscale 50
-	width 45text%
+	height 19.5theight%
 
 \end_inset
 
@@ -194,7 +657,7 @@ ND280
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC
+ in FHC (0-10)
 \end_layout
 
 \end_inset
@@ -215,7 +678,7 @@ status collapsed
 \begin_inset Graphics
 	filename Figures/Validation/Asimov/nd_pf_numub_flux_parms.png
 	lyxscale 50
-	width 45text%
+	height 19.5theight%
 
 \end_inset
 
@@ -230,7 +693,7 @@ ND280
 \begin_inset Formula $\numubar$
 \end_inset
 
- in FHC
+ in FHC (11-15)
 \end_layout
 
 \end_inset
@@ -248,14 +711,14 @@ ND280
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figures/Validation/Asimov/nd_pf_nue_flux_parms.png
 	lyxscale 50
-	width 45text%
+	height 19.5theight%
 
 \end_inset
 
@@ -270,7 +733,7 @@ ND280
 \begin_inset Formula $\nue$
 \end_inset
 
- in FHC
+ in FHC (16-22)
 \end_layout
 
 \end_inset
@@ -284,14 +747,14 @@ ND280
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figures/Validation/Asimov/nd_pf_nueb_flux_parms.png
 	lyxscale 50
-	width 45text%
+	height 19.5theight%
 
 \end_inset
 
@@ -306,7 +769,7 @@ ND280
 \begin_inset Formula $\nuebar$
 \end_inset
 
- in FHC
+ in FHC (23-24)
 \end_layout
 
 \end_inset
@@ -320,23 +783,7 @@ ND280
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-FHC Flux at ND280
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
+\align center
 \begin_inset Float figure
 wide false
 sideways false
@@ -344,17 +791,10 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
 \begin_inset Graphics
 	filename Figures/Validation/Asimov/nd_nf_numu_flux_parms.png
 	lyxscale 50
-	width 45text%
+	height 19.5theight%
 
 \end_inset
 
@@ -369,7 +809,7 @@ ND280
 \begin_inset Formula $\numu$
 \end_inset
 
- in RHC
+ in RHC (25-29)
 \end_layout
 
 \end_inset
@@ -383,14 +823,14 @@ ND280
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figures/Validation/Asimov/nd_nf_numub_flux_parms.png
 	lyxscale 50
-	width 45text%
+	height 19.5theight%
 
 \end_inset
 
@@ -405,7 +845,7 @@ ND280
 \begin_inset Formula $\numubar$
 \end_inset
 
- in RHC
+ in RHC (30-40)
 \end_layout
 
 \end_inset
@@ -423,14 +863,14 @@ ND280
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figures/Validation/Asimov/nd_nf_nue_flux_parms.png
 	lyxscale 50
-	width 45text%
+	height 19.5theight%
 
 \end_inset
 
@@ -445,7 +885,7 @@ ND280
 \begin_inset Formula $\nue$
 \end_inset
 
- in RHC
+ in RHC (41-42)
 \end_layout
 
 \end_inset
@@ -459,14 +899,14 @@ ND280
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figures/Validation/Asimov/nd_nf_nueb_flux_parms.png
 	lyxscale 50
-	width 45text%
+	height 19.5theight%
 
 \end_inset
 
@@ -481,7 +921,7 @@ ND280
 \begin_inset Formula $\nuebar$
 \end_inset
 
- in RHC
+ in RHC (43-49)
 \end_layout
 
 \end_inset
@@ -498,7 +938,35 @@ ND280
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-RHC Flux at ND280
+Asimov fit results for the Flux at ND280.
+ The numbers in parentheses indicate the fit indices in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Fluxbinning"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Asimov-fit-resultsND"
+
+\end_inset
+
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Asimov Fit Results for the Flux at ND280
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -529,7 +997,7 @@ status collapsed
 \begin_inset Graphics
 	filename Figures/Validation/Asimov/sk_pf_numu_flux_parms.png
 	lyxscale 50
-	width 45text%
+	height 19.5theight%
 
 \end_inset
 
@@ -544,7 +1012,7 @@ SK
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC
+ in FHC (50-60)
 \end_layout
 
 \end_inset
@@ -565,7 +1033,7 @@ status collapsed
 \begin_inset Graphics
 	filename Figures/Validation/Asimov/sk_pf_numub_flux_parms.png
 	lyxscale 50
-	width 45text%
+	height 19.5theight%
 
 \end_inset
 
@@ -580,7 +1048,7 @@ SK
 \begin_inset Formula $\numubar$
 \end_inset
 
- in FHC
+ in FHC (61-65)
 \end_layout
 
 \end_inset
@@ -605,7 +1073,7 @@ status collapsed
 \begin_inset Graphics
 	filename Figures/Validation/Asimov/sk_pf_nue_flux_parms.png
 	lyxscale 50
-	width 45text%
+	height 19.5theight%
 
 \end_inset
 
@@ -620,7 +1088,7 @@ SK
 \begin_inset Formula $\nue$
 \end_inset
 
- in FHC
+ in FHC (66-72)
 \end_layout
 
 \end_inset
@@ -641,7 +1109,7 @@ status collapsed
 \begin_inset Graphics
 	filename Figures/Validation/Asimov/sk_pf_nueb_flux_parms.png
 	lyxscale 50
-	width 45text%
+	height 19.5theight%
 
 \end_inset
 
@@ -656,7 +1124,7 @@ SK
 \begin_inset Formula $\nuebar$
 \end_inset
 
- in FHC
+ in FHC (73-74)
 \end_layout
 
 \end_inset
@@ -670,23 +1138,7 @@ SK
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-FHC Flux at Super-K
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
+\align center
 \begin_inset Float figure
 wide false
 sideways false
@@ -694,17 +1146,10 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
 \begin_inset Graphics
 	filename Figures/Validation/Asimov/sk_nf_numu_flux_parms.png
 	lyxscale 50
-	width 45text%
+	height 19.5theight%
 
 \end_inset
 
@@ -719,7 +1164,7 @@ SK
 \begin_inset Formula $\numu$
 \end_inset
 
- in RHC
+ in RHC (75-79)
 \end_layout
 
 \end_inset
@@ -733,14 +1178,14 @@ SK
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figures/Validation/Asimov/sk_nf_numub_flux_parms.png
 	lyxscale 50
-	width 45text%
+	height 19.5theight%
 
 \end_inset
 
@@ -755,7 +1200,7 @@ SK
 \begin_inset Formula $\numubar$
 \end_inset
 
- in RHC
+ in RHC (80-90)
 \end_layout
 
 \end_inset
@@ -773,14 +1218,14 @@ SK
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figures/Validation/Asimov/sk_nf_nue_flux_parms.png
 	lyxscale 50
-	width 45text%
+	height 19.5theight%
 
 \end_inset
 
@@ -795,7 +1240,7 @@ SK
 \begin_inset Formula $\nue$
 \end_inset
 
- in RHC
+ in RHC (91-92)
 \end_layout
 
 \end_inset
@@ -809,14 +1254,14 @@ SK
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figures/Validation/Asimov/sk_nf_nueb_flux_parms.png
 	lyxscale 50
-	width 45text%
+	height 19.5theight%
 
 \end_inset
 
@@ -831,7 +1276,7 @@ SK
 \begin_inset Formula $\nuebar$
 \end_inset
 
- in RHC
+ in RHC (93-99)
 \end_layout
 
 \end_inset
@@ -848,7 +1293,35 @@ SK
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-RHC Flux at Super-K
+Asimov fit results for the Flux at Super-K.
+ The numbers in parentheses indicate the fit indices in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Fluxbinning"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Asimov-fit-resultsSKFHC"
+
+\end_inset
+
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Asimov Fit Results for the Flux at Super-K
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -877,7 +1350,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/Validation/Asimov/ParameterPlots_CC-0pi_parameters.png
+	filename Figures/Validation/Asimov/ParameterPlots_ObsNorm_P0D_Water.png
 	lyxscale 50
 	width 45text%
 
@@ -890,11 +1363,19 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-CC-
-\begin_inset Formula $0\pi$
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+todo{These are bad, replace}
+\end_layout
+
 \end_inset
 
-
+Obsnorm (100 - 330)
 \end_layout
 
 \end_inset
@@ -913,7 +1394,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/Validation/Asimov/ParameterPlots_CC-1pi_parameters.png
+	filename Figures/Validation/Asimov/ParameterPlots_ObsNorm_P0D_Air.png
 	lyxscale 50
 	width 45text%
 
@@ -926,47 +1407,19 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-CC-
-\begin_inset Formula $1\pi$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/Validation/Asimov/ParameterPlots_Other.png
-	lyxscale 50
-	width 45text%
+
+
+\backslash
+todo{These are bad, replace}
+\end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-CC Other and NC Other
+Obsnorm (331-561)
 \end_layout
 
 \end_inset
@@ -983,7 +1436,48 @@ CC Other and NC Other
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Cross Section Parameters
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+todo{These are bad, replace}
+\end_layout
+
+\end_inset
+
+Asimov fit results for the FSI and cross section parameters.
+ The numbers in parentheses indicate the fit indices in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Observable-normalization-fit-bins"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Asimov-fit-resultsObsnorm"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Asimov Fit Results for the Cross Section and FSI Parameters
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1025,7 +1519,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-FSI
+FSI (562-567)
 \end_layout
 
 \end_inset
@@ -1044,7 +1538,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/Validation/Asimov/ParameterPlots_BeRPA_parameters.png
+	filename Figures/Validation/Asimov/ParameterPlots_XSec.png
 	lyxscale 50
 	width 45text%
 
@@ -1057,7 +1551,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-BeRPA
+Cross Section (568-592)
 \end_layout
 
 \end_inset
@@ -1074,7 +1568,46 @@ BeRPA
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Nuclear Models
+Asimov fit results for the FSI and cross section parameters.
+ The numbers in parentheses indicate the fit indices in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Fluxbinning"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Asimov-fit-resultsXSEC"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Asimov Fit Results for the Cross Section and FSI Parameters
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1096,7 +1629,7 @@ High Energy Neutrino Flux Variation
 \end_layout
 
 \begin_layout Subsection
-Cross Section Model Variation
+Resonant Single Pion Variation
 \end_layout
 
 \end_body

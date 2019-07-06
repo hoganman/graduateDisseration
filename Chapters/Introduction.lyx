@@ -252,7 +252,7 @@ little neutral one
 
 -decay did not conserve angular momentum.
  The existence of the neutrino and validation of Pauli's predictions would
- not experimentally verified for another 20 years.
+ not be experimentally verified for another 20 years.
  
 \end_layout
 
@@ -467,6 +467,12 @@ name "fig:TheStandardModel"
 \begin_layout Standard
 Neutrinos in the SM are electrically neutral, massless particles categorized
  into three generations based on their charged, more massive Lepton cousins.
+ In the SM, the three neutrinos and the three antineutrinos are the only
+ spin 
+\begin_inset Formula $\nicefrac{1}{2}$
+\end_inset
+
+ particles, among quarks and leptons, that have only weak interactions.
  The neutrino and charged lepton pair into a 
 \begin_inset Quotes eld
 \end_inset
@@ -729,10 +735,9 @@ status open
 \align center
 \begin_inset Graphics
 	filename Figures/Introduction/MuonDecayJaxoDraw.png
-	lyxscale 25
+	lyxscale 50
 	width 30text%
 	height 25theight%
-	keepAspectRatio
 
 \end_inset
 
@@ -883,7 +888,7 @@ noprefix "false"
 
 Although neutrino detection is difficult, the neutrino helicity is readily
  inferred from the decay of the daughter muon in the pion decay, 
-\begin_inset Formula $\pion^{\pm}\rightarrow\mu^{\pm}+\nuantinuparticle{\mu}$
+\begin_inset Formula $\pion^{+}\rightarrow\mu^{+}+\numu$
 \end_inset
 
 .
@@ -1112,7 +1117,7 @@ Weyl representation
 \begin_inset Formula 
 \begin{equation}
 \gamma^{0}=\begin{bmatrix}0 & I_{2}\\
--I_{2} & 0
+I_{2} & 0
 \end{bmatrix},\gamma^{1}=\begin{bmatrix}0 & \sigma_{x}\\
 -\sigma_{x} & 0
 \end{bmatrix},\gamma^{2}=\begin{bmatrix}0 & \sigma_{y}\\
@@ -1157,8 +1162,8 @@ Using the Chiral representation, the chirality matrix,
  (the fifth gamma matrix), is defined as
 \begin_inset Formula 
 \begin{equation}
-\gamma^{5}=i\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}=\begin{bmatrix}I_{2} & 0\\
-0 & -I_{2}
+\gamma^{5}=i\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}=\begin{bmatrix}-I_{2} & 0\\
+0 & I_{2}
 \end{bmatrix},\label{eq:gammafivedef}
 \end{equation}
 
@@ -1659,7 +1664,8 @@ noprefix "false"
 \end_inset
 
 , the antineutrino is preferentially forward scattered.
- Integrating over all angles, the cross sections come out to
+ Integrating over all angles, the cross sections are related to each other
+ as
 \begin_inset Formula 
 \[
 \sigma\left(\antinue+e^{-}\right)=\frac{1}{3}\sigma\left(\nue+e^{-}\right).
@@ -1723,34 +1729,10 @@ final state interactions
 \end_layout
 
 \begin_layout Standard
-Neutrino-nuclear scattering presented in this thesis come in three primary
- CC varieties: quasi-elastic (CCQE), deep inelastic scattering (CC-DIS),
- and single pion production (CC-
-\begin_inset Formula $1\pion$
-\end_inset
-
-).
- The 
-\begin_inset Formula $\numu$
-\end_inset
-
- CCQE interaction refers to the process where an incoming neutrino and neutron
- (udd) scatter to produce a charged lepton and proton (uud) as shown in
- 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:NuMuCCQE"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1811,9 +1793,32 @@ name "fig:NuMuCCQE"
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
+
+\begin_layout Standard
+Neutrino-nuclear scattering presented in this thesis come in three primary
+ CC varieties: quasi-elastic (CCQE), deep inelastic scattering (CC-DIS),
+ and single pion production (CC-
+\begin_inset Formula $1\pion$
+\end_inset
+
+).
+ The 
+\begin_inset Formula $\numu$
+\end_inset
+
+ CCQE interaction refers to the process where an incoming neutrino and neutron
+ (udd) scatter to produce a charged lepton and proton (uud) as shown in
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:NuMuCCQE"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -1917,7 +1922,7 @@ Solar Neutrino Problem.
 \begin_inset Formula $\nue$
 \end_inset
 
-CC-to-NC ratio of 
+ CC-to-NC ratio of 
 \begin_inset Formula $0.301\pm0.033$
 \end_inset
 
@@ -1926,8 +1931,7 @@ CC-to-NC ratio of
 \end_inset
 
  flavors on Earth.
- Saying this another way, the majority of neutrinos arrive as the wrong
- flavor
+ In other words, the majority of neutrinos arrive as the wrong flavor
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Zuber2012"
@@ -2117,6 +2121,69 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/RotationMatrix.png
+	lyxscale 50
+	height 20theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The depiction of two neutrino flavor change of basis using a rotation matrix.
+ Compare this with 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:pmnstwodimangle"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Depiction of Two Neutrino Flavor Change of Basis
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:twoflavorrotation"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Before being able to describe neutrino oscillations, the basis states must
  be defined.
  For this example, consider that there are only two eigenstates, labeled
@@ -2253,72 +2320,12 @@ noprefix "false"
 
 \end_inset
 
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/Introduction/RotationMatrix.png
-	lyxscale 50
-	height 20theight%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-The depiction of two neutrino flavor change of basis using a rotation matrix.
- Compare this with 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:pmnstwodimangle"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Depiction of Two Neutrino Flavor Change of Basis
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:twoflavorrotation"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
 .
  Creating a neutrino of flavor 
 \begin_inset Formula $\alpha$
 \end_inset
 
- and observe it after a time 
+ and observing it after a time 
 \begin_inset Formula $t=T>0$
 \end_inset
 
@@ -2403,7 +2410,7 @@ noprefix "false"
 .
  This equation is not, however, terribly useful in the laboratory frame
  since it is hard to design an experiment where the travel time an individual
- neutrino is well known.
+ neutrino is actually measured.
  Instead, one can make useful approximations that are accessible in the
  laboratory frame.
  Since neutrinos are nearly massless, they travel very close to the speed
@@ -3422,8 +3429,8 @@ name "tab:SensitivityOscill"
 \end_layout
 
 \begin_layout Standard
-If neutrinos are their own antiparticles, they do not follow the Dirac Equation
- but do follow the Majorana Equation.
+If neutrinos are their own antiparticles, like the photon, they do not follow
+ the Dirac Equation but do follow the Majorana Equation.
  This adds two (in general 
 \begin_inset Formula $n-1$
 \end_inset
@@ -3857,11 +3864,11 @@ Current and next generation experiments aim to improve knowledge of the
 
 .
  While the two defined mass-squared splittings 
-\begin_inset Formula $\Dm21=\Delta m_{\text{sol}}^{2}$
+\begin_inset Formula $\Dm 21=\Delta m_{\text{sol}}^{2}$
 \end_inset
 
  and 
-\begin_inset Formula $\Dm32=\Delta m_{\text{atm}}^{2}$
+\begin_inset Formula $\Dm 32=\Delta m_{\text{atm}}^{2}$
 \end_inset
 
  are known, it is unknown which eigenstates are more massive.
@@ -4546,8 +4553,8 @@ noprefix "false"
 , the MSW effect to first order is 
 \begin_inset Formula 
 \begin{equation}
-\begin{aligned}\mathcal{P}\left(\nuantinuparticle{\mu}\rightarrow\nuantinuparticle e\right)\rightarrow & \mathcal{P}\left(\nuantinuparticle{\mu}\rightarrow\nuantinuparticle e\right)+\frac{8\alpha}{\Dm31}\left(\ccc{13}\sss{13}\sss{23}\right)\left(1-2\sss{13}\right)\\
- & \times\left(\sin^{2}\phi_{31}\overset{_{(+)}}{-}\underset{\phi_{31}}{\underbrace{\left(\frac{\Dm31c^{3}}{4\hbar}\frac{L}{E_{\nu}}\right)}}\cos\phi_{32}\sin\phi_{31}\right),
+\begin{aligned}\mathcal{P}\left(\nuantinuparticle{\mu}\rightarrow\nuantinuparticle e\right)\rightarrow & \mathcal{P}\left(\nuantinuparticle{\mu}\rightarrow\nuantinuparticle e\right)+\frac{8\alpha}{\Dm 31}\left(\ccc{13}\sss{13}\sss{23}\right)\left(1-2\sss{13}\right)\\
+ & \times\left(\sin^{2}\phi_{31}\overset{_{(+)}}{-}\underset{\phi_{31}}{\underbrace{\left(\frac{\Dm 31c^{3}}{4\hbar}\frac{L}{E_{\nu}}\right)}}\cos\phi_{32}\sin\phi_{31}\right),
 \end{aligned}
 \label{eq:numu2nuethreeflavormasseffect}
 \end{equation}
@@ -4822,8 +4829,9 @@ noprefix "false"
 .
  It is the successor experiment to the KEK-to-Kamioka neutrino oscillation
  experiment also hosted in Japan.
- T2K produces its high intensity, muon neutrino pure beam at the Japan Proton
- Accelerator Complex (J-PARC), a world class particle accelerator facility.
+ T2K produces its high intensity, relatively pure muon neutrino beam at
+ the Japan Proton Accelerator Complex (J-PARC), a world class particle accelerat
+or facility.
  The beam is directed at the Super-Kamiokande (SK)
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -6040,7 +6048,7 @@ constrain the neutrino flux and interaction rate
 \shape default
  at SK in order to reduce the impact of their systematic uncertainties in
  the oscillation analysis.
- The analysis in this thesis uses the data provided by othe ff-axis ND.
+ The analysis in this thesis uses the data provided by the off-axis ND.
  The site is called ND280 and is located 280m away from the production target.
  The primary detector is an off-axis, magnetized tracking detector consisting
  of different subdetectors.
@@ -6892,10 +6900,10 @@ The
 \begin_inset Formula $\pod$
 \end_inset
 
- is the primary detector used a neutrino target in this thesis.
+ is the primary detector used as the neutrino target in this thesis.
  It is a plastic scintillator based tracking calorimeter inside the ND280
  magnet region.
- It is designed to measure the neutral current (NC) process 
+ It was designed to measure the neutral current (NC) process 
 \begin_inset Formula $\numu+N\rightarrow\numu+N+\pizero+X$
 \end_inset
 
@@ -6908,11 +6916,11 @@ The
 \end_inset
 
  is any set of final state particles.
- NC 
+ The NC 
 \begin_inset Formula $\pizero$
 \end_inset
 
- was expected to be a significant background in the 
+ process was expected to be a significant background in the 
 \begin_inset Formula $\nue$
 \end_inset
 
@@ -7111,7 +7119,7 @@ noprefix "false"
 \end_inset
 
 .
- A plane of 134 horizontal and 129 vertical bar together to form a 
+ A plane of 134 horizontal and 129 vertical bars together to form a 
 \begin_inset Formula $\pod$
 \end_inset
 
@@ -7774,14 +7782,17 @@ Global
 \end_inset
 
  is designed to combine all ND280 information for this purpose.
-\end_layout
+ The Global reconstruction will be revisited in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "chap:P0DSelections"
+plural "false"
+caps "false"
+noprefix "false"
 
-\begin_layout Standard
-For 
-\begin_inset Formula $\pod$
 \end_inset
 
- tracks, 
+.
 \end_layout
 
 \end_inset
@@ -7801,7 +7812,7 @@ Neutrino Far Detector: Super-Kamiokande
 \begin_layout Standard
 The Super-Kamioka neutrino detection experiment (Super-Kamiokande) is the
  dedicated far detector for the T2K experiment.
- Sitting at 295 km away from the neutrino source with a 1 km overburden,
+ Positioned at 295 km away from the neutrino source with a 1 km overburden,
  it is well designed to detect the elusive neutrino.
  Containing about 50 kt of pure water, is it lined with PMTs in both an
  inner and veto outer detector as shown in 
@@ -8026,7 +8037,7 @@ where
 \end_inset
 
 is the number of true events.
- The expected rate given by
+ The expected reconstructed neutrino appearance rate is given by
 \end_layout
 
 \begin_layout Standard
@@ -8457,10 +8468,22 @@ Using the ND280 constraint can tune the NEUT cross section model to best
  match the T2K data
 \shape default
 .
- The canonical T2K cross section model in NEUT is problematic due to model
- deficiencies to accurately predict the neutrino energy.
+ The canonical T2K cross section model in NEUT is problematic due to depending
+ on older neutrino-nuclear scattering models developed for low-Z nuclear
+ targets like deuterium.
  The models implemented in NEUT, while being well studied in previous neutrino-n
 uclear Physics experiments, are known as effective models in T2K.
+ In particular, large disparities exist in recent, high statistics CCQE
+ measurements
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Formaggio:2013kya"
+literal "false"
+
+\end_inset
+
+ which is forcing T2K to explore other and new Nuclear Physics models in
+ this analysis.
 \end_layout
 
 \begin_layout Section
@@ -8479,7 +8502,7 @@ clear interactions and flux help improve its sensitivity to the oscillation
 \end_layout
 
 \begin_layout Standard
-This thesis is presented in the following order.
+The next chapters in this thesis are presented in the following order.
  First is the ND280 constraint on the flux and cross section models using
  the BANFF maximum likelihood fit.
  Next is the description of the analysis samples that are used in the BANFF

@@ -16,7 +16,7 @@
 \usepackage{pdflscape}
 
 % graphics packages
-\usepackage{graphicx} % remove pdftex if you are not compiling to pdf
+\usepackage{graphicx}
 %\graphicspath{{./figures/}} % this places all graphics in the figures subdirectory
 
 % allowed graphics extensions
@@ -46,6 +46,7 @@
 \usepackage{hepnames}
 \usepackage{physics}
 
+
 \usepackage[%
   pdfpagelabels,
   pdfusetitle,
@@ -59,9 +60,9 @@
   bookmarksopen,
   bookmarksnumbered]{hyperref}
 \usepackage{cleveref}
+
 \usepackage{sectsty}
 \chapterfont{\centering}
-
 \usepackage{braket}
 \end_preamble
 \options doctor,showframe
@@ -165,12 +166,12 @@ hanging
 \color #faf0e6
 \end_branch
 \branch FitterResults
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch P0DFDGComparisons
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch

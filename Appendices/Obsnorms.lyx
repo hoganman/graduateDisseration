@@ -178,6 +178,14 @@ The observable normalizations used in the
 
 \begin_layout Plain Layout
 Observable normalization fit bins.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Observable-normalization-fit-bins"
+
+\end_inset
+
+
 \begin_inset Argument 1
 status open
 

@@ -1449,17 +1449,6 @@
 }
 
 @Article{Golan:2012wx,
-  Title                    = {Final State Interactions Effects in Neutrino-Nucleus Interactions},
-  Author                   = {Golan, Tomasz and Juszczak, Cezary and Sobczyk, Jan T.},
-  Journal                  = {Phys. Rev.},
-  Year                     = {2012},
-  Pages                    = {015505},
-  Volume                   = {C86},
-
-  Doi                      = {10.1103/PhysRevC.86.015505}
-}
-
-@Article{Golan:2012wx,
   Title                    = {{Final State Interactions Effects in Neutrino-Nucleus
  Interactions}},
   Author                   = {Golan, Tomasz and Juszczak, Cezary and Sobczyk, Jan T.},
@@ -1467,6 +1456,17 @@
   Year                     = {2012},
   Pages                    = {015505},
   Volume                   = {86},
+
+  Doi                      = {10.1103/PhysRevC.86.015505}
+}
+
+@Article{Golan2012,
+  Title                    = {Final State Interactions Effects in Neutrino-Nucleus Interactions},
+  Author                   = {Golan, Tomasz and Juszczak, Cezary and Sobczyk, Jan T.},
+  Journal                  = {Phys. Rev.},
+  Year                     = {2012},
+  Pages                    = {015505},
+  Volume                   = {C86},
 
   Doi                      = {10.1103/PhysRevC.86.015505}
 }
