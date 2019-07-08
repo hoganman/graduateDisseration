@@ -176,11 +176,13 @@ status open
 \begin_layout Standard
 The BANFF likelihood maximization procedure is a binned likelihood maximization
  fitting of the ND280 data.
- This is separate from the fitting the Super-Kamiokande (SK) data.
+ This fit is done separately from the fitting the Super-Kamiokande (SK)
+ data for the oscillation analysis.
  In a joint fit, the measurements from both detectors are considered along
  with their respective nuisance parameters.
- This approach is more computationally expensive since the time to perform
- a fit increases non-linearly with increasing the number of fit parameters.
+ This joint-fit approach is more computationally expensive since the time
+ to perform a fit increases non-linearly with increasing the number of fit
+ parameters.
  However it is developed in an alternate method called the Markov Chain
  Monte Carlo analysis (MaCh3) and this will not be explained here.
  The BANFF likelihood maximization, hitherto referred to as the 
@@ -258,7 +260,7 @@ Introduction to Conditional PDFs and Likelihoods
 Curve fitting is commonly found in the particle physics community literature
  due to the need to compare two models or constrain unknown model parameters
  using one or more histograms.
- For the first case, this involves two competing models, 
+ For the first case, this involves two competing hypotheses or models, 
 \begin_inset Formula $H_{0}$
 \end_inset
 
@@ -333,7 +335,8 @@ Consider the problem of extracting physics parameters
 \end_inset
 
 where anything right of a vertical line represents a condition on the probabilit
-y, 
+y.
+ 
 \begin_inset Formula $\mathcal{L}\left(\left.\vec{N}\right|\vec{y}\right)$
 \end_inset
 
@@ -474,7 +477,11 @@ For the BANFF fit, one considers the problem of trying to maximize the agreement
 \begin_inset Formula $\mathcal{L}$
 \end_inset
 
- of the data given the a set of parameters that predict the measured rate.
+ of the data given a set of parameters in the likelihood function 
+\begin_inset Formula $\mathcal{L}$
+\end_inset
+
+ that predict the measured rate.
  The use of likelihood functions in fits to histogram is explained further
  in reference 
 \begin_inset CommandInset citation
@@ -588,7 +595,7 @@ xsec
 \end_layout
 
 \begin_layout Itemize
-neutrino flux, and
+neutrino flux,
 \end_layout
 
 \begin_layout Itemize
@@ -669,14 +676,20 @@ noprefix "false"
 
  is modeled carefully and the efficiency term is estimated using Monte Carlo
  (MC) simulations and control samples.
- The number of predicted events from the MC for a given analysis bin 
+ The number of events in a given analysis bin is varied in the BANFF using
+ flux, cross section, detector efficiency weight functions.
+ In the 
 \begin_inset Formula $i$
 \end_inset
 
- is given by
+th analysis bin, the number of events in that bin, 
+\begin_inset Formula $N_{i}$
+\end_inset
+
+, is given by
 \begin_inset Formula 
 \begin{equation}
-\vec{N}_{i}^{p}\left(\flux,\xsec,\systematics\right)=w_{i}^{\text{POT}}\left(\systematics\right)_{i}^{\text{Det}}\sum_{j=1}^{N_{i}^{\text{MC}}}\left[\sum_{k=1}^{N^{\text{Flux}}}\left(\delta_{j,k}^{\text{Flux}}\left(\flux\right)_{k}^{\text{Flux}}\right)\prod_{l=1}^{N^{\text{xSyst}}}w_{j,l}\left(\left(\xsec\right)_{l}^{\text{xsec}}\right)\right].\label{eq:n-predicted-BANFF}
+N_{i}\left(\flux,\xsec,\systematics\right)=w_{i}^{\text{POT}}\left(\systematics\right)_{i}^{\text{Det}}\sum_{j=1}^{N_{i}^{\text{MC}}}\left[\sum_{k=1}^{N^{\text{Flux}}}\left(\delta_{j,k}^{\text{Flux}}\left(\flux\right)_{k}^{\text{Flux}}\right)\prod_{l=1}^{N^{\text{xSyst}}}w_{j,l}\left(\left(\xsec\right)_{l}^{\text{xsec}}\right)\right].\label{eq:n-predicted-BANFF}
 \end{equation}
 
 \end_inset
@@ -685,11 +698,11 @@ Here
 \begin_inset Formula $w_{i}^{\text{POT}}$
 \end_inset
 
- is the protons on target (POT) weight for the 
+ is the protons on target (POT) weight for analysis bin 
 \begin_inset Formula $i$
 \end_inset
 
-th analysis which normalizes the MC statistics to expected data statistics.
+ which normalizes the MC statistics to expected data statistics.
  To account for the detector inefficiencies, the 
 \begin_inset Formula $\left(\systematics\right)_{i}^{\text{Det}}$
 \end_inset
@@ -803,7 +816,8 @@ noprefix "false"
  is the MC predicted probability which assumes the best maximum likelihood
  estimate is the number of observed events.
  Penalty terms from the cross section, flux, and detector systematics are
- included in order to prevent overfitting of the data.
+ included in order to force the results to be consistent with systematic
+ uncertainties.
  The new test statistic for all of ND280, 
 \begin_inset Formula $\Delta\chi_{\ND280}^{2}$
 \end_inset

@@ -3864,11 +3864,11 @@ Current and next generation experiments aim to improve knowledge of the
 
 .
  While the two defined mass-squared splittings 
-\begin_inset Formula $\Dm 21=\Delta m_{\text{sol}}^{2}$
+\begin_inset Formula $\Dm21=\Delta m_{\text{sol}}^{2}$
 \end_inset
 
  and 
-\begin_inset Formula $\Dm 32=\Delta m_{\text{atm}}^{2}$
+\begin_inset Formula $\Dm32=\Delta m_{\text{atm}}^{2}$
 \end_inset
 
  are known, it is unknown which eigenstates are more massive.
@@ -4553,8 +4553,8 @@ noprefix "false"
 , the MSW effect to first order is 
 \begin_inset Formula 
 \begin{equation}
-\begin{aligned}\mathcal{P}\left(\nuantinuparticle{\mu}\rightarrow\nuantinuparticle e\right)\rightarrow & \mathcal{P}\left(\nuantinuparticle{\mu}\rightarrow\nuantinuparticle e\right)+\frac{8\alpha}{\Dm 31}\left(\ccc{13}\sss{13}\sss{23}\right)\left(1-2\sss{13}\right)\\
- & \times\left(\sin^{2}\phi_{31}\overset{_{(+)}}{-}\underset{\phi_{31}}{\underbrace{\left(\frac{\Dm 31c^{3}}{4\hbar}\frac{L}{E_{\nu}}\right)}}\cos\phi_{32}\sin\phi_{31}\right),
+\begin{aligned}\mathcal{P}\left(\nuantinuparticle{\mu}\rightarrow\nuantinuparticle e\right)\rightarrow & \mathcal{P}\left(\nuantinuparticle{\mu}\rightarrow\nuantinuparticle e\right)+\frac{8\alpha}{\Dm31}\left(\ccc{13}\sss{13}\sss{23}\right)\left(1-2\sss{13}\right)\\
+ & \times\left(\sin^{2}\phi_{31}\overset{_{(+)}}{-}\underset{\phi_{31}}{\underbrace{\left(\frac{\Dm31c^{3}}{4\hbar}\frac{L}{E_{\nu}}\right)}}\cos\phi_{32}\sin\phi_{31}\right),
 \end{aligned}
 \label{eq:numu2nuethreeflavormasseffect}
 \end{equation}
@@ -7772,7 +7772,8 @@ The goal of track reconstruction software is to capture the shape and history
 \begin_inset Formula $\pod$
 \end_inset
 
- and cross into the TPC, an unified and coherent reconstruction model.
+ and cross into the TPC, an unified and coherent reconstruction model is
+ needed.
  A reconstruction package called 
 \begin_inset Quotes eld
 \end_inset

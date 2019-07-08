@@ -14,6 +14,7 @@
 \usepackage{cancel}
 \usepackage{tocbibind}
 \usepackage{pdflscape}
+\usepackage{pdfpages}
 
 % graphics packages
 \usepackage{graphicx}
@@ -191,6 +192,21 @@ hanging
 \color #faf0e6
 \end_branch
 \branch AppendixSigmaVariations
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch AppendixObsnormVariations
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch AppendixLikelihoodScans
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch AppendixLikelihoodPenaltyScans
 \selected 1
 \filename_suffix 0
 \color #faf0e6
@@ -760,18 +776,104 @@ filename "Appendices/Obsnorms.lyx"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Branch AppendixObsnormVariations
+inverted 0
+status open
+
+\begin_layout Chapter
+Toy Experiment Variations
+\begin_inset CommandInset label
+LatexCommand label
+name "app:Toy-Experiment-Variations"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Appendices/ToyExperiments.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Branch AppendixSigmaVariations
 inverted 0
 status open
 
 \begin_layout Chapter
 Cross Section Parameters Variations
+\begin_inset CommandInset label
+LatexCommand label
+name "app:NSigmaVariations"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
 filename "Appendices/NSigmaVariations.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch AppendixLikelihoodScans
+inverted 0
+status open
+
+\begin_layout Chapter
+BANFF Fit Test Statistic Sample Scans
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Appendices/LikelihoodScans.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch AppendixLikelihoodPenaltyScans
+inverted 0
+status open
+
+\begin_layout Chapter
+BANFF Fit Test Statistic Penalty Scans
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Appendices/LikelihoodPenaltyScans.lyx"
 
 \end_inset
 

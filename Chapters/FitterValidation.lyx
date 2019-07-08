@@ -225,12 +225,35 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
+In addition to running an Asimov fit, other metrics were examined in the
+ Asmiov set.
+ Shown first is a comparison of the event rates before and after applying
+ weights to the MC.
+ Next is a set of scans of the test statistic space to ensure the penalty
+ and sample terms are already at their minima.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+todo{Add VaryByNSigma}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Branch ValidationAsimiovEventRate
 inverted 0
-status collapsed
+status open
 
 \begin_layout Subsection
-Event Rate Comparison
+Event Rate
 \end_layout
 
 \begin_layout Standard
@@ -247,7 +270,20 @@ ref{tab:eventtable}
 
 \end_inset
 
-.
+ is the event rates for the various samples for the Asimov fit.
+ Sequences of weights are applied to understand their affect on the analysis.
+ The 
+\begin_inset Quotes eld
+\end_inset
+
+Data
+\begin_inset Quotes erd
+\end_inset
+
+ column refers to real T2K data collected in the sample with the rest are
+ MC events.
+ We see that after applying the POT, flux, detector, and cross section weights,
+ the prefit event rate is very similar to the data rate.
 \end_layout
 
 \begin_layout Standard
@@ -621,7 +657,12 @@ noprefix "false"
 
 .
  In order to provide a unified graphical representation for all the parameters,
- some of the cross section parameters are adjusted to or around 1.
+ the shape cross section parameters are adjusted to one (1).
+\end_layout
+
+\begin_layout Standard
+We see that the vast majority of postfit parameters have uncertainties smaller
+ than their prefit.
 \end_layout
 
 \begin_layout Standard
@@ -711,7 +752,7 @@ ND280
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -747,7 +788,7 @@ ND280
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -787,7 +828,7 @@ ND280
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -823,7 +864,7 @@ ND280
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -863,7 +904,7 @@ ND280
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -899,7 +940,7 @@ ND280
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1142,7 +1183,7 @@ SK
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1178,7 +1219,7 @@ SK
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1218,7 +1259,7 @@ SK
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1254,7 +1295,7 @@ SK
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1443,7 +1484,9 @@ status open
 
 
 \backslash
-todo{These are bad, replace}
+todo{These are bad, turn off load the detector parameters from the external
+ interface.
+ < BANFF.RunFit.LoadDetParams = 0 > }
 \end_layout
 
 \end_inset
@@ -1622,6 +1665,10 @@ Asimov Fit Results for the Cross Section and FSI Parameters
 
 \begin_layout Section
 Fake Data
+\end_layout
+
+\begin_layout Standard
+In this section, fake data studies were performed to test of the BANFF fit.
 \end_layout
 
 \begin_layout Subsection

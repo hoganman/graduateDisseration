@@ -206,6 +206,22 @@ This chapter is presented in the following order.
 tion of each penalty term in the test statistic.
  The penalty terms discussed in order are the neutrino flux model, the detector
  inefficiencies, and lastly the cross section model.
+ These three terms directly affect the flux of neutrinos, efficiency of
+ reconstruction, and the cross section for 
+\begin_inset Formula $\nu_{\alpha}$
+\end_inset
+
+ terms, respectively, in the expected rate equation given in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Nsig"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -826,7 +842,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -858,7 +874,7 @@ Flux covariance
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -890,8 +906,19 @@ Flux correlation
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-BANFF pre-fit flux covariance matrix shown with respective detector, horn
+BANFF prefit flux covariance matrix shown with respective detector, horn
  current, and neutrino flavor.
+ The covariance matrix is dimensionless as given by 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:fluxtermdef"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:BANFF-pre-fit-flux-covariance"
@@ -941,13 +968,51 @@ noprefix "false"
 
 \end_inset
 
-All penalty terms in this analysis follow this format with each 
+As a remainder, all penalty terms, 
+\begin_inset Formula $\Delta\chi^{2}$
+\end_inset
+
+, in this analysis follow this format.
+ Each flux 
 \begin_inset Formula $b_{i}$
 \end_inset
 
- corresponding to a neutrino energy bin normalization.
- These bins are further differentiated by horn current/polarity (FHC and
- RHC) and neutrino flavor (
+ parameter is a neutrino energy bin normalization starting at one (1).
+ Each parameter is defined as
+\begin_inset Formula 
+\begin{equation}
+b_{i}=\frac{N_{\nu,i}^{\prime}}{N_{\nu,i}},\label{eq:fluxtermdef}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $N_{\nu,i}$
+\end_inset
+
+ and 
+\begin_inset Formula $N_{\nu,i}^{\prime}$
+\end_inset
+
+ are the predicted and ND constrained neutrino event rates, respectively,
+ in the 
+\begin_inset Formula $i$
+\end_inset
+
+th energy bin.
+ In other words, 
+\shape italic
+each flux term is a ratio of rates
+\shape default
+.
+ 
+\shape italic
+Further, all penalty terms are ratios either to expected event rates or
+ nominal model assumptions
+\shape default
+.
+ The flux bins are differentiated by neutrino energy, horn current/polarity
+ (FHC and RHC), neutrino flavor (
 \begin_inset Formula $\numu$
 \end_inset
 
@@ -963,8 +1028,8 @@ All penalty terms in this analysis follow this format with each
 \begin_inset Formula $\nuebar$
 \end_inset
 
-).
- The binning and covariance matrix, shown in 
+), and detector (ND280 and SK).
+ The flux binning and covariance matrix, shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:BANFF-pre-fit-flux-covariance"
@@ -981,7 +1046,7 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1133,12 +1198,21 @@ noprefix "false"
  A postfit value of 1.1 indicates that all events in that energy bin have
  an additional weight of 1.1, signaling that the postfit prefers to increase
  that neutrino flux by 10%.
+ Equivalently, this means 
+\begin_inset Formula $N_{\nu}^{\prime}$
+\end_inset
+
+ is 10% greater than 
+\begin_inset Formula $N_{\nu}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Branch P0DBANFFFluxBinsTable
 inverted 0
-status open
+status collapsed
 
 \begin_layout Standard
 \align center
@@ -5587,16 +5661,7 @@ toy experiments
 
 \begin_layout Standard
 All the detector systematics are evaluated either as observable variations
- or weights.
- An observable variation affects the physical observables of selected events
- like the calculated energy loss of a track in the 
-\begin_inset Formula $\pod$
-\end_inset
-
-.
- A weight is a multiplicative factor that alters the normalization of a
- single event in a bin.
- The list of detector systematics used in this analysis is given in 
+ or weights as given in given in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:List-of-detector"
@@ -5607,7 +5672,20 @@ noprefix "false"
 \end_inset
 
 .
- The TPC systematics are fully discussed in the following reference
+ An observable variation affects the physical observables of selected events
+ like the calculated energy loss of a track in the 
+\begin_inset Formula $\pod$
+\end_inset
+
+.
+ A weight is a multiplicative factor that alters the normalization of a
+ single event in a bin.
+ There are detector systematics that affect the 
+\begin_inset Formula $\pod$
+\end_inset
+
+-only, TPC-only, or both.
+ The TPC-only systematics are fully discussed in the following reference
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Abe:2017vif"
@@ -6317,6 +6395,41 @@ After many toy experiments which vary the observables
  and their weights, the number of varied events per fit bin can be examined.
  From here, the observable normalization (obsnorm) and covariance terms
  are calculated.
+ The bin normalization terms, 
+\begin_inset Formula $d_{i}$
+\end_inset
+
+, are defined as
+\begin_inset Formula 
+\begin{equation}
+d_{i}=\frac{\overline{N}_{i}}{N_{i}},\label{eq:obsnormdef}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $N_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $\overline{N}_{i}$
+\end_inset
+
+ are the nominal/predicted and varied mean event rates for the lepton candidate,
+ respectively, in the 
+\begin_inset Formula $i$
+\end_inset
+
+th 
+\begin_inset Formula $\left(p,\cos\theta\right)$
+\end_inset
+
+ bin.
+ 
+\shape italic
+As stated before, all the penalty parameters are fractional and dimensionless
+\shape default
+.
  The detector covariance matrix, 
 \begin_inset Formula $\sigma_{\text{Det}}^{2}$
 \end_inset
@@ -6332,7 +6445,7 @@ After many toy experiments which vary the observables
  is given as
 \begin_inset Formula 
 \begin{equation}
-\sigma_{\text{Det}}^{2}\left(x,y\right)=\left[\frac{1}{x_{\text{Nom}}}\right]\left[\frac{1}{y_{\text{Nom}}}\right]\left(\sigma_{\text{Cov}}^{2}\left(x,y\right)+\sigma_{\text{Stat}}^{2}\left(x,y\right)\right),\label{eq:detectorcovariance}
+\sigma_{\text{Det}}^{2}\left(x,y\right)=\left[\frac{1}{N_{x}}\right]\left[\frac{1}{N_{y}}\right]\left(\sigma_{\text{Cov}}^{2}\left(x,y\right)+\sigma_{\text{Stat}}^{2}\left(x,y\right)\right),\label{eq:detectorcovariance}
 \end{equation}
 
 \end_inset
@@ -6341,19 +6454,11 @@ where
 \begin_inset Quotes eld
 \end_inset
 
-Nom
-\begin_inset Quotes erd
-\end_inset
-
-, 
-\begin_inset Quotes eld
-\end_inset
-
 Cov
 \begin_inset Quotes erd
 \end_inset
 
-, and 
+ and 
 \begin_inset Quotes eld
 \end_inset
 
@@ -6361,8 +6466,7 @@ Stat
 \begin_inset Quotes erd
 \end_inset
 
- refer to the nominal MC prediction, covariance, and statistical uncertainties
- for bins 
+ refer to the covariance and statistical uncertainties for bins 
 \begin_inset Formula $x$
 \end_inset
 
@@ -6380,7 +6484,7 @@ Stat
  is
 \begin_inset Formula 
 \begin{equation}
-x_{\text{Nom}}=\sum_{k=1}^{N_{x}^{\text{MC}}}w_{k},\label{eq:bin-nominal}
+N_{x}=\sum_{k=1}^{N_{x}^{\text{MC}}}w_{k},\label{eq:bin-nominal}
 \end{equation}
 
 \end_inset
@@ -6389,7 +6493,11 @@ where
 \begin_inset Formula $N_{x}^{\text{MC}}$
 \end_inset
 
- being the number of predicted MC events in the bin and 
+ being the number of unweighted MC events in the 
+\begin_inset Formula $x$
+\end_inset
+
+th bin and 
 \begin_inset Formula $w_{k}$
 \end_inset
 
@@ -6397,7 +6505,26 @@ where
 \begin_inset Formula $k$
 \end_inset
 
-th event (see 
+th event.
+ The weights used in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:bin-nominal"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ are 
+\begin_inset Formula 
+\[
+w_{k}=w^{\text{POT}}\times w^{\text{Flux}}\times w^{\text{xsec}}
+\]
+
+\end_inset
+
+(see 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:n-predicted-BANFF"
@@ -6411,7 +6538,7 @@ noprefix "false"
  The covariance and statistical terms are given by
 \begin_inset Formula 
 \begin{equation}
-\begin{aligned}\sigma_{\text{Cov}}^{2}\left(x,y\right) & =\frac{1}{N_{\text{Toy}}}\sum_{t=1}^{N_{\text{Toy}}}\left(x_{t}-\overline{x}\right)\left(y_{t}-\overline{y}\right)\\
+\begin{aligned}\sigma_{\text{Cov}}^{2}\left(x,y\right) & =\frac{1}{N_{\text{Toy}}}\sum_{t=1}^{N_{\text{Toy}}}\left(N_{x,t}-\overline{N}_{x}\right)\left(N_{y,t}-\overline{N}_{y}\right)\\
 \sigma_{\text{Stat}}^{2}\left(x,y\right) & =\delta\left(x,y\right)\sum_{k=1}^{N_{x}^{\text{MC}}}w_{k}^{2},
 \end{aligned}
 \label{eq:detector-cov-terms}
@@ -6424,20 +6551,31 @@ where
 \end_inset
 
  is the number of toy experiments, 
-\begin_inset Formula $\overline{x}/\overline{y}$
+\begin_inset Formula $N_{x,t}$
 \end_inset
 
- is the mean of the all the toy experiments in bin 
-\begin_inset Formula $x/y$
+/
+\begin_inset Formula $N_{y,t}$
 \end_inset
 
-, and 
+ is the number of events predicted the 
+\begin_inset Formula $x$
+\end_inset
+
+/
+\begin_inset Formula $y$
+\end_inset
+
+th bin for the 
+\begin_inset Formula $t$
+\end_inset
+
+th toy experiments, and 
 \begin_inset Formula $\delta(x,y)$
 \end_inset
 
  is the Kronecker delta function.
  Additional uncertainties would be added to the covariance terms in quadrature.
- This will be
 \end_layout
 
 \begin_layout Standard
@@ -6468,7 +6606,7 @@ similar
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Float figure
@@ -6626,7 +6764,7 @@ c map while considering external constraints from other sensing data.
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Float figure
@@ -6788,7 +6926,7 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Float figure
@@ -6930,8 +7068,9 @@ A considerable drawback to designing normalizations in this way of varying
 \end_inset
 
  in the same way.
- There are non-symmetric systematics and especially non normal in their
- effects, and so the covariance matrix from 
+ There are non-symmetric systematics and are especially non normal in their
+ effects.
+ Therefore, the covariance matrix from 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:detectorcovariance"
@@ -6942,8 +7081,7 @@ noprefix "false"
 \end_inset
 
  is not an exact representation of the detector systematics.
- To demonstrate this, results of varied number of events in are shown in
- 
+ To demonstrate this, results of varied number of events are shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:Representative-event-variations"
@@ -6953,18 +7091,66 @@ noprefix "false"
 
 \end_inset
 
- with an without the 
+ with all the varied toy experiment results are provided in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "app:NSigmaVariations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+We can also understand the effects the 
 \begin_inset Formula $\pod$
 \end_inset
 
- energy loss resolution systematic enabled.
+ energy loss resolution (ELossRes) correction and systematic on the bin
+ normalizations, which was identified in the 
+\begin_inset Formula $\numu$
+\end_inset
+
+ CC-
+\begin_inset Formula $0\pi$
+\end_inset
+
+ analysis as the leading uncertainty in the detector systematics.
+ In 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Representative-event-variations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, an additional red curve is shown in each sub-figure to represent disabling
+ the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ ELossRes correction and systematic variation in the toy experiments.
+ We see this systematic broadens the number of possible events in a normalizatio
+n bin and its correction shifts the bin mean.
+ This is expected since one or more particles originating from a neutrino
+ interaction in the water could remove reconstructed tracks from the event
+ when varying the systematic.
+ Observed in most cases is that the ELossRes distribution is below the mean
+ of all variations included in the toy experiments.
+ When that is not the case, however, the selection purity in that normalization
+ bin is comparatively lower.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -7816,6 +8002,56 @@ literal "false"
 .
 \end_layout
 
+\begin_layout Standard
+There are three types of cross section parameters: shape, normalization,
+ and functional.
+ A cross section shape parameter is defined as a fractional shift in the
+ location of a certain feature in some parameter space with a prefit value
+ of zero (0).
+ A cross section normalization parameter, 
+\begin_inset Formula $x_{i}^{\text{Norm}}$
+\end_inset
+
+, is defined as
+\begin_inset Formula 
+\begin{equation}
+x_{i}^{\text{Norm}}=\frac{p^{\prime}}{p},\label{eq:xsecnormdef}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $p$
+\end_inset
+
+ and 
+\begin_inset Formula $p^{\prime}$
+\end_inset
+
+ are NEUT nominal and ND constrained parameters, respectively.
+ The prefit values for the normalization parameters are usually around one
+ (1).
+ And finally a functional parameters are just normalization factors for
+ basis functions in a particular parameter space.
+ For example the parameters 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ are normalizations for the slope and intercept for a linear curve 
+\begin_inset Formula $f(x)=$
+\end_inset
+
+
+\begin_inset Formula $Ax+B$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Subsubsection
 Exclusive Channels
 \end_layout
@@ -7859,7 +8095,7 @@ literal "false"
 
 
 \color inherit
- is important historically since it has one unknow parameter called the
+ is important historically since it has one unknown parameter called the
  Axial Mass, 
 \begin_inset Formula $M_{A}^{\text{QE}}$
 \end_inset
@@ -8521,7 +8757,7 @@ High energy INEL
 
 \end_inset
 </cell>
-<cell multirow="3" alignment="center" valignment="middle" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8571,11 +8807,11 @@ Pion PROD
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+shape
 \end_layout
 
 \end_inset
@@ -9643,7 +9879,7 @@ E scale
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+(functional)
 \end_layout
 
 \end_inset
@@ -9718,7 +9954,7 @@ Rein-Seghal
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $-0.0495\pm0.148$
+\begin_inset Formula $0.96\pm0.148$
 \end_inset
 
 
@@ -9779,7 +10015,7 @@ resonant
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.1263\pm0.157$
+\begin_inset Formula $1.1263\pm0.157$
 \end_inset
 
 
@@ -9891,7 +10127,7 @@ I=
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $-0.261\pm0.307$
+\begin_inset Formula $0.74\pm0.307$
 \end_inset
 
 
@@ -10048,7 +10284,7 @@ CC-
 \begin_inset Text
 
 \begin_layout Plain Layout
-CC-DIS
+CC-DIS shape location
 \end_layout
 
 \end_inset
