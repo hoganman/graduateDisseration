@@ -155,6 +155,34 @@
 \begin_body
 
 \begin_layout Standard
+This appendix is a tabulation of variations of the cross section parameters
+ and their uncorrelated affect on the analysis samples.
+ Note that the 
+\begin_inset Quotes eld
+\end_inset
+
+nominal
+\begin_inset Quotes erd
+\end_inset
+
+ column refers to all weighted events in the sample.
+ When a 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\pm1\sigma$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ variation is applied, the corresponding fractional change is reported.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 

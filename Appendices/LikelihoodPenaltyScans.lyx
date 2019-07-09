@@ -155,10 +155,26 @@
 \begin_body
 
 \begin_layout Standard
+This appendix examines the 
+\begin_inset Formula $\pod$
+\end_inset
+
+-only BANFF fit penalty terms 
+\begin_inset Formula $\Delta\chi_{\text{Flux}}^{2}+\Delta\chi_{\text{xsec}}^{2}+\Delta\chi_{\text{Det}}^{2}$
+\end_inset
+
+ response (scans) to variations in flux and cross section parameters.
+ In addition, comparison scans are provided for the FGD MaCH3/BANFF 2017
+ analysis.
+ In all cases, the penalty terms overlap indicating the parameters have
+ the same prior constraints between analyses.
+\end_layout
+
+\begin_layout Standard
 \begin_inset External
 	template PDFPages
 	filename Figures/LikeLihoodScans/p0d_vs_mach3_penalty.pdf
-	extra LaTeX "nup=3x4,pages={1-50,101-112,115-122,125-129},pagecommand=\thispagestyle{plain}"
+	extra LaTeX "nup=3x4,pages={1-122,125-129},pagecommand=\thispagestyle{plain}"
 	width 2in
 
 \end_inset

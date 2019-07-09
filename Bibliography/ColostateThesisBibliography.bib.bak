@@ -890,6 +890,18 @@
   Timestamp                = {2019.06.18}
 }
 
+@Standard{Bienstock2017,
+  Title                    = {Constraining the Flux and Cross Section Models with Data from the ND280 Detector using FGD1 and FGD2 for the 2017 Joint Oscillation Analysis},
+  Institution              = {LPNHE-Paris, Rutherford Appleton Laboratory, TRIUMF, Imperial College London},
+  Organization             = {T2K Experiment},
+  Author                   = {Bienstock, S. and Kaboth, A. and Scott, M. and Wret, C.},
+  Note                     = {T2K Technical Note 324},
+  Year                     = {2017},
+
+  Owner                    = {mhogan},
+  Timestamp                = {2019.07.08}
+}
+
 @Standard{Bienstock2018,
   Title                    = {{Assessing the effect of cross-section model uncertainties on the T2K oscillation analyses with simulated data studies using the BANFF, MaCh3, P-Theta and VALOR frameworks}},
   Author                   = {Bienstock, S. and others},
@@ -1085,6 +1097,18 @@
   Year                     = {2006},
   Pages                    = {2235-2242},
   Volume                   = {B37}
+}
+
+@Article{Cowan:2010js,
+  Title                    = {{Asymptotic formulae for likelihood-based tests of new physics}},
+  Author                   = {Cowan, Glen and Cranmer, Kyle and Gross, Eilam and Vitells, Ofer},
+  Journal                  = {Eur. Phys. J.},
+  Year                     = {2011},
+  Note                     = {[Erratum: Eur. Phys. J.C73,2501(2013)]},
+  Pages                    = {1554},
+  Volume                   = {C71},
+
+  Doi                      = {10.1140/epjc/s10052-011-1554-0, 10.1140/epjc/s10052-013-2501-z}
 }
 
 @Article{dagostini2,

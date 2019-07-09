@@ -155,6 +155,27 @@
 \begin_body
 
 \begin_layout Standard
+In this appendix is the collection of all toy experiments used to make observabl
+e normalization parameters and detector covariance matrix.
+ Each of the observable bin relevant samples and 
+\begin_inset Formula $(p,\cos\theta)$
+\end_inset
+
+ edges are listed in the plots.
+ The nominal MC (Nominal) predicted value and varied mean are shown as different
+ly dashed lines.
+ A normal curve, whose variance was extracted from the covariance matrix
+ itself, is shown to illustrate the estimate on the bin normalization uncertaint
+y.
+ In addition, toy experiment variations with the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ energy loss resolution off (E-Loss Resol Off) is shown to demonstrate the
+ absence of the energy correction and its affect on when not varied.
+\end_layout
+
+\begin_layout Standard
 \begin_inset External
 	template PDFPages
 	filename Figures/ToyExperiments/P0DObsnorms_all_and_P0DELossResolOff.pdf

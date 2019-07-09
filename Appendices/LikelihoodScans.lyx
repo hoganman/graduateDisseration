@@ -155,11 +155,278 @@
 \begin_body
 
 \begin_layout Standard
+This appendix examines the 
+\begin_inset Formula $\pod$
+\end_inset
+
+-only BANFF fit likelihood term 
+\begin_inset Formula $\Delta\chi_{\text{LLR}}^{2}=\chi_{\text{sample}}^{2}$
+\end_inset
+
+ response (scans) to variations in flux and cross section parameters.
+ For the cross section terms, the scans shapes correspond to the shape of
+ the spline weight.
+ In addition, comparison scans are provided for the FGD MaCH3 2017 analysis.
+ Extensive comparisons were made to ensure that the FGD MaCh3 and FGD BANFF
+ analyses have identical splines.
+ So it is an equal comparison with the FGD BANFF as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "chap:P0DinBANFF"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ In some cases, the 
+\begin_inset Formula $\pod$
+\end_inset
+
+-only scans indicate higher sensitivity to parameters than the FGD.
+\end_layout
+
+\begin_layout Standard
+These were generously produced by Clarence Wret (c.wret@rochester.edu) of
+ the University of Rochester.
+ Due to a bug in plotting script, the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ scans 2p2h shape location for 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ce{^{12}C}
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ce{^{16}O}
+\end_layout
+
+\end_inset
+
+ were empty.
+ The MaCH3 inputs were as faithfully reproduced as possible using quadratic
+ functions and drawn with the correct 
+\begin_inset Formula $\pod$
+\end_inset
+
+ scans as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Correct-shape-scans"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+For the flux scan terms, only the ND280 (fit indices 0 - 49) terms are shown
+ since they have data to constrain them.
+ In other words, the log-likelihood scans are flat with respect to SK flux
+ term variations.
+\end_layout
+
+\begin_layout Standard
+Some of cross section parameter splines are reflected about a point in order
+ to properly calculate correlations between parameters.
+ In previous fits to data, the 2p2h 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ce{^{12}C}
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ce{^{16}O}
+\end_layout
+
+\end_inset
+
+ shape location terms hit their physical boundaries at +1.
+ The result was that the fitter MINUIT inaccurately calculated the Hess
+ matrix.
+ The decision was made to reflect, also called 
+\begin_inset Quotes eld
+\end_inset
+
+mirroring
+\begin_inset Quotes erd
+\end_inset
+
+, the splines about a certain point to expand the limit.
+ Tests showed that this did not affect the postfit results for any parameters,
+ but the correlations between all other parameters was calculated to less
+ than 1%
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bienstock2017"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 \begin_inset External
 	template PDFPages
 	filename Figures/LikeLihoodScans/p0d_vs_mach3_sample.pdf
-	extra LaTeX "nup=3x4,pages={1-50,101-112,115-122,125-129},pagecommand=\thispagestyle{plain}"
+	extra LaTeX "nup=3x4,pages={1-50,101-122,125-129},pagecommand=\thispagestyle{plain}"
 	width 2in
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/LikeLihoodScans/2p2h_shape_C_sam.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/LikeLihoodScans/2p2h_shape_O_sam.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Correct 
+\begin_inset Formula $\pod$
+\end_inset
+
+ scans with faithful reproductions of the MaCh3 scans for the 2p2h shape
+ location cross section parameters.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Corrected 2p2h Shape Location Scans
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Correct-shape-scans"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \end_inset
 

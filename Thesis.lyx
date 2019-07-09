@@ -455,7 +455,7 @@ name "chap:Introduction"
 
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "Chapters/Introduction.lyx"
 
 \end_inset
@@ -486,7 +486,7 @@ name "chap:BANFF-Likelihood"
 
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "Chapters/BANFFLikelihood.lyx"
 
 \end_inset
@@ -530,7 +530,7 @@ name "chap:P0DSelections"
 
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "Chapters/Selections.lyx"
 
 \end_inset
@@ -574,7 +574,7 @@ name "chap:P0DinBANFF"
 
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "Chapters/P0DBANFFParameterization.lyx"
 
 \end_inset
@@ -598,7 +598,7 @@ Fitter Validation
 
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "Chapters/FitterValidation.lyx"
 
 \end_inset
@@ -622,7 +622,7 @@ Fitter Results
 
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "Chapters/FitterResults.lyx"
 
 \end_inset
@@ -658,7 +658,7 @@ podtitle{}
 
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "Chapters/P0DFGDComparisons.lyx"
 
 \end_inset
@@ -682,7 +682,7 @@ Discussion
 
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "Chapters/Discussion.lyx"
 
 \end_inset
@@ -718,7 +718,7 @@ Application of Weights
 
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "Appendices/ApplicationOfWeights.lyx"
 
 \end_inset
@@ -762,7 +762,7 @@ name "app:obsnorm"
 
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "Appendices/Obsnorms.lyx"
 
 \end_inset
@@ -793,7 +793,7 @@ name "app:Toy-Experiment-Variations"
 
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "Appendices/ToyExperiments.lyx"
 
 \end_inset
@@ -824,7 +824,7 @@ name "app:NSigmaVariations"
 
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "Appendices/NSigmaVariations.lyx"
 
 \end_inset
@@ -843,12 +843,19 @@ inverted 0
 status open
 
 \begin_layout Chapter
-BANFF Fit Test Statistic Sample Scans
+Log-Likelihood Sample Scans
+\begin_inset CommandInset label
+LatexCommand label
+name "app:Log-Likelihood-Sample-Scans"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "Appendices/LikelihoodScans.lyx"
 
 \end_inset
@@ -867,12 +874,19 @@ inverted 0
 status open
 
 \begin_layout Chapter
-BANFF Fit Test Statistic Penalty Scans
+Log-Likelihood Penalty Scans
+\begin_inset CommandInset label
+LatexCommand label
+name "app:Log-Likelihood-Penalty-Scans"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "Appendices/LikelihoodPenaltyScans.lyx"
 
 \end_inset

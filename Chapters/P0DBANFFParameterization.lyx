@@ -1040,6 +1040,37 @@ noprefix "false"
 \end_inset
 
 , is provided by the T2K flux group.
+ Shown also in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:BANFF-pre-fit-flux-covariance"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is the (Pearson) correlation coefficient matrix which is defined as 
+\begin_inset Formula 
+\begin{equation}
+\rho_{x,y}=\frac{V_{x,y}}{\sqrt{V_{x,x}V_{y,y}}},\label{eq:pearson-correlation}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $V$
+\end_inset
+
+ is the covariance matrix and 
+\begin_inset Formula $x/y$
+\end_inset
+
+ are bins in 
+\begin_inset Formula $V$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -7871,7 +7902,7 @@ status open
 \begin_inset Graphics
 	filename Figures/P0DBANFFParameterization/P0DMass_TPCMatch_study/obsNorm_cov_updated.png
 	lyxscale 50
-	width 45text%
+	height 30theight%
 
 \end_inset
 
@@ -7882,7 +7913,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Updated Covariance Matrix
+Updated detector covariance matrix
 \end_layout
 
 \end_inset
@@ -7897,6 +7928,46 @@ Updated Covariance Matrix
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/P0DBANFFParameterization/corr_dete.png
+	lyxscale 50
+	height 30theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Updated detector correlation matrix
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Float figure
 wide false
 sideways false
@@ -7907,7 +7978,7 @@ status open
 \begin_inset Graphics
 	filename Figures/P0DBANFFParameterization/P0DMass_TPCMatch_study/obsNorm_cov_updatedoriginaldifference.png
 	lyxscale 50
-	width 45text%
+	height 30theight%
 
 \end_inset
 
@@ -7918,7 +7989,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Difference from Original Covariance
+Difference from original detector covariance matrix
 \end_layout
 
 \end_inset
@@ -7935,8 +8006,11 @@ Difference from Original Covariance
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Updated detector covariance matrix (a) and the difference from the original
- (b).
+Updated detector covariance (a), correlation (b), and the difference from
+ the original (c) covariance matrix.
+ Note that the parameter numbers here are offset from their fit index value
+ by 100.
+ 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:The-updated-detector-covariance"
@@ -8329,15 +8403,15 @@ literal "false"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figures/BANFFLikelihood/BANFFXsecPrefitCorrelation.png
 	lyxscale 50
-	width 49text%
-	height 25theight%
+	width 95text%
+	height 95theight%
 	keepAspectRatio
 
 \end_inset
@@ -8434,7 +8508,7 @@ red font
 \color inherit
 , then the parameter had a flat prior assigned.
  A model parameter with an asterisk 
-\begin_inset Formula $(^{*})$
+\begin_inset Formula $\left(^{*}\right)$
 \end_inset
 
  next to it is fixed in the fit.
@@ -8770,7 +8844,7 @@ FSI
 \begin_inset Text
 
 \begin_layout Plain Layout
-Pion PROD
+PROD
 \end_layout
 
 \end_inset
@@ -8820,7 +8894,7 @@ shape
 \begin_inset Text
 
 \begin_layout Plain Layout
-Pion ABS
+ABS
 \end_layout
 
 \end_inset
@@ -9038,11 +9112,11 @@ Smith
 \begin_inset Formula $M_{A}^{\text{QE}}$
 \end_inset
 
- (GeV/
-\begin_inset Formula $\csq$
+ 
+\begin_inset Formula $\left(\text{GeV/}\csq\right)$
 \end_inset
 
-)
+
 \end_layout
 
 \end_inset
@@ -9160,7 +9234,11 @@ RFG
 \begin_inset Formula $p_{F}^{C}$
 \end_inset
 
- (MeV/c)
+ 
+\begin_inset Formula $\left(\text{MeV/c}\right)$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -9276,7 +9354,11 @@ RFG
 \begin_inset Formula $p_{F}^{O}$
 \end_inset
 
- (MeV/c)
+ 
+\begin_inset Formula $\left(\text{MeV/c}\right)$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -9563,7 +9645,7 @@ status open
 
 
 \backslash
-ce{^{12}O}
+ce{^{16}C}
 \end_layout
 
 \end_inset
@@ -9631,7 +9713,7 @@ status open
 
 
 \backslash
-ce{^{16}C}
+ce{^{12}O}
 \end_layout
 
 \end_inset
@@ -10059,11 +10141,11 @@ prodction
 \begin_inset Formula $M_{A}^{\text{Res}}$
 \end_inset
 
- (GeV/
-\begin_inset Formula $\csq$
+ 
+\begin_inset Formula $\left(\text{GeV/}\csq\right)$
 \end_inset
 
-)
+
 \end_layout
 
 \end_inset
