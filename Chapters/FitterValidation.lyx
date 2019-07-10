@@ -184,11 +184,11 @@
 \begin_body
 
 \begin_layout Standard
-This chapter will present the validation of the BANFF fit using the MC as
- input.
+This chapter will present the checks, tests and validations of the BANFF
+ fit using the MC as input.
  The first such test is using the nominal MC as the data, referred to as
  an Asimov data fit.
- The following two validation tests are fake data sets.
+ The next are two validation tests using two different "fake" data sets.
  One alters the flux prediction and is referred to as the High Energy Neutrino
  Flux Variation fake data set.
  The other is the Single Pion 
@@ -323,34 +323,37 @@ Event Rate
 \end_layout
 
 \begin_layout Standard
-Shown in Figure
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-~
-\backslash
-ref{tab:eventtable}
-\end_layout
+Shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:eventtable"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
  is the event rates for the various samples for the Asimov fit.
- Sequences of weights are applied to understand their affect on the analysis.
- The 
-\begin_inset Quotes eld
+ The data events column refers to real T2K data collected in the sample
+ with the rest are MC events.
+ There are a weights that correct differences between the data and MC.
+ The POT weight normalizes the MC event rate to data rate.
+ The other weights, which where discussed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "chap:BANFF-Likelihood"
+plural "false"
+caps "false"
+noprefix "false"
+
 \end_inset
 
-Data
-\begin_inset Quotes erd
-\end_inset
-
- column refers to real T2K data collected in the sample with the rest are
- MC events.
- We see that after applying the POT, flux and cross section weights and
- detector corrections, the prefit event rate is very similar to the data
- rate.
+, are the flux, cross section, and detector corrections.
+ We see that applying the POT weight scales the MC event rate close to that
+ of the data.
+ The other weights are finer corrections to the rate from known systematics.
+ Application of all the weights is the prefit event rate and is collectively
+ the Asimov data set.
 \end_layout
 
 \begin_layout Standard
@@ -377,9 +380,112 @@ begin{landscape}
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
 \begin_inset CommandInset include
 LatexCommand input
 filename "Includes/Validation/EventTable.tex"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Event rate table for Asimov set.
+ The 
+\begin_inset Quotes eld
+\end_inset
+
+Raw MC
+\begin_inset Quotes erd
+\end_inset
+
+ column refers the number of events in the sample from the nominal MC prediction
+ without any weights applied.
+ From left to right, applications of weights are applied to understand their
+ affect on the samples.
+ The 
+\begin_inset Quotes eld
+\end_inset
+
+POT only
+\begin_inset Quotes erd
+\end_inset
+
+ column refers to applying the POT weight to all events.
+ Columns with 
+\begin_inset Quotes eld
+\end_inset
+
+POT+Flux
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+POT+xsec
+\begin_inset Quotes erd
+\end_inset
+
+, and 
+\begin_inset Quotes eld
+\end_inset
+
+POT+Det
+\begin_inset Quotes erd
+\end_inset
+
+ refer to applying the POT weight together with the flux, cross section,
+ and detector weights, respectively.
+ The 
+\begin_inset Quotes eld
+\end_inset
+
+Prefit
+\begin_inset Quotes erd
+\end_inset
+
+ column has the POT, flux, cross section, and detector (POT+Flux+xsec+Det)
+ weights all multiplied together.
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Event Rate Table for Asimov Set
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:eventtable"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \end_inset
 
@@ -430,7 +536,7 @@ To ensure the cross section spline weight functions were functioning properly,
 \end_inset
 
  values.
- The results of the variations are shown in 
+ The results of the variations are shown in Appendix 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "app:NSigmaVariations"
@@ -480,13 +586,13 @@ noprefix "false"
 \end_inset
 
 -only and FGD-only analyses.
- Also that the 
+ Also observed is that the 
 \begin_inset Formula $\pod$
 \end_inset
 
--only data set has similar sensitivity with flux parameters with that of
- the FGD-only data.
- The complete set of scans are shown in 
+-only data has similar sensitivity and shape dependence on the flux parameters
+ with that of the FGD-only data.
+ The complete set of scans are shown in Appendix 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "app:Log-Likelihood-Sample-Scans"
@@ -496,7 +602,7 @@ noprefix "false"
 
 \end_inset
 
- and 
+ and Appendix 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "app:Log-Likelihood-Penalty-Scans"
@@ -513,14 +619,14 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -538,7 +644,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Flux parameter 
+Flux normalization 
 \series bold
 
 \begin_inset Formula $b_{3}$
@@ -564,7 +670,7 @@ Flux parameter
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -582,7 +688,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-FSI low energy inelastic 
+FSI low energy inelastic shape location 
 \begin_inset Formula $\Delta\chi_{\text{LLR}}^{2}$
 \end_inset
 
@@ -604,7 +710,7 @@ FSI low energy inelastic
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -622,7 +728,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Flux parameter 
+Flux normalization 
 \series bold
 
 \begin_inset Formula $b_{3}$
@@ -648,7 +754,7 @@ Flux parameter
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -666,7 +772,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-FSI low energy inelastic 
+FSI low energy inelastic shape location 
 \begin_inset Formula $\Delta\chi_{\text{xsec}}^{2}$
 \end_inset
 
@@ -693,7 +799,7 @@ Comparison of
 
  scans for variations in fit parameters in the Asimov set.
  Two parameters are varied: parameter 3 (left) corresponding to a flux bin
- and 562 (right) corresponding to a FSI parameter.
+ normalization and 562 (right) corresponding to a FSI shape location parameter.
  The top panel shows the change in the LLR test statistic 
 \begin_inset Formula $\Delta\chi_{\text{LLR}}^{2}$
 \end_inset
@@ -752,7 +858,7 @@ name "fig:TestStatisticScans"
 \begin_layout Standard
 \begin_inset Branch ValidationAsimovFitResults
 inverted 0
-status open
+status collapsed
 
 \begin_layout Subsection
 Fit Results
@@ -1931,6 +2037,35 @@ In this section, we examine two fake data studies to test of BANFF framework
 .
 \end_layout
 
+\begin_layout Standard
+While other fake data sets could be generated that are more or less similar
+ to the Asimov data set, that is not the purpose of this analysis and fake
+ data studies.
+ 
+\shape italic
+The purpose of these tests is to show the fit can converge when provided
+ with non-Asimov data sets
+\shape default
+.
+ Evidence of the official BANFF fit not converging is known using fake data
+ fits in the official BANFF FGD-only analysis.
+ These fake data sets are generated by altering the Asimov data set through
+ random and uncorrelated variations of all the flux, cross section, and
+ detector systematic weights together.
+ So convergence is not assured in all situations, but is possible.
+ The information it does provide is possible biases in the fit results for
+ given systematic parameters.
+ So by demonstrating the BANFF fit converges with 
+\begin_inset Formula $\pod$
+\end_inset
+
+-only fake data, we establish that a credible 
+\begin_inset Formula $\pod$
+\end_inset
+
+-only data fit result is possible.
+\end_layout
+
 \begin_layout Subsection
 High Energy 
 \begin_inset ERT
@@ -2297,9 +2432,11 @@ noprefix "false"
 
  flux parameters as well.
  While we saw that the flux and hence event rate was not changed in the
- RHC samples, the flux parameters are also slightly affected but still well
- within prefit uncertainties.
- The same is true of the cross section and FSI parameters.
+ RHC samples, the RHC flux parameters are also slightly affected.
+ However, the RHC flux parameters are still well within prefit uncertainties.
+ The statement is true for the cross section and FSI parameters.
+ Therefore we can conclude that the fit prefers to resolve nonphysical changes
+ in the flux with changes in correlated flux parameters.
 \end_layout
 
 \begin_layout Standard
@@ -2503,44 +2640,21 @@ name "fig:Postfit-numu-flux-fake-data"
 \end_layout
 
 \begin_layout Subsection
-Single Pion 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texorpdfstring{$C_A^5$}{CA5}
-\end_layout
-
-\end_inset
-
- Parameter Variation
+Single Pion Event Weight Variation
 \end_layout
 
 \begin_layout Standard
-This fake data set arbitrarily increases the Rein-Seghal resonant single
- pion parameter 
+This fake data set arbitrarily increases the number of resonant single pion
+ events by +25%.
+ This was implemented by taking all true NEUT CC-
+\begin_inset Formula $1\pi$
+\end_inset
+
+ events, extracting the event weight from the 
 \begin_inset Formula $C_{A}^{5}$
 \end_inset
 
- weight by +25%.
- As was seen in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "app:NSigmaVariations"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-, increases in 
-\begin_inset Formula $C_{A}^{5}$
-\end_inset
-
- will increase the event rate in all samples.
+ parameter, and increasing its event weight by +25%.
  This is what is observed in the lepton candidate momentum distributions
  as shown in 
 \begin_inset CommandInset ref
@@ -2553,8 +2667,53 @@ noprefix "false"
 \end_inset
 
 .
+ According to the Graczyk-Sobczyk model, the event rate can be singly absorbed
+ in 
+\begin_inset Formula $C_{A}^{5}$
+\end_inset
+
+ since the cross section depends on 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:CC1piaxialformfactor"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ However as seen in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "app:NSigmaVariations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, increases in any CC-
+\begin_inset Formula $1\pi$
+\end_inset
+
+ parameter will increase the event rate.
+ Additionally, 
+\begin_inset Formula $C_{A}^{5}$
+\end_inset
+
+ and 
+\begin_inset Formula $M_{A}^{\text{Res}}$
+\end_inset
+
+ are anticorrelated with one another meaning that these parameters will
+ be forced to shift in opposite directions together.
  Given the postfit results from the previous fake data fit, we should expect
- to see more parameters variations.
+ to see more than just the CC-
+\begin_inset Formula $1\pi$
+\end_inset
+
+ parameters to vary.
 \end_layout
 
 \begin_layout Standard
@@ -2574,7 +2733,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Figures/Validation/CA5Variation/NuMu1Trk.png
-	lyxscale 25
+	lyxscale 50
 	width 3in
 	height 2.25in
 
@@ -2863,7 +3022,7 @@ noprefix "false"
 \end_inset
 
 .
- We observe that while the CC-
+ We observe that the CC-
 \begin_inset Formula $1\pi$
 \end_inset
 
@@ -2871,22 +3030,23 @@ noprefix "false"
 \begin_inset Formula $C_{A}^{5}$
 \end_inset
 
- increased by about 10%, or about its 
-\begin_inset Formula $+1\sigma$
+ increased by ~10%, but this is not enough to account for the input fake
+ data shift.
+ We also notice that due to anticorrelations with 
+\begin_inset Formula $M_{A}^{\text{Res}}$
 \end_inset
 
- value, all the flux parameters also increased around 2-3%.
- This suggests that large deviations in 
-\begin_inset Formula $C_{A}^{5}$
+, it was decreased by about several percent.
+ What the fit prefers is to increase the Isospin=
+\begin_inset Formula $\nicefrac{1}{2}$
 \end_inset
 
- were disfavored and increasing all the flux parameters was preferred.
- In addition, since the 2p2h normalization parameters are unconstrained,
- their observed increase can account for increase in CC-
-\begin_inset Formula $1\pi$
-\end_inset
-
- events.
+ background, 2p2h normalization, and all the flux parameters.
+ Like the first fake data set, we see that in the presence of nonphysical
+ variations to the Physics, the fit prefers to spread out variations among
+ the other parameters.
+ However, this time the variations are shared among flux and cross section
+ parameters.
 \end_layout
 
 \begin_layout Standard
@@ -2978,7 +3138,6 @@ status open
 \align center
 \begin_inset Graphics
 	filename Figures/Validation/CA5Variation/XSec.png
-	lyxscale 50
 	width 45text%
 
 \end_inset
@@ -3105,6 +3264,11 @@ We have validated the BANFF fit in a variety of scenarios to test its robustness
  MC, how the flux and cross section parameters affect the samples.
  In the fake data sets, we saw the affect of penalty terms and correlations
  influencing the fit.
+ While more rigorous tests could establish where biases in the fit exist
+ or possible failure modes, these limitations are beyond the scope of this
+ thesis.
+ Instead, fit convergence with sensible results with has been established
+ with the fake data sets.
  We can now examine the 
 \begin_inset Formula $\pod$
 \end_inset

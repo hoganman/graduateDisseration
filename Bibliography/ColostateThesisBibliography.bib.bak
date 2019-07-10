@@ -12,6 +12,23 @@
   Timestamp                = {2019.06.26}
 }
 
+@Article{Abe2016,
+  Title                    = {{Measurement of Coherent pi(+) Production in Low Energy Neutrino-Carbon Scattering}},
+  Author                   = {Abe, K. and Others},
+  Journal                  = {{PHYSICAL REVIEW LETTERS}},
+  Year                     = {{2016}},
+
+  Month                    = {{NOV 4}},
+  Number                   = {{19}},
+  Volume                   = {{117}},
+
+  Address                  = {{ONE PHYSICS ELLIPSE, COLLEGE PK, MD 20740-3844 USA}},
+  Doi                      = {{10.1103/PhysRevLett.117.192501}},
+  Language                 = {{English}},
+  Publisher                = {{AMER PHYSICAL SOC}},
+  Type                     = {{Article}}
+}
+
 @Article{Abe:2018_CPV-T2K_a,
   Title                    = {Search for CP violation in Neutrino and Antineutrino Oscillations},
   Author                   = {K. Abe and others},
@@ -859,6 +876,23 @@
   Slaccitation             = {%%CITATION = HEP-PH/0506116;%%}
 }
 
+@Article{PhysRevD.76.113004,
+  Title                    = {Lepton mass effects in single pion production by neutrinos},
+  Author                   = {Berger, Ch. and Sehgal, L. M.},
+  Journal                  = {Phys. Rev. D},
+  Year                     = {2007},
+
+  Month                    = {Dec},
+  Pages                    = {113004},
+  Volume                   = {76},
+
+  Doi                      = {10.1103/PhysRevD.76.113004},
+  Issue                    = {11},
+  Numpages                 = {8},
+  Publisher                = {American Physical Society},
+  Url                      = {https://link.aps.org/doi/10.1103/PhysRevD.76.113004}
+}
+
 @Article{Betancourt:2017uso,
   Title                    = {{Direct Measurement of Nuclear Dependence of Charged
  Current Quasielastic-like Neutrino Interactions using
@@ -963,6 +997,18 @@
   Timestamp                = {2019.01.31}
 }
 
+@Article{Bradford2006,
+  Title                    = {A new parameterization of the nucleon elastic form factors},
+  Author                   = {Bradford, R. and Others},
+  Journal                  = {Nucl. Phys.},
+  Year                     = {2006},
+  Number                   = {127},
+  Volume                   = {B159},
+
+  Owner                    = {mhogan},
+  Timestamp                = {2019.07.09}
+}
+
 @Article{GEANT3,
   Author                   = {R. Brun and F. Carminati and S. Giani},
   Journal                  = {CERN-W5013},
@@ -1052,6 +1098,23 @@
 
   Owner                    = {mhogan},
   Timestamp                = {2019.01.26}
+}
+
+@Article{PhysRev.141.1298,
+  Title                    = {Nucleon Form Factors and Their Interpretation},
+  Author                   = {Chan, L. H. and Chen, K. W. and Dunning, J. R. and Ramsey, N. F. and Walker, J. K. and Wilson, Richard},
+  Journal                  = {Phys. Rev.},
+  Year                     = {1966},
+
+  Month                    = {Jan},
+  Pages                    = {1298--1307},
+  Volume                   = {141},
+
+  Doi                      = {10.1103/PhysRev.141.1298},
+  Issue                    = {4},
+  Numpages                 = {0},
+  Publisher                = {American Physical Society},
+  Url                      = {https://link.aps.org/doi/10.1103/PhysRev.141.1298}
 }
 
 @Article{e910,
@@ -1251,6 +1314,20 @@
   Primaryclass             = {hep-ph},
   Reportnumber             = {IFT-UAM/CSIC-18-112, YITP-SB-18-34},
   Slaccitation             = {%%CITATION = ARXIV:1811.05487;%%}
+}
+
+@Article{FAROUKI2012379,
+  Title                    = {The Bernstein polynomial basis: A centennial retrospective},
+  Author                   = {Rida T. Farouki},
+  Journal                  = {Computer Aided Geometric Design},
+  Year                     = {2012},
+  Number                   = {6},
+  Pages                    = {379 - 419},
+  Volume                   = {29},
+
+  Doi                      = {https://doi.org/10.1016/j.cagd.2012.03.001},
+  ISSN                     = {0167-8396},
+  Url                      = {http://www.sciencedirect.com/science/article/pii/S0167839612000192}
 }
 
 @Article{Ferrari:2005zk,
@@ -1503,6 +1580,68 @@
   Note                     = {arXiv:1310.4340}
 }
 
+@Article{PhysRevD.90.093001,
+  Title                    = {Electroweak form factors of the $\mathrm{\ensuremath{\Delta}}(1232)$ resonance},
+  Author                   = {Graczyk, Krzysztof M. and \ifmmode \dot{Z}\else \.{Z}\fi{}muda, Jakub and Sobczyk, Jan T.},
+  Journal                  = {Phys. Rev. D},
+  Year                     = {2014},
+
+  Month                    = {Nov},
+  Pages                    = {093001},
+  Volume                   = {90},
+
+  Doi                      = {10.1103/PhysRevD.90.093001},
+  Issue                    = {9},
+  Numpages                 = {11},
+  Publisher                = {American Physical Society},
+  Url                      = {https://link.aps.org/doi/10.1103/PhysRevD.90.093001}
+}
+
+@Article{Graczyk:2009qm,
+  Title                    = {{$C_A^5$ axial form factor from bubble chamber experiments}},
+  Author                   = {Graczyk, K. M. and Kielczewska, D. and Przewlocki, P. and Sobczyk, J. T.},
+  Journal                  = {Phys. Rev.},
+  Year                     = {2009},
+  Pages                    = {093001},
+  Volume                   = {D80},
+
+  Doi                      = {10.1103/PhysRevD.80.093001}
+}
+
+@Article{PhysRevD.77.053001,
+  Title                    = {Form factors in the quark resonance model},
+  Author                   = {Graczyk, Krzysztof M. and Sobczyk, Jan T.},
+  Journal                  = {Phys. Rev. D},
+  Year                     = {2008},
+
+  Month                    = {Mar},
+  Pages                    = {053001},
+  Volume                   = {77},
+
+  Doi                      = {10.1103/PhysRevD.77.053001},
+  Issue                    = {5},
+  Numpages                 = {12},
+  Publisher                = {American Physical Society},
+  Url                      = {https://link.aps.org/doi/10.1103/PhysRevD.77.053001}
+}
+
+@Article{PhysRevD.77.053003,
+  Title                    = {Lepton mass effects in weak charged current single pion production},
+  Author                   = {Graczyk, Krzysztof M. and Sobczyk, Jan T.},
+  Journal                  = {Phys. Rev. D},
+  Year                     = {2008},
+
+  Month                    = {Mar},
+  Pages                    = {053003},
+  Volume                   = {77},
+
+  Doi                      = {10.1103/PhysRevD.77.053003},
+  Issue                    = {5},
+  Numpages                 = {7},
+  Publisher                = {American Physical Society},
+  Url                      = {https://link.aps.org/doi/10.1103/PhysRevD.77.053003}
+}
+
 @Article{k2kma,
   Title                    = {Measurement of the quasielastic axial vector mass in neutrino interactions on oxygen},
   Author                   = {Gran, R. and others},
@@ -1663,6 +1802,23 @@
 
   Owner                    = {mhogan},
   Timestamp                = {2019.01.20}
+}
+
+@Article{PhysRevD.34.2554,
+  Title                    = {Charged-current exclusive pion production in neutrino-deuterium interactions},
+  Author                   = {Kitagaki, T. and Others},
+  Journal                  = {Phys. Rev. D},
+  Year                     = {1986},
+
+  Month                    = {Nov},
+  Pages                    = {2554--2565},
+  Volume                   = {34},
+
+  Doi                      = {10.1103/PhysRevD.34.2554},
+  Issue                    = {9},
+  Numpages                 = {0},
+  Publisher                = {American Physical Society},
+  Url                      = {https://link.aps.org/doi/10.1103/PhysRevD.34.2554}
 }
 
 @Book{knuth:pgm,
@@ -2146,6 +2302,23 @@
   Volume                   = {6}
 }
 
+@Article{PhysRevD.25.1161,
+  Title                    = {Study of single-pion production by weak charged currents in low-energy $\ensuremath{\nu}d$ interactions},
+  Author                   = {Radecky, G. M. and Others},
+  Journal                  = {Phys. Rev. D},
+  Year                     = {1982},
+
+  Month                    = {Mar},
+  Pages                    = {1161--1173},
+  Volume                   = {25},
+
+  Doi                      = {10.1103/PhysRevD.25.1161},
+  Issue                    = {5},
+  Numpages                 = {0},
+  Publisher                = {American Physical Society},
+  Url                      = {https://link.aps.org/doi/10.1103/PhysRevD.25.1161}
+}
+
 @PhdThesis{MINOSratchford,
   Title                    = {Identifying Muons for Neutrino Oscillation and Cross Section Experiments},
   Author                   = {J. Ratchford},
@@ -2154,6 +2327,20 @@
   Note                     = {indepth description of kNN variables for muon track ID},
 
   Institution              = {University of Texas at Austin}
+}
+
+@Article{REIN198329,
+  Title                    = {Coherent $\pi^0$ production in neutrino reactions},
+  Author                   = {Dieter Rein and Lalit M. Sehgal},
+  Journal                  = {Nuclear Physics B},
+  Year                     = {1983},
+  Number                   = {1},
+  Pages                    = {29 - 44},
+  Volume                   = {223},
+
+  Doi                      = {https://doi.org/10.1016/0550-3213(83)90090-1},
+  ISSN                     = {0550-3213},
+  Url                      = {http://www.sciencedirect.com/science/article/pii/0550321383900901}
 }
 
 @Article{rein-sehgal,
@@ -2223,6 +2410,20 @@
   Url                      = {http://stacks.iop.org/0038-5670/34/i=5/a=A08}
 }
 
+@Article{SALCEDO1988557,
+  Title                    = {Computer simulation of inclusive pion nuclear reactions},
+  Author                   = {L.L. Salcedo and E. Oset and M.J. Vicente-Vacas and C. Garcia-Recio},
+  Journal                  = {Nuclear Physics A},
+  Year                     = {1988},
+  Number                   = {3},
+  Pages                    = {557 - 592},
+  Volume                   = {484},
+
+  Doi                      = {https://doi.org/10.1016/0375-9474(88)90310-7},
+  ISSN                     = {0375-9474},
+  Url                      = {http://www.sciencedirect.com/science/article/pii/0375947488903107}
+}
+
 @TechReport{samuel:tex,
   Title                    = {First Grade {\TeX}: A Beginner's {\TeX} Manual},
   Author                   = {Arthur L. Samuel},
@@ -2284,6 +2485,19 @@
   Doi                      = {10.1016/0375-9474(92)90259-M},
   Reportnumber             = {FTUV-92-7, IFIC-92-7},
   Slaccitation             = {%%CITATION = NUPHA,A542,587;%%}
+}
+
+@Article{SMITH1972605,
+  Title                    = {Neutrino reactions on nuclear targets},
+  Author                   = {R.A. Smith and E.J. Moniz},
+  Journal                  = {Nuclear Physics B},
+  Year                     = {1972},
+  Pages                    = {605 - 622},
+  Volume                   = {43},
+
+  Doi                      = {https://doi.org/10.1016/0550-3213(72)90040-5},
+  ISSN                     = {0550-3213},
+  Url                      = {http://www.sciencedirect.com/science/article/pii/0550321372900405}
 }
 
 @Book{spivak:ams,
@@ -2423,6 +2637,16 @@
   Url                      = {https://link.aps.org/doi/10.1103/PhysRevD.17.2369}
 }
 
+@PhdThesis{Wret2019,
+  Title                    = {Minimising Systematic Uncertainties in the T2K Experiment Using Near-Detector and External Data},
+  Author                   = {Carl Vincent Clarence Wret},
+  School                   = {Imperial College London},
+  Year                     = {2019},
+
+  Owner                    = {mhogan},
+  Timestamp                = {2019.07.09}
+}
+
 @PhdThesis{MINOSyang,
   Title                    = {A Stufy of Muon Neutrino to Electron Neutrino Oscillations in the MINOS Experiment},
   Author                   = {Tingjun Yang},
@@ -2485,6 +2709,11 @@ propagated numerically within the unfolding framework.},
   Institution              = {KEK},
   Type                     = {Report},
   Url                      = {https://cds.cern.ch/record/747209}
+}
+
+@Article{,
+  Owner                    = {mhogan},
+  Timestamp                = {2019.07.10}
 }
 
 @comment{jabref-meta: databaseType:bibtex;}

@@ -66,7 +66,7 @@
 \chapterfont{\centering}
 \usepackage{braket}
 \end_preamble
-\options doctor,showframe
+\options doctor
 \use_default_options true
 \begin_modules
 fixltx2e
@@ -219,8 +219,8 @@ hanging
 \topmargin 1in
 \rightmargin 1in
 \bottommargin 1in
-\secnumdepth 5
-\tocdepth 3
+\secnumdepth 2
+\tocdepth 2
 \paragraph_separation indent
 \paragraph_indentation default
 \is_math_indent 0
@@ -594,6 +594,13 @@ status open
 
 \begin_layout Chapter
 Fitter Validation
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Fitter-Validation"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

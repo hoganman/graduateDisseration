@@ -8446,8 +8446,7 @@ NEUT is neither an initialism nor acronym
 
 \end_inset
 
- program library to simulate neutrino interactions with nucleons and the
- nucleus
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Hayato2009"
@@ -8455,7 +8454,8 @@ literal "false"
 
 \end_inset
 
-.
+ program library to simulate neutrino interactions with nucleons and the
+ nucleus.
  It was originally designed to simulate atmospheric neutrinos for the Kamioka
  Nucleon Decay Experiment (Kamiokande).
  Included in NEUT are numerous models for neutrino interactions on matter
@@ -8492,19 +8492,82 @@ Contributions to the T2K Experiment
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-todo{Complete this}
-\end_layout
-
+Since joining the T2K experiment five years ago, I have played a critical
+ role in analysis that is currently in preparation for publication.
+ This analysis was a second generation measurement of the 
+\begin_inset Formula $\numu$
 \end_inset
 
+ CC single pion production cross section on water in the 
+\begin_inset Formula $\pod$
+\end_inset
 
+.
+ I am a co-author of that paper and its internal T2K technical document
+ that outlines the analysis procedure and studies.
+ In particular, I have contributed to data management, reconstructed kinematic
+ validation and characterization, observable feature engineering to describe
+ events in the 
+\begin_inset Formula $\pod$
+\end_inset
+
+, and cross validation of complex event selections using boosted random
+ forest classifiers.
+\end_layout
+
+\begin_layout Standard
+Outside of analysis work, the majority of my contributions to the experiment
+ include on-site 
+\begin_inset Formula $\pod$
+\end_inset
+
+ and ND280 expertise.
+ I was involved in the 2015 work to replace two 
+\begin_inset Formula $\pod$
+\end_inset
+
+ water bags when they showed evidence of leaking.
+ Additionally, I helped measure the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ water mass and its 
+\begin_inset Quotes eld
+\end_inset
+
+bulging
+\begin_inset Quotes erd
+\end_inset
+
+ due to the water.
+ During data taking periods, I signed up at least once a year to perform
+ shifts.
+ I am certified as a TTD expert, 
+\begin_inset Formula $\pod$
+\end_inset
+
+ water system and calibration expert, and experienced DAQ shifter.
+ As TTD and 
+\begin_inset Formula $\pod$
+\end_inset
+
+ expert, this included daily reporting and point of contact for the SMRD,
+ ECals, and 
+\begin_inset Formula $\pod$
+\end_inset
+
+ along with the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ water target system whenever problems arose.
+ My most recent contribution was participating in the 2018 Super-K open
+ tank work at the Kamioka Observatory.
+ That work included removing any found oxidation, diesel fumes from the
+ initial construction, and glass shards remaining after a significant multi-PMT
+ implosion in 2001.
+ When not cleaning, the other important task was to install light-tight
+ Tyvek sheets to insulate the inner detector.
 \end_layout
 
 \begin_layout Section
@@ -8512,9 +8575,9 @@ Summary
 \end_layout
 
 \begin_layout Standard
-The Neutrino is an elusive particle to detect.
- The relatively new oscillation phenomenon has opened up the possibility
- of exploring fundamental questions of the Universe like CP violation.
+The neutrino is an elusive particle to detect.
+ The relatively new neutrino oscillation phenomenon has opened up the possibilit
+y of exploring fundamental questions of the Universe like CP violation.
  In the T2K experiment, some of the uncertainties associated with neutrino
  oscillations are being explored.
  To facilitate these goals, constraining all forms of uncertainty in neutrino-nu

@@ -160,6 +160,11 @@
 \filename_suffix 0
 \color #faf0e6
 \end_branch
+\branch P0DBANFFParameterizationSummary
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
 \index Index
 \shortcut idx
 \color #008000
@@ -227,7 +232,7 @@ noprefix "false"
 \begin_layout Standard
 \begin_inset Branch P0DBANFFParameterizationFitBinning
 inverted 0
-status open
+status collapsed
 
 \begin_layout Section
 Fit Binning
@@ -5716,7 +5721,15 @@ noprefix "false"
 \end_inset
 
 -only, TPC-only, or both.
- The TPC-only systematics are fully discussed in the following reference
+ So a description of the systematic treatments is discussed in the next
+ section.
+ The new 
+\begin_inset Formula $\pod$
+\end_inset
+
+-only systematics in BANFF will then be explained later.
+ Details on the TPC-only systematics implementations are discussed in the
+ following reference
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Abe:2017vif"
@@ -5725,11 +5738,6 @@ literal "false"
 \end_inset
 
 .
- Description of the new 
-\begin_inset Formula $\pod$
-\end_inset
-
--only systematics will be explained below.
 \end_layout
 
 \begin_layout Standard
@@ -6268,7 +6276,7 @@ Systematic Treatments
 \end_layout
 
 \begin_layout Standard
-There are two types of systematic treatments in this analysis: observable
+There are two types of systematic treatments in the BANFF analysis: observable
  variations and weights.
  Each rely on the method of throwing a random number, 
 \begin_inset Formula $x$
@@ -6342,8 +6350,8 @@ where
 \end_inset
 
 .
- A weight is derived from the event depending if the event is selected,
- 
+ The selection is rerun on the event and a weight is derived depending if
+ the event is selected, 
 \begin_inset Formula $w_{\text{eff}}$
 \end_inset
 
@@ -6369,13 +6377,67 @@ w_{\text{ineff}} & =\frac{1-\epsilon_{\text{Data}}^{\prime}}{1-\epsilon_{\text{M
 \begin_layout Standard
 Observable variation systematics are evaluated as alterations to physically
  measured quantities like momentum and energy.
- The systematic is evaluated using the following formula
+ The systematic can be in two different ways:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
+If the reconstructed observable, 
+\begin_inset Formula $o_{\text{reco}}$
+\end_inset
+
+, has a known true value, 
+\begin_inset Formula $o_{\text{true}}$
+\end_inset
+
+, then the difference between those two is used as scaling.
+ The varied observable is given by
 \begin_inset Formula 
 \begin{equation}
-o^{\prime}=o_{\text{Nom}}+\overline{\Delta o}+x\sigma_{\Delta o},\label{eq:obsvariation}
+o^{\prime}=o_{\text{true}}+\left(o_{\text{reco}}-o_{\text{true}}\right)\left(s+x\sigma_{s}\right),\label{eq:recotrueobsvar}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $s$
+\end_inset
+
+ is the mean scaling parameter to match the true value, 
+\begin_inset Formula $\sigma_{s}$
+\end_inset
+
+ is the uncertainty on 
+\begin_inset Formula $s$
+\end_inset
+
+, and 
+\begin_inset Formula $x$
+\end_inset
+
+ is a random number from 
+\begin_inset Formula $\mathcal{N}\left(\mu=0,\sigma^{2}=1\right)$
+\end_inset
+
+.
+ The mean scaling parameter and its uncertainty are determined from the
+ standard deviations observed in the data and MC by
+\begin_inset Formula 
+\begin{equation}
+s=\frac{\delta^{\text{data}}}{\delta^{\text{MC}}}\quad\sigma_{s}=s\left|\frac{\sigma_{\delta^{\text{data}}}}{\delta^{\text{data}}}-\frac{\sigma_{\delta^{\text{MC}}}}{\delta^{\text{MC}}}\right|.\label{eq:scalingdefrecotrueobsvar}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+If the MC reconstructed observable is corrected to match the mean data reconstru
+cted observable.
+ The varied observable in this case is given by
+\begin_inset Formula 
+\begin{equation}
+o^{\prime}=o_{\text{Nom}}+\Delta o+x\sigma_{\Delta o},\label{eq:obsvariation}
 \end{equation}
 
 \end_inset
@@ -6389,7 +6451,7 @@ where
 \end_inset
 
  is the nominal MC value, 
-\begin_inset Formula $\overline{\Delta o}$
+\begin_inset Formula $\Delta o$
 \end_inset
 
  is the average correction to the observable, 
@@ -6405,13 +6467,22 @@ where
 \end_inset
 
 .
- The TPC-only momentum resolution is usually a large systematic for BANFF
- analyses.
- However, the 
-\begin_inset Formula $\pod$
+ Special cases exist for this treatment and are further discussed in the
+ following thesis 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Wret2019"
+literal "false"
+
 \end_inset
 
- has additional variation systematics that must be considered.
+.
+\end_layout
+
+\begin_layout Standard
+Now that we understand how toy experiments can alter , we can now begin
+ to understand how the detector inefficiencies are modeled into the BANFF
+ fit.
 \end_layout
 
 \begin_layout Subsubsection
@@ -7181,7 +7252,7 @@ n bin and its correction shifts the bin mean.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -7902,7 +7973,7 @@ status open
 \begin_inset Graphics
 	filename Figures/P0DBANFFParameterization/P0DMass_TPCMatch_study/obsNorm_cov_updated.png
 	lyxscale 50
-	height 30theight%
+	height 2in
 
 \end_inset
 
@@ -7942,7 +8013,7 @@ status open
 \begin_inset Graphics
 	filename Figures/P0DBANFFParameterization/corr_dete.png
 	lyxscale 50
-	height 30theight%
+	height 2in
 
 \end_inset
 
@@ -7978,7 +8049,7 @@ status open
 \begin_inset Graphics
 	filename Figures/P0DBANFFParameterization/P0DMass_TPCMatch_study/obsNorm_cov_updatedoriginaldifference.png
 	lyxscale 50
-	height 30theight%
+	height 2in
 
 \end_inset
 
@@ -8059,8 +8130,11 @@ Cross Section Model
 \end_layout
 
 \begin_layout Standard
-There are a number of cross section model systematics implemented in BANFF
- to account for the uncertainties in cross section measurements.
+There are a number of neutrino-nucleus model and other related systematics
+ implemented in BANFF to account for the uncertainties in cross section
+ measurements.
+ They are frequently updated to account for new models and constraints from
+ external data.
  The cross section models used in this analysis use the T2K 2017 parameterizatio
 n, which is a canonical set of parameters shared among all analyses in T2K.
  A gross description of the cross section model is provided here with a
@@ -8080,8 +8154,8 @@ literal "false"
 There are three types of cross section parameters: shape, normalization,
  and functional.
  A cross section shape parameter is defined as a fractional shift in the
- location of a certain feature in some parameter space with a prefit value
- of zero (0).
+ location of a certain feature in some parameter space.
+ Shape location parameters all start with a prefit value of zero (0).
  A cross section normalization parameter, 
 \begin_inset Formula $x_{i}^{\text{Norm}}$
 \end_inset
@@ -8104,9 +8178,9 @@ where
 
  are NEUT nominal and ND constrained parameters, respectively.
  The prefit values for the normalization parameters are usually around one
- (1).
- And finally a functional parameters are just normalization factors for
- basis functions in a particular parameter space.
+ (1) unless the prefit is different from the nominal NEUT model.
+ And finally functional parameters are normalization factors for basis functions
+ in a particular parameter space.
  For example the parameters 
 \begin_inset Formula $A$
 \end_inset
@@ -8126,8 +8200,25 @@ where
 .
 \end_layout
 
+\begin_layout Standard
+The next sections deal with the model parameterizations and systematic uncertain
+ties in the NEUT version 5.3.3
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Wret2019"
+literal "false"
+
+\end_inset
+
+ interaction library which is used in T2K MC and oscillation analysis.
+\end_layout
+
 \begin_layout Subsubsection
-Exclusive Channels
+CCQE and CC-
+\begin_inset Formula $0\pi$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -8157,9 +8248,18 @@ noprefix "false"
 \end_inset
 
 .
- The CCQE model in 
+ The nominal CCQE model in NEUT is a Spectral Function from Benhar and others
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Benhar:1994hw"
+literal "false"
+
+\end_inset
+
+.
+ 
 \color black
-NEUT, the Llewellyn-Smith model 
+An alternative CCQE model uses the Llewellyn-Smith model
 \begin_inset CommandInset citation
 LatexCommand cite
 key "LlewellynSmith:1971uhs"
@@ -8167,41 +8267,46 @@ literal "false"
 
 \end_inset
 
-
-\color inherit
- is important historically since it has one unknown parameter called the
- Axial Mass, 
-\begin_inset Formula $M_{A}^{\text{QE}}$
-\end_inset
-
-, and it well predicts the neutrino energy in low-Z, bubble chamber data.
- Additionally, the nuclear medium is modeled as a relativistic Fermi gas
  
+\color inherit
+with a dipole
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Niewczas:2015iea"
+key "PhysRev.141.1298"
 literal "false"
 
 \end_inset
 
- with a Fermi momentum parameter 
-\begin_inset Formula $p_{F}$
-\end_inset
+ axial form factor
+\begin_inset Foot
+status collapsed
 
-.
- Since the number of nucleons is higher in carbon (A=12) than oxygen (A=16),
- two different Fermi momentum parameters are specified.
- There are current model deficiencies and theoretical challenges that make
- this combined model in NEUT an effective model.
- As such, flat priors are applied to all CCQE parameters to prevent unintentiona
-l biases in the fit result.
+\begin_layout Plain Layout
+A form factor is a measure of scattering amplitude in the form of the Fourier
+ transform of some charge distribution.
 \end_layout
 
-\begin_layout Standard
-There are also CCQE-like interactions that require parameterization since
- they produce similar topologies to true CCQE events.
- The T2K experiment currently models CCQE-like interactions involving correlated
- nucleon interactions with the lowest ordering pair scattering called 
+\end_inset
+
+, BBBA05 vector form factors
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bradford2006"
+literal "false"
+
+\end_inset
+
+ coupled to a Smith-Miniz Relativistic Fermi Gas
+\begin_inset CommandInset citation
+LatexCommand cite
+key "SMITH1972605,Niewczas:2015iea"
+literal "false"
+
+\end_inset
+
+ (RFG).
+ A CCQE-like excitation mode involves correlated nucleon interactions with
+ nucleon pair scattering called 
 \begin_inset Quotes eld
 \end_inset
 
@@ -8209,7 +8314,7 @@ There are also CCQE-like interactions that require parameterization since
 \begin_inset Quotes erd
 \end_inset
 
- 
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Martini:2009uj"
@@ -8233,8 +8338,12 @@ hole
 \end_inset
 
  refers to the absence of an electron in a valence band.
- In the High Energy Physics context, 2p2h considers an interacting pair
- of nucleons (2p) scattering from an incoming particle.
+ In the High Energy Physics context, 2p2h considers neighboring and interacting
+ nucleon pairs (2p) scattering from an incoming 
+\begin_inset Formula $\nu$
+\end_inset
+
+.
  The imparted energy on the pair excites them to higher energy states leaving
  two 
 \begin_inset Quotes eld
@@ -8250,37 +8359,373 @@ hole
 \end_inset
 
 .
- The 
+ An additional nuclear model called 
 \begin_inset Quotes eld
 \end_inset
 
-2p2h
+Random Phase Approximation
 \begin_inset Quotes erd
 \end_inset
 
- interaction refers to the CC interaction mode where a neutrino scatters
- off neighboring and interacting nucleon pairs.
- However being relatively new and unconstrained in T2K, flat priors are
- also applied to all 2p2h normalization and shape parameters, with six in
- all.
+ (RPA)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Co:2006wnm"
+literal "false"
 
-\shape italic
- Thus all CC-
+\end_inset
+
+ is used to to modify single nucleon scattering by accounting for nucleon
+ correlations inside the nucleus
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Nieves:2011pp"
+literal "false"
+
+\end_inset
+
+.
+ The default CC-
 \begin_inset Formula $0\pi$
 \end_inset
 
- cross section parameters are unconstrained in the fit, except where physically
- forbidden.
- 
-\shape default
- 
+ model for T2K analyses is the combination of the 
+\color black
+Llewellyn-Smit
+\color inherit
+h+RFG model, 2p2h excitation, and RPA nuclear model.
+ This combination was selected due to tension using the SF model to match
+ with external data 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Wret2019"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-NEUT considers other important exclusive channels like resonance states
- that produce one or more pions.
- An important pion production channel in T2K is single pion production,
- or CC-
+The selected CCQE model has three free parameters: the dipole axial form
+ factor mass 
+\begin_inset Formula $M_{A}^{\text{QE}}$
+\end_inset
+
+ from the 
+\color black
+Llewellyn-Smith
+\color inherit
+ model, and two Fermi momentum parameters 
+\begin_inset Formula $p_{F}$
+\end_inset
+
+, one for 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ce{^{12}C}
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ce{^{16}O}
+\end_layout
+
+\end_inset
+
+ that describe the momentum of nucleons on the surface of a RFG.
+ In the past, these parameters have been shown to work as effective models
+ in T2K when unconstrained.
+ In this analysis, these three parameter are unconstrained.
+ In other words, a flat prior is used for 
+\begin_inset Formula $M_{A}^{\text{QE}}$
+\end_inset
+
+, 
+\begin_inset Formula $p_{F}^{C}$
+\end_inset
+
+, and 
+\begin_inset Formula $p_{F}^{O}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+For the 2p2h excitation, there are a total of 5 parameters to describe the
+ uncertainty in the model.
+ Three are three normalization terms: 
+\begin_inset Formula $\nu$
+\end_inset
+
+ interaction on 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ce{^{12}C}
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset Formula $\antinu$
+\end_inset
+
+ interaction on 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ce{^{12}C}
+\end_layout
+
+\end_inset
+
+, and scaling for 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ce{^{12}C}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ce{^{16}O}
+\end_layout
+
+\end_inset
+
+.
+ The remaining two systematic parameters in the 2p2h model are shape parameters,
+ one for 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ce{^{12}C}
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ce{^{16}O}
+\end_layout
+
+\end_inset
+
+, to describe the uncertainties in the contributing modes in 2p2h.
+ These modes are called Meson Exchange Current (MEC) which involves the
+ exchange of a virtual meson, nucleon-nucleon correlations (NN) which involves
+ no mesons, and the MEC-NN interference.
+ A shape value of -1 determines 2p2h is completely due to MEC, 0 is the
+ nominal MC 2p2h model, and +1 determines 2p2h is completely due to NN.
+ Any value in between 
+\begin_inset Formula $\pm1$
+\end_inset
+
+ includes interference terms to absorb differences in the event rate.
+ However, since no T2K nor external neutrino data can constrain the neutrino-ind
+uced 2p2h interaction, a flat prior is set for all 2p2h parameters.
+\end_layout
+
+\begin_layout Standard
+The other nuclear interaction in the CC-
+\begin_inset Formula $0\pi$
+\end_inset
+
+ model uses the Nieves RPA model
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Nieves:2011pp"
+literal "false"
+
+\end_inset
+
+ model to effectively describe nucleon correlations.
+ The RPA model primarily rescales the single nucleon cross section and has
+ dependence on 
+\begin_inset Formula $E_{\nu}$
+\end_inset
+
+ and 
+\begin_inset Formula $Q^{2}$
+\end_inset
+
+.
+ A functional weighting scheme only in 
+\begin_inset Formula $Q^{2}$
+\end_inset
+
+ was found to work well to mimic the inherent uncertainties in the Nieves
+ RPA model.
+ Using the Berstein polynomials basis
+\begin_inset CommandInset citation
+LatexCommand cite
+key "FAROUKI2012379"
+literal "false"
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{equation}
+B_{i}^{n}\left(x\right)=\binom{n}{i}x^{i}\left(1-x\right)^{n-i}\quad x\in[0,1]\label{eq:BernsteinBasis}
+\end{equation}
+
+\end_inset
+
+where
+\begin_inset Formula 
+\begin{equation}
+\binom{n}{i}=\frac{n!}{\left(n-i\right)!\times i!}.\label{eq:nCr}
+\end{equation}
+
+\end_inset
+
+with a high-
+\begin_inset Formula $Q^{2}$
+\end_inset
+
+ exponential tail, the 
+\begin_inset Quotes eld
+\end_inset
+
+BeRPA
+\begin_inset Quotes erd
+\end_inset
+
+ model functional weight is parameterized as
+\begin_inset Formula 
+\begin{equation}
+w_{\text{BeRPA}}\left(Q^{2}\right)=\begin{cases}
+A\left(1-x\right)^{3}+3B\left(1-x\right)^{2}x+3p_{1}\left(1-x\right)x^{2}+Dx^{3} & Q^{2}\leq U\\
+1+p_{2}\exp\left(-E\left[Q^{2}-U\right]\right), & Q^{2}>U
+\end{cases}\label{eq:BeRPA}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $x=Q^{2}/U$
+\end_inset
+
+, 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+, 
+\begin_inset Formula $D$
+\end_inset
+
+, and 
+\begin_inset Formula $E$
+\end_inset
+
+ are scale/normalization factor for the basis functions, and 
+\begin_inset Formula $U$
+\end_inset
+
+ signifies when the two functions intersect with 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $p_{2}$
+\end_inset
+
+ absorbing the continuity conditions
+\begin_inset Formula 
+\begin{equation}
+p_{1}=D+\frac{UE\left(D-1\right)}{3}\quad p_{2}=D-1.\label{eq:BeRPAContinuity}
+\end{equation}
+
+\end_inset
+
+The parameters 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+, 
+\begin_inset Formula $D$
+\end_inset
+
+, and 
+\begin_inset Formula $E$
+\end_inset
+
+ are allowed to vary while 
+\begin_inset Formula $U$
+\end_inset
+
+ is fixed to prevent unwieldy correlations from appearing.
+\end_layout
+
+\begin_layout Subsubsection
+CC-
+\begin_inset Formula $1\pi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Another important exclusive channel in NEUT are resonance states that produce
+ a single pion or CC-
 \begin_inset Formula $1\pi$
 \end_inset
 
@@ -8297,20 +8742,38 @@ literal "false"
 
 \end_inset
 
+ with lepton mass corrections
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevD.77.053003,PhysRevD.76.113004"
+literal "false"
+
+\end_inset
+
  of neutrino-induced 
 \begin_inset Formula $\Delta$
 \end_inset
 
- resonance decay into a nucleon and single pion.
- There are three parameters that describe the CC-
+ resonance decay
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevD.90.093001,Graczyk:2009qm,PhysRevD.77.053001"
+literal "false"
+
+\end_inset
+
+.
+ There are three tunable parameters that describe the systematics in the
+ CC-
 \begin_inset Formula $1\pi$
 \end_inset
 
-, the resonant axial Mass 
-\begin_inset Formula $M_{A}^{\text{Res}},$
+ model.
+ They are resonant axial mass 
+\begin_inset Formula $M_{A}^{\text{Res}}$
 \end_inset
 
-the axial form factor, 
+, the axial form factor normalization 
 \begin_inset Formula $C_{A}^{5}$
 \end_inset
 
@@ -8319,73 +8782,188 @@ the axial form factor,
 \end_inset
 
 -isospin background.
- Again, this model is an effective model as mentioned in the original paper.
- But unlike the CC-
-\begin_inset Formula $0\pi$
+ In particular, 
+\begin_inset Formula $M_{A}^{\text{Res}}$
 \end_inset
 
- parameters, these and all subsequent models are constrained using Gaussian
- PDFs.
-\end_layout
-
-\begin_layout Standard
-Harder to measure processes like neutral current (NC) processes and high
- energy CC normalizations are included as well.
- There are two CC coherent (Coh) pion production normalization parameters,
- one for C and O, and one for DIS.
- There are two NC parameters, one for Coh pion production and other.
- In order to maintain consistency between the ND280 constraint and oscillation
- analysis, SK-only normalization parameters are also in the fit, but held
- as fixed.
- There are three fixed parameters of this nature.
-\end_layout
-
-\begin_layout Subsubsection
-Nuclear Effects
-\end_layout
-
-\begin_layout Standard
-The T2K experiment considers nuclear medium effects that affect the observables
- in observable cross section.
- Since outgoing leptons and hadrons must propagate through the nuclear medium
- before they can be observed, accounting for many body Physics is well motivated.
- A microscopic, many body nuclear model called 
-\begin_inset Quotes eld
+ and 
+\begin_inset Formula $C_{A}^{5}$
 \end_inset
 
-Random Phase Approximation
-\begin_inset Quotes erd
+ are strongly anticorrelated due to the parameterization of the form factor
+\begin_inset Formula 
+\begin{equation}
+f\left(Q^{2}\right)=\frac{C_{A}^{5}}{\left(1+\frac{Q^{2}}{\left(M_{A}^{\text{Res}}c^{2}\right)^{2}}\right)^{2}}.\label{eq:CC1piaxialformfactor}
+\end{equation}
+
 \end_inset
 
- (RPA)
+Again, this model is an effective model since the uncertainties were tuned
+ to bubble chamber data from Brookhaven National Laboratory
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Co:2006wnm"
+key "PhysRevD.34.2554"
 literal "false"
 
 \end_inset
 
- is used as a functional to scale the neutrino-nucleon scattering cross
- section.
- The RPA model, as a function of 
-\begin_inset Formula $Q^{2}$
+ and Argonne National Laboratory
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevD.25.1161"
+literal "false"
+
 \end_inset
 
-, is parameterized as a 
-\begin_inset Formula $Q^{2}$
-\end_inset
-
- third-order Bernstein polynomial (BeRPA) with a high-
-\begin_inset Formula $Q^{2}$
-\end_inset
-
- exponential decay tail.
- In the BANFF fit, there are four varied (A, B, D, E) and one fixed (U)
- BeRPA scale parameters.
+.
 \end_layout
 
 \begin_layout Standard
-Pion interactions inside the nucleus called final state interactions
+Harder to measure processes like coherent pion production are discussed
+ next.
+\end_layout
+
+\begin_layout Subsubsection
+Coherent Pion Production
+\end_layout
+
+\begin_layout Standard
+Coherent scattering refers to scattering where the wavelength of the incident
+ particle is larger than the incident target.
+ In the case of neutrino-nucleus scattering, the neutrino's wavelength given
+ by 
+\begin_inset Formula 
+\[
+\lambda=\frac{hc}{E_{\nu}}
+\]
+
+\end_inset
+
+is larger than the size of the nucleus.
+ In the scattering, no quantum numbers are exchanged, but the nucleus experience
+s a momentum boost.
+ In coherent pion production, the in-flight virtual boson is converted into
+ a pion with that pion exchanging a Pomeron
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abe2016"
+literal "false"
+
+\end_inset
+
+ with the nucleus.
+ The coherent scattering model is described by Rein-Sehgal 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "REIN198329"
+literal "false"
+
+\end_inset
+
+.
+ Lookup tables are used to scale the cross section to external data
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Wret2019"
+literal "false"
+
+\end_inset
+
+ and the Berger-Sehgal model 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevD.76.113004"
+literal "false"
+
+\end_inset
+
+.
+ Three tunable normaliation parameters are used describe the uncertainties
+ in coherent production: CC on 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ce{^{12}C}
+\end_layout
+
+\end_inset
+
+, CC on 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ce{^{16}O}
+\end_layout
+
+\end_inset
+
+, and NC on all nuclei.
+\end_layout
+
+\begin_layout Subsubsection
+CC DIS
+\end_layout
+
+\begin_layout Standard
+The CC and NC other processes include multiple pion and deep inelastic scatterin
+g (DIS).
+ For CC DIS, the systematic is treated as a normalization with a relatively
+ simple uncertainty, 
+\begin_inset Formula $\sigma_{\text{CCDIS}}$
+\end_inset
+
+, of 
+\begin_inset Formula 
+\[
+\sigma_{\text{CCDIS}}\left(E_{\nu}\right)=\frac{0.4}{\Enu\text{ [GeV]}}
+\]
+
+\end_inset
+
+where the fractional uncertainty at 4.0 GeV is ~10%
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Wret2019"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+NC Other
+\end_layout
+
+\begin_layout Standard
+There is one free normalization parameter for various NC processes.
+ The NC other parameter contains the normalization uncertainties in NC DIS,
+ single kaon production, single eta production, and NC elastic processes
+ with a conservative 30% fractional uncertainty
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Wret2019"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Final State Interactions (FSI)
+\end_layout
+
+\begin_layout Standard
+Final state interactions
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Golan:2012wx"
@@ -8393,68 +8971,98 @@ literal "false"
 
 \end_inset
 
- (FSI) are considered in the analysis as well.
- The FSI nuclear model accounts for inelastic (INEL) scattering, pion absorption
- (ABS), pion production (PROD), and charge exchange (CEX) cross sections.
- There are a total of six FSI parameters in the fit.
+ are effects that alter final state pions from neutrino-nucleus events before
+ the pion exits the nucleus.
+ The microscopic model in NEUT is a cascade implementation of the Salcedo-Oset
+ model
+\begin_inset CommandInset citation
+LatexCommand cite
+key "SALCEDO1988557"
+literal "false"
+
+\end_inset
+
+ which describes interactions in the nucleus as probabilities of position
+ and momentum.
+ The systematics are parameterized as scattering probabilities for different
+ interaction processes tuned to world 
+\begin_inset Formula $\pi$
+\end_inset
+
+-
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ce{^{12}C}
+\end_layout
+
+\end_inset
+
+ data
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevC.18.584"
+literal "false"
+
+\end_inset
+
+.
+ These processes are divided into four classes: inelastic (INEL) scattering,
+ pion absorption (ABS), pion production (PROD), and charge exchange (CEX).
+ There are a total of six FSI shape parameters in the fit.
+ For the INEL and CEX classes, they divided into low (LO) and high (HI)
+ energy regions where the transition occurs at 
+\begin_inset Formula $p_{\pi}=500$
+\end_inset
+
+ MeV/c.
+ The PROD and ABS classes are single shape parameters.
+\end_layout
+
+\begin_layout Subsubsection
+Other Fixed Parameters
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/BANFFLikelihood/BANFFXsecPrefitCorrelation.png
-	lyxscale 50
-	width 95text%
-	height 95theight%
-	keepAspectRatio
-
+As mentioned in the CC-
+\begin_inset Formula $0\pi$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Cross section parameters prefit covariance matrix with values shown as the
- sign of the element times the square root of the absolute value of the
- element.
- .
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Cross-section-correlations-prefit"
-
+ model, the BeRPA 
+\begin_inset Formula $U$
 \end_inset
 
-
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Cross Section Parameters Prefit Covariance Matrix
-\end_layout
-
+ parameter is fixed to remove correlations with the other BeRPA scale parameters.
+ However, there are three fixed normalization parameters in the BANFF fit
+ since they correspond to Super-K only parameters.
+ They are included in the fit in order to maintain consistency between the
+ ND280 constraint and oscillation analysis parameterizations.
+ In other words, they are spectators in the BANFF fit.
+ These parameters are the CC 
+\begin_inset Formula $\nue$
 \end_inset
 
-
-\end_layout
-
+-
+\begin_inset Formula $\numu$
 \end_inset
 
-
-\end_layout
-
+ event rate ratio, CC 
+\begin_inset Formula $\nuebar$
 \end_inset
 
+-
+\begin_inset Formula $\numubar$
+\end_inset
 
+ event rate ratio, and NC 
+\begin_inset Formula $1\gamma$
+\end_inset
+
+ event rate.
 \end_layout
 
 \begin_layout Subsubsection
@@ -8462,7 +9070,8 @@ Fit Parameters
 \end_layout
 
 \begin_layout Standard
-There are a total of 31 cross section parameters in the BANFF fit.
+There are a total of 31 cross section parameters in the BANFF fit, four
+ of which are fixed.
  The fit parameters are listed in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -8473,7 +9082,7 @@ noprefix "false"
 
 \end_inset
 
- with the associated correlation matrix in 
+ with the associated covariance matrix shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:Cross-section-correlations-prefit"
@@ -8485,13 +9094,8 @@ noprefix "false"
 
 .
  Following the definition of the flux and bin normalization parameters,
- cross section parameters are defined as fractional differences to nominal
- parameters.
-\end_layout
-
-\begin_layout Standard
-If a parameter has a prefit value of zero (0), the postfit value represents
- a fractional change from one (1) relative to the NEUT nominal value.
+ cross section parameters are defined as fractional differences either in
+ shape, scale, or normalization.
  If no prefit uncertainty is shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -8502,7 +9106,7 @@ noprefix "false"
 
 \end_inset
 
-, and also shown in 
+, and emphasized in 
 \color red
 red font
 \color inherit
@@ -8559,6 +9163,63 @@ bkg
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/BANFFLikelihood/BANFFXsecPrefitCorrelation.png
+	lyxscale 50
+	width 95text%
+	height 95theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cross section parameters prefit covariance matrix with values shown as the
+ sign of the element times the square root of the absolute value of the
+ element.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Cross-section-correlations-prefit"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Cross Section Parameters Prefit Covariance Matrix
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage clearpage
 \end_inset
 
@@ -8569,7 +9230,7 @@ bkg
 
 \begin_inset Branch XSecBinsTable
 inverted 0
-status open
+status collapsed
 
 \begin_layout Standard
 \align center
@@ -10739,6 +11400,39 @@ NC Other Far
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch P0DBANFFParameterizationSummary
+inverted 0
+status open
+
+\begin_layout Section
+BANFF Fit Parameterization Summary
+\end_layout
+
+\begin_layout Standard
+This chapter has described all the fit bins and systematic parameters that
+ go into the BANFF fit.
+ For the fit bins, they are used in the LLR term to model the best possible
+ fit between data and MC without any constraints.
+ However, since there are known systematic uncertainties in the flux, detector
+ inefficiencies, and cross sections, we have described their parameterizations
+ to force the fit work with those constraints.
+ The flux model and cross section systematics are constrained T2K data and
+ external data, respectively.
+ Finally, the detector systematics are determined via an ensemble of toy
+ experiments based on well established control samples in the ND280.
+\end_layout
+
+\begin_layout Standard
+Next chapter explores the set of validation studies to examine how the BANFF
+ fit works.
 \end_layout
 
 \end_inset
