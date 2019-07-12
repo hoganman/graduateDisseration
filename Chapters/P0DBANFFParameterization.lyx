@@ -232,7 +232,7 @@ noprefix "false"
 \begin_layout Standard
 \begin_inset Branch P0DBANFFParameterizationFitBinning
 inverted 0
-status collapsed
+status open
 
 \begin_layout Section
 Fit Binning
@@ -262,7 +262,7 @@ noprefix "false"
 , are tabulated below.
  There are a total 988 fit bins with water-in and water-out modes sharing
  the same bin edges.
- The determination of the fit binning is discussed below.
+ The determination of the fit binning is discussed in the next subsection.
 \end_layout
 
 \begin_layout Itemize
@@ -392,7 +392,7 @@ noprefix "false"
 \begin_inset Formula $p$
 \end_inset
 
- [GeV/c]:0, 0.4, 0.6, 0.8, 1, 1.5, 2, 3, 10
+ [GeV/c]: 0, 0.4, 0.6, 0.8, 1, 1.5, 2, 3, 10
 \end_layout
 
 \begin_layout Itemize
@@ -605,7 +605,7 @@ name "fig:MomentumKinematicsBootstrappingNumuCC1Track"
 \end_layout
 
 \begin_layout Standard
-The angle bins are treated in an almost identical manner.
+The angle fit bins are treated in an almost identical manner.
  While the fit bins and Physics are dictated in 
 \begin_inset Formula $\cos\theta$
 \end_inset
@@ -720,7 +720,7 @@ The angular event distribution and uncertainty for
 
  in FHC CC 1-Track events is shown above.
  Only correctly identified muons are shown.
- (a) The number of is scaled to 
+ (a) The number of events is scaled to 
 \begin_inset Formula $10^{20}$
 \end_inset
 
@@ -812,7 +812,7 @@ The T2K neutrino flux model is a description of the neutrino beam spectrum
  This model includes simulations of the beam interactions and subsequent
  hadron production at the target.
  The predicted hadron production rate, including inside and outside the
- target, is tuned based to the results from the NA61/SHINE
+ target, is tuned to the results from the NA61/SHINE
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Abgrall:2016fs"
@@ -825,7 +825,8 @@ literal "false"
  production.
  Smaller effects on the unoscillated flux uncertainty include the proton
  beam profile, off-axis angle, horn current, and horn alignment.
- Further details about the flux model and uncertainties can be found here
+ Further details about the flux model and uncertainties can be found in
+ the following reference
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Abe:2017vif"
@@ -913,17 +914,6 @@ Flux correlation
 \begin_layout Plain Layout
 BANFF prefit flux covariance matrix shown with respective detector, horn
  current, and neutrino flavor.
- The covariance matrix is dimensionless as given by 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:fluxtermdef"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:BANFF-pre-fit-flux-covariance"
@@ -5655,7 +5645,7 @@ Super-K
 \begin_layout Standard
 \begin_inset Branch P0DBANFFParameterizationDetector
 inverted 0
-status collapsed
+status open
 
 \begin_layout Subsection
 Detector Inefficiencies Model
@@ -6341,7 +6331,7 @@ where
 \begin_inset Formula $x_{\text{MC}}$
 \end_inset
 
- are different random normally distributed numbers from 
+ are different, random normally distributed numbers from 
 \begin_inset Formula $\mathcal{N}\left(\mu=0,\sigma^{2}=1\right)$
 \end_inset
 
@@ -6373,7 +6363,7 @@ w_{\text{ineff}} & =\frac{1-\epsilon_{\text{Data}}^{\prime}}{1-\epsilon_{\text{M
 \begin_layout Standard
 Observable variation systematics are evaluated as alterations to physically
  measured quantities like momentum and energy.
- The systematic can be in two different ways:
+ The systematic can be evaluated in two different ways:
 \end_layout
 
 \begin_layout Itemize
@@ -6428,8 +6418,8 @@ s=\frac{\delta^{\text{data}}}{\delta^{\text{MC}}}\quad\sigma_{s}=s\left|\frac{\s
 \end_layout
 
 \begin_layout Itemize
-If the MC reconstructed observable is corrected to match the mean data reconstru
-cted observable.
+If the MC reconstructed observable is corrected to match the mean from some
+ CS reconstructed observable.
  The varied observable in this case is given by
 \begin_inset Formula 
 \begin{equation}
@@ -6476,9 +6466,18 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-Now that we understand how toy experiments can alter , we can now begin
- to understand how the detector inefficiencies are modeled into the BANFF
- fit.
+In both cases, the selection cuts are rerun on the event determining if
+ it has changed samples.
+\end_layout
+
+\begin_layout Standard
+Now that we understand how the systematics affect our observables and by
+ using toy experiments to evaluate the systematics, we can now begin to
+ understand how the detector systematic penalty term 
+\begin_inset Formula $\Delta\chi_{\text{Det}}^{2}$
+\end_inset
+
+ is modeled in the BANFF fit.
 \end_layout
 
 \begin_layout Subsubsection
@@ -6622,7 +6621,8 @@ where now each MC event has a toy variation out of
 \end_inset
 
 , the selections cuts must be reapplied to determine if the event has changed
- analysis bins since the toy alters the event observables 
+ analysis bins since the toy alters the event observables like the number
+ of tracks or 
 \begin_inset Formula 
 \[
 \left(p,\cos\theta\right)\overset{\text{toy}}{\rightarrow}\left(p^{\prime},\cos\theta^{\prime}\right),
@@ -6638,7 +6638,7 @@ where
 \begin_inset Formula $\theta\neq\theta^{\prime}$
 \end_inset
 
-.
+ and if the event is reconstructed at all.
  We therefore average the results of the toys to smooth out variations among
  all toy experiments.
 \end_layout
@@ -6708,20 +6708,20 @@ where
 \begin_inset Formula $V_{i,j}^{\text{Stat}}$
 \end_inset
 
- in the BANFF fit, the total detector covariance matrix, 
+ uncertainties, the total detector covariance matrix, 
 \begin_inset Formula $V_{i,j}^{\text{Det}}$
 \end_inset
 
-, is defined as 
+, in the BANFF fit is defined as 
 \begin_inset Formula 
 \begin{equation}
-V_{i,j}^{\text{Det}}=\left[\frac{1}{N_{i}}\right]\left[\frac{1}{N_{j}}\right]\left(V_{i,j}^{\text{Cov}}+V_{i,j}^{\text{Stat}}\right).\label{eq:totaldetectorcovariance}
+V_{i,j}^{\text{Det}}=\left[\frac{1}{N_{i}}\right]\left[\frac{1}{N_{j}}\right]\left(V_{i,j}^{\text{Cov}}+V_{i,j}^{\text{Stat}}\right),\label{eq:totaldetectorcovariance}
 \end{equation}
 
 \end_inset
 
-This matrix is indeed dimensionless since we divided out the predicted event
- rate in bins 
+which is indeed dimensionless since we divided out the predicted event rate
+ in bins 
 \begin_inset Formula $i$
 \end_inset
 
@@ -6909,7 +6909,7 @@ c map while considering external constraints from other sensing data.
  All steps after this are performed iteratively.
  Starting from the observable normalization bin with the highest statistics,
  consider merging it with all immediate adjacent bins.
- Unless individual fractional errors differ significantly before the merge,
+ If the individual fractional errors differ significantly before the merge,
  do not merge them.
  In this analysis, a factor of 10 in fractional uncertainty was chosen to
  describe the similarity between bins.
@@ -7299,17 +7299,47 @@ n bin and its correction shifts the bin mean.
  This is expected since one or more particles originating from a neutrino
  interaction in the water could remove reconstructed tracks from the event
  when varying the systematic.
- Observed in most cases is that the ELossRes distribution is below the mean
- of all variations included in the toy experiments.
- When that is not the case, however, the selection purity in that normalization
- bin is comparatively lower.
+\end_layout
+
+\begin_layout Standard
+Observed in most observable normalization bins is that the disabled ELossRes
+ variation distribution is below the nominal MC expectation.
+ However, there are in the 1-Track samples, as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Representative-event-variations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, that the shape location is above the expectation.
+ This behavior was unexpected prior to running the toy experiment variations.
+ A relationship between the shape location and selection purity as a function
+ of 
+\begin_inset Formula $\left(p,\cos\theta\right)$
+\end_inset
+
+ was discovered.
+ In high purity 
+\begin_inset Formula $\left(p,\cos\theta\right)$
+\end_inset
+
+-regions of the 1-Track samples, the shape location of the disabled ELossRes
+ variations was below the nominal MC expectation.
+ When the purity was lower, however, the shape location was above it.
+ This effect is likely due to events migrating into the N-Tracks samples.
+ With the ELossRes variation disabled, events in the 1-Track samples with
+ low purity, which are also more likely to have multiple reconstructed tracks,
+ are not being migrated into the N-Track samples.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -7540,8 +7570,8 @@ status open
 Event variations in representative observable normalization bins.
  Shown in each sub-figure the varied event rate from all toy experiments
  in a particular observable normalization bin as shown in blue.
- Vertical dashed lines show the unvaried MC prediction and varied mean of
- all toy experiments.
+ Vertical dashed lines show the unvaried, weighted MC prediction and varied
+ mean of all toy experiments.
  The ratio of the horizontal positions of each vertical line is the prefit
  normalization value for that bin.
  A gaussian whose variance was extracted from covariance matrix is shown
@@ -8179,7 +8209,7 @@ Updated detector correlation matrix
 Updated detector covariance matrix (a), the difference from the original
  matrix (b), and updated correlation matrix (c).
  Note that the parameter numbers here are offset from their fit index value
- by 100.
+ by 99.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -8254,7 +8284,8 @@ There are three types of cross section parameters: shape, normalization,
  and functional.
  A cross section shape parameter is defined as a fractional shift in the
  location of a certain feature in some parameter space.
- Shape location parameters all start with a prefit value of zero (0).
+ As a design choice, the shape location parameters all start with a prefit
+ value of zero (0).
  A cross section normalization parameter, 
 \begin_inset Formula $x_{i}^{\text{Norm}}$
 \end_inset
@@ -8276,8 +8307,8 @@ where
 \end_inset
 
  are NEUT nominal and ND constrained parameters, respectively.
- The prefit values for the normalization parameters are usually around one
- (1) unless the prefit is different from the nominal NEUT model.
+ The prefit values for the normalization parameters are set to (1) unless
+ the prefit is different from the nominal NEUT model.
  And finally functional parameters are normalization factors for basis functions
  in a particular parameter space.
  For example the parameters 
@@ -8404,8 +8435,8 @@ literal "false"
 \end_inset
 
  (RFG).
- A CCQE-like excitation mode involves correlated nucleon interactions with
- nucleon pair scattering called 
+ A CCQE-like excitation mode involves correlated nucleon pair scattering
+ called 
 \begin_inset Quotes eld
 \end_inset
 
@@ -8660,16 +8691,16 @@ ce{^{16}O}
 \end_inset
 
 , to describe the uncertainties in the contributing modes in 2p2h.
- These modes are called Meson Exchange Current (MEC) which involves the
- exchange of a virtual meson, nucleon-nucleon correlations (NN) which involves
- no mesons, and the MEC-NN interference.
+ These modes are called Meson Exchange Current (MEC) which involve a virtual
+ meson exchange between the nucleons, nucleon-nucleon correlations (NN)
+ which involves virtual particle exchange, and the MEC-NN interference.
  A shape value of -1 determines 2p2h is completely due to MEC, 0 is the
  nominal MC 2p2h model, and +1 determines 2p2h is completely due to NN.
  Any value in between 
 \begin_inset Formula $\pm1$
 \end_inset
 
- includes interference terms to absorb differences in the event rate.
+ include uses the interference term to absorb differences in the event rate.
  However, since no T2K nor external neutrino data can constrain the neutrino-ind
 uced 2p2h interaction, a flat prior is set for all 2p2h parameters.
 \end_layout
@@ -8687,9 +8718,9 @@ literal "false"
 
 \end_inset
 
- model to effectively describe nucleon correlations.
- The RPA model primarily rescales the single nucleon cross section and has
- dependence on 
+ to describe nucleon correlations.
+ The RPA model primarily alters the single nucleon cross section and has
+ dependence on both 
 \begin_inset Formula $E_{\nu}$
 \end_inset
 
@@ -8704,7 +8735,11 @@ literal "false"
 
  was found to work well to mimic the inherent uncertainties in the Nieves
  RPA model.
- Using the Berstein polynomials basis
+ Using a third order polynomial in the Berstein polynomial basis 
+\begin_inset Formula $B_{i}^{n}$
+\end_inset
+
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "FAROUKI2012379"
@@ -8771,7 +8806,7 @@ where
 \begin_inset Formula $E$
 \end_inset
 
- are scale/normalization factor for the basis functions, and 
+ are scale/normalization factors for the basis functions, and 
 \begin_inset Formula $U$
 \end_inset
 
@@ -8786,7 +8821,7 @@ where
  absorbing the continuity conditions
 \begin_inset Formula 
 \begin{equation}
-p_{1}=D+\frac{UE\left(D-1\right)}{3}\quad p_{2}=D-1.\label{eq:BeRPAContinuity}
+p_{1}=D+\frac{UE\left(D-1\right)}{3},\quad p_{2}=D-1.\label{eq:BeRPAContinuity}
 \end{equation}
 
 \end_inset
@@ -8876,11 +8911,11 @@ literal "false"
 \begin_inset Formula $C_{A}^{5}$
 \end_inset
 
-, and the 
+, and the isospin=
 \begin_inset Formula $\nicefrac{1}{2}$
 \end_inset
 
--isospin background.
+ background.
  In particular, 
 \begin_inset Formula $M_{A}^{\text{Res}}$
 \end_inset
@@ -8927,10 +8962,10 @@ Coherent Pion Production
 \end_layout
 
 \begin_layout Standard
-Coherent scattering refers to scattering where the wavelength of the incident
- particle is larger than the incident target.
- In the case of neutrino-nucleus scattering, the neutrino's wavelength given
- by 
+Coherent scattering refers to scattering where the wavelength of the incoming
+ particle is larger than the target.
+ In the case of coherent neutrino-nucleus scattering, the neutrino's wavelength
+ given by 
 \begin_inset Formula 
 \[
 \lambda=\frac{hc}{E_{\nu}}
@@ -9012,11 +9047,9 @@ CC DIS
 \end_layout
 
 \begin_layout Standard
-The CC and NC other processes include multiple pion and deep inelastic scatterin
-g (DIS).
- For CC DIS, the systematic is treated as a normalization with a relatively
- simple uncertainty, 
-\begin_inset Formula $\sigma_{\text{CCDIS}}$
+The CC DIS process, which also includes multiple pion production, systematic
+ is treated as a normalization with a relatively simple uncertainty, 
+\begin_inset Formula $\tilde{\sigma}_{\text{CCDIS}}$
 \end_inset
 
 , of 
@@ -9043,10 +9076,14 @@ NC Other
 \end_layout
 
 \begin_layout Standard
-There is one free normalization parameter for various NC processes.
+There is one free normalization parameter for the NC processes.
  The NC other parameter contains the normalization uncertainties in NC DIS,
- single kaon production, single eta production, and NC elastic processes
- with a conservative 30% fractional uncertainty
+ single kaon production, single 
+\begin_inset Formula $\eta$
+\end_inset
+
+-meson production, and elastic processes with a conservative 30% fractional
+ uncertainty
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Wret2019"
@@ -9084,24 +9121,7 @@ literal "false"
  which describes interactions in the nucleus as probabilities of position
  and momentum.
  The systematics are parameterized as scattering probabilities for different
- interaction processes tuned to world 
-\begin_inset Formula $\pi$
-\end_inset
-
--
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-ce{^{12}C}
-\end_layout
-
-\end_inset
-
- data
+ interaction processes tuned to world data
 \begin_inset CommandInset citation
 LatexCommand cite
 key "PhysRevC.18.584"
@@ -9113,13 +9133,13 @@ literal "false"
  These processes are divided into four classes: inelastic (INEL) scattering,
  pion absorption (ABS), pion production (PROD), and charge exchange (CEX).
  There are a total of six FSI shape parameters in the fit.
+ The PROD and ABS classes are each single shape parameters.
  For the INEL and CEX classes, they divided into low (LO) and high (HI)
  energy regions where the transition occurs at 
 \begin_inset Formula $p_{\pi}=500$
 \end_inset
 
  MeV/c.
- The PROD and ABS classes are single shape parameters.
 \end_layout
 
 \begin_layout Subsubsection
@@ -9205,7 +9225,7 @@ noprefix "false"
 
 \end_inset
 
-, and emphasized in 
+, and emphasized using 
 \color red
 red font
 \color inherit
@@ -11522,9 +11542,9 @@ This chapter has described all the fit bins and systematic parameters that
  fit between data and MC without any constraints.
  However, since there are known systematic uncertainties in the flux, detector
  inefficiencies, and cross sections, we have described their parameterizations
- to force the fit work with those constraints.
- The flux model and cross section systematics are constrained T2K data and
- external data, respectively.
+ to force the fit work within those constraints.
+ The flux model is constrained by T2K primary and secondary beamline data
+ while the cross sections are constrained by external data.
  Finally, the detector systematics are determined via an ensemble of toy
  experiments based on well established control samples in the ND280.
 \end_layout

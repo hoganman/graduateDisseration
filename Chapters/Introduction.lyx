@@ -128,7 +128,7 @@ French proverb
 \begin_layout Standard
 \begin_inset Branch IntroductionNeutrinos
 inverted 0
-status collapsed
+status open
 
 \begin_layout Section
 Introduction to Neutrinos
@@ -396,18 +396,21 @@ noprefix "false"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement t
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figures/Introduction/StandardModel.png
 	lyxscale 50
-	height 25theight%
+	width 75text%
 
 \end_inset
 
@@ -736,8 +739,7 @@ status open
 \begin_inset Graphics
 	filename Figures/Introduction/MuonDecayJaxoDraw.png
 	lyxscale 50
-	width 30text%
-	height 25theight%
+	width 45text%
 
 \end_inset
 
@@ -769,9 +771,7 @@ status open
 \begin_inset Graphics
 	filename Figures/Introduction/NCScatteringJaxoDraw.png
 	lyxscale 75
-	width 30text%
-	height 25theight%
-	keepAspectRatio
+	width 45text%
 
 \end_inset
 
@@ -942,7 +942,7 @@ status open
 \begin_inset Graphics
 	filename Figures/Introduction/ChiralityPionDecay.png
 	lyxscale 50
-	height 25theight%
+	width 75text%
 
 \end_inset
 
@@ -1524,7 +1524,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Figures/Introduction/NueEScattering.png
-	width 30text%
+	width 75text%
 
 \end_inset
 
@@ -1732,14 +1732,14 @@ final state interactions
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figures/Introduction/NumuScatteringOndQuark.png
 	lyxscale 50
-	width 45text%
+	width 75text%
 
 \end_inset
 
@@ -2124,7 +2124,7 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2384,6 +2384,81 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+placement t
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/TwoNeutrinoOscillations.png
+	lyxscale 50
+	width 75text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Survival and Disappearance Probability
+\end_layout
+
+\end_inset
+
+Two flavor oscillation probability as a function 
+\begin_inset Formula $L/E$
+\end_inset
+
+ is shown using 
+\begin_inset Formula $\theta=20^{\circ}$
+\end_inset
+
+ and 
+\begin_inset Formula $\Delta m^{2}=10^{-3}\text{ eV}^{2}/c^{4}$
+\end_inset
+
+.
+ The spacing between adjacent peaks/troughs is proportional to the inverse
+ of 
+\begin_inset Formula $\Delta m^{2}$
+\end_inset
+
+.
+ Note that 
+\begin_inset Formula $\mathcal{P}\left(\nu_{\alpha}\rightarrow\nu_{\alpha}\right)=1-\mathcal{P}\left(\nu_{\alpha}\rightarrow\nu_{\beta}\right)$
+\end_inset
+
+ since the oscillation probability must always sum to 1.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Two-flavor-oscillation"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 The terminology of 
 \begin_inset Quotes eld
 \end_inset
@@ -2444,78 +2519,6 @@ noprefix "false"
 \end{aligned}
 \label{eq:enuapprox}
 \end{equation}
-
-\end_inset
-
-
-\begin_inset Float figure
-placement t
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/Introduction/TwoNeutrinoOscillations.png
-	lyxscale 50
-	height 25theight%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Survival and Disappearance Probability
-\end_layout
-
-\end_inset
-
-Two flavor oscillation probability as a function 
-\begin_inset Formula $L/E$
-\end_inset
-
- is shown using 
-\begin_inset Formula $\theta=20^{\circ}$
-\end_inset
-
- and 
-\begin_inset Formula $\Delta m^{2}=10^{-3}\text{ eV}^{2}/c^{4}$
-\end_inset
-
-.
- The spacing between adjacent peaks/troughs is proportional to the inverse
- of 
-\begin_inset Formula $\Delta m^{2}$
-\end_inset
-
-.
- Note that 
-\begin_inset Formula $\mathcal{P}\left(\nu_{\alpha}\rightarrow\nu_{\alpha}\right)=1-\mathcal{P}\left(\nu_{\alpha}\rightarrow\nu_{\beta}\right)$
-\end_inset
-
- since the oscillation probability must always sum to 1.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Two-flavor-oscillation"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
 
 \end_inset
 
@@ -2640,18 +2643,21 @@ noprefix "false"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement t
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figures/Introduction/OscillationProb2FlavorLog.png
 	lyxscale 50
-	height 25theight%
+	width 75text%
 
 \end_inset
 
@@ -3604,7 +3610,7 @@ noprefix "false"
 placement t
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Float figure
@@ -3617,7 +3623,7 @@ status open
 \begin_inset Graphics
 	filename Figures/Introduction/FlavorComponentsOfMassStates.png
 	lyxscale 25
-	height 25theight%
+	width 45text%
 
 \end_inset
 
@@ -3664,7 +3670,7 @@ status open
 \begin_inset Graphics
 	filename Figures/Introduction/MassComponentsOfFlavorStates.png
 	lyxscale 25
-	height 25theight%
+	width 45text%
 
 \end_inset
 
@@ -4638,7 +4644,7 @@ status open
 \begin_inset Graphics
 	filename Figures/Introduction/LambdaCDM.png
 	lyxscale 50
-	height 25theight%
+	width 45text%
 
 \end_inset
 
@@ -4796,7 +4802,7 @@ inverted 0
 status open
 
 \begin_layout Section
-Tokai-to-Kamioka Experiment
+Tokai to- amioka Experiment
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:T2KExperiment"
@@ -4807,7 +4813,7 @@ name "sec:T2KExperiment"
 \end_layout
 
 \begin_layout Standard
-The Tokai-to-Kamioka (T2K) experiment is a long baseline, neutrino oscillation
+The Tokai to Kamioka (T2K) experiment is a long baseline, neutrino oscillation
  experiment hosted in Japan
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -4885,14 +4891,14 @@ noprefix "false"
 placement t
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figures/Introduction/T2KBirdsEye.png
 	lyxscale 50
-	width 100text%
+	width 95text%
 
 \end_inset
 
@@ -4994,13 +5000,13 @@ literal "false"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figures/Introduction/OffAxisFluxUnoscillatedNumu.png
-	width 30text%
+	width 75text%
 
 \end_inset
 
@@ -5068,7 +5074,7 @@ The following topics will be discussed in the following order.
 \begin_layout Standard
 \begin_inset Branch IntroductionT2KNeutrinoProduction
 inverted 0
-status collapsed
+status open
 
 \begin_layout Subsection
 Neutrino Production at J-PARC
@@ -5097,15 +5103,14 @@ noprefix "false"
 placement t
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figures/Introduction/JPARCBirdsEye.png
 	lyxscale 50
-	width 49text%
-	height 25theight%
+	width 75text%
 
 \end_inset
 
@@ -5240,10 +5245,9 @@ noprefix "false"
 
 \begin_layout Standard
 \begin_inset Float figure
-placement t
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -5257,7 +5261,7 @@ status open
 \begin_inset Graphics
 	filename Figures/Introduction/JPARCLINAC.png
 	lyxscale 25
-	width 30text%
+	height 25theight%
 
 \end_inset
 
@@ -5286,6 +5290,10 @@ name "fig:LINAC"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Float figure
 wide false
 sideways false
@@ -5296,7 +5304,7 @@ status open
 \begin_inset Graphics
 	filename Figures/Introduction/JPARC3GeVRCS.png
 	lyxscale 50
-	width 30text%
+	height 25theight%
 
 \end_inset
 
@@ -5322,6 +5330,10 @@ name "fig:3-GeV-RCS"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Float figure
 wide false
 sideways false
@@ -5332,7 +5344,7 @@ status open
 \begin_inset Graphics
 	filename Figures/Introduction/JPARCMR.png
 	lyxscale 30
-	width 30text%
+	height 25theight%
 
 \end_inset
 
@@ -5367,18 +5379,9 @@ name "fig:50-GeV-MR"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Schematics of the J-PARC Accelerators
-\end_layout
-
-\end_inset
-
 Schematics of the J-PARC accelerators.
  (a) The linac accelerates hydrogen ions to 181 MeV of kinetic energy, designed
- for 400 MeV, from the ion source through linear accelerator (linac) elements
+ for 400 MeV, from the ion source
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Yamazaki2003"
@@ -5387,8 +5390,8 @@ literal "false"
 \end_inset
 
 .
- (b) Protons from the linac are collected into the rapid cycle synchrotron
- (RCS) and accelerated to 3 GeV
+ (b) Protons from the linac are collected into the RCS and accelerated to
+ 3 GeV
 \begin_inset CommandInset citation
 LatexCommand cite
 key "PhysRevAccelBeams.21.024203"
@@ -5397,29 +5400,22 @@ literal "false"
 \end_inset
 
 .
- (c) Protons from the RCS are injected into the main ring (MR) synchrotron
- which further accelerates the protons.
+ (c) Protons from the RCS are injected into the MR synchrotron.
  While the MR is designed for 50 GeV, it currently operates at 30 GeV.
- For T2K, the protons are bunched in the MR and extracted into the 
-\begin_inset Quotes eld
-\end_inset
-
-Neutrino beamline
-\begin_inset Quotes erd
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Igarashi:2016wyi"
-literal "false"
-
-\end_inset
-
-.
+ 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:schemeJPARC"
+
+\end_inset
+
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Schematics of the J-PARC Accelerators
+\end_layout
 
 \end_inset
 
@@ -5472,23 +5468,22 @@ literal "false"
 
 \begin_layout Standard
 \begin_inset Float figure
-placement t
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figures/Introduction/JPARCNuBeamline.png
-	width 30text%
+	height 25theight%
 
 \end_inset
 
@@ -5517,16 +5512,20 @@ name "fig:Neutrino-beamline"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figures/Introduction/JPARCNuBeamlineZoomed.png
-	width 30text%
+	height 25theight%
 
 \end_inset
 
@@ -5555,16 +5554,20 @@ name "fig:Secondary-beamline"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figures/Introduction/T2KHorns.png
-	width 30text%
+	height 25theight%
 
 \end_inset
 
@@ -5687,7 +5690,7 @@ noprefix "false"
 placement !t
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Float figure
@@ -5699,9 +5702,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Figures/Introduction/horn2.png
-	width 30text%
-	height 25theight%
-	keepAspectRatio
+	width 45text%
 
 \end_inset
 
@@ -5712,7 +5713,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-A graphite target being extracted from the target station
+A graphite target at the target station
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:targetstation"
@@ -5739,9 +5740,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Figures/Introduction/horn1.png
-	width 30text%
-	height 25theight%
-	keepAspectRatio
+	width 45text%
 
 \end_inset
 
@@ -5893,15 +5892,13 @@ rinos traveling towards SK.
 placement !t
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figures/Introduction/T2KPOTDelivery.png
-	width 50text%
-	height 25theight%
-	keepAspectRatio
+	width 95text%
 
 \end_inset
 
@@ -6060,79 +6057,6 @@ constrain the neutrino flux and interaction rate
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement t
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/Introduction/INGRID.png
-	lyxscale 25
-	width 30text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-A schematic of INGRID shows the arrangement of the tracking scintillating
- modules.
- There are 16 identical modules total with seven in the vertical row, seven
- in the horizontal row, and two at off-axis positions.
- INGRID is capable of measuring the neutrino beam in a transverse area of
- 10m 
-\begin_inset Formula $\times$
-\end_inset
-
- 10 m.
- With the vertical row upstream of the horizontal row, the designed beam
- center intersects each row's center module
-\begin_inset CommandInset citation
-LatexCommand cite
-key "ingrid"
-literal "false"
-
-\end_inset
-
-.
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:INGRID"
-
-\end_inset
-
-
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Schematic of INGRID
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 The following subsections begin with a description of the MPPC technology
  used in T2K.
  Next is a description of INGRID and its purpose at ND280.
@@ -6186,16 +6110,15 @@ noprefix "false"
 
 \begin_layout Standard
 \begin_inset Float figure
-placement t
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figures/Introduction/MPPC.png
-	width 60text%
+	width 75text%
 
 \end_inset
 
@@ -6282,6 +6205,77 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/INGRID.png
+	width 75text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A schematic of INGRID shows the arrangement of the tracking scintillating
+ modules.
+ There are 16 identical modules total with seven in the vertical row, seven
+ in the horizontal row, and two at off-axis positions.
+ INGRID is capable of measuring the neutrino beam in a transverse area of
+ 10m 
+\begin_inset Formula $\times$
+\end_inset
+
+ 10 m.
+ With the vertical row upstream of the horizontal row, the designed beam
+ center intersects each row's center module
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ingrid"
+literal "false"
+
+\end_inset
+
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:INGRID"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Schematic of INGRID
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Each scintillating bar consists of scintillator-doped polystyrene which
  emits light when a charged particle deposits energy in the media.
  Each bar contains a single wavelength-shifting (WLS) fiber to collect and
@@ -6308,7 +6302,6 @@ ce{TiO_2}
 
 \begin_layout Standard
 \begin_inset Float figure
-placement t
 wide false
 sideways false
 status collapsed
@@ -6317,9 +6310,7 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename Figures/Introduction/INGRIDBeamProfile.png
-	width 60text%
-	height 20theight%
-	keepAspectRatio
+	width 95text%
 
 \end_inset
 
@@ -6405,7 +6396,6 @@ noprefix "false"
 
 \begin_layout Standard
 \begin_inset Float figure
-placement t
 wide false
 sideways false
 status open
@@ -6415,7 +6405,7 @@ status open
 \begin_inset Graphics
 	filename Figures/Introduction/INGRIDBeamProfileHistory.png
 	lyxscale 45
-	width 60text%
+	width 95text%
 
 \end_inset
 
@@ -6500,7 +6490,6 @@ Irreducible
 
 \begin_layout Standard
 \begin_inset Float figure
-placement t
 wide false
 sideways false
 status collapsed
@@ -6510,7 +6499,7 @@ status collapsed
 \begin_inset Graphics
 	filename Figures/Introduction/ND280Exploded-Text-White.png
 	lyxscale 75
-	width 50text%
+	width 95text%
 
 \end_inset
 
@@ -6652,7 +6641,6 @@ noprefix "false"
 
 \begin_layout Standard
 \begin_inset Float figure
-placement t
 wide false
 sideways false
 status open
@@ -6661,7 +6649,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Figures/Introduction/ND280BFieldDeviations.png
-	width 60text%
+	width 75text%
 
 \end_inset
 
@@ -6943,7 +6931,7 @@ The
 placement t
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -6957,7 +6945,7 @@ status open
 \begin_inset Graphics
 	filename Figures/Introduction/P0D_NIM_Cartoon.png
 	lyxscale 75
-	width 30text%
+	width 45text%
 
 \end_inset
 
@@ -7001,7 +6989,7 @@ status open
 \begin_inset Graphics
 	filename Figures/Introduction/P0DBars.png
 	lyxscale 50
-	width 30text%
+	width 45text%
 
 \end_inset
 
@@ -7199,7 +7187,7 @@ noprefix "false"
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -7508,7 +7496,7 @@ status open
 placement t
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -7690,7 +7678,7 @@ status open
 \begin_inset Graphics
 	filename Figures/Introduction/TPC.png
 	lyxscale 75
-	width 30text%
+	width 75text%
 
 \end_inset
 
@@ -7833,13 +7821,13 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figures/Introduction/SKDrawing.png
-	width 60text%
+	width 95text%
 
 \end_inset
 
@@ -7915,13 +7903,13 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figures/Introduction/SKEventDisplay.png
-	width 60text%
+	width 95text%
 
 \end_inset
 
@@ -8111,7 +8099,7 @@ noprefix "false"
 placement t
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -8356,14 +8344,14 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figures/Introduction/ZellerXSec.png
 	lyxscale 50
-	width 50text%
+	width 95text%
 
 \end_inset
 

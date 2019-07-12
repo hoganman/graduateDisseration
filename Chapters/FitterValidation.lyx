@@ -186,16 +186,34 @@
 \begin_layout Standard
 This chapter will present the checks, tests and validations of the BANFF
  fit using the MC as input.
- The first such test is using the nominal MC as the data, referred to as
+ The first such test is using the weighted MC as the data, referred to as
  an Asimov data fit.
- The next are two validation tests using two different "fake" data sets.
- One alters the flux prediction and is referred to as the High Energy Neutrino
- Flux Variation fake data set.
- The other is the Single Pion 
-\begin_inset Formula $C_{A}^{5}$
+ The next are two validation tests using two different data sets that have
+ altered event weights compared to the MC.
+ These are referred to as "fake data
+\begin_inset Quotes erd
 \end_inset
 
- Parameter Variation fake data set.
+ sets.
+ One fake data set alters the flux prediction and is referred to as the
+ 
+\begin_inset Quotes eld
+\end_inset
+
+High Energy Neutrino Flux Variation
+\begin_inset Quotes erd
+\end_inset
+
+ fake data set.
+ The other is the 
+\begin_inset Quotes eld
+\end_inset
+
+Single Pion Event Rate Variation
+\begin_inset Quotes erd
+\end_inset
+
+ fake data set.
 \end_layout
 
 \begin_layout Standard
@@ -235,7 +253,8 @@ noprefix "false"
 .
  Instead of statistically sampling from the MC, which can insert statistical
  variations in the fit, the Asimov data set is created by scaling the set
- down to the full T2K POT.
+ down to the full T2K POT with additional finer corrections like flux and
+ cross section weights.
  The prefit correlation matrix is shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -271,6 +290,10 @@ status collapsed
 
 \begin_layout Plain Layout
 Complete prefit correlation matrix for the BANFF fit.
+ The first 100 parameters are the flux bins.
+ Between 100 and 561 are the bin normalization parameters.
+ Finally 562 through 592 are the cross section parameters.
+ 
 \begin_inset Argument 1
 status open
 
@@ -309,14 +332,16 @@ In addition to running an Asimov fit, other metrics were examined in the
  Asmiov set.
  Shown first is a comparison of the event rates before and after applying
  weights to the MC.
- Next is a set of scans of the test statistic space to ensure the sample
+ Next is an examination of the cross section weight functions.
+ Finally is a set of scans of the test statistic space to ensure the sample
  and penalty terms are behaving as expected.
+ Then the Asimov data set fit is explored.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Branch ValidationAsimiovEventRate
 inverted 0
-status open
+status collapsed
 
 \begin_layout Subsection
 Event Rate
@@ -351,9 +376,10 @@ noprefix "false"
 , are the flux, cross section, and detector corrections.
  We see that applying the POT weight scales the MC event rate close to that
  of the data.
- The other weights are finer corrections to the rate from known systematics.
+ The other weights are fine tuning corrections to the rate from known systematic
+s like flux and cross sections.
  Application of all the weights is the prefit event rate and is collectively
- the Asimov data set.
+ referred to as Asimov data set.
 \end_layout
 
 \begin_layout Standard
@@ -1206,17 +1232,8 @@ ND280
 
 \begin_layout Plain Layout
 Asimov fit results for the Flux at ND280.
- The numbers in parentheses indicate the fit indices in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "tab:Fluxbinning"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
+ The numbers in parentheses indicate the fit indices.
+ 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Asimov-fit-resultsND"
@@ -1561,17 +1578,8 @@ SK
 
 \begin_layout Plain Layout
 Asimov fit results for the Flux at Super-K.
- The numbers in parentheses indicate the fit indices in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "tab:Fluxbinning"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
+ The numbers in parentheses indicate the fit indices .
+ 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Asimov-fit-resultsSKFHC"
@@ -1684,10 +1692,18 @@ Water-out obsnorms (331-561)
 
 \begin_layout Plain Layout
 Asimov fit results for the obsnorm parameters.
- The numbers in parentheses indicate the fit indices in 
+ The numbers in parentheses indicate the fit indices.
+ The large jumps in the bin normalization parameters is an artifact of the
+ indexing choice with the indices increasing in increasing momentum in constant
+ angular slices.
+ Compare the changes in the bin normalizations in the 
+\begin_inset Formula $\numu$
+\end_inset
+
+ in FHC CC 1-Track in 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "tab:Observable-normalization-fit-bins"
+reference "fig:Bin-normalization-edgesNumuFHC"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1808,17 +1824,12 @@ Cross Section (568-592)
 
 \begin_layout Plain Layout
 Asimov fit results for the FSI and cross section parameters.
- The numbers in parentheses indicate the fit indices in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "tab:Fluxbinning"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
+ The numbers in parentheses indicate the fit indices.
+ In order to provide a consistent presentation of parameter changes between
+ prefit and postfit among all parameters, shape location and scale parameters
+ are adjusted to prefits of one (1).
+ In effect, the value and uncertainties for all parameters are fractional
+ changes.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -1944,7 +1955,7 @@ Complete Postfit Correlation Matrix for the Asimov Data Fit
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2014,9 +2025,19 @@ Fake Data
 \end_layout
 
 \begin_layout Standard
-In this section, we examine two fake data studies to test of BANFF framework
- to nonphysical variations.
- These stress tests initially start with the Asimov set and have variations
+In this section, we examine the results of BANFF fits when given data sets
+ with nonphysical alterations.
+ As stated earlier, these are called 
+\begin_inset Quotes eld
+\end_inset
+
+fake data
+\begin_inset Quotes erd
+\end_inset
+
+ sets since we are treating these as data in the fit, but they are in fact
+ generated starting with the MC.
+ These data sets initially start with the Asimov data set and have variations
  applied to it.
  Here we are only interested in the results of the flux and cross section
  parameters since they are the parameters that are propagated to the oscillation
@@ -2026,44 +2047,37 @@ In this section, we examine two fake data studies to test of BANFF framework
 \end_inset
 
  in FHC neutrino flux.
- The other test is a variation of the CC-
-\begin_inset Formula $1\pi$
-\end_inset
-
- parameter 
-\begin_inset Formula $C_{A}^{5}$
-\end_inset
-
-.
+ The other test is a variation of the Single Pion Event Rate Variation.
 \end_layout
 
 \begin_layout Standard
 While other fake data sets could be generated that are more or less similar
- to the Asimov data set, that is not the purpose of this analysis and fake
- data studies.
+ to the Asimov data set, that is not the purpose of fitting to fake data
+ sets.
  
 \shape italic
 The purpose of these tests is to show the fit can converge when provided
- with non-Asimov data sets
+ with non-Asimov data sets and we can understand the results.
+
 \shape default
-.
- Evidence of the official BANFF fit not converging is known using fake data
- fits in the official BANFF FGD-only analysis.
- These fake data sets are generated by altering the Asimov data set through
- random and uncorrelated variations of all the flux, cross section, and
- detector systematic weights together.
+ The fitting software MINUIT in the BANFF fit is known to not converge on
+ a global minimum when using altered Asimov data.
+ In particular, fitting FGD-only data generated from random and uncorrelated
+ variations of all fit flux, cross section, and bin normalization parameters,
+ 127 out of 500 fits (~25%) reported fit convergence problems.
  So convergence is not assured in all situations, but is possible.
  The information it does provide is possible biases in the fit results for
  given systematic parameters.
- So by demonstrating the BANFF fit converges with 
+ By demonstrating the BANFF fit converges with 
 \begin_inset Formula $\pod$
 \end_inset
 
--only fake data, we establish that a credible 
+-only fake data and we can sensibly understand the results, we establish
+ that a credible 
 \begin_inset Formula $\pod$
 \end_inset
 
--only data fit result is possible.
+-only real data fit result is possible.
 \end_layout
 
 \begin_layout Subsection
@@ -2091,11 +2105,7 @@ This fake data set arbitrarily increases the
  in FHC flux between 7 and 30 GeV by +25%.
  This variation was chosen since this energy range corresponds precisely
  to flux parameter 
-\begin_inset Quotes eld
-\end_inset
-
-10
-\begin_inset Quotes erd
+\begin_inset Formula $b_{10}$
 \end_inset
 
  and it could affect all analysis bins.
@@ -2116,7 +2126,7 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2356,12 +2366,28 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Neutrino flux before (Nominal MC) and after (Fake Data) applying the +25%
- flux increase to 
+Neutrino flux before and after applying the +25% increase to 
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC.
+ in FHC flux in the High Energy Neutrino Flux Variation data set.
+ In the figures, 
+\begin_inset Quotes eld
+\end_inset
+
+Nominal MC
+\begin_inset Quotes erd
+\end_inset
+
+ refers to the Asimov prediction and 
+\begin_inset Quotes eld
+\end_inset
+
+Fake Data
+\begin_inset Quotes erd
+\end_inset
+
+ is the altered data set.
  A ratio of the fake data to nominal MC is shown below each histogram to
  show the variation was applied correctly.
  The flux of neutrinos, both 
@@ -2372,7 +2398,7 @@ Neutrino flux before (Nominal MC) and after (Fake Data) applying the +25%
 \begin_inset Formula $\numubar$
 \end_inset
 
- in RHC, are not affected.
+, in RHC are not affected.
 \begin_inset Argument 1
 status open
 
@@ -2415,16 +2441,12 @@ noprefix "false"
 
 .
  We see that the target flux parameter 
-\begin_inset Quotes eld
-\end_inset
-
-10
-\begin_inset Quotes erd
+\begin_inset Formula $b_{10}$
 \end_inset
 
  has significantly increased from its prefit value by almost +20%.
- However, due to correlations in the flux covariance matrix, a number of
- postfit features have appeared.
+ However, due to correlations in the flux covariance matrix, other flux
+ parameters have changed.
  The BANFF fit prefers to increase the previous energy flux parameter and
  the high energy 
 \begin_inset Formula $\nue$
@@ -2436,7 +2458,7 @@ noprefix "false"
  However, the RHC flux parameters are still well within prefit uncertainties.
  The statement is true for the cross section and FSI parameters.
  Therefore we can conclude that the fit prefers to resolve nonphysical changes
- in the flux with changes in correlated flux parameters.
+ large, singular changes with many correlated parameter variations.
 \end_layout
 
 \begin_layout Standard
@@ -2455,7 +2477,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/Validation/NuMuFluxVariationFakeData/ND280NuMu.png
+	filename Figures/Validation/NuMuFluxVariationFakeData/ND280NuMu_b10Shown.png
 	lyxscale 50
 	height 30theight%
 
@@ -2640,7 +2662,7 @@ name "fig:Postfit-numu-flux-fake-data"
 \end_layout
 
 \begin_layout Subsection
-Single Pion Event Weight Variation
+Single Pion Event Rate Variation
 \end_layout
 
 \begin_layout Standard
@@ -2650,11 +2672,7 @@ This fake data set arbitrarily increases the number of resonant single pion
 \begin_inset Formula $1\pi$
 \end_inset
 
- events, extracting the event weight from the 
-\begin_inset Formula $C_{A}^{5}$
-\end_inset
-
- parameter, and increasing its event weight by +25%.
+ events, extracting the event weight, and increasing it by +25%.
  This is what is observed in the lepton candidate momentum distributions
  as shown in 
 \begin_inset CommandInset ref
@@ -2667,23 +2685,16 @@ noprefix "false"
 \end_inset
 
 .
- According to the Graczyk-Sobczyk model, the event rate can be singly absorbed
- in 
+ According to the CC-
+\begin_inset Formula $1\pi$
+\end_inset
+
+ model, the event rate can be singly absorbed in 
 \begin_inset Formula $C_{A}^{5}$
 \end_inset
 
- since the cross section depends on 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:CC1piaxialformfactor"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
 .
- However as seen in 
+ However as seen in Appendix 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "app:NSigmaVariations"
@@ -2954,11 +2965,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Lepton candidate momentum for the single pion 
-\begin_inset Formula $C_{A}^{5}$
-\end_inset
-
- parameter variation fake data.
+Lepton candidate momentum for the Single Pion Event Rate Variation fake
+ data set.
  The nominal MC and fake data predictions are shown as solid and dashed
  lines, respectively.
  True CC-
@@ -2966,26 +2974,19 @@ Lepton candidate momentum for the single pion
 \end_inset
 
  events are differentiated from all other interactions to illustrate the
- event scaling which is shown in a ratio plot beneath the main histograms.
+ event scaling applied.
+ A ratio plot of CC-
+\begin_inset Formula $1\pi$
+\end_inset
+
+ events to all other interaction events shown beneath each main histogram.
  
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-Lepton Candidate Momentum in the 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texorpdfstring{$C_A^5$}{CA5}
-\end_layout
-
-\end_inset
-
- Fake Data Set
+Lepton Candidate Momentum in the Single Pion Event Rate Variation Fake Data
+ Set
 \end_layout
 
 \end_inset
@@ -3032,12 +3033,12 @@ noprefix "false"
 
  increased by ~10%, but this is not enough to account for the input fake
  data shift.
- We also notice that due to anticorrelations with 
+ We also notice that due to anticorrelations, 
 \begin_inset Formula $M_{A}^{\text{Res}}$
 \end_inset
 
-, it was decreased by about several percent.
- What the fit prefers is to increase the Isospin=
+ was decreased by about several percent.
+ What the fit prefers is to increase the isospin=
 \begin_inset Formula $\nicefrac{1}{2}$
 \end_inset
 
@@ -3060,14 +3061,14 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figures/Validation/CA5Variation/ND280NuMu.png
 	lyxscale 50
-	height 30theight%
+	width 30text%
 
 \end_inset
 
@@ -3089,21 +3090,17 @@ ND280 FHC Flux
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-\align center
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figures/Validation/CA5Variation/ND280ANuMu.png
 	lyxscale 50
-	height 30theight%
+	width 30text%
 
 \end_inset
 
@@ -3125,52 +3122,17 @@ ND280 RHC Flux
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-\align center
 \begin_inset Float figure
 wide false
 sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/Validation/CA5Variation/XSec.png
-	width 45text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Cross section parameters
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figures/Validation/CA5Variation/FSI.png
 	lyxscale 50
-	width 45text%
+	width 30text%
 
 \end_inset
 
@@ -3195,14 +3157,45 @@ FSI parameters
 \end_layout
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Validation/CA5Variation/XSec.png
+	width 95text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Postfit parameters for the single pion 
-\begin_inset Formula $C_{A}^{5}$
+Cross section parameters
+\end_layout
+
 \end_inset
 
- parameter variation fake data fit.
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Postfit parameters for the Single Pion Event Rate Variation fake data fit.
  All the flux parameters in FHC are shown together and ordered sequentially
  from left to right.
  The same is true the RHC flux.
@@ -3258,26 +3251,29 @@ Validation Summary
 \end_layout
 
 \begin_layout Standard
-We have validated the BANFF fit in a variety of scenarios to test its robustness
- to variations.
- We learned from the Asimov data set, which is the fully weighted nominal
- MC, how the flux and cross section parameters affect the samples.
- In the fake data sets, we saw the affect of penalty terms and correlations
- influencing the fit.
- While more rigorous tests could establish where biases in the fit exist
- or possible failure modes, these limitations are beyond the scope of this
- thesis.
- Instead, fit convergence with sensible results with has been established
- with the fake data sets.
+We have validated the BANFF fit indeed works and tested its robustness in
+ a variety of scenarios.
+ We learned from the Asimov data set, which is the T2K nominal MC corrected
+ to data POT with fine tuning corrections, in particular how the flux and
+ cross section parameters affect the samples.
+ In the fake data sets, we saw the effect of the penalty terms and how their
+ correlations influence the fit.
+ While more rigorous tests could establish where biases exist, these limitations
+ are beyond the scope of this thesis.
+ What has been established is that sensible fit results using the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ selections are possible.
  We can now examine the 
 \begin_inset Formula $\pod$
 \end_inset
 
--only data and 
+-only data and be assured the BANFF can fit can converge with 
 \begin_inset Formula $\pod$
 \end_inset
 
--only BANFF fit results.
+-only data.
 \end_layout
 
 \end_body

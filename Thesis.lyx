@@ -54,6 +54,7 @@
   %hidelinks,
   %colorlinks=true,
   %pdfborder={0 0 0},
+  pdftitle={HoganMPhDThesis2019}
   linkcolor=blue,
   filecolor=magenta,
   urlcolor=cyan,
@@ -66,7 +67,7 @@
 \chapterfont{\centering}
 \usepackage{braket}
 \end_preamble
-\options doctor,showframe
+\options doctor
 \use_default_options true
 \begin_modules
 fixltx2e
@@ -211,6 +212,11 @@ hanging
 \filename_suffix 0
 \color #faf0e6
 \end_branch
+\branch Abstract
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
 \index Index
 \shortcut idx
 \color #008000
@@ -278,7 +284,7 @@ doctor,showframe
 \begin_layout Standard
 \begin_inset Branch PreambleAndMainMatter
 inverted 0
-status collapsed
+status open
 
 \begin_layout Standard
 \begin_inset CommandInset include
@@ -302,20 +308,71 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-preview true
-filename "Preamble/Abstract.tex"
+\begin_inset Branch Abstract
+inverted 0
+status collapsed
 
-\end_inset
-
-
+\begin_layout Standard
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-% Abstract text
+
+\backslash
+abstract{%
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The Tokai to Kamioka (T2K) experiment is a long baseline neutrino oscillation
+ experiment hosted in Japan in search for electron neutrino appearance in
+ a high purity muon neutrino beam.
+ In order to constrain the systematic uncertainties in the oscillation analysis,
+ a dedicated near detector (ND) complex called ND280 is located 280 meters
+ from the neutrino production source in line of the beam.
+ To date, the Fine Grain Detector (FGD) in ND280 has provided the ND constraint
+ using a binned maximum likelihood estimate fit.
+ This thesis describes the effort to validate the ND constraint using the
+ same framework, but with an independent data set from the ND280 Pi-Zero
+ Detector (
+\begin_inset Formula $\pod$
+\end_inset
+
+).
+ Expanding on previously developed 
+\begin_inset Formula $\pod$
+\end_inset
+
+ selections, new selections have been developed to select neutrino and antineutr
+ino events in one and multiple track topologies on water and carbon.
+ These selections are shown to have sensitivity similar sensitivity to the
+ T2K flux and cross section systematic uncertainties.
+ Using the same parameterization as the official ND constraint result, the
+ 
+\begin_inset Formula $\pod$
+\end_inset
+
+ data fit results demonstrate similar flux and cross section results with
+ that of the FGD data.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}%end abstract
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -408,15 +465,6 @@ listoftables         % insert list of tables (optional)
 \backslash
 listoffigures        % insert list of figures (optional)
 \end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
 
 \begin_layout Plain Layout
 
