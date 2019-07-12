@@ -1012,8 +1012,7 @@ each flux term is a ratio of rates
 .
  
 \shape italic
-Further, all penalty terms are ratios either to expected event rates or
- nominal model assumptions
+Further, all penalty parameters and covariance terms are dimensionless
 \shape default
 .
  The flux bins are differentiated by neutrino energy, horn current/polarity
@@ -1058,7 +1057,7 @@ noprefix "false"
  is the (Pearson) correlation coefficient matrix which is defined as 
 \begin_inset Formula 
 \begin{equation}
-\rho_{x,y}=\frac{V_{x,y}}{\sqrt{V_{x,x}V_{y,y}}},\label{eq:pearson-correlation}
+\rho_{i,j}=\frac{V_{i,j}}{\sqrt{V_{i,i}V_{j,j}}},\label{eq:pearson-correlation}
 \end{equation}
 
 \end_inset
@@ -1068,7 +1067,11 @@ where
 \end_inset
 
  is the covariance matrix and 
-\begin_inset Formula $x/y$
+\begin_inset Formula $i$
+\end_inset
+
+ and 
+\begin_inset Formula $j$
 \end_inset
 
  are bins in 
@@ -5644,17 +5647,6 @@ Super-K
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage clearpage
-\end_inset
-
-
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
 \end_inset
 
 
@@ -5663,7 +5655,7 @@ Super-K
 \begin_layout Standard
 \begin_inset Branch P0DBANFFParameterizationDetector
 inverted 0
-status open
+status collapsed
 
 \begin_layout Subsection
 Detector Inefficiencies Model
@@ -5676,10 +5668,10 @@ In the BANFF fit, bin normalization parameters are used to evaluate the
 \end_inset
 
 .
- The idea is that the MC does not accurately model detector inefficiencies
- that affect the predicted event rate.
- Since improperly modeled inefficiencies can cause event migrate from sample-to-
-sample, bin-to-bin, or both, numerous fake 
+ Varying fit bins without constraint is nonphysical due to known detector
+ inefficiencies and their systematic uncertainties.
+ Since improperly modeled inefficiencies can cause events to migrate from
+ bin-to-bin, numerous fake 
 \begin_inset Quotes eld
 \end_inset
 
@@ -5687,12 +5679,16 @@ toy experiments
 \begin_inset Quotes erd
 \end_inset
 
- are performed to evaluate possible scenarios.
- When all toy experiments are analyzed together, the variation in the event
- rate provides a constraint on the bin normalization uncertainty.
- We will see the result of such variations in the coming pages.
- Hitherto in this thesis, detector inefficiencies will be referred to as
- detector systematics.
+ are performed to evaluate the systematic uncertainties in detector inefficienci
+es.
+ When all toy experiments are analyzed together, correlated variations among
+ fit bins become apparent.
+ These correlations provide the constraints on freely changing bin normalization
+s.
+ We will see the result of running such toy experiment variations in the
+ coming pages.
+ Hitherto in this thesis, detector inefficiency uncertainties will be referred
+ to as detector systematics.
 \end_layout
 
 \begin_layout Standard
@@ -6486,25 +6482,30 @@ Now that we understand how toy experiments can alter , we can now begin
 \end_layout
 
 \begin_layout Subsubsection
-Bin Normalizations and Covariance
+Bin Normalizations And Covariance
 \end_layout
 
 \begin_layout Standard
-After many toy experiments which vary the observables 
+As stated before, the bin normalization penalty parameters are restrictions
+ on freely varying fit bins.
+ To determine how correlated different fit bins are, many toy experiments
+ are performed which vary the observables 
 \begin_inset Formula $(p,\cos\theta)$
 \end_inset
 
- and their weights, the number of varied events per fit bin can be examined.
- From here, the observable normalization (obsnorm) and covariance terms
- are calculated.
- The bin normalization terms, 
+.
+ The bin normalization parameter for the 
+\begin_inset Formula $i$
+\end_inset
+
+th bin, or 
 \begin_inset Formula $d_{i}$
 \end_inset
 
-, are defined as
+, is defined as
 \begin_inset Formula 
 \begin{equation}
-d_{i}=\frac{\overline{N}_{i}}{N_{i}},\label{eq:obsnormdef}
+d_{i}=\frac{\left\langle N_{i}\right\rangle _{\text{toys}}}{N_{i}},\label{eq:obsnormdef}
 \end{equation}
 
 \end_inset
@@ -6513,93 +6514,52 @@ where
 \begin_inset Formula $N_{i}$
 \end_inset
 
- and 
-\begin_inset Formula $\overline{N}_{i}$
-\end_inset
-
- are the nominal/predicted and varied mean event rates for the lepton candidate,
- respectively, in the 
+ predicted number of events in fit bin 
 \begin_inset Formula $i$
 \end_inset
 
-th 
+ and 
+\begin_inset Formula $\left\langle N_{i}\right\rangle _{\text{toys}}$
+\end_inset
+
+ is the average number of events in fit bin 
+\begin_inset Formula $i$
+\end_inset
+
+ evaluated over all toy experiments (toys).
+ The predicted event rate for bin 
+\begin_inset Formula $i$
+\end_inset
+
+ is given by
+\begin_inset Formula 
+\begin{equation}
+N_{i}=\sum_{k}^{N_{\text{MC}}}\delta_{i,k}^{\text{bin}}w_{k},\label{eq:bin-nominal}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $N_{\text{MC}}$
+\end_inset
+
+ being the number of unweighted MC events, 
+\begin_inset Formula $\delta_{i,k}^{\text{bin}}$
+\end_inset
+
+ determines if the 
+\begin_inset Formula $k$
+\end_inset
+
+th event goes into analysis bin 
+\begin_inset Formula $i$
+\end_inset
+
+ as a function of 
 \begin_inset Formula $\left(p,\cos\theta\right)$
 \end_inset
 
- bin.
- 
-\shape italic
-As stated before, all the penalty parameters are fractional and dimensionless
-\shape default
-.
- The detector covariance matrix, 
-\begin_inset Formula $\sigma_{\text{Det}}^{2}$
-\end_inset
-
-, between bins 
-\begin_inset Formula $x$
-\end_inset
-
- and 
-\begin_inset Formula $y$
-\end_inset
-
- is given as
-\begin_inset Formula 
-\begin{equation}
-\sigma_{\text{Det}}^{2}\left(x,y\right)=\left[\frac{1}{N_{x}}\right]\left[\frac{1}{N_{y}}\right]\left(\sigma_{\text{Cov}}^{2}\left(x,y\right)+\sigma_{\text{Stat}}^{2}\left(x,y\right)\right),\label{eq:detectorcovariance}
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Quotes eld
-\end_inset
-
-Cov
-\begin_inset Quotes erd
-\end_inset
-
- and 
-\begin_inset Quotes eld
-\end_inset
-
-Stat
-\begin_inset Quotes erd
-\end_inset
-
- refer to the covariance and statistical uncertainties for bins 
-\begin_inset Formula $x$
-\end_inset
-
- and 
-\begin_inset Formula $y$
-\end_inset
-
-, respectively.
- This covariance matrix is a fractional covariance as to be consistent with
- the definition for the flux covariance matrix.
- The obsnorm expectation for bin 
-\begin_inset Formula $x$
-\end_inset
-
- is
-\begin_inset Formula 
-\begin{equation}
-N_{x}=\sum_{k=1}^{N_{x}^{\text{MC}}}w_{k},\label{eq:bin-nominal}
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Formula $N_{x}^{\text{MC}}$
-\end_inset
-
- being the number of unweighted MC events in the 
-\begin_inset Formula $x$
-\end_inset
-
-th bin and 
+, and 
 \begin_inset Formula $w_{k}$
 \end_inset
 
@@ -6620,9 +6580,9 @@ noprefix "false"
 
  are 
 \begin_inset Formula 
-\[
-w_{k}=w^{\text{POT}}\times w^{\text{Flux}}\times w^{\text{xsec}}
-\]
+\begin{equation}
+w_{k}=w_{k}^{\text{POT}}\times w_{k}^{\text{Flux}}\times w_{k}^{\text{xsec}}\times w_{k}^{\text{Det}},\label{eq:EventWeights}
+\end{equation}
 
 \end_inset
 
@@ -6637,56 +6597,152 @@ noprefix "false"
 \end_inset
 
  for all possible weights).
- The covariance and statistical terms are given by
+ The average number of events in fit bin 
+\begin_inset Formula $i$
+\end_inset
+
+ over all toys is given by 
 \begin_inset Formula 
 \begin{equation}
-\begin{aligned}\sigma_{\text{Cov}}^{2}\left(x,y\right) & =\frac{1}{N_{\text{Toy}}}\sum_{t=1}^{N_{\text{Toy}}}\left(N_{x,t}-\overline{N}_{x}\right)\left(N_{y,t}-\overline{N}_{y}\right)\\
-\sigma_{\text{Stat}}^{2}\left(x,y\right) & =\delta\left(x,y\right)\sum_{k=1}^{N_{x}^{\text{MC}}}w_{k}^{2},
+\begin{aligned}\left\langle N_{i}\right\rangle _{\text{toys}} & =\frac{1}{N_{\text{toys}}}\sum_{t=1}^{N_{\text{toys}}}\left(N_{i}\right)_{t}\\
+ & =\frac{1}{N_{\text{toys}}}\sum_{t=1}^{N_{\text{toys}}}\left(\sum_{k}^{N_{\text{MC}}}\left[\delta_{i,k}^{\text{bin}}w_{k}\right]\right)_{t},
 \end{aligned}
+\label{eq:NAvgToys}
+\end{equation}
+
+\end_inset
+
+where now each MC event has a toy variation out of 
+\begin_inset Formula $N_{\text{toys}}$
+\end_inset
+
+ total toys.
+ For every single event in a toy experiment 
+\begin_inset Formula $t$
+\end_inset
+
+, the selections cuts must be reapplied to determine if the event has changed
+ analysis bins since the toy alters the event observables 
+\begin_inset Formula 
+\[
+\left(p,\cos\theta\right)\overset{\text{toy}}{\rightarrow}\left(p^{\prime},\cos\theta^{\prime}\right),
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $p\neq p^{\prime}$
+\end_inset
+
+ and 
+\begin_inset Formula $\theta\neq\theta^{\prime}$
+\end_inset
+
+.
+ We therefore average the results of the toys to smooth out variations among
+ all toy experiments.
+\end_layout
+
+\begin_layout Standard
+As stated before, all the penalty parameters are dimensionless and the detector
+ systematics covariance matrix must be constructed carefully.
+ The bin-to-bin event rate covariance, 
+\begin_inset Formula $V_{i,j}^{\text{Cov}}$
+\end_inset
+
+, between bins 
+\begin_inset Formula $i$
+\end_inset
+
+ and 
+\begin_inset Formula $j$
+\end_inset
+
+ is
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned}V_{i,j}^{\text{Cov}} & =\frac{1}{N_{\text{toys}}}\sum_{t=1}^{N_{\text{toys}}}\left(\left(N_{i}\right)_{t}-\left\langle N_{i}\right\rangle _{\text{toys}}\right)\left(\left(N_{j}\right)_{t}-\left\langle N_{j}\right\rangle _{\text{toys}}\right),\end{aligned}
 \label{eq:detector-cov-terms}
 \end{equation}
 
 \end_inset
 
 where 
-\begin_inset Formula $N_{\text{Toy}}$
+\begin_inset Formula $\left(N_{i}\right)_{t}$
 \end_inset
 
- is the number of toy experiments, 
-\begin_inset Formula $N_{x,t}$
+ is defined in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:NAvgToys"
+plural "false"
+caps "false"
+noprefix "false"
+
 \end_inset
 
-/
-\begin_inset Formula $N_{y,t}$
+.
+ We also need to account for statistical uncertainties in the fit bins,
+ and so let us define 
+\begin_inset Formula $V_{i,j}^{\text{Stat}}$
 \end_inset
 
- is the number of events predicted the 
-\begin_inset Formula $x$
+ as
+\begin_inset Formula 
+\begin{equation}
+V_{i,j}^{\text{Stat}}=\text{\ensuremath{\delta_{i,j}}}\sum_{k}^{N^{\text{MC}}}\delta_{i,k}^{\text{bin}}w_{k}^{2},\label{eq:detector-stat-terms}
+\end{equation}
+
 \end_inset
 
-/
-\begin_inset Formula $y$
-\end_inset
-
-th bin for the 
-\begin_inset Formula $t$
-\end_inset
-
-th toy experiments, and 
-\begin_inset Formula $\delta(x,y)$
+where 
+\begin_inset Formula $\delta_{i,j}$
 \end_inset
 
  is the Kronecker delta function.
- Additional uncertainties would be added to the covariance terms in quadrature.
+ In order to use both 
+\begin_inset Formula $V_{i,j}^{\text{Cov}}$
+\end_inset
+
+ and 
+\begin_inset Formula $V_{i,j}^{\text{Stat}}$
+\end_inset
+
+ in the BANFF fit, the total detector covariance matrix, 
+\begin_inset Formula $V_{i,j}^{\text{Det}}$
+\end_inset
+
+, is defined as 
+\begin_inset Formula 
+\begin{equation}
+V_{i,j}^{\text{Det}}=\left[\frac{1}{N_{i}}\right]\left[\frac{1}{N_{j}}\right]\left(V_{i,j}^{\text{Cov}}+V_{i,j}^{\text{Stat}}\right).\label{eq:totaldetectorcovariance}
+\end{equation}
+
+\end_inset
+
+This matrix is indeed dimensionless since we divided out the predicted event
+ rate in bins 
+\begin_inset Formula $i$
+\end_inset
+
+ and 
+\begin_inset Formula $j$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Bin Normalization Edges
 \end_layout
 
 \begin_layout Standard
-While there could be one obsnorm for each analysis bin, a single obsnorm
- can be assigned to multiple analysis bins.
+While there could be one observable normalization for each analysis bin,
+ a single normalization can be assigned to multiple analysis bins.
  The purpose is to reduce the number of fit parameters since the time to
  fit increases non-linearly with the number of fit parameters and events.
- Previously, the obsnorm edges were determined by combining fit bins with
- 
+ Previously, the observable normalization edges were determined by combining
+ fit bins with 
 \begin_inset Quotes eld
 \end_inset
 
@@ -6696,7 +6752,7 @@ similar
 
  covariance.
  This method proved problematic since the fit bins with relatively higher
- statistics were shared with the same obsnorm parameter.
+ statistics were shared with the same observable normalization parameter.
  This left the remaining low statistics regions of 
 \begin_inset Formula $(p,\cos\theta)$
 \end_inset
@@ -6845,21 +6901,21 @@ numutitle{}
 \begin_layout Standard
 A new procedure was developed to improve the shortcomings of old procedure
  which requires careful consideration of the statistical uncertainties and
- variations between obsnorm prefit values.
+ variations between observable normalization prefit values.
  This procedure can be imagined as lowing the number of contours in a topographi
 c map while considering external constraints from other sensing data.
- To start, initialize all the obsnorm bin edges to be the same as the fit
- bin edges.
+ To start, initialize all the observable normalization bin edges to be the
+ same as the fit bin edges.
  All steps after this are performed iteratively.
- Starting from the obsnorm bin with the highest statistics, consider merging
- it with all immediate adjacent bins.
+ Starting from the observable normalization bin with the highest statistics,
+ consider merging it with all immediate adjacent bins.
  Unless individual fractional errors differ significantly before the merge,
  do not merge them.
  In this analysis, a factor of 10 in fractional uncertainty was chosen to
  describe the similarity between bins.
  Additionally if the two unmerged bin normalizations differ by more than
  10%, perform the bin merging.
- This step serves to smooth out the obsnorm prefit space.
+ This step serves to smooth out the observable normalization prefit space.
 \end_layout
 
 \begin_layout Standard
@@ -7001,16 +7057,17 @@ numubartitle{}
 \end_layout
 
 \begin_layout Standard
-While the problem of a few obsnorm parameters having the majority of statistics
- is still present, fluctuations between adjacent obsnorm parameters is iterative
-ly minimized.
- The detector systematic that had the largest effect on the obsnorm prediction
- was the 
+While the problem of a few observable normalization parameters having the
+ majority of statistics is still present, fluctuations between adjacent
+ observable normalization parameters is iteratively minimized.
+ The detector systematic that had the largest effect on the observable normaliza
+tion prediction was the 
 \begin_inset Formula $\pod$
 \end_inset
 
  energy loss resolution.
- With it, the event rate in each obsnorm bin varied non-normally.
+ With it, the event rate in each observable normalization bin varied non-normall
+y.
  This effect can be seen in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -7175,7 +7232,7 @@ A considerable drawback to designing normalizations in this way of varying
  Therefore, the covariance matrix from 
 \begin_inset CommandInset ref
 LatexCommand eqref
-reference "eq:detectorcovariance"
+reference "eq:totaldetectorcovariance"
 plural "false"
 caps "false"
 noprefix "false"
@@ -7252,7 +7309,7 @@ n bin and its correction shifts the bin mean.
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -7526,7 +7583,8 @@ Event Variations in Observable Normalization Bins
 \end_layout
 
 \begin_layout Standard
-The finalized obsnorm bins are listed below and shown visually in 
+The finalized observable normalization bins are listed below and shown visually
+ in 
 \begin_inset ERT
 status open
 
@@ -7791,7 +7849,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-The remain systematics, the 
+The remaining systematics, the 
 \begin_inset Formula $\pod$
 \end_inset
 
@@ -7805,27 +7863,7 @@ The remain systematics, the
  due to time constraints on the author.
  Instead, they were treated as additional uncorrelated systematics on each
  bin normalization uncertainty with the normalization value remaining fixed.
- The covariance matrix is updated using in the following manner
-\begin_inset Formula 
-\begin{equation}
-\sigma_{\text{Det}}^{2}\left(x,y\right)\rightarrow\left(\frac{\sigma_{\text{Det}}^{2}\left(x,y\right)}{\overline{x}\cdot\overline{y}}+\widetilde{\sigma}_{\text{Mass}}^{2}+\widetilde{\sigma}_{\text{Match}}^{2}\right)\overline{x}\cdot\overline{y},\label{eq:covarupdatefrac}
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Formula $\widetilde{\sigma}_{\text{Mass}}$
-\end_inset
-
- is the fractional uncertainty in the 
-\begin_inset Formula $\pod$
-\end_inset
-
- mass and 
-\begin_inset Formula $\widetilde{\sigma}_{\text{Match}}$
-\end_inset
-
- is the fractional uncertainty in the matching efficiency.
+ The treatment of these two systematics will be discussed shortly.
 \end_layout
 
 \begin_layout Standard
@@ -7868,16 +7906,30 @@ literal "false"
 \end_inset
 
  mass had an 1.5% systematic effect on the cross section.
- Since this estimate uses the same method of toy experiments, 
+ Since the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ mass uncertainty estimate was determined using the same toy experiment
+ variation method, 
 \shape italic
-a conservative estimate of 
+a conservative estimate of 2% on the mass uncertainty included in this analysis
+\shape default
+.
+ So for the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ mass systematic, let 
 \begin_inset Formula $\widetilde{\sigma}_{\text{Mass}}=2\%$
 \end_inset
 
- was included in this analysis based on the 1.5% mass uncertainty in the
- cross section
-\shape default
-.
+, where the tilde (
+\begin_inset Formula $\widetilde{\ }$
+\end_inset
+
+) refers to a fractional uncertainty.
+ This will be used later.
 \end_layout
 
 \begin_layout Standard
@@ -7922,19 +7974,70 @@ literal "false"
  bins.
  
 \shape italic
-A conservative estimate of 
+A conservative estimate of 1% for the TPC matching efficiency was chosen
+ in order to account for the inherent uncertainty in this systematic
+\shape default
+.
+ So for the matching efficiency systematic, let 
 \begin_inset Formula $\widetilde{\sigma}_{\text{Match}}=1\%$
 \end_inset
 
- was chosen in order to account for the inherent uncertainty in this systematic
-\shape default
 .
 \end_layout
 
 \begin_layout Standard
+In order to propagate these two uncorrelated uncertainties, the detector
+ covariance matrix given in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:totaldetectorcovariance"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ was converted into a fractional covariance matrix first.
+ Let 
+\begin_inset Formula $\widetilde{V}_{i,j}^{\text{Det}}$
+\end_inset
+
+ refer to the fractional covariance matrix, given explicitly as 
+\begin_inset Formula 
+\begin{equation}
+\widetilde{V}_{i,j}^{\text{Det}}=\frac{V_{i,j}^{\text{Det}}}{d_{i}d_{j}},\label{eq:fractionalcovariance}
+\end{equation}
+
+\end_inset
+
+where we recognize 
+\begin_inset Formula $\sqrt{\widetilde{V}_{i,i}^{\text{Det}}}$
+\end_inset
+
+ as the fractional uncertainty in the 
+\begin_inset Formula $i$
+\end_inset
+
+th observable normalization parameter.
+ The updated detector covariance matrix, 
+\begin_inset Formula $\acute{V}_{i,j}^{\text{Det}}$
+\end_inset
+
+, which accounts for the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ mass and TPC matching inefficiency systematics, is given by 
+\begin_inset Formula 
+\begin{equation}
+\acute{V}_{i,j}^{\text{Det}}=\left(\widetilde{V}_{i,j}^{\text{Det}}+\widetilde{\sigma}_{\text{Mass}}^{2}+\widetilde{\sigma}_{\text{Match}}^{2}\right)d_{i}d_{j}.\label{eq:covarupdatefrac}
+\end{equation}
+
+\end_inset
+
 Together, the two additional sources of uncertainty increase each term in
  the covariance matrix by 
-\begin_inset Formula $0.0005\overline{x}\cdot\overline{y}$
+\begin_inset Formula $0.0005d_{i}d_{j}$
 \end_inset
 
 , which increases each bin normalization error by about 
@@ -7966,7 +8069,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -7999,50 +8102,10 @@ Updated detector covariance matrix
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-\align center
 \begin_inset Float figure
 wide false
 sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/P0DBANFFParameterization/corr_dete.png
-	lyxscale 50
-	height 2in
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Updated detector correlation matrix
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -8074,11 +8137,47 @@ Difference from original detector covariance matrix
 \end_layout
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/P0DBANFFParameterization/corr_dete.png
+	lyxscale 50
+	height 4in
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Updated detector covariance (a), correlation (b), and the difference from
- the original (c) covariance matrix.
+Updated detector correlation matrix
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Updated detector covariance matrix (a), the difference from the original
+ matrix (b), and updated correlation matrix (c).
  Note that the parameter numbers here are offset from their fit index value
  by 100.
  
