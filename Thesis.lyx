@@ -67,7 +67,7 @@
 \chapterfont{\centering}
 \usepackage{braket}
 \end_preamble
-\options doctor
+\options doctor,showframe
 \use_default_options true
 \begin_modules
 fixltx2e
@@ -143,7 +143,7 @@ hanging
 \color #faf0e6
 \end_branch
 \branch BANFFLikelihood
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -168,7 +168,7 @@ hanging
 \color #faf0e6
 \end_branch
 \branch FitterResults
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -188,7 +188,7 @@ hanging
 \color #faf0e6
 \end_branch
 \branch AppendixObsnorm
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -518,7 +518,7 @@ filename "Chapters/Introduction.lyx"
 
 \begin_layout Standard
 \begin_inset Branch BANFFLikelihood
-inverted 0
+inverted 1
 status open
 
 \begin_layout Chapter
@@ -679,42 +679,6 @@ Fitter Results
 \begin_inset CommandInset include
 LatexCommand input
 filename "Chapters/FitterResults.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Branch P0DFDGComparisons
-inverted 0
-status open
-
-\begin_layout Chapter
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-podtitle{}
-\end_layout
-
-\end_inset
-
- and FGD BANFF Comparisons
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "Chapters/P0DFGDComparisons.lyx"
 
 \end_inset
 
