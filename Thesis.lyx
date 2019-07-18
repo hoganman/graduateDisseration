@@ -54,7 +54,7 @@
   %hidelinks,
   %colorlinks=true,
   %pdfborder={0 0 0},
-  pdftitle={HoganMPhDThesis2019}
+  pdftitle={HoganMThesis},
   linkcolor=blue,
   filecolor=magenta,
   urlcolor=cyan,
@@ -143,12 +143,12 @@ hanging
 \color #faf0e6
 \end_branch
 \branch BANFFLikelihood
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch P0DSelections
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -158,12 +158,12 @@ hanging
 \color #faf0e6
 \end_branch
 \branch P0DBANFFParameterization
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch FitterValidation
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -193,22 +193,22 @@ hanging
 \color #faf0e6
 \end_branch
 \branch AppendixSigmaVariations
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixObsnormVariations
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixLikelihoodScans
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixLikelihoodPenaltyScans
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch

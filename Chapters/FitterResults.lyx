@@ -174,24 +174,35 @@ Prefit Sample Distributions
 \begin_layout Standard
 \begin_inset Branch FitterResultsPrefitDistributions
 inverted 0
-status collapsed
+status open
 
 \begin_layout Standard
-Prefit distributions
+This section presents the first look at the data for the 12 samples according
+ to fit bins set in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "chap:P0DinBANFF"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -209,7 +220,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Momentum
+Momentum in MeV/c
 \end_layout
 
 \end_inset
@@ -223,7 +234,7 @@ Momentum
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -269,9 +280,7 @@ status open
 \begin_inset Graphics
 	filename Figures/FitterResults/Prefit/output-0.png
 	lyxscale 50
-	width 98text%
-	height 45theight%
-	keepAspectRatio
+	width 99text%
 
 \end_inset
 
@@ -303,6 +312,7 @@ Momentum-
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Data and prefit expectation for the 
 \begin_inset Formula $\pod$
 \end_inset
 
@@ -310,7 +320,50 @@ Momentum-
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC CC 1-Track
+ in FHC CC 1-Track sample.
+ Sub-figure (a) shows the momentum one-dimensional profile in all but the
+ highest momentum fit bin.
+ Sub-figure (b) shows the 
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ one-dimensional profile in all but the highest angle fit bin.
+ Shown in both (a) and (b) is the ratio between data and the prefit value.
+ Sub-figure (c) shows a grid of two-dimensional data and prefit distributions
+ in the same phase space as (a) and (b).
+ Moving from top-left to bottom-right in (c) is the data, prefit, data to
+ prefit ratio, and data to prefit difference.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Data-and-prefit-wtr-numu1Trk"
+
+\end_inset
+
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Prefit for the Water-In 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numutitle{}
+\end_layout
+
+\end_inset
+
+ in FHC CC 1-Track Sample
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -327,7 +380,7 @@ Momentum-
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -352,7 +405,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Momentum
+Momentum in MeV/c
 \end_layout
 
 \end_inset
@@ -405,7 +458,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -446,6 +499,7 @@ Momentum-
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Data and prefit expectation for the 
 \begin_inset Formula $\pod$
 \end_inset
 
@@ -453,7 +507,49 @@ Momentum-
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC CC N-Tracks
+ in FHC CC N-Tracks sample.
+ Sub-figure (a) shows the momentum one-dimensional profile in all but the
+ highest momentum fit bin.
+ Sub-figure (b) shows the 
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ one-dimensional profile in all but the highest angle fit bin.
+ Shown in both (a) and (b) is the ratio between data and the prefit value.
+ Sub-figure (c) shows a grid of two-dimensional data and prefit distributions
+ in the same phase space as (a) and (b).
+ Moving from top-left to bottom-right in (c) is the data, prefit, data to
+ prefit ratio, and data to prefit difference.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Data-and-prefit-wtr-numuNTrks"
+
+\end_inset
+
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Prefit for the Water-In 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numutitle{}
+\end_layout
+
+\end_inset
+
+ in FHC CC N-Tracks Sample
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -470,7 +566,7 @@ Momentum-
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -497,7 +593,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Momentum
+Momentum in MeV/c
 \end_layout
 
 \end_inset
@@ -593,6 +689,7 @@ Momentum-
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Data and prefit expectation for the 
 \begin_inset Formula $\pod$
 \end_inset
 
@@ -600,7 +697,49 @@ Momentum-
 \begin_inset Formula $\numubar$
 \end_inset
 
- in RHC CC 1-Track
+ in RHC CC 1-Track sample.
+ Sub-figure (a) shows the momentum one-dimensional profile in all but the
+ highest momentum fit bin.
+ Sub-figure (b) shows the 
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ one-dimensional profile in all but the highest angle fit bin.
+ Shown in both (a) and (b) is the ratio between data and the prefit value.
+ Sub-figure (c) shows a grid of two-dimensional data and prefit distributions
+ in the same phase space as (a) and (b).
+ Moving from top-left to bottom-right in (c) is the data, prefit, data to
+ prefit ratio, and data to prefit difference.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Data-and-prefit-wtr-numubarRHC1Trk"
+
+\end_inset
+
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Prefit for the Water-In 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numubartitle{}
+\end_layout
+
+\end_inset
+
+ in RHC CC 1-Track Sample
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -617,7 +756,7 @@ Momentum-
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -644,7 +783,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Momentum
+Momentum in MeV/c
 \end_layout
 
 \end_inset
@@ -740,6 +879,7 @@ Momentum-
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Data and prefit expectation for the 
 \begin_inset Formula $\pod$
 \end_inset
 
@@ -747,7 +887,49 @@ Momentum-
 \begin_inset Formula $\numubar$
 \end_inset
 
- in RHC CC N-Tracks
+ in RHC CC N-Tracks sample.
+ Sub-figure (a) shows the momentum one-dimensional profile in all but the
+ highest momentum fit bin.
+ Sub-figure (b) shows the 
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ one-dimensional profile in all but the highest angle fit bin.
+ Shown in both (a) and (b) is the ratio between data and the prefit value.
+ Sub-figure (c) shows a grid of two-dimensional data and prefit distributions
+ in the same phase space as (a) and (b).
+ Moving from top-left to bottom-right in (c) is the data, prefit, data to
+ prefit ratio, and data to prefit difference.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Data-and-prefit-wtr-numubarRHCNTrks"
+
+\end_inset
+
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Prefit for the Water-In 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numubartitle{}
+\end_layout
+
+\end_inset
+
+ in RHC CC N-Tracks Sample
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -764,7 +946,7 @@ Momentum-
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -791,7 +973,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Momentum
+Momentum in MeV/c
 \end_layout
 
 \end_inset
@@ -887,6 +1069,7 @@ Momentum-
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Data and prefit expectation for the 
 \begin_inset Formula $\pod$
 \end_inset
 
@@ -894,7 +1077,49 @@ Momentum-
 \begin_inset Formula $\numu$
 \end_inset
 
- in RHC CC 1-Track
+ in RHC CC 1-Track sample.
+ Sub-figure (a) shows the momentum one-dimensional profile in all but the
+ highest momentum fit bin.
+ Sub-figure (b) shows the 
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ one-dimensional profile in all but the highest angle fit bin.
+ Shown in both (a) and (b) is the ratio between data and the prefit value.
+ Sub-figure (c) shows a grid of two-dimensional data and prefit distributions
+ in the same phase space as (a) and (b).
+ Moving from top-left to bottom-right in (c) is the data, prefit, data to
+ prefit ratio, and data to prefit difference.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Data-and-prefit-wtr-numuRHC1Trk"
+
+\end_inset
+
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Prefit for the Water-In 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numutitle{}
+\end_layout
+
+\end_inset
+
+ in RHC CC 1-Track Sample
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -911,7 +1136,7 @@ Momentum-
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -938,7 +1163,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Momentum
+Momentum in MeV/c
 \end_layout
 
 \end_inset
@@ -1034,6 +1259,7 @@ Momentum-
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Data and prefit expectation for the 
 \begin_inset Formula $\pod$
 \end_inset
 
@@ -1041,7 +1267,49 @@ Momentum-
 \begin_inset Formula $\numu$
 \end_inset
 
- in RHC CC N-Tracks
+ in RHC CC N-Tracks sample.
+ Sub-figure (a) shows the momentum one-dimensional profile in all but the
+ highest momentum fit bin.
+ Sub-figure (b) shows the 
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ one-dimensional profile in all but the highest angle fit bin.
+ Shown in both (a) and (b) is the ratio between data and the prefit value.
+ Sub-figure (c) shows a grid of two-dimensional data and prefit distributions
+ in the same phase space as (a) and (b).
+ Moving from top-left to bottom-right in (c) is the data, prefit, data to
+ prefit ratio, and data to prefit difference.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Data-and-prefit-wtr-numuRHCNTrks"
+
+\end_inset
+
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Prefit for the Water-In 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numutitle{}
+\end_layout
+
+\end_inset
+
+ in RHC CC N-Tracks Sample
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1058,7 +1326,7 @@ Momentum-
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1085,7 +1353,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Momentum
+Momentum in MeV/c
 \end_layout
 
 \end_inset
@@ -1181,6 +1449,7 @@ Momentum-
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Data and prefit expectation for the 
 \begin_inset Formula $\pod$
 \end_inset
 
@@ -1188,7 +1457,50 @@ Momentum-
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC CC 1-Track
+ in FHC CC 1-Track sample.
+ Sub-figure (a) shows the momentum one-dimensional profile in all but the
+ highest momentum fit bin.
+ Sub-figure (b) shows the 
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ one-dimensional profile in all but the highest angle fit bin.
+ Shown in both (a) and (b) is the ratio between data and the prefit value.
+ Sub-figure (c) shows a grid of two-dimensional data and prefit distributions
+ in the same phase space as (a) and (b).
+ Moving from top-left to bottom-right in (c) is the data, prefit, data to
+ prefit ratio, and data to prefit difference.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Data-and-prefit-air-numu1Trk"
+
+\end_inset
+
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Prefit for the Water-Out 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numutitle{}
+\end_layout
+
+\end_inset
+
+ in FHC CC 1-Track Sample
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1205,7 +1517,7 @@ Momentum-
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1232,7 +1544,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Momentum
+Momentum in MeV/c
 \end_layout
 
 \end_inset
@@ -1328,6 +1640,7 @@ Momentum-
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Data and prefit expectation for the 
 \begin_inset Formula $\pod$
 \end_inset
 
@@ -1335,7 +1648,50 @@ Momentum-
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC CC N-Tracks
+ in FHC CC N-Tracks sample.
+ Sub-figure (a) shows the momentum one-dimensional profile in all but the
+ highest momentum fit bin.
+ Sub-figure (b) shows the 
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ one-dimensional profile in all but the highest angle fit bin.
+ Shown in both (a) and (b) is the ratio between data and the prefit value.
+ Sub-figure (c) shows a grid of two-dimensional data and prefit distributions
+ in the same phase space as (a) and (b).
+ Moving from top-left to bottom-right in (c) is the data, prefit, data to
+ prefit ratio, and data to prefit difference.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Data-and-prefit-air-numuNTrks"
+
+\end_inset
+
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Prefit for the Water-Out 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numutitle{}
+\end_layout
+
+\end_inset
+
+ in FHC CC N-Tracks Sample
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1352,7 +1708,7 @@ Momentum-
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1379,7 +1735,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Momentum
+Momentum in MeV/c
 \end_layout
 
 \end_inset
@@ -1475,6 +1831,7 @@ Momentum-
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Data and prefit expectation for the 
 \begin_inset Formula $\pod$
 \end_inset
 
@@ -1482,7 +1839,50 @@ Momentum-
 \begin_inset Formula $\numubar$
 \end_inset
 
- in RHC CC 1-Track
+ in RHC CC 1-Track sample.
+ Sub-figure (a) shows the momentum one-dimensional profile in all but the
+ highest momentum fit bin.
+ Sub-figure (b) shows the 
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ one-dimensional profile in all but the highest angle fit bin.
+ Shown in both (a) and (b) is the ratio between data and the prefit value.
+ Sub-figure (c) shows a grid of two-dimensional data and prefit distributions
+ in the same phase space as (a) and (b).
+ Moving from top-left to bottom-right in (c) is the data, prefit, data to
+ prefit ratio, and data to prefit difference.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Data-and-prefit-air-numubarRHC1Trk"
+
+\end_inset
+
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Prefit for the Water-Out 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numubartitle{}
+\end_layout
+
+\end_inset
+
+ in RHC CC 1-Track Sample
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1499,7 +1899,7 @@ Momentum-
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1526,7 +1926,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Momentum
+Momentum in MeV/c
 \end_layout
 
 \end_inset
@@ -1622,6 +2022,7 @@ Momentum-
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Data and prefit expectation for the 
 \begin_inset Formula $\pod$
 \end_inset
 
@@ -1629,7 +2030,50 @@ Momentum-
 \begin_inset Formula $\numubar$
 \end_inset
 
- in RHC CC N-Tracks
+ in RHC CC N-Tracks sample.
+ Sub-figure (a) shows the momentum one-dimensional profile in all but the
+ highest momentum fit bin.
+ Sub-figure (b) shows the 
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ one-dimensional profile in all but the highest angle fit bin.
+ Shown in both (a) and (b) is the ratio between data and the prefit value.
+ Sub-figure (c) shows a grid of two-dimensional data and prefit distributions
+ in the same phase space as (a) and (b).
+ Moving from top-left to bottom-right in (c) is the data, prefit, data to
+ prefit ratio, and data to prefit difference.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Data-and-prefit-air-numubarRHCNTrks"
+
+\end_inset
+
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Prefit for the Water-Out 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numubartitle{}
+\end_layout
+
+\end_inset
+
+ in RHC CC N-Tracks Sample
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1646,7 +2090,7 @@ Momentum-
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1673,7 +2117,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Momentum
+Momentum in MeV/c
 \end_layout
 
 \end_inset
@@ -1769,6 +2213,7 @@ Momentum-
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Data and prefit expectation for the 
 \begin_inset Formula $\pod$
 \end_inset
 
@@ -1776,7 +2221,50 @@ Momentum-
 \begin_inset Formula $\numu$
 \end_inset
 
- in RHC CC 1-Track
+ in RHC CC 1-Track sample.
+ Sub-figure (a) shows the momentum one-dimensional profile in all but the
+ highest momentum fit bin.
+ Sub-figure (b) shows the 
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ one-dimensional profile in all but the highest angle fit bin.
+ Shown in both (a) and (b) is the ratio between data and the prefit value.
+ Sub-figure (c) shows a grid of two-dimensional data and prefit distributions
+ in the same phase space as (a) and (b).
+ Moving from top-left to bottom-right in (c) is the data, prefit, data to
+ prefit ratio, and data to prefit difference.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Data-and-prefit-air-numuRHC1Trk"
+
+\end_inset
+
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Prefit for the Water-Out 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numutitle{}
+\end_layout
+
+\end_inset
+
+ in RHC CC 1-Track Sample
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1793,7 +2281,7 @@ Momentum-
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1820,7 +2308,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Momentum
+Momentum in MeV/c
 \end_layout
 
 \end_inset
@@ -1916,6 +2404,7 @@ Momentum-
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Data and prefit expectation for the 
 \begin_inset Formula $\pod$
 \end_inset
 
@@ -1923,7 +2412,50 @@ Momentum-
 \begin_inset Formula $\numu$
 \end_inset
 
- in RHC CC N-Tracks
+ in RHC CC N-Tracks sample.
+ Sub-figure (a) shows the momentum one-dimensional profile in all but the
+ highest momentum fit bin.
+ Sub-figure (b) shows the 
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ one-dimensional profile in all but the highest angle fit bin.
+ Shown in both (a) and (b) is the ratio between data and the prefit value.
+ Sub-figure (c) shows a grid of two-dimensional data and prefit distributions
+ in the same phase space as (a) and (b).
+ Moving from top-left to bottom-right in (c) is the data, prefit, data to
+ prefit ratio, and data to prefit difference.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Data-and-prefit-air-numuRHCNTrks"
+
+\end_inset
+
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Prefit for the Water-Out 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numutitle{}
+\end_layout
+
+\end_inset
+
+ in RHC CC N-Tracks Sample
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1957,7 +2489,7 @@ Parameter value comparisons
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2267,11 +2799,50 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Prefit and postfit ND280 flux parameters for the 
+Postfit ND280 flux parameters for the 
 \begin_inset Formula $\pod$
 \end_inset
 
--only and FGD-only results
+-only (green) and FGD-only (blue) BANFF fit as functions of neutrino energy.
+ The energy that maximizes the 
+\begin_inset Formula $\numu\rightarrow\nue$
+\end_inset
+
+ oscillation 
+\begin_inset Formula $\left(0.6\text{ GeV}\right)$
+\end_inset
+
+ is shown with a dashed, black line.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Postfit-ND280-flux"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Postfit ND280 Flux Parameters for the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+podtitle{}
+\end_layout
+
+\end_inset
+
+-only BANFF Fit
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2288,7 +2859,7 @@ Prefit and postfit ND280 flux parameters for the
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2598,11 +3169,50 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Prefit and postfit Super-K flux parameters for the 
+Postfit Super-K flux parameters for the 
 \begin_inset Formula $\pod$
 \end_inset
 
--only and FGD-only results
+-only (green) and FGD-only (blue) BANFF fit as functions of neutrino energy.
+ The energy that maximizes the 
+\begin_inset Formula $\numu\rightarrow\nue$
+\end_inset
+
+ oscillation 
+\begin_inset Formula $\left(0.6\text{ GeV}\right)$
+\end_inset
+
+ is shown with a dashed, black line.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Postfit-SK-flux"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Postfit Super-K Flux Parameters for the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+podtitle{}
+\end_layout
+
+\end_inset
+
+-only BANFF Fit
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2619,7 +3229,7 @@ Prefit and postfit Super-K flux parameters for the
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2631,7 +3241,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/FitterResults/P0DvsTN324/output_CC-0#pi_parameters.png
+	filename Figures/FitterResults/P0DvsTN324/output_CC-QE_and_2p2h_parameters.png
 	height 35theight%
 
 \end_inset
@@ -2669,7 +3279,7 @@ CC-
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2700,7 +3310,7 @@ BeRPA Parameters
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2739,7 +3349,7 @@ CC-
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2770,7 +3380,7 @@ FSI Parameters
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2804,7 +3414,41 @@ CC-Other and NC-Other Parameters
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Prefit and postfit cross-section parameters with their uncertainties.
+Postfit cross section parameters for the 
+\begin_inset Formula $\pod$
+\end_inset
+
+-only (green) and FGD-only (blue) BANFF fit.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Postfit-Xsec"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Postfit Cross Section Parameters for the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+podtitle{}
+\end_layout
+
+\end_inset
+
+-only BANFF Fit
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2825,7 +3469,7 @@ Prefit and postfit cross-section parameters with their uncertainties.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2934,7 +3578,7 @@ Prefit and postfit
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2951,6 +3595,27 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Postfit correlation matrix.
+ The first 100 parameters are the flux parameters with the first 50 correspondin
+g to ND280 and the last 50 with Super-K.
+ Between 100 and 561 are the bin normalization parameters.
+ The last 31 are the cross section parameters.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Postfit-correlation-matrix"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Postfit Correlation Matrix
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -2972,7 +3637,7 @@ status collapsed
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3087,7 +3752,31 @@ Postfit cross section correlations
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Prefit and post flux and cross section correlations
+Prefit and post flux and cross section parameter correlations.
+ In sub-figures (a) and (b), the prefit and postfit, respectively, correlation
+ matrices for the flux and cross section parameters are shown.
+ In both (a) and (b), the first 100 parameters are the flux parameters with
+ the first 50 corresponding to ND280 and the last 50 with Super-K.
+ The last 31 are the cross section parameters.
+ In sub-figure (c), the postfit cross section correlation matrix is shown
+ with the correlation value printed in each cell.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Prefit-and-post-fluxxsec-correlation"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Prefit and Post Flux and Cross Section Parameter Correlations
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3107,7 +3796,7 @@ Postfit Sample Distributions
 \begin_layout Standard
 \begin_inset Branch FitterResultsPostfitDistributions
 inverted 0
-status collapsed
+status open
 
 \begin_layout Standard
 Postfit distributions
@@ -3117,14 +3806,14 @@ Postfit distributions
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3142,7 +3831,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Momentum
+Momentum in MeV/c
 \end_layout
 
 \end_inset
@@ -3156,7 +3845,7 @@ Momentum
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3195,7 +3884,7 @@ status collapsed
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3260,7 +3949,7 @@ Momentum-
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3285,7 +3974,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Momentum
+Momentum in MeV/c
 \end_layout
 
 \end_inset
@@ -3403,7 +4092,7 @@ Momentum-
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3430,7 +4119,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Momentum
+Momentum in MeV/c
 \end_layout
 
 \end_inset
@@ -3550,7 +4239,7 @@ Momentum-
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3577,7 +4266,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Momentum
+Momentum in MeV/c
 \end_layout
 
 \end_inset
@@ -3697,7 +4386,7 @@ Momentum-
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3724,7 +4413,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Momentum
+Momentum in MeV/c
 \end_layout
 
 \end_inset
@@ -3844,7 +4533,7 @@ Momentum-
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3871,7 +4560,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Momentum
+Momentum in MeV/c
 \end_layout
 
 \end_inset
@@ -3991,7 +4680,7 @@ Momentum-
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4018,7 +4707,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Momentum
+Momentum in MeV/c
 \end_layout
 
 \end_inset
@@ -4138,7 +4827,7 @@ Momentum-
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4165,7 +4854,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Momentum
+Momentum in MeV/c
 \end_layout
 
 \end_inset
@@ -4285,7 +4974,7 @@ Momentum-
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4312,7 +5001,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Momentum
+Momentum in MeV/c
 \end_layout
 
 \end_inset
@@ -4432,7 +5121,7 @@ Momentum-
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4459,7 +5148,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Momentum
+Momentum in MeV/c
 \end_layout
 
 \end_inset
@@ -4579,7 +5268,7 @@ Momentum-
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4606,7 +5295,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Momentum
+Momentum in MeV/c
 \end_layout
 
 \end_inset
@@ -4726,7 +5415,7 @@ Momentum-
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4753,7 +5442,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Momentum
+Momentum in MeV/c
 \end_layout
 
 \end_inset
@@ -4907,8 +5596,8 @@ We can now provide a quantification of the agreement between the
 \begin_inset Formula $\pod$
 \end_inset
 
--only data fit and FGD-only data fit are sampling from two different neutrino
- populations.
+-only data and FGD-only data are sampling from two different neutrino population
+s.
  The null hypothesis, 
 \begin_inset Formula $H_{0}$
 \end_inset
@@ -4917,8 +5606,17 @@ We can now provide a quantification of the agreement between the
 \begin_inset Formula $\pod$
 \end_inset
 
--only and FGD-only data fits are sampled from the same population.
- If 
+-only and FGD-only data are sampled from the same population.
+ For each measurement 
+\begin_inset Formula $X_{i}$
+\end_inset
+
+ that is independently and identically distributed (i.d.d) from a standard
+ normal 
+\begin_inset Formula $\mathcal{N}\left(\mu=0,\sigma^{2}=1\right)$
+\end_inset
+
+, then
 \begin_inset Formula 
 \begin{equation}
 \chi^{2}=\sum_{i}X_{i}^{2},\label{eq:Qchi2distributed}
@@ -4938,18 +5636,12 @@ where
 \begin_inset Formula $r$
 \end_inset
 
- is the number of degrees of freedom (NDOF), we can calculate a p-value
- to reject the null hypothesis.
- This all assumes that each 
-\begin_inset Formula $X_{i}$
+ is the number of degrees of freedom (NDOF).
+ We can calculate a p-value to reject the null hypothesis at the 
+\begin_inset Formula $\alpha$
 \end_inset
 
- is independently and identically distributed (i.d.d) from a standard normal
- 
-\begin_inset Formula $\mathcal{N}\left(\mu=0,\sigma^{2}=1\right)$
-\end_inset
-
-.
+-level.
 \end_layout
 
 \begin_layout Standard
@@ -4983,9 +5675,12 @@ where
 \end_inset
 
 .
- Since the purpose of the BANFF fit is to provide a ND constraint on the
- flux and cross section, we will ignore the bin normalization parameters
- since they are nuisance parameters.
+ Since the purpose of the BANFF fit is to provide a constraint on the Super-K
+ flux and cross section, we will ignore the ND flux bins and 
+\begin_inset Formula $\left(p,\cos\theta\right)$
+\end_inset
+
+ bin normalization parameters.
  Also assume for simplicity that the 
 \begin_inset Formula $\pod$
 \end_inset
@@ -5011,13 +5706,13 @@ th parameter from the
 \begin_inset Formula $\pod$
 \end_inset
 
--/FGD-only measurement.
+-/FGD-only BANFF fit measurement.
  We can calculate a p-value, 
 \begin_inset Formula $p$
 \end_inset
 
 , of observing a test statistic at least as extreme in a chi-square distribution
- by integrating the right-hand tail of the chi-square distribution with
+ by integrating the right-hand tail of the chi-square distribution using
  the inverse cumulative distribution function (ICDF)
 \begin_inset Formula 
 \begin{equation}
@@ -5027,80 +5722,86 @@ p\left(\chi^{2},r\right)=\int_{\chi^{2}}^{\infty}F\left(x^{\prime},r\right)dx^{\
 \end_inset
 
 where 
-\begin_inset Formula $p$
+\begin_inset Formula $\chi^{2}$
 \end_inset
 
- is the p-value.
+ is the test-statistic from 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:chi2P0DFGD"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
 Now let us count the NDOF for p-value calculation.
- Since we have assumed the FGD-only result is our expectation, we have one
- less NDOF.
- There are 100 flux parameters and 31 cross section parameters.
- However, five of cross section fitted parameters are fixed, so we have.
+ There are 50 SK flux parameters and 31 cross section parameters.
+ However, five of cross section fitted parameters are fixed.
+ Additionally, we have assumed the FGD-only result is our expectation, and
+ so we have one less NDOF.
+ This leaves us with NDOF of
 \begin_inset Formula 
 \[
-r=\underset{\text{Flux}}{\underbrace{100}}+\underset{\text{XSec}}{\underbrace{\left(31-5\right)}}-1=125
+r=\underset{\text{SK Flux}}{\underbrace{50}}+\underset{\text{XSec}}{\underbrace{\left(31-5\right)}}-1=75.
 \]
 
 \end_inset
 
-with p-value = 0.716322183192
+If we wish to reject the null hypothesis at the 5% level, this requires
+ a chi-squared value of 96.21 or greater.
+\end_layout
+
+\begin_layout Standard
+If we calculate the test statistic between the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ and FGD, we find that 
 \begin_inset Formula 
 \[
-r=\underset{\text{ND Flux}}{\underbrace{50}}+\underset{\text{XSec}}{\underbrace{\left(31-5\right)}}-1=75
+\frac{\chi_{\pod\text{vsFGD}}^{2}}{r}=\frac{81.41}{75}\approx1.085,
 \]
 
 \end_inset
 
-or p-value = 0.167315064026
+which indicates good agreement between the two measurements for the ND constrain
+t.
+ This corresponds to a p-value of 0.2865 or a 28.65% probability of obtaining
+ a larger test statistic.
+ This result is visualized in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:P-value"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Since this is not sufficiently close to the 5% level, we fail to reject
+ the null hypothesis.
+ 
+\shape italic
+We can conclude the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ and FGD data describe the same data in T2K
+\shape default
+ given the p-value and observed agreement between the two measurements.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/FitterResults/P0DvsTN324/P0DFGDNDFluxSKFluxXSecChi2.png
-	lyxscale 50
-	width 60text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-r=125 and p-value=0.7163
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -5118,8 +5819,43 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-r=75 and p-value=0.1673
+P-value for the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ vs FGD ND constraint.
+ Shown in solid black is the inverse cumulative distribution function (ICDF)
+ with 75 NDOF.
+ The chi-squared PDF is shown in grey with arbitrary normalization.
+ The obtained value of the test statistic, shown as a dashed, red line,
+ is 81.41 which is below the 5% level, shown as a solid, blue arrow.
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+P-Value for the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+podtitle{}
 \end_layout
+
+\end_inset
+
+ vs FGD ND Constraint
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:P-value"
 
 \end_inset
 
@@ -5129,6 +5865,34 @@ r=75 and p-value=0.1673
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We must qualify the above conclusion given the flaws of the test statistic
+ definition.
+ The 
+\begin_inset Formula $\pod$
+\end_inset
+
+-only flux parameters are clearly skewed above the FGD-only flux parameters,
+ and, therefore, their difference is not normally distributed about zero.
+ This indicates a large, positive correlation between the two measurements,
+ and breaks the uncorrelated uncertainties assumption.
+ Given this correlated result, we expect better agreement between the 
+\begin_inset Formula $\pod$
+\end_inset
+
+-only and FGD-only fits indicated with the test statistic using a more accurate
+ covariance matrix.
+\end_layout
+
+\begin_layout Section
+Summary
 \end_layout
 
 \end_body

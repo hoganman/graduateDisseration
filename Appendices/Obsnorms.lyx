@@ -160,7 +160,20 @@ The observable normalizations used in the
 \end_inset
 
 -only BANFF fit are tabulated here.
- 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%%%There are 461 obsnorms%%%
+\end_layout
+
+\end_inset
+
+
 \begin_inset Tabular
 <lyxtabular version="3" rows="464" columns="5">
 <features islongtable="true" firstHeadTopDL="true" firstHeadBottomDL="true" headTopDL="true" headBottomDL="true" longtabularalignment="center">
