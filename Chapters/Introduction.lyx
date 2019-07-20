@@ -3473,7 +3473,7 @@ Unfortunately, neutrino oscillations are not able to probe the Majorana
 \begin_inset Formula $\nu\neq\overline{\nu})$
 \end_inset
 
- particles is an open question and is being explored by neutrinoless double
+ particles is an open question and is being explored by neutrino-less double
  beta decay experiments
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -4802,7 +4802,7 @@ inverted 0
 status open
 
 \begin_layout Section
-Tokai to- amioka Experiment
+Tokai to Kamioka Experiment
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:T2KExperiment"
@@ -7134,8 +7134,8 @@ noprefix "false"
 \begin_inset Formula $2.298\times2.468\times2.350\text{m}^{3}$
 \end_inset
 
-, in XYZ respectively, with a total mass of ∼1900 kg of water and 3570 kg
- of other material.
+, in XYZ respectively, with a fiducial mass of ∼1900 kg for water and 3570
+ kg for other materials.
  The total mass of the 
 \begin_inset Formula $\pod$
 \end_inset

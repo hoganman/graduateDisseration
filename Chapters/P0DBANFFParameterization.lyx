@@ -958,7 +958,7 @@ noprefix "false"
 , as
 \begin_inset Formula 
 \begin{equation}
-\Delta\chi_{\text{Flux}}^{2}=\Delta\flux\cdot\left(V_{b}^{-1}\right)\cdot\Delta\flux^{T}.\label{eq:DeltaChi2Flux}
+\Delta\chi_{\text{Flux}}^{2}=\Delta\flux^{T}\cdot\left(V_{b}^{-1}\right)\cdot\Delta\flux.\label{eq:DeltaChi2Flux}
 \end{equation}
 
 \end_inset
@@ -7574,7 +7574,7 @@ Event variations in representative observable normalization bins.
  mean of all toy experiments.
  The ratio of the horizontal positions of each vertical line is the prefit
  normalization value for that bin.
- A gaussian whose variance was extracted from covariance matrix is shown
+ A Gaussian whose variance was extracted from covariance matrix is shown
  to illustrate the bin's estimate on the normalization uncertainty.
  The result of disabling the 
 \begin_inset Formula $\pod$
@@ -7909,7 +7909,158 @@ The
  prevent uneven bulging.
  However, faulty sensors would provide poor quality data, hence bags were
  under and overfilled.
- Prior 
+ This affect alters the expected event rate as a function of position.
+\end_layout
+
+\begin_layout Standard
+Another problem with the mass uncertainty is due to bulging of the 
+\begin_inset Formula $\pod$
+\end_inset
+
+.
+ The 
+\begin_inset Formula $\pod$
+\end_inset
+
+ is mounted in each of its corners to the ND280 basket and has a physical
+ air gap between it and the TPC.
+ Since the upstream end of the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ is physically against the ND280 support structure, this configuration permitted
+ the downstream layers to expand from the middle into the air gap.
+ Importantly, this left more water volume, and importantly more mass, in
+ the most downstream water bags compared to the upstream bags.
+ The effect of more mass in the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ is evidenced in the vertex distribution as a function of the Z-position
+ as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:P0DBulging"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Systematics/EvidenceOfP0DBulging.png
+	height 48theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Vertex distribution showing evidence of bulging.
+ In the 
+\begin_inset Formula $\numubar$
+\end_inset
+
+/
+\begin_inset Formula $\numu$
+\end_inset
+
+ cross section ratio analysis, a significant excess of events in the most
+ downstream layer of the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ (black, dashed line box) was observed.
+ Initially thought to be OOFV events, the analyzers removed the most downstream
+ and upstream layers in their analysis.
+ This distribution was produced using the run 5, RHC period using selection
+ precuts 1 through 4 and a having a positive track in the TPC.
+ Each event is categorized by true interaction mode according to NEUT.
+ This figure was altered for clarity from the following reference 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Campbell2017"
+literal "false"
+
+\end_inset
+
+.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Vertex Distribution Showing Evidence of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+podtitle{}
+\end_layout
+
+\end_inset
+
+ Bulging
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:P0DBulging"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+todo{Add figure and sentence describing it.}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Prior 
 \begin_inset Formula $\pod$
 \end_inset
 
@@ -8735,7 +8886,7 @@ literal "false"
 
  was found to work well to mimic the inherent uncertainties in the Nieves
  RPA model.
- Using a third order polynomial in the Berstein polynomial basis 
+ Using a third order polynomial in the Bernstein polynomial basis 
 \begin_inset Formula $B_{i}^{n}$
 \end_inset
 
@@ -9156,7 +9307,7 @@ As mentioned in the CC-
 \end_inset
 
  parameter is fixed to remove correlations with the other BeRPA scale parameters.
- However, there are three fixed normalization parameters in the BANFF fit
+ However, there are four fixed normalization parameters in the BANFF fit
  since they correspond to Super-K only parameters.
  They are included in the fit in order to maintain consistency between the
  ND280 constraint and oscillation analysis parameterizations.
@@ -9165,7 +9316,7 @@ As mentioned in the CC-
 \begin_inset Formula $\nue$
 \end_inset
 
--
+/
 \begin_inset Formula $\numu$
 \end_inset
 
@@ -9173,15 +9324,15 @@ As mentioned in the CC-
 \begin_inset Formula $\nuebar$
 \end_inset
 
--
+/
 \begin_inset Formula $\numubar$
 \end_inset
 
- event rate ratio, and NC 
+ event rate ratio, NC 
 \begin_inset Formula $1\gamma$
 \end_inset
 
- event rate.
+ event rate, and NC other far event rate.
 \end_layout
 
 \begin_layout Subsubsection
@@ -9349,7 +9500,7 @@ Cross Section Parameters Prefit Covariance Matrix
 
 \begin_inset Branch XSecBinsTable
 inverted 0
-status collapsed
+status open
 
 \begin_layout Standard
 \align center

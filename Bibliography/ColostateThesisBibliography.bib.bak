@@ -12,23 +12,6 @@
   Timestamp                = {2019.06.26}
 }
 
-@Article{Abe2016,
-  Title                    = {{Measurement of Coherent pi(+) Production in Low Energy Neutrino-Carbon Scattering}},
-  Author                   = {Abe, K. and Others},
-  Journal                  = {{Phys. Rev. Lett.}},
-  Year                     = {{2016}},
-
-  Month                    = {{NOV 4}},
-  Number                   = {{19}},
-  Volume                   = {{117}},
-
-  Address                  = {{ONE PHYSICS ELLIPSE, COLLEGE PK, MD 20740-3844 USA}},
-  Doi                      = {{10.1103/PhysRevLett.117.192501}},
-  Language                 = {{English}},
-  Publisher                = {{AMER PHYSICAL SOC}},
-  Type                     = {{Article}}
-}
-
 @Article{PhysRevD.97.012001,
   Title                    = {First measurement of the ${\ensuremath{\nu}}_{\ensuremath{\mu}}$ charged-current cross section on a water target without pions in the final state},
   Author                   = {Abe, K. and Others},
@@ -62,9 +45,9 @@
 }
 
 @Article{Abe:2017bay,
-  Title                    = {{Updated T2{K} measurements of muon neutrino and
+  Title                    = {Updated T2{K} measurements of muon neutrino and
  antineutrino disappearance using $1.5\times10^{21}$
- protons on target}},
+ protons on target},
   Author                   = {Abe, K. and others},
   Journal                  = {Phys. Rev.},
   Year                     = {2017},
@@ -86,13 +69,13 @@
   Journal                  = {Phys. Rev. D},
   Year                     = {2017},
 
-  Month                    = {{NOV 21}},
-  Number                   = {{9}},
-  Volume                   = {{96}},
+  Month                    = {NOV 21},
+  Number                   = {9},
+  Volume                   = {96},
 
-  Article-number           = {{092006}},
-  Doi                      = {{10.1103/PhysRevD.96.092006}},
-  ISSN                     = {{2470-0010}}
+  Article-number           = {092006},
+  Doi                      = {10.1103/PhysRevD.96.092006},
+  ISSN                     = {2470-0010}
 }
 
 @Article{AbePhyRevD9652017,
@@ -107,9 +90,9 @@
 }
 
 @Article{Abe:2016tmq,
-  Title                    = {{Measurement of double-differential muon neutrino
+  Title                    = {Measurement of double-differential muon neutrino
  charged-current interactions on C$_8$H$_8$ without pions
- in the final state using the T2{K} off-axis beam}},
+ in the final state using the T2{K} off-axis beam},
   Author                   = {Abe, Ko and others},
   Journal                  = {Phys. Rev.},
   Year                     = {2016},
@@ -125,9 +108,26 @@
   Slaccitation             = {%%CITATION = ARXIV:1602.03652;%%}
 }
 
+@Article{Abe2016,
+  Title                    = {Measurement of Coherent pi(+) Production in Low Energy Neutrino-Carbon Scattering},
+  Author                   = {Abe, K. and Others},
+  Journal                  = {Phys. Rev. Lett.},
+  Year                     = {2016},
+
+  Month                    = {NOV 4},
+  Number                   = {19},
+  Volume                   = {117},
+
+  Address                  = {ONE PHYSICS ELLIPSE, COLLEGE PK, MD 20740-3844 USA},
+  Doi                      = {10.1103/PhysRevLett.117.192501},
+  Language                 = {English},
+  Publisher                = {AMER PHYSICAL SOC},
+  Type                     = {Article}
+}
+
 @Article{Abe:2014iza,
-  Title                    = {{Measurement of the $nu_\mu$ charged-current quasielastic
- cross section on carbon with the ND280 detector at T2{K}}},
+  Title                    = {Measurement of the $nu_\mu$ charged-current quasielastic
+ cross section on carbon with the ND280 detector at T2{K}},
   Author                   = {Abe, K. and others},
   Journal                  = {Phys. Rev.},
   Year                     = {2015},
@@ -144,9 +144,9 @@
 }
 
 @Article{Abe:2015oar,
-  Title                    = {{Measurement of the $\nu_{\mu}$ charged current
+  Title                    = {Measurement of the $\nu_{\mu}$ charged current
  quasielastic cross section on carbon with the T2{K} on-axis
- neutrino beam}},
+ neutrino beam},
   Author                   = {Abe, K. and others},
   Journal                  = {Phys. Rev.},
   Year                     = {2015},
@@ -163,9 +163,9 @@
 }
 
 @Article{Abe:2015zbg,
-  Title                    = {{Physics potential of a long-baseline neutrino
+  Title                    = {Physics potential of a long-baseline neutrino
  oscillation experiment using a J-PARC neutrino beam and
- Hyper-Kamiokande}},
+ Hyper-Kamiokande},
   Author                   = {Abe, K. and others},
   Journal                  = {PTEP},
   Year                     = {2015},
@@ -200,8 +200,8 @@
 }
 
 @Article{Abe:2013hdq,
-  Title                    = {{Observation of Electron Neutrino Appearance in a Muon
- Neutrino Beam}},
+  Title                    = {Observation of Electron Neutrino Appearance in a Muon
+ Neutrino Beam},
   Author                   = {Abe, K. and others},
   Journal                  = {Phys. Rev. Lett.},
   Year                     = {2014},
@@ -217,8 +217,8 @@
 }
 
 @InProceedings{Abe:2014oxa,
-  Title                    = {{A Long Baseline Neutrino Oscillation Experiment Using
- J-PARC Neutrino Beam and Hyper-Kamiokande}},
+  Title                    = {A Long Baseline Neutrino Oscillation Experiment Using
+ J-PARC Neutrino Beam and Hyper-Kamiokande},
   Author                   = {Abe, K. and others},
   Year                     = {2014},
 
@@ -250,7 +250,7 @@
 @Article{Abe2012,
   Title                    = {Measurements of the T2{K} neutrino beam properties using the INGRID on-axis near detector},
   Author                   = {K. Abe and others},
-  Journal                  = {Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment},
+  Journal                  = {Nucl. Instrum. Meth. A},
   Year                     = {2012},
   Pages                    = {211--223},
   Volume                   = {694},
@@ -279,7 +279,7 @@
 }
 
 @Article{Abe:2011ks,
-  Title                    = {{The T2{K} Experiment}},
+  Title                    = {The T2K Experiment},
   Author                   = {Abe, K. and others},
   Journal                  = {Nucl. Instrum. Meth.},
   Year                     = {2011},
@@ -295,8 +295,8 @@
 }
 
 @Article{Abe:2011sj,
-  Title                    = {{Indication of Electron Neutrino Appearance from an
- Accelerator-produced Off-axis Muon Neutrino Beam}},
+  Title                    = {Indication of Electron Neutrino Appearance from an
+ Accelerator-produced Off-axis Muon Neutrino Beam},
   Author                   = {Abe, K. and others},
   Journal                  = {Phys. Rev. Lett.},
   Year                     = {2011},
@@ -312,7 +312,7 @@
 }
 
 @Article{Abgrall:2016fs,
-  Title                    = {Measurements of $\pi^\pm$, $K^\pm$, $K^0_S$, $\Lambda$ and proton production in proton-carbon interactions at 31~{GeV}/c with the NA61/SHINE spectrometer at the {CERN SPS}},
+  Title                    = {Measurements of $\pi^\pm$, $K^\pm$, $K^0_S$, $\Lambda$ and proton production in proton-carbon interactions at 31~{GeV}/c with the NA61/SHINE spectrometer at the CERN SPS},
   Author                   = {Abgrall, N. and Others},
   Journal                  = {Eur. Phys. J. C},
   Year                     = {2016},
@@ -323,7 +323,7 @@
 }
 
 @Article{Abgrall:2011ts,
-  Title                    = {{Measurement of Production Properties of Positively Charged Kaons in Proton - Carbon Interactions at 31~{GeV}/c}},
+  Title                    = {Measurement of Production Properties of Positively Charged Kaons in Proton - Carbon Interactions at 31~{GeV}/c},
   Author                   = {Abgrall, N. and others},
   Journal                  = {Phys. Rev. C},
   Year                     = {2012},
@@ -336,7 +336,7 @@
 }
 
 @Article{Abgrall:2010hi,
-  Title                    = {{Time Projection Chambers for the T2{K} Near Detectors}},
+  Title                    = {Time Projection Chambers for the T2{K} Near Detectors},
   Author                   = {Abgrall, N. and others},
   Journal                  = {Nucl. Instrum. Meth.},
   Year                     = {2011},
@@ -352,7 +352,7 @@
 }
 
 @Article{Abgrall:2011ae,
-  Title                    = {{Measurements of Cross Sections and Charged Pion Spectra in Proton-Carbon Interactions at 31~{GeV}/c}},
+  Title                    = {Measurements of Cross Sections and Charged Pion Spectra in Proton-Carbon Interactions at 31~{GeV}/c},
   Author                   = {Abgrall, N and others},
   Journal                  = {Phys. Rev. C},
   Year                     = {2011},
@@ -366,8 +366,8 @@
 }
 
 @Article{Acciarri:2015uup,
-  Title                    = {{Long-Baseline Neutrino Facility (LBNF) and Deep
- Underground Neutrino Experiment (DUNE)}},
+  Title                    = {Long-Baseline Neutrino Facility (LBNF) and Deep
+ Underground Neutrino Experiment (DUNE)},
   Author                   = {Acciarri, R. and others},
   Year                     = {2015},
 
@@ -395,9 +395,9 @@
 }
 
 @Article{Acciarri:2014gev,
-  Title                    = {{Detection of back-to-back proton pairs in
+  Title                    = {Detection of back-to-back proton pairs in
  charged-current neutrino interactions with the ArgoNeuT
- detector in the NuMI low energy beam line}},
+ detector in the NuMI low energy beam line},
   Author                   = {Acciarri, R. and others},
   Journal                  = {Phys. Rev.},
   Year                     = {2014},
@@ -414,15 +414,15 @@
 }
 
 @Article{Adams:2013qkq,
-  Title                    = {{The Long-Baseline Neutrino Experiment: Exploring Fundamental Symmetries of the Universe}},
+  Title                    = {The Long-Baseline Neutrino Experiment: Exploring Fundamental Symmetries of the Universe},
   Author                   = {Adams, C. and others},
   Year                     = {2013},
   Note                     = {arXiv:1307.7335}
 }
 
 @Article{Adamson:2017gxd,
-  Title                    = {{Constraints on Oscillation Parameters from $\nu_e$
- Appearance and $\nu_\mu$ Disappearance in NOvA}},
+  Title                    = {Constraints on Oscillation Parameters from $\nu_e$
+ Appearance and $\nu_\mu$ Disappearance in NOvA},
   Author                   = {Adamson, P. and others},
   Journal                  = {Phys. Rev. Lett.},
   Year                     = {2017},
@@ -474,7 +474,7 @@
 }
 
 @Article{Agostinelli:2002hh,
-  Title                    = {{GEANT4: A Simulation toolkit}},
+  Title                    = {GEANT4: A Simulation toolkit},
   Author                   = {Agostinelli, S. and others},
   Journal                  = {Nucl. Instrum. Meth.},
   Year                     = {2003},
@@ -488,9 +488,9 @@
 }
 
 @Article{Aguilar-Arevalo:2013dva,
-  Title                    = {{First measurement of the muon antineutrino
+  Title                    = {First measurement of the muon antineutrino
  double-differential charged-current quasielastic cross
- section}},
+ section},
   Author                   = {Aguilar-Arevalo, A. A. and others},
   Journal                  = {Phys. Rev.},
   Year                     = {2013},
@@ -508,8 +508,8 @@
 }
 
 @Article{AguilarArevalo:2010zc,
-  Title                    = {{First Measurement of the Muon Neutrino Charged Current
- Quasielastic Double Differential Cross Section}},
+  Title                    = {First Measurement of the Muon Neutrino Charged Current
+ Quasielastic Double Differential Cross Section},
   Author                   = {Aguilar-Arevalo, A. A. and others},
   Journal                  = {Phys. Rev.},
   Year                     = {2010},
@@ -526,9 +526,9 @@
 }
 
 @Article{Ahmad:2002jz,
-  Title                    = {{Direct evidence for neutrino flavor transformation from
+  Title                    = {Direct evidence for neutrino flavor transformation from
  neutral current interactions in the Sudbury Neutrino
- Observatory}},
+ Observatory},
   Author                   = {Ahmad, Q. R. and others},
   Journal                  = {Phys. Rev. Lett.},
   Year                     = {2002},
@@ -544,9 +544,9 @@
 }
 
 @Article{Ahmad:2001an,
-  Title                    = {{Measurement of the rate of $\nu_e+d \to p+p+e^-$
+  Title                    = {Measurement of the rate of $\nu_e+d \to p+p+e^-$
  interactions produced by $^8{B}$ solar neutrinos at the
- Sudbury Neutrino Observatory}},
+ Sudbury Neutrino Observatory},
   Author                   = {Ahmad, Q. R. and others},
   Journal                  = {Phys. Rev. Lett.},
   Year                     = {2001},
@@ -563,8 +563,8 @@
 }
 
 @Article{Aliu:2004sq,
-  Title                    = {{Evidence for muon neutrino oscillation in an
- accelerator-based experiment}},
+  Title                    = {Evidence for muon neutrino oscillation in an
+ accelerator-based experiment},
   Author                   = {Aliu, E. and others},
   Journal                  = {Phys. Rev. Lett.},
   Year                     = {2005},
@@ -599,8 +599,8 @@
 }
 
 @Article{Alvarez-Ruso:2017oui,
-  Title                    = {{NuSTEC White Paper: Status and Challenges of
- Neutrino-Nucleus Scattering}},
+  Title                    = {NuSTEC White Paper: Status and Challenges of
+ Neutrino-Nucleus Scattering},
   Author                   = {Alvarez-Ruso, L. and others},
   Year                     = {2017},
 
@@ -612,7 +612,7 @@
 }
 
 @Article{Amaudruz:2012agx,
-  Title                    = {{The T2{K} Fine-Grained Detectors}},
+  Title                    = {The T2{K} Fine-Grained Detectors},
   Author                   = {Amaudruz, P. A. and others},
   Journal                  = {Nucl. Instrum. Meth.},
   Year                     = {2012},
@@ -628,8 +628,8 @@
 }
 
 @Article{An:2012eh,
-  Title                    = {{Observation of electron-antineutrino disappearance at
- Daya Bay}},
+  Title                    = {Observation of electron-antineutrino disappearance at
+ Daya Bay},
   Author                   = {An, F. P. and others},
   Journal                  = {Phys. Rev. Lett.},
   Year                     = {2012},
@@ -645,10 +645,10 @@
 }
 
 @Article{Andreopoulos:2009rq,
-  Title                    = {{The GENIE Neutrino {Monte Carlo} Generator}},
+  Title                    = {The GENIE Neutrino {Monte Carlo} Generator},
   Author                   = {Andreopoulos, C. and Bell, A. and Bhattacharya, D. and
  Cavanna, F. and Dobson, J. and others},
-  Journal                  = {Nucl. Instrum. Methods},
+  Journal                  = {Nucl. Instrum. Meth.},
   Year                     = {2010},
   Pages                    = {87--104},
   Volume                   = {A614},
@@ -657,8 +657,8 @@
 }
 
 @Article{Ankowski:2010yh,
-  Title                    = {{Analysis of the Q^2-dependence of charged-current
- quasielastic processes in neutrino-nucleus interactions}},
+  Title                    = {Analysis of the Q^2-dependence of charged-current
+ quasielastic processes in neutrino-nucleus interactions},
   Author                   = {Ankowski, Artur M. and Benhar, Omar and Farina, Nicola},
   Journal                  = {Phys. Rev.},
   Year                     = {2010},
@@ -691,7 +691,7 @@
 @Article{smrd,
   Title                    = {The T2{K} Side Muon Range Detector (SMRD)},
   Author                   = {S. Aoki and others},
-  Journal                  = {Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment},
+  Journal                  = {Nucl. Instrum. Meth. A},
   Year                     = {2013},
   Pages                    = {135--146},
   Volume                   = {698},
@@ -719,8 +719,8 @@
 }
 
 @Article{Araki:2004mb,
-  Title                    = {{Measurement of neutrino oscillation with KamLAND:
- Evidence of spectral distortion}},
+  Title                    = {Measurement of neutrino oscillation with KamLAND:
+ Evidence of spectral distortion},
   Author                   = {Araki, T. and others},
   Journal                  = {Phys. Rev. Lett.},
   Year                     = {2005},
@@ -736,7 +736,7 @@
 }
 
 @Article{Assylbekov:2011sh,
-  Title                    = {{The T2{K} ND280 Off-Axis Pi-Zero Detector}},
+  Title                    = {The T2{K} ND280 Off-Axis Pi-Zero Detector},
   Author                   = {Assylbekov, S. and others},
   Journal                  = {Nucl. Instrum. Meth.},
   Year                     = {2012},
@@ -760,7 +760,7 @@
 }
 
 @Article{baker-cousins,
-  Title                    = {{Clarification of the use of Chi-Square and Likelihood Functions in Fits to Histograms}},
+  Title                    = {Clarification of the use of Chi-Square and Likelihood Functions in Fits to Histograms},
   Author                   = {S. Baker and R. D. Cousins},
   Journal                  = {Nucl. Instrum. Meth.},
   Year                     = {1983},
@@ -773,7 +773,7 @@
 @Article{vonBallmoos2014,
   Title                    = {Antimatter in the Universe: constraints from gamma-ray astronomy},
   Author                   = {von Ballmoos, Peter},
-  Journal                  = {Hyperfine Interactions},
+  Journal                  = {Hyperfine Interact.},
   Year                     = {2014},
 
   Month                    = oct,
@@ -787,7 +787,7 @@
 }
 
 @Article{Benhar:2006wy,
-  Title                    = {{Inclusive quasi-elastic electron-nucleus scattering}},
+  Title                    = {Inclusive quasi-elastic electron-nucleus scattering},
   Author                   = {Benhar, Omar and day, Donal and Sick, Ingo},
   Journal                  = {Rev. Mod. Phys.},
   Year                     = {2008},
@@ -802,7 +802,7 @@
 }
 
 @Article{Benhar:1995,
-  Title                    = {{Spectral function of finite nuclei and scattering of GeV electrons}},
+  Title                    = {Spectral function of finite nuclei and scattering of GeV electrons},
   Author                   = {O. Benhar and A. Fabrocini and S. Fantoni and I. Sick},
   Journal                  = {Nucl. Phys.},
   Year                     = {1994},
@@ -813,8 +813,8 @@
 }
 
 @Article{Benhar:2005dj,
-  Title                    = {{Electron- and neutrino-nucleus scattering in the impulse
- approximation regime}},
+  Title                    = {Electron- and neutrino-nucleus scattering in the impulse
+ approximation regime},
   Author                   = {Benhar, Omar and Farina, Nicola and Nakamura, Hiroki and
  Sakuda, Makoto and Seki, Ryoichi},
   Journal                  = {Phys. Rev.},
@@ -846,9 +846,9 @@
 }
 
 @Article{Betancourt:2017uso,
-  Title                    = {{Direct Measurement of Nuclear Dependence of Charged
+  Title                    = {Direct Measurement of Nuclear Dependence of Charged
  Current Quasielastic-like Neutrino Interactions using
- MINERvA}},
+ MINERvA},
   Author                   = {Betancourt, M. and others},
   Year                     = {2017},
 
@@ -890,7 +890,7 @@
 }
 
 @TechReport{Bienstock2018,
-  Title                    = {{Assessing the effect of cross-section model uncertainties on the T2{K} oscillation analyses with simulated data studies using the BANFF, MaCh3, P-Theta and VALOR frameworks}},
+  Title                    = {Assessing the effect of cross-section model uncertainties on the T2{K} oscillation analyses with simulated data studies using the BANFF, MaCh3, P-Theta and VALOR frameworks},
   Author                   = {Bienstock, S. and others},
   Institution              = {T2K Collaboration},
   Year                     = {2018},
@@ -903,8 +903,8 @@
 }
 
 @Article{Bodek:1981wr,
-  Title                    = {{Further Studies of Fermi Motion Effects in Lepton
- Scattering from Nuclear Targets}},
+  Title                    = {Further Studies of Fermi Motion Effects in Lepton
+ Scattering from Nuclear Targets},
   Author                   = {Bodek, A. and Ritchie, J. L.},
   Journal                  = {Phys. Rev.},
   Year                     = {1981},
@@ -917,9 +917,9 @@
 }
 
 @Article{Bodek:2003wd,
-  Title                    = {{Modeling Neutrino and Electron Scattering 
+  Title                    = {Modeling Neutrino and Electron Scattering 
  Cross Sections in the Few GeV Region with Effective LO
- {PDF}s}},
+ {PDF}s},
   Author                   = {Bodek, A. and Yang, U. K.},
   Journal                  = {AIP Conf. Proc.},
   Year                     = {2003},
@@ -930,7 +930,7 @@
 }
 
 @Article{Fluka:2014,
-  Title                    = {{The FLUKA Code: Developments and Challenges for High Energy and Medical Applications}},
+  Title                    = {The FLUKA Code: Developments and Challenges for High Energy and Medical Applications},
   Author                   = {T.T. Bohlen and F. Cerutti and M.P.W. Chin and A. Fasso and A. Ferrari and P.G. Ortega and A. Mairani and P.R. Sala and G. Smirnov and V. Vlachoudis},
   Journal                  = {Nuclear Data Sheets},
   Year                     = {2014},
@@ -944,7 +944,7 @@
   Author                   = {S. Bolognesi and Others},
   Institution              = {T2K Collaboration},
   Year                     = {2017},
-  Month                    = apr,
+  Month                    = April,
   Note                     = {\href{https://www.t2k.org/docs/technotes/315}{T2K-TN-315\ v5}},
 
   __markedentry            = {[mhogan:6]},
@@ -971,7 +971,7 @@
 }
 
 @Article{Buss:2011mx,
-  Title                    = {{Transport-theoretical Description of Nuclear Reactions}},
+  Title                    = {Transport-theoretical Description of Nuclear Reactions},
   Author                   = {Buss, O. and Gaitanos, T. and Gallmeister, K. and van
  Hees, H. and Kaskulov, M. and Lalakulich, O. and Larionov,
  A. B. and Leitner, T. and Weil, J. and Mosel, U.},
@@ -989,7 +989,7 @@
 
 @Standard{Campbell2018,
   Title                    = {Measurement of the $\nu_\mu$ CC-$0\pi$ Double Differential Cross Section on Water in the P\O{}D},
-  Institution              = {{Colorado State University, Fort Collins, Colorado, USA}},
+  Institution              = {Colorado State University, Fort Collins, Colorado, USA},
   Organization             = {T2K},
   Author                   = {Campbell, T.},
   Month                    = feb,
@@ -1003,7 +1003,7 @@
 }
 
 @PhdThesis{Campbell2018a,
-  Title                    = {Measurement of the muon anti-neutrino charged current double differential cross section with no pions in the final state on water using the pi-zero detector at T2{K}},
+  Title                    = {Measurement of the muon anti-neutrino charged current double differential cross section with no pions in the final state on water using the pi-zero detector at T2K},
   Author                   = {Campbell, T.},
   School                   = {Colorado State University, Fort Collins, Colorado, USA},
   Year                     = {2018},
@@ -1015,7 +1015,7 @@
 
 @Standard{Campbell2014,
   Title                    = {Analysis of $\nu_\mu$ Charged Current Inclusive Events in the P\O{}D in Runs 1+2+3+4},
-  Institution              = {{{Colorado State University, Fort Collins, Colorado, USA} and {University of Colorado Boulder, Boulder, USA}}},
+  Institution              = {{Colorado State University, Fort Collins, Colorado, USA} and {University of Colorado Boulder, Boulder, USA}},
   Organization             = {T2K},
   Author                   = {Campbell, T. and Others},
   Month                    = mar,
@@ -1072,7 +1072,7 @@
 }
 
 @Article{e910,
-  Title                    = {{Pion production by protons on a thin beryllium target at 6.4-Ge, 12.3\mbox{-}{GeV}/c, and 17.5\mbox{-}{GeV}/c incident proton momenta}},
+  Title                    = {Pion production by protons on a thin beryllium target at 6.4-Ge, 12.3\mbox{-}{GeV}/c, and 17.5\mbox{-}{GeV}/c incident proton momenta},
   Author                   = {Chemakin, I. and others},
   Journal                  = {Phys. Rev. C},
   Year                     = {2008},
@@ -1095,8 +1095,8 @@
 }
 
 @Article{1998ApJ...496..505C,
-  Title                    = {{Measurement of the Solar Electron Neutrino Flux with the Homestake Chlorine Detector}},
-  Author                   = {{Cleveland}, B. T. and Others},
+  Title                    = {Measurement of the Solar Electron Neutrino Flux with the Homestake Chlorine Detector},
+  Author                   = {Cleveland, B. T. and Others},
   Journal                  = {Astronomical Journal},
   Year                     = {1998},
 
@@ -1117,7 +1117,7 @@
 }
 
 @Article{Cowan:2010js,
-  Title                    = {{Asymptotic formulae for likelihood-based tests of new physics}},
+  Title                    = {Asymptotic formulae for likelihood-based tests of new physics},
   Author                   = {Cowan, Glen and Cranmer, Kyle and Gross, Eilam and Vitells, Ofer},
   Journal                  = {Eur. Phys. J.},
   Year                     = {2011},
@@ -1129,7 +1129,7 @@
 }
 
 @Article{dagostini2,
-  Title                    = {{Improved iterative {Bayes}ian unfolding}},
+  Title                    = {Improved iterative {Bayes}ian unfolding},
   Author                   = {G. D'Agostini},
   Journal                  = {ArXiv e-prints},
   Year                     = {2010},
@@ -1145,9 +1145,9 @@
 }
 
 @Article{dagostini1,
-  Title                    = {{A multidimensional unfolding method based on {Bayes} theorem}},
+  Title                    = {A multidimensional unfolding method based on {Bayes} theorem},
   Author                   = {G. D'Agostini},
-  Journal                  = {Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment},
+  Journal                  = {Nucl. Instrum. Meth. A},
   Year                     = {1995},
   Number                   = {2-3},
   Pages                    = {487--498},
@@ -1181,7 +1181,7 @@
 
 @Standard{Das2014,
   Title                    = {Measurement of Induced Charged Current Cross Section on Water using the P\O{}D and TPC},
-  Institution              = {{Colorado State University, Fort Collins, Colorado, USA}},
+  Institution              = {Colorado State University, Fort Collins, Colorado, USA},
   Organization             = {T2K},
   Author                   = {Das, R. and Others},
   Month                    = nov,
@@ -1194,8 +1194,8 @@
 }
 
 @Article{Delorme:1985ps,
-  Title                    = {{Exploration of the Spin - Isospin Nuclear Response
- Function by Neutrinos}},
+  Title                    = {Exploration of the Spin - Isospin Nuclear Response
+ Function by Neutrinos},
   Author                   = {Delorme, J. and Ericson, Magda},
   Journal                  = {Phys. Lett.},
   Year                     = {1985},
@@ -1208,18 +1208,18 @@
 }
 
 @PhdThesis{dolanThesis,
-  Title                    = {{Probing Nuclear Effects in Neutrino-Nucleus Scattering at the 
- T2{K} Off-Axis Near Detector Using Transverse Kinematic Imbalances}},
+  Title                    = {Probing Nuclear Effects in Neutrino-Nucleus Scattering at the 
+ T2{K} Off-Axis Near Detector Using Transverse Kinematic Imbalances},
   Author                   = {S. Dolan},
   Year                     = {2017},
-  Note                     = {{T2K-THESIS-084}},
+  Note                     = {T2K-THESIS-084},
 
   Url                      = {https://www.t2k.org/docs/thesis/084/sdolanthesis}
 }
 
 @Article{Dolan:2018sbb,
-  Title                    = {{Sensitivity of Neutrino-Nucleus Interaction Measurements
- to 2p2h Excitations}},
+  Title                    = {Sensitivity of Neutrino-Nucleus Interaction Measurements
+ to 2p2h Excitations},
   Author                   = {Dolan, Stephen and Mosel, Ulrich and Gallmeister, Kai and
  Pickering, Luke and Bolognesi, Sara},
   Year                     = {2018},
@@ -1231,7 +1231,7 @@
 }
 
 @Article{Dutta:2012ii,
-  Title                    = {{Color Transparency: past, present and future}},
+  Title                    = {Color Transparency: past, present and future},
   Author                   = {Dutta, D. and Hafidi, K. and Strikman, M.},
   Journal                  = {Prog. Part. Nucl. Phys.},
   Year                     = {2013},
@@ -1246,7 +1246,7 @@
 }
 
 @Article{eichten,
-  Title                    = {Particle production in proton interactions in nuclei at 24 {GeV/c}},
+  Title                    = {Particle production in proton interactions in nuclei at 24 GeV/c},
   Author                   = {Eichten, T. and others},
   Journal                  = {Nucl. Phys. B},
   Year                     = {1972},
@@ -1285,7 +1285,7 @@
 }
 
 @Article{Ferrari:2005zk,
-  Title                    = {{FLUKA: A multi-particle transport code}},
+  Title                    = {FLUKA: A multi-particle transport code},
   Author                   = {A. Ferrari and P. R. Sala and A. Fasso and J. Ranft},
   Journal                  = {CERN-2005-010, SLAC-R-773, INFN-TC-05-11},
   Note                     = {FLUKA transport code}
@@ -1304,8 +1304,8 @@
 }
 
 @Article{Fields:2013zhk,
-  Title                    = {{Measurement of Muon Antineutrino Quasielastic Scattering
- on a Hydrocarbon Target at E$\nu$$\sim$3.5\hspace{0.167em}\hspace{0.167em}GeV}},
+  Title                    = {Measurement of Muon Antineutrino Quasielastic Scattering
+ on a Hydrocarbon Target at E$\nu$$\sim$3.5\hspace{0.167em}\hspace{0.167em}GeV},
   Author                   = {Fields, L. and others},
   Journal                  = {Phys. Rev. Lett.},
   Year                     = {2013},
@@ -1323,8 +1323,8 @@
 }
 
 @Article{Fiorentini:2013ezn,
-  Title                    = {{Measurement of Muon Neutrino Quasielastic Scattering on
- a Hydrocarbon Target at E$\nu$$\sim$3.5\hspace{0.167em}\hspace{0.167em}GeV}},
+  Title                    = {Measurement of Muon Neutrino Quasielastic Scattering on
+ a Hydrocarbon Target at E$\nu$$\sim$3.5\hspace{0.167em}\hspace{0.167em}GeV},
   Author                   = {Fiorentini, G. A. and others},
   Journal                  = {Phys. Rev. Lett.},
   Year                     = {2013},
@@ -1363,7 +1363,7 @@
 }
 
 @Article{Formaggio:2013kya,
-  Title                    = {{From eV to EeV: Neutrino Cross Sections Across Energy Scales}},
+  Title                    = {From eV to EeV: Neutrino Cross Sections Across Energy Scales},
   Author                   = {Formaggio, J. A. and Zeller, G. P.},
   Journal                  = {Rev. Mod. Phys.},
   Year                     = {2012},
@@ -1398,7 +1398,7 @@
 @Article{FUKUDA2003418,
   Title                    = {The Super-Kamiokande detector},
   Author                   = {S. Fukuda and others},
-  Journal                  = {Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment},
+  Journal                  = {Nucl. Instrum. Meth. A},
   Year                     = {2003},
   Number                   = {2},
   Pages                    = {418--462},
@@ -1412,7 +1412,7 @@
 }
 
 @Article{Fukuda:1998mi,
-  Title                    = {{Evidence for oscillation of atmospheric neutrinos}},
+  Title                    = {Evidence for oscillation of atmospheric neutrinos},
   Author                   = {Fukuda, Y. and others},
   Journal                  = {Phys. Rev. Lett.},
   Year                     = {1998},
@@ -1431,7 +1431,7 @@
 }
 
 @Article{furuta:pctex,
-  Title                    = {Two {\TeX} Implementations for the {IBM PC}},
+  Title                    = {Two {\TeX} Implementations for the IBM PC},
   Author                   = {Richard K. Furuta and Pierre A. MacKay},
   Journal                  = {Dr. Dobb's Journal},
   Year                     = {1985},
@@ -1443,7 +1443,7 @@
 }
 
 @Article{Gallmeister:2016dnq,
-  Title                    = {{Neutrino-Induced Reactions on Nuclei}},
+  Title                    = {Neutrino-Induced Reactions on Nuclei},
   Author                   = {Gallmeister, K. and Mosel, U. and Weil, J.},
   Journal                  = {Phys. Rev.},
   Year                     = {2016},
@@ -1459,9 +1459,9 @@
 }
 
 @Article{Gil:1997bm,
-  Title                    = {{Many body approach to the inclusive (e, e-prime)
+  Title                    = {Many body approach to the inclusive (e, e-prime)
  reaction from the quasielastic to the Delta excitation
- region}},
+ region},
   Author                   = {Gil, A. and Nieves, J. and Oset, E.},
   Journal                  = {Nucl. Phys.},
   Year                     = {1997},
@@ -1492,7 +1492,7 @@
 }
 
 @Article{Gluck:1998xa,
-  Title                    = {{Dynamical parton distributions revisited}},
+  Title                    = {Dynamical parton distributions revisited},
   Author                   = {Gluck, M. and Reya, E. and Vogt, A.},
   Journal                  = {Eur. Phys. J.},
   Year                     = {1998},
@@ -1503,8 +1503,8 @@
 }
 
 @Article{Golan:2012wx,
-  Title                    = {{Final State Interactions Effects in Neutrino-Nucleus
- Interactions}},
+  Title                    = {Final State Interactions Effects in Neutrino-Nucleus
+ Interactions},
   Author                   = {Golan, Tomasz and Juszczak, Cezary and Sobczyk, Jan T.},
   Journal                  = {Phys. Rev. C},
   Year                     = {2012},
@@ -1526,9 +1526,9 @@
 }
 
 @InProceedings{deGouvea:2013onf,
-  Title                    = {{Working Group Report: Neutrinos}},
+  Title                    = {Working Group Report: Neutrinos},
   Author                   = {de Gouvea, A. and others},
-  Booktitle                = {{Proceedings, 2013 Community Summer Study on the Future of U.S. Particle Physics: Snowmass on the Mississippi}},
+  Booktitle                = {Proceedings, 2013 Community Summer Study on the Future of U.S. Particle Physics: Snowmass on the Mississippi},
   Year                     = {2013},
   Note                     = {arXiv:1310.4340}
 }
@@ -1550,7 +1550,7 @@
 }
 
 @Article{Graczyk:2009qm,
-  Title                    = {{$C_A^5$ axial form factor from bubble chamber experiments}},
+  Title                    = {$C_A^5$ axial form factor from bubble chamber experiments},
   Author                   = {Graczyk, K. M. and Kielczewska, D. and Przewlocki, P. and Sobczyk, J. T.},
   Journal                  = {Phys. Rev.},
   Year                     = {2009},
@@ -1610,7 +1610,7 @@
 }
 
 @Article{lcurve,
-  Title                    = {{Analysis of Discrete Ill-Posed Problems by Means of the L-Curve}},
+  Title                    = {Analysis of Discrete Ill-Posed Problems by Means of the L-Curve},
   Author                   = {Hansen, P. C.},
   Journal                  = {SIAM Rev.},
   Year                     = {1992},
@@ -1660,7 +1660,7 @@
 }
 
 @Article{Hayato:2002sd,
-  Title                    = {{NEUT}},
+  Title                    = {NEUT},
   Author                   = {Hayato, Y.},
   Journal                  = {Nucl. Phys. Proc. Suppl.},
   Year                     = {2002},
@@ -1672,7 +1672,7 @@
 }
 
 @Article{Hernandez:2013jka,
-  Title                    = {{Single $\phi$ production in neutrino-nucleus scattering}},
+  Title                    = {Single $\phi$ production in neutrino-nucleus scattering},
   Author                   = {Hern{\'{a}}ndez, E. and Nieves, J. and Vicente Vacas, M. J.},
   Journal                  = {Phys. Rev.},
   Year                     = {2013},
@@ -1688,7 +1688,7 @@
 }
 
 @Article{Higuera:2014,
-  Title                    = {{Measurement of Coherent Production of ${\ensuremath{\pi}}^{\ifmmode\pm\else\textpm\fi{}}$ in Neutrino and Antineutrino Beams on Carbon from ${E}_{\ensuremath{\nu}}$ of 1.5 to 20~{GeV}}},
+  Title                    = {Measurement of Coherent Production of ${\ensuremath{\pi}}^{\ifmmode\pm\else\textpm\fi{}}$ in Neutrino and Antineutrino Beams on Carbon from ${E}_{\ensuremath{\nu}}$ of 1.5 to 20~{GeV}},
   Author                   = {Higuera, A. and others},
   Journal                  = {Phys. Rev. Lett.},
   Year                     = {2014},
@@ -1717,12 +1717,12 @@
 }
 
 @InProceedings{Igarashi:2016wyi,
-  Title                    = {{Recent Progress of J-PARC MR Beam Commissioning and
- Operation}},
+  Title                    = {Recent Progress of J-PARC MR Beam Commissioning and
+ Operation},
   Author                   = {Igarashi, Susumu},
-  Booktitle                = {{Proceedings, 57\textsuperscript{th} ICFA Advanced Beam Dynamics Workshop
+  Booktitle                = {Proceedings, 57\textsuperscript{th} ICFA Advanced Beam Dynamics Workshop
  on High-Intensity and High-Brightness Hadron Beams
- (HB2016): Malm\"{o}, Sweden, July 3-8, 2016}},
+ (HB2016): Malm\"{o}, Sweden, July 3-8, 2016},
   Year                     = {2016},
   Pages                    = {MOAM6P60},
 
@@ -1826,7 +1826,7 @@
 }
 
 @Article{2011ApJS..192...18K,
-  Title                    = {{Seven-year Wilkinson Microwave Anisotropy Probe (WMAP) Observations: Cosmological Interpretation}},
+  Title                    = {Seven-year Wilkinson Microwave Anisotropy Probe (WMAP) Observations: Cosmological Interpretation},
   Author                   = {Komatsu, E. and Others},
   Journal                  = {Astrophys. J.},
   Year                     = {2011},
@@ -1840,8 +1840,8 @@
 }
 
 @Article{Kuusela:2015mzh,
-  Title                    = {{Shape-constrained uncertainty quantification in
- unfolding steeply falling elementary particle spectra}},
+  Title                    = {Shape-constrained uncertainty quantification in
+ unfolding steeply falling elementary particle spectra},
   Author                   = {Kuusela, Mikael and Stark, Philip B.},
   Year                     = {2015},
 
@@ -1852,8 +1852,7 @@
 }
 
 @Book{lamport:latex,
-  Title                    = {{\LaTeX}: A Document Preparation System. User's Guide and
- Reference Manual},
+  Title                    = {{\LaTeX}: A Document Preparation System. User's Guide and Reference Manual},
   Author                   = {Leslie Lamport},
   Publisher                = {Addison-Wesley},
   Year                     = {1986},
@@ -1862,8 +1861,7 @@
 }
 
 @Article{Leitner:2006ww,
-  Title                    = {{Charged current neutrino nucleus interactions at
- intermediate energies}},
+  Title                    = {Charged current neutrino nucleus interactions at intermediate energies},
   Author                   = {Leitner, Tina and Alvarez-Ruso, L. and Mosel, U.},
   Journal                  = {Phys. Rev.},
   Year                     = {2006},
@@ -1889,22 +1887,44 @@
 }
 
 @Article{LlewellynSmith:1971uhs,
-  Title                    = {{Neutrino Reactions at Accelerator Energies}},
+  Title                    = {Neutrino Reactions at Accelerator Energies},
   Author                   = {Llewellyn Smith, C. H.},
   Journal                  = {Phys. Rept.},
   Year                     = {1972},
   Pages                    = {261--379},
   Volume                   = {3},
 
-  Booktitle                = {{Gauge Theories and Neutrino Physics, Jacob, 1978:0175}},
+  Booktitle                = {Gauge Theories and Neutrino Physics, Jacob, 1978:0175},
   Doi                      = {10.1016/0370-1573(72)90010-5},
   Reportnumber             = {SLAC-PUB-0958},
   Slaccitation             = {%%CITATION = PRPLC,3,261;%%}
 }
 
+@TechReport{Lodovico2017,
+  Title                    = {Measurement of the Charged Current CoherentPion Production Cross-Section on Carbon andOxygen using the ND280 tracker},
+  Author                   = {Lodovico, F. and Martins, P.},
+  Institution              = {T2K Collaboration},
+  Year                     = {2017},
+  Note                     = {T2K-TN-290},
+
+  Owner                    = {mhogan},
+  Timestamp                = {2019.07.18}
+}
+
+@TechReport{Longhin2016,
+  Title                    = {Measurement of the inclusive charged-current numu cross section in plastic using the ND280 tracker Run 5c data},
+  Author                   = {Longhin, A. and Others},
+  Institution              = {T2K Collaboration},
+  Year                     = {2016},
+  Note                     = {T2K-TN-249v8},
+
+  Owner                    = {mhogan},
+  Timestamp                = {2019.07.18}
+}
+
 @Article{Lu:2015tcr,
-  Title                    = {{Measurement of nuclear effects in neutrino interactions
- with minimal dependence on neutrino energy}},
+  Title                    = {Measurement of nuclear effects in neutrino interactions
+ with minimal dependence on neutrino energy},
   Author                   = {Lu, X. -G. and Pickering, L. and Dolan, S. and Barr, G.
  and Coplowe, D. and Uchida, Y. and Wark, D. and Wascko, M.
  O. and Weber, A. and Yuan, T.},
@@ -1922,8 +1942,7 @@
 }
 
 @Article{Lyubushkin:2008pe,
-  Title                    = {{A Study of quasi-elastic muon neutrino and antineutrino
- scattering in the NOMAD experiment}},
+  Title                    = {A Study of quasi-elastic muon neutrino and antineutrino scattering in the NOMAD experiment},
   Author                   = {Lyubushkin, V and others},
   Journal                  = {Eur. Phys. J.},
   Year                     = {2009},
@@ -1964,23 +1983,23 @@
 }
 
 @Article{Marteau:1999jp,
-  Title                    = {{Nuclear effects in neutrino nucleus interactions}},
+  Title                    = {Nuclear effects in neutrino nucleus interactions},
   Author                   = {Marteau, J. and Delorme, J. and Ericson, Magda},
   Journal                  = {Nucl. Instrum. Meth.},
   Year                     = {2000},
   Pages                    = {76--80},
   Volume                   = {A451},
 
-  Booktitle                = {{Neutrino factories based on muon storage rings.
+  Booktitle                = {Neutrino factories based on muon storage rings.
  Proceedings, ICFA/ECFA Workshop, nuFACT'99, Lyon, France,
- July 5-9, 1999}},
+ July 5-9, 1999},
   Doi                      = {10.1016/S0168-9002(00)00375-2},
   Reportnumber             = {LYCEN-99133},
   Slaccitation             = {%%CITATION = NUIMA,A451,76;%%}
 }
 
 @Article{Martini:2011wp,
-  Title                    = {{Neutrino quasielastic interaction and nuclear dynamics}},
+  Title                    = {Neutrino quasielastic interaction and nuclear dynamics},
   Author                   = {Martini, M. and Ericson, M. and Chanfray, G.},
   Journal                  = {Phys. Rev.},
   Year                     = {2011},
@@ -1995,8 +2014,8 @@
 }
 
 @Article{Martini:2010ex,
-  Title                    = {{Neutrino and antineutrino quasielastic interactions with
- nuclei}},
+  Title                    = {Neutrino and antineutrino quasielastic interactions with
+ nuclei},
   Author                   = {Martini, M. and Ericson, M. and Chanfray, G. and Marteau,
  J.},
   Journal                  = {Phys. Rev.},
@@ -2013,9 +2032,9 @@
 }
 
 @Article{Martini:2009uj,
-  Title                    = {{A Unified approach for nucleon knock-out, coherent and
+  Title                    = {A Unified approach for nucleon knock-out, coherent and
  incoherent pion production in neutrino interactions with
- nuclei}},
+ nuclei},
   Author                   = {Martini, M. and Ericson, M. and Chanfray, G. and Marteau,
  J.},
   Journal                  = {Phys. Rev.},
@@ -2040,15 +2059,15 @@
   Pages                    = {065501},
   Volume                   = {80},
 
-  Article-number           = {{065501}},
+  Article-number           = {065501},
   Doi                      = {10.1103/PhysRevC.80.065501},
-  ISSN                     = {{0556-2813}},
-  Orcid-numbers            = {{Martini, Marco/0000-0003-4823-639X}},
-  Unique-id                = {{ISI:000273232700077}}
+  ISSN                     = {0556-2813},
+  Orcid-numbers            = {Martini, Marco/0000-0003-4823-639X},
+  Unique-id                = {ISI:000273232700077}
 }
 
 @Article{Michael:2006rx,
-  Title                    = {{Observation of muon neutrino disappearance with the MINOS detectors and the NuMI neutrino beam}},
+  Title                    = {Observation of muon neutrino disappearance with the MINOS detectors and the NuMI neutrino beam},
   Author                   = {Michael, D. G. and others},
   Journal                  = {Phys. Rev. Lett.},
   Year                     = {2006},
@@ -2065,7 +2084,7 @@
 }
 
 @Article{Nieves:2004wx,
-  Title                    = {{Inclusive quasi-elastic neutrino reactions}},
+  Title                    = {Inclusive quasi-elastic neutrino reactions},
   Author                   = {Nieves, J. and Amaro, Jose Enrique and Valverde, M.},
   Journal                  = {Phys. Rev.},
   Year                     = {2004},
@@ -2081,8 +2100,8 @@
 }
 
 @Article{Nieves:2011yp,
-  Title                    = {{The nucleon axial mass and the MiniBooNE Quasielastic
- Neutrino-Nucleus Scattering problem}},
+  Title                    = {The nucleon axial mass and the MiniBooNE Quasielastic
+ Neutrino-Nucleus Scattering problem},
   Author                   = {Nieves, J. and Ruiz Simo, I. and Vicente Vacas, M. J.},
   Journal                  = {Phys. Lett.},
   Year                     = {2012},
@@ -2097,7 +2116,7 @@
 }
 
 @Article{Nieves:2011pp,
-  Title                    = {{Inclusive Charged--Current Neutrino--Nucleus Reactions}},
+  Title                    = {Inclusive Charged--Current Neutrino--Nucleus Reactions},
   Author                   = {Nieves, J. and Ruiz Simo, I. and Vicente Vacas, M. J.},
   Journal                  = {Phys. Rev.},
   Year                     = {2011},
@@ -2126,8 +2145,8 @@
 }
 
 @Article{Nieves:2005rq,
-  Title                    = {{Inclusive nucleon emission induced by quasi-elastic
- neutrino-nucleus interactions}},
+  Title                    = {Inclusive nucleon emission induced by quasi-elastic
+ neutrino-nucleus interactions},
   Author                   = {Nieves, J. and Valverde, M. and Vicente Vacas, M. J.},
   Journal                  = {Phys. Rev.},
   Year                     = {2006},
@@ -2143,8 +2162,8 @@
 }
 
 @Article{Niewczas:2015iea,
-  Title                    = {{Search for nucleon-nucleon correlations in
- neutrino-argon scattering}},
+  Title                    = {Search for nucleon-nucleon correlations in
+ neutrino-argon scattering},
   Author                   = {Niewczas, Kajetan and Sobczyk, Jan T.},
   Journal                  = {Phys. Rev.},
   Year                     = {2016},
@@ -2198,8 +2217,8 @@
 }
 
 @Article{Pickering:2016fiq,
-  Title                    = {{Examining nuclear effects in neutrino interactions with
- transverse kinematic imbalance}},
+  Title                    = {Examining nuclear effects in neutrino interactions with
+ transverse kinematic imbalance},
   Author                   = {Pickering, Luke},
   Journal                  = {JPS Conf. Proc.},
   Year                     = {2016},
@@ -2207,9 +2226,9 @@
   Volume                   = {12},
 
   Archiveprefix            = {arXiv},
-  Booktitle                = {{Proceedings, 10\textsuperscript{th} International Workshop on
+  Booktitle                = {Proceedings, 10\textsuperscript{th} International Workshop on
  Neutrino-Nucleus Interactions in the Few GeV Region
- (NuInt15): Osaka, Japan, November 16-21, 2015}},
+ (NuInt15): Osaka, Japan, November 16-21, 2015},
   Doi                      = {10.7566/JPSCP.12.010032},
   Eprint                   = {1602.06730},
   Primaryclass             = {hep-ex},
@@ -2229,7 +2248,7 @@
 }
 
 @Article{Pontecorvo:1957cp,
-  Title                    = {{Mesonium and Anti-Mesonium}},
+  Title                    = {Mesonium and Anti-Mesonium},
   Author                   = {Pontecorvo, B.},
   Journal                  = {Sov. Phys. JETP},
   Year                     = {1957},
@@ -2266,7 +2285,7 @@
 @Article{REIN198329,
   Title                    = {Coherent $\pi^0$ production in neutrino reactions},
   Author                   = {Dieter Rein and Lalit M. Sehgal},
-  Journal                  = {Nuclear Physics B},
+  Journal                  = {Nucl. Phys. B},
   Year                     = {1983},
   Number                   = {1},
   Pages                    = {29--44},
@@ -2306,7 +2325,7 @@
 }
 
 @Article{PhysRevC.18.584,
-  Title                    = {Energy-dependent phase shift analysis of pion-nucleon scattering below 400~{MeV}},
+  Title                    = {Energy-dependent phase shift analysis of pion-nucleon scattering below 400 MeV},
   Author                   = {Rowe, Glenn and Salomon, Martin and Landau, Rubin H.},
   Journal                  = {Phys. Rev. C},
   Year                     = {1978},
@@ -2361,7 +2380,7 @@
 @Article{SALCEDO1988557,
   Title                    = {Computer simulation of inclusive pion nuclear reactions},
   Author                   = {L.L. Salcedo and E. Oset and M.J. Vicente-Vacas and C. Garcia-Recio},
-  Journal                  = {Nuclear Physics A},
+  Journal                  = {Nucl. Phys. A},
   Year                     = {1988},
   Number                   = {3},
   Pages                    = {557--592},
@@ -2384,8 +2403,8 @@
 }
 
 @Article{1982PhRvD..25.2951S,
-  Title                    = {{Neutrinoless double-{$\beta$} decay in SU(2)$\times$U(1) theories}},
-  Author                   = {{Schechter}, J. and {Valle}, J.~W.~F.},
+  Title                    = {Neutrinoless double-{$\beta$} decay in SU(2)$\times$U(1) theories},
+  Author                   = {Schechter, J. and Valle, J.~W.~F.},
   Journal                  = {Phys. Rev. D},
   Year                     = {1982},
 
@@ -2409,7 +2428,7 @@
 @Article{SEKIGUCHI201557,
   Title                    = {Development and operational experience of magnetic horn system for T2{K} experiment},
   Author                   = {T. Sekiguchi and others},
-  Journal                  = {Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment},
+  Journal                  = {Nucl. Instrum. Meth. A},
   Year                     = {2015},
   Pages                    = {57--80},
   Volume                   = {789},
@@ -2422,8 +2441,8 @@
 }
 
 @Article{Singh:1992dc,
-  Title                    = {{Quasielastic neutrino (anti-neutrino) reactions in
- nuclei and the axial vector form-factor of the nucleon}},
+  Title                    = {Quasielastic neutrino (anti-neutrino) reactions in
+ nuclei and the axial vector form-factor of the nucleon},
   Author                   = {Singh, S. K. and Oset, E.},
   Journal                  = {Nucl. Phys.},
   Year                     = {1992},
@@ -2438,7 +2457,7 @@
 @Article{SMITH1972605,
   Title                    = {Neutrino reactions on nuclear targets},
   Author                   = {R.A. Smith and E.J. Moniz},
-  Journal                  = {Nuclear Physics B},
+  Journal                  = {Nucl. Phys. B},
   Year                     = {1972},
   Pages                    = {605--622},
   Volume                   = {43},
@@ -2456,8 +2475,8 @@
 }
 
 @Article{Stowell:2016jfr,
-  Title                    = {{NUISANCE: a neutrino cross-section generator tuning and
- comparison framework}},
+  Title                    = {NUISANCE: a neutrino cross-section generator tuning and
+ comparison framework},
   Author                   = {Stowell, P. and others},
   Journal                  = {JINST},
   Year                     = {2017},
@@ -2485,9 +2504,9 @@
 }
 
 @Article{Walton:2014esl,
-  Title                    = {{Measurement of muon plus proton final states in
+  Title                    = {Measurement of muon plus proton final states in
  $\nu_{\mu}$ interactions on hydrocarbon at $ =
-  4.2$~{GeV}}},
+ 4.2$~{GeV}},
   Author                   = {Walton, T. and others},
   Journal                  = {Phys. Rev.},
   Year                     = {2015},
@@ -2505,8 +2524,8 @@
 }
 
 @Article{Weinstein:2016inx,
-  Title                    = {{{\textquotedblleft}Hammer{\textquotedblright} events, neutrino energies, and
- nucleon-nucleon correlations}},
+  Title                    = {{\textquotedblleft}Hammer{\textquotedblright} events, neutrino energies, and
+ nucleon-nucleon correlations},
   Author                   = {Weinstein, L. B. and Hen, O. and Piasetzky, E.},
   Journal                  = {Phys. Rev.},
   Year                     = {2016},
@@ -2549,9 +2568,9 @@
 }
 
 @Article{Wolcott:2015hda,
-  Title                    = {{Measurement of electron neutrino quasielastic and
+  Title                    = {Measurement of electron neutrino quasielastic and
  quasielasticlike scattering on hydrocarbon at $\langle
- E_{\nu} \rangle $ = 3.6~{GeV}}},
+ E_{\nu} \rangle $ = 3.6~{GeV}},
   Author                   = {Wolcott, J. and others},
   Journal                  = {Phys. Rev. Lett.},
   Year                     = {2016},
@@ -2628,14 +2647,6 @@
   Year                     = {2016},
 
   __markedentry            = {[mhogan:6]},
-  Abstract                 = {This note details a measurement of the CC0 $\phi$ cross section on water using interactions in the
-Pi-Zero (P{\O}D) subdetector of ND280 with 5.8 $\times$ 10 20 protons on target. A selection of $\nu$ $\mu$
-charged-current events occurring within the P{\O}D is described. The charged, outgoing tracks are required to
-enter and be identifed by the Tracker. The cross section is determined using an iterative Bayesian
-unfolding technique. By separating the dataset into time periods when the P{\O}D is filled with water
-and when it is empty, a subtraction method provides a distribution of
-$\nu$ $\mu$ interactions on water only. Systematic uncertainties on the neutrino flux, interaction model, and detector simulation are
-propagated numerically within the unfolding framework.},
   Edition                  = {4.6.1},
   Owner                    = {mhogan},
   Timestamp                = {2019.06.18}

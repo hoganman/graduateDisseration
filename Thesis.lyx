@@ -67,7 +67,7 @@
 \chapterfont{\centering}
 \usepackage{braket}
 \end_preamble
-\options doctor,showframe
+\options doctor
 \use_default_options true
 \begin_modules
 fixltx2e
@@ -143,12 +143,12 @@ hanging
 \color #faf0e6
 \end_branch
 \branch BANFFLikelihood
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch P0DSelections
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -158,12 +158,12 @@ hanging
 \color #faf0e6
 \end_branch
 \branch P0DBANFFParameterization
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch FitterValidation
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -178,7 +178,7 @@ hanging
 \color #faf0e6
 \end_branch
 \branch Discussion
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -188,31 +188,36 @@ hanging
 \color #faf0e6
 \end_branch
 \branch AppendixObsnorm
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixSigmaVariations
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixObsnormVariations
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixLikelihoodScans
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixLikelihoodPenaltyScans
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch Abstract
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch AppendixPostfitParameters
 \selected 1
 \filename_suffix 0
 \color #faf0e6
@@ -352,13 +357,14 @@ The Tokai to Kamioka (T2K) experiment is a long baseline neutrino oscillation
 ino events in one and multiple track topologies on water and carbon.
  These selections are shown to have sensitivity similar sensitivity to the
  T2K flux and cross section systematic uncertainties.
- Using the same parameterization as the official ND constraint result, the
- 
+ Using the same parameterization as the official ND constraint result, a
+ hypothesis test was conducted between the 
 \begin_inset Formula $\pod$
 \end_inset
 
- data fit results demonstrate similar flux and cross section results with
- that of the FGD data.
+-only and FGD-only data fit results.
+ A p-value of 0.2865 was obtained indicating the two data sets are likely
+ describing the same population of neutrinos and their interactions in T2K.
 \end_layout
 
 \begin_layout Standard
@@ -673,6 +679,13 @@ status open
 
 \begin_layout Chapter
 Fitter Results
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Fitter-Results"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -907,6 +920,50 @@ name "app:Log-Likelihood-Penalty-Scans"
 \begin_inset CommandInset include
 LatexCommand input
 filename "Appendices/LikelihoodPenaltyScans.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch AppendixPostfitParameters
+inverted 0
+status open
+
+\begin_layout Chapter
+The 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+podtitle{}
+\end_layout
+
+\end_inset
+
+-Only Postfit Parameters
+\begin_inset CommandInset label
+LatexCommand label
+name "app:PostfitParameters"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "Appendices/PostfitParameters.lyx"
 
 \end_inset
 

@@ -840,7 +840,7 @@ where each of the PDFs
  are assumed multivariate normal distributions
 \begin_inset Formula 
 \begin{equation}
-\pi(\vec{y})=C_{y}e^{\left(-\frac{1}{2}\Delta\vec{y}\cdot V_{y}^{-1}\cdot\Delta\vec{y}^{T}\right)},\label{eq:nuisancepriorgaussian}
+\pi(\vec{y})=C_{y}e^{\left(-\frac{1}{2}\Delta\vec{y}^{T}\cdot V_{y}^{-1}\cdot\Delta\vec{y}\right)},\label{eq:nuisancepriorgaussian}
 \end{equation}
 
 \end_inset
@@ -887,7 +887,7 @@ with
 \begin_inset Formula 
 \begin{equation}
 \begin{aligned}\Delta\chi_{\ND280}^{2} & =2\sum_{i=1}^{M}\left[\vec{N}_{i}^{p}-\vec{N}_{i}^{d}+\vec{N}_{i}^{d}\log\left(\frac{\vec{N}_{i}^{d}}{\vec{N}_{i}^{p}}\right)\right]\\
- & +\Delta\xsec\cdot\left(V_{x}^{-1}\right)\cdot\Delta\xsec^{T}+\Delta\flux\cdot\left(V_{b}^{-1}\right)\cdot\Delta\flux^{T}+\Delta\systematics\cdot\left(V_{d}^{-1}\right)\cdot\Delta\systematics^{T}
+ & +\Delta\xsec^{T}\cdot\left(V_{x}^{-1}\right)\cdot\Delta\xsec+\Delta\flux^{T}\cdot\left(V_{b}^{-1}\right)\cdot\Delta\flux+\Delta\systematics^{T}\cdot\left(V_{d}^{-1}\right)\cdot\Delta\systematics
 \end{aligned}
 \label{eq:BANFFDeltaChiSqr}
 \end{equation}
@@ -943,19 +943,70 @@ noprefix "false"
 \end_inset
 
 .
- Once the global minimum of the test statistic is found, the postfit covariance
+\end_layout
+
+\begin_layout Standard
+Once the global minimum of the test statistic is found, the postfit covariance
  matrix 
 \begin_inset Formula $V$
 \end_inset
 
- is calculated as the inverse of the Hessian matrix 
+ needs to be calculated.
+ In a one-dimensional fit with best fit parameter 
+\begin_inset Formula $\hat{y}$
+\end_inset
+
+, the standard error on 
+\begin_inset Formula $y$
+\end_inset
+
+ 
+\begin_inset Formula $\left(\sigma_{y}\right)$
+\end_inset
+
+ would be calculated when the difference between the quantity
+\begin_inset Formula 
+\[
+\frac{\left(y-\hat{y}\right)^{2}}{\sigma_{y}^{2}}
+\]
+
+\end_inset
+
+changes by one (1), assuming 
+\begin_inset Formula $y$
+\end_inset
+
+ is normally distributed.
+ This calculation needs to generalized to account for multidimensional covarianc
+e between many parameters.
+ Consider taking small steps 
+\begin_inset Formula $\Delta\vec{y}$
+\end_inset
+
+ starting at the maximum likelihood estimate 
+\begin_inset Formula $\hat{\vec{y}}$
+\end_inset
+
+ (zero gradient), the change in the test statistic is given approximately
+ by a Taylor series
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned}\Delta\chi^{2}\left(\hat{\vec{y}}+\Delta\vec{y}\right) & \approx\frac{\Delta\chi^{2}\left(\hat{\vec{y}}\right)}{0!}+\frac{\cancelto{0}{\nabla\left.\left(\Delta\chi^{2}\right)\right|_{\vec{y}=\hat{\vec{y}}}^{T}}\cdot\Delta\vec{y}}{1!}+\frac{\Delta\vec{y}^{T}\cdot\nabla\left[\nabla\left.\left(\Delta\chi^{2}\right)\right|_{\vec{y}=\hat{\vec{y}}}\right]\cdot\Delta\vec{y}}{2!}\\
+ & \approx\Delta\chi^{2}\left(\hat{\vec{y}}\right)+\frac{1}{2}\Delta\vec{y}^{T}\cdot H\cdot\Delta\vec{y},
+\end{aligned}
+\label{eq:chi2taylorseries}
+\end{equation}
+
+\end_inset
+
+where 
 \begin_inset Formula $H$
 \end_inset
 
-
+ is recognized as a square matrix called the Hessian matrix
 \begin_inset Formula 
 \begin{equation}
-V_{i,j}^{-1}\left(\hat{\vec{y}}\right)=H_{i,j}=\left.\frac{\partial^{2}}{\partial y_{i}\partial y_{j}}\left(\Delta\chi_{\ND280}^{2}\right)\right|_{\vec{y}=\hat{\vec{y}}}\label{eq:HessianMatrix}
+H_{i,j}=\left.\frac{\partial^{2}}{\partial y_{i}\partial y_{j}}\left(\Delta\chi^{2}\right)\right|_{\vec{y}=\hat{\vec{y}}},\label{eq:HessianMatrix}
 \end{equation}
 
 \end_inset
@@ -964,15 +1015,28 @@ where
 \begin_inset Formula $y_{i},y_{j}\in\vec{y}$
 \end_inset
 
- and 
-\begin_inset Formula $\hat{\vec{y}}$
-\end_inset
-
- is the maximum likelihood estimate for the parameters 
-\begin_inset Formula $\vec{y}$
-\end_inset
-
 .
+ Assuming that our test statistic is distributed according to a multivariate
+ normal distribution like that of 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:nuisancepriorgaussian"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, we can compare terms and find that 
+\begin_inset Formula 
+\begin{equation}
+-H_{i,j}=V_{i,j}^{-1},\label{eq:hesscovariance}
+\end{equation}
+
+\end_inset
+
+or in other words the inverse of the negative Hessian matrix is the covariance
+ matrix.
 \end_layout
 
 \end_inset

@@ -2676,7 +2676,7 @@ Water
 
 \begin_layout Plain Layout
 T2K MC and data POT divided by run periods.
- The bottom four rows are the aggregrated periods grouped by horn current
+ The bottom four rows are the aggregated periods grouped by horn current
  and 
 \begin_inset Formula $\pod$
 \end_inset
@@ -2794,7 +2794,7 @@ noprefix "false"
 
 .
  Out of fiducial volume (OOFV) events refer to neutrino and antineutrino
- interactions occuring in ND280, but not in the 
+ interactions occurring in ND280, but not in the 
 \begin_inset Formula $\pod$
 \end_inset
 

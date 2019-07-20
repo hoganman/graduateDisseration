@@ -329,7 +329,7 @@ name "fig:Complete-prefit-correlation"
 
 \begin_layout Standard
 In addition to running an Asimov fit, other metrics were examined in the
- Asmiov set.
+ Asimov set.
  Shown first is a comparison of the event rates before and after applying
  weights to the MC.
  Next is an examination of the cross section weight functions.

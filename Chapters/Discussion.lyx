@@ -154,7 +154,263 @@
 \begin_body
 
 \begin_layout Standard
-Discussion
+This chapter serves to summarize the methods and results shown in this thesis.
+ The Tokai to Kamioka (T2K) experiment is a long baseline, neutrino oscillation
+ experiment designed to observe a 
+\begin_inset Formula $\numu$
+\end_inset
+
+ beam oscillate into 
+\begin_inset Formula $\nue$
+\end_inset
+
+.
+ With the aid of the world class Japan Proton Accelerator Research Complex
+ (J-PARC), a dedicated near detector called ND280 is located downstream
+ of the neutrino production source to observe the beam before oscillations
+ occur.
+ Since starting operations, the fine grain detector (FGD) in ND280 has provided
+ constraints on the neutrino flux and neutrino-water interaction modes important
+ in the oscillation analysis.
+ This thesis is an analysis of an independent measurement of the ND280 constrain
+t using a maximum likelihood estimate in the Beam and Near Detector Flux
+ Task Flux (BANFF) framework with samples from the Pi-Zero Detector (
+\begin_inset Formula $\pod$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Analysis samples have been developed with the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ to capture a wide variety of interaction modes in T2K, importantly interactions
+ classified as charged current quasi-elastic (CCQE) which constitute the
+ highest cross section in the T2K neutrino energy spectrum.
+ While the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ has a larger volume compared to the FGD, which means it has more neutrino
+ interactions to choose from, the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ is less sensitive to harder to measure phenomena like CC single pion production.
+ This limitation is largely due to the design of the detector and sample
+ cuts which reduce its 
+\begin_inset Formula $\left(p,\cos\theta\right)$
+\end_inset
+
+ sensitivity to the lower energy outgoing muons.
+ The systematic uncertainties inherent in the samples were controlled for
+ in a similar manner with previous BANFF analyses.
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Formula $\pod$
+\end_inset
+
+-only data fit shows very good agreement with the FGD-only result using
+ the same flux and cross section parameters.
+ Trends in the data like shape dependence on the flux and accounting for
+ quantum mechanical correlation effects the observable cross section where
+ observed in both sets of fits.
+ A hypothesis test was conducted to test if the 
+\begin_inset Formula $\pod$
+\end_inset
+
+-only and FGD-only data fits are consistent with one another.
+ The test produced
+\begin_inset Formula 
+\[
+\tilde{\chi}^{2}=\frac{\chi^{2}}{\text{NDOF}}=\frac{81.41}{75},\quad p=0.2865,
+\]
+
+\end_inset
+
+which indicates the test failed to reject the null hypothesis.
+ 
+\shape italic
+This is another way of saying the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ provides a similar ND280 constraint compared to the FGD
+\shape default
+.
+\end_layout
+
+\begin_layout Section
+Future Prospects
+\end_layout
+
+\begin_layout Standard
+There are potential improvements in a 
+\begin_inset Quotes eld
+\end_inset
+
+joint
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $\pod$
+\end_inset
+
++FGD BANFF fit for the T2K experiment.
+ As shown in the previous chapter, the number of neutrino-carbon and neutrino-ox
+ygen events can be increased by including the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ data.
+ Using the numbers presented in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Neutrino-exposure-P0DFGD"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, we can estimate the fractional statistical error (
+\begin_inset Formula $\delta N$
+\end_inset
+
+) improvement in a 
+\begin_inset Quotes eld
+\end_inset
+
+joint
+\begin_inset Quotes erd
+\end_inset
+
+ fit in the carbon and oxygen targets in FHC and RHC.
+ They are approximated using the 
+\begin_inset Formula $\sim$
+\end_inset
+
+ symbol below
+\begin_inset Formula 
+\[
+\begin{aligned}\delta N_{^{12}C}^{\text{FGD1-FHC}} & =\frac{1}{\sqrt{N_{^{12}C}^{\text{FGD1-FHC}}}}\overset{+\pod\text{ Air}}{\longrightarrow}\frac{1}{\sqrt{2.1N_{^{12}C}^{\text{FGD1-FHC}}}}\sim\frac{1}{\sqrt{2}}\\
+\delta N_{^{16}O}^{\text{FGD2-FHC}} & =\frac{1}{\sqrt{N_{^{16}O}^{\text{FGD2-FHC}}}}\overset{+\pod\text{Water}}{\longrightarrow}\frac{1}{\sqrt{1.25N_{^{12}C}^{\text{FGD1-FHC}}}}\sim\frac{1}{\sqrt{1.25}}\\
+\delta N_{^{12}C}^{\text{FGD1-RHC}} & =\frac{1}{\sqrt{N_{^{12}C}^{\text{FGD1-RHC}}}}\overset{+\pod\text{ Air}}{\longrightarrow}\frac{1}{\sqrt{1.97N_{^{12}C}^{\text{FGD1-RHC}}}}\sim\frac{1}{\sqrt{2}}\\
+\delta N_{^{16}O}^{\text{FGD2-RHC}} & =\frac{1}{\sqrt{N_{^{16}O}^{\text{FGD2-FHC}}}}\overset{+\pod\text{Water}}{\longrightarrow}\frac{1}{\sqrt{1.40N_{^{12}C}^{\text{FGD1-FHC}}}}\sim\frac{1}{\sqrt{1.4}},
+\end{aligned}
+\]
+
+\end_inset
+
+where combinations of FGD1/2 and FHC/RHC represent the FGD in the different
+ beam modes, and an right-point arrow indicating adding the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ data.
+ These results indicate modest fractional statistical error reductions of
+ about 30% and 10% for neutrino on carbon and oxygen events, respectively.
+\end_layout
+
+\begin_layout Standard
+Employing both the FGD and 
+\begin_inset Formula $\pod$
+\end_inset
+
+ in a 
+\begin_inset Quotes eld
+\end_inset
+
+joint
+\begin_inset Quotes erd
+\end_inset
+
+ BANFF fit has been attempted during the validation of the results.
+ This requires updating to the newer canonical T2K 2018 cross section parameteri
+zation which impairs the ability to compare between fits.
+ Also including both detectors more than doubles the number of parameters
+ and events than for a single detector-only fit.
+ The FGD run periods are also expanded to runs 7 and 8.
+ With more events and parameters, computational limits are already occurring.
+ On a modest high performance computing setup, the fit time for the 
+\begin_inset Quotes eld
+\end_inset
+
+Asimov
+\begin_inset Quotes erd
+\end_inset
+
+ fit which starts at the likelihood minimum already, required two weeks
+ to complete, or about 10 times longer than the 
+\begin_inset Formula $\pod$
+\end_inset
+
+-only Asimov fit.
+ So a 
+\begin_inset Quotes eld
+\end_inset
+
+joint
+\begin_inset Quotes erd
+\end_inset
+
+ fit may never converge in such a high dimensional space.
+ So possible improvements must be considered if both computational speed
+ and maximum statistical power are desired in the BANFF fit.
+\end_layout
+
+\begin_layout Standard
+Looking forward into the future, this analysis can be improved on significantly.
+ Firstly, the selections are simplistic compared to the recent developments
+ in the T2K experiment.
+ The author was a part of the second generation cross section analysis of
+ single pion production in the 
+\begin_inset Formula $\pod$
+\end_inset
+
+, which utilized deep learning techniques, to select a relatively pure CC-
+\begin_inset Formula $1\pi$
+\end_inset
+
+ sample.
+ Additionally, the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ CC-
+\begin_inset Formula $0\pi$
+\end_inset
+
+ analysis was able to achieve a high-purity CCQE-like sample using almost
+ identical cuts as presented in this thesis.
+ However, both analyses use cuts not yet available in the BANFF framework
+ due to technical difficulties and lack of expertise in the collaboration.
+\end_layout
+
+\begin_layout Standard
+Secondly, more validation studies could be done to understand the sensitivity
+ of the samples.
+ A test of the biases of the fit parameters require fitting an ensemble
+ of 
+\begin_inset Quotes eld
+\end_inset
+
+fake data
+\begin_inset Quotes erd
+\end_inset
+
+ sets, which are normal variations of the Asimov set.
+ This requires significant amount of computational time to complete, and
+ not to mention the potential carbon footprint left afterwards.
 \end_layout
 
 \end_body
