@@ -611,7 +611,7 @@ Given these three sets of systematics, the number of predicted CC events
  at ND280 is calculated using the general formula
 \begin_inset Formula 
 \begin{equation}
-N_{\nu_{l}}=\underset{\text{Flux per area}}{\underbrace{\Phi_{\nu_{l}}}}\left[\sum_{t}\underset{\text{Effective area}}{\underbrace{\left(\sigma_{\nu_{l}}^{t}M_{t}\right)}}\right]\underset{\text{Efficiency}}{\underbrace{\epsilon_{\nu_{l}}}},\label{eq:n-predicted-general}
+N_{\nu_{l}}=\underset{\text{Flux per area}}{\underbrace{\Phi_{\nu_{l}}}}\left[\sum_{t}\underset{\text{Effective area}}{\underbrace{\left(\sigma_{\nu_{l}}^{t}M^{t}\right)}}\right]\underset{\text{Efficiency}}{\underbrace{\epsilon_{\nu_{l}}}},\label{eq:n-predicted-general}
 \end{equation}
 
 \end_inset
@@ -637,7 +637,7 @@ where
 \end_inset
 
 , 
-\begin_inset Formula $M_{t}$
+\begin_inset Formula $M^{t}$
 \end_inset
 
  is the number of 
@@ -840,7 +840,7 @@ where each of the PDFs
  are assumed multivariate normal distributions
 \begin_inset Formula 
 \begin{equation}
-\pi(\vec{y})=C_{y}e^{\left(-\frac{1}{2}\Delta\vec{y}^{T}\cdot V_{y}^{-1}\cdot\Delta\vec{y}\right)},\label{eq:nuisancepriorgaussian}
+\pi(\vec{y})=C_{y}e^{\left(-\frac{1}{2}\left(\Delta\vec{y}\right)^{T}\cdot V_{y}^{-1}\cdot\Delta\vec{y}\right)},\label{eq:nuisancepriorgaussian}
 \end{equation}
 
 \end_inset
@@ -887,7 +887,7 @@ with
 \begin_inset Formula 
 \begin{equation}
 \begin{aligned}\Delta\chi_{\ND280}^{2} & =2\sum_{i=1}^{M}\left[\vec{N}_{i}^{p}-\vec{N}_{i}^{d}+\vec{N}_{i}^{d}\log\left(\frac{\vec{N}_{i}^{d}}{\vec{N}_{i}^{p}}\right)\right]\\
- & +\Delta\xsec^{T}\cdot\left(V_{x}^{-1}\right)\cdot\Delta\xsec+\Delta\flux^{T}\cdot\left(V_{b}^{-1}\right)\cdot\Delta\flux+\Delta\systematics^{T}\cdot\left(V_{d}^{-1}\right)\cdot\Delta\systematics
+ & +\left(\Delta\xsec\right)^{T}\cdot\left(V_{x}^{-1}\right)\cdot\left(\Delta\xsec\right)+\left(\Delta\flux\right)^{T}\cdot\left(V_{b}^{-1}\right)\cdot\left(\Delta\flux\right)+\left(\Delta\systematics\right)^{T}\cdot\left(V_{d}^{-1}\right)\cdot\left(\Delta\systematics\right)
 \end{aligned}
 \label{eq:BANFFDeltaChiSqr}
 \end{equation}
@@ -991,8 +991,8 @@ e between many parameters.
  by a Taylor series
 \begin_inset Formula 
 \begin{equation}
-\begin{aligned}\Delta\chi^{2}\left(\hat{\vec{y}}+\Delta\vec{y}\right) & \approx\frac{\Delta\chi^{2}\left(\hat{\vec{y}}\right)}{0!}+\frac{\cancelto{0}{\nabla\left.\left(\Delta\chi^{2}\right)\right|_{\vec{y}=\hat{\vec{y}}}^{T}}\cdot\Delta\vec{y}}{1!}+\frac{\Delta\vec{y}^{T}\cdot\nabla\left[\nabla\left.\left(\Delta\chi^{2}\right)\right|_{\vec{y}=\hat{\vec{y}}}\right]\cdot\Delta\vec{y}}{2!}\\
- & \approx\Delta\chi^{2}\left(\hat{\vec{y}}\right)+\frac{1}{2}\Delta\vec{y}^{T}\cdot H\cdot\Delta\vec{y},
+\begin{aligned}\Delta\chi^{2}\left(\hat{\vec{y}}+\Delta\vec{y}\right) & \approx\frac{\Delta\chi^{2}\left(\hat{\vec{y}}\right)}{0!}+\frac{\cancelto{0}{\nabla\left.\left(\Delta\chi^{2}\right)\right|_{\vec{y}=\hat{\vec{y}}}^{T}}\cdot\Delta\vec{y}}{1!}+\frac{\left(\Delta\vec{y}\right)^{T}\cdot\nabla\left[\nabla\left.\left(\Delta\chi^{2}\right)\right|_{\vec{y}=\hat{\vec{y}}}\right]\cdot\Delta\vec{y}}{2!}\\
+ & \approx\Delta\chi^{2}\left(\hat{\vec{y}}\right)+\frac{1}{2}\left(\Delta\vec{y}\right)^{T}\cdot\mathcal{H}\cdot\Delta\vec{y},
 \end{aligned}
 \label{eq:chi2taylorseries}
 \end{equation}
@@ -1000,13 +1000,13 @@ e between many parameters.
 \end_inset
 
 where 
-\begin_inset Formula $H$
+\begin_inset Formula $\mathcal{H}$
 \end_inset
 
  is recognized as a square matrix called the Hessian matrix
 \begin_inset Formula 
 \begin{equation}
-H_{i,j}=\left.\frac{\partial^{2}}{\partial y_{i}\partial y_{j}}\left(\Delta\chi^{2}\right)\right|_{\vec{y}=\hat{\vec{y}}},\label{eq:HessianMatrix}
+\mathcal{H}_{i,j}=\left.\frac{\partial^{2}}{\partial y_{i}\partial y_{j}}\left(\Delta\chi^{2}\right)\right|_{\vec{y}=\hat{\vec{y}}},\label{eq:HessianMatrix}
 \end{equation}
 
 \end_inset
@@ -1030,7 +1030,7 @@ noprefix "false"
 , we can compare terms and find that 
 \begin_inset Formula 
 \begin{equation}
--H_{i,j}=V_{i,j}^{-1},\label{eq:hesscovariance}
+-\mathcal{H}=V^{-1},\label{eq:hesscovariance}
 \end{equation}
 
 \end_inset

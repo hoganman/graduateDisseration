@@ -800,7 +800,7 @@ This section expands on the definition of the penalty terms in the BANFF
 \begin_layout Standard
 \begin_inset Branch P0DBANFFParameterizationFlux
 inverted 0
-status open
+status collapsed
 
 \begin_layout Subsection
 Flux Model
@@ -880,7 +880,7 @@ Flux covariance
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -958,7 +958,7 @@ noprefix "false"
 , as
 \begin_inset Formula 
 \begin{equation}
-\Delta\chi_{\text{Flux}}^{2}=\Delta\flux^{T}\cdot\left(V_{b}^{-1}\right)\cdot\Delta\flux.\label{eq:DeltaChi2Flux}
+\Delta\chi_{\text{Flux}}^{2}=\left(\Delta\flux\right)^{T}\cdot\left(V_{b}^{-1}\right)\cdot\Delta\flux.\label{eq:DeltaChi2Flux}
 \end{equation}
 
 \end_inset
@@ -5645,7 +5645,7 @@ Super-K
 \begin_layout Standard
 \begin_inset Branch P0DBANFFParameterizationDetector
 inverted 0
-status open
+status collapsed
 
 \begin_layout Subsection
 Detector Inefficiencies Model
@@ -9078,7 +9078,7 @@ literal "false"
  are strongly anticorrelated due to the parameterization of the form factor
 \begin_inset Formula 
 \begin{equation}
-f\left(Q^{2}\right)=\frac{C_{A}^{5}}{\left(1+\frac{Q^{2}}{\left(M_{A}^{\text{Res}}c^{2}\right)^{2}}\right)^{2}}.\label{eq:CC1piaxialformfactor}
+f\left(Q^{2}\right)=C_{A}^{5}\left(1+\frac{Q^{2}}{\left(M_{A}^{\text{Res}}c^{2}\right)^{2}}\right)^{-2}.\label{eq:CC1piaxialformfactor}
 \end{equation}
 
 \end_inset
@@ -9440,12 +9440,17 @@ status open
 
 \begin_layout Plain Layout
 \align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename Figures/BANFFLikelihood/BANFFXsecPrefitCorrelation.png
+	filename Figures/P0DBANFFParameterization/cov_xsec_pref.png
 	lyxscale 50
-	width 95text%
-	height 95theight%
-	keepAspectRatio
+	width 48text%
 
 \end_inset
 
@@ -9456,9 +9461,60 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Cross section parameters prefit covariance matrix with values shown as the
- sign of the element times the square root of the absolute value of the
- element.
+Covariance
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/P0DBANFFParameterization/corr_xsec_pref.png
+	lyxscale 50
+	width 48text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Correlation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cross section parameters prefit covariance (a) and correlation (b) matrices.
  
 \begin_inset CommandInset label
 LatexCommand label
