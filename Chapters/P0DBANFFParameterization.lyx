@@ -5645,7 +5645,7 @@ Super-K
 \begin_layout Standard
 \begin_inset Branch P0DBANFFParameterizationDetector
 inverted 0
-status collapsed
+status open
 
 \begin_layout Subsection
 Detector Inefficiencies Model
@@ -8044,19 +8044,6 @@ name "fig:P0DBulging"
 \end_inset
 
 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-todo{Add figure and sentence describing it.}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -8327,7 +8314,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/P0DBANFFParameterization/corr_dete.png
+	filename Figures/P0DBANFFParameterization/corr_dete_pref.png
 	lyxscale 50
 	height 4in
 
