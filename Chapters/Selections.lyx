@@ -4130,7 +4130,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/air/numu/CC1Track/FluxAndEventWeights/numuCC1TrackWaterOut_recoP_mu_MC_only_NEUTCCQELike_fhc_air_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/air/numu/CC1Track/FluxAndEventWeights/numuCC1TrackWaterOut_recoP_mu_MC_only_NEUTCCQELike_fhc_air.png
 	lyxscale 50
 	width 45text%
 
@@ -4162,7 +4162,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/air/numu/CC1Track/FluxAndEventWeights/numuCC1TrackWaterOut_recocosq_mu_MC_only_NEUTCCQELike_fhc_air_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/air/numu/CC1Track/FluxAndEventWeights/numuCC1TrackWaterOut_recocosq_mu_MC_only_NEUTCCQELike_fhc_air.png
 	lyxscale 50
 	width 45text%
 
@@ -4202,7 +4202,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numu/CC1Track/FluxAndEventWeights/numuCC1TrackWaterIn_recoP_mu_MC_only_NEUTCCQELike_fhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numu/CC1Track/FluxAndEventWeights/numuCC1TrackWaterIn_recoP_mu_MC_only_NEUTCCQELike_fhc_water.png
 	lyxscale 50
 	width 45text%
 
@@ -4234,7 +4234,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numu/CC1Track/FluxAndEventWeights/numuCC1TrackWaterIn_recocosq_mu_MC_only_NEUTCCQELike_fhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numu/CC1Track/FluxAndEventWeights/numuCC1TrackWaterIn_recocosq_mu_MC_only_NEUTCCQELike_fhc_water.png
 	lyxscale 50
 	width 45text%
 
@@ -4421,7 +4421,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/air/numu/CC1Track/FluxAndEventWeights/numuCC1TrackWaterOut_recoP_mu_MC_only_LeptonCandidateTruePDG_fhc_air_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/air/numu/CC1Track/FluxAndEventWeights/numuCC1TrackWaterOut_recoP_mu_MC_only_LeptonCandidateTruePDG_fhc_air.png
 	lyxscale 50
 	width 45text%
 
@@ -4453,7 +4453,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/air/numu/CC1Track/FluxAndEventWeights/numuCC1TrackWaterOut_recocosq_mu_MC_only_LeptonCandidateTruePDG_fhc_air_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/air/numu/CC1Track/FluxAndEventWeights/numuCC1TrackWaterOut_recocosq_mu_MC_only_LeptonCandidateTruePDG_fhc_air.png
 	lyxscale 50
 	width 45text%
 
@@ -4493,7 +4493,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numu/CC1Track/FluxAndEventWeights/numuCC1TrackWaterIn_recoP_mu_MC_only_LeptonCandidateTruePDG_fhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numu/CC1Track/FluxAndEventWeights/numuCC1TrackWaterIn_recoP_mu_MC_only_LeptonCandidateTruePDG_fhc_water.png
 	lyxscale 50
 	width 45text%
 
@@ -4525,7 +4525,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numu/CC1Track/FluxAndEventWeights/numuCC1TrackWaterIn_recocosq_mu_MC_only_LeptonCandidateTruePDG_fhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numu/CC1Track/FluxAndEventWeights/numuCC1TrackWaterIn_recocosq_mu_MC_only_LeptonCandidateTruePDG_fhc_water.png
 	lyxscale 50
 	width 45text%
 
@@ -5026,7 +5026,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numu/CC1Track/FluxAndEventWeights/numuCC1TrackWaterIn_trueE_nu_MC_only_NEUTNuReactionCodes_fhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numu/CC1Track/FluxAndEventWeights/numuCC1TrackWaterIn_trueE_nu_MC_only_NEUTNuReactionCodes_fhc_water.png
 	lyxscale 50
 	width 45text%
 
@@ -5058,7 +5058,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numu/CC1Track/FluxAndEventWeights/numuCC1TrackWaterIn_trueQ2_MC_only_NEUTNuReactionCodes_fhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numu/CC1Track/FluxAndEventWeights/numuCC1TrackWaterIn_trueQ2_MC_only_NEUTNuReactionCodes_fhc_water.png
 	lyxscale 50
 	width 45text%
 
@@ -5216,7 +5216,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numu/CCNTracks/FluxAndEventWeights/numuCCNTracksWaterIn_recoP_mu_MC_only_NEUTCCQELike_fhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numu/CCNTracks/FluxAndEventWeights/numuCCNTracksWaterIn_recoP_mu_MC_only_NEUTCCQELike_fhc_water.png
 	lyxscale 50
 	width 45text%
 
@@ -5248,7 +5248,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numu/CCNTracks/FluxAndEventWeights/numuCCNTracksWaterIn_recocosq_mu_MC_only_NEUTCCQELike_fhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numu/CCNTracks/FluxAndEventWeights/numuCCNTracksWaterIn_recocosq_mu_MC_only_NEUTCCQELike_fhc_water.png
 	lyxscale 50
 	width 45text%
 
@@ -5431,7 +5431,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numu/CCNTracks/FluxAndEventWeights/numuCCNTracksWaterIn_recoP_mu_MC_only_LeptonCandidateTruePDG_fhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numu/CCNTracks/FluxAndEventWeights/numuCCNTracksWaterIn_recoP_mu_MC_only_LeptonCandidateTruePDG_fhc_water.png
 	lyxscale 50
 	width 45text%
 
@@ -5463,7 +5463,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numu/CCNTracks/FluxAndEventWeights/numuCCNTracksWaterIn_recocosq_mu_MC_only_LeptonCandidateTruePDG_fhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numu/CCNTracks/FluxAndEventWeights/numuCCNTracksWaterIn_recocosq_mu_MC_only_LeptonCandidateTruePDG_fhc_water.png
 	lyxscale 50
 	width 45text%
 
@@ -6001,7 +6001,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numu/CCNTracks/FluxAndEventWeights/numuCCNTracksWaterIn_trueE_nu_MC_only_NEUTNuReactionCodes_fhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numu/CCNTracks/FluxAndEventWeights/numuCCNTracksWaterIn_trueE_nu_MC_only_NEUTNuReactionCodes_fhc_water.png
 	lyxscale 50
 	width 45text%
 
@@ -6033,7 +6033,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numu/CCNTracks/FluxAndEventWeights/numuCCNTracksWaterIn_trueQ2_MC_only_NEUTNuReactionCodes_fhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numu/CCNTracks/FluxAndEventWeights/numuCCNTracksWaterIn_trueQ2_MC_only_NEUTNuReactionCodes_fhc_water.png
 	lyxscale 50
 	width 45text%
 
@@ -6073,7 +6073,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numu/CCNTracks/FluxAndEventWeights/numuCCNTracksWaterIn_trueW_MC_only_NEUTNuReactionCodes_fhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numu/CCNTracks/FluxAndEventWeights/numuCCNTracksWaterIn_trueW_MC_only_NEUTNuReactionCodes_fhc_water.png
 	lyxscale 50
 	width 45text%
 
@@ -6196,7 +6196,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numubarRHC/CC1Track/FluxAndEventWeights/numubarRHCCC1TrackWaterIn_recoP_mu_MC_only_NEUTCCQELike_rhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubarRHC/CC1Track/FluxAndEventWeights/numubarRHCCC1TrackWaterIn_recoP_mu_MC_only_NEUTCCQELike_rhc_water.png
 	lyxscale 50
 	width 45text%
 
@@ -6229,7 +6229,7 @@ status open
 \align center
 `
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numubarRHC/CC1Track/FluxAndEventWeights/numubarRHCCC1TrackWaterIn_recocosq_mu_MC_only_NEUTCCQELike_rhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubarRHC/CC1Track/FluxAndEventWeights/numubarRHCCC1TrackWaterIn_recocosq_mu_MC_only_NEUTCCQELike_rhc_water.png
 	lyxscale 50
 	width 45text%
 
@@ -6402,7 +6402,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numubarRHC/CC1Track/FluxAndEventWeights/numubarRHCCC1TrackWaterIn_recoP_mu_MC_only_LeptonCandidateTruePDG_rhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubarRHC/CC1Track/FluxAndEventWeights/numubarRHCCC1TrackWaterIn_recoP_mu_MC_only_LeptonCandidateTruePDG_rhc_water.png
 	lyxscale 50
 	width 45text%
 
@@ -6435,7 +6435,7 @@ status open
 \align center
 `
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numubarRHC/CC1Track/FluxAndEventWeights/numubarRHCCC1TrackWaterIn_recocosq_mu_MC_only_LeptonCandidateTruePDG_rhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubarRHC/CC1Track/FluxAndEventWeights/numubarRHCCC1TrackWaterIn_recocosq_mu_MC_only_LeptonCandidateTruePDG_rhc_water.png
 	lyxscale 50
 	width 45text%
 
@@ -6785,7 +6785,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numubarRHC/CC1Track/FluxAndEventWeights/numubarRHCCC1TrackWaterIn_trueE_nu_MC_only_NEUTAntiNuReactionCodes_rhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubarRHC/CC1Track/FluxAndEventWeights/numubarRHCCC1TrackWaterIn_trueE_nu_MC_only_NEUTAntiNuReactionCodes_rhc_water.png
 	lyxscale 50
 	width 45text%
 
@@ -6817,7 +6817,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numubarRHC/CC1Track/FluxAndEventWeights/numubarRHCCC1TrackWaterIn_trueQ2_MC_only_NEUTAntiNuReactionCodes_rhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubarRHC/CC1Track/FluxAndEventWeights/numubarRHCCC1TrackWaterIn_trueQ2_MC_only_NEUTAntiNuReactionCodes_rhc_water.png
 	lyxscale 50
 	width 45text%
 
@@ -6922,7 +6922,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numubarRHC/CCNTracks/FluxAndEventWeights/numubarRHCCCNTracksWaterIn_recoP_mu_MC_only_NEUTCCQELike_rhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubarRHC/CCNTracks/FluxAndEventWeights/numubarRHCCCNTracksWaterIn_recoP_mu_MC_only_NEUTCCQELike_rhc_water.png
 	lyxscale 50
 	width 45text%
 
@@ -6954,7 +6954,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numubarRHC/CCNTracks/FluxAndEventWeights/numubarRHCCCNTracksWaterIn_recocosq_mu_MC_only_NEUTCCQELike_rhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubarRHC/CCNTracks/FluxAndEventWeights/numubarRHCCCNTracksWaterIn_recocosq_mu_MC_only_NEUTCCQELike_rhc_water.png
 	lyxscale 50
 	width 45text%
 
@@ -7132,7 +7132,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numubarRHC/CCNTracks/FluxAndEventWeights/numubarRHCCCNTracksWaterIn_recoP_mu_MC_only_LeptonCandidateTruePDG_rhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubarRHC/CCNTracks/FluxAndEventWeights/numubarRHCCCNTracksWaterIn_recoP_mu_MC_only_LeptonCandidateTruePDG_rhc_water.png
 	lyxscale 50
 	width 45text%
 
@@ -7164,7 +7164,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numubarRHC/CCNTracks/FluxAndEventWeights/numubarRHCCCNTracksWaterIn_recocosq_mu_MC_only_LeptonCandidateTruePDG_rhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubarRHC/CCNTracks/FluxAndEventWeights/numubarRHCCCNTracksWaterIn_recocosq_mu_MC_only_LeptonCandidateTruePDG_rhc_water.png
 	lyxscale 50
 	width 45text%
 
@@ -7533,7 +7533,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numubarRHC/CCNTracks/FluxAndEventWeights/numubarRHCCCNTracksWaterIn_trueE_nu_MC_only_NEUTAntiNuReactionCodes_rhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubarRHC/CCNTracks/FluxAndEventWeights/numubarRHCCCNTracksWaterIn_trueE_nu_MC_only_NEUTAntiNuReactionCodes_rhc_water.png
 	lyxscale 50
 	width 45text%
 
@@ -7565,7 +7565,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numubarRHC/CCNTracks/FluxAndEventWeights/numubarRHCCCNTracksWaterIn_trueQ2_MC_only_NEUTAntiNuReactionCodes_rhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubarRHC/CCNTracks/FluxAndEventWeights/numubarRHCCCNTracksWaterIn_trueQ2_MC_only_NEUTAntiNuReactionCodes_rhc_water.png
 	lyxscale 50
 	width 45text%
 
@@ -7605,7 +7605,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numubarRHC/CCNTracks/FluxAndEventWeights/numubarRHCCCNTracksWaterIn_trueW_MC_only_NEUTAntiNuReactionCodes_rhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubarRHC/CCNTracks/FluxAndEventWeights/numubarRHCCCNTracksWaterIn_trueW_MC_only_NEUTAntiNuReactionCodes_rhc_water.png
 	lyxscale 50
 	width 45text%
 
@@ -7710,7 +7710,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numubkgRHC/CC1Track/FluxAndEventWeights/numubkgRHCCC1TrackWaterIn_recoP_mu_MC_only_NEUTCCQELike_rhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubkgRHC/CC1Track/FluxAndEventWeights/numubkgRHCCC1TrackWaterIn_recoP_mu_MC_only_NEUTCCQELike_rhc_water.png
 	lyxscale 50
 	width 45text%
 
@@ -7742,7 +7742,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numubkgRHC/CC1Track/FluxAndEventWeights/numubkgRHCCC1TrackWaterIn_recocosq_mu_MC_only_NEUTCCQELike_rhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubkgRHC/CC1Track/FluxAndEventWeights/numubkgRHCCC1TrackWaterIn_recocosq_mu_MC_only_NEUTCCQELike_rhc_water.png
 	lyxscale 50
 	width 45text%
 
@@ -7905,7 +7905,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numubkgRHC/CC1Track/FluxAndEventWeights/numubkgRHCCC1TrackWaterIn_recoP_mu_MC_only_LeptonCandidateTruePDG_rhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubkgRHC/CC1Track/FluxAndEventWeights/numubkgRHCCC1TrackWaterIn_recoP_mu_MC_only_LeptonCandidateTruePDG_rhc_water.png
 	lyxscale 50
 	width 45text%
 
@@ -7937,7 +7937,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numubkgRHC/CC1Track/FluxAndEventWeights/numubkgRHCCC1TrackWaterIn_recocosq_mu_MC_only_LeptonCandidateTruePDG_rhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubkgRHC/CC1Track/FluxAndEventWeights/numubkgRHCCC1TrackWaterIn_recocosq_mu_MC_only_LeptonCandidateTruePDG_rhc_water.png
 	lyxscale 50
 	width 45text%
 
@@ -8256,7 +8256,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numubkgRHC/CC1Track/FluxAndEventWeights/numubkgRHCCC1TrackWaterIn_trueE_nu_MC_only_NEUTNuReactionCodes_rhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubkgRHC/CC1Track/FluxAndEventWeights/numubkgRHCCC1TrackWaterIn_trueE_nu_MC_only_NEUTNuReactionCodes_rhc_water.png
 	lyxscale 50
 	width 45text%
 
@@ -8288,7 +8288,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numubkgRHC/CC1Track/FluxAndEventWeights/numubkgRHCCC1TrackWaterIn_trueQ2_MC_only_NEUTNuReactionCodes_rhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubkgRHC/CC1Track/FluxAndEventWeights/numubkgRHCCC1TrackWaterIn_trueQ2_MC_only_NEUTNuReactionCodes_rhc_water.png
 	lyxscale 50
 	width 45text%
 
@@ -8445,7 +8445,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numubkgRHC/CCNTracks/FluxAndEventWeights/numubkgRHCCCNTracksWaterIn_recoP_mu_MC_only_NEUTCCQELike_rhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubkgRHC/CCNTracks/FluxAndEventWeights/numubkgRHCCCNTracksWaterIn_recoP_mu_MC_only_NEUTCCQELike_rhc_water.png
 	lyxscale 50
 	width 45text%
 
@@ -8477,7 +8477,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numubkgRHC/CCNTracks/FluxAndEventWeights/numubkgRHCCCNTracksWaterIn_recocosq_mu_MC_only_NEUTCCQELike_rhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubkgRHC/CCNTracks/FluxAndEventWeights/numubkgRHCCCNTracksWaterIn_recocosq_mu_MC_only_NEUTCCQELike_rhc_water.png
 	lyxscale 50
 	width 45text%
 
@@ -8610,7 +8610,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numubkgRHC/CCNTracks/FluxAndEventWeights/numubkgRHCCCNTracksWaterIn_recoP_mu_MC_only_LeptonCandidateTruePDG_rhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubkgRHC/CCNTracks/FluxAndEventWeights/numubkgRHCCCNTracksWaterIn_recoP_mu_MC_only_LeptonCandidateTruePDG_rhc_water.png
 	lyxscale 50
 	width 45text%
 
@@ -8642,7 +8642,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numubkgRHC/CCNTracks/FluxAndEventWeights/numubkgRHCCCNTracksWaterIn_recocosq_mu_MC_only_LeptonCandidateTruePDG_rhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubkgRHC/CCNTracks/FluxAndEventWeights/numubkgRHCCCNTracksWaterIn_recocosq_mu_MC_only_LeptonCandidateTruePDG_rhc_water.png
 	lyxscale 50
 	width 45text%
 
@@ -8982,7 +8982,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numubkgRHC/CCNTracks/FluxAndEventWeights/numubkgRHCCCNTracksWaterIn_trueE_nu_MC_only_NEUTNuReactionCodes_rhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubkgRHC/CCNTracks/FluxAndEventWeights/numubkgRHCCCNTracksWaterIn_trueE_nu_MC_only_NEUTNuReactionCodes_rhc_water.png
 	lyxscale 50
 	width 45text%
 
@@ -9014,7 +9014,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numubkgRHC/CCNTracks/FluxAndEventWeights/numubkgRHCCCNTracksWaterIn_trueQ2_MC_only_NEUTNuReactionCodes_rhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubkgRHC/CCNTracks/FluxAndEventWeights/numubkgRHCCCNTracksWaterIn_trueQ2_MC_only_NEUTNuReactionCodes_rhc_water.png
 	lyxscale 50
 	width 45text%
 
@@ -9054,7 +9054,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/SamplesAndSelections/water/numubkgRHC/CCNTracks/FluxAndEventWeights/numubkgRHCCCNTracksWaterIn_trueW_MC_only_NEUTNuReactionCodes_rhc_water_FluxAndEventWeights.png
+	filename Figures/SamplesAndSelections/water/numubkgRHC/CCNTracks/FluxAndEventWeights/numubkgRHCCCNTracksWaterIn_trueW_MC_only_NEUTNuReactionCodes_rhc_water.png
 	lyxscale 50
 	width 45text%
 
