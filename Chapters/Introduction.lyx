@@ -107,22 +107,16 @@
 
 \begin_body
 
-\begin_layout Standard
+\begin_layout Quote
 \align center
 
 \shape italic
-\lang american
 Chose trop vue n'est chère tenue
 \end_layout
 
 \begin_layout Quote
 \align center
-A thing too much seen is little prized
-\end_layout
-
-\begin_layout Standard
-\align center
-French proverb
+A thing too much seen is little prized – French proverb
 \end_layout
 
 \begin_layout Standard
@@ -142,13 +136,13 @@ name "sec:Introduction-to-Neutrinos"
 \end_layout
 
 \begin_layout Standard
-The history of the neutrino can be traced back to electron energy spectrum
+The history of the neutrino can be traced back to the electron energy spectrum
  observed in neutron 
 \begin_inset Formula $\beta$
 \end_inset
 
 -decay.
- While measurements of 
+ While measurements of the 
 \begin_inset Formula $\alpha$
 \end_inset
 
@@ -168,15 +162,19 @@ The history of the neutrino can be traced back to electron energy spectrum
 \begin_inset Formula $\beta$
 \end_inset
 
--decay spectrum was not this way posed a fundamental problem for physicists
- in the mid-1910s that energy was not conserved.
+-decay spectrum was very different posed a fundamental problem for physicists
+ in the mid-1910s, which was that energy was not conserved.
  Two solutions were postulated: either the 
 \begin_inset Quotes eld
 \end_inset
 
 energy conservation law is only valid statistically in such a process [...]
  or an additional undetectable new particle [...] carrying away the additional
- energy and spin [...] is emitted 
+ energy and spin [...] is emitted
+\begin_inset Quotes erd
+\end_inset
+
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Zuber2012"
@@ -185,9 +183,6 @@ literal "false"
 \end_inset
 
 .
-\begin_inset Quotes erd
-\end_inset
-
  The latter solution was proposed by Wolfgang Pauli in a letter dated 4
  December 1930 to a group of physicists meeting in Tübingen, modern Germany,
  where he first proposed the neutrino
@@ -204,7 +199,7 @@ neutron
 \begin_inset Quotes erd
 \end_inset
 
-, which is not the same neutron known of today.
+, which is not the same neutron that we know of today.
  At that point in time, the neutral particles inside the atomic nucleus,
  also called 
 \begin_inset Quotes eld
@@ -258,7 +253,7 @@ little neutral one
 
 \begin_layout Standard
 The neutrino was first observed in 1953 by Clyde Cowan and Frederick Reines
- using a nuclear reactor in South Carolina, U.S.A..
+ using a nuclear reactor in South Carolina, U.S.A.
  Since then three types or 
 \begin_inset Quotes eld
 \end_inset
@@ -267,29 +262,29 @@ flavors
 \begin_inset Quotes erd
 \end_inset
 
- of neutrinos and antineutrinos have been observed from accelerators and
+ of neutrinos and antineutrinos have been observed using accelerators and
  also from unique sources like the Sun and a supernova.
- Neutrino physics continues to be an active area of physics since neutrinos
- are unique probes to processes otherwise inaccessible in laboratories.
- For instance in the depths of the Sun's core where fusion occurs and neutrinos
- are created, neutrinos are able to travel through the ultra dense and hot
- medium of the core (over 
+ Neutrino physics continues to be an active area of fundamental research
+ since the neutrino is a truly unique probe to subatomic processes.
+ For instance they are observed to originate from the depths of the Sun's
+ core (over 
 \begin_inset Formula $10^{7}$
 \end_inset
 
- degrees Kelvin) and outer layers of the Sun and reach us on Earth.
+ degrees Kelvin) where fusion occurs.
  
 \end_layout
 
 \begin_layout Standard
 Neutrinos rarely interact with normal matter, meaning that they travel essential
 ly unimpeded towards one's particle detector.
- The rarity of such interactions can be illustrated with the fact that given
- nearly 
+ The rarity of such interactions can be illustrated by the fact that over
+ a typical human lifetime, only one solar neutrino interaction with an individua
+l is expected out of the 
 \begin_inset Formula $7.0\times10^{10}\text{ neutrinos}/\text{cm}^{2}/\text{sec}$
 \end_inset
 
- are incident on the Earth from the Sun
+ incident on the Earth.
 \begin_inset Foot
 status collapsed
 
@@ -304,19 +299,18 @@ To give some perspective to this number, this means 70 billion neutrinos
 
 \end_inset
 
-, statistically one solar neutrino can harmlessly interact with an individual
- in their lifetime.
+.
  So this begs the question: how does one detect a neutrino? The short answer
  is one requires a large enough flux of neutrinos passing through a large
- dense volume of matter just to detect one given today's technology.
+ dense volume of matter just to detect a single neutrino with today's technology.
  
 \end_layout
 
 \begin_layout Standard
 Scientists continue to be interested in neutrinos due to the unusual properties
  they exhibit.
- One of the more recent and surprising aspects about neutrinos is their
- ability to undergo 
+ One of the more recent and surprising aspects of neutrinos is their ability
+ to undergo 
 \begin_inset Quotes eld
 \end_inset
 
@@ -327,8 +321,8 @@ flavor oscillations
  where a neutrino of definite flavor (type) is created and later observed
  as a different flavor.
  The impact of differences between neutrino and antineutrino oscillations
- could help explain the observed matter and anti-matter asymmetry in the
- Universe which one of the most profound mysteries in physics today.
+ could help explain the observed matter-antimatter asymmetry in the Universe
+ which one of the most profound mysteries in physics today.
 \end_layout
 
 \begin_layout Subsection
@@ -1070,7 +1064,7 @@ that acts only on the right of it while
 \begin_inset Formula $M$
 \end_inset
 
- fields, the field equation are given by
+ fields, the field equations are given by
 \begin_inset Formula 
 \begin{equation}
 \partial_{\mu}\frac{\partial\mathcal{L}}{\partial\left(\partial_{\mu}\psi_{r}\right)}-\frac{\partial\mathcal{L}}{\partial\psi_{r}}=0\quad\left(r=0,1,2,\ldots,M-1,M\right).\label{eq:eulerlagrangegeneral}
@@ -2562,7 +2556,7 @@ where
 \end_inset
 
  is the mass-squared difference between the mass states.
- For a momentum consider evaluating all the physical constants in natural
+ For a moment consider evaluating all the physical constants in natural
  units (
 \begin_inset Formula $c=\hbar=1)$
 \end_inset
@@ -4955,7 +4949,7 @@ T2K was primarily designed to measure the last unknown MNSP mixing angle
 \end_inset
 
  and 
-\begin_inset Formula $\Dm 23$
+\begin_inset Formula $\Dm23$
 \end_inset
 
 .

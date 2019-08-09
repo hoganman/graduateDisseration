@@ -5109,23 +5109,30 @@ noprefix "false"
 \end_inset
 
  has much more mass, the water-in and water-out modes are mutually exclusive,
- resulting in a reduced aggregate POT exposure compared to each FGD.
+ resulting in a reduced aggregate POT exposure as compared to each static
+ FGD.
  Also since the FGD2 has a larger water mass fraction compared to the 
 \begin_inset Formula $\pod$
 \end_inset
 
- water-in mode, there are two to four times more neutrino-oxygen events
- in FGD2 compared with the 
-\begin_inset Formula $\pod$
-\end_inset
-
- water-in mode.
+ water-in mode, the amount of neutrino-oxygen interactions are very similar.
  The comparative advantage of the 
 \begin_inset Formula $\pod$
 \end_inset
 
 -only data lies in the number of neutrino-carbon events, which is about
- two to three times greater than the FGD.
+ 10 times greater than the FGD.
+ This is all assuming the comparisons from 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Neutrino-exposure-P0DFGD"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -5180,7 +5187,7 @@ Detector
 \begin_inset Text
 
 \begin_layout Plain Layout
-Fiducial mass
+Fiducial volume mass
 \end_layout
 
 \end_inset
@@ -5250,7 +5257,7 @@ kg POT
 \begin_inset Formula $\pod$
 \end_inset
 
--to-FGD kg POT
+-to-FGD (kg POT)
 \end_layout
 
 \end_inset
@@ -5288,7 +5295,7 @@ kg POT
 \begin_inset Text
 
 \begin_layout Plain Layout
-kg
+(kg)
 \end_layout
 
 \end_inset
@@ -5309,7 +5316,7 @@ ce{^{12}C}
 
 \end_inset
 
- %
+ (%)
 \end_layout
 
 \end_inset
@@ -5330,7 +5337,7 @@ ce{^{16}O}
 
 \end_inset
 
- %
+ (%)
 \end_layout
 
 \end_inset
@@ -5339,7 +5346,7 @@ ce{^{16}O}
 \begin_inset Text
 
 \begin_layout Plain Layout
-Other %
+other (%)
 \end_layout
 
 \end_inset
@@ -5366,6 +5373,7 @@ RHC
 \begin_inset Text
 
 \begin_layout Plain Layout
+ 
 \begin_inset Formula $\left(10^{24}\right)$
 \end_inset
 
@@ -5420,7 +5428,7 @@ ce{^{16}O}
 \begin_inset Text
 
 \begin_layout Plain Layout
-Other
+other
 \end_layout
 
 \end_inset
@@ -5497,7 +5505,7 @@ Other
 \begin_inset Text
 
 \begin_layout Plain Layout
-2.50
+2.81
 \end_layout
 
 \end_inset
@@ -5506,7 +5514,7 @@ Other
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.10
+3.99
 \end_layout
 
 \end_inset
@@ -5515,7 +5523,7 @@ Other
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.24
+-
 \end_layout
 
 \end_inset
@@ -5524,7 +5532,7 @@ Other
 \begin_inset Text
 
 \begin_layout Plain Layout
-2.41
+9.21
 \end_layout
 
 \end_inset
@@ -5544,7 +5552,7 @@ FGD1
 \begin_inset Text
 
 \begin_layout Plain Layout
-920
+985
 \end_layout
 
 \end_inset
@@ -5598,7 +5606,7 @@ FGD1
 \begin_inset Text
 
 \begin_layout Plain Layout
-2.07
+0.572
 \end_layout
 
 \end_inset
@@ -5702,7 +5710,7 @@ FGD1
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.30
+2.00
 \end_layout
 
 \end_inset
@@ -5711,16 +5719,7 @@ FGD1
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.88
-\end_layout
-
-\end_inset
-</cell>
-<cell multirow="3" alignment="center" valignment="middle" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.25
+10.63
 \end_layout
 
 \end_inset
@@ -5730,6 +5729,15 @@ FGD1
 
 \begin_layout Plain Layout
 1.43
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.05
 \end_layout
 
 \end_inset
@@ -5749,7 +5757,7 @@ FGD2
 \begin_inset Text
 
 \begin_layout Plain Layout
-1000
+972
 \end_layout
 
 \end_inset
@@ -5803,7 +5811,7 @@ FGD2
 \begin_inset Text
 
 \begin_layout Plain Layout
-2.07
+0.565
 \end_layout
 
 \end_inset
@@ -5898,7 +5906,7 @@ FGD2
 \begin_inset Text
 
 \begin_layout Plain Layout
-3.417
+3.382
 \end_layout
 
 \end_inset
@@ -5907,7 +5915,7 @@ FGD2
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.10
+1.207
 \end_layout
 
 \end_inset
@@ -5916,7 +5924,7 @@ FGD2
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.97
+3.513
 \end_layout
 
 \end_inset
@@ -5925,7 +5933,7 @@ FGD2
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.21
+-
 \end_layout
 
 \end_inset
@@ -5934,7 +5942,7 @@ FGD2
 \begin_inset Text
 
 \begin_layout Plain Layout
-2.25
+8.10
 \end_layout
 
 \end_inset
@@ -5954,7 +5962,7 @@ FGD1
 \begin_inset Text
 
 \begin_layout Plain Layout
-920
+985
 \end_layout
 
 \end_inset
@@ -6008,7 +6016,7 @@ FGD1
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.01
+0.280
 \end_layout
 
 \end_inset
@@ -6103,7 +6111,7 @@ FGD1
 \begin_inset Text
 
 \begin_layout Plain Layout
-2.871
+2.852
 \end_layout
 
 \end_inset
@@ -6112,7 +6120,7 @@ FGD1
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.02
+1.56
 \end_layout
 
 \end_inset
@@ -6121,7 +6129,7 @@ FGD1
 \begin_inset Text
 
 \begin_layout Plain Layout
-3.03
+16.9
 \end_layout
 
 \end_inset
@@ -6130,7 +6138,7 @@ FGD1
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.40
+2.29
 \end_layout
 
 \end_inset
@@ -6139,7 +6147,7 @@ FGD1
 \begin_inset Text
 
 \begin_layout Plain Layout
-2.30
+12.8
 \end_layout
 
 \end_inset
@@ -6159,7 +6167,7 @@ FGD2
 \begin_inset Text
 
 \begin_layout Plain Layout
-1000
+972
 \end_layout
 
 \end_inset
@@ -6213,7 +6221,7 @@ FGD2
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.01
+0.276
 \end_layout
 
 \end_inset
@@ -6262,7 +6270,7 @@ Neutrino-nucleon exposure on target elements in the
 \end_inset
 
 -only and FGD-only analyses.
- The FGD mass was taken from the following sources
+ The FGD1 and FGD2 masses were calculated using the following sources
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Amaudruz:2012agx,Longhin2016,Lodovico2017"

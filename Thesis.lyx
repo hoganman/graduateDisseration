@@ -67,7 +67,7 @@
 \chapterfont{\centering}
 \usepackage{braket}
 \end_preamble
-\options doctor
+\options doctor,showframe
 \use_default_options true
 \begin_modules
 fixltx2e
@@ -289,7 +289,7 @@ doctor,showframe
 \begin_layout Standard
 \begin_inset Branch PreambleAndMainMatter
 inverted 0
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset CommandInset include
@@ -334,7 +334,7 @@ abstract{%
 \end_layout
 
 \begin_layout Standard
-The Tokai to Kamioka (T2K) experiment is a long baseline neutrino oscillation
+The Tokai to Kamioka (T2K) experiment is a long-baseline neutrino oscillation
  experiment hosted in Japan in search for electron neutrino appearance in
  a high purity muon neutrino beam.
  In order to constrain the systematic uncertainties in the oscillation analysis,
@@ -355,8 +355,8 @@ The Tokai to Kamioka (T2K) experiment is a long baseline neutrino oscillation
 
  selections, new selections have been developed to select neutrino and antineutr
 ino events in one and multiple track topologies on water and carbon.
- These selections are shown to have sensitivity similar sensitivity to the
- T2K flux and cross section systematic uncertainties.
+ These selections are shown to have similar sensitivity to the T2K flux
+ and cross section systematic uncertainties.
  Using the same parameterization as the official ND constraint result, a
  hypothesis test was conducted between the 
 \begin_inset Formula $\pod$

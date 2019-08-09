@@ -1609,7 +1609,7 @@ noprefix "false"
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1756,7 +1756,7 @@ Water
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.4339
+0.433934
 \end_layout
 
 \end_inset
@@ -1765,7 +1765,7 @@ Water
 \begin_inset Text
 
 \begin_layout Plain Layout
-12.03
+12.0341
 \end_layout
 
 \end_inset
@@ -1803,7 +1803,7 @@ Air
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.3591
+0.359149
 \end_layout
 
 \end_inset
@@ -1812,7 +1812,7 @@ Air
 \begin_inset Text
 
 \begin_layout Plain Layout
-9.239
+9.23937
 \end_layout
 
 \end_inset
@@ -1850,7 +1850,7 @@ Air
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.2172
+0.217273
 \end_layout
 
 \end_inset
@@ -1859,7 +1859,7 @@ Air
 \begin_inset Text
 
 \begin_layout Plain Layout
-4.478
+4.47864
 \end_layout
 
 \end_inset
@@ -1897,7 +1897,7 @@ Air
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.364
+1.36447
 \end_layout
 
 \end_inset
@@ -1906,7 +1906,7 @@ Air
 \begin_inset Text
 
 \begin_layout Plain Layout
-26.32
+26.3227
 \end_layout
 
 \end_inset
@@ -1944,7 +1944,7 @@ Air
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.782
+1.78271
 \end_layout
 
 \end_inset
@@ -1953,7 +1953,7 @@ Air
 \begin_inset Text
 
 \begin_layout Plain Layout
-34.99
+34.996
 \end_layout
 
 \end_inset
@@ -1991,7 +1991,7 @@ Water
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.642
+1.64277
 \end_layout
 
 \end_inset
@@ -2000,7 +2000,7 @@ Water
 \begin_inset Text
 
 \begin_layout Plain Layout
-34.97
+34.9712
 \end_layout
 
 \end_inset
@@ -2038,7 +2038,7 @@ Water
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.4346
+0.43468
 \end_layout
 
 \end_inset
@@ -2047,7 +2047,7 @@ Water
 \begin_inset Text
 
 \begin_layout Plain Layout
-22.77
+22.7766
 \end_layout
 
 \end_inset
@@ -2085,7 +2085,7 @@ Air
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.288
+1.28838
 \end_layout
 
 \end_inset
@@ -2094,7 +2094,7 @@ Air
 \begin_inset Text
 
 \begin_layout Plain Layout
-14.17
+14.174
 \end_layout
 
 \end_inset
@@ -2132,7 +2132,7 @@ Air
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.5058
+0.505895
 \end_layout
 
 \end_inset
@@ -2141,7 +2141,7 @@ Air
 \begin_inset Text
 
 \begin_layout Plain Layout
-5.275
+5.27562
 \end_layout
 
 \end_inset
@@ -2179,7 +2179,7 @@ Air
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.7753
+0.775302
 \end_layout
 
 \end_inset
@@ -2226,7 +2226,7 @@ Air
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.8479
+0.847902
 \end_layout
 
 \end_inset
@@ -2235,7 +2235,7 @@ Air
 \begin_inset Text
 
 \begin_layout Plain Layout
-8.594
+8.59439
 \end_layout
 
 \end_inset
@@ -2273,7 +2273,7 @@ Water
 \begin_inset Text
 
 \begin_layout Plain Layout
-2.436
+2.43682
 \end_layout
 
 \end_inset
@@ -2282,7 +2282,7 @@ Water
 \begin_inset Text
 
 \begin_layout Plain Layout
-33.70
+33.7046
 \end_layout
 
 \end_inset
@@ -2320,7 +2320,7 @@ Water
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.580
+1.58053
 \end_layout
 
 \end_inset
@@ -2329,7 +2329,7 @@ Water
 \begin_inset Text
 
 \begin_layout Plain Layout
-26.46
+26.4664
 \end_layout
 
 \end_inset
@@ -2367,7 +2367,7 @@ Air
 \begin_inset Text
 
 \begin_layout Plain Layout
-4.148
+4.14897
 \end_layout
 
 \end_inset
@@ -2376,7 +2376,7 @@ Air
 \begin_inset Text
 
 \begin_layout Plain Layout
-36.06
+36.0694
 \end_layout
 
 \end_inset
@@ -2423,7 +2423,7 @@ Sand
 \begin_inset Text
 
 \begin_layout Plain Layout
-11.19
+11.1988
 \end_layout
 
 \end_inset
@@ -2470,7 +2470,7 @@ Sand
 \begin_inset Text
 
 \begin_layout Plain Layout
-12.92
+12.9201
 \end_layout
 
 \end_inset
@@ -2508,7 +2508,7 @@ Air
 \begin_inset Text
 
 \begin_layout Plain Layout
-7.872
+7.872757
 \end_layout
 
 \end_inset
@@ -2517,7 +2517,7 @@ Air
 \begin_inset Text
 
 \begin_layout Plain Layout
-79.18
+111.09
 \end_layout
 
 \end_inset
@@ -2555,7 +2555,7 @@ Water
 \begin_inset Text
 
 \begin_layout Plain Layout
-3.657
+3.656589
 \end_layout
 
 \end_inset
@@ -2602,7 +2602,7 @@ Air
 \begin_inset Text
 
 \begin_layout Plain Layout
-3.417
+3.382490
 \end_layout
 
 \end_inset
@@ -2611,7 +2611,7 @@ Air
 \begin_inset Text
 
 \begin_layout Plain Layout
-34.92
+35.262
 \end_layout
 
 \end_inset
@@ -2649,7 +2649,7 @@ Water
 \begin_inset Text
 
 \begin_layout Plain Layout
-2.871
+2.852340
 \end_layout
 
 \end_inset
@@ -2658,7 +2658,7 @@ Water
 \begin_inset Text
 
 \begin_layout Plain Layout
-56.48
+54.53
 \end_layout
 
 \end_inset
