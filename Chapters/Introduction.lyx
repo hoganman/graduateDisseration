@@ -301,8 +301,9 @@ To give some perspective to this number, this means 70 billion neutrinos
 
 .
  So this begs the question: how does one detect a neutrino? The short answer
- is one requires a large enough flux of neutrinos passing through a large
- dense volume of matter just to detect a single neutrino with today's technology.
+ is that one requires a large enough flux of neutrinos passing through a
+ large dense volume of matter just to detect a single neutrino with today's
+ technology.
  
 \end_layout
 
@@ -339,7 +340,7 @@ name "subsec:nuSM"
 \begin_layout Standard
 The Standard Model (SM) of particle physics is the theory of elementary
  or fundamental particle constituents and the forces between them.
- These standard model forces are the electromagnetic, weak and strong.
+ These forces are the electromagnetic, the weak and the strong.
  String theory, which is not yet tested, attempts to incorporate the gravitation
 al force.
  The SM forces and the gravitational force constitute the four 
@@ -355,7 +356,7 @@ force carrier
 \begin_inset Quotes erd
 \end_inset
 
- particle that mediates the interactions between particles.
+ particle that mediates the interactions between the matter particles.
  The force carriers are formally called 
 \begin_inset Quotes eld
 \end_inset
@@ -364,22 +365,22 @@ gauge bosons
 \begin_inset Quotes erd
 \end_inset
 
- which indicates they are particles with integer 
+, which indicates that they are particles with integer 
 \begin_inset Formula $(0,1,2,...)$
 \end_inset
 
  spin that mediate the interaction.
- The weak nuclear bosons, the charged 
+ The weak nuclear gauge bosons, the charged 
 \begin_inset Formula $W^{\pm}$
 \end_inset
 
- and neutral Z, couple to neutrinos as well as the other fermions, particles
+ and the neutral Z, couple to neutrinos as well as the other fermions, particles
  with half-integer 
 \begin_inset Formula $\left(\frac{1}{2},\frac{3}{2},\frac{5}{2},...\right)$
 \end_inset
 
  spin, in the SM.
- All the elementary particles of the SM are shown in 
+ All of the elementary particles of the SM are shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:TheStandardModel"
@@ -419,7 +420,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-The Standard Model of particle physics
+The Elementary Particles of the Standard Model of Particle Physics
 \end_layout
 
 \end_inset
@@ -463,14 +464,15 @@ name "fig:TheStandardModel"
 
 \begin_layout Standard
 Neutrinos in the SM are electrically neutral, massless particles categorized
- into three generations based on their charged, more massive Lepton cousins.
+ into three generations based on their charged, more massive lepton cousins.
  In the SM, the three neutrinos and the three antineutrinos are the only
  spin 
 \begin_inset Formula $\nicefrac{1}{2}$
 \end_inset
 
- particles, among quarks and leptons, that have only weak interactions.
- The neutrino and charged lepton pair into a 
+ particles that experience only weak interactions.
+ The neutrino and its associated charged cousin of the same flavor pair
+ into a 
 \begin_inset Quotes eld
 \end_inset
 
@@ -503,7 +505,7 @@ A gauge theory describes ways to measure physical forces or fields through
  The electric or magnetic fields for example can only be probed by charged
  particles.
  In the realm of quantum field theories, fields are postulated to permeate
- everywhere and it is excitations of these fields which produce experimental
+ everywhere and it is excitations of these fields that produce experimental
  observables.
  Fields are constructed using the Lagrangian formalism and altered using
  gauge transformations.
@@ -514,7 +516,7 @@ A gauge theory describes ways to measure physical forces or fields through
  The allowed locally gauge invariant transformations require knowledge of
  its underlying Lie, or symmetry, group.
  With the weak isospin doublets, the Lie groups are SU(2)
-\begin_inset Formula $\times$
+\begin_inset Formula $\bigotimes$
 \end_inset
 
 U(1) where SU(2) is the special unitary group of 
@@ -583,8 +585,8 @@ weak force
 \begin_inset Formula $\text{GeV/c}^{2}$
 \end_inset
 
-, which is more massive than all the elementary particles except for the
- top quark.
+, which is more massive than all the other elementary particles except for
+ the top quark.
 \end_layout
 
 \begin_layout Standard
@@ -622,13 +624,8 @@ where
 \begin_inset Formula $\Delta t$
 \end_inset
 
- is the time which the particle exists.
- As an example, consider a neutrino of energy of 1 GeV emitting a Z-boson
- of off-shell energy, 
-\begin_inset Formula $\Delta E=1$
-\end_inset
-
- GeV like shown in 
+ is the time during which the particle exists.
+ As an example, consider a neutrino emitting a Z-boson as shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:CCNCInteractions"
@@ -639,7 +636,15 @@ noprefix "false"
 \end_inset
 
 .
- The lifetime of that boson is about 
+ If the energy of the neutrino is 
+\begin_inset Formula $1$
+\end_inset
+
+ GeV, the lifetime of the 
+\begin_inset Formula $Z$
+\end_inset
+
+ boson is about 
 \begin_inset Formula $10^{-25}$
 \end_inset
 
@@ -681,15 +686,15 @@ where
 \end_inset
 
 , the probability of creating that particle will be infinitesimally small.
- Therefore to observe a single weak interaction requires a large amount
+ Therefore to observe a single weak interaction requires a large number
  of weakly interacting particles.
 \end_layout
 
 \begin_layout Standard
-Weak interactions are classified into two classes of interactions: charged
- current (CC) and neutral current (NC).
- The CC interactions involve a charged W boson and change the scattering
- neutrino into a electrically charged lepton of flavor 
+Weak interactions are classified into two classes: charged current (CC)
+ and neutral current (NC).
+ The CC interactions involve a charged W boson and changes the incident
+ neutrino into an electrically charged lepton of flavor 
 \begin_inset Formula $l$
 \end_inset
 
@@ -698,9 +703,10 @@ Weak interactions are classified into two classes of interactions: charged
 \end_inset
 
  is inferred from the charged lepton.
- The same cannot be said of NC interactions which exchange a neutral Z boson.
+ The same is not true for NC interactions, in which the exchange a neutral
+ Z boson occurs.
  The NC interactions are flavor agnostic since they do not produce a charged
- lepton.
+ lepton nor change the neutrino's flavor.
  An example of each interaction type is shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -800,28 +806,39 @@ status open
 status open
 
 \begin_layout Plain Layout
-CC And NC Feynman Diagrams
+CC and NC Feynman Diagrams
 \end_layout
 
 \end_inset
 
-(a) Muon decay 
+Feynman diagrams illustrating a CC and a NC interaction with time axis increasin
+g from bottom to top in both.
+ (a) Feynman diagram of a muon decay 
 \begin_inset Formula $\left(\mu^{-}\rightarrow\numu\antinue e^{-}\right)$
 \end_inset
 
- Feynman diagram with time increasing from bottom to top.
- This is a charged current process that converts a muon into a muon neutrino
- via the emission of a W boson.
- Due to a conserved quantum number called lepton number, the W must emit
- an electron and electron neutrino pair.
- (b) Neutral current interaction Feynman diagram where time increases from
- left to right.
- This is a neutral current interaction where a neutrino of arbitrary flavor
+.
+ This is a charged current process that converts a charged muon into a muon
+ neutrino via the emission of a 
+\begin_inset Formula $W^{-}$
+\end_inset
+
+ boson.
+ Due to a conserved quantum number called lepton number, the 
+\begin_inset Formula $W^{-}$
+\end_inset
+
+ must emit an electron and electron neutrino pair.
+ (b) Feynman diagram of NC scattering between a neutrino of arbitrary flavor
  
 \begin_inset Formula $X$
 \end_inset
 
- scatters off an electron via the emission of a Z boson.
+ scatters off an electron via the emission of a 
+\begin_inset Formula $Z$
+\end_inset
+
+ boson.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:CCNCInteractions"
