@@ -878,7 +878,7 @@ Neutrinos are observed to have their spin direction vectors
 \begin_inset Formula $\boldsymbol{P}$
 \end_inset
 
- and this is reversed for anti-neutrinos.
+ and this is reversed for antineutrinos.
  This property is called helicity and is given by 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -898,20 +898,20 @@ noprefix "false"
 \end_inset
 
 Although neutrino detection is difficult, the neutrino helicity is readily
- inferred from the decay of the daughter muon in the pion decay, 
+ inferred from the daughter muon's helicity in pion decay, 
 \begin_inset Formula $\pion^{+}\rightarrow\mu^{+}+\numu$
 \end_inset
 
 .
- Since a pion has net zero (0) spin, the spin vectors of the daughters must
- also sum to zero.
- The muon from a 
-\begin_inset Formula $\pion^{+}$
+ The 
+\begin_inset Formula $\muplus$
 \end_inset
 
- decay has negative helicity (-1) hence the neutrino also has negative helicity.
- To confirm the anti-neutrino's helicity is positive (+1), the interaction
- requires both a charge (C) conjugation and parity (P) transformation as
+ has negative helicity (
+\begin_inset Formula $\mathcal{H}=-1$
+\end_inset
+
+) and to converse spin, the neutrino's helicity must also be negative as
  shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -923,19 +923,30 @@ noprefix "false"
 \end_inset
 
 .
+ The antineutrino's helicity is positive (+1) as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:DecayOfPion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ through use of the charge (C) conjugation and parity (P) transformations.
  A C conjugation is a linear transformation that transforms all particles
  into their corresponding antiparticles while the P transformation inverts
  all spatial coordinates.
- Thus neutrinos are referred to 
+ Thus neutrinos are referred to as 
 \shape italic
 left-handed
 \shape default
- (LH) particles while anti-neutrinos are 
+ (LH) particles while antineutrinos are referred to as 
 \shape italic
 right-handed
 \shape default
  (RH) particles.
- It turns out helicity is a useful quantum number to describe neutrinos
+ It turns out that helicity is a useful quantum number to describe neutrinos
  and coincides with a property called chirality.
  To understand chirality and its relationship to helicity requires an analysis
  of the Dirac Lagrangian and Dirac equation.
@@ -953,7 +964,7 @@ status open
 \begin_inset Graphics
 	filename Figures/Introduction/ChiralityPionDecay.png
 	lyxscale 50
-	width 75text%
+	width 50text%
 
 \end_inset
 
@@ -968,27 +979,18 @@ status open
 status open
 
 \begin_layout Plain Layout
-Helicity of Neutrino Through Decay of Charged Pi Mesons
+Helicity of the Neutrino
 \end_layout
 
 \end_inset
 
-Decay of a charged pi meson into a muon and neutrino show the direction
- of the momentum 
-\begin_inset Formula $\boldsymbol{P}$
-\end_inset
-
- and spin 
-\begin_inset Formula $\boldsymbol{\sigma}$
-\end_inset
-
- of the outgoing particles.
+The helicity of the neutrino as inferred from pion decay.
  Since a pion at rest has zero (0) angular momentum, the system of daughter
- particles must have net zero angular momentum as well.
- A neutrino (antineutrino) is a right- (left-) handed helicity particle
- since its spin is (anti-)parallel to its momentum.
- Application of charge and parity (CP) converts all the particles into their
- respective antiparticles.
+ particles must have also net zero angular momentum.
+ By measuring the muon's helicity, the helicity of neutrino is inferred.
+ A neutrino (antineutrino) is a left- (right-) handed helicity particle
+ since its spin is anti-parallel (parallel) to its momentum.
+ 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:DecayOfPion"
@@ -1059,11 +1061,11 @@ where
 
 \end_inset
 
-that acts only on the right of it while 
+that acts only to the right while 
 \begin_inset Formula $\overleftarrow{\partial_{\mu}}$
 \end_inset
 
- only acts on its left (i.e.
+ only acts to the left (i.e.
  
 \begin_inset Formula $\overline{\psi}\overleftarrow{\partial_{\mu}}=\partial_{\mu}\overline{\psi}$
 \end_inset
@@ -1490,15 +1492,14 @@ where one recognizes that helicity and chiral states are the same for
 
  actually are identical to the LH and RH helicity labels, respectively.
  Using the results on helicity from before, a neutrino is always observed
- as a LH particle while the anti-neutrino is always observed as a RH antiparticl
-e.
+ as a LH particle while the antineutrino is always observed as a RH antiparticle.
 \end_layout
 
 \begin_layout Standard
-The observation of only LH neutrinos and RH anti-neutrinos is an important
+The observation of only LH neutrinos and RH antineutrinos is an important
  feature in the SM.
  However, since neutrinos are known to have mass from oscillations, it is
- theoretically possible to observe a RH neutrino and LH anti-neutrino.
+ theoretically possible to observe a RH neutrino and LH antineutrino.
  That would require boosting to a highly relativistic reference frame with
  respect to the laboratory.
 \end_layout
@@ -2840,7 +2841,7 @@ literal "false"
 The most frequently used matrix parameterization is the MNSP (MNSP: Maki-Nakagaw
 a-Sakata-Pontecorvo) matrix.
  Pontecorvo is accredited for first conceiving of neutrino oscillations,
- albeit between neutrino and anti-neutrinos
+ albeit between neutrino and antineutrinos
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Ponte1957"
@@ -3846,7 +3847,7 @@ Y_{\sin\delta_{\text{CP}}}=\frac{1}{8}\sin\left(2\theta_{12}\right)\sin\left(2\t
 
 \end_inset
 
-and (+) represents the sign change from neutrinos to anti-neutrinos.
+and (+) represents the sign change from neutrinos to antineutrinos.
  The CP violating term 
 \begin_inset CommandInset ref
 LatexCommand formatted
