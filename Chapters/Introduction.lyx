@@ -405,7 +405,7 @@ status open
 \begin_inset Graphics
 	filename Figures/Introduction/StandardModel.png
 	lyxscale 50
-	width 75text%
+	width 50text%
 
 \end_inset
 
@@ -1075,8 +1075,8 @@ that acts only to the right while
 \begin_inset Formula $\gamma^{\mu}$
 \end_inset
 
- matrices are not unique and different representations dictate different
- kinematic regimes.
+ matrices are not unique and different representations are more appropriate
+ for different kinematic regimes.
  The field equations are extracted from the Lagrangian using the Euler-Lagrange
  procedure.
  In general for a set of 
@@ -1182,9 +1182,10 @@ Using the Chiral representation, the chirality matrix,
 
 \end_inset
 
-which is diagonal as well as Hermitian meaning that its eigenvalues are
+which is diagonal as well as Hermitian, meaning that its eigenvalues are
  real and observable.
- Let eigenfunctions of the chirality matrix be denoted with subscripts 
+ Let the eigenfunctions of the chirality matrix be denoted with subscripts
+ 
 \begin_inset Formula $P$
 \end_inset
 
@@ -1429,7 +1430,7 @@ where the differential operators have been evaluated as the particle's energy
 \begin_inset Formula $E=-\left|\boldsymbol{P}\right|c$
 \end_inset
 
- which in the context of quantum field theory are interpreted as antiparticles
+ in the context of quantum field theory are interpreted as antiparticles
  traveling backwards in time.
  Conversely, 
 \begin_inset Formula $\psi_{M}$
@@ -1457,11 +1458,11 @@ noprefix "false"
 \begin_inset Formula $\gamma^{5}\gamma^{0}$
 \end_inset
 
- and using the fact that the spin operator 
+ and uses the fact that the spin operator 
 \begin_inset Formula $\boldsymbol{\boldsymbol{\sigma}}$
 \end_inset
 
- is
+ is given by
 \begin_inset Formula 
 \begin{equation}
 \boldsymbol{\sigma}=i\left(\gamma^{2}\gamma^{3},\gamma^{3}\gamma^{1},\gamma^{1}\gamma^{2}\right)=\gamma^{0}\gamma^{k}\gamma^{5}\quad\left(k=1,2,3\right)\label{eq:spinoperatorgammamatrices}
@@ -1477,7 +1478,8 @@ each decoupled equation becomes
 
 \end_inset
 
-where one recognizes that helicity and chiral states are the same for 
+where one recognizes that the helicity and chiral states are the same for
+ 
 \begin_inset Formula $m\rightarrow0$
 \end_inset
 
@@ -1491,15 +1493,15 @@ where one recognizes that helicity and chiral states are the same for
 \end_inset
 
  actually are identical to the LH and RH helicity labels, respectively.
- Using the results on helicity from before, a neutrino is always observed
- as a LH particle while the antineutrino is always observed as a RH antiparticle.
+ Using the results above, a neutrino is always observed as a LH particle
+ while the antineutrino is always observed as a RH antiparticle.
 \end_layout
 
 \begin_layout Standard
 The observation of only LH neutrinos and RH antineutrinos is an important
  feature in the SM.
- However, since neutrinos are known to have mass from oscillations, it is
- theoretically possible to observe a RH neutrino and LH antineutrino.
+ However, since neutrinos are known to have mass, given that neutrinos oscillate
+, it is theoretically possible to observe a RH neutrino and a LH antineutrino.
  That would require boosting to a highly relativistic reference frame with
  respect to the laboratory.
 \end_layout
@@ -1517,7 +1519,7 @@ name "subsec:Neutrino-Scattering-with-Matter"
 
 \begin_layout Standard
 Charged current (CC) neutrino interactions on nuclear particles are the
- interactions used in this thesis.
+ interactions investigated in this thesis.
  These interactions produce an outgoing charged lepton and a variety of
  hadronic states.
  While interactions with valence electrons is possible, they are far less
@@ -1536,7 +1538,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Figures/Introduction/NueEScattering.png
-	width 75text%
+	width 50text%
 
 \end_inset
 
@@ -1547,7 +1549,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The definition of 
+A schematic of 
 \begin_inset Formula $\theta$
 \end_inset
 
@@ -1555,11 +1557,17 @@ The definition of
 \begin_inset Formula $\nue+e^{-}$
 \end_inset
 
- (shown) and 
-\begin_inset Formula $\nuebar+e^{-}$
+ scattering.
+ The same diagram is used to describe 
+\begin_inset Formula $\antinue+e^{-}$
 \end_inset
 
- (not shown) scattering.
+ scattering with 
+\begin_inset Formula $\nue\rightarrow\antinue$
+\end_inset
+
+.
+ 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:NuEElectronScattering"
@@ -1571,6 +1579,11 @@ name "fig:NuEElectronScattering"
 status open
 
 \begin_layout Plain Layout
+A Schematic of 
+\begin_inset Formula $\theta$
+\end_inset
+
+ in 
 \begin_inset Formula $\nue+e^{-}$
 \end_inset
 
@@ -1587,10 +1600,6 @@ status open
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -1604,13 +1613,13 @@ Consider neutrino-electron scattering, the cross section for
  is given by
 \begin_inset Formula 
 \begin{equation}
-\frac{d\sigma}{d\Omega}=\left(\frac{G\hbar c}{2\pi}\right)^{2}s,\label{eq:NuEScattering}
+\frac{d\sigma}{d\Omega}=\left(\frac{G_{F}\hbar c}{2\pi}\right)^{2}s,\label{eq:NuEScattering}
 \end{equation}
 
 \end_inset
 
 where 
-\begin_inset Formula $G$
+\begin_inset Formula $G_{F}$
 \end_inset
 
  is the Fermi constant and 
@@ -1618,8 +1627,8 @@ where
 \end_inset
 
  is the center of mass energy squared.
- Due to the V-A nature of the Weak force, neutrinos couple to LH particles
- and RH antiparticles.
+ Due to the V-A nature of the weak force, neutrinos couple to LH particles
+ and to RH antiparticles.
  The outgoing particles are isotropically distributed in the center-of-mass
  frame since the initial and final spin state of the system is 
 \begin_inset Formula $J=0$
@@ -1643,7 +1652,7 @@ noprefix "false"
  
 \begin_inset Formula 
 \begin{equation}
-\frac{d\sigma}{d\Omega}=\left(\frac{G\hbar c}{4\pi}\right)^{2}\left(1-\cos\theta\right)^{2}s,\label{eq:ANuEScattering}
+\frac{d\sigma}{d\Omega}=\left(\frac{G_{F}\hbar c}{4\pi}\right)^{2}\left(1-\cos\theta\right)^{2}s,\label{eq:ANuEScattering}
 \end{equation}
 
 \end_inset
@@ -1677,7 +1686,7 @@ noprefix "false"
 
 , the antineutrino is preferentially forward scattered.
  Integrating over all angles, the cross sections are related to each other
- as
+ by
 \begin_inset Formula 
 \[
 \sigma\left(\antinue+e^{-}\right)=\frac{1}{3}\sigma\left(\nue+e^{-}\right).
@@ -1722,14 +1731,14 @@ In neutrino-nuclear scattering, the simple picture of free quarks must be
  replaced with the reality of the nuclear medium.
  Interactions with a single quark are still possible, but nuclear effects
  can alter the products of the interactions.
- The kinematics of the particles involved can be altered as well as the
- existence of a particle can be change depending on the point of interaction.
- Distinctions must be made in neutrino physics between point-like interactions
+ The kinematics of the particles involved can be altered as well depending
+ on the initial state of the nucleus.
+ Distinctions must be made in neutrino physics between primary interactions
  (
 \begin_inset Formula $\nue+e^{-}$
 \end_inset
 
-) and post 
+) and 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1737,7 +1746,7 @@ final state interactions
 \begin_inset Quotes erd
 \end_inset
 
- (FSI) are what is actually observable in an experiment.
+ (FSI) observables.
 \end_layout
 
 \begin_layout Standard
@@ -1811,9 +1820,9 @@ name "fig:NuMuCCQE"
 \end_layout
 
 \begin_layout Standard
-Neutrino-nuclear scattering presented in this thesis come in three primary
- CC varieties: quasi-elastic (CCQE), deep inelastic scattering (CC-DIS),
- and single pion production (CC-
+There are three neutrino-nuclear scattering classes presented in this thesis:
+ quasi-elastic (CCQE), deep inelastic scattering (CC-DIS), and single pion
+ production (CC-
 \begin_inset Formula $1\pion$
 \end_inset
 
@@ -1841,8 +1850,8 @@ noprefix "false"
 
  CCQE, the proton is converted to a neutron instead.
  The CCQE interaction is the lowest energy CC interaction with a nucleon
- and is thought of classically to have approximate mass conservation between
- the proton-neutron states (
+ and has approximate mass conservation between the proton-neutron states
+ (
 \begin_inset Formula $\Delta m=1.29$
 \end_inset
 
@@ -1851,14 +1860,8 @@ noprefix "false"
 \end_inset
 
 ).
- While CCQE models work well to predict the neutrino energy for low-Z atoms
- like hydrogen, they do not extend well into many nucleon atoms due to similar
- observable final state nucleons.
- The CC-DIS interaction, also called CC Other, is a high energy transfer
- process that shatters the nucleus apart which has the observation of many
- post-FSI hadrons.
- Modeling CCDIS can be challenging due to FSI and the uncertainty of the
- possible initial states of the nucleus.
+ The CC-DIS interaction is a high energy transfer process that shatters
+ the nucleus apart.
  Finally, CC-
 \begin_inset Formula $1\pion$
 \end_inset
@@ -1870,7 +1873,7 @@ noprefix "false"
 
  baryon.
  These interactions are not well understood currently since they occur in
- the transition between CCQE and CCDIS interaction modes.
+ the transition between CCQE and CC-DIS interaction modes.
 \end_layout
 
 \begin_layout Subsection
@@ -1885,15 +1888,15 @@ name "subsec:Neutrino-Oscillations"
 \end_layout
 
 \begin_layout Standard
-Neutrino oscillations are the observation of a neutrino produced with a
- particular, definite flavor and later observed as a different flavor.
+Neutrino oscillations is the physical process of a neutrino produced with
+ a particular, definite flavor and later observed as a different flavor.
  This phenomenon was first observed as a deficit of neutrinos for a number
  of atmospheric and solar neutrino experiments.
  The deficit also seemed more pronounced for atmospheric neutrinos as the
  distance from their source increased.
- For neutrino oscillations to occur, at least one neutrino must be massive.
- This observation firmly established that the SM is wrong with its assumption
- of massless neutrinos.
+ For neutrino oscillations to occur, at most one neutrino can be massless.
+ This observation firmly established that the SM is incorrect with its assumptio
+n of massless neutrinos.
 \end_layout
 
 \begin_layout Standard
@@ -1906,15 +1909,15 @@ literal "false"
 
 \end_inset
 
-which began in the 1960s.
+ which began operation in the 1960s.
  Ray Davis was an expert chemist and designed a radiochemical experiment
- to measure the flux of neutrinos from Sun.
+ to measure the flux of neutrinos from sun.
  The purpose of this experiment was to test John Bahcall's prediction of
  the fusion rate in the Sun and neutrino flux from it as well.
  Davis' experiment would need to operate for many years to collect enough
  statistics due to expected low capture rate.
  Measurements continued into the 1980s and showed that the flux of neutrinos
- as measured at Homesteak and this was about 
+ was about 
 \begin_inset Formula $\nicefrac{1}{3}$
 \end_inset
 
@@ -1926,8 +1929,8 @@ Solar Neutrino Problem.
 \begin_inset Quotes erd
 \end_inset
 
- The primary solutions were either the solar model was incorrect or the
- neutrino capture cross section was incorrect.
+ The primary explainations were either that the solar model was incorrect
+ or the neutrino capture cross section was incorrect.
  The Sudbury Neutrino Observatory (SNO) was able to resolve this problem
  by making a model-independent measurement of the solar neutrino flux.
  SNO observed a 
@@ -1965,19 +1968,16 @@ Another outstanding problem emerged with measurements of atmospheric neutrinos,
 \begin_inset Formula $\numu/\nue$
 \end_inset
 
- ratio and comparing that with expected ratio, there was another significant
- deficit.
- This was particularly a problem as a function of the zenith angle for the
- Super-Kamiokande (SK) experiment.
- SK is a 50kt tank of pure water lined with thousands of photomultiplier
+ ratio, there was another significant deficit.
+ This was particularly apparent for the Super-Kamiokande (SK) experiment,
+ which is a 50 kt tank of pure water lined with thousands of photomultiplier
  tubes designed to observe solar and atmospheric neutrinos.
  It was the first experiment to perform a neutrino oscillation analysis
  that successfully explained the deficit.
 \end_layout
 
 \begin_layout Standard
-The observation of neutrino oscillations is relatively new, or about three
- decades old.
+The observation of neutrino oscillations is a relatively new discovery.
  Bruno Pontecorvo 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1994,7 +1994,7 @@ literal "false"
 \end_layout
 
 \begin_layout Subsubsection
-Two Flavor Derivation
+Two Flavor Derivation of Neutrino Oscillations
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:Two-Flavor-Derivation"
@@ -2006,7 +2006,7 @@ name "subsec:Two-Flavor-Derivation"
 
 \begin_layout Standard
 The phenomenon of neutrino oscillations can be described with elementary,
- non-relativistic Quantum Mechanics.
+ non-relativistic quantum mechanics.
  Beginning with the Schrödinger Equation in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -2033,8 +2033,8 @@ where
 \begin_inset Formula $\hat{H}$
 \end_inset
 
- is the Hamiltonian for the physical system, one considers a massive neutrino
- of mass 
+ is the Hamiltonian for the physical system.
+ Here we consider massive neutrinos of mass 
 \begin_inset Formula $m_{j}$
 \end_inset
 
@@ -2154,8 +2154,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The depiction of two neutrino flavor change of basis using a rotation matrix.
- Compare this with 
+The depiction of two neutrino flavor change of basis using a rotation matrix,
+ defined in 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:pmnstwodimangle"
@@ -2240,7 +2240,7 @@ mass
 \end_inset
 
 .
- Since both mass eigenstates share the same momentum momentum 
+ Since both mass eigenstates share the same momentum 
 \begin_inset Formula $\mathbf{p}$
 \end_inset
 
@@ -2333,16 +2333,16 @@ noprefix "false"
 \end_inset
 
 .
- Creating a neutrino of flavor 
+ The probability of creating a neutrino of flavor 
 \begin_inset Formula $\alpha$
 \end_inset
 
- and observing it after a time 
-\begin_inset Formula $t=T>0$
+ and later observing it as flavor 
+\begin_inset Formula $\beta\neq\alpha$
 \end_inset
 
-, the probability of observing it as flavor 
-\begin_inset Formula $\beta\neq\alpha$
+ at time 
+\begin_inset Formula $t=T>0$
 \end_inset
 
  is given by
@@ -2498,8 +2498,6 @@ noprefix "false"
  This equation is not, however, terribly useful in the laboratory frame
  since it is hard to design an experiment where the travel time an individual
  neutrino is actually measured.
- Instead, one can make useful approximations that are accessible in the
- laboratory frame.
  Since neutrinos are nearly massless, they travel very close to the speed
  of light.
  Therefore time 
@@ -2579,20 +2577,32 @@ where
 \begin_inset Formula $c=\hbar=1)$
 \end_inset
 
-.
- An appropriate choice of units for 
+, the 
 \begin_inset Formula $\Delta m^{2}$
+\end_inset
+
+ in 
+\begin_inset Formula $\text{eV}{}^{2}$
 \end_inset
 
 , 
 \begin_inset Formula $L$
 \end_inset
 
-, and 
+ in km, and 
 \begin_inset Formula $E_{\nu}$
 \end_inset
 
- results in
+ in GeV, .
+ The oscillation probability from between states 
+\begin_inset Formula $\nu_{\alpha}$
+\end_inset
+
+to 
+\begin_inset Formula $\nu_{\beta}$
+\end_inset
+
+ is given by
 \end_layout
 
 \begin_layout Standard
@@ -2603,7 +2613,7 @@ where
 
 \end_inset
 
-which more clearly demonstrates the Physics in neutrino oscillations.
+which more clearly illustrates the physics of neutrino oscillations.
  The oscillation probability has an amplitude of 
 \begin_inset Formula $\sin^{2}(2\theta)$
 \end_inset
@@ -2612,7 +2622,7 @@ which more clearly demonstrates the Physics in neutrino oscillations.
 \begin_inset Formula $\Delta m^{2}$
 \end_inset
 
- as illustrated in 
+ as shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:Two-flavor-oscillation"
@@ -2684,12 +2694,12 @@ status open
 status open
 
 \begin_layout Plain Layout
-Logarithmic Plot of the Two Flavor Survival Probability
+Semi-logarithmic Plot of the Two Flavor Survival Probability
 \end_layout
 
 \end_inset
 
-Logarithmic plot of the survival probability of flavor 
+Semi-logarithmic plot of the survival probability of flavor 
 \begin_inset Formula $\alpha$
 \end_inset
 
@@ -2732,8 +2742,8 @@ Logarithmic plot of the survival probability of flavor
 \end_inset
 
 .
- The arrows above the plot very roughly denote three possible cases: (a)
- no oscillations (
+ The arrows above the plot coarsely denote three possible cases: (a) no
+ oscillations (
 \begin_inset Formula $L/E\ll1/\Delta m^{2})$
 \end_inset
 
@@ -2815,7 +2825,7 @@ literal "false"
 .
  This all assumes that neutrinos obey the Dirac Equation, or that they are
  not their own antiparticles.
- The favored mixing model is the 
+ The favored mixing model is a 
 \begin_inset Formula $3\times3$
 \end_inset
 
@@ -2840,7 +2850,7 @@ literal "false"
 \begin_layout Standard
 The most frequently used matrix parameterization is the MNSP (MNSP: Maki-Nakagaw
 a-Sakata-Pontecorvo) matrix.
- Pontecorvo is accredited for first conceiving of neutrino oscillations,
+ Pontecorvo is credited with first conceiving of neutrino oscillations,
  albeit between neutrino and antineutrinos
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2851,7 +2861,7 @@ literal "false"
 
 .
  It was Maki, Nakagawa, and Sakata who conceived of the parameterization
- based off the ideas of Pontecorvo
+ based on the ideas of Pontecorvo
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Maki1962"
@@ -2941,7 +2951,7 @@ sol
 \begin_inset Formula $\nu$
 \end_inset
 
-'s, and Solar 
+'s, and solar 
 \begin_inset Formula $\nu$
 \end_inset
 
@@ -3447,8 +3457,8 @@ name "tab:SensitivityOscill"
 \end_layout
 
 \begin_layout Standard
-If neutrinos are their own antiparticles, like the photon, they do not follow
- the Dirac Equation but do follow the Majorana Equation.
+If neutrinos are their own antiparticles, they are not described by the
+ Dirac Equation but instead are described the Majorana Equation.
  This adds two (in general 
 \begin_inset Formula $n-1$
 \end_inset
@@ -4967,7 +4977,7 @@ T2K was primarily designed to measure the last unknown MNSP mixing angle
 \end_inset
 
  and 
-\begin_inset Formula $\Dm23$
+\begin_inset Formula $\Dm 23$
 \end_inset
 
 .
