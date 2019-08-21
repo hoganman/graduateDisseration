@@ -3487,7 +3487,7 @@ U_{\text{MNSP}}\rightarrow U_{\text{MNSP}}\times\stackrel{U_{\text{Majorana}}}{\
 
 Unfortunately, neutrino oscillations are not able to probe the Majorana
  phases since the Majorana matrix is diagonal.
- The question of if neutrinos are Majorana (
+ The question of as to whether neutrinos are Majorana (
 \begin_inset Formula $\nu=\overline{\nu})$
 \end_inset
 
@@ -3495,7 +3495,7 @@ Unfortunately, neutrino oscillations are not able to probe the Majorana
 \begin_inset Formula $\nu\neq\overline{\nu})$
 \end_inset
 
- particles is an open question and is being explored by neutrino-less double
+ particles is an open question that is being explored by neutrino-less double
  beta decay experiments
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -3539,7 +3539,7 @@ Since CP violation means that
 \begin_inset Formula $\mathcal{P}\left(\nuparticle{\alpha}\rightarrow\nuparticle{\beta\neq\alpha}\right)\neq\mathcal{P}\left(\antinuparticle{\alpha}\rightarrow\antinuparticle{\beta\neq\alpha}\right),$
 \end_inset
 
- CP violating terms must be an odd function of 
+ CP violating terms must be odd function of 
 \begin_inset Formula $\delta_{\text{CP}}$
 \end_inset
 
@@ -3553,7 +3553,8 @@ Muon Neutrino Survival
 \end_layout
 
 \begin_layout Standard
-The probability of a muon type neutrinos surviving is given by 
+The probability of a muon type neutrinos (antineutrinos) surviving is given
+ by 
 \begin_inset Formula 
 \begin{equation}
 \begin{aligned}\mathcal{P}\left(\nuantinuparticle{\mu}\rightarrow\nuantinuparticle{\mu}\right)=1-4 & \sss{23}\ccc{13}\left(V_{\cos\delta_{\text{CP}}}\right)\sin^{2}\phi_{31}\\
@@ -3595,10 +3596,18 @@ and
 
 .
  If a definitive measurement of 
-\begin_inset Formula $\prob{\numu\rightarrow\numu}\neq\prob{\numubar\rightarrow\numubar}$
+\begin_inset Formula $\prob{\numu\rightarrow\numu}$
 \end_inset
 
- in vacuum occurs, this implies that the combined C, P and time (CPT) symmetry
+
+\begin_inset Formula $\neq$
+\end_inset
+
+
+\begin_inset Formula $\prob{\numubar\rightarrow\numubar}$
+\end_inset
+
+ in vacuum occurs, it implies that the combined C, P and time (CPT) symmetry
  is violated
 \begin_inset Foot
 status collapsed
@@ -3739,15 +3748,14 @@ name "fig:Mass-eigenstate-components"
 status open
 
 \begin_layout Plain Layout
-Mass hierarchy Problem And MNSP Representation
+Neutrino Mass Hierarchy Problem and MNSP Representation
 \end_layout
 
 \end_inset
 
-Left: the mass hierarchy problem is such that while the solar and atmospheric
- mixing mass-squared differences are clearly defined, the absolute mass
- scale is unknown.
- Since 
+Neutrino mass hierarchy problem and MNSP representation.
+ Left: the mass hierarchy problem is shown.
+ 
 \family roman
 \series medium
 \shape up
@@ -3760,20 +3768,8 @@ Left: the mass hierarchy problem is such that while the solar and atmospheric
 \uwave off
 \noun off
 \color none
-
-\begin_inset Formula $m_{2}>m_{1}$
-\end_inset
-
- by definition, it is currently unknown if 
-\begin_inset Formula $m_{3}$
-\end_inset
-
- is more or less massive than 
-\begin_inset Formula $m_{2}$
-\end_inset
-
-, or even massless! Notice the colored bars for each mass eigenstate which
- corresponded to the approximate flavor content of the neutrino.
+The colored bars for each mass eigenstate correspond to the approximate
+ flavor content of the neutrino.
  For example, state 
 \begin_inset Quotes eld
 \end_inset
@@ -3827,8 +3823,8 @@ The previous subsection briefly explored the muon disappearance probability,
  which is not tested as a channel for CP violation.
  Electron neutrino appearance, however, does provide insight into CP violation
  in the lepton sector.
- The appearance probability of electron neutrinos types from muon types
- is given by
+ The appearance probability of electron neutrino types from muon neutrino
+ types is given by
 \begin_inset Formula 
 \begin{equation}
 \begin{aligned}\mathcal{P}\left(\nuantinuparticle{\mu}\rightarrow\nuantinuparticle e\right)= & 4\ccc{13}\sss{13}\sss{23}\sin^{2}\phi_{31}\\
@@ -3878,7 +3874,7 @@ literal "false"
 \end_inset
 
 .
- This oscillation channel are of primary importance in current and future
+ This oscillation channel is of primary importance in current and future
  proposed accelerator and atmospheric neutrino oscillation experiments.
 \end_layout
 
@@ -3916,12 +3912,12 @@ noprefix "false"
 \begin_inset Formula $m_{3}>m_{2}>m_{1}$
 \end_inset
 
-whereas the inverted hierarchy has 
+ whereas the inverted hierarchy has 
 \begin_inset Formula $m_{2}>m_{1}>m_{3}$
 \end_inset
 
 .
- Also knowledge if 
+ Also distinguishing if 
 \begin_inset Formula $\theta_{23}$
 \end_inset
 
@@ -3933,13 +3929,13 @@ whereas the inverted hierarchy has
 \begin_inset Formula $\theta\in(\nicefrac{\pi}{2},\nicefrac{\pi}{4})$
 \end_inset
 
- requires large statistics.
+ of the unit circle requires large statistics.
  Finally the value of 
 \begin_inset Formula $\deltacp$
 \end_inset
 
  is quite uncertain with values in the 3rd and 4th quadrants.
- Best fit measurements of the oscillations parameters is given in 
+ Best fit measurements of the oscillations parameters are given in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:mnspparameters"
@@ -3950,23 +3946,26 @@ noprefix "false"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement t
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="8" columns="4">
+<lyxtabular version="3" rows="7" columns="4">
 <features booktabs="true" tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top" width="0pt">
 <row>
-<cell multirow="3" alignment="center" valignment="middle" topline="true" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3977,7 +3976,7 @@ Parameter
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3988,7 +3987,7 @@ Normal Hierarchy
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3999,7 +3998,7 @@ Inverted Hierarchy
 
 \end_inset
 </cell>
-<cell multirow="3" alignment="center" valignment="middle" topline="true" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4011,54 +4010,12 @@ Units
 \end_inset
 </cell>
 </row>
-<row>
-<cell multirow="4" alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-value
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-value
-\end_layout
-
-\end_inset
-</cell>
-<cell multirow="4" alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
 <row topspace="default" bottomspace="default">
 <cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\Dm32=\Delta m_{\text{atm}}^{2}$
+\begin_inset Formula $\Dm 32$
 \end_inset
 
 
@@ -4108,7 +4065,7 @@ value
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\Dm21=\Delta m_{\text{sol}}^{2}$
+\begin_inset Formula $\Dm 21$
 \end_inset
 
 
@@ -4158,10 +4115,6 @@ value
 \begin_inset Formula $\sin^{2}\left(\theta_{21}\right)$
 \end_inset
 
-=
-\begin_inset Formula $\sin^{2}\left(\theta_{\text{sol}}\right)$
-\end_inset
-
 
 \end_layout
 
@@ -4198,7 +4151,7 @@ value
 \end_inset
 </cell>
 </row>
-<row topspace="default" bottomspace="default" interlinespace="default">
+<row bottomspace="default">
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
@@ -4206,8 +4159,19 @@ value
 \begin_inset Formula $\sin^{2}\left(\theta_{32}\right)$
 \end_inset
 
-=
-\begin_inset Formula $\sin^{2}\left(\theta_{\text{atm}}\right)$
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\begin{cases}
+0.417_{-0.028}^{+0.025} & \theta_{32}\in(0,\frac{\pi}{2})\\
+0.597_{-0.030}^{+0.024} & \theta_{32}\in(\frac{\pi}{2},\frac{\pi}{4})
+\end{cases}$
 \end_inset
 
 
@@ -4219,123 +4183,10 @@ value
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Tabular
-<lyxtabular version="3" rows="2" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top" width="0pt">
-<row topspace="default" bottomspace="default" interlinespace="default">
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-O1:
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $0.417_{-0.028}^{+0.025}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row topspace="default" bottomspace="default" interlinespace="default">
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-O2:
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $0.597_{-0.030}^{+0.024}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Tabular
-<lyxtabular version="3" rows="2" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top" width="0pt">
-<row topspace="default" bottomspace="default" interlinespace="default">
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-O1:
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $0.421_{-0.025}^{+0.033}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row topspace="default" bottomspace="default" interlinespace="default">
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-O2:
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $0.592_{-0.030}^{+0.023}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
+\begin_inset Formula $\begin{cases}
+0.421_{-0.025}^{+0.033} & \theta_{32}\in(0,\frac{\pi}{2})\\
+0.592_{-0.030}^{+0.023} & \theta_{32}\in(\frac{\pi}{2},\frac{\pi}{4})
+\end{cases}$
 \end_inset
 
 
@@ -4353,7 +4204,7 @@ O2:
 \end_inset
 </cell>
 </row>
-<row topspace="default" bottomspace="default" interlinespace="default">
+<row bottomspace="default">
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
@@ -4468,15 +4319,6 @@ Table of Best Fit MNSP Parameters Split by Normal and Inverted hierarchy
 \end_inset
 
 Table of best fit MNSP parameters split by normal and inverted hierarchy.
- O1 and O2 correspond to the first octant (
-\begin_inset Formula $\theta\in(0,\nicefrac{\pi}{2})$
-\end_inset
-
-) or second octant (
-\begin_inset Formula $\theta\in(\nicefrac{\pi}{2},\nicefrac{\pi}{4})$
-\end_inset
-
-).
  All values except for 
 \begin_inset Formula $\deltacp$
 \end_inset
@@ -4527,7 +4369,7 @@ name "subsubsec:Matter-Effects"
 
 \begin_layout Standard
 Traveling through matter has the potential to increase the sensitivity of
- oscillation measurements if the baseline is long enough.
+ neutrino oscillation measurements if the baseline is long enough.
  Known as the Mikheyev-Smirnov-Wolfenstein (MSW) effect 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -4592,20 +4434,17 @@ noprefix "false"
 where 
 \begin_inset Formula 
 \begin{equation}
-\alpha=2\sqrt{2}G_{F}n_{e}E_{\nu}\label{eq:alphaMSW}
+\alpha=2\sqrt{2}G_{F}n_{e}E_{\nu},\label{eq:alphaMSW}
 \end{equation}
 
 \end_inset
 
 and 
-\begin_inset Formula $G_{F}$
-\end_inset
-
- is the Fermi constant and 
 \begin_inset Formula $n_{e}$
 \end_inset
 
- is the average electron density of the Earth which the neutrinos travel
+ is the average electron density of the Earth through which the neutrinos
+ travel
 \begin_inset CommandInset citation
 LatexCommand cite
 key "PhysRevD.56.3093"
@@ -4646,7 +4485,15 @@ To conclude the introduction on neutrinos, it is important to examine the
  insight into the origins of the matter.
  CP violation dictates that certain interactions behave differently between
  matter or antimatter like 
-\begin_inset Formula $\mathcal{P}\left(\numu\rightarrow\nue\right)\neq\mathcal{P}\left(\antinumu\rightarrow\antinue\right)$
+\begin_inset Formula $\mathcal{P}\left(\numu\rightarrow\nue\right)$
+\end_inset
+
+
+\begin_inset Formula $\neq$
+\end_inset
+
+
+\begin_inset Formula $\mathcal{P}\left(\antinumu\rightarrow\antinue\right)$
 \end_inset
 
 .
@@ -4677,10 +4524,15 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Display of the matter and energy content of the Universe.
- The observed content is 4.5% of baryonic matter.
- The rest of the Universe consists of non-baryonic matter called Dark Matter
- and a form of energy called Dark Energy.
+The matter and energy content of the Universe.
+ The observable Universe contains about 4.5% of atoms (baryons and electrons)
+ and an estimated neutrino content less than 
+\begin_inset Formula $1.2$
+\end_inset
+
+%.
+ The rest of the Universe consists of Dark Matter at 22.4% and a form of
+ energy called Dark Energy at 71.9%.
  These inferred parameters are taken from the 
 \begin_inset Formula $\Lambda$
 \end_inset
@@ -4699,7 +4551,7 @@ literal "false"
 status open
 
 \begin_layout Plain Layout
-Display of the matter and energy content of the Universe
+The Matter and Energy Content of the Universe
 \end_layout
 
 \end_inset
@@ -4748,7 +4600,7 @@ literal "false"
 \begin_layout Standard
 The process of Baryogenesis
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Baryogenesis is the mechanism by which matter and antimatter baryons are
@@ -4857,9 +4709,9 @@ noprefix "false"
 .
  It is the successor experiment to the KEK-to-Kamioka neutrino oscillation
  experiment also hosted in Japan.
- T2K produces its high intensity, relatively pure muon neutrino beam at
- the Japan Proton Accelerator Complex (J-PARC), a world class particle accelerat
-or facility.
+ T2K produces a high intensity, relatively pure muon neutrino beam at the
+ Japan Proton Accelerator Complex (J-PARC) which is a world class particle
+ accelerator facility.
  The beam is directed at the Super-Kamiokande (SK)
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -4868,28 +4720,13 @@ literal "false"
 
 \end_inset
 
- detector which is 295 km away from the source.
- Along the beamline at 280m from the beam source are a series of near detectors
- called ND280
-\begin_inset CommandInset citation
-LatexCommand cite
-key "doi:10.1063/1.3274192"
-literal "false"
-
-\end_inset
-
- to observe and characterize the unoscillated beam.
- This thesis uses data from ND280 detector to test for increased sensitivity
- to beam characterization.
- The beam is designed to maximize the 
+ detector, which is 295 km away from the source.
+ Additionally, the beam is designed to maximize the 
 \begin_inset Formula $\numu\rightarrow\nue$
 \end_inset
 
- probability at the 
-\begin_inset Formula $L=$
-\end_inset
-
-295 km baseline using a neutrino energy spectrum sharply peaked at 
+ probability at the far detector 295 km baseline using a neutrino energy
+ spectrum sharply peaked at 
 \begin_inset Formula $\Enu=0.6$
 \end_inset
 
@@ -4903,9 +4740,24 @@ noprefix "false"
 
 \end_inset
 
-.
  This spectrum is achieved by directing the center of the beam axis 2.5 degrees
  off center from SK.
+ Along the beamline at 280 m from the beam source is the near detector facility
+ called ND280
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1063/1.3274192"
+literal "false"
+
+\end_inset
+
+.
+ The ND280 facility is designed to observe and characterize the unoscillated
+ neutrino beam.
+ There are two detectors at ND280: the primary, off-axis detector and on-axis
+ detector.
+ The measurement in this thesis uses data collected from the off-axis near
+ detector.
 \end_layout
 
 \begin_layout Standard
@@ -4935,13 +4787,13 @@ status open
 status open
 
 \begin_layout Plain Layout
-Birds eye view of the T2K experiment on the Japanese archipelago
+Birds Eye View of the T2K experiment on the Japanese Archipelago
 \end_layout
 
 \end_inset
 
 Birds eye view of the T2K experiment on the Japanese archipelago.
- An intense beam of neutrinos are produced at the J-PARC site (bottom right
+ An intense beam of neutrinos is produced at the J-PARC site (bottom right
  red box) using high energy protons.
  The beam is directed towards the Super-Kamiokande detector (top left blue
  box) at a distance of 295 km away from J-PARC.
@@ -4965,13 +4817,17 @@ name "fig:T2KBirdsEye"
 \end_layout
 
 \begin_layout Standard
-T2K was primarily designed to measure the last unknown MNSP mixing angle
- 
+The T2K experiment was primarily designed to measure the last unknown MNSP
+ mixing angle 
 \begin_inset Formula $\theta_{13}$
 \end_inset
 
-, which was thought to be nearly zero.
- In addition it set out to measure to high precision the atmospheric mixing
+, which was thought to be nearly zero, via the 
+\begin_inset Formula $\numu\rightarrow\nue$
+\end_inset
+
+ channel.
+ In addition it aims to make a precision measurement the atmospheric mixing
  parameters, 
 \begin_inset Formula $\theta_{23}$
 \end_inset
@@ -4980,16 +4836,20 @@ T2K was primarily designed to measure the last unknown MNSP mixing angle
 \begin_inset Formula $\Dm 23$
 \end_inset
 
-.
- One of its early successes was a landmark 7.3
+ via the 
+\begin_inset Formula $\numu\rightarrow\numu$
+\end_inset
+
+ channel.
+ An early landmark for the T2K experiment was a 7.3
 \begin_inset Formula $\sigma$
 \end_inset
 
- measurement of a non-zero 
+ measurement excluding non-zero 
 \begin_inset Formula $\theta_{13}$
 \end_inset
 
- using the electron-neutrino appearance measurement
+ in 2013
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Abe:2013hdq"
@@ -5028,7 +4888,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Figures/Introduction/OffAxisFluxUnoscillatedNumu.png
-	width 75text%
+	width 50text%
 
 \end_inset
 
@@ -5053,7 +4913,7 @@ The T2K unoscillated
 status open
 
 \begin_layout Plain Layout
-The T2K Unoscillated 
+The T2K Experiment Unoscillated 
 \begin_inset Formula $\numu$
 \end_inset
 
@@ -5116,7 +4976,7 @@ noprefix "false"
 
 \end_inset
 
- which highlights its different accelerators and facilities.
+ which highlights its accelerators and other facilities.
  For this section, note that all beam energies are kinetic energies.
 \end_layout
 
@@ -5132,7 +4992,7 @@ status open
 \begin_inset Graphics
 	filename Figures/Introduction/JPARCBirdsEye.png
 	lyxscale 50
-	width 75text%
+	width 50text%
 
 \end_inset
 
@@ -5158,7 +5018,7 @@ Bird's eye view of the J-PARC center showing the primary components of its
  (Linac, red) accelerates hydrogen ions (protons) into the 3 GeV Synchrotron
  (also red) called the rapid-cycle synchrotron (RCS).
  The RCS then injects some of its protons into the 50 GeV Synchrotron (yellow)
- called the main ring (MR) which currently runs at 30 GeV.
+ called the main ring (MR), which currently runs at 30 GeV.
  Finally the MR protons are directed into a target material along the neutrino
  beamline (teal)
 \begin_inset CommandInset citation
@@ -5197,8 +5057,7 @@ status collapsed
 \begin_layout Plain Layout
 A linear accelerator accelerates particles using time varying electric fields
  along a one direction, terminal beamline.
- Not only used in particle physics, they are also used in the medical field
- to generate X-rays.
+ Linear accelerators are also used in the medical field to generate X-rays.
 \begin_inset VSpace defskip
 \end_inset
 
@@ -5215,8 +5074,8 @@ status collapsed
 A synchrotron is cyclic particle accelerator that relies on time varying
  magnetic fields to accelerate particles.
  Since they require many magnets and large spaces to operate, they are usually
- operated at national laboratories for others uses as well like material
- and life sciences.
+ operated at national laboratories for others uses like material and life
+ sciences.
 \begin_inset VSpace defskip
 \end_inset
 
@@ -5230,7 +5089,7 @@ A synchrotron is cyclic particle accelerator that relies on time varying
 \begin_inset Formula $_{1}^{1}\text{H}^{-}$
 \end_inset
 
-) are extracted from plasma in a electrical discharge chamber and feed through
+) are extracted from plasma in a electrical discharge chamber and fed through
  a series of linac elements as shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -5242,14 +5101,14 @@ noprefix "false"
 \end_inset
 
 .
- Each linac element except for the initial quadrapole magnet apparatus accelerat
-es the ions using carefully coordinated oscillating electric fields generated
+ Each linac element, except for the initial quadrapole magnet, accelerates
+ the ions using carefully synchronized oscillating electric fields generated
  by radio frequency pulses.
- After traveling 240m along the linac, the ions have been boosted to 181
+ After traveling 240 m along the linac, the ions have been boosted to 181
  MeV of kinetic energy and transported into the RCS.
- In transit to the RCS, the ions are stripped of their electrons via charge
- stripping foils.
- The 348m circumference RCS then further boosts the protons to 3 GeV at
+ While in transit to the RCS, the ions are stripped of their electrons via
+ charge stripping foils.
+ The 348 m circumference RCS then further boosts the protons to 3 GeV at
  an operating frequency of 25 Hz.
  While being accelerated, protons are aggregated into two bunches and focused
  using particle collimators as shown in 
@@ -5653,7 +5512,7 @@ literal "false"
 status open
 
 \begin_layout Plain Layout
-The neutrino beamline at J-PARC
+The Neutrino Beamline at J-PARC
 \end_layout
 
 \end_inset
@@ -5680,7 +5539,7 @@ name "fig:JPARCNeutrinobeamline"
 
 \begin_layout Standard
 The neutrino beamline is designed to direct the protons toward SK and generate
- neutrinos by striking them on a cylindrical target.
+ neutrinos by striking them into the end of a cylindrical target.
  
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -5694,15 +5553,15 @@ noprefix "false"
  shows the process of proton extraction from the MR for both primary and
  secondary neutrino beamlines.
  In the primary beamline, a series of normal and superconducting magnets
- steer the proton beam away from the MR first along a 54m preparation section
- and then a 147m arc section to bend the beam towards SK.
+ steer the proton beam away from the MR first along a 54 m preparation section
+ and then a 147 m arc section to bend the beam towards SK.
  A final focusing section in the primary beamline focuses the protons into
  the secondary beam while directing it downwards 
 \begin_inset Formula $3.637\text{°}$
 \end_inset
 
  with respect to the local horizontal.
- Since a well tuned and stable proton beam is necessary for neutrino production,
+ Since a well-tuned and stable proton beam is necessary for neutrino production,
  numerous beam monitors are installed along the primary beamline to measure
  any losses.
 \end_layout
@@ -5832,8 +5691,7 @@ name "fig:JPARCTargetStationPhotos"
 
 \begin_layout Standard
 The secondary beamline marks the end of the proton beam and production of
- a neutrino beam.
- In the secondary beamline, as shown in 
+ a neutrino beam as shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:Secondary-beamline"
@@ -5843,20 +5701,21 @@ noprefix "false"
 
 \end_inset
 
-, it consists of a target station, a decay volume for the outgoing particles
+.
+ It consists of a target station, a decay volume for the outgoing particles
  from the target station, and a beam dump for any remaining particles.
- The target station houses a 91.4cm long, 2.6cm diameter, and 
-\begin_inset Formula $1.8\text{g/cm}^{3}$
+ The target station houses a 91.4 cm long, 2.6 cm diameter, and 
+\begin_inset Formula $1.8\text{ g/cm}^{3}$
 \end_inset
 
- graphite rod which corresponds to 1.9 radiation lengths.
+ graphite rod, which corresponds to 1.9 radiation lengths.
  When the protons strike the target, strong (nuclear) interactions produce
  pi(
 \begin_inset Formula $\pi$
 \end_inset
 
-)-mesons (pions) and K-mesons (kaons).
- like those produced from cosmic ray collisions in the upper atmosphere.
+)-mesons (pions) and K-mesons (kaons) like those produced from cosmic ray
+ collisions in the upper atmosphere.
  To enhance the flux of neutrinos, a series of three current pulsed, focusing
  magnets called horns
 \begin_inset Foot
@@ -5896,9 +5755,9 @@ noprefix "false"
 \end_inset
 
 .
- The horns are pulsed at +250kA (-250kA) to select positively (negatively)
+ The horns are pulsed at +250 kA (-250 kA) to select positively (negatively)
  charged pions.
- The focused pions are allowed to decay along the 96m long decay volume
+ The focused pions are allowed to decay along the 96 m long decay volume
  as to boost the daughter neutrinos along the secondary beamline direction.
  For safety reasons, the decay volume is filled with gaseous helium at 1
  atm of pressure which has a low pion absorption rate.
@@ -5933,8 +5792,6 @@ status open
 \begin_layout Plain Layout
 T2K accumulated protons on target since 2010 shows a steady increase in
  beam power over time.
- The gap between Run2 and Run3 is due to the damage suffered at J-PARC after
- the 2011 Tōhoku earthquake.
 \begin_inset Argument 1
 status open
 

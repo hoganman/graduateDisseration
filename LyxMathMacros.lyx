@@ -103,8 +103,7 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\nuantinuparticle}[1]{^{{\scriptscriptstyle ({\scriptstyle -}}}\negmedspace\negmedspace\nu_{#1}^{{\scriptscriptstyle )}}}
-{\stackrel{(-)}{\nu}_{#1}}
+\newcommand{\nuantinuparticle}[1]{\stackrel{(-)}{\nu}_{#1}}
 \end_inset
 
 

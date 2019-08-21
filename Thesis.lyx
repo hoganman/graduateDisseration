@@ -490,6 +490,39 @@ mainmatter % Main (arabic numbered) pages
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+let
+\backslash
+realref=
+\backslash
+ref
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+def
+\backslash
+ref{
+\backslash
+unskip~
+\backslash
+realref}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Branch Introduction
 inverted 0
 status open
