@@ -4600,7 +4600,7 @@ literal "false"
 \begin_layout Standard
 The process of Baryogenesis
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Baryogenesis is the mechanism by which matter and antimatter baryons are
@@ -4665,6 +4665,30 @@ literal "false"
 .
 \end_layout
 
+\begin_layout Subsection
+Long-Baseline Neutrino Oscillation Experiments
+\end_layout
+
+\begin_layout Standard
+The KEK to Kamioka (K2K) experiment was the first neutrino oscillation experimen
+t where researchers controlled the production and observation of neutrinos.
+ In K2K, a beam of muon neutrinos were directed from the high energy proton
+ synchotron at KEK to the Kamioka Observatory at a distance of 250 km.
+ While travelling through the Earth, the neutrinos oscillate as explained
+ in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Three-Flavor-Oscillations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ before they are observed at Kamioka.
+ 
+\end_layout
+
 \end_inset
 
 
@@ -4687,7 +4711,7 @@ name "sec:T2KExperiment"
 \end_layout
 
 \begin_layout Standard
-The Tokai to Kamioka (T2K) experiment is a long baseline, neutrino oscillation
+The Tokai to Kamioka (T2K) experiment is a long-baseline, neutrino oscillation
  experiment hosted in Japan
 \begin_inset CommandInset citation
 LatexCommand cite
