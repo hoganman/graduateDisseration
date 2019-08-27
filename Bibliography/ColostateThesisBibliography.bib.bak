@@ -2425,6 +2425,16 @@
   Timestamp                = {2019.01.13}
 }
 
+@PhdThesis{Schwehr2018,
+  Title                    = {Measurement of the Differential Charged Current Single Pion Cross Section Using the Muon Momentum and Muon Angle In the Pi Zero Detector of the T2K Experiment},
+  Author                   = {Jaclyn Schwehr},
+  School                   = {Colorado State University, Fort Collins, Colorado},
+  Year                     = {2018},
+
+  Owner                    = {mhogan},
+  Timestamp                = {2019.07.19}
+}
+
 @Article{SEKIGUCHI201557,
   Title                    = {Development and operational experience of magnetic horn system for T2{K} experiment},
   Author                   = {T. Sekiguchi and others},

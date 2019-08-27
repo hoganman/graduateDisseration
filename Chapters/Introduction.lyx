@@ -253,7 +253,7 @@ little neutral one
 
 \begin_layout Standard
 The neutrino was first observed in 1953 by Clyde Cowan and Frederick Reines
- using a nuclear reactor in South Carolina, U.S.A.
+ using a nuclear reactor in South Carolina, United States of America.
  Since then three types or 
 \begin_inset Quotes eld
 \end_inset
@@ -4672,21 +4672,65 @@ Long-Baseline Neutrino Oscillation Experiments
 \begin_layout Standard
 The KEK to Kamioka (K2K) experiment was the first neutrino oscillation experimen
 t where researchers controlled the production and observation of neutrinos.
- In K2K, a beam of muon neutrinos were directed from the high energy proton
- synchotron at KEK to the Kamioka Observatory at a distance of 250 km.
- While travelling through the Earth, the neutrinos oscillate as explained
- in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "subsec:Three-Flavor-Oscillations"
-plural "false"
-caps "false"
-noprefix "false"
+ In K2K, a beam of muon neutrinos were directed from the 12 GeV proton synchotro
+n at KEK to the Kamioka Observatory at a distance of 250 km.
+ While travelling through the Earth, the neutrinos oscillate before they
+ are observed at Kamioka.
+ Prior to K2K, neutrino sources included the atmosphere, the Sun, and one
+ supernova.
+\end_layout
+
+\begin_layout Standard
+The K2K experiment established the experimental methods for current and
+ planned next generation long-baseline neutrino oscillation experiments
+ from accelerators.
+ The accelerator neutrinos are produced when a high energy proton beam hits
+ a target.
+ The secondary particles are then forward focused using electrically pulsed
+ magnets and allowed to decay in a large decay volume.
+ This procedure produces a highly pure muon neutrino beam with order 1%
+ electron neutrino contamination.
+ Prior to any oscillations, a 
+\begin_inset Quotes eld
+\end_inset
+
+near
+\begin_inset Quotes erd
+\end_inset
+
+ detector is used to measure the neutrino flux as function of neutrino energy
+ and study detector systematic uncertainties associated at the 
+\begin_inset Quotes eld
+\end_inset
+
+far
+\begin_inset Quotes erd
+\end_inset
+
+ detector at Kamioka.
+ The successor experiment to K2K called Tokai to Kamioka (T2K), closely
+ followed this design methodology.
+ Other notable accelerator-based long-baseline experiments include MINOS
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Zuber2012"
+literal "false"
 
 \end_inset
 
- before they are observed at Kamioka.
- 
+ and NO
+\begin_inset Formula $\nu$
+\end_inset
+
+A
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevD.98.032012"
+literal "false"
+
+\end_inset
+
+, both in the United States.
 \end_layout
 
 \end_inset
@@ -4731,11 +4775,11 @@ noprefix "false"
 \end_inset
 
 .
- It is the successor experiment to the KEK-to-Kamioka neutrino oscillation
- experiment also hosted in Japan.
- T2K produces a high intensity, relatively pure muon neutrino beam at the
- Japan Proton Accelerator Complex (J-PARC) which is a world class particle
- accelerator facility.
+ It is the successor experiment to the K2K neutrino oscillation experiment
+ also hosted in Japan.
+ The T2K experiment produces a high intensity, relatively pure muon neutrino
+ beam at the Japan Proton Accelerator Complex (J-PARC) which is a world
+ class particle accelerator facility.
  The beam is directed at the Super-Kamiokande (SK)
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -4749,8 +4793,11 @@ literal "false"
 \begin_inset Formula $\numu\rightarrow\nue$
 \end_inset
 
- probability at the far detector 295 km baseline using a neutrino energy
- spectrum sharply peaked at 
+ probability at the far detector 
+\begin_inset Formula $L=$
+\end_inset
+
+295 km baseline using a neutrino energy spectrum sharply peaked at 
 \begin_inset Formula $\Enu=0.6$
 \end_inset
 
@@ -4775,7 +4822,7 @@ literal "false"
 
 \end_inset
 
-.
+, whose data is used in thesis.
  The ND280 facility is designed to observe and characterize the unoscillated
  neutrino beam.
  There are two detectors at ND280: the primary, off-axis detector and on-axis
@@ -4912,7 +4959,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Figures/Introduction/OffAxisFluxUnoscillatedNumu.png
-	width 50text%
+	width 40text%
 
 \end_inset
 
@@ -5781,15 +5828,13 @@ noprefix "false"
 .
  The horns are pulsed at +250 kA (-250 kA) to select positively (negatively)
  charged pions.
- The focused pions are allowed to decay along the 96 m long decay volume
- as to boost the daughter neutrinos along the secondary beamline direction.
+ The focused pions then decay in the 96 m long decay volume creating a neutrino
+ beam boosted along the secondary beamline direction.
  For safety reasons, the decay volume is filled with gaseous helium at 1
  atm of pressure which has a low pion absorption rate.
- The daughter particles in the decay volume should be mostly muons and muon-neut
-rinos traveling towards SK.
  A beam dump is placed at the end of the decay volume to stop particles
- that have not yet decayed to prevent uncontrolled for decay products from
- contaminating the beam.
+ like muons that have not yet decayed from contaminating the beam with their
+ decay neutrinos.
 \end_layout
 
 \begin_layout Standard
@@ -5846,15 +5891,15 @@ name "fig:T2K-accumulated-POT"
 \end_layout
 
 \begin_layout Standard
-Along both beamlines are numerous monitors and timing systems to observe
- the proton beam to ensure stable production of neutrinos.
+Along both beamlines are numerous monitors and timing systems to ensure
+ stable production of neutrinos.
  Proton beam monitors are placed along the primary beamline to ensure the
  proton beam is properly steered into the secondary beamline.
  An optical transition radiation monitor is situated around the target to
  observe any protons not intersecting with the target region itself.
  The last monitor along the secondary beamline is the a muon monitor (MUMON),
- which is placed downstream of the beam dump to observe the daughter muons
- of 
+ which is placed downstream of the beam dump to characterize the flux of
+ daughter muons of 
 \begin_inset Formula $>5\text{ GeV/c}$
 \end_inset
 
@@ -5872,21 +5917,21 @@ literal "false"
 \begin_layout Standard
 In order to provide timing information for the neutrino beam at SK, a global
  positioning system (GPS) is used to synchronize clocks at SK and J-PARC.
- Any event outside the beam timing window are rejected in the T2K oscillation
+ Any event outside the beam timing window is rejected in the T2K oscillation
  analysis, and so having precise timing information for the neutrino beam
  is critical for the experiment.
- The GPS has an internal accuracy of 50ns, or about 
-\begin_inset Formula $\sim150\text{m}$
+ The GPS has an internal accuracy of 50 ns, or about 
+\begin_inset Formula $\sim150$
 \end_inset
 
- assuming the neutrinos are traveling near the speed of light.
- This is well within the time it takes for any neutrino to travel the 295
+ m assuming that the neutrinos are traveling near the speed of light.
+ This is well within the time it takes for a neutrino to travel the 295
  km between J-PARC and SK.
 \end_layout
 
 \begin_layout Standard
-J-PARC continues to improve the proton delivery and neutrino modes since
- T2K begin in 2010.
+J-PARC continues to improve the proton delivery and neutrino flux intensity
+ since T2K begin in 2010.
  T2K has run in two horn current modes: 
 \begin_inset Formula $\nu$
 \end_inset
@@ -5900,7 +5945,7 @@ J-PARC continues to improve the proton delivery and neutrino modes since
  horn current (FHC) mode.
  Similarly, using -250 kA horn current is called reverse horn current (RHC)
  mode.
- The aggregate running of T2K for both FHC and RHC modes are shown in 
+ The aggregate running of T2K for both FHC and RHC modes is shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:T2K-accumulated-POT"
@@ -5922,7 +5967,7 @@ s observed at SK.
 \end_inset
 
  kA is the preferred horn current in both FHC and RHC modes, the horns were
- run briefly at +205kA when operations resumed after 2011 Tōhoku earthquake.
+ run briefly at +205 kA when operations resumed after 2011 Tōhoku earthquake.
 \end_layout
 
 \end_inset
