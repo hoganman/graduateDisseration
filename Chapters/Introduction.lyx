@@ -5986,14 +5986,14 @@ Neutrino Near Detectors: ND280
 
 \begin_layout Standard
 T2K has a near detector (ND) site at J-PARC that is designed specifically
- observe the neutrinos in flight aimed at Super-K.
- The purpose of a ND site is to 
+ to observe the neutrino beam in flight aimed at Super-K.
+ The primary purpose of a ND site is to 
 \shape italic
 constrain the neutrino flux and interaction rate
 \shape default
- at SK in order to reduce the impact of their systematic uncertainties in
+ at SK in order to reduce the impact of their systematic uncertainties on
  the oscillation analysis.
- The analysis in this thesis uses the data provided by the off-axis ND.
+ The analysis in this thesis uses the data collected by the off-axis ND.
  The site is called ND280 and is located 280m away from the production target.
  The primary detector is an off-axis, magnetized tracking detector consisting
  of different subdetectors.
@@ -6020,136 +6020,12 @@ The following subsections begin with a description of the MPPC technology
 \end_layout
 
 \begin_layout Standard
-From here on unless specified, INGRID will refer only to the on-axis ND
+From here on, unless specified, INGRID will refer only to the on-axis ND
  and ND280 will refer only to off-axis ND.
 \end_layout
 
 \begin_layout Subsubsection
-Multi-pixel photon counter (MPPC)
-\end_layout
-
-\begin_layout Standard
-While the reliable photo-multiplier tube (PMT) technology was used in previous
- scintillator-based detectors, T2K needed a different technology to work
- in the strong magnetic field environment.
- T2K selected a commercially available silicon photomultiplier sensor developed
- by the Hamamatsu corporation called a MPPC.
- A MPPC is a compact device containing many sensitive avalanche photodiode
- pixels that act as Geiger micro-counters.
- They are well matched with the spectral emission of wavelength-shifting
- (WLS) fibers used to collect the scintillator light in ND280 and operate
- in a strong magnetic field environment.
- T2K utilizes specialized 667-pixel MPPCs with an effective area of 
-\begin_inset Formula $1.3\text{ mm}\times1.3\text{ mm}$
-\end_inset
-
- as shown in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:T2KMPPC"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/Introduction/MPPC.png
-	width 75text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Photographs of the specially designed MPPC used in T2K.
- A magnified face view is shown on the left with an entire unit shown on
- the right
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Abe:2011ks"
-literal "false"
-
-\end_inset
-
-.
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Photographs of the T2K MPPC
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:T2KMPPC"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
 On-Axis Detector
-\end_layout
-
-\begin_layout Standard
-The on-axis near detector called the Interactive Neutrino Grid (INGRID)
- is a tracking scintillator detector designed to directly measure the neutrino
- beam profile.
- As shown in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:INGRID"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-, it is a cross grid of tracking modules centered at the designed neutrino
- beam center (
-\begin_inset Formula $\theta=0$
-\end_inset
-
-).
- Each module consists of alternating layers of iron plates and scintillator
- bars except for the two most downstream scintillating layers which lack
- iron plates.
- To monitor any beam asymmetry, two separate modules are placed off the
- grid axis.
 \end_layout
 
 \begin_layout Standard
@@ -6224,12 +6100,54 @@ Schematic of INGRID
 \end_layout
 
 \begin_layout Standard
+The on-axis near detector called the Interactive Neutrino Grid (INGRID)
+ is a tracking scintillator detector designed to directly measure the neutrino
+ beam profile.
+ As shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:INGRID"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, it is a cross grid of tracking modules centered at the designed neutrino
+ beam center (
+\begin_inset Formula $\theta=0$
+\end_inset
+
+).
+ Each module consists of alternating layers of iron plates and scintillator
+ bars except for the two most downstream scintillating layers which lack
+ iron plates.
+ To monitor any beam asymmetry, two separate modules are placed off the
+ grid axis.
+\end_layout
+
+\begin_layout Standard
 Each scintillating bar consists of scintillator-doped polystyrene which
  emits light when a charged particle deposits energy in the media.
  Each bar contains a single wavelength-shifting (WLS) fiber to collect and
  shift the light to a different energy.
- The light is collected at a single MPPC device and converted into an electrical
- signal.
+ The light from the fiber is then collected using a device called a multipixel
+ photon counter (MPPC) and converted into an electrical signal.
+ A MPPC is a compact device containing many sensitive avalanche photodiode
+ pixels that act as Geiger micro-counters as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:T2KMPPC"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ The MPPCs are well matched with the spectral emission of the WSL fibers
+ and operate in a strong magnetic fields, unlike traditional photomultiplier
+ tubes.
  In order to enhance the collection efficiency, a reflective 
 \begin_inset ERT
 status open
@@ -6246,6 +6164,101 @@ ce{TiO_2}
  doped polystyrene shell surrounds each bar.
  Bars are assembled into planes to provide tracking capabilities.
  Veto planes also surround each module to prevent false signals to trigger.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/MPPC.png
+	width 75text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Photographs of the specially designed MPPC used in T2K.
+ A magnified face view is shown on the left with an entire unit shown on
+ the right.
+ T2K utilizes specialized 667-pixel MPPCs with an effective area of 
+\begin_inset Formula $1.3\text{ mm}\times1.3\text{ mm}$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abe:2011ks"
+literal "false"
+
+\end_inset
+
+.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Photographs of the T2K MPPC
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:T2KMPPC"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+INGRID is continuously operated to check that the neutrino beam center was
+ properly aligned at its designed center.
+ Diagnostic plots such as 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:INGRIDBeamProfile"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ are collected on a monthly basis to ensure that the neutrino flux at Super-Kami
+okande (SK) is consistent with T2K's design.
+ A history of the beam profile and event rate on INGRID between January
+ 2010 and October 2016 is shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:INGRIDBeamProfileHistory"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -6311,35 +6324,6 @@ INGRID Beam Profile
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-INGRID is continuously operated to check that the neutrino beam center was
- properly aligned at its designed center.
- Diagnostic plots such as 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:INGRIDBeamProfile"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- are collected on a monthly basis to ensure that the neutrino flux at Super-Kami
-okande (SK) is consistent with T2K's design.
- A history of the beam profile and event rate on INGRID between January
- 2010 and October 2016 is shown in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:INGRIDBeamProfileHistory"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Standard

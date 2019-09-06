@@ -1,0 +1,492 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ../csuthesisLyx
+\begin_preamble
+% ams math packages
+\usepackage[cmex10]{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+% graphics packages
+\usepackage{graphicx} % remove pdftex if you are not compiling to pdf
+%\graphicspath{{./figures/}} % this places all graphics in the figures subdirectory
+
+% allowed graphics extensions
+% uncomment if you prefer to add extension in \includegraphics
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+
+% allows the creation of subfigures
+\usepackage[caption=false]{subfig}
+
+% book tables are simple and look nice
+\usepackage{booktabs}
+
+% for specifying urls and links
+\usepackage{url}
+\urlstyle{same} % same style as regular text
+
+% for defining colors
+\usepackage{xcolor}
+
+%\usepackage[labelformat=empty]{caption}
+%\usepackage{subcaption}
+\usepackage{lmodern}
+\usepackage{csquotes}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{hepunits}
+\usepackage{hepnames}
+\usepackage{physics}
+
+\usepackage[%
+  pdfpagelabels,
+  pdfusetitle,
+  %hidelinks,
+  %colorlinks=true,
+  %pdfborder={0 0 0},
+  linkcolor=blue,
+  filecolor=magenta,
+  urlcolor=cyan,
+  pagebackref,
+  bookmarksopen,
+  bookmarksnumbered]{hyperref}
+
+\usepackage{sectsty}
+\chapterfont{\centering}
+
+\usepackage{braket}
+\end_preamble
+\options doctor
+\use_default_options true
+\master ../Thesis.lyx
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "palatino" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format pdf2
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\pdf_title "HoganThesis"
+\pdf_author "Matthew Hogan"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize letterpaper
+\use_geometry true
+\use_package amsmath 0
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 0
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\branch Introduction
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+Prior to the work on the near detector constraint, I participated in the
+ 
+\begin_inset Formula $\pod$
+\end_inset
+
+ 
+\begin_inset Formula $\numu$
+\end_inset
+
+ CC-
+\begin_inset Formula $1\pi$
+\end_inset
+
+ cross section on water analysis.
+ This was a second generation analysis designed to make significant improvements
+ to the first generation analysis, which was a single bin measurement
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Assylbekov2014"
+literal "false"
+
+\end_inset
+
+.
+ The primary goal of the analysis was to provide a differential measurement
+ in muon kinematics.
+ The challenges now were to identify the muon and pion while measuring their
+ respective momenta.
+ The results of the analysis are given in the following thesis
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Schwehr2016"
+literal "false"
+
+\end_inset
+
+ and a publication is in preparation.
+\end_layout
+
+\begin_layout Standard
+My primary contributions to the analysis included developing the particle
+ identification (PID) tools and momentum calibration for muon and pion.
+ Machine learning based selection cuts were added in the analysis chain
+ that were exclusively designed to exploit the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ local reconstruction since the ND280 global reconstruction was not available
+ during development.
+ These selection cuts provided the means to make PID cuts to select only
+ one muon and one pion in a two track event.
+ To provide a differential cross section measurement in the muon kinematics,
+ a momentum measurement was also developed and calibrated for the analysis.
+\end_layout
+
+\begin_layout Standard
+The first section describes my contributions to the development of the machine
+ learning PID tools.
+ The second section includes the description of the momentum measurement
+ and calibration method.
+\end_layout
+
+\begin_layout Section
+Particle Identification Tools
+\end_layout
+
+\begin_layout Standard
+Since there are no particle identification (PID) tools in the local 
+\begin_inset Formula $\pod$
+\end_inset
+
+ reconstruction, the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ CC-
+\begin_inset Formula $1\pi$
+\end_inset
+
+ analysis developed a unique set of tools were designed specifically to
+ select muon and pion tracks.
+ The approach taken by this analysis was to use machine learning techniques
+ for event selection and PID for each track.
+ Only reconstructed topological information were used to minimize interaction
+ vertex model and detector model dependencies.
+\end_layout
+
+\begin_layout Standard
+Machine learning is a rapidly developing field of study in which a computer
+ system can perform a certain task without explicit instructions.
+ For classification based problems, the goal is to assign two or more labels
+ to a set of input vectors.
+ Training a classifier requires a sample of pre-classified data to determine
+ which attributes of each datum can be used to best separate data of unknown
+ classification.
+ Unclassified data are then assigned a classification based on their position
+ in attribute space.
+ The specific machine learning technique used in this analysis is a random
+ forest method called Boosted Decision Tree (BDT), one of many available
+ in the ROOT Toolkit for Multivariate Analysis (TMVA) package
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hocker:2007ht"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The inputs for the BDTs were developed from topological track information
+ in both the longitudinal and transverse directions of 
+\begin_inset Formula $\pod$
+\end_inset
+
+ tracks.
+ A traditional longitudinal track measurement is the mean energy deposition
+ in a tracking calorimeter or TPC, or traditionally called the 
+\begin_inset Quotes eld
+\end_inset
+
+dE/dx
+\begin_inset Quotes erd
+\end_inset
+
+ of the track.
+ The idea behind using topological information is that it minimizes neutrino
+ interaction model in the monte carlo and is a direct observable.
+ This should also eliminate the detector model dependence assuming the detector
+ systematics have been studied sufficiently with control samples.
+ The inputs I developed for the BDTs were motivated from the work done at
+ MINOS to select tracks using machine learning classifiers
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Yang2009"
+literal "false"
+
+\end_inset
+
+.
+ Many of the input features provided discriminating power for minimizing
+ ionizing particle (MIP) tracks from other particles like protons and electrons.
+ Examples of the longitudinal and transverse topological features I developed
+ are shown in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+Figure~
+\backslash
+ref{fig:Topological-track-features}
+\end_layout
+
+\end_inset
+
+.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/P0DCC1pi/YZMeandEdx_k_byPDG.png
+	lyxscale 50
+	width 48text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Figures/P0DCC1pi/YZMeandEdx_k_mipOver.png
+	lyxscale 50
+	width 48text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Longitudinal feature
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/P0DCC1pi/XZTransverseFWHMOverQmax_k_byPDG.png
+	lyxscale 50
+	width 48text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Figures/P0DCC1pi/XZTransverseFWHMOverQmax_k_mipOver.png
+	lyxscale 50
+	width 48text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Transverse feature
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Topological track features developed for the machine learning classifier
+ cuts.
+ The top figure shows a longitudinal feature and the bottom shows a transverse
+ feature.
+ The left figures categorize tracks by their particle species while the
+ right figures consider MIP and not-MIP distinctions.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Topological Features Developed for CC-
+\begin_inset Formula $1\pi$
+\end_inset
+
+ Analysis
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Topological-track-features"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The CC-
+\begin_inset Formula $1\pi$
+\end_inset
+
+ analysis used two BDTs in sequence to make event selections.
+ The first classifier provided a continuous discriminator to classify tracks
+ as MIP-like or not.
+ Selected events are those that have two MIP tracks.
+ The second BDT classifier selects which track is the muon and pion.
+ In developing the BDT classifiers, variable ranking studies along with
+ cross validation were performed to identify the best input vectors of features.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "momentumCorrection.tex"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

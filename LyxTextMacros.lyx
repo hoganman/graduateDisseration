@@ -84,6 +84,23 @@
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+text{P}
+\backslash
+text{Ø}
+\backslash
+text{D}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -124,6 +141,21 @@ status open
 newcommand{
 \backslash
 trw}{T2KReWeight}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+podtext}{
+\backslash
+text{P}
+\backslash
+text{Ø}
+\backslash
+text{D}}
 \end_layout
 
 \begin_layout Plain Layout
@@ -281,6 +313,19 @@ newcommand{
 podtitle}{
 \backslash
 texorpdfstring{PØD}{P0D}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+pititle}{
+\backslash
+texorpdfstring{$
+\backslash
+pi$}{Pi}}
 \end_layout
 
 \end_inset

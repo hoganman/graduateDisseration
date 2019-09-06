@@ -773,6 +773,59 @@ options "ColostateThesisBibStylePlain"
 
 \begin_layout Standard
 \start_of_appendix
+\begin_inset Branch AppendixObsnorm
+inverted 0
+status open
+
+\begin_layout Chapter
+Contributions to the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+podtitle{}
+\end_layout
+
+\end_inset
+
+ CC-1
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pititle{}
+\end_layout
+
+\end_inset
+
+ Analysis
+\begin_inset CommandInset label
+LatexCommand label
+name "app:podcc1pi"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "Appendices/P0DCC1pi.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 
 \end_layout
 

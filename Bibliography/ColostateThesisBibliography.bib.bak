@@ -181,7 +181,7 @@
 }
 
 @Article{Abe2015c,
-  Title                    = {Measurements of neutrino oscillation in appearance and disappearance channels by the T2{K} experiment with $6.6\ifmmode\times\else\texttimes\fi{}1{0}^{20}$ protons on target},
+  Title                    = {Measurements of neutrino oscillation in appearance and disappearance channels by the T2K experiment with $6.6\ifmmode\times\else\texttimes\fi{}1{0}^{20}$ protons on target},
   Author                   = {Abe, K. and Others},
   Journal                  = {Phys. Rev. D},
   Year                     = {2015},
@@ -411,6 +411,24 @@
   Eprint                   = {1405.4261},
   Primaryclass             = {nucl-ex},
   Slaccitation             = {%%CITATION = ARXIV:1405.4261;%%}
+}
+
+@Article{PhysRevD.98.032012,
+  Title                    = {New constraints on oscillation parameters from ${\ensuremath{\nu}}_{e}$ appearance and ${\ensuremath{\nu}}_{\ensuremath{\mu}}$ disappearance in the NOvA experiment},
+  Author                   = {Acero, M. A. and Others},
+  Journal                  = {Phys. Rev. D},
+  Year                     = {2018},
+
+  Month                    = {Aug},
+  Pages                    = {032012},
+  Volume                   = {98},
+
+  Collaboration            = {NOvA Collaboration},
+  Doi                      = {10.1103/PhysRevD.98.032012},
+  Issue                    = {3},
+  Numpages                 = {16},
+  Publisher                = {American Physical Society},
+  Url                      = {https://link.aps.org/doi/10.1103/PhysRevD.98.032012}
 }
 
 @Article{Adams:2013qkq,
@@ -733,6 +751,17 @@
   Eprint                   = {hep-ex/0406035},
   Primaryclass             = {hep-ex},
   Slaccitation             = {%%CITATION = HEP-EX/0406035;%%}
+}
+
+@PhdThesis{Assylbekov2014,
+  Title                    = {Measurement of $\nu_\mu$-induced charged-current single $\pi^{+}$ production on H20},
+  Author                   = {Assylbekov, S.},
+  School                   = {Colorado State University, Fort Collins},
+  Year                     = {2014},
+
+  Owner                    = {mhogan},
+  Timestamp                = {2019.09.05},
+  Url                      = {http://hdl.handle.net/10217/167110}
 }
 
 @Article{Assylbekov:2011sh,
@@ -1716,6 +1745,15 @@
   Year                     = {2011}
 }
 
+@Article{Hocker:2007ht,
+  Title                    = {TMVA: Toolkit for Multivariate Data Analysis},
+  Author                   = {Hoecker, A. and Others},
+  Journal                  = {PoS},
+  Year                     = {2007},
+  Pages                    = {040},
+  Volume                   = {ACAT}
+}
+
 @InProceedings{Igarashi:2016wyi,
   Title                    = {Recent Progress of J-PARC MR Beam Commissioning and
  Operation},
@@ -2433,6 +2471,17 @@
 
   Owner                    = {mhogan},
   Timestamp                = {2019.07.19}
+}
+
+@PhdThesis{Schwehr2016,
+  Title                    = {Measurement of the Differential Charged Current Single Pion Cross Section Using Muon Momentum and Muon Angle in the Pi-Zero Detector of the T2K Experiment},
+  Author                   = {Schwehr, J.},
+  School                   = {Colorado State University, Fort Collins},
+  Year                     = {2016},
+
+  Owner                    = {mhogan},
+  Timestamp                = {2019.09.05},
+  Url                      = {https://hdl.handle.net/10217/189398}
 }
 
 @Article{SEKIGUCHI201557,
