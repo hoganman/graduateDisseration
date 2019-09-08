@@ -14,7 +14,8 @@ track exited the \podtext{}. (For this discussion the downstream ECal is
 considered to be part of the \podtext{}, and the difference in areal density
 is taken into consideration.) Events with tracks that exit the \podtext{}
 but do not enter TPC1 (do not have a matched track in TPC1) are
-excluded from the analysis.\\
+excluded from the analysis.
+
 
 Relativistic particles will generally deposit energy as Minimum
 Ionizing Particles (MIPs) as characterized by the Bethe-Bloch curve in~(\ref{eqn:bethebloch})
@@ -43,9 +44,7 @@ particle's momentum in the \podtext{}, was initially developed to estimate
 the kinetic energy of protons fully contained in the \podtext{}. The MT
 estimated the proton's momentum by summing up the assumed ionization
 energy loss in each material traversed over the range of the track in
-the \podtext{}. A table of the areal densities for the different \podtext{}
-regions and their respective materials is given in
-Table~\ref{tab:arealdensities}. Stopping power data for different materials
+the \podtext{}. Stopping power data for different materials
 came from the NIST PSTAR catalog as a function of kinetic
 energy. The MT was extended to
 measurements of muon and pion momenta for tracks originating in the
@@ -67,7 +66,8 @@ The starting kinetic energy for the MT is given by (\ref{eqn:initialKinE}),
 pion. The starting kinetic energy $\epsilon$ for muons and pions is 30
 MeV and for protons is 50 MeV. A study showed that the resulting momentum
 distributions for the muon and pion did not change when using a starting point smaller than
-30 MeV. \\
+30 MeV.
+
 
 The MT steps through the \podtext{} along the path defined by a collection of track-nodes.
 A track-node is a collection of time-correlated hits inside active material
@@ -85,45 +85,10 @@ loss for each material traversed in the following manner,
 
 \noindent{}where the index ``mat'' represents each material in the path,
 $\rho_{A}$ is the areal density, and $\Delta\rho_{A}$ is a
-small step of 0.05 gram/cm$^2$ in areal density. The
-various materials inside the \podtext{} and the areal densities of each material
-are tabulated in Table~\ref{tab:arealdensities}. Each $\Delta~\rho_{A}$ step in $dT/d\rho_{A}$ is
+small step of 0.05 gram/cm$^2$ in areal density. Each $\Delta\rho_{A}$ step in $dT/d\rho_{A}$ is
 evaluated at the point $\beta\gamma$ $= {(\beta\gamma)}_0 +
 \Delta(\beta\gamma)/2$ where ${(\beta\gamma)}_0$ is the value of $\beta\gamma$
-for a single particle of kinetic energy $T$ and $\Delta(\beta\gamma)$ is the
-value of $\beta\gamma$ for a particle of kinetic energy $\Delta T$.
-The term $\Delta(\beta\gamma)/2$ is a density correction term as seen
-in~(\ref{eqn:bethebloch}). The conversion from $T$ to $\beta\gamma$ is given by,
-
-\begin{align}\label{eqn:betagammaenergyconversion}
-    \beta\gamma &= \sqrt{{\left(\frac{T}{M c^2}+1\right)}^{2}-1}\text{.}
-\end{align}
-
-\begin{table}[h!]
-    \centering
-    \begin{tabular}{lcc}
-	\multicolumn{3}{c}{\podtext{} Areal Densities} \\
-        \toprule
-        P0D Region & Material & Areal density [g/cm$^2$] \\
-        \midrule
-        \podule{} Skin & Polystyrene & 0.144 \\
-        Brass radiator & Copper & 1.088 \\
-        Glue & Epoxy & 0.034 \\
-        Water target boundary & HDPE & 0.597 \\
-        Water Bag & HDPE & 3.23 $\times 10^{-4}$ \\
-        ECal radiator & Lead & 3.924 \\
-        ECal radiator skin & Steel & 0.36 \\
-        Water target & Water & 2.733 \\
-        Scintillator doped plastic & Polystyrene & 1.72 \\
-        \bottomrule
-    \end{tabular}
-    \caption[\podtext{} Areal Densities]{A table of the areal densities in the
-	\podtext{} used in the MT\@. Two entries that are not in this table
-	are the TiO$_2$ reflective layer in each triangular bar and the air
-	during the \podtext{} water-out configuration. Both are assumed negligible
-	effects on the momentum estimate and not modeled by the Momentum
-	Tool.}\label{tab:arealdensities}
-\end{table}
+for a single particle of kinetic energy $T$ and $\Delta(\beta\gamma)$ is the density correction term from~(\ref{eqn:bethebloch}).
 
 \subsection{Momentum Calibration}\label{subsec:MomToolSubsamples}
 
@@ -163,12 +128,12 @@ The increase in the variance is expected since a bias corrections will introduce
 distribution. The calibration function for this set is given by
 
 \begin{equation*}
-    R(p_{r}\text{GeV/c}) =  0.02955 + \frac{0.045662}{\left(1+\exp\left[-24.61\left(p_r-0.4415\right)\right]\right)}\,
+    R(p_{r}\text{\ [GeV/c]}) =  0.02955 + \frac{0.045662}{1+\exp\left[-24.61\left(p_r-0.4415\right)\right]}\,
 \end{equation*}
 
 \noindent{}and is shown in Figure~\ref{fig:MuonContainedResolutionProfile}.
 
-\begin{figure}[h!]
+\begin{figure}
     \begin{centering}
         \subfloat[True vs.\ uncalibrated momentum]
         {%

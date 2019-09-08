@@ -8425,14 +8425,19 @@ Since joining the T2K experiment five years ago, I have played a critical
 .
  I am a co-author of that paper and its internal T2K technical document
  that outlines the analysis procedure and studies.
- In particular, I have contributed to data management, reconstructed kinematic
- validation and characterization, observable feature engineering to describe
- events in the 
-\begin_inset Formula $\pod$
+ In particular, I developed the momentum calibration and event selection
+ using machine learning.
+ Further details on these two contributions are found in Appendix 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "app:podcc1pi"
+plural "false"
+caps "false"
+noprefix "false"
+
 \end_inset
 
-, and cross validation of complex event selections using boosted random
- forest classifiers.
+.
 \end_layout
 
 \begin_layout Standard
