@@ -245,6 +245,522 @@ This is another way of saying the
 \end_layout
 
 \begin_layout Section
+Analysis Improvements
+\end_layout
+
+\begin_layout Standard
+First is a discussion on applying a different regularization strength.
+ The next topic is a method to reduce the number of effective bin normalization
+ parameters using a different penalty function called the Lasso.
+\end_layout
+
+\begin_layout Subsection
+Regularization Strength
+\end_layout
+
+\begin_layout Standard
+Recall that the BANFF ND constraint test statistic is defined as
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}\Delta\hat{\chi}_{\text{ND280}}^{2} & =\underset{\Delta\vec{y}}{\text{argmin}}\left\{ \Delta\chi_{\text{LLR}}^{2}\left(\vec{N}^{d},\vec{N}^{p}\right)+\Delta\chi_{\text{Penalty}}^{2}\left(\Delta\vec{y}\right)\right\} \end{aligned}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\vec{N}^{d}$
+\end_inset
+
+ and 
+\begin_inset Formula $\vec{N}^{p}$
+\end_inset
+
+ are the binned data and prediction measurements, respectively, and 
+\begin_inset Formula $\Delta\vec{y}$
+\end_inset
+
+ is the difference between postfit and prefit parameter values in the fit.
+ This equation is similar to the general class of parameter regression using
+ regularization 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "springer_series978-0-387-84858-7"
+literal "false"
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{equation}
+\underset{f\in\mathcal{F}}{\text{argmin}}\left\{ L\left(\eta,f\left(\vec{\beta}\right)\right)+\lambda J\left(f\right)\right\} ,\label{eq:GeneralRegularization}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $L$
+\end_inset
+
+ is a loss function of measurements 
+\begin_inset Formula $\eta$
+\end_inset
+
+, 
+\begin_inset Formula $J\left(f\right)$
+\end_inset
+
+ is a penalty function, 
+\begin_inset Formula $f\left(\vec{\beta}\right)$
+\end_inset
+
+ is a 
+\begin_inset Formula $d$
+\end_inset
+
+-dimensional function of parameters 
+\begin_inset Formula $\vec{\beta}$
+\end_inset
+
+ in 
+\begin_inset Formula $\mathbb{R}^{d}$
+\end_inset
+
+, 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ is the regularization parameter, and 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+ is a space of function on which 
+\begin_inset Formula $J\left(f\right)$
+\end_inset
+
+ is defined.
+ In regularized regression problems, the penalty term serves to solve an
+ ill posed problem by adding external information.
+ Similarly, the regularization parameter controls the importance of the
+ penalty.
+ We recognize that the loss function 
+\begin_inset Formula $L$
+\end_inset
+
+ is the log-likelihood ratio term 
+\begin_inset Formula $\Delta\chi_{\text{LLR}}^{2}$
+\end_inset
+
+, and penalty term is 
+\begin_inset Formula $J=\Delta\chi_{\text{Penalty}}^{2}$
+\end_inset
+
+ with regularization strength 
+\begin_inset Formula $\lambda=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In defining the BANFF test statistic in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "chap:BANFF-Likelihood"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, the regularization term 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ was set to 1 without justification.
+ We can test the effectiveness of this choice using cross validation.
+ Cross validation provides an estimate on the prediction error as well as
+ determines the 
+\begin_inset Quotes eld
+\end_inset
+
+optimal
+\begin_inset Quotes erd
+\end_inset
+
+ choice of regularization.
+ In cross validation, the input data is randomly split into 
+\begin_inset Formula $K$
+\end_inset
+
+ equal sized partitions.
+ For the 
+\begin_inset Formula $k\in K$
+\end_inset
+
+ data partition, we fit the model to the other 
+\begin_inset Formula $K-1$
+\end_inset
+
+ parts of the data and calculate a prediction error 
+\begin_inset Formula $P$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In this verification of the regularization strength, the test statistic
+ is altered to include a regularization term
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned}\Delta\hat{\chi}_{\text{ND280}}^{2} & =\underset{\Delta\vec{y}}{\text{argmin}}\left\{ \Delta\chi_{\text{LLR}}^{2}+\lambda\times\Delta\chi_{\text{Penalty}}^{2}\left(\Delta\vec{y}\right)\right\} \\
+ & =\underset{\Delta\vec{y}}{\text{argmin}}\left\{ \Delta\chi_{\text{LLR}}^{2}+\lambda\left(\Delta\vec{y}\right)^{T}\cdot V^{-1}\cdot\left(\Delta\vec{y}\right)\right\} ,
+\end{aligned}
+\label{eq:RegularizedDeltaChi2ND280}
+\end{equation}
+
+\end_inset
+
+and the data is split into 
+\begin_inset Formula $K=5$
+\end_inset
+
+ partitions.
+ The prediction error 
+\begin_inset Formula $P$
+\end_inset
+
+ in this analysis is defined as 
+\begin_inset Formula 
+\[
+P_{k}\left(\left(\Delta\chi^{2}\right)_{\text{trained}}^{-k},\left(\Delta\chi^{2}\right)_{\text{tested}}^{k}\right)=\left|\left(\Delta\chi^{2}\right)_{\text{trained}}^{-k}-\left(\Delta\chi^{2}\right)_{\text{tested}}^{k}\right|
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\left(\Delta\chi^{2}\right)_{\text{trained}}^{-k}$
+\end_inset
+
+ is the fitted model statistic on all but the 
+\begin_inset Formula $k$
+\end_inset
+
+th partition, and 
+\begin_inset Formula $\left(\Delta\chi^{2}\right)_{\text{tested}}^{k}$
+\end_inset
+
+ is prediction from the fitted model on the 
+\begin_inset Formula $k$
+\end_inset
+
+th partition.
+ This definition of 
+\begin_inset Formula $P$
+\end_inset
+
+ is useful since the penalty terms cancel leaving only the difference in
+ log-likelihood terms.
+ The optimal regularization strength is determined by minimizing the cross
+ validation error,
+\begin_inset Formula 
+\begin{equation}
+\text{CV}=\frac{1}{5}\sum_{k=1}^{5}P_{k}\left(\left(\Delta\chi^{2}\right)_{\text{trained}}^{-k},\left(\Delta\chi^{2}\right)_{\text{tested}}^{k}\right)\label{eq:CVerror}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Alternative Penalties
+\end_layout
+
+\begin_layout Standard
+Consider solving the linear regression with constraints problem 
+\begin_inset Formula 
+\begin{equation}
+\vec{\eta}=X\vec{\beta}\label{eq:LinearProblem}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $X$
+\end_inset
+
+ is a 
+\begin_inset Formula $p\times d$
+\end_inset
+
+ matrix of 
+\begin_inset Formula $d$
+\end_inset
+
+ model features from 
+\begin_inset Formula $p$
+\end_inset
+
+ measurements, 
+\begin_inset Formula $\vec{\beta}$
+\end_inset
+
+ is a vector of regression weights with 
+\begin_inset Formula $p$
+\end_inset
+
+ rows, and 
+\begin_inset Formula $\vec{\eta}$
+\end_inset
+
+ is a response vector.
+ There are many approaches to solving 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:LinearProblem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ using 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:GeneralRegularization"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ A popular form is 
+\begin_inset Formula $l_{2}$
+\end_inset
+
+ regularization
+\begin_inset CommandInset citation
+LatexCommand cite
+key "springer_series978-0-387-84858-7"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\underset{\vec{\beta}\in\mathcal{\mathbb{R^{d}}}}{\text{argmin}}\left\{ L\left(\vec{\eta},\vec{\beta}\right)+\lambda\sum_{i}\left|\beta_{i}\right|^{2}\right\} \label{eq:RidgeRegressionGeneral}
+\end{equation}
+
+\end_inset
+
+where an appropriate choice of 
+\begin_inset Formula $L$
+\end_inset
+
+ is
+\begin_inset Formula 
+\[
+L\left(\vec{\eta},\vec{\beta}\right)=\sum_{j}\left|\vec{\eta}-X\vec{\beta}\right|^{2}.
+\]
+
+\end_inset
+
+In 
+\begin_inset Formula $l_{2}$
+\end_inset
+
+ regularization, the sum of weights squared is the constraint with strength
+ 
+\begin_inset Formula $\lambda$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+With some algebra, we can rewrite the test statistic 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:minBANFFDeltaChiSqr"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ into the form of 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:RidgeRegressionGeneral"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Again, we recognize 
+\begin_inset Formula $\Delta\chi_{\text{LLR}}^{2}$
+\end_inset
+
+ is the loss function 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ Now to tackle the penalty term.
+ The (inverse) covariance matrix is symmetric and real and can be decomposed
+ as
+\begin_inset Formula 
+\[
+V^{-1}=U\Lambda U^{T}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $U$
+\end_inset
+
+ and 
+\begin_inset Formula $V$
+\end_inset
+
+ are the matrix of the eigenvectors and eigenvalues, respectively, of 
+\begin_inset Formula $V^{-1}$
+\end_inset
+
+.
+ Since the eigenvalues are real and positive, the matrix 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ can be expressed as the square of a diagonal matrix 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Lambda=\Gamma^{2}.
+\]
+
+\end_inset
+
+We can now rewrite the penalty term as inner product of two vectors.
+ 
+\begin_inset Formula 
+\[
+\begin{aligned}\Delta\chi_{\text{Penalty}}^{2} & =\left(\Delta\vec{y}\right)^{T}\cdot V^{-1}\cdot\left(\Delta\vec{y}\right)\\
+ & \left(\Delta\vec{y}\right)^{T}\cdot U\Gamma^{2}U^{T}\cdot\left(\Delta\vec{y}\right)\\
+ & =\left[\Gamma U^{T}\cdot\Delta\vec{y}\right]^{T}\cdot\left[\Gamma U^{T}\cdot\Delta\vec{y}\right],
+\end{aligned}
+\]
+
+\end_inset
+
+and if we let 
+\begin_inset Formula $\vec{\beta}=\Gamma U^{T}\cdot\Delta\vec{y}$
+\end_inset
+
+, then the penalty term becomes
+\begin_inset Formula 
+\[
+\begin{aligned}\Delta\chi_{\text{Penalty}}^{2} & =\vec{\beta}^{T}\cdot\vec{\beta}\\
+ & =\sum_{j}\left|\beta_{j}\right|^{2},
+\end{aligned}
+\]
+
+\end_inset
+
+and test statistic is now
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned}\Delta\hat{\chi}_{\text{ND280}}^{2} & =\underset{\vec{\beta}}{\text{argmin}}\left\{ \Delta\chi_{\text{LLR}}^{2}\left(N^{d},N^{p}\right)+\sum_{j}\left|\beta_{j}\right|^{2}\right\} \end{aligned}
+.\label{eq:DeltaChiSqND280RidgeRegressionForm}
+\end{equation}
+
+\end_inset
+
+We see that the BANFF ND constraint is a 
+\begin_inset Formula $l_{2}$
+\end_inset
+
+ regularized regression problem with 
+\begin_inset Formula $\vec{\beta}\propto\Delta\vec{y}$
+\end_inset
+
+ encoding the parameter weights and 
+\begin_inset Formula $\lambda=1$
+\end_inset
+
+ by default.
+\end_layout
+
+\begin_layout Standard
+We can potentially improve the ND constraint analysis by utilizing different
+ regularization terms.
+ Another solution to 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:LinearProblem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ that is gaining popularity is 
+\begin_inset Formula $l_{1}$
+\end_inset
+
+ regularization
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\underset{\vec{\beta}\in\mathcal{\mathbb{R^{d}}}}{\text{argmin}}\left\{ L\left(\vec{\eta},\vec{\beta}\right)+\lambda\sum_{i}\left|\beta_{i}\right|\right\} \label{eq:LassoRegressionGeneral}
+\end{equation}
+
+\end_inset
+
+where the constraint is the sum of absolute values of the weights.
+ What is unique about 
+\begin_inset Formula $l_{1}$
+\end_inset
+
+ regularization is that parameters that have no impact on the model prediction
+ are 
+\shape italic
+exactly
+\shape default
+ zero.
+ This is highly dependent on the regularization strength too, however.
+ Further details can be found in the following reference 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "alma991031702535903361"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
 Future Prospects
 \end_layout
 

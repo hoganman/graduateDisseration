@@ -981,6 +981,21 @@
   Timestamp                = {2019.01.31}
 }
 
+@Book{alma991018957569703361,
+  Title                    = {Convex Optimization},
+  Author                   = {Boyd, Stephen P.},
+  Publisher                = {Cambridge University Press},
+  Year                     = {2004},
+
+  Address                  = {Cambridge ;},
+
+  Booktitle                = {Convex optimization},
+  ISBN                     = {0521833787},
+  Keywords                 = {Mathematical optimization},
+  Language                 = {eng},
+  Lccn                     = {2003063284}
+}
+
 @Article{Bradford2006,
   Title                    = {A new parameterization of the nucleon elastic form factors},
   Author                   = {Bradford, R. and Others},
@@ -1677,6 +1692,30 @@
   __markedentry            = {[mhogan:6]},
   Owner                    = {mhogan},
   Timestamp                = {2019.01.31}
+}
+
+@Book{alma991031702535903361,
+  Title                    = {Statistical Learning with Sparsity: The Lasso and Generalizations},
+  Author                   = {Hastie, T., and Tibshirani, R,, and Wainwright, M.},
+  Publisher                = {CRC Press, Taylor and Francis Group},
+  Year                     = {2015},
+
+  Address                  = {Boca Raton},
+  Series                   = {Chapman and Hall/CRC monographs on statistics and applied probability; 143},
+
+  ISBN                     = {9781498712163}
+}
+
+@Book{springer_series978-0-387-84858-7,
+  Title                    = {The Elements of Statistical Learning: Data Mining, Inference, and Prediction},
+  Author                   = {Hastie, Trevor and Tibshirani, Robert and Friedman, Jerome},
+  Publisher                = {Springer New York},
+  Year                     = {2009},
+
+  Address                  = {New York, NY},
+  Series                   = {Springer Series in Statistics},
+
+  ISBN                     = {978-0-387-84857-0}
 }
 
 @Article{Hayato2009,
@@ -2693,6 +2732,16 @@
   Note                     = {nue identification using longitudinal and transverse track energy deposition},
 
   Institution              = {Stanford University}
+}
+
+@PhdThesis{Yang2009,
+  Title                    = {A Study of Muon Neutrino to Electron Neutrino Oscillations in the MINOS Experiment},
+  Author                   = {Yang, T.},
+  School                   = {Stanford University},
+  Year                     = {2009},
+
+  Owner                    = {mhogan},
+  Timestamp                = {2019.09.06}
 }
 
 @Standard{Yuan2016,

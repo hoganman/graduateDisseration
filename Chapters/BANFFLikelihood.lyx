@@ -782,7 +782,10 @@ Using the likelihood ratio test theorem, a test statistic is defined as
  likelihoods
 \begin_inset Formula 
 \begin{equation}
-\Delta\chi_{\text{LLR}}^{2}=-2\log\frac{\mathcal{L}\left(\vec{N}^{d}\left|\vec{N}^{p}\right.\right)}{\mathcal{L}\left(\vec{N}^{d}\left|\vec{N}^{d}\right.\right)},\label{eq:LLHRatio}
+\begin{aligned}\Delta\chi_{\text{LLR}}^{2} & =-2\log\frac{\mathcal{L}\left(\vec{N}^{d}\left|\vec{N}^{p}\right.\right)}{\mathcal{L}\left(\vec{N}^{d}\left|\vec{N}^{d}\right.\right)}\\
+ & =2\sum_{i=1}^{M}\left[\vec{N}_{i}^{p}-\vec{N}_{i}^{d}+\vec{N}_{i}^{d}\log\left(\frac{\vec{N}_{i}^{d}}{\vec{N}_{i}^{p}}\right)\right]
+\end{aligned}
+\label{eq:LLHRatio}
 \end{equation}
 
 \end_inset
@@ -826,7 +829,7 @@ noprefix "false"
 \begin_inset Formula 
 \begin{equation}
 \begin{aligned}\Delta\chi_{\ND280}^{2} & =\Delta\chi_{\text{LLR}}^{2}+\Delta\chi_{\text{xsec}}^{2}+\Delta\chi_{\text{Flux}}^{2}+\Delta\chi_{\text{Det}}^{2}\\
- & -2\left(\log\frac{\mathcal{L}\left(\vec{N}^{d}\left|\vec{N}^{p}\right.\right)}{\mathcal{L}\left(\vec{N}^{d}\left|\vec{N}^{d}\right.\right)}+\log\underset{\text{xsec}}{\underbrace{\pi\left(\xsec\right)}}+\log\underset{\text{Flux}}{\underbrace{\pi\left(\flux\right)}}+\log\underset{\text{Det}}{\underbrace{\pi\left(\systematics\right)}}\right),
+ & =\Delta\chi_{\text{LLR}}^{2}-2\left(\log\underset{\text{xsec}}{\underbrace{\pi\left(\xsec\right)}}+\log\underset{\text{Flux}}{\underbrace{\pi\left(\flux\right)}}+\log\underset{\text{Det}}{\underbrace{\pi\left(\systematics\right)}}\right),
 \end{aligned}
 \label{eq:LLHRatioWithPenaltyTerms}
 \end{equation}
@@ -849,7 +852,11 @@ where each of the PDFs
 \begin_inset Formula $\Delta\vec{y}$
 \end_inset
 
- is a vector with the difference between the current/explored and nominal
+ is a 
+\begin_inset Formula $d$
+\end_inset
+
+ dimensional vector of the difference between the current/explored and nominal
  set of vector parameters 
 \begin_inset Formula $\vec{y}$
 \end_inset
@@ -886,7 +893,7 @@ with
  is given by
 \begin_inset Formula 
 \begin{equation}
-\begin{aligned}\Delta\chi_{\ND280}^{2} & =2\sum_{i=1}^{M}\left[\vec{N}_{i}^{p}-\vec{N}_{i}^{d}+\vec{N}_{i}^{d}\log\left(\frac{\vec{N}_{i}^{d}}{\vec{N}_{i}^{p}}\right)\right]\\
+\begin{aligned}\Delta\chi_{\ND280}^{2} & =2\sum_{i=1}^{M}\left[\vec{N}_{i}^{p}\left(\Delta\vec{y}\right)-\vec{N}_{i}^{d}+\vec{N}_{i}^{d}\log\left(\frac{\vec{N}_{i}^{d}}{\vec{N}_{i}^{p}\left(\Delta\vec{y}\right)}\right)\right]\\
  & +\left(\Delta\xsec\right)^{T}\cdot\left(V_{x}^{-1}\right)\cdot\left(\Delta\xsec\right)+\left(\Delta\flux\right)^{T}\cdot\left(V_{b}^{-1}\right)\cdot\left(\Delta\flux\right)+\left(\Delta\systematics\right)^{T}\cdot\left(V_{d}^{-1}\right)\cdot\left(\Delta\systematics\right)
 \end{aligned}
 \label{eq:BANFFDeltaChiSqr}
@@ -946,8 +953,15 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-Once the global minimum of the test statistic is found, the postfit covariance
- matrix 
+The best fit parameters are those that minimizes the chi-squared statistic
+\begin_inset Formula 
+\begin{equation}
+\Delta\hat{\chi}_{\text{ND280}}^{2}=\underset{\Delta\vec{y}\in\mathbb{R^{d}}}{\text{argmin}}\left\{ \Delta\chi_{\text{LLR}}^{2}\left(\vec{N}^{d},\vec{N}^{p}\right)+\Delta\chi_{\text{Penalty}}^{2}\left(\Delta\vec{y}\right)\right\} .\label{eq:minBANFFDeltaChiSqr}
+\end{equation}
+
+\end_inset
+
+Once the global minimum is found, the postfit covariance matrix 
 \begin_inset Formula $V$
 \end_inset
 
