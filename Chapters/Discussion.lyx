@@ -380,8 +380,8 @@ noprefix "false"
 \end_inset
 
  was set to 1 without justification.
- We can test the effectiveness of this choice using cross validation.
- Cross validation provides an estimate on the prediction error as well as
+ We can test the effectiveness of this choice using cross-validation.
+ Cross-Validation provides an estimate on the prediction error as well as
  determines the 
 \begin_inset Quotes eld
 \end_inset
@@ -391,7 +391,7 @@ optimal
 \end_inset
 
  choice of regularization.
- In cross validation, the input data is randomly split into 
+ In cross-validation, the input data is randomly split into 
 \begin_inset Formula $K$
 \end_inset
 
@@ -467,8 +467,8 @@ th partition.
 
  is useful since the penalty terms cancel leaving only the difference in
  log-likelihood terms.
- The optimal regularization strength is determined by minimizing the cross
- validation error,
+ The optimal regularization strength is determined by minimizing the cross-valid
+ation error,
 \begin_inset Formula 
 \begin{equation}
 \text{CV}=\frac{1}{5}\sum_{k=1}^{5}P_{k}\left(\left(\Delta\chi^{2}\right)_{\text{trained}}^{-k},\left(\Delta\chi^{2}\right)_{\text{tested}}^{k}\right)\label{eq:CVerror}
@@ -542,7 +542,7 @@ noprefix "false"
 \end_inset
 
 .
- A popular form is 
+ A popular solution is using 
 \begin_inset Formula $l_{2}$
 \end_inset
 
@@ -565,32 +565,33 @@ literal "false"
 
 \end_inset
 
-where an appropriate choice of 
+where the sum of squares of the weights 
+\begin_inset Formula $\beta_{i}$
+\end_inset
+
+ sets the constraint and 
 \begin_inset Formula $L$
 \end_inset
 
- is
+ is the loss function.
+ An appropriate choice of 
+\begin_inset Formula $L$
+\end_inset
+
+ is using ordinary least squares 
 \begin_inset Formula 
 \[
-L\left(\vec{\eta},\vec{\beta}\right)=\sum_{j}\left|\vec{\eta}-X\vec{\beta}\right|^{2}.
+L\left(\vec{\eta},\vec{\beta}\right)=\sum_{j}\left|\vec{\eta}-X\vec{\beta}\right|^{2},
 \]
 
 \end_inset
 
-In 
-\begin_inset Formula $l_{2}$
-\end_inset
-
- regularization, the sum of weights squared is the constraint with strength
+which provides the lowest variance in parameter weights.
  
-\begin_inset Formula $\lambda$
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Standard
-With some algebra, we can rewrite the test statistic 
+With some algebra, we can rewrite the BANFF test statistic 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:minBANFFDeltaChiSqr"
@@ -611,7 +612,7 @@ noprefix "false"
 \end_inset
 
 .
- Again, we recognize 
+ We again recognize 
 \begin_inset Formula $\Delta\chi_{\text{LLR}}^{2}$
 \end_inset
 
@@ -619,8 +620,7 @@ noprefix "false"
 \begin_inset Formula $L$
 \end_inset
 
-.
- Now to tackle the penalty term.
+ which leaves the penalty term to be tackled.
  The (inverse) covariance matrix is symmetric and real and can be decomposed
  as
 \begin_inset Formula 
@@ -665,13 +665,13 @@ We can now rewrite the penalty term as inner product of two vectors.
 \[
 \begin{aligned}\Delta\chi_{\text{Penalty}}^{2} & =\left(\Delta\vec{y}\right)^{T}\cdot V^{-1}\cdot\left(\Delta\vec{y}\right)\\
  & \left(\Delta\vec{y}\right)^{T}\cdot U\Gamma^{2}U^{T}\cdot\left(\Delta\vec{y}\right)\\
- & =\left[\Gamma U^{T}\cdot\Delta\vec{y}\right]^{T}\cdot\left[\Gamma U^{T}\cdot\Delta\vec{y}\right],
+ & =\left[\Gamma U^{T}\cdot\Delta\vec{y}\right]^{T}\cdot\left[\Gamma U^{T}\cdot\Delta\vec{y}\right].
 \end{aligned}
 \]
 
 \end_inset
 
-and if we let 
+If we let 
 \begin_inset Formula $\vec{\beta}=\Gamma U^{T}\cdot\Delta\vec{y}$
 \end_inset
 
@@ -694,19 +694,19 @@ and test statistic is now
 
 \end_inset
 
-We see that the BANFF ND constraint is a 
+We see that the BANFF test statistic is indeed a 
 \begin_inset Formula $l_{2}$
 \end_inset
 
- regularized regression problem with 
-\begin_inset Formula $\vec{\beta}\propto\Delta\vec{y}$
+ regularization solution with 
+\begin_inset Formula $\Delta\vec{y}$
 \end_inset
 
- encoding the parameter weights and 
+ acting as the parameter weights and regularization strength 
 \begin_inset Formula $\lambda=1$
 \end_inset
 
- by default.
+.
 \end_layout
 
 \begin_layout Standard
@@ -737,18 +737,22 @@ noprefix "false"
 
 \end_inset
 
-where the constraint is the sum of absolute values of the weights.
+where the constraint is the now sum of absolute values of the weights.
  What is unique about 
 \begin_inset Formula $l_{1}$
 \end_inset
 
- regularization is that parameters that have no impact on the model prediction
- are 
-\shape italic
-exactly
-\shape default
- zero.
- This is highly dependent on the regularization strength too, however.
+ regularization is its ability to promote model solutions with few nonzero
+ coefficient weights, sometimes called sparse solutions.
+ In other words, predictor parameters with no model impact are excluded
+ in the solution using the 
+\begin_inset Formula $l_{1}$
+\end_inset
+
+ constraint.
+ This is, however, highly dependent on the regularization strength as determined
+ by cross validation methods.
+ This method is also known as the Lasso.
  Further details can be found in the following reference 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -758,6 +762,49 @@ literal "false"
 \end_inset
 
 .
+ 
+\end_layout
+
+\begin_layout Standard
+Using the 
+\begin_inset Formula $l_{1}$
+\end_inset
+
+ constraint provides a data-driven method to determine the number of needed
+ bin normalizations in the analysis.
+ The method to define the fit binning described in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "chap:P0DinBANFF"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is unchanged.
+ What changes here is that each bin normalization is assigned to a single
+ fit bin.
+ Using the 
+\begin_inset Formula $l_{1}$
+\end_inset
+
+ constraint with cross-validation, fit bins with minimal to no impact on
+ the fit can be combined with those that are important.
+ Then the best fit parameters and covariance using the 
+\begin_inset Formula $l_{2}$
+\end_inset
+
+ constraint can then be found.
+ 
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Formula $l_{1}$
+\end_inset
+
+ constraint has been 
 \end_layout
 
 \begin_layout Section
