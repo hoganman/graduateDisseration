@@ -265,7 +265,7 @@ Recall that the BANFF ND constraint test statistic is defined as
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\begin{aligned}\Delta\hat{\chi}_{\text{ND280}}^{2} & =\underset{\Delta\vec{y}}{\text{argmin}}\left\{ \Delta\chi_{\text{LLR}}^{2}\left(\vec{N}^{d},\vec{N}^{p}\right)+\Delta\chi_{\text{Penalty}}^{2}\left(\Delta\vec{y}\right)\right\} \end{aligned}
+\begin{aligned}\Delta\hat{\chi}_{\text{ND280}}^{2} & =\underset{\Delta\vec{y}\in\mathbb{R}^{d}}{\text{argmin}}\left\{ \Delta\chi_{\text{LLR}}^{2}\left(\vec{N}^{d},\vec{N}^{p}\right)+\Delta\chi_{\text{Penalty}}^{2}\left(\Delta\vec{y}\right)\right\} \end{aligned}
 \]
 
 \end_inset
@@ -419,8 +419,8 @@ In this verification of the regularization strength, the test statistic
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\begin{aligned}\Delta\hat{\chi}_{\text{ND280}}^{2} & =\underset{\Delta\vec{y}}{\text{argmin}}\left\{ \Delta\chi_{\text{LLR}}^{2}+\lambda\times\Delta\chi_{\text{Penalty}}^{2}\left(\Delta\vec{y}\right)\right\} \\
- & =\underset{\Delta\vec{y}}{\text{argmin}}\left\{ \Delta\chi_{\text{LLR}}^{2}+\lambda\left(\Delta\vec{y}\right)^{T}\cdot V^{-1}\cdot\left(\Delta\vec{y}\right)\right\} ,
+\begin{aligned}\Delta\hat{\chi}_{\text{ND280}}^{2} & =\underset{\Delta\vec{y}\in\mathbb{R}^{d}}{\text{argmin}}\left\{ \Delta\chi_{\text{LLR}}^{2}+\lambda\times\Delta\chi_{\text{Penalty}}^{2}\left(\Delta\vec{y}\right)\right\} \\
+ & =\underset{\Delta\vec{y}\in\mathbb{R}^{d}}{\text{argmin}}\left\{ \Delta\chi_{\text{LLR}}^{2}+\lambda\left(\Delta\vec{y}\right)^{T}\cdot V^{-1}\cdot\left(\Delta\vec{y}\right)\right\} ,
 \end{aligned}
 \label{eq:RegularizedDeltaChi2ND280}
 \end{equation}
@@ -560,7 +560,7 @@ literal "false"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\underset{\vec{\beta}\in\mathcal{\mathbb{R^{d}}}}{\text{argmin}}\left\{ L\left(\vec{\eta},\vec{\beta}\right)+\lambda\sum_{i}\left|\beta_{i}\right|^{2}\right\} \label{eq:RidgeRegressionGeneral}
+\underset{\vec{\beta}\in\mathbb{R}^{d}}{\text{argmin}}\left\{ L\left(\vec{\eta},\vec{\beta}\right)+\lambda\sum_{i}\left|\beta_{i}\right|^{2}\right\} \label{eq:RidgeRegressionGeneral}
 \end{equation}
 
 \end_inset
@@ -688,7 +688,7 @@ and if we let
 and test statistic is now
 \begin_inset Formula 
 \begin{equation}
-\begin{aligned}\Delta\hat{\chi}_{\text{ND280}}^{2} & =\underset{\vec{\beta}}{\text{argmin}}\left\{ \Delta\chi_{\text{LLR}}^{2}\left(N^{d},N^{p}\right)+\sum_{j}\left|\beta_{j}\right|^{2}\right\} \end{aligned}
+\begin{aligned}\Delta\hat{\chi}_{\text{ND280}}^{2} & =\underset{\vec{\beta}\in\mathbb{R}^{d}}{\text{argmin}}\left\{ \Delta\chi_{\text{LLR}}^{2}\left(N^{d},N^{p}\right)+\sum_{j}\left|\beta_{j}\right|^{2}\right\} \end{aligned}
 .\label{eq:DeltaChiSqND280RidgeRegressionForm}
 \end{equation}
 
@@ -732,7 +732,7 @@ noprefix "false"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\underset{\vec{\beta}\in\mathcal{\mathbb{R^{d}}}}{\text{argmin}}\left\{ L\left(\vec{\eta},\vec{\beta}\right)+\lambda\sum_{i}\left|\beta_{i}\right|\right\} \label{eq:LassoRegressionGeneral}
+\underset{\vec{\beta}\in\mathbb{R}^{d}}{\text{argmin}}\left\{ L\left(\vec{\eta},\vec{\beta}\right)+\lambda\sum_{i}\left|\beta_{i}\right|\right\} \label{eq:LassoRegressionGeneral}
 \end{equation}
 
 \end_inset

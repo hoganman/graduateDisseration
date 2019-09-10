@@ -956,7 +956,7 @@ noprefix "false"
 The best fit parameters are those that minimizes the chi-squared statistic
 \begin_inset Formula 
 \begin{equation}
-\Delta\hat{\chi}_{\text{ND280}}^{2}=\underset{\Delta\vec{y}\in\mathbb{R^{d}}}{\text{argmin}}\left\{ \Delta\chi_{\text{LLR}}^{2}\left(\vec{N}^{d},\vec{N}^{p}\right)+\Delta\chi_{\text{Penalty}}^{2}\left(\Delta\vec{y}\right)\right\} .\label{eq:minBANFFDeltaChiSqr}
+\Delta\hat{\chi}_{\text{ND280}}^{2}=\underset{\Delta\vec{y}\in\mathbb{R}^{d}}{\text{argmin}}\left\{ \Delta\chi_{\text{LLR}}^{2}\left(\vec{N}^{d},\vec{N}^{p}\right)+\Delta\chi_{\text{Penalty}}^{2}\left(\Delta\vec{y}\right)\right\} .\label{eq:minBANFFDeltaChiSqr}
 \end{equation}
 
 \end_inset

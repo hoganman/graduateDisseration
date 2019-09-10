@@ -800,7 +800,7 @@ This section expands on the definition of the penalty terms in the BANFF
 \begin_layout Standard
 \begin_inset Branch P0DBANFFParameterizationFlux
 inverted 0
-status collapsed
+status open
 
 \begin_layout Subsection
 Flux Model
@@ -958,7 +958,7 @@ noprefix "false"
 , as
 \begin_inset Formula 
 \begin{equation}
-\Delta\chi_{\text{Flux}}^{2}=\left(\Delta\flux\right)^{T}\cdot\left(V_{b}^{-1}\right)\cdot\Delta\flux.\label{eq:DeltaChi2Flux}
+\Delta\chi_{\text{Flux}}^{2}=\left(\Delta\flux\right)^{T}\cdot\left(V_{b}^{-1}\right)\cdot\left(\Delta\flux\right).\label{eq:DeltaChi2Flux}
 \end{equation}
 
 \end_inset
@@ -7960,6 +7960,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Figures/Systematics/EvidenceOfP0DBulging.png
+	lyxscale 50
 	height 48theight%
 
 \end_inset

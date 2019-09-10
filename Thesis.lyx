@@ -222,6 +222,11 @@ hanging
 \filename_suffix 0
 \color #faf0e6
 \end_branch
+\branch AppendixCC1pi
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
 \index Index
 \shortcut idx
 \color #008000
@@ -773,7 +778,7 @@ options "ColostateThesisBibStylePlain"
 
 \begin_layout Standard
 \start_of_appendix
-\begin_inset Branch AppendixObsnorm
+\begin_inset Branch AppendixCC1pi
 inverted 0
 status open
 
