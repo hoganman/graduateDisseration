@@ -245,6 +245,10 @@ This is another way of saying the
 \end_layout
 
 \begin_layout Section
+Potential Impacts on the T2K Oscillation Analysis
+\end_layout
+
+\begin_layout Section
 Analysis Improvements
 \end_layout
 
@@ -439,13 +443,13 @@ and the data is split into
  in this analysis is defined as 
 \begin_inset Formula 
 \[
-P_{k}\left(\left(\Delta\chi^{2}\right)_{\text{trained}}^{-k},\left(\Delta\chi^{2}\right)_{\text{tested}}^{k}\right)=\left|\left(\Delta\chi^{2}\right)_{\text{trained}}^{-k}-\left(\Delta\chi^{2}\right)_{\text{tested}}^{k}\right|
+P_{k}\left(\left(\Delta\chi^{2}\right)_{\text{train}}^{-k},\left(\Delta\chi^{2}\right)_{\text{test}}^{k}\right)=\left|\left(\Delta\chi^{2}\right)_{\text{train}}^{-k}-\left(\Delta\chi^{2}\right)_{\text{test}}^{k}\right|
 \]
 
 \end_inset
 
 where 
-\begin_inset Formula $\left(\Delta\chi^{2}\right)_{\text{trained}}^{-k}$
+\begin_inset Formula $\left(\Delta\chi^{2}\right)_{\text{train}}^{-k}$
 \end_inset
 
  is the fitted model statistic on all but the 
@@ -453,7 +457,7 @@ where
 \end_inset
 
 th partition, and 
-\begin_inset Formula $\left(\Delta\chi^{2}\right)_{\text{tested}}^{k}$
+\begin_inset Formula $\left(\Delta\chi^{2}\right)_{\text{test}}^{k}$
 \end_inset
 
  is prediction from the fitted model on the 
@@ -471,7 +475,7 @@ th partition.
 ation error,
 \begin_inset Formula 
 \begin{equation}
-\text{CV}=\frac{1}{5}\sum_{k=1}^{5}P_{k}\left(\left(\Delta\chi^{2}\right)_{\text{trained}}^{-k},\left(\Delta\chi^{2}\right)_{\text{tested}}^{k}\right)\label{eq:CVerror}
+\text{CV}=\frac{1}{5}\sum_{k=1}^{5}P_{k}\left(\left(\Delta\chi^{2}\right)_{\text{train}}^{-k},\left(\Delta\chi^{2}\right)_{\text{test}}^{k}\right)\label{eq:CVerror}
 \end{equation}
 
 \end_inset
@@ -480,7 +484,7 @@ ation error,
 \end_layout
 
 \begin_layout Subsection
-Alternative Penalties
+Alternative Penalty
 \end_layout
 
 \begin_layout Standard
@@ -542,11 +546,11 @@ noprefix "false"
 \end_inset
 
 .
- A popular solution is using 
+ A popular solution is the 
 \begin_inset Formula $l_{2}$
 \end_inset
 
- regularization
+-regularization constraint
 \begin_inset CommandInset citation
 LatexCommand cite
 key "springer_series978-0-387-84858-7"
@@ -659,7 +663,7 @@ where
 
 \end_inset
 
-We can now rewrite the penalty term as inner product of two vectors.
+We can now rewrite the penalty term as an inner product of two vectors.
  
 \begin_inset Formula 
 \[
@@ -672,14 +676,14 @@ We can now rewrite the penalty term as inner product of two vectors.
 \end_inset
 
 If we let 
-\begin_inset Formula $\vec{\beta}=\Gamma U^{T}\cdot\Delta\vec{y}$
+\begin_inset Formula $\vec{\psi}=\Gamma U^{T}\cdot\Delta\vec{y}$
 \end_inset
 
 , then the penalty term becomes
 \begin_inset Formula 
 \[
-\begin{aligned}\Delta\chi_{\text{Penalty}}^{2} & =\vec{\beta}^{T}\cdot\vec{\beta}\\
- & =\sum_{j}\left|\beta_{j}\right|^{2},
+\begin{aligned}\Delta\chi_{\text{Penalty}}^{2} & =\vec{\psi}^{T}\cdot\vec{\psi}\\
+ & =\sum_{j}\left|\psi_{j}\right|^{2},
 \end{aligned}
 \]
 
@@ -688,21 +692,35 @@ If we let
 and test statistic is now
 \begin_inset Formula 
 \begin{equation}
-\begin{aligned}\Delta\hat{\chi}_{\text{ND280}}^{2} & =\underset{\vec{\beta}\in\mathbb{R}^{d}}{\text{argmin}}\left\{ \Delta\chi_{\text{LLR}}^{2}\left(N^{d},N^{p}\right)+\sum_{j}\left|\beta_{j}\right|^{2}\right\} \end{aligned}
-.\label{eq:DeltaChiSqND280RidgeRegressionForm}
+\begin{aligned}\Delta\hat{\chi}_{\text{ND280}}^{2} & =\underset{\vec{\psi}\in\mathbb{R}^{d}}{\text{argmin}}\left\{ \Delta\chi_{\text{LLR}}^{2}\left(N^{d},N^{p}\right)+\left|\left|\psi_{j}\right|\right|_{2}^{2}\right\} \end{aligned}
+,\label{eq:DeltaChiSqND280RidgeRegressionForm}
 \end{equation}
 
 \end_inset
 
-We see that the BANFF test statistic is indeed a 
+where 
+\begin_inset Formula $\left|\left|\ \right|\right|_{2}^{2}$
+\end_inset
+
+ is shorthand for the 
 \begin_inset Formula $l_{2}$
 \end_inset
 
- regularization solution with 
+-regularization constraint sum of squares.
+ We see that the BANFF test statistic is indeed a 
+\begin_inset Formula $l_{2}$
+\end_inset
+
+-regularized solution with 
 \begin_inset Formula $\Delta\vec{y}$
 \end_inset
 
- acting as the parameter weights and regularization strength 
+, recast as 
+\begin_inset Formula $\vec{\psi}$
+\end_inset
+
+, acting as the parameter weight vector and has the regularization strength
+ 
 \begin_inset Formula $\lambda=1$
 \end_inset
 
@@ -710,9 +728,7 @@ We see that the BANFF test statistic is indeed a
 \end_layout
 
 \begin_layout Standard
-We can potentially improve the ND constraint analysis by utilizing different
- regularization terms.
- Another solution to 
+Consider now another solution to 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:LinearProblem"
@@ -722,38 +738,91 @@ noprefix "false"
 
 \end_inset
 
- that is gaining popularity is 
+ using the 
 \begin_inset Formula $l_{1}$
 \end_inset
 
- regularization
+-regularization constraint or Lasso
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+The Lasso has
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\underset{\vec{\beta}\in\mathbb{R}^{d}}{\text{argmin}}\left\{ L\left(\vec{\eta},\vec{\beta}\right)+\lambda\sum_{i}\left|\beta_{i}\right|\right\} \label{eq:LassoRegressionGeneral}
+\underset{\vec{\beta}\in\mathbb{R}^{d}}{\text{argmin}}\left\{ L\left(\vec{\eta},\vec{\beta}\right)+\lambda\left|\left|\beta\right|\right|_{1}\right\} ,\label{eq:LassoRegressionGeneral}
 \end{equation}
 
 \end_inset
 
-where the constraint is the now sum of absolute values of the weights.
- What is unique about 
-\begin_inset Formula $l_{1}$
+where 
+\begin_inset Formula $\left|\left|\ \right|\right|_{1}$
 \end_inset
 
- regularization is its ability to promote model solutions with few nonzero
- coefficient weights, sometimes called sparse solutions.
+ indicates the sum of absolute values of the parameter weight terms.
+ What is unique about the Lasso is its ability to promote model solutions
+ with few nonzero coefficient weights, sometimes called sparse solutions.
  In other words, predictor parameters with no model impact are excluded
  in the solution using the 
 \begin_inset Formula $l_{1}$
 \end_inset
 
- constraint.
- This is, however, highly dependent on the regularization strength as determined
- by cross validation methods.
- This method is also known as the Lasso.
- Further details can be found in the following reference 
+-regularized constraint.
+ However, the Lasso does not handle highly correlated variables very well
+ and the parameter weights can be erratic.
+ This is overcome by combining the Lasso with 
+\begin_inset Formula $l_{2}$
+\end_inset
+
+-regularization which is called the elastic net constraint
+\begin_inset Formula 
+\[
+\underset{\vec{\beta}\in\mathbb{R}^{d}}{\text{argmin}}\left\{ L\left(\vec{\eta},\vec{\beta}\right)+\lambda\left[\frac{1}{2}\left(1-\alpha\right)\left|\left|\beta_{i}\right|\right|_{2}^{2}+\alpha\left|\left|\beta_{i}\right|\right|_{1}\right]\right\} ,
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ is the 
+\begin_inset Quotes eld
+\end_inset
+
+budget
+\begin_inset Quotes erd
+\end_inset
+
+ between the Lasso and 
+\begin_inset Formula $l_{2}$
+\end_inset
+
+-regularization.
+ The results of using the Lasso and elastic net with highly correlated variables
+ is shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:The-Lasso-vs-elastic-net"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ The elastic net controls for strong within-group correlations and has a
+ unique solution.
+ Further details about the Lasso and elastic net can be found in the following
+ reference 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "alma991031702535903361"
@@ -762,16 +831,92 @@ literal "false"
 \end_inset
 
 .
- 
 \end_layout
 
 \begin_layout Standard
-Using the 
-\begin_inset Formula $l_{1}$
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Discussion/LassoVsElasticNet.png
+	lyxscale 50
+	width 75text%
+
 \end_inset
 
- constraint provides a data-driven method to determine the number of needed
- bin normalizations in the analysis.
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The Lasso vs elastic net constraint with six variables, highly correlated
+ in groups of three.
+ The Lasso (
+\begin_inset Formula $\alpha=1$
+\end_inset
+
+), left, estimate exhibits erratic behavior as the regularization strength
+ 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ is varied.
+ The elastic net (
+\begin_inset Formula $\alpha=0.3$
+\end_inset
+
+), right, pulls highly correlated variables together.
+ In both panels, the vertical axis is the magnitude of the parameter weights
+ (coefficients), the bottom horizontal axis is the regularization strength
+ as measured by 
+\begin_inset Formula $\left|\left|\beta\right|\right|_{1}$
+\end_inset
+
+, and top horizontal axis is the count of number non-zero parameter weights.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+The Lasso vs Elastic Net Constraint
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:The-Lasso-vs-elastic-net"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can potentially reduce the dimensionality of the ND constraint by utilizing
+ the elastic net.
+ Using the elastic net constraint provides a data-driven method to determine
+ the number of important bin normalizations in the analysis.
  The method to define the fit binning described in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -782,29 +927,13 @@ noprefix "false"
 
 \end_inset
 
- is unchanged.
- What changes here is that each bin normalization is assigned to a single
- fit bin.
- Using the 
-\begin_inset Formula $l_{1}$
-\end_inset
-
- constraint with cross-validation, fit bins with minimal to no impact on
- the fit can be combined with those that are important.
- Then the best fit parameters and covariance using the 
-\begin_inset Formula $l_{2}$
-\end_inset
-
- constraint can then be found.
- 
-\end_layout
-
-\begin_layout Standard
-The 
-\begin_inset Formula $l_{1}$
-\end_inset
-
- constraint has been 
+ would be unchanged.
+ What changes is that instead of merging fit bins prior to the fit, the
+ elastic net determines which bin normalizations are important or not important.
+ Along with cross-validation, fit bins with minimal to no impact on the
+ fit can be excluded or combined with important fit bins.
+ Then the best fit parameters and covariance matrix using the current BANFF
+ machinery can still be found.
 \end_layout
 
 \begin_layout Section

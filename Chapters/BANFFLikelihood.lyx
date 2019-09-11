@@ -837,7 +837,7 @@ noprefix "false"
 \end_inset
 
 where each of the PDFs 
-\begin_inset Formula $\pi\left(\vec{y}=\xsec,\flux,\systematics\right)$
+\begin_inset Formula $\pi\left(\vec{y}=\left\{ \xsec,\flux,\systematics\right\} \right)$
 \end_inset
 
  are assumed multivariate normal distributions
