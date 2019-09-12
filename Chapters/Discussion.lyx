@@ -742,12 +742,62 @@ noprefix "false"
 \begin_inset Formula $l_{1}$
 \end_inset
 
--regularization constraint or Lasso
+-regularization constraint or least absolute shrinkage and selection operator
+ (Lasso)
 \begin_inset Foot
 status open
 
 \begin_layout Plain Layout
-The Lasso has
+The Lasso or 
+\begin_inset Formula $l_{1}$
+\end_inset
+
+-regularization constraint is widely employed in parameter estimation problems.
+ One of the advantages of the Lasso is that it provides an interpretable
+ model in situations with very high parameter spaces.
+ For example, the method has been used in cancer class prediction with gene
+ expression profiling in the 
+\begin_inset Quotes eld
+\end_inset
+
+PAM
+\begin_inset Quotes erd
+\end_inset
+
+ package
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ISI:000175637300012"
+literal "false"
+
+\end_inset
+
+.
+ The Lasso has also been implemented for Poisson likelihood models using
+ the 
+\begin_inset Quotes eld
+\end_inset
+
+glmnet
+\begin_inset Quotes erd
+\end_inset
+
+ package
+\begin_inset CommandInset citation
+LatexCommand cite
+key "JSSv033i01"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \end_inset

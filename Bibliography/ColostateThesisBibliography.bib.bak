@@ -1415,6 +1415,20 @@
   Volume                   = {84}
 }
 
+@Article{JSSv033i01,
+  Title                    = {Regularization Paths for Generalized Linear Models via Coordinate Descent},
+  Author                   = {Jerome Friedman and Others},
+  Journal                  = {Journal of Statistical Software, Articles},
+  Year                     = {2010},
+  Number                   = {1},
+  Pages                    = {1--22},
+  Volume                   = {33},
+
+  Doi                      = {10.18637/jss.v033.i01},
+  ISSN                     = {1548-7660},
+  Url                      = {https://www.jstatsoft.org/v033/i01}
+}
+
 @Article{fuchs:dvi,
   Title                    = {Device Independent File Format},
   Author                   = {David Fuchs},
@@ -1696,26 +1710,26 @@
 
 @Book{alma991031702535903361,
   Title                    = {Statistical Learning with Sparsity: The Lasso and Generalizations},
-  Author                   = {Hastie, T., and Tibshirani, R,, and Wainwright, M.},
+  Author                   = {Hastie, T. and Others},
   Publisher                = {CRC Press, Taylor and Francis Group},
   Year                     = {2015},
 
   Address                  = {Boca Raton},
-  Series                   = {Chapman and Hall/CRC monographs on statistics and applied probability; 143},
+  Series                   = {Chapman and Hall/CRC monographs on statistics and applied probability},
 
   ISBN                     = {9781498712163}
 }
 
 @Book{springer_series978-0-387-84858-7,
   Title                    = {The Elements of Statistical Learning: Data Mining, Inference, and Prediction},
-  Author                   = {Hastie, Trevor and Tibshirani, Robert and Friedman, Jerome},
+  Author                   = {Hastie, T. and Others},
   Publisher                = {Springer New York},
   Year                     = {2009},
 
   Address                  = {New York, NY},
   Series                   = {Springer Series in Statistics},
 
-  ISBN                     = {978-0-387-84857-0}
+  ISBN                     = {9780387848570}
 }
 
 @Article{Hayato2009,
@@ -2599,6 +2613,22 @@
 
   Owner                    = {mhogan},
   Timestamp                = {2019.01.15}
+}
+
+@Article{ISI:000175637300012,
+  Title                    = {Diagnosis of multiple cancer types by shrunken centroids of gene expression},
+  Author                   = {Tibshirani, R and Others},
+  Journal                  = {Proceedings of the National Academy of Sciences of the United States of America},
+  Year                     = {2002},
+
+  Month                    = {{MAY 14}},
+  Number                   = {{10}},
+  Pages                    = {{6567-6572}},
+  Volume                   = {{99}},
+
+  Doi                      = {{10.1073/pnas.082099299}},
+  ISSN                     = {{0027-8424}},
+  Unique-id                = {{ISI:000175637300012}}
 }
 
 @Article{Walton:2014esl,
