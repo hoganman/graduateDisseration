@@ -423,7 +423,7 @@ In this verification of the regularization strength, the test statistic
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\begin{aligned}\Delta\hat{\chi}_{\text{ND280}}^{2} & =\underset{\Delta\vec{y}\in\mathbb{R}^{d}}{\text{argmin}}\left\{ \Delta\chi_{\text{LLR}}^{2}+\lambda\times\Delta\chi_{\text{Penalty}}^{2}\left(\Delta\vec{y}\right)\right\} \\
+\begin{aligned}\Delta\hat{\chi}_{\text{ND280}}^{2} & =\underset{\Delta\vec{y}\in\mathbb{R}^{d}}{\text{argmin}}\left\{ \Delta\chi_{\text{LLR}}^{2}+\lambda\Delta\chi_{\text{Penalty}}^{2}\left(\Delta\vec{y}\right)\right\} \\
  & =\underset{\Delta\vec{y}\in\mathbb{R}^{d}}{\text{argmin}}\left\{ \Delta\chi_{\text{LLR}}^{2}+\lambda\left(\Delta\vec{y}\right)^{T}\cdot V^{-1}\cdot\left(\Delta\vec{y}\right)\right\} ,
 \end{aligned}
 \label{eq:RegularizedDeltaChi2ND280}
@@ -442,9 +442,9 @@ and the data is split into
 
  in this analysis is defined as 
 \begin_inset Formula 
-\[
-P_{k}\left(\left(\Delta\chi^{2}\right)_{\text{train}}^{-k},\left(\Delta\chi^{2}\right)_{\text{test}}^{k}\right)=\left|\left(\Delta\chi^{2}\right)_{\text{train}}^{-k}-\left(\Delta\chi^{2}\right)_{\text{test}}^{k}\right|
-\]
+\begin{equation}
+P_{k}\left(\left(\Delta\chi^{2}\right)_{\text{train}}^{-k},\left(\Delta\chi^{2}\right)_{\text{test}}^{k}\right)=\left|\left(\Delta\chi^{2}\right)_{\text{train}}^{-k}-\left(\Delta\chi^{2}\right)_{\text{test}}^{k}\right|\label{eq:predictionerror}
+\end{equation}
 
 \end_inset
 
@@ -472,15 +472,18 @@ th partition.
  is useful since the penalty terms cancel leaving only the difference in
  log-likelihood terms.
  The optimal regularization strength is determined by minimizing the cross-valid
-ation error,
+ation error, 
 \begin_inset Formula 
 \begin{equation}
-\text{CV}=\frac{1}{5}\sum_{k=1}^{5}P_{k}\left(\left(\Delta\chi^{2}\right)_{\text{train}}^{-k},\left(\Delta\chi^{2}\right)_{\text{test}}^{k}\right)\label{eq:CVerror}
+\begin{aligned}\text{CV} & =\left\langle \left|\left(\Delta\chi^{2}\right)_{\text{train}}-\left(\Delta\chi^{2}\right)_{\text{test}}\right|\right\rangle \\
+ & =\frac{1}{5}\sum_{k=1}^{5}P_{k}\left(\left(\Delta\chi^{2}\right)_{\text{train}}^{-k},\left(\Delta\chi^{2}\right)_{\text{test}}^{k}\right),
+\end{aligned}
+\label{eq:CVerror}
 \end{equation}
 
 \end_inset
 
-
+which is the average prediction error.
 \end_layout
 
 \begin_layout Subsection
@@ -488,10 +491,10 @@ Alternative Penalty
 \end_layout
 
 \begin_layout Standard
-Consider solving the linear regression with constraints problem 
+Consider solving the linear regression problem 
 \begin_inset Formula 
 \begin{equation}
-\vec{\eta}=X\vec{\beta}\label{eq:LinearProblem}
+\vec{\eta}=X\cdot\vec{\beta}\label{eq:LinearProblem}
 \end{equation}
 
 \end_inset
@@ -578,14 +581,14 @@ where the sum of squares of the weights
 \end_inset
 
  is the loss function.
- An appropriate choice of 
+ The usual choice of 
 \begin_inset Formula $L$
 \end_inset
 
  is using ordinary least squares 
 \begin_inset Formula 
 \[
-L\left(\vec{\eta},\vec{\beta}\right)=\sum_{j}\left|\vec{\eta}-X\vec{\beta}\right|^{2},
+L\left(\vec{\eta},\vec{\beta}\right)=\sum_{j}\left|\vec{\eta}-X\cdot\vec{\beta}\right|^{2},
 \]
 
 \end_inset
@@ -682,9 +685,7 @@ If we let
 , then the penalty term becomes
 \begin_inset Formula 
 \[
-\begin{aligned}\Delta\chi_{\text{Penalty}}^{2} & =\vec{\psi}^{T}\cdot\vec{\psi}\\
- & =\sum_{j}\left|\psi_{j}\right|^{2},
-\end{aligned}
+\begin{aligned}\Delta\chi_{\text{Penalty}}^{2} & =\sum_{j}\left|\psi_{j}\right|^{2}\end{aligned}
 \]
 
 \end_inset
@@ -752,9 +753,8 @@ The Lasso or
 \begin_inset Formula $l_{1}$
 \end_inset
 
--regularization constraint is widely employed in parameter estimation problems.
- One of the advantages of the Lasso is that it provides an interpretable
- model in situations with very high parameter spaces.
+-regularization constraint is commonly employed in parameter estimation
+ problems in linear systems.
  For example, the method has been used in cancer class prediction with gene
  expression profiling in the 
 \begin_inset Quotes eld
@@ -773,16 +773,7 @@ literal "false"
 \end_inset
 
 .
- The Lasso has also been implemented for Poisson likelihood models using
- the 
-\begin_inset Quotes eld
-\end_inset
-
-glmnet
-\begin_inset Quotes erd
-\end_inset
-
- package
+ The Lasso has also been shown to work with generalized linear models
 \begin_inset CommandInset citation
 LatexCommand cite
 key "JSSv033i01"
@@ -791,13 +782,6 @@ literal "false"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset VSpace defskip
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -826,8 +810,9 @@ where
 \end_inset
 
 -regularized constraint.
- However, the Lasso does not handle highly correlated variables very well
- and the parameter weights can be erratic.
+ Thus the Lasso has the advantage of providing an interpretable model in
+ situations with very high parameter spaces.
+ However, the Lasso does not handle highly correlated variables very well.
  This is overcome by combining the Lasso with 
 \begin_inset Formula $l_{2}$
 \end_inset
@@ -907,28 +892,30 @@ status open
 \begin_layout Plain Layout
 The Lasso vs elastic net constraint with six variables, highly correlated
  in groups of three.
- The Lasso (
-\begin_inset Formula $\alpha=1$
-\end_inset
-
-), left, estimate exhibits erratic behavior as the regularization strength
- 
+ The Lasso estimate, left, estimate exhibits erratic behavior as the regularizat
+ion strength 
 \begin_inset Formula $\lambda$
 \end_inset
 
  is varied.
- The elastic net (
-\begin_inset Formula $\alpha=0.3$
-\end_inset
-
-), right, pulls highly correlated variables together.
+ The elastic net, right, pulls highly correlated variables together.
  In both panels, the vertical axis is the magnitude of the parameter weights
  (coefficients), the bottom horizontal axis is the regularization strength
- as measured by 
-\begin_inset Formula $\left|\left|\beta\right|\right|_{1}$
+ as measured by the estimate
+\begin_inset Formula $\left|\left|\hat{\beta}\right|\right|_{1}$
 \end_inset
 
-, and top horizontal axis is the count of number non-zero parameter weights.
+, and top horizontal axis is the count of non-zero parameter weights.
+ This figure was taken directly from the following reference
+\begin_inset CommandInset citation
+LatexCommand cite
+key "alma991031702535903361"
+literal "false"
+
+\end_inset
+
+.
+ 
 \begin_inset Argument 1
 status open
 

@@ -5994,20 +5994,17 @@ constrain the neutrino flux and interaction rate
  at SK in order to reduce the impact of their systematic uncertainties on
  the oscillation analysis.
  The analysis in this thesis uses the data collected by the off-axis ND.
- The site is called ND280 and is located 280m away from the production target.
+ The site is called ND280 and is located 280 m away from the production
+ target.
  The primary detector is an off-axis, magnetized tracking detector consisting
  of different subdetectors.
  A separate detector array called the Interactive Neutrino Grid (INGRID)
  measures the neutrino beam profile.
- Both on-axis and off-axis detectors extensively utilize a commercial light
- sensor called a multi-pixel photon counter (MPPC) for the light collection
- in the scintillator-based detectors.
 \end_layout
 
 \begin_layout Standard
-The following subsections begin with a description of the MPPC technology
- used in T2K.
- Next is a description of INGRID and its purpose at ND280.
+The following subsections begin with a description of INGRID and its purpose
+ at ND280.
  This is followed by a general description primary off-axis, magnetized
  detector.
  The last two subsections are descriptions of two primary subdetectors in
@@ -6029,16 +6026,43 @@ On-Axis Detector
 \end_layout
 
 \begin_layout Standard
+The on-axis near detector called the Interactive Neutrino Grid (INGRID)
+ is a tracking scintillator detector designed to directly measure the neutrino
+ beam profile.
+ As shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:INGRID"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, it is a grid of tracking modules in the shape of a cross centered at the
+ designed neutrino beam center (
+\begin_inset Formula $\theta=0$
+\end_inset
+
+).
+ Each module consists of alternating layers of iron plates and scintillator
+ bars except for the two most downstream scintillating layers which lack
+ iron plates.
+ To monitor any beam asymmetry, two separate modules are placed off the
+ grid axis.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figures/Introduction/INGRID.png
-	width 75text%
+	width 50text%
 
 \end_inset
 
@@ -6049,12 +6073,12 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-A schematic of INGRID shows the arrangement of the tracking scintillating
- modules.
+A schematic of the INGRID detector showing the arrangement of the tracking
+ scintillating modules.
  There are 16 identical modules total with seven in the vertical row, seven
  in the horizontal row, and two at off-axis positions.
  INGRID is capable of measuring the neutrino beam in a transverse area of
- 10m 
+ 10 m 
 \begin_inset Formula $\times$
 \end_inset
 
@@ -6081,7 +6105,7 @@ name "fig:INGRID"
 status open
 
 \begin_layout Plain Layout
-Schematic of INGRID
+Schematic of the INGRID Detector
 \end_layout
 
 \end_inset
@@ -6100,39 +6124,12 @@ Schematic of INGRID
 \end_layout
 
 \begin_layout Standard
-The on-axis near detector called the Interactive Neutrino Grid (INGRID)
- is a tracking scintillator detector designed to directly measure the neutrino
- beam profile.
- As shown in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:INGRID"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-, it is a cross grid of tracking modules centered at the designed neutrino
- beam center (
-\begin_inset Formula $\theta=0$
-\end_inset
-
-).
- Each module consists of alternating layers of iron plates and scintillator
- bars except for the two most downstream scintillating layers which lack
- iron plates.
- To monitor any beam asymmetry, two separate modules are placed off the
- grid axis.
-\end_layout
-
-\begin_layout Standard
-Each scintillating bar consists of scintillator-doped polystyrene which
- emits light when a charged particle deposits energy in the media.
+Each scintillating bar consists of scintillator-doped polystyrene, which
+ emits light when a charged particle deposits energy in the medium.
  Each bar contains a single wavelength-shifting (WLS) fiber to collect and
- shift the light to a different energy.
- The light from the fiber is then collected using a device called a multipixel
- photon counter (MPPC) and converted into an electrical signal.
+ shift the light to a different wavelength.
+ The light trapped in the fiber is then collected by a device called a multipixe
+l photon counter (MPPC) and converted into an electrical signal.
  A MPPC is a compact device containing many sensitive avalanche photodiode
  pixels that act as Geiger micro-counters as shown in 
 \begin_inset CommandInset ref
@@ -6162,7 +6159,7 @@ ce{TiO_2}
 \end_inset
 
  doped polystyrene shell surrounds each bar.
- Bars are assembled into planes to provide tracking capabilities.
+ The bars are assembled into planes to provide tracking capabilities.
  Veto planes also surround each module to prevent false signals to trigger.
 \end_layout
 
@@ -6233,8 +6230,8 @@ name "fig:T2KMPPC"
 \end_layout
 
 \begin_layout Standard
-INGRID is continuously operated to check that the neutrino beam center was
- properly aligned at its designed center.
+The INGRID detector is continuously operated to check that the neutrino
+ beam center was properly aligned at its designed center.
  Diagnostic plots such as 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -6246,7 +6243,7 @@ noprefix "false"
 \end_inset
 
  are collected on a monthly basis to ensure that the neutrino flux at Super-Kami
-okande (SK) is consistent with T2K's design.
+okande (SK) is consistent with T2K's requirements.
  A history of the beam profile and event rate on INGRID between January
  2010 and October 2016 is shown in 
 \begin_inset CommandInset ref
@@ -6348,7 +6345,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-INGRID interaction event rate and beam profiles are shown.
+The INGRID detector interaction event rate and beam profiles are shown.
  The top panel shows the event rate for the three different horn currents.
  The middle and bottom panels show the horizontal and vertical beam directions
  with respect to the beam center, respectively.
@@ -6358,7 +6355,7 @@ INGRID interaction event rate and beam profiles are shown.
 status open
 
 \begin_layout Plain Layout
-INGRID Event Rate
+The INGRID Detector Event Rate
 \end_layout
 
 \end_inset
@@ -6388,21 +6385,22 @@ Off-Axis Detector Summary
 \end_layout
 
 \begin_layout Standard
-The near detector in T2K is ND280, which is an off-axis, magnetized tracking
- detector.
+The near detector used for T2K is ND280, which is an off-axis, magnetized
+ tracking detector.
  It is a collection of different detector technologies designed to facilitate
  three primary measurements:
 \end_layout
 
 \begin_layout Enumerate
+The flux of 
 \begin_inset Formula $\numu$
 \end_inset
 
- flux at SK,
+ at SK,
 \end_layout
 
 \begin_layout Enumerate
-Irreducible 
+The irreducible 
 \begin_inset Formula $\nue$
 \end_inset
 
@@ -6410,14 +6408,40 @@ Irreducible
 \end_layout
 
 \begin_layout Enumerate
+The rate of background 
 \begin_inset Formula $\numu$
 \end_inset
 
- interaction backgrounds and cross sections for the 
+ interactions and cross sections for the 
 \begin_inset Formula $\numu\rightarrow\nue$
 \end_inset
 
  search.
+\end_layout
+
+\begin_layout Standard
+The ND280 detector consists of a pi-zero detector (
+\begin_inset Formula $\pod$
+\end_inset
+
+), a tracker region consisting of a fine grain detector (FGD) and a time
+ projection chamber (TPC), an electromagnetic calorimeter (ECal), and a
+ side muon range detector (SMRD).
+ The ND280 subdetectors are instrumented inside the recycled UA1/NOMAD magnet
+ with the SMRD in the magnetic field return yoke itself.
+ All but the FGD are instrumented with the same MPPC technology mentioned
+ above.
+ A schematic of the different detector components of ND280 is shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:ND280Exploded"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -6472,37 +6496,15 @@ Schematic of the Off-Axis Near Detector ND280
 
 \end_inset
 
-ND280 consists of the pi-zero detector (
-\begin_inset Formula $\pod$
-\end_inset
 
-), the tracker region consisting of a fine grain detector (FGD) and time
- projection chamber (TPC), an electromagnetic calorimeter (ECal), and side
- muon range detector (SMRD).
- The ND280 subdetectors are instrumented inside the recycled UA1/NOMAD magnet
- with the SMRD in the magnetic field return yoke itself.
- All but the FGD is instrumented with the same scintillating-bar bar technology
- collected by MPPCs.
- A schematic of the different detector components of ND280 is shown in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:ND280Exploded"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Standard
-The analysis in this thesis use measurements from the primary subdetectors,
- the 
+The analysis in this thesis uses measurements from the 
 \begin_inset Formula $\pod$
 \end_inset
 
- and the TPC.
+ and the TPC subdetectors.
  The 
 \begin_inset Formula $\pod$
 \end_inset
@@ -6575,7 +6577,7 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -6688,8 +6690,8 @@ which is both orthogonal to
 \end_inset
 
 .
- Since the mechanical work on a particle in a magnetic field is zero, the
- particle's energy is unchanged (
+ Since the mechanical work performed on a particle in a magnetic field is
+ zero, the particle's energy is unchanged (
 \begin_inset Formula $\left|\mathbf{v}\right|$
 \end_inset
 
@@ -6725,7 +6727,7 @@ where
 \begin_inset Formula $\gamma(v)=\left(1-\left(v/c\right)^{2}\right)^{\nicefrac{-1}{2}}$
 \end_inset
 
- is the Lorentz factor for relativistic particles.
+ is the Lorentz factor.
  For uniform circular motion, the magnitude of the acceleration is given
  by 
 \begin_inset Formula 
@@ -6821,13 +6823,13 @@ The
 \end_inset
 
  is the primary detector used as the neutrino target in this thesis.
- It is a plastic scintillator based tracking calorimeter inside the ND280
+ It is a plastic scintillator-based tracking calorimeter inside the ND280
  magnet region.
  It was designed to measure the neutral current (NC) process 
 \begin_inset Formula $\numu+N\rightarrow\numu+N+\pizero+X$
 \end_inset
 
- on water where 
+ on water, where 
 \begin_inset Formula $N$
 \end_inset
 
@@ -6848,14 +6850,18 @@ The
 \begin_inset Formula $\theta_{13}\approx0$
 \end_inset
 
-.
+ since a pi-zero decay can mimic a 
+\begin_inset Formula $\nue$
+\end_inset
+
+-like signal.
  The 
 \begin_inset Formula $\pod$
 \end_inset
 
- is a modifiable detector which can be filled or drained of water during
- data taking, enabling the determination of water target (WT) cross sections
- by comparing water-in data with water-out data.
+ is a modifiable detector which can be filled or drained of water, enabling
+ the determination of water target (WT) cross sections by comparing water-in
+ data with water-out data.
 \end_layout
 
 \begin_layout Standard
@@ -6863,7 +6869,7 @@ The
 placement t
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -7026,9 +7032,9 @@ noprefix "false"
 \end_inset
 
 .
- The active detector components are very similar to INGRID's design where
- scintillation light is captured by a WSF and counted by a MPPC.
- Each bar is triangular in shape as shown in 
+ The active detector components are very similar to INGRID's design with
+ the primary difference being that each bar is triangular in shape as shown
+ in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:P0Dbar"
@@ -7039,7 +7045,7 @@ noprefix "false"
 \end_inset
 
 .
- A plane of 134 horizontal and 129 vertical bars together to form a 
+ A plane of 134 horizontal and 129 vertical bars together form a 
 \begin_inset Formula $\pod$
 \end_inset
 
@@ -7058,12 +7064,20 @@ noprefix "false"
 \end_inset
 
 .
- The 
+ The purpose of the triangular bar design is that particle tracks (muons
+ and pions) are to likely to deposit energy in two or more bars for simultaneous
+ly for each layer of bars crossed.
+ This provides a discriminant to identify particle tracks from electromagnetic
+ showers from a pi-zero decay.
+\end_layout
+
+\begin_layout Standard
+The 
 \begin_inset Formula $\pod$
 \end_inset
 
  dimensions are 
-\begin_inset Formula $2.298\times2.468\times2.350\text{m}^{3}$
+\begin_inset Formula $2.298\times2.468\times2.350\ \text{m}^{3}$
 \end_inset
 
 , in XYZ respectively, with a fiducial mass of ∼1900 kg for water and 3570
@@ -7077,7 +7091,7 @@ noprefix "false"
 \begin_inset Formula $\podule$
 \end_inset
 
-s are arranged into three primary regions.
+s are arranged into three regions.
  The water target (WT) region contains 26 
 \begin_inset Formula $\podule$
 \end_inset
@@ -7088,12 +7102,12 @@ s interleaved between bags of water 2.8 cm thick when filled and 1.3 mm thick
 \end_inset
 
  decay photons.
- The last two regions are the upstream ECal (USECal) central ECal (CECal).
- Each ECal region contains 7 
+ The last two regions are the upstream ECal and central ECal, each with
+ 7 
 \begin_inset Formula $\podule$
 \end_inset
 
-s with steel sheets clad with lead between them
+s interleaved with steel sheets clad with lead between them
 \begin_inset CommandInset citation
 LatexCommand cite
 key "AbePhyRevD9652017"
@@ -7503,13 +7517,13 @@ The readout electronics for the
 \end_layout
 
 \begin_layout Standard
-The TFB are readout to back-end electronics which control the TFBs and synchroni
-ze clocks.
+The TFBs are readout to back-end electronics which control the TFBs and
+ synchronize clocks.
  A total of six readout merger module (RMM) electronics receive TFB the
  data and control each TFB ASIC.
- RMM timing are synchronized with a cosmic trigger module and a slave clock
- module (SCM), of which both are synchronized with a master clock module
- from the beamline.
+ The RMM internal timing clocks are synchronized with a cosmic trigger module
+ and a slave clock module (SCM), both of which are synchronized with a master
+ clock module from the beamline.
  Synchronizing the RMMs with the SCM allows for the Trip-T ASIC integration
  windows to match with the beam.
  The RMMs are responsible for distributing the TFB data to the data acquisition

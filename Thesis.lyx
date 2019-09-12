@@ -188,27 +188,27 @@ hanging
 \color #faf0e6
 \end_branch
 \branch AppendixObsnorm
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixSigmaVariations
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixObsnormVariations
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixLikelihoodScans
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixLikelihoodPenaltyScans
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -218,12 +218,12 @@ hanging
 \color #faf0e6
 \end_branch
 \branch AppendixPostfitParameters
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixCC1pi
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -270,6 +270,9 @@ filename "LyxTextMacros.lyx"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -497,6 +500,11 @@ mainmatter % Main (arabic numbered) pages
 \begin_layout Standard
 \begin_inset ERT
 status open
+
+\begin_layout Plain Layout
+
+%trys to prevent splitting the references between lines
+\end_layout
 
 \begin_layout Plain Layout
 
