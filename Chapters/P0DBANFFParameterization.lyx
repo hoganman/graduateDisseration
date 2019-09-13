@@ -7913,31 +7913,49 @@ The
 \end_layout
 
 \begin_layout Standard
-Another problem with the mass uncertainty is due to bulging of the 
+Another problem with the mass uncertainty is due to structure deformations
+ in the 
 \begin_inset Formula $\pod$
 \end_inset
 
 .
- The 
+ To understand how the 
 \begin_inset Formula $\pod$
 \end_inset
 
- is mounted in each of its corners to the ND280 basket and has a physical
- air gap between it and the TPC.
- Since the upstream end of the 
+ has deformed, it is important to understand how the 
 \begin_inset Formula $\pod$
 \end_inset
 
- is physically against the ND280 support structure, this configuration permitted
- the downstream layers to expand from the middle into the air gap.
+ is mounted in the ND280 detector.
+ Each corner of the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ is mounted to the ND280 basket leaving the those corners spatially fixed.
+ The upstream end of the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ is also physically against the ND280 support structure.
+ However, there is a physical gap between the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ and the TPC.
+ This permitted the downstream layers to expand or 
+\begin_inset Quotes eld
+\end_inset
+
+bulge
+\begin_inset Quotes erd
+\end_inset
+
+ from the middle into the air gap.
  Importantly, this left more water volume, and importantly more mass, in
  the most downstream water bags compared to the upstream bags.
- The effect of more mass in the 
-\begin_inset Formula $\pod$
-\end_inset
-
- is evidenced in the vertex distribution as a function of the Z-position
- as shown in 
+ This additional mass or bulging effect is evident in the vertex distribution
+ as a function of the Z-position as shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:P0DBulging"

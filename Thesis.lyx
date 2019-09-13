@@ -188,27 +188,27 @@ hanging
 \color #faf0e6
 \end_branch
 \branch AppendixObsnorm
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixSigmaVariations
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixObsnormVariations
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixLikelihoodScans
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixLikelihoodPenaltyScans
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -218,12 +218,12 @@ hanging
 \color #faf0e6
 \end_branch
 \branch AppendixPostfitParameters
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixCC1pi
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -503,7 +503,7 @@ status open
 
 \begin_layout Plain Layout
 
-%trys to prevent splitting the references between lines
+% trys to prevent splitting the references between lines
 \end_layout
 
 \begin_layout Plain Layout
