@@ -174,8 +174,22 @@ inverted 0
 status open
 
 \begin_layout Standard
-The BANFF likelihood maximization procedure is a binned likelihood maximization
- fitting of the ND280 data.
+The T2K experiment has organized a task force dedicated to provide the near
+ detector constraint for the oscillation analysis.
+ This task force is called the beam and near detector flux task force, or
+ BANFF
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+BANFF is a large national park in Canada.
+\end_layout
+
+\end_inset
+
+ for short.
+ The BANFF group has implemented a binned likelihood maximization fit of
+ the ND280 data.
  This fit is done separately from the fitting the Super-Kamiokande (SK)
  data for the oscillation analysis.
  In a joint fit, the measurements from both detectors are considered along
@@ -189,13 +203,13 @@ The BANFF likelihood maximization procedure is a binned likelihood maximization
 \begin_inset Quotes eld
 \end_inset
 
-BANFF-fit
+BANFF fit
 \begin_inset Quotes erd
 \end_inset
 
 , includes nuisance parameters that affect the measurement of the oscillation
  parameters, but are not physics goals of the T2K experiment.
- The BANFF-fit parameters and their respective covariances are then used
+ The BANFF fit parameters and their respective covariances are then used
  as inputs in the oscillation analysis.
  This 
 \begin_inset Quotes eld
@@ -993,23 +1007,41 @@ changes by one (1), assuming
  is normally distributed.
  This calculation needs to generalized to account for multidimensional covarianc
 e between many parameters.
- Consider taking small steps 
-\begin_inset Formula $\Delta\vec{y}$
-\end_inset
-
- starting at the maximum likelihood estimate 
+ Consider taking small steps in parameter space starting at the maximum
+ likelihood estimate 
 \begin_inset Formula $\hat{\vec{y}}$
 \end_inset
 
- (zero gradient), the change in the test statistic is given approximately
- by a Taylor series
+ (zero gradient), the change in the test statistic is given by a Taylor
+ series
 \begin_inset Formula 
-\begin{equation}
-\begin{aligned}\Delta\chi^{2}\left(\hat{\vec{y}}+\Delta\vec{y}\right) & \approx\frac{\Delta\chi^{2}\left(\hat{\vec{y}}\right)}{0!}+\frac{\cancelto{0}{\nabla\left.\left(\Delta\chi^{2}\right)\right|_{\vec{y}=\hat{\vec{y}}}^{T}}\cdot\Delta\vec{y}}{1!}+\frac{\left(\Delta\vec{y}\right)^{T}\cdot\nabla\left[\nabla\left.\left(\Delta\chi^{2}\right)\right|_{\vec{y}=\hat{\vec{y}}}\right]\cdot\Delta\vec{y}}{2!}\\
- & \approx\Delta\chi^{2}\left(\hat{\vec{y}}\right)+\frac{1}{2}\left(\Delta\vec{y}\right)^{T}\cdot\mathcal{H}\cdot\Delta\vec{y},
+\[
+\Delta\chi^{2}\left(\vec{y}\right)=\sum_{n=0}^{\infty}\frac{1}{n!}\left[\left(\Delta\vec{y}\right)^{T}\left.\nabla_{\vec{y}}\right|_{\vec{y}=\hat{\vec{y}}}\right]^{n}\Delta\chi^{2}\left(\vec{y}\right).
+\]
+
+\end_inset
+
+The test statistic to second order in 
+\begin_inset Formula $\vec{y}$
+\end_inset
+
+ is given by
+\begin_inset Formula 
+\[
+\begin{aligned}\Delta\chi^{2}\left(\vec{y}\right) & \approx\frac{1}{0!}\Delta\chi^{2}\left(\hat{\vec{y}}\right)+\frac{1}{1!}\left(\Delta\vec{y}\right)^{T}\underset{\text{zero vector}}{\underbrace{\left.\nabla_{\vec{y}}\right|_{\vec{y}=\hat{\vec{y}}}\Delta\chi^{2}\left(\vec{y}\right)}}\\
+ & +\frac{1}{2!}\left[\left(\Delta\vec{y}\right)^{T}\left.\nabla_{\vec{y}}\right|_{\vec{y}=\hat{\vec{y}}}\right]\left[\left(\Delta\vec{y}\right)^{T}\left.\nabla_{\vec{y}}\right|_{\vec{y}=\hat{\vec{y}}}\right]\Delta\chi^{2}\left(\vec{y}\right),
 \end{aligned}
-\label{eq:chi2taylorseries}
-\end{equation}
+\]
+
+\end_inset
+
+and can be written as 
+\begin_inset Formula 
+\[
+\begin{aligned}\Delta\chi^{2}\left(\vec{y}\right) & \approx\Delta\chi^{2}\left(\hat{\vec{y}}\right)+\frac{1}{2}\left(\Delta\vec{y}\right)^{T}\cdot\left(\left.\nabla_{\vec{y}}\nabla_{\vec{y}}^{T}\Delta\chi^{2}\left(\vec{y}\right)\right|_{\vec{y}=\hat{\vec{y}}}\right)\cdot\left(\Delta\vec{y}\right)\\
+ & \approx\Delta\chi^{2}\left(\hat{\vec{y}}\right)+\frac{1}{2}\left(\Delta\vec{y}\right)^{T}\cdot\mathcal{H}\cdot\Delta\vec{y}
+\end{aligned}
+\]
 
 \end_inset
 
@@ -1044,13 +1076,12 @@ noprefix "false"
 , we can compare terms and find that 
 \begin_inset Formula 
 \begin{equation}
--\mathcal{H}=V^{-1},\label{eq:hesscovariance}
+\mathcal{H}=V^{-1},\label{eq:hesscovariance}
 \end{equation}
 
 \end_inset
 
-or in other words the inverse of the negative Hessian matrix is the covariance
- matrix.
+or in other words the inverse of the Hessian matrix is the covariance matrix.
 \end_layout
 
 \end_inset
