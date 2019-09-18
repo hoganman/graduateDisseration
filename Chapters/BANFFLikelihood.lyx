@@ -1108,33 +1108,6 @@ Postfit Covariance
 \begin_layout Standard
 Once the global minimum is found, the postfit covariance matrix needs to
  be calculated.
- In a one-dimensional fit with best fit parameter 
-\begin_inset Formula $\hat{y}$
-\end_inset
-
-, the standard error on 
-\begin_inset Formula $y$
-\end_inset
-
-, 
-\begin_inset Formula $\sigma_{y}$
-\end_inset
-
-, would be calculated when the difference between the quantity
-\begin_inset Formula 
-\[
-\frac{\left(y-\hat{y}\right)^{2}}{\sigma_{y}^{2}}
-\]
-
-\end_inset
-
-changes by one (1), assuming 
-\begin_inset Formula $y$
-\end_inset
-
- is normally distributed.
- This calculation needs to generalized to account for multidimensional covarianc
-e between many parameters.
  Consider taking small steps in parameter space starting at the maximum
  likelihood estimate 
 \begin_inset Formula $\hat{\vec{y}}$

@@ -694,15 +694,11 @@ noprefix "false"
 .
  It is through the CC interaction where the flavor of the neutrino is inferred
  from the charged lepton.
- For instance, an muon type neutrino, 
-\begin_inset Formula $\numu$
+ For instance, an electron type neutrino, 
+\begin_inset Formula $\nue$
 \end_inset
 
-, is inferred to have interacted with matter if a muon, 
-\begin_inset Formula $\muminus$
-\end_inset
-
-, is observed.
+, is inferred to have interacted with matter if an electron is observed.
  The same is not true for NC interactions, since those interactions are
  flavor agnostic.
  The NC interaction involves a neutral Z boson and does not change the neutrino'
@@ -717,9 +713,13 @@ noprefix "false"
 \end_inset
 
 .
-\end_layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
+\align center
 \begin_inset Float figure
 placement t
 wide false
@@ -742,22 +742,6 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-A Neutrino CC Interaction Feynman Diagram
-\end_layout
-
-\end_inset
-
- A CC Feynman diagram illustrating a electron neutrino scattering off an
- electron 
-\begin_inset Formula $\left(\nue+e^{-}\rightarrow\nue+e^{-}\right)$
-\end_inset
-
-.
- 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:NuCCFeynman"
@@ -775,9 +759,6 @@ name "fig:NuCCFeynman"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 placement t
 wide false
@@ -788,8 +769,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename Figures/Introduction/NCScatteringJaxoDraw.png
-	lyxscale 75
-	width 2.8612in
+	lyxscale 50
+	height 2.8556in
 
 \end_inset
 
@@ -800,29 +781,6 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-A Neutrino NC Interaction Feynman Diagram
-\end_layout
-
-\end_inset
-
-Feynman diagram of NC scattering between a neutrino of arbitrary flavor
- 
-\begin_inset Formula $X$
-\end_inset
-
- scatters off an electron via the emission of a 
-\begin_inset Formula $Z$
-\end_inset
-
- boson 
-\begin_inset Formula $\left(\nu_{X}+e^{-}\rightarrow\nu_{X}+e^{-}\right)$
-\end_inset
-
-.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:NCFeynman"
@@ -834,6 +792,45 @@ name "fig:NCFeynman"
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The CC and NC 
+\begin_inset Formula $\nu_{e}e^{-}\rightarrow\nu_{e}e^{-}$
+\end_inset
+
+ interaction
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+The CC and NC 
+\begin_inset Formula $\nu_{e}e^{-}\rightarrow\nu_{e}e^{-}$
+\end_inset
+
+ Interaction
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -4890,7 +4887,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Figures/Introduction/OffAxisFluxUnoscillatedNumu.png
-	width 40text%
+	width 60text%
 
 \end_inset
 
