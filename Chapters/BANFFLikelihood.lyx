@@ -516,6 +516,10 @@ literal "false"
 , and its systematic model terms.
 \end_layout
 
+\begin_layout Subsection
+Binned Likelihood Ratio
+\end_layout
+
 \begin_layout Standard
 Consider many binned samples that select different charged current topologies.
  A convenient choice of observables for all the samples are the outgoing
@@ -797,7 +801,7 @@ Using the likelihood ratio test theorem, a test statistic is defined as
 \begin_inset Formula 
 \begin{equation}
 \begin{aligned}\Delta\chi_{\text{LLR}}^{2} & =-2\log\frac{\mathcal{L}\left(\vec{N}^{d}\left|\vec{N}^{p}\right.\right)}{\mathcal{L}\left(\vec{N}^{d}\left|\vec{N}^{d}\right.\right)}\\
- & =2\sum_{i=1}^{M}\left[\vec{N}_{i}^{p}-\vec{N}_{i}^{d}+\vec{N}_{i}^{d}\log\left(\frac{\vec{N}_{i}^{d}}{\vec{N}_{i}^{p}}\right)\right]
+ & =2\sum_{i=1}^{M}\left[\vec{N}_{i}^{p}-\vec{N}_{i}^{d}+\vec{N}_{i}^{d}\log\left(\frac{\vec{N}_{i}^{d}}{\vec{N}_{i}^{p}}\right)\right],
 \end{aligned}
 \label{eq:LLHRatio}
 \end{equation}
@@ -832,17 +836,89 @@ noprefix "false"
 
  is the MC predicted probability which assumes the best maximum likelihood
  estimate is the number of observed events.
- Penalty terms from the cross section, flux, and detector systematics are
- included in order to force the results to be consistent with systematic
- uncertainties.
- The new test statistic for all of ND280, 
+\end_layout
+
+\begin_layout Subsection
+Nuisance Penalty
+\end_layout
+
+\begin_layout Standard
+Since the BANFF ND constraint is a predictive model fit to data, it is subject
+ to the bias-variance problem.
+ This problem basically states that for a set of samples 
+\begin_inset Formula $s\in\mathcal{S}$
+\end_inset
+
+, predictive models 
+\begin_inset Formula $f\in\mathcal{F}$
+\end_inset
+
+ with low parameter estimate bias have high parameter variance or vice versa.
+ We can imagine this problem dictated by an uncertainty principle
+\begin_inset Formula 
+\[
+\Delta y\Delta\sigma^{2}\geq h,
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\Delta y$
+\end_inset
+
+ and 
+\begin_inset Formula $\Delta\sigma^{2}$
+\end_inset
+
+ is the difference between the fit estimates and variances on 
+\begin_inset Formula $y$
+\end_inset
+
+, respectively, between a unconstrained model 
+\begin_inset Formula $f_{1}\in\mathcal{F}$
+\end_inset
+
+ and a constrained model 
+\begin_inset Formula $f_{2}\subseteq f_{1}$
+\end_inset
+
+ with 
+\begin_inset Formula $y\in f_{2},f_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $h$
+\end_inset
+
+ is some uncertainty scale unique to the samples.
+ We wish to have a ND constraint measurement with as little variance as
+ possible, which is achieved by introducing penalty terms to the test statistic
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:LLHRatio"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ This is also physically motivated since we want the measurement to be consisten
+t with known systematic uncertainties.
+ The known systematic uncertainties in the analysis are the flux, cross
+ section, and detector inefficiencies.
+\end_layout
+
+\begin_layout Standard
+The updated test statistic, 
 \begin_inset Formula $\Delta\chi_{\ND280}^{2}$
 \end_inset
 
 , is given by
 \begin_inset Formula 
 \begin{equation}
-\begin{aligned}\Delta\chi_{\ND280}^{2} & =\Delta\chi_{\text{LLR}}^{2}+\Delta\chi_{\text{xsec}}^{2}+\Delta\chi_{\text{Flux}}^{2}+\Delta\chi_{\text{Det}}^{2}\\
+\begin{aligned}\Delta\chi_{\ND280}^{2} & =\Delta\chi_{\text{LLR}}^{2}+\underset{\text{Penalty terms}}{\underbrace{\Delta\chi_{\text{xsec}}^{2}+\Delta\chi_{\text{Flux}}^{2}+\Delta\chi_{\text{Det}}^{2}}}\\
  & =\Delta\chi_{\text{LLR}}^{2}-2\left(\log\underset{\text{xsec}}{\underbrace{\pi\left(\xsec\right)}}+\log\underset{\text{Flux}}{\underbrace{\pi\left(\flux\right)}}+\log\underset{\text{Det}}{\underbrace{\pi\left(\systematics\right)}}\right),
 \end{aligned}
 \label{eq:LLHRatioWithPenaltyTerms}
@@ -968,18 +1044,70 @@ noprefix "false"
 
 \begin_layout Standard
 The best fit parameters are those that minimizes the chi-squared statistic
+ given by 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:minBANFFDeltaChiSqr"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
-\Delta\hat{\chi}_{\text{ND280}}^{2}=\underset{\Delta\vec{y}\in\mathbb{R}^{d}}{\text{argmin}}\left\{ \Delta\chi_{\text{LLR}}^{2}\left(\vec{N}^{d},\vec{N}^{p}\right)+\Delta\chi_{\text{Penalty}}^{2}\left(\Delta\vec{y}\right)\right\} .\label{eq:minBANFFDeltaChiSqr}
+\Delta\hat{\chi}_{\text{ND280}}^{2}=\underset{\vec{y}\in\mathbb{R}^{d}}{\text{argmin}}\left\{ \Delta\chi_{\text{LLR}}^{2}\left(\vec{N}^{d},\vec{N}^{p}\right)+\Delta\chi_{\text{Penalty}}^{2}\left(\vec{y}\right)\right\} \label{eq:minBANFFDeltaChiSqr}
 \end{equation}
 
 \end_inset
 
-Once the global minimum is found, the postfit covariance matrix 
-\begin_inset Formula $V$
+
+\end_layout
+
 \end_inset
 
- needs to be calculated.
+where 
+\begin_inset Formula $\Delta\chi_{\text{Penalty}}^{2}\left(\vec{y}\right)$
+\end_inset
+
+ is the sum of all penalty terms and 
+\begin_inset Formula $\vec{N}^{p}$
+\end_inset
+
+ is a function of 
+\begin_inset Formula $\vec{y}$
+\end_inset
+
+ as well.
+\end_layout
+
+\begin_layout Subsection
+Postfit Covariance
+\end_layout
+
+\begin_layout Standard
+Once the global minimum is found, the postfit covariance matrix needs to
+ be calculated.
  In a one-dimensional fit with best fit parameter 
 \begin_inset Formula $\hat{y}$
 \end_inset
@@ -988,11 +1116,11 @@ Once the global minimum is found, the postfit covariance matrix
 \begin_inset Formula $y$
 \end_inset
 
- 
-\begin_inset Formula $\left(\sigma_{y}\right)$
+, 
+\begin_inset Formula $\sigma_{y}$
 \end_inset
 
- would be calculated when the difference between the quantity
+, would be calculated when the difference between the quantity
 \begin_inset Formula 
 \[
 \frac{\left(y-\hat{y}\right)^{2}}{\sigma_{y}^{2}}

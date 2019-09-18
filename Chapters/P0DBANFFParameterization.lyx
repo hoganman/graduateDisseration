@@ -1100,7 +1100,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Unoscillated Super-K FHC flux
+Unoscillated SK FHC flux
 \end_layout
 
 \end_inset
@@ -1132,7 +1132,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Unoscillated Super-K RHC flux
+Unoscillated SK RHC flux
 \end_layout
 
 \end_inset
@@ -3507,7 +3507,7 @@ ND280
 \begin_inset Text
 
 \begin_layout Plain Layout
-Super-K 
+SK 
 \begin_inset Formula $\numu$
 \end_inset
 
@@ -3973,7 +3973,7 @@ Super-K
 \begin_inset Text
 
 \begin_layout Plain Layout
-Super-K 
+SK 
 \begin_inset Formula $\numubar$
 \end_inset
 
@@ -4187,7 +4187,7 @@ Super-K
 \begin_inset Text
 
 \begin_layout Plain Layout
-Super-K 
+SK 
 \begin_inset Formula $\nue$
 \end_inset
 
@@ -4485,7 +4485,7 @@ Super-K
 \begin_inset Text
 
 \begin_layout Plain Layout
-Super-K 
+SK 
 \begin_inset Formula $\nuebar$
 \end_inset
 
@@ -4573,7 +4573,7 @@ Super-K
 \begin_inset Text
 
 \begin_layout Plain Layout
-Super-K 
+SK 
 \begin_inset Formula $\numu$
 \end_inset
 
@@ -4787,7 +4787,7 @@ Super-K
 \begin_inset Text
 
 \begin_layout Plain Layout
-Super-K 
+SK 
 \begin_inset Formula $\numubar$
 \end_inset
 
@@ -5253,7 +5253,7 @@ Super-K
 \begin_inset Text
 
 \begin_layout Plain Layout
-Super-K 
+SK 
 \begin_inset Formula $\nue$
 \end_inset
 
@@ -5341,7 +5341,7 @@ Super-K
 \begin_inset Text
 
 \begin_layout Plain Layout
-Super-K 
+SK 
 \begin_inset Formula $\nuebar$
 \end_inset
 
@@ -9314,7 +9314,7 @@ As mentioned in the CC-
 
  parameter is fixed to remove correlations with the other BeRPA scale parameters.
  However, there are four fixed normalization parameters in the BANFF fit
- since they correspond to Super-K only parameters.
+ since they correspond to SK only parameters.
  They are included in the fit in order to maintain consistency between the
  ND280 constraint and oscillation analysis parameterizations.
  In other words, they are spectators in the BANFF fit.

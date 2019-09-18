@@ -184,10 +184,10 @@ literal "false"
 
 .
  The latter solution was proposed by Wolfgang Pauli in a letter dated 4
- December 1930 to a group of physicists meeting in Tübingen, modern Germany,
+ December, 1930, to a group of physicists meeting in Tübingen, modern Germany,
  where he first proposed the neutrino
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 In W Pauli's December 1930 letter, he referred to his proposed particle
@@ -199,25 +199,8 @@ neutron
 \begin_inset Quotes erd
 \end_inset
 
-, which is not the same neutron that we know of today.
- At that point in time, the neutral particles inside the atomic nucleus,
- also called 
-\begin_inset Quotes eld
-\end_inset
-
-neutrons
-\begin_inset Quotes erd
-\end_inset
-
-, had not been discovered, let alone understood.
- The neutron, which was discovered in 1932 by James Chadwick, has been formally
- associated as the neutral, cousin particle to the proton.
- It would be Enrico Fermi who would coin the particle in W Pauli's letter
- and solution to the 
-\begin_inset Formula $\beta$
-\end_inset
-
--decay spectrum as a 
+, and not the neutrino.
+ It would be Enrico Fermi who would coin the particle as a 
 \begin_inset Quotes eld
 \end_inset
 
@@ -254,7 +237,7 @@ little neutral one
 \begin_layout Standard
 The neutrino was first observed in 1953 by Clyde Cowan and Frederick Reines
  using a nuclear reactor in South Carolina, United States of America.
- Since then three types or 
+ Since then, three types or 
 \begin_inset Quotes eld
 \end_inset
 
@@ -284,7 +267,7 @@ l is expected out of the
 \begin_inset Formula $7.0\times10^{10}\text{ neutrinos}/\text{cm}^{2}/\text{sec}$
 \end_inset
 
- incident on the Earth.
+ incident on the Earth
 \begin_inset Foot
 status collapsed
 
@@ -340,7 +323,7 @@ name "subsec:nuSM"
 \begin_layout Standard
 The Standard Model (SM) of particle physics is the theory of elementary
  or fundamental particle constituents and the forces between them.
- These forces are the electromagnetic, the weak and the strong.
+ These forces are the electromagnetic, the weak, and the strong.
  String theory, which is not yet tested, attempts to incorporate the gravitation
 al force.
  The SM forces and the gravitational force constitute the four 
@@ -432,7 +415,7 @@ The Standard Model of particle physics consists of six quarks (up, down,
  The quarks, electron, muon, tau, W, and Z all gain mass through the Higgs
  field.
  The focus of this thesis are the neutrinos which are classified according
- to their charged, more massive Lepton cousins.
+ to their charged, more massive lepton cousins.
  Image taken from 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -482,7 +465,7 @@ weak isospin doublet
 
  in the SM.
  These doublets are locally gauge invariant under a SU(2)
-\begin_inset Formula $\times$
+\begin_inset Formula $\bigotimes$
 \end_inset
 
 U(1) symmetry which leads to the postulated existence of the photon, the
@@ -497,7 +480,7 @@ U(1) symmetry which leads to the postulated existence of the photon, the
  bosons.
  They are necessary to enable local gauge invariance
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 A gauge theory describes ways to measure physical forces or fields through
@@ -590,8 +573,8 @@ weak force
 \end_layout
 
 \begin_layout Standard
-For weak interactions to occur at energies far below the masses (also called
- 
+For weak interactions to occur at energies far below the rest mass (also
+ called 
 \begin_inset Quotes eld
 \end_inset
 
@@ -628,7 +611,7 @@ where
  As an example, consider a neutrino emitting a Z-boson as shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "fig:CCNCInteractions"
+reference "fig:NuCCFeynman"
 plural "false"
 caps "false"
 noprefix "false"
@@ -693,24 +676,40 @@ where
 \begin_layout Standard
 Weak interactions are classified into two classes: charged current (CC)
  and neutral current (NC).
- The CC interactions involve a charged W boson and changes the incident
+ The CC interaction involves a charged W boson and changes the incident
  neutrino into an electrically charged lepton of flavor 
 \begin_inset Formula $l$
 \end_inset
 
- where the flavor of the neutrino 
-\begin_inset Formula $\nu_{l}$
-\end_inset
-
- is inferred from the charged lepton.
- The same is not true for NC interactions, in which the exchange a neutral
- Z boson occurs.
- The NC interactions are flavor agnostic since they do not produce a charged
- lepton nor change the neutrino's flavor.
- An example of each interaction type is shown in 
+ as shown 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "fig:CCNCInteractions"
+reference "fig:NuCCFeynman"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ It is through the CC interaction where the flavor of the neutrino is inferred
+ from the charged lepton.
+ For instance, an muon type neutrino, 
+\begin_inset Formula $\numu$
+\end_inset
+
+, is inferred to have interacted with matter if a muon, 
+\begin_inset Formula $\muminus$
+\end_inset
+
+, is observed.
+ The same is not true for NC interactions, since those interactions are
+ flavor agnostic.
+ The NC interaction involves a neutral Z boson and does not change the neutrino'
+s flavor as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:NCFeynman"
 plural "false"
 caps "false"
 noprefix "false"
@@ -729,69 +728,10 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
 \begin_inset Graphics
-	filename Figures/Introduction/MuonDecayJaxoDraw.png
+	filename Figures/Introduction/CCnueJaxoDraw.png
 	lyxscale 50
-	width 45text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Muon Decay
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/Introduction/NCScatteringJaxoDraw.png
-	lyxscale 75
-	width 45text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Formula $\nu+e^{-}$
-\end_inset
-
- NC Scattering
-\end_layout
-
-\end_inset
-
-
-\end_layout
+	height 2.8556in
 
 \end_inset
 
@@ -806,30 +746,70 @@ status open
 status open
 
 \begin_layout Plain Layout
-CC and NC Feynman Diagrams
+A Neutrino CC Interaction Feynman Diagram
 \end_layout
 
 \end_inset
 
-Feynman diagrams illustrating a CC and a NC interaction with time axis increasin
-g from bottom to top in both.
- (a) Feynman diagram of a muon decay 
-\begin_inset Formula $\left(\mu^{-}\rightarrow\numu\antinue e^{-}\right)$
+ A CC Feynman diagram illustrating a electron neutrino scattering off an
+ electron 
+\begin_inset Formula $\left(\nue+e^{-}\rightarrow\nue+e^{-}\right)$
 \end_inset
 
 .
- This is a charged current process that converts a charged muon into a muon
- neutrino via the emission of a 
-\begin_inset Formula $W^{-}$
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:NuCCFeynman"
+
 \end_inset
 
- boson.
- Due to a conserved quantum number called lepton number, the 
-\begin_inset Formula $W^{-}$
+
+\end_layout
+
 \end_inset
 
- must emit an electron and electron neutrino pair.
- (b) Feynman diagram of NC scattering between a neutrino of arbitrary flavor
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement t
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Introduction/NCScatteringJaxoDraw.png
+	lyxscale 75
+	width 2.8612in
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+A Neutrino NC Interaction Feynman Diagram
+\end_layout
+
+\end_inset
+
+Feynman diagram of NC scattering between a neutrino of arbitrary flavor
  
 \begin_inset Formula $X$
 \end_inset
@@ -838,10 +818,14 @@ g from bottom to top in both.
 \begin_inset Formula $Z$
 \end_inset
 
- boson.
+ boson 
+\begin_inset Formula $\left(\nu_{X}+e^{-}\rightarrow\nu_{X}+e^{-}\right)$
+\end_inset
+
+.
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:CCNCInteractions"
+name "fig:NCFeynman"
 
 \end_inset
 
@@ -879,17 +863,7 @@ Neutrinos are observed to have their spin direction vectors
 \end_inset
 
  and this is reversed for antineutrinos.
- This property is called helicity and is given by 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "eq:helicityoperator"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-
+ This property is called helicity and is given by
 \begin_inset Formula 
 \begin{equation}
 \mathcal{H}=\frac{\boldsymbol{\sigma}\cdot\boldsymbol{P}}{\left|\boldsymbol{P}\right|}.\label{eq:helicityoperator}
@@ -911,7 +885,7 @@ Although neutrino detection is difficult, the neutrino helicity is readily
 \begin_inset Formula $\mathcal{H}=-1$
 \end_inset
 
-) and to converse spin, the neutrino's helicity must also be negative as
+) and to conserve spin, the neutrino's helicity must also be negative as
  shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -988,7 +962,7 @@ The helicity of the neutrino as inferred from pion decay.
  Since a pion at rest has zero (0) angular momentum, the system of daughter
  particles must have also net zero angular momentum.
  By measuring the muon's helicity, the helicity of neutrino is inferred.
- A neutrino (antineutrino) is a left- (right-) handed helicity particle
+ A neutrino (antineutrino) is a left-handed (right-handed) helicity particle
  since its spin is anti-parallel (parallel) to its momentum.
  
 \begin_inset CommandInset label
@@ -1018,7 +992,7 @@ The Dirac Lagrangian for a free particle field
  with half-integer spin can be written as
 \begin_inset Formula 
 \begin{equation}
-\mathcal{L}=\overline{\psi}\left(x\right)\left[\frac{i\hbar}{2}\sum_{\mu=0}^{3}\gamma^{\mu}\left(\overrightarrow{\partial_{\mu}}-\overleftarrow{\partial_{\mu}}\right)-mc\right]\psi\left(x\right)\label{eq:diraclagrangian}
+\mathcal{L}=\overline{\psi}\left(x\right)\left[\frac{i\hbar}{2}\sum_{\mu=0}^{3}\gamma^{\mu}\left(\overrightarrow{\partial_{\mu}}-\overleftarrow{\partial_{\mu}}\right)-mc\right]\psi\left(x\right),\label{eq:diraclagrangian}
 \end{equation}
 
 \end_inset
@@ -1039,7 +1013,7 @@ where
  is defined as 
 \begin_inset Formula 
 \begin{equation}
-\overline{\psi}\left(x\right)\equiv\psi^{\dagger}\left(x\right)\gamma^{0}\label{eq:adjointfield}
+\overline{\psi}\left(x\right)\equiv\psi^{\dagger}\left(x\right)\gamma^{0},\label{eq:adjointfield}
 \end{equation}
 
 \end_inset
@@ -1056,7 +1030,7 @@ where
  operator is a four-vector defined as
 \begin_inset Formula 
 \begin{equation}
-\partial_{0}=\frac{1}{c}\partderiv t,\partial_{1}=\partderiv x,\partial_{2}=\partderiv y,\partial_{3}=\partderiv z\label{eq:fourderivative}
+\partial_{0}=\frac{1}{c}\partderiv t,\partial_{1}=\partderiv x,\partial_{2}=\partderiv y,\partial_{3}=\partderiv z,\label{eq:fourderivative}
 \end{equation}
 
 \end_inset
@@ -1098,7 +1072,7 @@ that acts only to the right while
  is given by
 \begin_inset Formula 
 \begin{equation}
-\partial_{\mu}\frac{\partial\mathcal{L}}{\partial\left(\partial_{\mu}\overline{\psi}\right)}-\frac{\partial\mathcal{L}}{\partial\overline{\psi}}=0\label{eq:diracELequation}
+\partial_{\mu}\frac{\partial\mathcal{L}}{\partial\left(\partial_{\mu}\overline{\psi}\right)}-\frac{\partial\mathcal{L}}{\partial\overline{\psi}}=0,\label{eq:diracELequation}
 \end{equation}
 
 \end_inset
@@ -1289,7 +1263,7 @@ noprefix "false"
 , also referred to as V-A, under P transformations.
  This feature is what allows for the weak force to violate P-symmetry and
  CP-symmetry.
- Referring back to
+ Referring back to 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "eq:diraclagrangian"
@@ -1312,8 +1286,8 @@ noprefix "false"
 , the Dirac equation becomes a set of coupled equations
 \begin_inset Formula 
 \begin{equation}
-\begin{aligned}i\hbar\sum_{\mu=0}^{3}\gamma^{\mu}\partial_{\mu}\psi_{P} & =mc\psi_{M},\\
-i\hbar\sum_{\mu=0}^{3}\gamma^{\mu}\partial_{\mu}\psi_{M} & =mc\psi_{P}
+\begin{aligned}i\hbar\sum_{\mu=0}^{3}\gamma^{\mu}\partial_{\mu}\psi_{P} & =mc\psi_{M}\\
+i\hbar\sum_{\mu=0}^{3}\gamma^{\mu}\partial_{\mu}\psi_{M} & =mc\psi_{P},
 \end{aligned}
 \label{eq:diraceqnchiral}
 \end{equation}
@@ -1343,7 +1317,7 @@ where
 \begin_inset Formula $\chi$
 \end_inset
 
- represent two-component spinors.
+ represents two-component spinors.
  Using 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1367,7 +1341,7 @@ noprefix "false"
  can again be rewritten as
 \begin_inset Formula 
 \begin{equation}
-\begin{aligned}i\hbar\left[\frac{1}{c}\partderiv t+\boldsymbol{\sigma}\cdot\boldsymbol{\nabla}\right]\chi_{P} & =-mc\chi_{M},\\
+\begin{aligned}i\hbar\left[\frac{1}{c}\partderiv t+\boldsymbol{\sigma}\cdot\boldsymbol{\nabla}\right]\chi_{P} & =-mc\chi_{M}\\
 i\hbar\left[\frac{1}{c}\partderiv t-\boldsymbol{\sigma}\cdot\boldsymbol{\nabla}\right]\chi_{M} & =-mc\chi_{P},
 \end{aligned}
 \label{eq:diraceqnchiralspinors}
@@ -1430,7 +1404,7 @@ where the differential operators have been evaluated as the particle's energy
 \begin_inset Formula $E=-\left|\boldsymbol{P}\right|c$
 \end_inset
 
- in the context of quantum field theory are interpreted as antiparticles
+ which in the context of quantum field theory are interpreted as antiparticles
  traveling backwards in time.
  Conversely, 
 \begin_inset Formula $\psi_{M}$
@@ -1465,7 +1439,7 @@ noprefix "false"
  is given by
 \begin_inset Formula 
 \begin{equation}
-\boldsymbol{\sigma}=i\left(\gamma^{2}\gamma^{3},\gamma^{3}\gamma^{1},\gamma^{1}\gamma^{2}\right)=\gamma^{0}\gamma^{k}\gamma^{5}\quad\left(k=1,2,3\right)\label{eq:spinoperatorgammamatrices}
+\boldsymbol{\sigma}=i\left(\gamma^{2}\gamma^{3},\gamma^{3}\gamma^{1},\gamma^{1}\gamma^{2}\right)=\gamma^{0}\gamma^{k}\gamma^{5}\quad\left(k=1,2,3\right),\label{eq:spinoperatorgammamatrices}
 \end{equation}
 
 \end_inset
@@ -1522,7 +1496,7 @@ Charged current (CC) neutrino interactions on nuclear particles are the
  interactions investigated in this thesis.
  These interactions produce an outgoing charged lepton and a variety of
  hadronic states.
- While interactions with valence electrons is possible, they are far less
+ While interactions with valence electrons are possible, they are far less
  common in large, subatomic particle detectors.
  However, the physics of neutrino-electron scattering is very similar to
  neutrino-nucleus scattering.
@@ -1733,12 +1707,12 @@ In neutrino-nuclear scattering, the simple picture of free quarks must be
  can alter the products of the interactions.
  The kinematics of the particles involved can be altered as well depending
  on the initial state of the nucleus.
- Distinctions must be made in neutrino physics between primary interactions
- (
+ Distinctions must be made in neutrino physics between observables from
+ primary interactions like 
 \begin_inset Formula $\nue+e^{-}$
 \end_inset
 
-) and 
+ and nuclear 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1746,7 +1720,7 @@ final state interactions
 \begin_inset Quotes erd
 \end_inset
 
- (FSI) observables.
+ (FSI).
 \end_layout
 
 \begin_layout Standard
@@ -1828,7 +1802,7 @@ There are three neutrino-nuclear scattering classes presented in this thesis:
 
 ).
  The 
-\begin_inset Formula $\numu$
+\begin_inset Formula $\nu$
 \end_inset
 
  CCQE interaction refers to the process where an incoming neutrino and neutron
@@ -1845,7 +1819,7 @@ noprefix "false"
 
 .
  For 
-\begin_inset Formula $\antinumu$
+\begin_inset Formula $\overline{\nu}$
 \end_inset
 
  CCQE, the proton is converted to a neutron instead.
@@ -1911,17 +1885,13 @@ literal "false"
 
  which began operation in the 1960s.
  Ray Davis was an expert chemist and designed a radiochemical experiment
- to measure the flux of neutrinos from sun.
+ to measure the flux of neutrinos from the sun.
  The purpose of this experiment was to test John Bahcall's prediction of
  the fusion rate in the Sun and neutrino flux from it as well.
  Davis' experiment would need to operate for many years to collect enough
- statistics due to expected low capture rate.
+ statistics due to the expected low capture rate.
  Measurements continued into the 1980s and showed that the flux of neutrinos
- was about 
-\begin_inset Formula $\nicefrac{1}{3}$
-\end_inset
-
- the expected rate and this became known as the 
+ was about one-third the expected rate and this became known as the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1929,11 +1899,11 @@ Solar Neutrino Problem.
 \begin_inset Quotes erd
 \end_inset
 
- The primary explainations were either that the solar model was incorrect
+ The primary explanations were either that the solar model was incorrect
  or the neutrino capture cross section was incorrect.
  The Sudbury Neutrino Observatory (SNO) was able to resolve this problem
  by making a model-independent measurement of the solar neutrino flux.
- SNO observed a 
+ The SNO experiment observed a 
 \begin_inset Formula $\nue$
 \end_inset
 
@@ -1959,7 +1929,7 @@ literal "false"
 
 \begin_layout Standard
 Another outstanding problem emerged with measurements of atmospheric neutrinos,
- in particular muon and electron types.
+ which are the muon and electron types.
  Atmospheric neutrinos are produced when high energy cosmic rays strike
  atmospheric particles.
  These cosmic ray collisions generate mostly pions and kaons that decay
@@ -2006,18 +1976,7 @@ name "subsec:Two-Flavor-Derivation"
 
 \begin_layout Standard
 The phenomenon of neutrino oscillations can be described with elementary,
- non-relativistic quantum mechanics.
- Beginning with the Schrödinger Equation in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "eq:schroeqn"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-
+ non-relativistic quantum mechanics using the Schrödinger Equation
 \end_layout
 
 \begin_layout Standard
@@ -2087,7 +2046,7 @@ noprefix "false"
 \begin_inset Formula $\diracket{\nu(\mathbf{r},t)}$
 \end_inset
 
-, one obtains the following
+, one obtains
 \end_layout
 
 \begin_layout Standard
@@ -2225,11 +2184,7 @@ mass
 
 , respectively.
  However, experiments can produce neutrinos, as well as probe them, only
- in a definite flavor state, denoted by a Greek letter subscript 
-\begin_inset Formula $\lambda$
-\end_inset
-
-.
+ in a definite flavor state, denoted by a Greek letter subscript.
  Let the generated neutrino, which is a linear superposition of mass states
  1 and 2, have momentum 
 \begin_inset Formula $\mathbf{p}$
@@ -2259,17 +2214,7 @@ noprefix "false"
 \begin_inset Formula $U$
 \end_inset
 
-, between the basis states given by 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "eq:pmnstwodimgen"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
+, between the basis states given by
 \end_layout
 
 \begin_layout Standard
@@ -2371,23 +2316,13 @@ noprefix "false"
 
 \end_inset
 
- results in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "eq:prob2flavorsimplified"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- below.
+ results in the following equation
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\mathcal{P}\left(\nu_{\alpha}\rightarrow\nu_{\beta}\right)=\sin^{2}(2\theta)\sin^{2}\left(\frac{E_{1}-E_{2}}{2\hbar}T\right)\label{eq:prob2flavorsimplified}
+\mathcal{P}\left(\nu_{\alpha}\rightarrow\nu_{\beta}\right)=\sin^{2}(2\theta)\sin^{2}\left(\frac{E_{1}-E_{2}}{2\hbar}T\right).\label{eq:prob2flavorsimplified}
 \end{equation}
 
 \end_inset
@@ -2512,11 +2447,7 @@ noprefix "false"
 \begin_inset Formula $L$
 \end_inset
 
- is the distance between the neutrino origin and detection and 
-\begin_inset Formula $c$
-\end_inset
-
- is now the speed of light in vacuum.
+ is the distance between the neutrino origin and detection.
  One can also approximate the energy of the mass eigenstate as 
 \end_layout
 
@@ -2593,12 +2524,12 @@ where
 \begin_inset Formula $E_{\nu}$
 \end_inset
 
- in GeV, .
+ in GeV.
  The oscillation probability from between states 
 \begin_inset Formula $\nu_{\alpha}$
 \end_inset
 
-to 
+ to 
 \begin_inset Formula $\nu_{\beta}$
 \end_inset
 
@@ -2756,7 +2687,7 @@ Semi-logarithmic plot of the survival probability of flavor
 \end_inset
 
 .
- Image originally inspired by 
+ Image originally inspired by reference 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Schmitz1997"
@@ -3429,6 +3360,7 @@ Sensitivity of Different Oscillation Experiments
 \end_inset
 
 Sensitivity of different oscillation experiments originally published in
+ reference
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Tanabashi2018"
@@ -3512,7 +3444,7 @@ The full three flavor oscillation probability is given by
 \begin_inset Formula 
 \begin{equation}
 \begin{aligned}\mathcal{P}\left(\nu_{\alpha}\rightarrow\nu_{\beta}\right)=\delta_{\alpha\beta}-4 & \sum_{j=1}^{3}\left[\sum_{i>j}^{3}\text{Re}\left(K_{\alpha\beta,ij}\right)\sin^{2}\left(\phi_{ij}\right)\right]\\
-+4 & \sum_{j=1}^{3}\left[\sum_{i>j}^{3}\text{Im}\left(K_{\alpha\beta,ij}\right)\sin\left(\phi_{ij}\right)\cos\left(\phi_{ij}\right)\right]
++4 & \sum_{j=1}^{3}\left[\sum_{i>j}^{3}\text{Im}\left(K_{\alpha\beta,ij}\right)\sin\left(\phi_{ij}\right)\cos\left(\phi_{ij}\right)\right],
 \end{aligned}
 \label{eq:threeflavorprobgeneral}
 \end{equation}
@@ -3544,7 +3476,7 @@ Since CP violation means that
 \end_inset
 
 .
- Consider the following examples, muon neutrino survival and muon neutrino
+ Consider the following two examples, muon neutrino survival and muon neutrino
  to electron neutrino appearance.
 \end_layout
 
@@ -3559,7 +3491,7 @@ The probability of a muon type neutrinos (antineutrinos) surviving is given
 \begin{equation}
 \begin{aligned}\mathcal{P}\left(\nuantinuparticle{\mu}\rightarrow\nuantinuparticle{\mu}\right)=1-4 & \sss{23}\ccc{13}\left(V_{\cos\delta_{\text{CP}}}\right)\sin^{2}\phi_{31}\\
 -4 & \sss{23}\ccc{13}\left(Z_{\cos\delta_{\text{CP}}}\right)\sin^{2}\phi_{32}\\
--4 & \left(V_{\cos\delta_{\text{CP}}}\right)\left(Z_{\cos\delta_{\text{CP}}}\right)\sin^{2}\phi_{21}
+-4 & \left(V_{\cos\delta_{\text{CP}}}\right)\left(Z_{\cos\delta_{\text{CP}}}\right)\sin^{2}\phi_{21},
 \end{aligned}
 \label{eq:numu2numuthreeflavorfull}
 \end{equation}
@@ -3569,7 +3501,7 @@ The probability of a muon type neutrinos (antineutrinos) surviving is given
 where
 \begin_inset Formula 
 \begin{equation}
-V_{\cos\delta_{\text{CP}}}=\sss{12}\ccc{23}+\sss{13}\sss{23}\ccc{12}+2\ss{12}\ss{13}\ss{23}\cc{12}\cc{23}\cos\delta_{\text{CP}}\label{eq:Vcosdelta}
+V_{\cos\delta_{\text{CP}}}=\sss{12}\ccc{23}+\sss{13}\sss{23}\ccc{12}+2\ss{12}\ss{13}\ss{23}\cc{12}\cc{23}\cos\delta_{\text{CP}},\label{eq:Vcosdelta}
 \end{equation}
 
 \end_inset
@@ -3577,7 +3509,7 @@ V_{\cos\delta_{\text{CP}}}=\sss{12}\ccc{23}+\sss{13}\sss{23}\ccc{12}+2\ss{12}\ss
 
 \begin_inset Formula 
 \begin{equation}
-Z_{\cos\delta_{\text{CP}}}=\ccc{12}\ccc{23}+\sss{13}\sss{23}\sss{12}-2\ss{12}\ss{13}\ss{23}\cc{12}\cc{23}\cos\delta_{\text{CP}}\label{eq:Zcosdelta}
+Z_{\cos\delta_{\text{CP}}}=\ccc{12}\ccc{23}+\sss{13}\sss{23}\sss{12}-2\ss{12}\ss{13}\ss{23}\cc{12}\cc{23}\cos\delta_{\text{CP}},\label{eq:Zcosdelta}
 \end{equation}
 
 \end_inset
@@ -3830,7 +3762,7 @@ The previous subsection briefly explored the muon disappearance probability,
 \begin{aligned}\mathcal{P}\left(\nuantinuparticle{\mu}\rightarrow\nuantinuparticle e\right)= & 4\ccc{13}\sss{13}\sss{23}\sin^{2}\phi_{31}\\
  & +8\left(X_{\cos\delta_{\text{CP}}}\right)\cos\phi_{23}\sin\phi_{31}\sin\phi_{21}\\
  & \overset{_{(+)}}{-}\underset{\text{CP violating}}{8\underbrace{\left(Y_{\sin\delta_{\text{CP}}}\right)}}\sin\phi_{32}\sin\phi_{31}\sin\phi_{21}\\
- & +4\left(Z_{\cos\delta_{\text{CP}}}\right)\sss{12}\ccc{13}\sin^{2}\phi_{21}
+ & +4\left(Z_{\cos\delta_{\text{CP}}}\right)\sss{12}\ccc{13}\sin^{2}\phi_{21},
 \end{aligned}
 \label{eq:numu2nuethreeflavorfull}
 \end{equation}
@@ -3840,7 +3772,7 @@ The previous subsection briefly explored the muon disappearance probability,
 where
 \begin_inset Formula 
 \begin{equation}
-X_{\cos\delta_{\text{CP}}}=\ccc{13}\ss{12}\ss{13}\ss{23}\left(\cc{12}\cc{23}\cos\delta_{\text{CP}}-\ss{12}\ss{13}\right)\label{eq:Xcosdelta}
+X_{\cos\delta_{\text{CP}}}=\ccc{13}\ss{12}\ss{13}\ss{23}\left(\cc{12}\cc{23}\cos\delta_{\text{CP}}-\ss{12}\ss{13}\right),\label{eq:Xcosdelta}
 \end{equation}
 
 \end_inset
@@ -3848,7 +3780,7 @@ X_{\cos\delta_{\text{CP}}}=\ccc{13}\ss{12}\ss{13}\ss{23}\left(\cc{12}\cc{23}\cos
 
 \begin_inset Formula 
 \begin{equation}
-Y_{\sin\delta_{\text{CP}}}=\frac{1}{8}\sin\left(2\theta_{12}\right)\sin\left(2\theta_{13}\right)\sin\left(2\theta_{23}\right)\cc{13}\sin\delta_{\text{CP}}\label{eq:Ysindelta}
+Y_{\sin\delta_{\text{CP}}}=\frac{1}{8}\sin\left(2\theta_{12}\right)\sin\left(2\theta_{13}\right)\sin\left(2\theta_{23}\right)\cc{13}\sin\delta_{\text{CP}},\label{eq:Ysindelta}
 \end{equation}
 
 \end_inset
@@ -4479,9 +4411,7 @@ name "subsec:CPVMatter"
 \end_layout
 
 \begin_layout Standard
-To conclude the introduction on neutrinos, it is important to examine the
- implications of CP violation.
- The observation of CP violation in the lepton sector might provide critical
+The observation of CP violation in the lepton sector might provide critical
  insight into the origins of the matter.
  CP violation dictates that certain interactions behave differently between
  matter or antimatter like 
@@ -4654,7 +4584,7 @@ see-saw
 \shape italic
 see-saw
 \shape default
- mechanism can found in 
+ mechanism can found in the following reference 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Adams:2013qkq"
@@ -4672,9 +4602,9 @@ Long-Baseline Neutrino Oscillation Experiments
 \begin_layout Standard
 The KEK to Kamioka (K2K) experiment was the first neutrino oscillation experimen
 t where researchers controlled the production and observation of neutrinos.
- In K2K, a beam of muon neutrinos were directed from the 12 GeV proton synchotro
-n at KEK to the Kamioka Observatory at a distance of 250 km.
- While travelling through the Earth, the neutrinos oscillate before they
+ In K2K, a beam of muon neutrinos were directed from the 12 GeV proton synchrotr
+on at KEK to the Kamioka Observatory at a distance of 250 km.
+ While traveling through the Earth, the neutrinos oscillate before they
  are observed at Kamioka.
  Prior to K2K, neutrino sources included the atmosphere, the Sun, and one
  supernova.
@@ -4688,8 +4618,8 @@ The K2K experiment established the experimental methods for current and
  a target.
  The secondary particles are then forward focused using electrically pulsed
  magnets and allowed to decay in a large decay volume.
- This procedure produces a highly pure muon neutrino beam with order 1%
- electron neutrino contamination.
+ This generates a highly pure muon neutrino beam with order 1% electron
+ neutrino contamination.
  Prior to any oscillations, a 
 \begin_inset Quotes eld
 \end_inset
@@ -4811,6 +4741,7 @@ noprefix "false"
 
 \end_inset
 
+.
  This spectrum is achieved by directing the center of the beam axis 2.5 degrees
  off center from SK.
  Along the beamline at 280 m from the beam source is the near detector facility
@@ -4970,11 +4901,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The T2K unoscillated 
+The T2K experiment's unoscillated 
 \begin_inset Formula $\numu$
 \end_inset
 
- flux at SK at the off-axis angle of 
+ flux at Super-Kamiokande at the off-axis angle of 
 \begin_inset Formula $2.5\textdegree$
 \end_inset
 
@@ -4984,11 +4915,11 @@ The T2K unoscillated
 status open
 
 \begin_layout Plain Layout
-The T2K Experiment Unoscillated 
+The Unoscillated 
 \begin_inset Formula $\numu$
 \end_inset
 
- Flux at SK
+ Flux at Super-Kamiokande
 \end_layout
 
 \end_inset
@@ -5022,6 +4953,8 @@ The following topics will be discussed in the following order.
  First a look how neutrinos are produced at J-PARC.
  Next a detailed look at the T2K near detectors which are used in this thesis.
  This is followed by a discussion on Super-Kamiokande, the T2K far detector.
+ The final topic is an examination of the near detector constraint and its
+ importance in the oscillation analysis.
 \end_layout
 
 \begin_layout Standard
@@ -5078,16 +5011,16 @@ status open
 status open
 
 \begin_layout Plain Layout
-Bird's eye view of the J-PARC center
+Bird's Eye View of the J-PARC Laboratory
 \end_layout
 
 \end_inset
 
-Bird's eye view of the J-PARC center showing the primary components of its
- accelerator programs.
+Bird's eye view of the J-PARC laboratory showing the primary components
+ of its accelerator programs.
  To generate the high intensity neutrino beam, first the linear accelerator
- (Linac, red) accelerates hydrogen ions (protons) into the 3 GeV Synchrotron
- (also red) called the rapid-cycle synchrotron (RCS).
+ (Linac, red) accelerates protons into the 3 GeV Synchrotron (also red)
+ called the rapid-cycle synchrotron (RCS).
  The RCS then injects some of its protons into the 50 GeV Synchrotron (yellow)
  called the main ring (MR), which currently runs at 30 GeV.
  Finally the MR protons are directed into a target material along the neutrino
@@ -5213,7 +5146,7 @@ status open
 \begin_inset Graphics
 	filename Figures/Introduction/JPARCLINAC.png
 	lyxscale 25
-	height 25theight%
+	height 20theight%
 
 \end_inset
 
@@ -5256,7 +5189,7 @@ status open
 \begin_inset Graphics
 	filename Figures/Introduction/JPARC3GeVRCS.png
 	lyxscale 50
-	height 25theight%
+	height 27theight%
 
 \end_inset
 
@@ -5296,7 +5229,7 @@ status open
 \begin_inset Graphics
 	filename Figures/Introduction/JPARCMR.png
 	lyxscale 30
-	height 25theight%
+	height 27theight%
 
 \end_inset
 
@@ -5396,13 +5329,13 @@ noprefix "false"
 
 \end_inset
 
- which has a circumference of 1567m.
+ which has a circumference of 1567 m.
  While nominally designed to boost protons to 50 GeV, it currently operates
  at 30 GeV.
  Protons are injected into the MR to form eight proton bunches (spill),
  initially six when T2K first ran, before entering the neutrino beamline.
  The total temporal width of the spill is approximately 
-\begin_inset Formula $0.5\mu\text{s}$
+\begin_inset Formula $0.5\ \mu\text{s}$
 \end_inset
 
 
@@ -5727,7 +5660,7 @@ name "fig:focusinghorn"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Shown are photos of work performed on the target station.
+Photographs of the T2K target station.
  (a) The graphite rod being extracted from the target station is shown in
  the black-dashed box.
  (b) One focusing horn in T2K.
@@ -5735,7 +5668,7 @@ Shown are photos of work performed on the target station.
 status open
 
 \begin_layout Plain Layout
-Photographs of the Target Station
+Photographs of the T2K Target Station
 \end_layout
 
 \end_inset
@@ -5859,13 +5792,13 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-T2K accumulated protons on target since 2010 shows a steady increase in
- beam power over time.
+The accumulated protons on target for the T2K experiment since 2010 shows
+ a steady increase in beam power over time.
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-T2K Accumulated Protons on Target
+Accumulated Protons on Target for T2K
 \end_layout
 
 \end_inset
@@ -5932,7 +5865,7 @@ In order to provide timing information for the neutrino beam at SK, a global
 \begin_layout Standard
 J-PARC continues to improve the proton delivery and neutrino flux intensity
  since T2K begin in 2010.
- T2K has run in two horn current modes: 
+ The T2K experiment has run in two horn current modes: 
 \begin_inset Formula $\nu$
 \end_inset
 
@@ -5959,9 +5892,9 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-In addition the proton beam intensity, as measured in kW (energy/proton/second),
- has been increased over time which increases the number of neutrino interaction
-s observed at SK.
+In addition the proton beam intensity, as measured in kW, has been increased
+ over time which increases the number of neutrino interactions observed
+ at SK.
  Note that while 
 \begin_inset Formula $\pm250$
 \end_inset
@@ -5985,8 +5918,8 @@ Neutrino Near Detectors: ND280
 \end_layout
 
 \begin_layout Standard
-T2K has a near detector (ND) site at J-PARC that is designed specifically
- to observe the neutrino beam in flight aimed at Super-K.
+The T2K experiment has a near detector (ND) site at J-PARC that is designed
+ specifically to observe the neutrino beam in flight aimed at Super-K.
  The primary purpose of a ND site is to 
 \shape italic
 constrain the neutrino flux and interaction rate
@@ -6045,6 +5978,12 @@ noprefix "false"
 \end_inset
 
 ).
+ The INGRID detector is capable of measuring the on-axis neutrino beam in
+ a 10 m 
+\begin_inset Formula $\times$
+\end_inset
+
+ 10 m transverse area.
  Each module consists of alternating layers of iron plates and scintillator
  bars except for the two most downstream scintillating layers which lack
  iron plates.
@@ -6077,12 +6016,6 @@ A schematic of the INGRID detector showing the arrangement of the tracking
  scintillating modules.
  There are 16 identical modules total with seven in the vertical row, seven
  in the horizontal row, and two at off-axis positions.
- INGRID is capable of measuring the neutrino beam in a transverse area of
- 10 m 
-\begin_inset Formula $\times$
-\end_inset
-
- 10 m.
  With the vertical row upstream of the horizontal row, the designed beam
  center intersects each row's center module
 \begin_inset CommandInset citation
@@ -6142,7 +6075,7 @@ noprefix "false"
 \end_inset
 
 .
- The MPPCs are well matched with the spectral emission of the WSL fibers
+ The MPPCs are well matched with the spectral emission of the WLS fibers
  and operate in a strong magnetic fields, unlike traditional photomultiplier
  tubes.
  In order to enhance the collection efficiency, a reflective 
@@ -6167,7 +6100,7 @@ ce{TiO_2}
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -6184,10 +6117,10 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Photographs of the specially designed MPPC used in T2K.
+Photographs of the specially designed MPPC in T2K.
  A magnified face view is shown on the left with an entire unit shown on
  the right.
- T2K utilizes specialized 667-pixel MPPCs with an effective area of 
+ Each device has 667-pixel sensors with an effective area of 
 \begin_inset Formula $1.3\text{ mm}\times1.3\text{ mm}$
 \end_inset
 
@@ -6262,7 +6195,7 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -6305,7 +6238,7 @@ name "fig:INGRIDBeamProfile"
 status open
 
 \begin_layout Plain Layout
-INGRID Beam Profile
+The T2K On-Axis Beam Profile
 \end_layout
 
 \end_inset
@@ -6381,12 +6314,12 @@ name "fig:INGRIDBeamProfileHistory"
 \end_layout
 
 \begin_layout Subsubsection
-Off-Axis Detector Summary
+Off-Axis Detector
 \end_layout
 
 \begin_layout Standard
-The near detector used for T2K is ND280, which is an off-axis, magnetized
- tracking detector.
+The primary ND used for T2K is ND280, which is an off-axis, magnetized tracking
+ detector.
  It is a collection of different detector technologies designed to facilitate
  three primary measurements:
 \end_layout
@@ -6448,7 +6381,7 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -6577,7 +6510,7 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -6594,9 +6527,9 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Each of the magnetic field components (x, y and z, respectively) are compared
- between a fit of the data and the actual measurements near the center of
- ND280.
+The ND280 detector magnetic field feasurement in all three directions.
+ Each of the magnetic field components are compared between a fit of the
+ data and the actual measurements near the center of ND280.
  The systematic uncertainty on the field is extracted from the RMS of the
  mapping
 \begin_inset CommandInset citation
@@ -6612,7 +6545,7 @@ literal "false"
 status open
 
 \begin_layout Plain Layout
-ND280 Magnetic Field Deviations from a Data Fit
+The ND280 Detector Magnetic Field Measurement
 \end_layout
 
 \end_inset
@@ -6859,9 +6792,8 @@ The
 \begin_inset Formula $\pod$
 \end_inset
 
- is a modifiable detector which can be filled or drained of water, enabling
- the determination of water target (WT) cross sections by comparing water-in
- data with water-out data.
+ can be operated with or without water, enabling the determination of water
+ target (WT) cross sections by comparing water-in data with water-out data.
 \end_layout
 
 \begin_layout Standard
@@ -6869,7 +6801,7 @@ The
 placement t
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -7065,10 +6997,12 @@ noprefix "false"
 
 .
  The purpose of the triangular bar design is that particle tracks (muons
- and pions) are to likely to deposit energy in two or more bars for simultaneous
-ly for each layer of bars crossed.
- This provides a discriminant to identify particle tracks from electromagnetic
- showers from a pi-zero decay.
+ and pions) are to likely to deposit energy in only two bars for each layer
+ crossed.
+ This would not be true for electromagnetic shower events which would deposit
+ energy in many bars.
+ These differences provide a discriminant between particle tracks and electromag
+netic showers.
 \end_layout
 
 \begin_layout Standard
@@ -7087,23 +7021,23 @@ The
 \end_inset
 
  is approximately 15,800 kg when the bags are full of water.
- 
+ The 
+\begin_inset Formula $\pod$
+\end_inset
+
+ is arranged into three regions: a water target (WT) region and two ECals.
+ The WT region contains 26 
 \begin_inset Formula $\podule$
 \end_inset
 
-s are arranged into three regions.
- The water target (WT) region contains 26 
-\begin_inset Formula $\podule$
-\end_inset
-
-s interleaved between bags of water 2.8 cm thick when filled and 1.3 mm thick
- brass sheets designed to help contain 
+s interleaved between bags of water 2.8 cm thick when filled and a 1.3 mm
+ thick brass sheets designed to help contain 
 \begin_inset Formula $\pizero$
 \end_inset
 
  decay photons.
  The last two regions are the upstream ECal and central ECal, each with
- 7 
+ seven 
 \begin_inset Formula $\podule$
 \end_inset
 
@@ -7392,7 +7326,7 @@ Elemental composition of
 
  water target region.
  The table is sorted from top to bottom by fraction of mass.
- This table was originally produced in Reference 
+ This table was originally produced in reference 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "AbePhyRevD9652017"
@@ -7400,7 +7334,8 @@ literal "false"
 
 \end_inset
 
-
+.
+ 
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:P0DWaterTargetMass"
@@ -7478,11 +7413,11 @@ name "fig:P0Dbar"
 status open
 
 \begin_layout Plain Layout
-A cross section of a 
+Cross Section of a 
 \begin_inset Formula $\pod$
 \end_inset
 
- scintillating bar
+ Scintillating Bar
 \end_layout
 
 \end_inset
@@ -7512,14 +7447,14 @@ The readout electronics for the
  is based on the Trip-T application specific integrated circuit (ASIC) shared
  among the SMRD, ECals, and INGRID.
  Signals from 64 MPPCs are routed to Trip-T front end boards (TFB) that
- each house 4 Trip-T ASICs.
+ each house four Trip-T ASICs.
  Each Trip-T collects the MPPC charge in 23 programmable integration cycles.
 \end_layout
 
 \begin_layout Standard
 The TFBs are readout to back-end electronics which control the TFBs and
  synchronize clocks.
- A total of six readout merger module (RMM) electronics receive TFB the
+ A total of six readout merger module (RMM) electronics receive the TFB
  data and control each TFB ASIC.
  The RMM internal timing clocks are synchronized with a cosmic trigger module
  and a slave clock module (SCM), both of which are synchronized with a master
@@ -7538,7 +7473,15 @@ The ND280 DAQ consists of a MIDAS framework to monitor and control data
  In conjunction with the DAQ system is the Global Slow Control (GSC) system
  which measures temperatures, voltages, and other physical quantities.
  Together the DAQ and GSC help scientists consistently produce high quality
- data and maintain the overall stability of the detector.
+ data and maintain the overall stability of the detector
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abe:2011ks"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsubsection
@@ -7731,12 +7674,12 @@ Neutrino Far Detector: Super-Kamiokande
 \end_layout
 
 \begin_layout Standard
-The Super-Kamioka neutrino detection experiment (Super-Kamiokande) is the
- dedicated far detector for the T2K experiment.
+The Super-Kamioka neutrino detection experiment, abbreviated as Super-Kamiokande
+ (SK), is the dedicated far detector for the T2K experiment.
  Positioned at 295 km away from the neutrino source with a 1 km overburden,
  it is well designed to detect the elusive neutrino.
- Containing about 50 kt of pure water, is it lined with PMTs in both an
- inner and outer detector as shown in 
+ Containing about 50 kt of pure water, is it lined with photomultiplier
+ tubes (PMTs) in both an inner and outer detector as shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:Diagram-of-SK"
@@ -7773,7 +7716,7 @@ status open
 Diagram of the Super-Kamiokande detector consisting mainly of the inner
  and outer detector segments.
  The boundary between the two segments is cylindrical scaffolding used to
- mount photomultiplier tubes and optically isolate the segments.
+ mount the PMTs and optically isolate the segments.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Diagram-of-SK"
@@ -8191,7 +8134,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Predicted and best fit measurements for the SK flux.
+Predicted and best fit measurements for the T2K flux at Super-Kamiokande.
  The horizontal axes are the neutrino energy and the vertical axes are the
  fractional change in the flux normalization.
  These figures were taken from the 2017 T2K oscillation analysis 
@@ -8209,7 +8152,7 @@ literal "false"
 status open
 
 \begin_layout Plain Layout
-Predicted and Best Fit Measurements for the SK Flux
+Predicted and Best Fit Measurements for the T2K Flux at SK
 \end_layout
 
 \end_inset
@@ -8253,8 +8196,8 @@ s.
  These neutrinos interact the same way an oscillated neutrino would at SK.
  Without ND280, the fractional uncertainty on the flux rate is about ~10%
  per energy bin.
- These constraints are obtained from MUMON discussed above and the NA61/SHINE
- experiment
+ These constraints are obtained from the MUMON detector discussed above
+ and the NA61/SHINE experiment
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Abgrall:2016fs"
@@ -8408,7 +8351,7 @@ Contributions to the T2K Experiment
 
 \begin_layout Standard
 Since joining the T2K experiment five years ago, I have played a critical
- role in analysis that is currently in preparation for publication
+ role in an analysis that is currently in preparation for publication
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Schwehr2018a"
@@ -8430,7 +8373,7 @@ literal "false"
  that outlines the analysis procedure and studies.
  In particular, I helped develop the momentum calibration and event selection
  using machine learning.
- Further details on important contributions are found in Appendix 
+ Further details on my contributions are found in Appendix 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "app:podcc1pi"
@@ -8459,37 +8402,36 @@ In addition to analysis work, the majority of my contributions to the experiment
 \begin_inset Formula $\pod$
 \end_inset
 
- structure due to the water mass.
+ structure due to the to internal stresses from the water mass.
  I am certified as a Trip-T ASIC expert, 
 \begin_inset Formula $\pod$
 \end_inset
 
  water system and calibration expert, and experienced DAQ shifter.
  As an expert in these areas, I was solely responsible for daily reporting
- and monitoring for the SMRD, ECals, and 
+ and monitoring for the SMRD, ECal, and 
 \begin_inset Formula $\pod$
 \end_inset
 
- during beam taking periods.
- This included being the first point-of-contact, 24/7 for those systems
- 
+ detectors during beam taking periods.
+ This included being the first point-of-contact, 24/7 for those electronic
+ systems and the 
 \begin_inset Formula $\pod$
 \end_inset
 
- water target system whenever problems arose.
+ water target whenever problems arose.
 \end_layout
 
 \begin_layout Standard
-My most recent contribution was participating in the 2018 Super-K open tank
- work at the Kamioka Observatory.
+My most recent contribution was participating in the 2018 SK open tank work
+ at the Kamioka Observatory.
  My work had three primarily goals:
 \end_layout
 
 \begin_layout Itemize
 Cleaning the support structures, walls, and PMTs of non-water contaminants.
- This includes using clean wipes to remove diesel fume residue from the
- initial construction on the support structures and rust removal using electroly
-sis,
+ This includes using clean wipes to remove diesel fume residue on the support
+ structures from the initial construction and rust removal using electrolysis,
 \end_layout
 
 \begin_layout Itemize
@@ -8504,9 +8446,10 @@ Replacing the light-tight insulation that separates the inner and outer
 
 \begin_layout Standard
 These tasks helped the Kamioka Observatory identify external water leaks
- and remove contaminants in the Super-K detector.
+ and remove contaminants in the SK detector.
  This is all in preparation for adding gadolinium (Gd), a rare earth metal,
- to the pure water in the detector.
+ to the pure water in the detector which will enhance the antineutrino capture
+ cross section.
 \end_layout
 
 \begin_layout Section
@@ -8515,8 +8458,9 @@ Summary
 
 \begin_layout Standard
 The neutrino is an elusive particle to detect.
- The relatively new neutrino oscillation phenomenon has opened up the possibilit
-y of exploring fundamental questions of the Universe like CP violation.
+ The relatively new neutrino oscillation phenomenon has opened up the further
+ possibilities of exploring fundamental questions of the Universe like CP
+ violation.
  In the T2K experiment, some of the uncertainties associated with neutrino
  oscillations are being explored.
  To facilitate these goals, constraining all forms of uncertainty in neutrino-nu

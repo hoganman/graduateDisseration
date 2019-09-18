@@ -186,7 +186,7 @@ literal "false"
  The results of the analysis are given in the following thesis
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Schwehr2016"
+key "Schwehr2018"
 literal "false"
 
 \end_inset
@@ -196,7 +196,7 @@ literal "false"
 
 \begin_layout Standard
 My primary contributions to the analysis included developing the particle
- identification (PID) tools and momentum calibration for muon and pion.
+ identification (PID) tools and momentum calibration for muon and pion tracks.
  Machine learning based selection cuts were added in the analysis chain
  that were exclusively designed to exploit the 
 \begin_inset Formula $\pod$
@@ -207,7 +207,7 @@ My primary contributions to the analysis included developing the particle
  These selection cuts provided the means to make PID cuts to select only
  one muon and one pion in a two track event.
  To provide a differential cross section measurement in the muon kinematics,
- a momentum measurement was also developed and calibrated for the analysis.
+ a momentum measurement was developed and calibrated for the analysis.
 \end_layout
 
 \begin_layout Standard
@@ -239,7 +239,7 @@ Since there are no particle identification (PID) tools in the local
  These details are explained in further detail in the following thesis
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Schwehr2016"
+key "Schwehr2018"
 literal "false"
 
 \end_inset
@@ -299,7 +299,7 @@ The inputs for the BDTs were developed from topological track information
 
  tracks.
  A traditional longitudinal track measurement is the mean energy deposition
- in a tracking calorimeter or TPC, or traditionally called the 
+ in a tracking calorimeter or TPC, or the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -323,7 +323,8 @@ literal "false"
 
 .
  Many of the input features provided discriminating power for minimizing
- ionizing particle (MIP) tracks from other particles like protons and electrons.
+ ionizing particle (MIP) tracks from other non-MIP particle tracks like
+ protons.
  Examples of the longitudinal and transverse topological features I developed
  are shown in 
 \begin_inset ERT
@@ -484,11 +485,11 @@ The CC-
 \begin_inset Formula $1\pi$
 \end_inset
 
- analysis used two BDTs in sequence to make event selections.
+ analysis used two BDTs classifiers to make event selections.
  The first classifier provided a continuous discriminator to classify tracks
  as MIP-like or not.
  Selected events are those that have two MIP tracks.
- The second BDT classifier helps select which track is the muon and pion
+ The second BDT classifier helps assign which track is the muon and pion
  using a likelihood cut describe.
 \end_layout
 
@@ -525,10 +526,11 @@ testing
 
 \begin_layout Standard
 Also in the cross validation procedure, variable selection was determined
- by systematically training models with and without the variable to assess
- the variable's importance.
+ by training models with and without the variable to assess the variable's
+ importance.
  A variable was removed from the final BDT model if removing it had minimal
- impact on the receiver operating characteristic.
+ impact on the receiver operating characteristic curve, which is a diagnostic
+ on the performance of a binary classifier.
  This procedure dramatically reduced the number of input features selected
  in the BDT models.
 \end_layout
@@ -910,7 +912,15 @@ far
 \begin_inset Quotes erd
 \end_inset
 
-, where used to help constrain backgrounds in the analysis.
+, where used to help constrain backgrounds in the analysis 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Schwehr2018"
+literal "false"
+
+\end_inset
+
+.
 \begin_inset Argument 1
 status open
 

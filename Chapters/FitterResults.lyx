@@ -7202,7 +7202,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Postfit Super-K flux parameters for the 
+Postfit SK flux parameters for the 
 \begin_inset Formula $\pod$
 \end_inset
 
@@ -7227,7 +7227,7 @@ name "fig:Postfit-SK-flux"
 status open
 
 \begin_layout Plain Layout
-Postfit Super-K Flux Parameters for the 
+Postfit SK Flux Parameters for the 
 \begin_inset ERT
 status open
 
@@ -8044,7 +8044,7 @@ where
 .
  
 \shape italic
-Since the purpose of the BANFF fit is to provide a constraint on the Super-K
+Since the purpose of the BANFF fit is to provide a constraint on the SK
  flux and cross section models, we will ignore the ND flux bins and 
 \begin_inset Formula $\left(p,\cos\theta\right)$
 \end_inset
@@ -8279,7 +8279,7 @@ In this chapter, we have explored the postfit results for the
 \end_inset
 
 -only data, which helps with the sensitivity to oxygen cross section parameters
- that affect Super-K more, the accumulated neutrino exposures are similar.
+ that affect SK more, the accumulated neutrino exposures are similar.
  We observe a good level of agreement between the two fits with moderate
  differences in some parameters.
  A hypothesis test was performed to test if the 
