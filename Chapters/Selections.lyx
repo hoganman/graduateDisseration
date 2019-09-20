@@ -152,7 +152,22 @@ This chapter describes the development of
 \begin_inset Formula $\antinumu$
 \end_inset
 
- CC inclusive selections in both FHC and RHC beam configuration for 
+ charged current (CC) inclusive
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+A CC-inclusive selection is a set of criteria that select all CC neutrino
+ interaction events as opposed to an CC-exclusive selection like CC-
+\begin_inset Formula $0\pi$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ selections in both FHC and RHC beam configurations for 
 \begin_inset Formula $\pod$
 \end_inset
 
@@ -162,7 +177,7 @@ This chapter describes the development of
 \begin_inset Formula $\numu$
 \end_inset
 
- CC inclusive selections between the 
+ CC-inclusive selections between the 
 \begin_inset Formula $\pod$
 \end_inset
 
@@ -171,8 +186,38 @@ This chapter describes the development of
 \begin_inset Formula $\numu$
 \end_inset
 
- CC inclusive cross-section using the previous ND280 simulation and reconstructi
-on software called Production 5
+ CC-inclusive cross-section using the previous ND280 simulation and reconstructi
+on software release called 
+\begin_inset Quotes eld
+\end_inset
+
+Production 5
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+The ND280 detector reconstruction and monte carlo software releases are
+ given a 
+\begin_inset Quotes eld
+\end_inset
+
+Production
+\begin_inset Quotes erd
+\end_inset
+
+ designations.
+ The Production 5 software was actively used between 2012 and early 2014
+ until it was replaced by Production 6.
+ However, physics analyzers are not as rapid to adopt the software updates.
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Das2016"
@@ -181,7 +226,7 @@ literal "false"
 \end_inset
 
 .
- That analysis relied on each sub-detector's reconstruction software and
+ That analysis relied on each subdetector's reconstruction software and
  developed a track matching algorithm since the ND280 
 \begin_inset Quotes eld
 \end_inset
@@ -203,7 +248,33 @@ pre-Global
 \begin_inset Quotes erd
 \end_inset
 
- technique with the modern T2K Production 6 software
+ technique with the modern ND280 
+\begin_inset Quotes eld
+\end_inset
+
+Production 6
+\begin_inset Quotes erd
+\end_inset
+
+ software
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+The ND280 
+\begin_inset Quotes eld
+\end_inset
+
+Production 6
+\begin_inset Quotes erd
+\end_inset
+
+ software was released in 2014.
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "AbePhyRevD9652017"
@@ -217,7 +288,7 @@ literal "false"
 \begin_inset Formula $\numu$
 \end_inset
 
- CC 
+ CC-
 \begin_inset Formula $0\pi$
 \end_inset
 
@@ -233,11 +304,11 @@ literal "false"
 \begin_inset Formula $\numubar$
 \end_inset
 
- CC 
+ CC-
 \begin_inset Formula $0\pi$
 \end_inset
 
- 
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "AbeForthcoming,Campbell2018a"
@@ -245,10 +316,22 @@ literal "false"
 
 \end_inset
 
-, were developed that also used the CC inclusive selection as pre-selection
+, were developed that also used the CC-inclusive selection as pre-selection
  cuts.
- These pre-selection cuts are well validated and have published results
- as shown in 
+ A 
+\begin_inset Quotes eld
+\end_inset
+
+cut
+\begin_inset Quotes erd
+\end_inset
+
+ refers to one or more criteria to select reconstructed events that have
+ desired properties.
+ The pre-selection cuts are designed in particular to filter out poor data
+ quality events.
+ They are well validated with results using these cuts are published as
+ shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:numuandnumubarCC0pi"
@@ -269,7 +352,7 @@ noprefix "false"
 placement t
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -297,7 +380,7 @@ status open
 \begin_inset Formula $\numu$
 \end_inset
 
- CC 0
+ CC-0
 \begin_inset Formula $\pi$
 \end_inset
 
@@ -344,7 +427,7 @@ status open
 \begin_inset Formula $\numubar$
 \end_inset
 
- CC 0
+ CC-0
 \begin_inset Formula $\pi$
 \end_inset
 
@@ -373,38 +456,7 @@ literal "false"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Data and MC distributions of the 
-\begin_inset Formula $\pod$
-\end_inset
-
- water-in 
-\begin_inset Formula $\numu$
-\end_inset
-
- and 
-\begin_inset Formula $\numubar$
-\end_inset
-
- CC 
-\begin_inset Formula $0\pi$
-\end_inset
-
- signal selections.
- They importantly share the same pre-selection cuts as this analysis.
- The plots have been normalized to data POT and are sorted into various
- truth topologies.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:numuandnumubarCC0pi"
-
-\end_inset
-
-
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Data and MC distributions of the 
+The 
 \begin_inset ERT
 status open
 
@@ -430,7 +482,64 @@ numubartitle{}
 
 \end_inset
 
- water-in CC signal selections
+ CC-
+\begin_inset Formula $0\pi$
+\end_inset
+
+ 
+\begin_inset Formula $\pod$
+\end_inset
+
+ water-in selections.
+ They importantly share the same pre-selection cuts as this analysis.
+ The error bars are statistical only with the prediction sorted into various
+ truth topologies.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:numuandnumubarCC0pi"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+The 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numutitle{}
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+numubartitle{}
+\end_layout
+
+\end_inset
+
+ CC-
+\begin_inset Formula $0\pi$
+\end_inset
+
+ 
+\begin_inset Formula $\pod$
+\end_inset
+
+ Water-In Selections
 \end_layout
 
 \end_inset
@@ -460,22 +569,22 @@ Global
 
  reconstruction software.
  Next is the pre-selection cut flow.
- With the pre-selection cuts established, each of the three CC inclusive
+ With the pre-selection cuts established, each of the three CC-inclusive
  selection's cut flow is described.
  Concluding this section is a discussion of the three samples in the following
- order: 
+ order: the 
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC mode, 
+ in foreword horn current (FHC) mode sample, 
 \begin_inset Formula $\numubar$
 \end_inset
 
- in RHC, and 
+ in reverse horn current (RHC) mode sample, and 
 \begin_inset Formula $\numu$
 \end_inset
 
- background in RHC.
+ background in RHC mode sample.
 \end_layout
 
 \end_inset
@@ -493,14 +602,10 @@ Global Reconstruction
 \end_layout
 
 \begin_layout Standard
-The task of the Global reconstruction is to combine all the ND280 information
+The task of the Global reconstruction is to combine all of the ND280 information
  into a combined reconstructed object.
- It was originally designed to analyze 
-\begin_inset Quotes eld
-\end_inset
-
-CCQE-like
-\begin_inset Quotes erd
+ It was originally designed to identify CC-
+\begin_inset Formula $0\pi$
 \end_inset
 
  events in the Tracker, FGD+TPC, region and has been extended to operate
@@ -509,22 +614,44 @@ CCQE-like
 
 \begin_layout Standard
 The Global reconstruction is a software package that attempts to recognize
- patterns in data events to form tracks and find their common origin, or
- vertices, for those tracks.
- Particle shower reconstruction in Global will not be discussed in this
- thesis since no shower objects are considered.
- Each sub-detector reconstruction is run separately as the seed to Global's
- track matching algorithms.
+ patterns of deposited energy in ND280 and categorize it accordingly.
+ Particles that deposit energy in long, linear segments are categorized
+ as tracks.
+ If multiple tracks originate from a common origin (vertex), it is likely
+ a true neutrino interaction event occurred nearby.
+ Particle cascade (shower) reconstruction in Global will not be discussed
+ since they are not selected in this thesis.
+\end_layout
+
+\begin_layout Standard
+Each subdetector reconstruction algorithm is run separately as the seed
+ to Global's track matching algorithms.
  This includes the 
 \begin_inset Formula $\pod$
 \end_inset
 
-'s track-finding algorithms, which defines a 
+'s track-finding algorithm, which define a 
 \begin_inset Formula $\pod$
 \end_inset
 
- track as a sequence of nodes each at a single bar layer.
- To facilitate inter-detector matching, Global attempts to re-fit the 
+ track as a linear sequence of 
+\begin_inset Quotes eld
+\end_inset
+
+nodes
+\begin_inset Quotes erd
+\end_inset
+
+ with one at each bar layer.
+ To facilitate inter-detector matching, Global attempts to 
+\begin_inset Quotes eld
+\end_inset
+
+re-fit
+\begin_inset Quotes erd
+\end_inset
+
+ the 
 \begin_inset Formula $\pod$
 \end_inset
 
@@ -538,17 +665,13 @@ literal "false"
 
 .
  The re-fit procedure also corrects for particle energy loss as a function
- of length (
-\begin_inset Formula $dT/dx$
-\end_inset
-
-) and multiple scattering processes.
+ of length and multiple scattering processes.
  A 
 \begin_inset Formula $\pod$
 \end_inset
 
- vertex, which is the reconstructed location of the neutrino interaction,
- is then associated with the re-fit track using another Kalman filter algorithm.
+ vertex, which is the assumed location of the neutrino interaction, is then
+ associated with the re-fit track using another Kalman filter algorithm.
  Matching tracks between the 
 \begin_inset Formula $\pod$
 \end_inset
@@ -574,16 +697,22 @@ status open
 \end_layout
 
 \begin_layout Standard
-The selection of CC inclusive events use a series of cuts to select the
+The selection of CC-inclusive events uses a series of cuts to select the
  primary lepton.
  Prior to any cuts and after the reconstruction, corrections are applied
  first to both data and MC events to correct for well known residual differences
  between them.
- This includes the correcting the particle 
-\begin_inset Formula $dT/dx$
+ This includes correcting the MC flux prediction using the secondary beamline
+ and INGRID data and reconstruction efficiency corrections.
+ A complete list of the corrections applied are given in the following reference
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abe2015c"
+literal "false"
+
 \end_inset
 
- in the TPC.
+.
  The pre-selection cuts (
 \begin_inset Quotes eld
 \end_inset
@@ -597,23 +726,10 @@ precuts
 \end_inset
 
  fiducial volume (FV).
- A minimum ionizing particle (MIP) is more likely to reach TPC1 from the
- 
-\begin_inset Formula $\pod$
-\end_inset
-
- FV since the 
-\begin_inset Formula $\pod$
-\end_inset
-
- is constructed out of heavy materials especially in the CECal.
- So the main track each selection is designed to select a muon.
-\end_layout
-
-\begin_layout Standard
-This following sections will describe the precuts common to all CC inclusive
+ The last set of cuts are designed to select a muon that enters the TPC.
+ The following sections will describe the precuts common to all CC-inclusive
  selections and the branching of different cuts, after the precuts, to select
- the main track.
+ a muon track.
 \end_layout
 
 \begin_layout Subsection
@@ -632,11 +748,11 @@ The precuts were initially developed to select
 \begin_inset Formula $\numu$
 \end_inset
 
- CC inclusive to select events using the 
+ CC-inclusive events using the 
 \begin_inset Formula $\pod$
 \end_inset
 
- and TPC sub-detector reconstruction softwares separately
+ and TPC subdetector reconstruction algorithms separately
 \begin_inset CommandInset citation
 LatexCommand cite
 key "AbePhyRevD9652017,Das2016"
@@ -662,12 +778,36 @@ literal "false"
 \end_inset
 
 .
- The description and sequence of the precuts is described below.
 \end_layout
 
 \begin_layout Standard
-The following precuts are checked on the collected data from each Trip-T
- integration cycle as follows:
+Prior to the precuts, neutrino interaction data event must be collected
+ and reconstructed for each T2K beam spill.
+ Each T2K beam spill has eight bunches that are 58 ns long and temporally
+ separated by 581 ns.
+ When the beam spill occurs, the 
+\begin_inset Formula $\pod$
+\end_inset
+
+'s Trip-T electronics are triggered to collect data in preset integration
+ cycles aligned with the bunches.
+ Each integration cycle is 480 ns long and is followed by a 100 ns dead-time
+ to prepare for the next cycle
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Das2016"
+literal "false"
+
+\end_inset
+
+.
+ The data collected in each cycle is used to reconstruct neutrino interaction
+ events using the ND280 subdetector and Global software packages.
+\end_layout
+
+\begin_layout Standard
+Each reconstructed event must pass the following cuts before being assigned
+ to a selection:
 \end_layout
 
 \begin_layout Enumerate
@@ -684,8 +824,8 @@ good
 
 \begin_deeper
 \begin_layout Itemize
-An event is rejected if any sub-detector or electronics in ND280 reported
- as 
+An event is rejected if any electronics element or subdetector in ND280
+ is reported as 
 \begin_inset Quotes eld
 \end_inset
 
@@ -698,7 +838,7 @@ bad
 
 \end_deeper
 \begin_layout Enumerate
-There is at least one (1) track reconstructed in TPC1.
+There is at least one (1) track reconstructed in the TPC.
 \end_layout
 
 \begin_deeper
@@ -708,7 +848,7 @@ There are no restrictions on the number of tracks fully contained in the
 \begin_inset Formula $\pod$
 \end_inset
 
- or exiting into other sub-detectors.
+ or exiting into other subdetectors.
  
 \end_layout
 
@@ -801,7 +941,7 @@ corridor
 \begin_inset Formula $\pod$
 \end_inset
 
- and TPC1 the pre-Global separate sub-detector reconstruction was used 
+ and TPC1 the pre-Global separate subdetector reconstruction was used 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Campbell2014"
@@ -1341,7 +1481,7 @@ numutitle
 
 \end_inset
 
- CC Inclusive in FHC Cut
+ CC-inclusive in FHC Cut
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:numuCCInclusive"
@@ -1409,7 +1549,7 @@ numubartitle{}
 
 \end_inset
 
- CC Inclusive in RHC Cuts
+ CC-inclusive in RHC Cuts
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:numubarRHCCCInclusive"
@@ -1516,7 +1656,7 @@ numutitle{}
 
 \end_inset
 
- Background CC Inclusive in RHC Cuts
+ Background CC-inclusive in RHC Cuts
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:numuRHCCCInclusive"
