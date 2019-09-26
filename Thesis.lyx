@@ -133,7 +133,7 @@ hanging
 \use_refstyle 0
 \use_minted 0
 \branch Introduction
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -143,7 +143,7 @@ hanging
 \color #faf0e6
 \end_branch
 \branch BANFFLikelihood
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -158,17 +158,17 @@ hanging
 \color #faf0e6
 \end_branch
 \branch P0DBANFFParameterization
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch FitterValidation
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch FitterResults
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -178,7 +178,7 @@ hanging
 \color #faf0e6
 \end_branch
 \branch Discussion
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -188,27 +188,27 @@ hanging
 \color #faf0e6
 \end_branch
 \branch AppendixObsnorm
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixSigmaVariations
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixObsnormVariations
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixLikelihoodScans
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixLikelihoodPenaltyScans
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -218,11 +218,21 @@ hanging
 \color #faf0e6
 \end_branch
 \branch AppendixPostfitParameters
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixCC1pi
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch Preamble
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch Acknowledgements
 \selected 1
 \filename_suffix 0
 \color #faf0e6
@@ -278,7 +288,7 @@ status open
 
 \begin_layout Plain Layout
 
-%%%add 
+%%% add 
 \begin_inset Quotes eld
 \end_inset
 
@@ -286,7 +296,7 @@ doctor,showframe
 \begin_inset Quotes erd
 \end_inset
 
- to add a frame box%%%
+ to add a frame box %%%
 \end_layout
 
 \end_inset
@@ -297,22 +307,103 @@ doctor,showframe
 \begin_layout Standard
 \begin_inset Branch PreambleAndMainMatter
 inverted 0
-status collapsed
+status open
 
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "Preamble/Preamble.tex"
+\begin_inset Branch Preamble
+inverted 0
+status open
 
-\end_inset
-
-
+\begin_layout Standard
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-% Title, author, committee, copyright
+% Title, author, committee, copyright %
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+title{Independent Measurement of the T2K Near Detector Constraint Using
+ the Off-Axis Pi-Zero Detector}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+author{Matthew Gregory Hogan}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+department{Department of Physics}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+semester{Fall 2019}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+advisor{Walter Toki}
+\end_layout
+
+\begin_layout Plain Layout
+
+% as many committee entries as you need
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+committee{Robert Wilson}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+committee{Norman Buchanan}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+committee{Wen Zhou}
+\end_layout
+
+\begin_layout Plain Layout
+
+% Copyright Page %
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+mycopyright{Copyright by Matthew Gregory Hogan 2019 
+\backslash
+
+\backslash
+ All Rights Reserved}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -323,7 +414,7 @@ status open
 \begin_layout Standard
 \begin_inset Branch Abstract
 inverted 0
-status collapsed
+status open
 
 \begin_layout Standard
 \begin_inset ERT
@@ -333,7 +424,7 @@ status open
 
 
 \backslash
-abstract{%
+abstract{ %
 \end_layout
 
 \end_inset
@@ -381,7 +472,7 @@ status open
 
 \begin_layout Plain Layout
 
-}%end abstract
+} %end abstract
 \end_layout
 
 \end_inset
@@ -395,19 +486,80 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "Preamble/Acknowledgements.tex"
+\begin_inset Branch Acknowledgements
+inverted 0
+status open
 
-\end_inset
-
-
+\begin_layout Standard
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-% Acknowledgements text
+
+\backslash
+acknowledgements{ %
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I would like to first thank Elliott Forney for making a publicly accessible
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX{}
+\end_layout
+
+\end_inset
+
+ template available at 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://github.com/idfah/csuthesis
+\end_layout
+
+\end_inset
+
+.
+ I also thank the T2K BANFF group and the T2K collaboration for supporting
+ this analysis.
+ I give thanks to my loving wife Hannah who has supported me through my
+ graduate career.
+ I want to acknowledge the support from my family and friends.
+ I could not have made it this far without them.
+\end_layout
+
+\begin_layout Standard
+I acknowledge the support of the United States Department of Energy under
+ Grant Contract desc0017740 to support my research.
+ Additionally, I thank my advisers for supporting me with grant proposals
+ and guiding me on my journey through graduate school.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+} %end acknowledgements
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset

@@ -8609,43 +8609,7 @@ literal "false"
 
 \end_inset
 
- (2p2h)
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-The name 2p2h originates from Condensed Matter Physics which motivated the
- model.
- In solid state matter, a 
-\begin_inset Quotes eld
-\end_inset
-
-hole
-\begin_inset Quotes erd
-\end_inset
-
- refers to the absence of an electron in a valence band.
- In the High Energy Physics context, 2p2h considers neighboring and interacting
- nucleon pairs (2p) scattering from an incoming 
-\begin_inset Formula $\nu$
-\end_inset
-
-.
- The imparted energy on the pair excites them to higher energy states leaving
- two 
-\begin_inset Quotes eld
-\end_inset
-
-hole
-\begin_inset Quotes erd
-\end_inset
-
- states (2h) behind.
-\end_layout
-
-\end_inset
-
-.
+ (2p2h).
  An additional nuclear model called 
 \begin_inset Quotes eld
 \end_inset
