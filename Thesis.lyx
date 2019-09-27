@@ -67,7 +67,7 @@
 \chapterfont{\centering}
 \usepackage{braket}
 \end_preamble
-\options doctor
+\options doctor, showframe
 \use_default_options true
 \begin_modules
 fixltx2e
@@ -133,7 +133,7 @@ hanging
 \use_refstyle 0
 \use_minted 0
 \branch Introduction
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -143,7 +143,7 @@ hanging
 \color #faf0e6
 \end_branch
 \branch BANFFLikelihood
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -158,17 +158,17 @@ hanging
 \color #faf0e6
 \end_branch
 \branch P0DBANFFParameterization
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch FitterValidation
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch FitterResults
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -178,7 +178,7 @@ hanging
 \color #faf0e6
 \end_branch
 \branch Discussion
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -188,27 +188,27 @@ hanging
 \color #faf0e6
 \end_branch
 \branch AppendixObsnorm
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixSigmaVariations
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixObsnormVariations
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixLikelihoodScans
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixLikelihoodPenaltyScans
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -218,12 +218,12 @@ hanging
 \color #faf0e6
 \end_branch
 \branch AppendixPostfitParameters
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixCC1pi
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -266,23 +266,6 @@ hanging
 \begin_body
 
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "LyxMathMacros.lyx"
-
-\end_inset
-
-
-\begin_inset CommandInset include
-LatexCommand input
-filename "LyxTextMacros.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -298,6 +281,23 @@ doctor,showframe
 
  to add a frame box %%%
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "macros/LyxMathMacros.lyx"
+
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand input
+filename "macros/LyxTextMacros.lyx"
 
 \end_inset
 
@@ -508,19 +508,7 @@ acknowledgements{ %
 
 \begin_layout Standard
 I would like to first thank Elliott Forney for making a publicly accessible
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-LaTeX{}
-\end_layout
-
-\end_inset
-
+ \SpecialChar LaTeX
  template available at 
 \begin_inset Flex URL
 status open
@@ -543,9 +531,9 @@ https://github.com/idfah/csuthesis
 
 \begin_layout Standard
 I acknowledge the support of the United States Department of Energy under
- Grant Contract desc0017740 to support my research.
- Additionally, I thank my advisers for supporting me with grant proposals
- and guiding me on my journey through graduate school.
+ Grant Contracts DEFG0293ER40788 and DESC0017740 to support my research.
+ I also acknowledge my advisers Robert Wilson and Walter Toki for supporting
+ me with grant proposals and guiding me on my journey through graduate school.
 \end_layout
 
 \begin_layout Standard
@@ -573,14 +561,9 @@ status open
 
 \begin_layout Plain Layout
 
-% Preliminary (roman numbered) pages
-\end_layout
-
-\begin_layout Plain Layout
-
 
 \backslash
-frontmatter
+frontmatter          % Preliminary (roman numbered) pages
 \end_layout
 
 \begin_layout Plain Layout
@@ -636,7 +619,7 @@ listoffigures        % insert list of figures (optional)
 
 
 \backslash
-mainmatter % Main (arabic numbered) pages
+mainmatter           % Main (arabic numbered) pages
 \end_layout
 
 \end_inset
