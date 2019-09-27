@@ -198,9 +198,9 @@ In addition to the likelihood ratio maximization, the BANFF fit includes
  three sources of systematic uncertainties: neutrino flux, cross section
  model, and detector inefficiencies.
  This chapter explores the fit binning and penalty terms in the test statistic
- in this analysis.
- The sources of systematic uncertainties, also referred to just as systematics,
- will be defined in order to understand their effect on any analysis.
+ used for this analysis.
+ The sources of systematic uncertainty, also referred to just as systematics,
+ will be defined and their effect on the analysis.
 \end_layout
 
 \begin_layout Standard
@@ -209,14 +209,14 @@ This chapter is presented in the following order.
  ratio.
  The second section is divided into three subsections to define the parameteriza
 tion of each penalty term in the test statistic.
- The penalty terms discussed in order are the neutrino flux model, the detector
- inefficiencies, and lastly the cross section model.
+ The penalty terms, discussed in order, are the neutrino flux model, the
+ detector inefficiencies, and lastly the cross section model.
  These three terms directly affect the flux of neutrinos, efficiency of
  reconstruction, and the cross section for 
 \begin_inset Formula $\nu_{\alpha}$
 \end_inset
 
- terms, respectively, in the expected rate equation given in 
+ terms, respectively, in the predicted rate equation given in 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:Nsig"
@@ -243,7 +243,7 @@ The
 \begin_inset Formula $\pod$
 \end_inset
 
- ND280 BANFF fit uses the samples described in 
+-only BANFF fit uses the samples described in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "chap:P0DSelections"
@@ -253,187 +253,37 @@ noprefix "false"
 
 \end_inset
 
+ to evaluate the log-likelihood ratio term, 
+\begin_inset Formula $\chi_{\text{LLR}}^{2}$
+\end_inset
+
 .
- The bin edges used in the BANFF fit to evaluate the log-likelihood ratio
- term, 
-\begin_inset Formula $\Delta\chi_{\text{LLR}}^{2}$
+ Since this is a binned likelihood in 
+\begin_inset Formula $(p,\cos\theta)$
 \end_inset
 
-, are tabulated below.
- There are a total 988 fit bins with water-in and water-out modes sharing
- the same bin edges.
- The determination of the fit binning is discussed in the next subsection.
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $\numu$
-\end_inset
-
- in CC 1-Track fit bin edges:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset Formula $p$
-\end_inset
-
- [GeV/c]: 0, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 1, 1.25, 1.5, 2, 3, 4, 5.5, 30
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $\cos\theta$
-\end_inset
-
- : -1, 0.7, 0.8 , 0.88, 0.94, 0.96, 0.975, 0.99, 1
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-\begin_inset Formula $\numu$
-\end_inset
-
- in FHC CC N-Tracks fit bin edges:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset Formula $p$
-\end_inset
-
- [GeV/c]: 0, 0.4, 0.5, 0.6, 0.7, 0.8, 1, 1.2, 1.5, 1.8, 2.2, 2.7, 3.5, 5, 10, 30
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $\cos\theta$
-\end_inset
-
- : -1, 0.65, 0.77, 0.85, 0.9, 0.94, 0.97, 0.99, 1
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-\begin_inset Formula $\numubar$
-\end_inset
-
- in RHC CC 1-Track fit bin edges:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset Formula $p$
-\end_inset
-
- [GeV/c]: 0, 0.4, 0.5, 0.6, 0.7, 0.8, 1, 1.25, 1.5, 2, 3, 30
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $\cos\theta$
-\end_inset
-
- : -1, 0.82, 0.87, 0.9, 0.93, 0.95, 0.97, 0.99, 1
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-\begin_inset Formula $\numubar$
-\end_inset
-
- in RHC CC N-Tracks fit bin edges:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset Formula $p$
-\end_inset
-
- [GeV/c]: 0, 0.5, 0.9, 1.25, 1.6, 2, 3, 8, 30
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $\cos\theta$
-\end_inset
-
- : -1, 0.8, 0.89, 0.95, 0.97, 0.99, 1
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-\begin_inset Formula $\numu$
-\end_inset
-
- in RHC CC 1-Track fit bin edges:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset Formula $p$
-\end_inset
-
- [GeV/c]: 0, 0.4, 0.6, 0.8, 1.1, 2, 10
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $\cos\theta$
-\end_inset
-
- : -1, 0.78, 0.84, 0.89, 0.92, 0.95, 0.97, 0.98, 0.99, 1
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-\begin_inset Formula $\numu$
-\end_inset
-
- in RHC CC N-Tracks bin edges:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset Formula $p$
-\end_inset
-
- [GeV/c]: 0, 0.4, 0.6, 0.8, 1, 1.5, 2, 3, 10
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $\cos\theta$
-\end_inset
-
- : -1, 0.7, 0.8, 0.85, 0.9, 0.94, 0.965, 0.98, 0.99, 1
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Fit Binning Determination
+, the bin edges need to be defined first.
 \end_layout
 
 \begin_layout Standard
-The fit binning is optimized to ensure at least 1 predicted Monte Carlo
- (MC) event in each bin when scaled to the collected data POT.
+The BANFF fit binning is optimized to ensure at least 1 predicted Monte
+ Carlo (MC) event in each bin for every 
+\begin_inset Formula $\pod$
+\end_inset
+
+ sample when scaled to the collected data POT.
  The fit bins must also account for detector smearing effects.
  In order to mitigate smearing and event migration, the reconstructed kinematics
  were examined to their MC truth value using only correctly identified leptons
  in one-dimensional kinematic slices.
- Since the MC provides about 10
-\begin_inset Formula $\times$
-\end_inset
-
- the data statistics, the statistical uncertainty for each bin should be
- negligible in high statistics regions.
- The kinematics are scanned across their full relevant spaces in order to
- understand the required width for a fit bin.
+ The kinematics are scanned across their full phase spaces in order to understan
+d the required width for a fit bin.
  The first fit bin is always defined starting from the kinematic maximum.
 \end_layout
 
 \begin_layout Standard
-For the momentum bins, the momentum resolution is compared to MC truth.
+To determine the optimal momentum fit bins, the momentum resolution with
+ the MC truth matched muon is analyzed.
  The momentum resolution is defined as
 \begin_inset Formula 
 \[
@@ -450,28 +300,42 @@ where
 \begin_inset Formula $t$
 \end_inset
 
- is the true momentum.
- The momentum was scanned in finite bin widths with the mean and standard
- deviation of the resolution 
+ is the true muon momentum.
+ The mean (bias) and standard deviation (stddev) of 
 \begin_inset Formula $R$
 \end_inset
 
- extracted.
- The mean and standard deviation are used as a proxy for the true bias and
- resolution, respectively.
- In addition, a bootstrapping algorithm was employed to understand the accuracy
- of the sample estimates.
- Bootstrapping in this context is sampling over all relevant values of true
- momentum and randomly replacing the values.
- For each scanned bin, at least 1000 bootstrapping sampling with replacement
- was performed.
- In the case of large variances in the bootstrapping samples, additional
- 10000 sampling with replacement were performed.
- The results for analyzing the 
+ are used as proxies for the true bias and resolution for the prediction.
+ Both quantities and prediction errors were extracted using a bootstrapping
+ algorithm
+\begin_inset CommandInset citation
+LatexCommand cite
+key "springer_series978-0-387-84858-7"
+literal "false"
+
+\end_inset
+
+ in very fine bins of reconstructed momentum.
+ The bootstrapping algorithm works by random sampling with replacement of
+ the true muon momentum.
+ For each bias and stddev prediction, at least 1000 bootstrapping samples
+ were generated.
+ Each bootstrap bias and stddev value were saved to calculate a prediction
+ mean and error.
+ In the case of relatively 
+\begin_inset Quotes eld
+\end_inset
+
+large
+\begin_inset Quotes erd
+\end_inset
+
+ prediction errors, additional 10000 bootstrapping samples were generated.
+ The main track momentum resolution for the 
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC CC 1-Track selection is shown in 
+ in FHC Mode CC 1-Track sample is shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:MomentumKinematicsBootstrappingNumuCC1Track"
@@ -481,7 +345,7 @@ noprefix "false"
 
 \end_inset
 
-.
+ to illustrate the results.
 \end_layout
 
 \begin_layout Standard
@@ -501,7 +365,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Figures/P0DBANFFParameterization/MomentumKinematicsNumuCC1Track.png
-	width 45text%
+	width 48text%
 
 \end_inset
 
@@ -509,7 +373,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Momentum event distribution
+Momentum distribution
 \end_layout
 
 \end_inset
@@ -554,32 +418,32 @@ Momentum resolution
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The momentum event distribution and uncertainty for 
+Main track momentum resolution for the 
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC CC 1-Track events is shown above.
+ in FHC Mode CC 1-Track sample.
  Only correctly identified muons are shown.
- (a) The number of events is scaled to 
+ The number of events is scaled to 
 \begin_inset Formula $10^{20}$
 \end_inset
 
- POT which is the approximate scale for all the samples in this analysis.
- A dashed line indicates the maximum of the peak.
- (b) The resolution of the momentum measurement is shown for a wide region
- of momenta.
- In the inset is the resolution zoomed near the momentum distribution maximum.
- Like in (a), a dashed line shows the momentum maximum.
- 
+ POT, which is the approximate scale for all the samples in this analysis.
+ A dashed line indicates the maximum of the distribution peak from figure
+ (a).
+ The resolution of the momentum measurement is shown in figure (b) whose
+ error bars are estimated using bootstrapping.
+ In the inset is the momentum resolution zoomed near the momentum distribution
+ maximum.
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-The 
-\begin_inset Formula $\pod$
+Main Track Momentum Resolution for the 
+\begin_inset Formula $\numu$
 \end_inset
 
- Momenta Resolutions Used for Fit Binning
+ in FHC Mode CC 1-Track Sample
 \end_layout
 
 \end_inset
@@ -605,8 +469,13 @@ name "fig:MomentumKinematicsBootstrappingNumuCC1Track"
 \end_layout
 
 \begin_layout Standard
-The angle fit bins are treated in an almost identical manner.
- While the fit bins and Physics are dictated in 
+The optimal 
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ fit bins were determined in a very similar manner with the momentum fit
+ bins.
+ While the fit bins and physics are dictated in 
 \begin_inset Formula $\cos\theta$
 \end_inset
 
@@ -617,8 +486,30 @@ The angle fit bins are treated in an almost identical manner.
 .
  In addition, since the angle can be nearly zero for the most forward-going
  tracks, the resolution was not used to characterize the angular uncertainties.
- Instead, the difference between the true and reconstructed angle were analyzed
- as shown in 
+ Instead, the difference (
+\begin_inset Quotes eld
+\end_inset
+
+residual
+\begin_inset Quotes erd
+\end_inset
+
+) between the true and reconstructed angle 
+\begin_inset Formula $\theta$
+\end_inset
+
+ with respect to (wrt) the ND280 Z-axis were analyzed.
+ The same bootstrapping algorithm described above was used to determine
+ the mean and stddev of the 
+\begin_inset Formula $\theta$
+\end_inset
+
+ residuals.
+ The main track angular residuals for the 
+\begin_inset Formula $\numu$
+\end_inset
+
+ in FHC Mode CC 1-Track sample are shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:AngularKinematicsBootstrappingNumuCC1Track"
@@ -628,14 +519,7 @@ noprefix "false"
 
 \end_inset
 
-.
- The mean and standard deviation were studied as before to set the fit 
-\begin_inset Formula $\cos\theta$
-\end_inset
-
- bin edges.
- Bootstrapping was again used to quantify the accuracy of the mean and standard
- deviation.
+ to illustrate the results.
 \end_layout
 
 \begin_layout Standard
@@ -655,7 +539,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Figures/P0DBANFFParameterization/AngleKinematicsNumuCC1Track.png
-	width 45text%
+	width 47.5text%
 
 \end_inset
 
@@ -666,7 +550,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Angular event distribution
+Angular distribution
 \end_layout
 
 \end_inset
@@ -714,30 +598,31 @@ Angular residuals
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The angular event distribution and uncertainty for 
+Main track angular residuals for the 
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC CC 1-Track events is shown above.
+ in FHC Mode CC 1-Track sample.
  Only correctly identified muons are shown.
- (a) The number of events is scaled to 
+ The number of events is scaled to 
 \begin_inset Formula $10^{20}$
 \end_inset
 
- POT which is the approximate scale for all the samples in this analysis.
- A dashed line indicates the track angle distribution maximum of the peak.
- (b) The residual of the angular measurement is shown up to where there
- are sufficient statistics.
- Like in (a), a dashed line shows the distribution maximum.
+ POT, which is the approximate scale for all the samples in this analysis.
+ A dashed line indicates the maximum of the distribution peak from figure
+ (a).
+ The residual of the angular measurement is shown in figure (b) whose error
+ bars are estimated using bootstrapping.
+ 
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-The 
-\begin_inset Formula $\pod$
+Main Track Angular Residuals for the 
+\begin_inset Formula $\numu$
 \end_inset
 
- Angular Residuals Used for Fit Binning
+ in FHC Mode CC 1-Track Sample
 \end_layout
 
 \end_inset
@@ -762,6 +647,188 @@ name "fig:AngularKinematicsBootstrappingNumuCC1Track"
 
 \end_layout
 
+\begin_layout Standard
+This procedure to define fit bin edges emphasizes regions of high statistics
+ and mitigates regions with low statistics.
+ Since the MC provides about 
+\begin_inset Formula $10\times$
+\end_inset
+
+ the data statistics, the statistical uncertainty for each bin should be
+ negligible in high statistics regions.
+ However, this does not account for the low statistics regions predicted
+ by the nominal MC.
+ We tackle this problem and other systematic uncertainties for the fit bins
+ using bin normalizations as explained in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+mbox{Chapter~
+\backslash
+ref{chap:BANFF-Likelihood}}
+\end_layout
+
+\end_inset
+
+.
+ This is discussed in the next section.
+\end_layout
+
+\begin_layout Standard
+The finalized fit bins are tabulated below.
+ There are a total 988 fit bins with water-in and water-out modes sharing
+ the same bin edges.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\numu$
+\end_inset
+
+ in FHC Mode CC 1-Track:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $p$
+\end_inset
+
+ [GeV/c]: 0, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 1, 1.25, 1.5, 2, 3, 4, 5.5, 30
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ : -1, 0.7, 0.8 , 0.88, 0.94, 0.96, 0.975, 0.99, 1
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\numu$
+\end_inset
+
+ in FHC Mode CC N-Tracks:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $p$
+\end_inset
+
+ [GeV/c]: 0, 0.4, 0.5, 0.6, 0.7, 0.8, 1, 1.2, 1.5, 1.8, 2.2, 2.7, 3.5, 5, 10, 30
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ : -1, 0.65, 0.77, 0.85, 0.9, 0.94, 0.97, 0.99, 1
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\numubar$
+\end_inset
+
+ in RHC Mode CC 1-Track:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $p$
+\end_inset
+
+ [GeV/c]: 0, 0.4, 0.5, 0.6, 0.7, 0.8, 1, 1.25, 1.5, 2, 3, 30
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ : -1, 0.82, 0.87, 0.9, 0.93, 0.95, 0.97, 0.99, 1
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\numubar$
+\end_inset
+
+ in RHC Mode CC N-Tracks:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $p$
+\end_inset
+
+ [GeV/c]: 0, 0.5, 0.9, 1.25, 1.6, 2, 3, 8, 30
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ : -1, 0.8, 0.89, 0.95, 0.97, 0.99, 1
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\numu$
+\end_inset
+
+ in RHC CC 1-Track:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $p$
+\end_inset
+
+ [GeV/c]: 0, 0.4, 0.6, 0.8, 1.1, 2, 10
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ : -1, 0.78, 0.84, 0.89, 0.92, 0.95, 0.97, 0.98, 0.99, 1
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\numu$
+\end_inset
+
+ in RHC CC N-Tracks:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $p$
+\end_inset
+
+ [GeV/c]: 0, 0.4, 0.6, 0.8, 1, 1.5, 2, 3, 10
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ : -1, 0.7, 0.8, 0.85, 0.9, 0.94, 0.965, 0.98, 0.99, 1
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -777,24 +844,34 @@ Penalty Terms and Systematic Uncertainties
 \end_layout
 
 \begin_layout Standard
-This section expands on the definition of the penalty terms in the BANFF
- fit.
+This section expands on the penalty terms, and hence fit parameters, in
+ the BANFF fit.
  The cross section and flux penalty terms in this analysis are identical
- to previous BANFF studies since the T2K experiment utilizes a set of canonical
- flux and cross section systematics that are shared between ND280 and SK.
- Also, those systematics are not altered in this analysis for the purpose
- of comparability between 
+ to the previous near detector constraint studies
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Wret2019,Bienstock2017"
+literal "false"
+
+\end_inset
+
+.
+ This provides a one-to-one comparison between the 
 \begin_inset Formula $\pod$
 \end_inset
 
--only and FGD-only best fit results.
- For the ND280 detector systematics, many are shared between the 
+-only and FGD-only flux and cross section predictions.
+ However, due to the different detector technologies between the 
 \begin_inset Formula $\pod$
 \end_inset
 
- and TPC subdetectors.
- However, due to the different detector technologies, additional detector
- inefficiency systematics will be incorporated.
+ and FGD, different bin normalization parameters are necessary.
+\end_layout
+
+\begin_layout Standard
+The first set of fit parameters described are the flux terms.
+ This is followed by a description of the fit bin normalization parameters.
+ The final topic is a description of the cross section parameters.
 \end_layout
 
 \begin_layout Standard
@@ -5648,7 +5725,7 @@ inverted 0
 status open
 
 \begin_layout Subsection
-Detector Inefficiencies Model
+Detector Inefficiencies And Bins Normalizations
 \end_layout
 
 \begin_layout Standard

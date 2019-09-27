@@ -133,7 +133,7 @@ hanging
 \use_refstyle 0
 \use_minted 0
 \branch Introduction
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -148,7 +148,7 @@ hanging
 \color #faf0e6
 \end_branch
 \branch P0DSelections
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -163,12 +163,12 @@ hanging
 \color #faf0e6
 \end_branch
 \branch FitterValidation
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch FitterResults
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -178,7 +178,7 @@ hanging
 \color #faf0e6
 \end_branch
 \branch Discussion
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -188,22 +188,22 @@ hanging
 \color #faf0e6
 \end_branch
 \branch AppendixObsnorm
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixSigmaVariations
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixObsnormVariations
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixLikelihoodScans
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -218,12 +218,12 @@ hanging
 \color #faf0e6
 \end_branch
 \branch AppendixPostfitParameters
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixCC1pi
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -784,20 +784,7 @@ inverted 0
 status open
 
 \begin_layout Chapter
-The 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-podtitle{}
-\end_layout
-
-\end_inset
-
--Only in BANFF Parameterization 
+The BANFF Fit Model Parameters
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:P0DinBANFF"
