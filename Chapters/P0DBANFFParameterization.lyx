@@ -352,7 +352,7 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -365,6 +365,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Figures/P0DBANFFParameterization/MomentumKinematicsNumuCC1Track.png
+	lyxscale 50
 	width 48text%
 
 \end_inset
@@ -393,6 +394,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Figures/P0DBANFFParameterization/MomentumKinematicsUncertaintiesNumuCC1Track.png
+	lyxscale 50
 	width 45text%
 
 \end_inset
@@ -526,7 +528,7 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -877,7 +879,7 @@ The first set of fit parameters described are the flux terms.
 \begin_layout Standard
 \begin_inset Branch P0DBANFFParameterizationFlux
 inverted 0
-status open
+status collapsed
 
 \begin_layout Subsection
 Flux Model
@@ -885,11 +887,23 @@ Flux Model
 
 \begin_layout Standard
 The T2K neutrino flux model is a description of the neutrino beam spectrum
- by run period and flavor.
- This model includes simulations of the beam interactions and subsequent
+ for each run period and flavor.
+ This model includes simulations of the proton beam interactions and subsequent
  hadron production at the target.
  The predicted hadron production rate, including inside and outside the
- target, is tuned to the results from the NA61/SHINE
+ graphite target, is tuned to the results from the replica target
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The NA61/SHINE experiment has two graphite targets.
+ A thin 2 cm target and a thick 90 cm target.
+ The thick target is a replica of the T2K graphite target.
+\end_layout
+
+\end_inset
+
+ experiment NA61/SHINE
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Abgrall:2016fs"
@@ -897,8 +911,8 @@ literal "false"
 
 \end_inset
 
- replica target experiment and other hadron production experiments.
- The uncertainties in the unoscillated flux tuning are dominated on hadron
+ and other hadron production experiments.
+ The uncertainties in the unoscillated flux tuning are dominated by hadron
  production.
  Smaller effects on the unoscillated flux uncertainty include the proton
  beam profile, off-axis angle, horn current, and horn alignment.
@@ -918,14 +932,14 @@ literal "false"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -943,7 +957,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Flux covariance
+Covariance
 \end_layout
 
 \end_inset
@@ -975,7 +989,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Flux correlation
+Correlation matrix
 \end_layout
 
 \end_inset
@@ -989,8 +1003,13 @@ Flux correlation
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-BANFF prefit flux covariance matrix shown with respective detector, horn
- current, and neutrino flavor.
+The BANFF prefit flux covariance matrix.
+ Figure (a) is shows the covariance matrix which is the uncertainty of the
+ normalization for the neutrino flux at both ND280 and SK.
+ The covariance matrix is divided into submatrices in groups by detector,
+ beam mode, and neutrino flavor.
+ Figure (b) is the linear correlation coefficient for each covariance term.
+ 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:BANFF-pre-fit-flux-covariance"
@@ -1002,7 +1021,7 @@ name "fig:BANFF-pre-fit-flux-covariance"
 status open
 
 \begin_layout Plain Layout
-BANFF Pre-fit Flux Covariance Matrix
+The BANFF Prefit Flux Covariance Matrix
 \end_layout
 
 \end_inset
@@ -1035,25 +1054,31 @@ noprefix "false"
 , as
 \begin_inset Formula 
 \begin{equation}
-\Delta\chi_{\text{Flux}}^{2}=\left(\Delta\flux\right)^{T}\cdot\left(V_{b}^{-1}\right)\cdot\left(\Delta\flux\right).\label{eq:DeltaChi2Flux}
+\chi_{\text{Flux}}^{2}=\left(\flux-\flux_{0}\right)^{T}\left(V_{b}^{-1}\right)\left(\flux-\flux_{0}\right).\label{eq:DeltaChi2Flux}
 \end{equation}
 
 \end_inset
 
-As a remainder, all penalty terms, 
-\begin_inset Formula $\Delta\chi^{2}$
+As a remainder, all penalty terms in this analysis have the form of 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:DeltaChi2Flux"
+plural "false"
+caps "false"
+noprefix "false"
+
 \end_inset
 
-, in this analysis follow this format.
- Each flux 
+.
+ Each flux parameter, 
 \begin_inset Formula $b_{i}$
 \end_inset
 
- parameter is a neutrino energy bin normalization starting at one (1).
+ , is a neutrino energy bin normalization starting at one (1).
  Each parameter is defined as
 \begin_inset Formula 
 \begin{equation}
-b_{i}=\frac{N_{\nu,i}^{\prime}}{N_{\nu,i}},\label{eq:fluxtermdef}
+b_{i}=\frac{N_{\nu_{\alpha},i}^{\prime}}{N_{\nu_{\alpha},i}},\label{eq:fluxtermdef}
 \end{equation}
 
 \end_inset
@@ -1066,8 +1091,11 @@ where
 \begin_inset Formula $N_{\nu,i}^{\prime}$
 \end_inset
 
- are the predicted and ND constrained neutrino event rates, respectively,
- in the 
+ are the predicted and ND constrained 
+\begin_inset Formula $\nu_{\alpha}$
+\end_inset
+
+ event rates, respectively, in the 
 \begin_inset Formula $i$
 \end_inset
 
@@ -1079,11 +1107,11 @@ each flux term is a ratio of rates
 .
  
 \shape italic
-Further, all penalty parameters and covariance terms are dimensionless
+Further, all penalty terms and covariance terms are dimensionless
 \shape default
 .
  The flux bins are differentiated by neutrino energy, horn current/polarity
- (FHC and RHC), neutrino flavor (
+ (FHC mode and RHC mode), neutrino flavor (
 \begin_inset Formula $\numu$
 \end_inset
 
@@ -1111,9 +1139,9 @@ noprefix "false"
 \end_inset
 
 , is provided by the T2K flux group.
- Shown also in Figure 
+ Also shown in 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "fig:BANFF-pre-fit-flux-covariance"
 plural "false"
 caps "false"
@@ -1121,7 +1149,8 @@ noprefix "false"
 
 \end_inset
 
- is the (Pearson) correlation coefficient matrix which is defined as 
+ is the Pearson linear correlation coefficient matrix which is defined as
+ 
 \begin_inset Formula 
 \begin{equation}
 \rho_{i,j}=\frac{V_{i,j}}{\sqrt{V_{i,i}V_{j,j}}},\label{eq:pearson-correlation}
@@ -1226,15 +1255,17 @@ Unoscillated SK RHC flux
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The T2K unoscillated neutrino flux prediction at SK for FHC (left) and RHC
- (right) modes.
- The shared ND280 and SK binning used for the flux systematic parameters
- is also shown below the plots.
+Neutrino Flux Prediction at SK and Flux Bin Edges.
+ The flux prediction for FHC (RHC) mode is shown in figure on the left (right).
+ The flux normalization parameters have an assigned energy range and are
+ the same for both the SK and ND280 detectors.
+ The energy binning used is shown below the plots.
+ 
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-The T2K Unoscillated Neutrino Flux Prediction at SK
+Neutrino Flux Prediction at SK and Flux Bin Edges
 \end_layout
 
 \end_inset
@@ -1299,8 +1330,8 @@ noprefix "false"
 \end_inset
 
 .
- Each flux bin is assigned with an initial value of one (1) for all events
- in that neutrino energy bin.
+ Each flux bin is assigned an initial value of one (1) for all events in
+ that neutrino energy bin.
  A postfit value of 1.1 indicates that all events in that energy bin have
  an additional weight of 1.1, signaling that the postfit prefers to increase
  that neutrino flux by 10%.
@@ -1321,4388 +1352,1073 @@ inverted 0
 status collapsed
 
 \begin_layout Standard
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="102" columns="4">
-<features islongtable="true" firstHeadTopDL="true" firstHeadBottomDL="true" headTopDL="true" headBottomDL="true" longtabularalignment="center">
-<column alignment="center" valignment="top" width="0pt">
-<column alignment="center" valignment="top" width="0pt">
-<column alignment="center" valignment="top" width="0pt">
-<column alignment="center" valignment="top" width="0pt">
-<row endhead="true" endfirsthead="true" caption="true">
-<cell multicolumn="1" alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Flux binning and uncertainties used in the BANFF fit.
-\begin_inset Argument 1
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-Flux Binning and Uncertainties Used in the BANFF Fit
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:Fluxbinning"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row endhead="true" endfirsthead="true">
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-Fit index
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-Beam mode
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-Bin edges [GeV]
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-Prefit
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-ND280 
-\begin_inset Formula $\numu$
-\end_inset
-
- FHC
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.0 - 0.4
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.100909
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.4 - 0.5
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.099431
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-2
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.5 - 0.6
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.092025
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.6 - 0.7
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.085239
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-4
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.7 - 1.0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.105356
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-5
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1.0 - 1.5
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.104375
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-6
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1.5 - 2.5
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.073612
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-7
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-2.5 - 3.5
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.068993
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-8
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3.5 - 5.0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.082334
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-9
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-5.0 - 7.0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.097308
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-10
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-7.0 - 30
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.114706
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-11
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-ND280 
-\begin_inset Formula $\numubar$
-\end_inset
-
- FHC
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.0 - 0.7
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.103804
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-12
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.7 - 1.0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.084158
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-13
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1.0 - 1.5
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.081349
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-14
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1.5 - 2.5
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.085208
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-15
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-2.5 - 30
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.087735
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-16
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-ND280 
-\begin_inset Formula $\nue$
-\end_inset
-
- FHC
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.0 - 0.5
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.091336
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-17
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.5 - 0.7
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.089699
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-18
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.7 - 0.8
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.084648
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-19
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.8 - 1.5
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.079722
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-20
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1.5 - 2.5
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.079766
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-21
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-2.5 - 4.0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.081399
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-22
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-4.0 - 30
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.095795
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-23
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-ND280 
-\begin_inset Formula $\nuebar$
-\end_inset
-
- FHC
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.0 - 2.5
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.072069
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-24
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-2.5 - 30
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.142921
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-25
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-ND280 
-\begin_inset Formula $\numu$
-\end_inset
-
- RHC
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.0 - 0.7
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.094066
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-26
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.7 - 1.0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.079866
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-27
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1.0 - 1.5
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.080948
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-28
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1.5 - 2.5
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.083251
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-29
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-2.5 - 30
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.082653
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-30
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-ND280 
-\begin_inset Formula $\numubar$
-\end_inset
-
- RHC
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.0 - 0.4
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.107277
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-31
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.4 - 0.5
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.098851
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-32
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.5 - 0.6
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.089710
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-33
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.6 - 0.7
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.084692
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-34
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.7 - 1.0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.106871
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-35
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1.0 - 1.5
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.098711
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-36
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1.5 - 2.5
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.073350
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-37
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-2.5 - 3.5
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.070520
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-38
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3.5 - 5.0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.092905
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-39
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-5.0 - 7.0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.089083
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-40
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-7.0 - 30
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.134911
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-41
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-ND280 
-\begin_inset Formula $\nue$
-\end_inset
-
- RHC
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.0 - 2.5
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.066214
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-42
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-2.5 - 30
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.086977
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-43
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-ND280 
-\begin_inset Formula $\nuebar$
-\end_inset
-
- RHC
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.0 - 0.5
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.095575
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-44
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.5 - 0.7
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.089033
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-45
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.7 - 0.8
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.088406
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-46
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.8 - 1.5
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.081472
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-47
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1.5 - 2.5
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.078353
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-48
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-2.5 - 4.0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.089427
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-49
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-4.0 - 30
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.156972
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-50
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-SK 
-\begin_inset Formula $\numu$
-\end_inset
-
- FHC
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.0 - 0.4
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.102555
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-51
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.4 - 0.5
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.101771
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-52
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.5 - 0.6
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.092573
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-53
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.6 - 0.7
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.084265
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-54
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.7 - 1.0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.102271
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-55
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1.0 - 1.5
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.084528
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-56
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1.5 - 2.5
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.066909
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-57
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-2.5 - 3.5
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.072355
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-58
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3.5 - 5.0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.085299
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-59
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-5.0 - 7.0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.096725
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-60
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-7.0 - 30
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.114112
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-61
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-SK 
-\begin_inset Formula $\numubar$
-\end_inset
-
- FHC
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.0 - 0.7
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.103129
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-62
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.7 - 1.0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.078327
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-63
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1.0 - 1.5
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.082367
-\end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-64
+\backslash
+begin{center}
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-1.5 - 2.5
+\backslash
+begin{longtable}[c]{cccc}
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.082121
-\end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-65
+\backslash
+hline
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-2.5 - 30
+\backslash
+caption[Flux Binning and Uncertainties]{Flux binning and uncertainties used
+ in the BANFF fit.
+\backslash
+label{tab:Fluxbinning}}
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.085123
-\end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-66
+\backslash
+tabularnewline
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-SK 
-\begin_inset Formula $\nue$
-\end_inset
-
- FHC
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-0.0 - 0.5
+\backslash
+textbf{Fit index} & 
+\backslash
+textbf{Beam mode} & 
+\backslash
+textbf{Bin edges {[}GeV{]}} & 
+\backslash
+textbf{Prefit}
+\backslash
+tabularnewline
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.090918
-\end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-67
+\backslash
+hline
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-0.5 - 0.7
+\backslash
+endfirsthead
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.087065
-\end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-68
+\backslash
+hline
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-0.7 - 0.8
+\backslash
+tabularnewline
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.082527
-\end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-69
+\backslash
+textbf{Fit index} & 
+\backslash
+textbf{Beam mode} & 
+\backslash
+textbf{Bin edges {[}GeV{]}} & 
+\backslash
+textbf{Prefit}
+\backslash
+tabularnewline
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-0.8 - 1.5
+\backslash
+hline
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.076514
-\end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-70
+\backslash
+endhead 
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1.5 - 2.5
+0 & ND280 $
+\backslash
+numu$ FHC & 0.0 - 0.4 & 1$
+\backslash
+pm$0.100909
+\backslash
+tabularnewline
 \end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
 \begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.075773
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-71
+1 &  & 0.4 - 0.5 & 1$
+\backslash
+pm$0.099431
+\backslash
+tabularnewline
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-2.5 - 4.0
+2 &  & 0.5 - 0.6 & 1$
+\backslash
+pm$0.092025
+\backslash
+tabularnewline
 \end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
 \begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.082078
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-72
+3 &  & 0.6 - 0.7 & 1$
+\backslash
+pm$0.085239
+\backslash
+tabularnewline
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-4.0 - 30
+4 &  & 0.7 - 1.0 & 1$
+\backslash
+pm$0.105356
+\backslash
+tabularnewline
 \end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
 \begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.092882
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-73
+5 &  & 1.0 - 1.5 & 1$
+\backslash
+pm$0.104375
+\backslash
+tabularnewline
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-SK 
-\begin_inset Formula $\nuebar$
-\end_inset
 
- FHC
+6 &  & 1.5 - 2.5 & 1$
+\backslash
+pm$0.073612
+\backslash
+tabularnewline
 \end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.0 - 2.5
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
 \begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.071921
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-74
+7 &  & 2.5 - 3.5 & 1$
+\backslash
+pm$0.068993
+\backslash
+tabularnewline
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-2.5 - 30
+8 &  & 3.5 - 5.0 & 1$
+\backslash
+pm$0.082334
+\backslash
+tabularnewline
 \end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
 \begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.128982
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-75
+9 &  & 5.0 - 7.0 & 1$
+\backslash
+pm$0.097308
+\backslash
+tabularnewline
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-SK 
-\begin_inset Formula $\numu$
-\end_inset
 
- RHC
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.0 - 0.7
+10 &  & 7.0 - 30 & 1$
+\backslash
+pm$0.114706
+\backslash
+tabularnewline
 \end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
 \begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.093954
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-76
+11 & ND280 $
+\backslash
+numubar$ FHC & 0.0 - 0.7 & 1$
+\backslash
+pm$0.103804
+\backslash
+tabularnewline
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.7 - 1.0
+12 &  & 0.7 - 1.0 & 1$
+\backslash
+pm$0.084158
+\backslash
+tabularnewline
 \end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
 \begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
 
-0.076369
+13 &  & 1.0 - 1.5 & 1$
+\backslash
+pm$0.081349
+\backslash
+tabularnewline
 \end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-77
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+14 &  & 1.5 - 2.5 & 1$
+\backslash
+pm$0.085208
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
 
+15 &  & 2.5 - 30 & 1$
+\backslash
+pm$0.087735
+\backslash
+tabularnewline
 \end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
 \begin_layout Plain Layout
-1.0 - 1.5
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+16 & ND280 $
+\backslash
+nue$ FHC & 0.0 - 0.5 & 1$
+\backslash
+pm$0.091336
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
 
-0.074900
+17 &  & 0.5 - 0.7 & 1$
+\backslash
+pm$0.089699
+\backslash
+tabularnewline
 \end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-78
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+18 &  & 0.7 - 0.8 & 1$
+\backslash
+pm$0.084648
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
 
+19 &  & 0.8 - 1.5 & 1$
+\backslash
+pm$0.079722
+\backslash
+tabularnewline
 \end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
 \begin_layout Plain Layout
-1.5 - 2.5
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+20 &  & 1.5 - 2.5 & 1$
+\backslash
+pm$0.079766
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.078108
-\end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-79
+\backslash
+newpage
 \end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
 \begin_layout Plain Layout
 
+21 &  & 2.5 - 4.0 & 1$
+\backslash
+pm$0.081399
+\backslash
+tabularnewline
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-2.5 - 30
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+22 &  & 4.0 - 30 & 1$
+\backslash
+pm$0.095795
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
 
-0.077505
+23 & ND280 $
+\backslash
+nuebar$ FHC & 0.0 - 2.5 & 1$
+\backslash
+pm$0.072069
+\backslash
+tabularnewline
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
 \begin_layout Plain Layout
-80
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+24 &  & 2.5 - 30 & 1$
+\backslash
+pm$0.142921
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
-SK 
-\begin_inset Formula $\numubar$
-\end_inset
 
- RHC
+25 & ND280 $
+\backslash
+numu$ RHC & 0.0 - 0.7 & 1$
+\backslash
+pm$0.094066
+\backslash
+tabularnewline
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-0.0 - 0.4
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+26 &  & 0.7 - 1.0 & 1$
+\backslash
+pm$0.079866
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
 
-0.108593
+27 &  & 1.0 - 1.5 & 1$
+\backslash
+pm$0.080948
+\backslash
+tabularnewline
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
 \begin_layout Plain Layout
-81
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+28 &  & 1.5 - 2.5 & 1$
+\backslash
+pm$0.083251
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
 
+29 &  & 2.5 - 30 & 1$
+\backslash
+pm$0.082653
+\backslash
+tabularnewline
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-0.4 - 0.5
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+30 & ND280 $
+\backslash
+numubar$ RHC & 0.0 - 0.4 & 1$
+\backslash
+pm$0.107277
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
 
-0.101912
+31 &  & 0.4 - 0.5 & 1$
+\backslash
+pm$0.098851
+\backslash
+tabularnewline
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
 \begin_layout Plain Layout
-82
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+32 &  & 0.5 - 0.6 & 1$
+\backslash
+pm$0.089710
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
 
+33 &  & 0.6 - 0.7 & 1$
+\backslash
+pm$0.084692
+\backslash
+tabularnewline
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-0.5 - 0.6
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+34 &  & 0.7 - 1.0 & 1$
+\backslash
+pm$0.106871
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
 
-0.092787
+35 &  & 1.0 - 1.5 & 1$
+\backslash
+pm$0.098711
+\backslash
+tabularnewline
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
 \begin_layout Plain Layout
-83
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+36 &  & 1.5 - 2.5 & 1$
+\backslash
+pm$0.073350
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
 
+37 &  & 2.5 - 3.5 & 1$
+\backslash
+pm$0.070520
+\backslash
+tabularnewline
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-0.6 - 0.7
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+38 &  & 3.5 - 5.0 & 1$
+\backslash
+pm$0.092905
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
 
-0.082669
+39 &  & 5.0 - 7.0 & 1$
+\backslash
+pm$0.089083
+\backslash
+tabularnewline
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
 \begin_layout Plain Layout
-84
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+40 &  & 7.0 - 30 & 1$
+\backslash
+pm$0.134911
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
 
+41 & ND280 $
+\backslash
+nue$ RHC & 0.0 - 2.5 & 1$
+\backslash
+pm$0.066214
+\backslash
+tabularnewline
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-0.7 - 1.0
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+42 &  & 2.5 - 30 & 1$
+\backslash
+pm$0.086977
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
 
-0.102090
+43 & ND280 $
+\backslash
+nuebar$ RHC & 0.0 - 0.5 & 1$
+\backslash
+pm$0.095575
+\backslash
+tabularnewline
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
 \begin_layout Plain Layout
-85
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+44 &  & 0.5 - 0.7 & 1$
+\backslash
+pm$0.089033
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
 
+45 &  & 0.7 - 0.8 & 1$
+\backslash
+pm$0.088406
+\backslash
+tabularnewline
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-1.0 - 1.5
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+46 &  & 0.8 - 1.5 & 1$
+\backslash
+pm$0.081472
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
 
-0.087732
+47 &  & 1.5 - 2.5 & 1$
+\backslash
+pm$0.078353
+\backslash
+tabularnewline
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
 \begin_layout Plain Layout
-86
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+48 &  & 2.5 - 4.0 & 1$
+\backslash
+pm$0.089427
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
 
+49 &  & 4.0 - 30 & 1$
+\backslash
+pm$0.156972
+\backslash
+tabularnewline
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-1.5 - 2.5
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+50 & SK $
+\backslash
+numu$ FHC & 0.0 - 0.4 & 1$
+\backslash
+pm$0.102555
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
 
-0.068117
+51 &  & 0.4 - 0.5 & 1$
+\backslash
+pm$0.101771
+\backslash
+tabularnewline
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
 \begin_layout Plain Layout
-87
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+52 &  & 0.5 - 0.6 & 1$
+\backslash
+pm$0.092573
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
 
+53 &  & 0.6 - 0.7 & 1$
+\backslash
+pm$0.084265
+\backslash
+tabularnewline
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-2.5 - 3.5
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+54 &  & 0.7 - 1.0 & 1$
+\backslash
+pm$0.102271
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
 
-0.069902
+55 &  & 1.0 - 1.5 & 1$
+\backslash
+pm$0.084528
+\backslash
+tabularnewline
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
 \begin_layout Plain Layout
-88
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+56 &  & 1.5 - 2.5 & 1$
+\backslash
+pm$0.066909
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
 
+57 &  & 2.5 - 3.5 & 1$
+\backslash
+pm$0.072355
+\backslash
+tabularnewline
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-3.5 - 5.0
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+58 &  & 3.5 - 5.0 & 1$
+\backslash
+pm$0.085299
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
 
-0.091711
+59 &  & 5.0 - 7.0 & 1$
+\backslash
+pm$0.096725
+\backslash
+tabularnewline
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
 \begin_layout Plain Layout
-89
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+60 &  & 7.0 - 30 & 1$
+\backslash
+pm$0.114112
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
 
+61 & SK $
+\backslash
+numubar$ FHC & 0.0 - 0.7 & 1$
+\backslash
+pm$0.103129
+\backslash
+tabularnewline
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-5.0 - 7.0
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+62 &  & 0.7 - 1.0 & 1$
+\backslash
+pm$0.078327
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
 
-0.084736
+63 &  & 1.0 - 1.5 & 1$
+\backslash
+pm$0.082367
+\backslash
+tabularnewline
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
 \begin_layout Plain Layout
-90
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+64 &  & 1.5 - 2.5 & 1$
+\backslash
+pm$0.082121
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
 
+65 &  & 2.5 - 30 & 1$
+\backslash
+pm$0.085123
+\backslash
+tabularnewline
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-7.0 - 30
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+66 & SK $
+\backslash
+nue$ FHC & 0.0 - 0.5 & 1$
+\backslash
+pm$0.090918
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
 
-0.115488
+67 &  & 0.5 - 0.7 & 1$
+\backslash
+pm$0.087065
+\backslash
+tabularnewline
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
 \begin_layout Plain Layout
-91
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+68 &  & 0.7 - 0.8 & 1$
+\backslash
+pm$0.082527
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
-SK 
-\begin_inset Formula $\nue$
-\end_inset
 
- RHC
+69 &  & 0.8 - 1.5 & 1$
+\backslash
+pm$0.076514
+\backslash
+tabularnewline
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-0.0 - 2.5
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+70 &  & 1.5 - 2.5 & 1$
+\backslash
+pm$0.075773
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
 
-0.066204
+71 &  & 2.5 - 4.0 & 1$
+\backslash
+pm$0.082078
+\backslash
+tabularnewline
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
 \begin_layout Plain Layout
-92
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+72 &  & 4.0 - 30 & 1$
+\backslash
+pm$0.092882
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
 
+73 & SK $
+\backslash
+nuebar$ FHC & 0.0 - 2.5 & 1$
+\backslash
+pm$0.071921
+\backslash
+tabularnewline
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-2.5 - 30
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+74 &  & 2.5 - 30 & 1$
+\backslash
+pm$0.128982
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
 
-0.082645
+75 & SK $
+\backslash
+numu$ RHC & 0.0 - 0.7 & 1$
+\backslash
+pm$0.093954
+\backslash
+tabularnewline
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
 \begin_layout Plain Layout
-93
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+76 &  & 0.7 - 1.0 & 1$
+\backslash
+pm$0.076369
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
-SK 
-\begin_inset Formula $\nuebar$
-\end_inset
 
- RHC
+77 &  & 1.0 - 1.5 & 1$
+\backslash
+pm$0.074900
+\backslash
+tabularnewline
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-0.0 - 0.5
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+78 &  & 1.5 - 2.5 & 1$
+\backslash
+pm$0.078108
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
 
-0.095453
+79 &  & 2.5 - 30 & 1$
+\backslash
+pm$0.077505
+\backslash
+tabularnewline
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
 \begin_layout Plain Layout
-94
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+80 & SK $
+\backslash
+numubar$ RHC & 0.0 - 0.4 & 1$
+\backslash
+pm$0.108593
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
 
+81 &  & 0.4 - 0.5 & 1$
+\backslash
+pm$0.101912
+\backslash
+tabularnewline
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-0.5 - 0.7
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+82 &  & 0.5 - 0.6 & 1$
+\backslash
+pm$0.092787
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
 
-0.088889
+83 &  & 0.6 - 0.7 & 1$
+\backslash
+pm$0.082669
+\backslash
+tabularnewline
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
 \begin_layout Plain Layout
-95
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+84 &  & 0.7 - 1.0 & 1$
+\backslash
+pm$0.102090
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
 
+85 &  & 1.0 - 1.5 & 1$
+\backslash
+pm$0.087732
+\backslash
+tabularnewline
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-0.7 - 0.8
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+86 &  & 1.5 - 2.5 & 1$
+\backslash
+pm$0.068117
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
 
-0.085644
+87 &  & 2.5 - 3.5 & 1$
+\backslash
+pm$0.069902
+\backslash
+tabularnewline
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
 \begin_layout Plain Layout
-96
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+88 &  & 3.5 - 5.0 & 1$
+\backslash
+pm$0.091711
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
 
+89 &  & 5.0 - 7.0 & 1$
+\backslash
+pm$0.084736
+\backslash
+tabularnewline
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-0.8 - 1.5
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+90 &  & 7.0 - 30 & 1$
+\backslash
+pm$0.115488
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
 
-0.078536
+91 & SK $
+\backslash
+nue$ RHC & 0.0 - 2.5 & 1$
+\backslash
+pm$0.066204
+\backslash
+tabularnewline
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
 \begin_layout Plain Layout
-97
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+92 &  & 2.5 - 30 & 1$
+\backslash
+pm$0.082645
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
 
+93 & SK $
+\backslash
+nuebar$ RHC & 0.0 - 0.5 & 1$
+\backslash
+pm$0.095453
+\backslash
+tabularnewline
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-1.5 - 2.5
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+94 &  & 0.5 - 0.7 & 1$
+\backslash
+pm$0.088889
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
 
-0.075246
+95 &  & 0.7 - 0.8 & 1$
+\backslash
+pm$0.085644
+\backslash
+tabularnewline
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
 \begin_layout Plain Layout
-98
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+96 &  & 0.8 - 1.5 & 1$
+\backslash
+pm$0.078536
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
 
+97 &  & 1.5 - 2.5 & 1$
+\backslash
+pm$0.075246
+\backslash
+tabularnewline
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
 \begin_layout Plain Layout
-2.5 - 4.0
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+98 &  & 2.5 - 4.0 & 1$
+\backslash
+pm$0.086384
+\backslash
+tabularnewline
+\end_layout
 
 \begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
 
-0.086384
+99 &  & 4.0 - 30 & 1$
+\backslash
+pm$0.152507
+\backslash
+tabularnewline
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
 \begin_layout Plain Layout
-99
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 
+\backslash
+end{longtable}
 \end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
 \begin_layout Plain Layout
-4.0 - 30
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-1
-\begin_inset Formula $\pm$
-\end_inset
-
-0.152507
+\backslash
+par
+\backslash
+end{center}
 \end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
 
 \end_inset
 
@@ -5731,7 +2447,7 @@ Detector Inefficiencies And Bins Normalizations
 \begin_layout Standard
 In the BANFF fit, bin normalization parameters are used to evaluate the
  detector inefficiency penalty term, 
-\begin_inset Formula $\Delta\chi_{\text{Det}}^{2}$
+\begin_inset Formula $\chi_{\text{Det}}^{2}$
 \end_inset
 
 .
@@ -5760,17 +2476,7 @@ s.
 
 \begin_layout Standard
 All the detector systematics are evaluated either as observable variations
- or weights as given in given in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "tab:List-of-detector"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
+ or weights.
  An observable variation affects the physical observables of selected events
  like the calculated energy loss of a track in the 
 \begin_inset Formula $\pod$
@@ -5784,30 +2490,309 @@ noprefix "false"
 \end_inset
 
 -only, TPC-only, or both.
- So a description of the systematic treatments is discussed in the next
- section.
- The new 
-\begin_inset Formula $\pod$
+ A description of the systematic uncertainties and their treatments is discussed
+ in the next section.
+\end_layout
+
+\begin_layout Subsubsection
+Systematic Treatments
+\end_layout
+
+\begin_layout Standard
+There are two types of systematic treatments in the BANFF analysis: observable
+ variations and weights.
+ Each relies on the method of throwing a random number, 
+\begin_inset Formula $x$
 \end_inset
 
--only systematics in BANFF will then be explained later.
- Details on the TPC-only systematics implementations are discussed in the
- following reference
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Abe:2017vif"
-literal "false"
+, to evaluate the systematic.
+\end_layout
 
+\begin_layout Standard
+Efficiency-like systematics are treated as weights to the MC predictions
+ in order to evaluate the uncertainty the systematic has on an analysis.
+ They are data-driven studies by comparing data and MC predictions in a
+ control sample (CS).
+ For instance, a collection of single, isolated cosmic ray tracks is a CS
+ to calibrate the detector response for minimum ionizing tracks.
+ In general, a CS may have different properties than the analysis sample,
+ like event topology.
+ In particular the cosmic ray CS cannot account for efficiency effects if
+ other tracks are present.
+ Therefore a model extrapolation is needed to map the CS to the analysis
+ sample
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Each CS is validated in T2K prior to introduction to the BANFF analysis.
+\end_layout
+
+\end_inset
+
+.
+ The model used in BANFF is that the efficiency of the data and MC is the
+ same in both analysis sample and CS kinematics 
+\begin_inset Formula 
+\begin{equation}
+\epsilon_{\text{Data}}(o)=\left(\frac{\epsilon_{\text{Data}}(o)}{\epsilon_{\text{MC}}(o)}\right)_{\text{CS}}\epsilon_{\text{MC}}(o),\label{eq:effdatafromCS}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\epsilon_{\text{MC}}/\epsilon_{\text{Data}}$
+\end_inset
+
+ denotes the mean selection efficiency of the MC/data as a function of some
+ observable kinematic 
+\begin_inset Formula $o$
+\end_inset
+
+.
+ We need to update this model to account for statistical uncertainties in
+ the CS.
+ The updated model, with 
+\begin_inset Formula $o$
+\end_inset
+
+ dependence assumed, is now 
+\begin_inset Formula 
+\begin{equation}
+\epsilon_{\text{Data}}^{\prime}=\left(\frac{\epsilon_{\text{Data}}+x_{\text{Data}}\cdot\sigma_{\epsilon_{\text{Data}}}}{\epsilon_{\text{MC}}+x_{\text{MC}}\cdot\sigma_{\epsilon_{\text{MC}}}}\right)_{\text{CS}}\epsilon_{\text{MC}}\label{eq:effdataWithErrfromCS}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\sigma_{\epsilon_{\text{MC}}}/\sigma_{\epsilon_{\text{Data}}}$
+\end_inset
+
+ is the standard deviation of the efficiency of the MC/Data and 
+\begin_inset Formula $x_{\text{Data}}$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{\text{MC}}$
+\end_inset
+
+ are uncorrelated, random normally distributed numbers from 
+\begin_inset Formula $\mathcal{N}\left(\mu=0,\sigma^{2}=1\right)$
+\end_inset
+
+.
+ All the variations are applied to the event, simultaneously affecting all
+ observables, and the event selection is rerun.
+ A weight is derived depending if the event is selected, 
+\begin_inset Formula $w_{\text{eff}}$
+\end_inset
+
+, or not selected, 
+\begin_inset Formula $w_{\text{ineff}}$
+\end_inset
+
+.
+ These weights are given below
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned}w_{\text{eff}} & =\frac{\epsilon_{\text{Data}}^{\prime}}{\epsilon_{\text{MC}}}\\
+w_{\text{ineff}} & =\frac{1-\epsilon_{\text{Data}}^{\prime}}{1-\epsilon_{\text{MC}}}.
+\end{aligned}
+\label{eq:weighteff}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Observable variation systematics are evaluated as shifts to physically measured
+ quantities like momentum and track length.
+ The systematic can be evaluated in two different ways:
+\end_layout
+
+\begin_layout Enumerate
+If the reconstructed observable, 
+\begin_inset Formula $o_{\text{reco}}$
+\end_inset
+
+, has a known true value, 
+\begin_inset Formula $o_{\text{true}}$
+\end_inset
+
+, then the difference between those two is used as scaling.
+ The varied observable is given by
+\begin_inset Formula 
+\begin{equation}
+o^{\prime}=o_{\text{true}}+\left(o_{\text{reco}}-o_{\text{true}}\right)\left(s+x\sigma_{s}\right),\label{eq:recotrueobsvar}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $s$
+\end_inset
+
+ is the mean scaling parameter used to match the true value, 
+\begin_inset Formula $\sigma_{s}$
+\end_inset
+
+ is the uncertainty on 
+\begin_inset Formula $s$
+\end_inset
+
+, and 
+\begin_inset Formula $x$
+\end_inset
+
+ is a random number from 
+\begin_inset Formula $\mathcal{N}\left(\mu=0,\sigma^{2}=1\right)$
+\end_inset
+
+.
+ The mean scaling parameter and its uncertainty are determined from the
+ standard deviations observed in the data and MC by
+\begin_inset Formula 
+\begin{equation}
+s=\frac{\delta^{\text{data}}}{\delta^{\text{MC}}}\quad\sigma_{s}=s\left|\frac{\sigma_{\delta^{\text{data}}}}{\delta^{\text{data}}}-\frac{\sigma_{\delta^{\text{MC}}}}{\delta^{\text{MC}}}\right|.\label{eq:scalingdefrecotrueobsvar}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+If the MC reconstructed observable is corrected to match the mean from some
+ CS reconstructed observable.
+ The varied observable in this case is given by
+\begin_inset Formula 
+\begin{equation}
+o^{\prime}=o_{\text{Nom}}+\Delta o+x\sigma_{\Delta o},\label{eq:obsvariation}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $o^{\prime}$
+\end_inset
+
+ is the varied observable value, 
+\begin_inset Formula $o_{\text{Nom}}$
+\end_inset
+
+ is the nominal MC value, 
+\begin_inset Formula $\Delta o$
+\end_inset
+
+ is the average correction to the observable, 
+\begin_inset Formula $\sigma_{\Delta o}$
+\end_inset
+
+ is the uncertainty on the correction, and 
+\begin_inset Formula $x$
+\end_inset
+
+ is a random, normal number from 
+\begin_inset Formula $\mathcal{N}\left(\mu=0,\sigma^{2}=1\right)$
 \end_inset
 
 .
 \end_layout
 
 \begin_layout Standard
+Additional uncertainties from the magnetic field are also special cases
+ of the 2nd observable variation method specifically for the TPC momentum
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Wret2019"
+literal "false"
+
+\end_inset
+
+.
+ They are:
+\end_layout
+
+\begin_layout Itemize
+The TPC laser calibration corrections are applied after the magnetic field
+ (B-field) mapping corrections.
+ The B-field corrections are applied at event reconstruction while the calibrati
+on corrections are treated as a systematic uncertainty.
+ The varied momentum is given by
+\begin_inset Formula 
+\begin{equation}
+p^{\prime}=p_{\text{Nom}}+x\left(p_{\text{Map}}-p_{\text{Nom}}\right),\label{eq:obsvariationtpclaser}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $p_{\text{Nom}}$
+\end_inset
+
+ is the nominal MC prediction using the B-field corrections and 
+\begin_inset Formula $p_{\text{Map}}$
+\end_inset
+
+ is the updated momentum using the additional laser calibration mapping.
+\end_layout
+
+\begin_layout Itemize
+The momentum depends on some scale parameter 
+\begin_inset Formula $s$
+\end_inset
+
+.
+ The varied momentum due to the scale uncertainty is given by
+\begin_inset Formula 
+\begin{equation}
+p^{\prime}=p_{\text{Nom}}\left(1+x\sigma_{s}\right),\label{eq:obsvariationtpcmomentumscale}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\sigma_{s}$
+\end_inset
+
+ is the uncertainty on the scale.
+ In this parameterization, 
+\begin_inset Formula $s$
+\end_inset
+
+ is the scale of the magnet current.
+\end_layout
+
+\begin_layout Standard
+After all observables are varied and applied to the event, the event selection
+ cuts are rerun.
+ In addition to bin migration within a sample, a given event can change
+ samples as well.
+ The full set of detector systematics in the analysis are listed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:List-of-detector"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ The detector systematics unique to the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ are described in below.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -6335,206 +3320,64 @@ List of Detector Systematic Effects and Treatment
 \end_layout
 
 \begin_layout Subsubsection
-Systematic Treatments
+The 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+podtitle{}
+\end_layout
+
+\end_inset
+
+ Detector Systematics
 \end_layout
 
 \begin_layout Standard
-There are two types of systematic treatments in the BANFF analysis: observable
- variations and weights.
- Each rely on the method of throwing a random number, 
-\begin_inset Formula $x$
+There are four new 
+\begin_inset Formula $\pod$
 \end_inset
 
-, to evaluate the systematic.
-\end_layout
-
-\begin_layout Standard
-Efficiency-like systematics are treated as weights to the MC predictions
- in order to evaluate the uncertainty the systematic has on an analysis.
- They are based on studies comparing data and MC predictions in control
- samples (CS).
- A CS is designed to provide a reliable measurement with minimal influence
- from other dependent and independent factors.
- An example of a well established CS is a collection of single, isolated
- cosmic ray (muon) tracks to measure the energy loss in a detector.
- In general, a CS may have different properties than the analysis sample
- like event topology.
- In particular the cosmic ray CS cannot account for efficiency effects if
- other tracks present.
- Therefore a model extrapolation is needed to map the CS to the analysis
- sample.
- The model used in BANFF is that the efficiency of the data and MC is the
- same in both analysis sample and CS 
-\begin_inset Formula 
-\begin{equation}
-\epsilon_{\text{Data}}(o)=\left(\frac{\epsilon_{\text{Data}}(o)}{\epsilon_{\text{MC}}(o)}\right)_{\text{CS}}\epsilon_{\text{MC}}(o),\label{eq:effdatafromCS}
-\end{equation}
+-only detector systematics that are considered for this BANFF fit analysis
+ as listed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:List-of-detector"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
-where 
-\begin_inset Formula $\epsilon_{\text{MC}}/\epsilon_{\text{Data}}$
+.
+ All the new sources were initially analyzed in the 
+\begin_inset Formula $\pod$
 \end_inset
 
- denotes the mean efficiency of the MC/data as a function of some observable
  
-\begin_inset Formula $o$
+\begin_inset Formula $\numu$
 \end_inset
 
-.
- We need to update this model to account for statistical uncertainties in
- the CS.
- The updated model, with 
-\begin_inset Formula $o$
+ CC-
+\begin_inset Formula $0\pi$
 \end_inset
 
- dependence assumed, is now 
-\begin_inset Formula 
-\begin{equation}
-\epsilon_{\text{Data}}^{\prime}=\left(\frac{\epsilon_{\text{Data}}+x_{\text{Data}}\cdot\sigma_{\epsilon_{\text{Data}}}}{\epsilon_{\text{MC}}+x_{\text{MC}}\cdot\sigma_{\epsilon_{\text{MC}}}}\right)_{\text{CS}}\epsilon_{\text{MC}}\label{eq:effdataWithErrfromCS}
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Formula $\sigma_{\epsilon_{\text{MC}}}/\sigma_{\epsilon_{\text{Data}}}$
-\end_inset
-
- is the standard deviation of the efficiency of the MC/Data and 
-\begin_inset Formula $x_{\text{Data}}$
-\end_inset
-
- and 
-\begin_inset Formula $x_{\text{MC}}$
-\end_inset
-
- are different, random normally distributed numbers from 
-\begin_inset Formula $\mathcal{N}\left(\mu=0,\sigma^{2}=1\right)$
-\end_inset
-
-.
- The selection is rerun on the event and a weight is derived depending if
- the event is selected, 
-\begin_inset Formula $w_{\text{eff}}$
-\end_inset
-
-, or not selected, 
-\begin_inset Formula $w_{\text{ineff}}$
-\end_inset
-
-.
- These weights are given below
-\begin_inset Formula 
-\begin{equation}
-\begin{aligned}w_{\text{eff}} & =\frac{\epsilon_{\text{Data}}^{\prime}}{\epsilon_{\text{MC}}}\\
-w_{\text{ineff}} & =\frac{1-\epsilon_{\text{Data}}^{\prime}}{1-\epsilon_{\text{MC}}}.
-\end{aligned}
-\label{eq:weighteff}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Observable variation systematics are evaluated as alterations to physically
- measured quantities like momentum and energy.
- The systematic can be evaluated in two different ways:
-\end_layout
-
-\begin_layout Itemize
-If the reconstructed observable, 
-\begin_inset Formula $o_{\text{reco}}$
-\end_inset
-
-, has a known true value, 
-\begin_inset Formula $o_{\text{true}}$
-\end_inset
-
-, then the difference between those two is used as scaling.
- The varied observable is given by
-\begin_inset Formula 
-\begin{equation}
-o^{\prime}=o_{\text{true}}+\left(o_{\text{reco}}-o_{\text{true}}\right)\left(s+x\sigma_{s}\right),\label{eq:recotrueobsvar}
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Formula $s$
-\end_inset
-
- is the mean scaling parameter to match the true value, 
-\begin_inset Formula $\sigma_{s}$
-\end_inset
-
- is the uncertainty on 
-\begin_inset Formula $s$
-\end_inset
-
-, and 
-\begin_inset Formula $x$
-\end_inset
-
- is a random number from 
-\begin_inset Formula $\mathcal{N}\left(\mu=0,\sigma^{2}=1\right)$
-\end_inset
-
-.
- The mean scaling parameter and its uncertainty are determined from the
- standard deviations observed in the data and MC by
-\begin_inset Formula 
-\begin{equation}
-s=\frac{\delta^{\text{data}}}{\delta^{\text{MC}}}\quad\sigma_{s}=s\left|\frac{\sigma_{\delta^{\text{data}}}}{\delta^{\text{data}}}-\frac{\sigma_{\delta^{\text{MC}}}}{\delta^{\text{MC}}}\right|.\label{eq:scalingdefrecotrueobsvar}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-If the MC reconstructed observable is corrected to match the mean from some
- CS reconstructed observable.
- The varied observable in this case is given by
-\begin_inset Formula 
-\begin{equation}
-o^{\prime}=o_{\text{Nom}}+\Delta o+x\sigma_{\Delta o},\label{eq:obsvariation}
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Formula $o^{\prime}$
-\end_inset
-
- is the varied observable value, 
-\begin_inset Formula $o_{\text{Nom}}$
-\end_inset
-
- is the nominal MC value, 
-\begin_inset Formula $\Delta o$
-\end_inset
-
- is the average correction to the observable, 
-\begin_inset Formula $\sigma_{\Delta o}$
-\end_inset
-
- is the uncertainty on the correction, and 
-\begin_inset Formula $x$
-\end_inset
-
- is a random, normal number from 
-\begin_inset Formula $\mathcal{N}\left(\mu=0,\sigma^{2}=1\right)$
-\end_inset
-
-.
- Special cases exist for this treatment and are further discussed in the
- following thesis 
+ cross section analysis 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Wret2019"
+key "PhysRevD.97.012001"
+literal "false"
+
+\end_inset
+
+.
+ Details on the TPC-only systematics are discussed in the following references
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abe:2017vif,Wret2019"
 literal "false"
 
 \end_inset
@@ -6543,29 +3386,354 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-In both cases, the selection cuts are rerun on the event determining if
- it has changed samples.
+The energy loss scale and resolution affect the measured momentum in the
+ 
+\begin_inset Formula $\pod$
+\end_inset
+
+ and are very significant sources of uncertainty.
+ In the 
+\begin_inset Formula $\numu$
+\end_inset
+
+ CC-
+\begin_inset Formula $0\pi$
+\end_inset
+
+ cross section analysis, the same selection as the 
+\begin_inset Formula $\numu$
+\end_inset
+
+ in FHC CC 1-Track selection, the scale and resolution contributed 1.3% and
+ 6.7%, respectively, to the cross section uncertainty.
+ Those large uncertainties are due to the inherent design of the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ as a low resolution tracking detector.
+ Slight variations in the track reconstruction can significantly alter the
+ energy loss as measured in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:momentumP0DFull"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The remaining systematics, the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ mass and the 
+\begin_inset Formula $\pod$
+\end_inset
+
+-TPC matching efficiency, were not available to analyze in toy experiments
+ variations.
+ They were not implemented in the BANFF framework and unavailable to implement
+ due to time constraints on the author.
+ Instead, they were treated as additional uncorrelated systematics on each
+ bin normalization uncertainty with the normalization value remaining fixed.
+ The treatment of these two systematics will be discussed shortly.
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Formula $\pod$
+\end_inset
+
+ mass uncertainty is a normalization systematic which affects the event
+ rate.
+ This is a challenging systematic for analyses of recent T2K data due to
+ increasingly faulty sensors to measure the water content.
+ The procedure to fill the water bags required filling them in unison to
+ prevent uneven bulging.
+ However, faulty sensors would provide poor quality data, hence bags were
+ under and overfilled.
+ This affect alters the expected event rate as a function of position.
+\end_layout
+
+\begin_layout Standard
+Another problem with the mass uncertainty is due to structure deformations
+ in the 
+\begin_inset Formula $\pod$
+\end_inset
+
+.
+ To understand how the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ has deformed, it is important to understand how the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ is mounted in the ND280 detector.
+ Each corner of the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ is mounted to the ND280 basket leaving the those corners spatially fixed.
+ The upstream end of the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ is also physically against the ND280 support structure.
+ However, there is a physical gap between the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ and the TPC.
+ This permitted the downstream layers to expand or 
+\begin_inset Quotes eld
+\end_inset
+
+bulge
+\begin_inset Quotes erd
+\end_inset
+
+ from the middle into the air gap.
+ Importantly, this left more water volume, and importantly more mass, in
+ the most downstream water bags compared to the upstream bags.
+ This additional mass or bulging effect is evident in the vertex distribution
+ as a function of the Z-position as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:P0DBulging"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Systematics/EvidenceOfP0DBulging.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Vertex distribution showing evidence of bulging.
+ In the 
+\begin_inset Formula $\numubar$
+\end_inset
+
+/
+\begin_inset Formula $\numu$
+\end_inset
+
+ cross section ratio analysis, a significant excess of events in the most
+ downstream layer of the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ (black, dashed line box) was observed.
+ Initially thought to be OOFV events, the analyzers removed the most downstream
+ and upstream layers in their analysis.
+ This distribution was produced using the run 5, RHC period using selection
+ precuts 1 through 4 and a having a positive track in the TPC.
+ Each event is categorized by true interaction mode according to NEUT.
+ This figure was altered for clarity from the following reference 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Campbell2017"
+literal "false"
+
+\end_inset
+
+.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Vertex Distribution Showing Evidence of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+podtitle{}
+\end_layout
+
+\end_inset
+
+ Bulging
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:P0DBulging"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Prior 
+\begin_inset Formula $\pod$
+\end_inset
+
+ analyses have estimated the mass uncertainty using similar toy experiment
+ techniques, but did not integrate them into the BANFF framework.
+ In particular in the 
+\begin_inset Formula $\numu$
+\end_inset
+
+ in CC-
+\begin_inset Formula $0\pi$
+\end_inset
+
+ analysis
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevD.97.012001"
+literal "false"
+
+\end_inset
+
+, the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ mass had an 1.5% systematic effect on the cross section.
+ Since the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ mass uncertainty estimate was determined using the same toy experiment
+ variation method, 
+\shape italic
+a conservative estimate of 2% on the mass uncertainty included in this analysis
+\shape default
+.
+ So for the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ mass systematic, let 
+\begin_inset Formula $\widetilde{\sigma}_{\text{Mass}}=2\%$
+\end_inset
+
+, where the tilde (
+\begin_inset Formula $\widetilde{\ }$
+\end_inset
+
+) refers to a fractional uncertainty.
+ This will be used later.
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Formula $\pod$
+\end_inset
+
+ and TPC matching efficiency is estimated to have a small systematic effect
+ on the analysis.
+ It was analyzed to have over a 99.8% data and MC efficiency in the single
+ track 
+\begin_inset Formula $\numu$
+\end_inset
+
+ CC-
+\begin_inset Formula $0\pi$
+\end_inset
+
+ analysis and thus neglected.
+ However, since this analysis includes multiple track selections, that matching
+ efficiency is unknown.
+ Also, it is hard to imagine a CS that could constrain it.
+ The best handle is from the private T2K technical note on the 
+\begin_inset Formula $\numubar/\numu$
+\end_inset
+
+ cross section analysis 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Campbell2017"
+literal "false"
+
+\end_inset
+
+ which estimated the uncertainty at less than 0.14% using its in-house matching
+ algorithm.
+ Since that is was single bin measurement employing different matching algorithm
+, the uncertainty is not guaranteed to remain constant across 
+\begin_inset Formula $(p,\cos\theta)$
+\end_inset
+
+ bins.
+ 
+\shape italic
+A conservative estimate of 1% for the TPC matching efficiency was chosen
+ in order to account for the inherent uncertainty in this systematic
+\shape default
+.
+ So for the matching efficiency systematic, let 
+\begin_inset Formula $\widetilde{\sigma}_{\text{Match}}=1\%$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
 Now that we understand how the systematics affect our observables and by
  using toy experiments to evaluate the systematics, we can now begin to
  understand how the detector systematic penalty term 
-\begin_inset Formula $\Delta\chi_{\text{Det}}^{2}$
+\begin_inset Formula $\chi_{\text{Det}}^{2}$
 \end_inset
 
  is modeled in the BANFF fit.
 \end_layout
 
 \begin_layout Subsubsection
-Bin Normalizations And Covariance
+Bin Normalization Parameters And Covariance Matrix
 \end_layout
 
 \begin_layout Standard
 As stated before, the bin normalization penalty parameters are restrictions
  on freely varying fit bins.
- To determine how correlated different fit bins are, many toy experiments
- are performed which vary the observables 
+ To determine the correlations between bins, many toy experiments are performed,
+ which vary the observables 
 \begin_inset Formula $(p,\cos\theta)$
 \end_inset
 
@@ -6639,7 +3807,7 @@ th event goes into analysis bin
 \begin_inset Formula $w_{k}$
 \end_inset
 
- being the product of all the weights applied to the 
+ is the product of all of the weights applied to the 
 \begin_inset Formula $k$
 \end_inset
 
@@ -6673,11 +3841,11 @@ noprefix "false"
 \end_inset
 
  for all possible weights).
- The average number of events in fit bin 
+ The number of events in fit bin 
 \begin_inset Formula $i$
 \end_inset
 
- over all toys is given by 
+, averaged over all toys, is given by 
 \begin_inset Formula 
 \begin{equation}
 \begin{aligned}\left\langle N_{i}\right\rangle _{\text{toys}} & =\frac{1}{N_{\text{toys}}}\sum_{t=1}^{N_{\text{toys}}}\left(N_{i}\right)_{t}\\
@@ -6693,31 +3861,13 @@ where now each MC event has a toy variation out of
 \end_inset
 
  total toys.
- For every single event in a toy experiment 
-\begin_inset Formula $t$
+ We average the results of the toys to smooth out variations among all toy
+ experiments.
+ In this analysis, and in previous BANFF analyses as well, 
+\begin_inset Formula $N_{\text{toys}}=2000$
 \end_inset
 
-, the selections cuts must be reapplied to determine if the event has changed
- analysis bins since the toy alters the event observables like the number
- of tracks or 
-\begin_inset Formula 
-\[
-\left(p,\cos\theta\right)\overset{\text{toy}}{\rightarrow}\left(p^{\prime},\cos\theta^{\prime}\right),
-\]
-
-\end_inset
-
-where 
-\begin_inset Formula $p\neq p^{\prime}$
-\end_inset
-
- and 
-\begin_inset Formula $\theta\neq\theta^{\prime}$
-\end_inset
-
- and if the event is reconstructed at all.
- We therefore average the results of the toys to smooth out variations among
- all toy experiments.
+ toys were generated as to have a small uncertainty from the sample size.
 \end_layout
 
 \begin_layout Standard
@@ -6792,7 +3942,7 @@ where
 , in the BANFF fit is defined as 
 \begin_inset Formula 
 \begin{equation}
-V_{i,j}^{\text{Det}}=\left[\frac{1}{N_{i}}\right]\left[\frac{1}{N_{j}}\right]\left(V_{i,j}^{\text{Cov}}+V_{i,j}^{\text{Stat}}\right),\label{eq:totaldetectorcovariance}
+V_{i,j}^{\text{Det}}=\frac{\left(V_{i,j}^{\text{Cov}}+V_{i,j}^{\text{Stat}}\right)}{N_{i}N_{j}},\label{eq:totaldetectorcovariance}
 \end{equation}
 
 \end_inset
@@ -6807,6 +3957,63 @@ which is indeed dimensionless since we divided out the predicted event rate
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+As stated before, the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ mass and track matching efficiency systematics are treated as uncorrelated
+ systematics in the analysis.
+ In order to propagate their systematic uncertainties into the analysis,
+ the detector covariance matrix given in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:totaldetectorcovariance"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is updated to
+\begin_inset Formula 
+\begin{equation}
+V_{i,j}^{\text{Det}}\leftarrow\left(\widetilde{V}_{i,j}^{\text{Det}}+\widetilde{\sigma}_{\text{Mass}}^{2}+\widetilde{\sigma}_{\text{Match}}^{2}\right)d_{i}d_{j}.\label{eq:covarupdatefrac}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\widetilde{V}_{i,j}^{\text{Det}}$
+\end_inset
+
+ is the fractional covariance 
+\begin_inset Formula 
+\begin{equation}
+\widetilde{V}_{i,j}^{\text{Det}}=\frac{V_{i,j}^{\text{Det}}}{d_{i}d_{j}}.\label{eq:fractionalcovariance}
+\end{equation}
+
+\end_inset
+
+Together, the two additional sources of uncertainty increase each term in
+ the covariance matrix by 
+\begin_inset Formula $0.0005d_{i}d_{j}$
+\end_inset
+
+.
+ Specifically, the uncertainty in all the bin normalization parameters (square-r
+oot of the diagonal terms in the covariance matrix) increases by about 
+\begin_inset Formula $2.23\%$
+\end_inset
+
+.
+ The updated detector covariance matrix now accounts for the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ mass and TPC matching inefficiency systematics.
 \end_layout
 
 \begin_layout Subsubsection
@@ -6835,6 +4042,562 @@ similar
 \end_inset
 
  phase space more susceptible to systematic variations in the toy experiments.
+\end_layout
+
+\begin_layout Standard
+A new procedure was developed to improve the shortcomings of old procedure
+ which required careful consideration of the statistical uncertainties and
+ variations between observable normalization prefit values.
+ This procedure can be imagined as reducing the number of contours in a
+ topographic map while considering external constraints from other sensing
+ data.
+ The first step in the procedure is to initialize all of the observable
+ normalization bin edges to be the same as the fit bin edges.
+ All steps after this are performed iteratively.
+\end_layout
+
+\begin_layout Standard
+Starting with observable normalization bin with the highest statistics,
+ a decision is made to merge it with all immediate adjacent bins.
+ If the individual fractional errors differ significantly before the merge,
+ do not merge them.
+ In this analysis, a factor of 10 in fractional uncertainty was determined
+ to sufficiently describe bin similarity by using values larger and smaller
+ than 10 and observing no significant differences in the end result.
+ Additionally if the two unmerged bin normalizations differ by more than
+ 10%, perform the bin merging.
+ This step serves to smooth out the observable normalization prefit space.
+ The procedure is also written in pseudocode in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+mbox{
+\end_layout
+
+\end_inset
+
+Algorithm 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "alg:binedges"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SetKwData{MaxNorm}{max
+\backslash
+_norm}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+SetKwData{MinNorm}{min
+\backslash
+_norm}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+SetKwData{D}{d}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+SetKwData{F}{f}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+SetKwData{Redo}{redo}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+SetKwData{False}{
+\backslash
+textbf{False}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+SetKwData{True}{
+\backslash
+textbf{True}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+SetKwData{Dprime}{$
+\backslash
+text{d}^
+\backslash
+prime$}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Repeat{
+\backslash
+Redo is 
+\backslash
+False}
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Redo $
+\backslash
+leftarrow$ 
+\backslash
+False
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+For(//sorted from min to max $
+\backslash
+delta
+\backslash
+%$){each normalization bin 
+\backslash
+D}
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+For{each neighboring analysis bin 
+\backslash
+F}
+\end_layout
+
+\begin_layout Plain Layout
+
+  {
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+Dprime $
+\backslash
+leftarrow$ normalization bin assigned to 
+\backslash
+F
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+If{
+\backslash
+Dprime is same as 
+\backslash
+D}
+\end_layout
+
+\begin_layout Plain Layout
+
+    {
+\end_layout
+
+\begin_layout Plain Layout
+
+      Continue to next analysis bin
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+If{$
+\backslash
+delta
+\backslash
+%(
+\backslash
+D) 
+\backslash
+geq 10 
+\backslash
+times 
+\backslash
+delta
+\backslash
+%(
+\backslash
+Dprime)$}
+\end_layout
+
+\begin_layout Plain Layout
+
+    {
+\end_layout
+
+\begin_layout Plain Layout
+
+      
+\backslash
+D is assigned as normalization bin for 
+\backslash
+F
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+      
+\backslash
+Redo $
+\backslash
+leftarrow$ 
+\backslash
+True
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+      Continue to next analysis bin
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+MaxNorm  $
+\backslash
+leftarrow$ max(norm(
+\backslash
+D), norm(
+\backslash
+Dprime))
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+MinNorm $
+\backslash
+leftarrow$ min(norm(
+\backslash
+D), norm(
+\backslash
+Dprime))
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+If{
+\backslash
+MaxNorm $
+\backslash
+geq 1.1 
+\backslash
+times$ 
+\backslash
+MinNorm}
+\end_layout
+
+\begin_layout Plain Layout
+
+    {
+\end_layout
+
+\begin_layout Plain Layout
+
+      
+\backslash
+D is assigned as normalization bin for 
+\backslash
+F
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+      
+\backslash
+Redo $
+\backslash
+leftarrow$ 
+\backslash
+True
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+Recalculate bin normalizations
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Algorithm to merge normalization bins.
+ The 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\delta\%$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ operator returns the fractional statistical uncertainty for the bin.
+ Since multiple fit bins can be assigned to a single normalization bin,
+ the statistics of all fits bins are included.
+ The 
+\begin_inset Quotes eld
+\end_inset
+
+norm
+\begin_inset Quotes erd
+\end_inset
+
+ operator returns the normalization value for a normalization bin determined
+ by 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:bin-nominal"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Algorithm to Merge Normalization Bins
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "alg:binedges"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The results of the procedure are shown visually in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+mbox{
+\backslash
+Cref{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+fig:Bin-normalization-edgesNumuFHC
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+,fig:Bin-normalization-edgesNumubarRHC
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+,fig:Bin-normalization-edgesNuMuRHC
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+.
+ While the problem of a few observable normalization parameters having the
+ majority of statistics is still present, fluctuations between adjacent
+ observable normalization parameters is iteratively minimized.
 \end_layout
 
 \begin_layout Standard
@@ -6944,20 +4707,15 @@ name "fig:Bin-normalization-edgesNumuFHC"
 status open
 
 \begin_layout Plain Layout
-Bin Normalization Edges for the 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-numutitle{}
-\end_layout
-
+Bin Normalizations for the 
+\begin_inset Formula $\pod$
 \end_inset
 
- in FHC Selections
+ Water-In 
+\begin_inset Formula $\numu$
+\end_inset
+
+ in FHC Mode Samples
 \end_layout
 
 \end_inset
@@ -6973,26 +4731,6 @@ numutitle{}
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-A new procedure was developed to improve the shortcomings of old procedure
- which requires careful consideration of the statistical uncertainties and
- variations between observable normalization prefit values.
- This procedure can be imagined as lowing the number of contours in a topographi
-c map while considering external constraints from other sensing data.
- To start, initialize all the observable normalization bin edges to be the
- same as the fit bin edges.
- All steps after this are performed iteratively.
- Starting from the observable normalization bin with the highest statistics,
- consider merging it with all immediate adjacent bins.
- If the individual fractional errors differ significantly before the merge,
- do not merge them.
- In this analysis, a factor of 10 in fractional uncertainty was chosen to
- describe the similarity between bins.
- Additionally if the two unmerged bin normalizations differ by more than
- 10%, perform the bin merging.
- This step serves to smooth out the observable normalization prefit space.
 \end_layout
 
 \begin_layout Standard
@@ -7102,60 +4840,30 @@ name "fig:Bin-normalization-edgesNumubarRHC"
 status open
 
 \begin_layout Plain Layout
-Bin Normalization Edges for the 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-numubartitle{}
-\end_layout
-
-\end_inset
-
- in RHC Selections
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-While the problem of a few observable normalization parameters having the
- majority of statistics is still present, fluctuations between adjacent
- observable normalization parameters is iteratively minimized.
- The detector systematic that had the largest effect on the observable normaliza
-tion prediction was the 
+Bin Normalizations for the 
 \begin_inset Formula $\pod$
 \end_inset
 
- energy loss resolution.
- With it, the event rate in each observable normalization bin varied non-normall
-y.
- This effect can be seen in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:Representative-event-variations"
-plural "false"
-caps "false"
-noprefix "false"
+ Water-In 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ in RHC Mode Samples
+\end_layout
 
 \end_inset
 
-.
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -7248,7 +4956,7 @@ Bin normalization edges for the
 \begin_inset Formula $\numu$
 \end_inset
 
- in RHC selections.
+ Background in RHC Mode samples.
  There are two plots shown for each sub-figure.
  The left and right plots show the bin normalization and the bin statistical
  fractional error, respectively, if each fit bin had a single bin normalization.
@@ -7265,20 +4973,15 @@ name "fig:Bin-normalization-edgesNuMuRHC"
 status open
 
 \begin_layout Plain Layout
-Bin Normalization Edges for the 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-numutitle{}
-\end_layout
-
+Bin Normalizations for the 
+\begin_inset Formula $\pod$
 \end_inset
 
- in RHC Selections
+ Water-In 
+\begin_inset Formula $\numu$
+\end_inset
+
+ Background in RHC Mode Samples
 \end_layout
 
 \end_inset
@@ -7341,78 +5044,6 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-We can also understand the effects the 
-\begin_inset Formula $\pod$
-\end_inset
-
- energy loss resolution (ELossRes) correction and systematic on the bin
- normalizations, which was identified in the 
-\begin_inset Formula $\numu$
-\end_inset
-
- CC-
-\begin_inset Formula $0\pi$
-\end_inset
-
- analysis as the leading uncertainty in the detector systematics.
- In 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:Representative-event-variations"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-, an additional red curve is shown in each sub-figure to represent disabling
- the 
-\begin_inset Formula $\pod$
-\end_inset
-
- ELossRes correction and systematic variation in the toy experiments.
- We see this systematic broadens the number of possible events in a normalizatio
-n bin and its correction shifts the bin mean.
- This is expected since one or more particles originating from a neutrino
- interaction in the water could remove reconstructed tracks from the event
- when varying the systematic.
-\end_layout
-
-\begin_layout Standard
-Observed in most observable normalization bins is that the disabled ELossRes
- variation distribution is below the nominal MC expectation.
- However, there are in the 1-Track samples, as shown in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:Representative-event-variations"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-, that the shape location is above the expectation.
- This behavior was unexpected prior to running the toy experiment variations.
- A relationship between the shape location and selection purity as a function
- of 
-\begin_inset Formula $\left(p,\cos\theta\right)$
-\end_inset
-
- was discovered.
- In high purity 
-\begin_inset Formula $\left(p,\cos\theta\right)$
-\end_inset
-
--regions of the 1-Track samples, the shape location of the disabled ELossRes
- variations was below the nominal MC expectation.
- When the purity was lower, however, the shape location was above it.
- This effect is likely due to events migrating into the N-Tracks samples.
- With the ELossRes variation disabled, events in the 1-Track samples with
- low purity, which are also more likely to have multiple reconstructed tracks,
- are not being migrated into the N-Track samples.
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -7430,7 +5061,7 @@ status open
 \begin_inset Graphics
 	filename Figures/P0DBANFFParameterization/P0DObsnormSpreadNumuCC1Trk.png
 	lyxscale 50
-	width 45text%
+	width 44.5text%
 
 \end_inset
 
@@ -7465,7 +5096,7 @@ status open
 \begin_inset Graphics
 	filename Figures/P0DBANFFParameterization/P0DObsnormSpreadNumuCCNTrks.png
 	lyxscale 50
-	width 45text%
+	width 44.5text%
 
 \end_inset
 
@@ -7504,7 +5135,7 @@ status open
 \begin_inset Graphics
 	filename Figures/P0DBANFFParameterization/P0DObsnormSpreadNumubarRHCCC1Trk.png
 	lyxscale 50
-	width 45text%
+	width 44.5text%
 
 \end_inset
 
@@ -7539,7 +5170,7 @@ status open
 \begin_inset Graphics
 	filename Figures/P0DBANFFParameterization/P0DObsnormSpreadNumubarRHCCCNTrks.png
 	lyxscale 50
-	width 45text%
+	width 44.5text%
 
 \end_inset
 
@@ -7578,7 +5209,7 @@ status open
 \begin_inset Graphics
 	filename Figures/P0DBANFFParameterization/P0DObsnormSpreadNumuRHCCC1Trk.png
 	lyxscale 50
-	width 45text%
+	width 44.5text%
 
 \end_inset
 
@@ -7613,7 +5244,7 @@ status open
 \begin_inset Graphics
 	filename Figures/P0DBANFFParameterization/P0DObsnormSpreadNumuRHCCCNTrks.png
 	lyxscale 50
-	width 45text%
+	width 44.5text%
 
 \end_inset
 
@@ -7690,24 +5321,107 @@ Event Variations in Observable Normalization Bins
 \end_layout
 
 \begin_layout Standard
-The finalized observable normalization bins are listed below and shown visually
- in 
-\begin_inset ERT
-status open
+The detector systematic that had the largest effect on the observable normalizat
+ion prediction was the 
+\begin_inset Formula $\pod$
+\end_inset
 
-\begin_layout Plain Layout
+ energy loss resolution (ELossRes) which alters the amount of particle energy
+ deposited in the 
+\begin_inset Formula $\pod$
+\end_inset
 
+.
+ This systematic was first implemented for the 
+\begin_inset Formula $\numu$
+\end_inset
 
-\backslash
-Cref{fig:Bin-normalization-edgesNumuFHC,fig:Bin-normalization-edgesNumubarRHC,fi
-g:Bin-normalization-edgesNuMuRHC}
-\end_layout
+ CC-
+\begin_inset Formula $0\pi$
+\end_inset
+
+ cross section analysis and was identified as the largest detector systematic
+ uncertainty
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Yuan2016"
+literal "false"
 
 \end_inset
 
 .
- Their respective fit index and prefit values are tabulated in Appendix
- 
+ When the deposited energy is varied, it directly changes the distance the
+ truth matched particle travels in the 
+\begin_inset Formula $\pod$
+\end_inset
+
+.
+ Hence, this systematic changes the likelihood of a particle being reconstructed
+ as a track.
+ The observed effect is that for bins with relatively low muon momentum,
+ the number of predicted events can vary non-normally in shape as shown
+ in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Representative-event-variations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ The general trend is that the ELossRes variation broadens the number of
+ predicted events and shifts the mean.
+\end_layout
+
+\begin_layout Standard
+An unexpected phenomenon was observed when comparing the toy experiments
+ with and without the ELossRes variation applied.
+ With the ELossRes variation disabled in the toy experiments, a relatively
+ large shift in the bin prediction was observed compared to the nominal
+ prediction.
+ This shift was expected, but was not expected was the direction of the
+ shift as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Representative-event-variations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ In most cases, the shift is below the nominal MC value.
+ However, in many of the bins, that the shape location of the prediction
+ is above the expectation.
+ This behavior was unexpected prior to running the toy experiment variations.
+\end_layout
+
+\begin_layout Standard
+A relationship between the prediction shape location and selection purity
+ as a function of 
+\begin_inset Formula $\left(p,\cos\theta\right)$
+\end_inset
+
+ was discovered.
+ In high purity 
+\begin_inset Formula $\left(p,\cos\theta\right)$
+\end_inset
+
+-regions of the 1-Track samples, the shape location of the prediction in
+ the disabled ELossRes toy experiments was below the nominal MC prediction.
+ When the 1-Track sample purity was lower, however, the shape location was
+ above it.
+ This effect is likely due to events migrating from the 1-Track samples
+ into the N-Tracks samples due to multiple particles in the event.
+\end_layout
+
+\begin_layout Standard
+The finalized observable normalization bins are listed below.
+ Their respective fit index and prefit normalization values are tabulated
+ in Appendix 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "app:obsnorm"
@@ -7858,458 +5572,8 @@ noprefix "false"
 \end_layout
 
 \end_deeper
-\begin_layout Subsubsection
-The 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-podtitle{}
-\end_layout
-
-\end_inset
-
--Only Systematics
-\end_layout
-
 \begin_layout Standard
-There are four new 
-\begin_inset Formula $\pod$
-\end_inset
-
--only systematics that are considered for this BANFF fit analysis as listed
- in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "tab:List-of-detector"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
- All the new sources were initially analyzed in the 
-\begin_inset Formula $\pod$
-\end_inset
-
- 
-\begin_inset Formula $\numu$
-\end_inset
-
- CC-
-\begin_inset Formula $0\pi$
-\end_inset
-
- cross section analysis 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "PhysRevD.97.012001"
-literal "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-The energy loss scale and resolution affect the measured momentum in the
- 
-\begin_inset Formula $\pod$
-\end_inset
-
- and are very significant sources of uncertainty.
- In the 
-\begin_inset Formula $\numu$
-\end_inset
-
- CC-
-\begin_inset Formula $0\pi$
-\end_inset
-
- cross section analysis, the same selection as the 
-\begin_inset Formula $\numu$
-\end_inset
-
- in FHC CC 1-Track selection, the scale and resolution contributed 1.3% and
- 6.7%, respectively, to the cross section uncertainty.
- Those large uncertainties are due to the inherent design of the 
-\begin_inset Formula $\pod$
-\end_inset
-
- as a low resolution tracking detector.
- Slight variations in the track reconstruction can significantly alter the
- energy loss as measured in 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:momentumP0DFull"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-The remaining systematics, the 
-\begin_inset Formula $\pod$
-\end_inset
-
- mass and the 
-\begin_inset Formula $\pod$
-\end_inset
-
--TPC matching efficiency, were not available to analyze in toy experiments
- variations.
- They were not implemented in the BANFF framework and unavailable to implement
- due to time constraints on the author.
- Instead, they were treated as additional uncorrelated systematics on each
- bin normalization uncertainty with the normalization value remaining fixed.
- The treatment of these two systematics will be discussed shortly.
-\end_layout
-
-\begin_layout Standard
-The 
-\begin_inset Formula $\pod$
-\end_inset
-
- mass uncertainty is a normalization systematic which affects the event
- rate.
- This is a challenging systematic for analyses of recent T2K data due to
- increasingly faulty sensors to measure the water content.
- The procedure to fill the water bags required filling them in unison to
- prevent uneven bulging.
- However, faulty sensors would provide poor quality data, hence bags were
- under and overfilled.
- This affect alters the expected event rate as a function of position.
-\end_layout
-
-\begin_layout Standard
-Another problem with the mass uncertainty is due to structure deformations
- in the 
-\begin_inset Formula $\pod$
-\end_inset
-
-.
- To understand how the 
-\begin_inset Formula $\pod$
-\end_inset
-
- has deformed, it is important to understand how the 
-\begin_inset Formula $\pod$
-\end_inset
-
- is mounted in the ND280 detector.
- Each corner of the 
-\begin_inset Formula $\pod$
-\end_inset
-
- is mounted to the ND280 basket leaving the those corners spatially fixed.
- The upstream end of the 
-\begin_inset Formula $\pod$
-\end_inset
-
- is also physically against the ND280 support structure.
- However, there is a physical gap between the 
-\begin_inset Formula $\pod$
-\end_inset
-
- and the TPC.
- This permitted the downstream layers to expand or 
-\begin_inset Quotes eld
-\end_inset
-
-bulge
-\begin_inset Quotes erd
-\end_inset
-
- from the middle into the air gap.
- Importantly, this left more water volume, and importantly more mass, in
- the most downstream water bags compared to the upstream bags.
- This additional mass or bulging effect is evident in the vertex distribution
- as a function of the Z-position as shown in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:P0DBulging"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/Systematics/EvidenceOfP0DBulging.png
-	lyxscale 50
-	height 48theight%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Vertex distribution showing evidence of bulging.
- In the 
-\begin_inset Formula $\numubar$
-\end_inset
-
-/
-\begin_inset Formula $\numu$
-\end_inset
-
- cross section ratio analysis, a significant excess of events in the most
- downstream layer of the 
-\begin_inset Formula $\pod$
-\end_inset
-
- (black, dashed line box) was observed.
- Initially thought to be OOFV events, the analyzers removed the most downstream
- and upstream layers in their analysis.
- This distribution was produced using the run 5, RHC period using selection
- precuts 1 through 4 and a having a positive track in the TPC.
- Each event is categorized by true interaction mode according to NEUT.
- This figure was altered for clarity from the following reference 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Campbell2017"
-literal "false"
-
-\end_inset
-
-.
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Vertex Distribution Showing Evidence of 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-podtitle{}
-\end_layout
-
-\end_inset
-
- Bulging
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:P0DBulging"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Prior 
-\begin_inset Formula $\pod$
-\end_inset
-
- analyses have estimated the mass uncertainty using similar toy experiment
- techniques, but did not integrate them into the BANFF framework.
- In particular in the 
-\begin_inset Formula $\numu$
-\end_inset
-
- in CC-
-\begin_inset Formula $0\pi$
-\end_inset
-
- analysis
-\begin_inset CommandInset citation
-LatexCommand cite
-key "PhysRevD.97.012001"
-literal "false"
-
-\end_inset
-
-, the 
-\begin_inset Formula $\pod$
-\end_inset
-
- mass had an 1.5% systematic effect on the cross section.
- Since the 
-\begin_inset Formula $\pod$
-\end_inset
-
- mass uncertainty estimate was determined using the same toy experiment
- variation method, 
-\shape italic
-a conservative estimate of 2% on the mass uncertainty included in this analysis
-\shape default
-.
- So for the 
-\begin_inset Formula $\pod$
-\end_inset
-
- mass systematic, let 
-\begin_inset Formula $\widetilde{\sigma}_{\text{Mass}}=2\%$
-\end_inset
-
-, where the tilde (
-\begin_inset Formula $\widetilde{\ }$
-\end_inset
-
-) refers to a fractional uncertainty.
- This will be used later.
-\end_layout
-
-\begin_layout Standard
-The 
-\begin_inset Formula $\pod$
-\end_inset
-
- and TPC matching efficiency is estimated to have a small systematic effect
- on the analysis.
- It was analyzed to have over a 99.8% data and MC efficiency in the single
- track 
-\begin_inset Formula $\numu$
-\end_inset
-
- CC-
-\begin_inset Formula $0\pi$
-\end_inset
-
- analysis and thus neglected.
- However, since this analysis includes multiple track selections, that matching
- efficiency is unknown.
- Also, it is hard to imagine a CS that could constrain it.
- The best handle is from the private T2K technical note on the 
-\begin_inset Formula $\numubar/\numu$
-\end_inset
-
- cross section analysis 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Campbell2017"
-literal "false"
-
-\end_inset
-
- which estimated the uncertainty at less than 0.14% using its in-house matching
- algorithm.
- Since that is was single bin measurement employing different matching algorithm
-, the uncertainty is not guaranteed to remain constant across 
-\begin_inset Formula $(p,\cos\theta)$
-\end_inset
-
- bins.
- 
-\shape italic
-A conservative estimate of 1% for the TPC matching efficiency was chosen
- in order to account for the inherent uncertainty in this systematic
-\shape default
-.
- So for the matching efficiency systematic, let 
-\begin_inset Formula $\widetilde{\sigma}_{\text{Match}}=1\%$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-In order to propagate these two uncorrelated uncertainties, the detector
- covariance matrix given in 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:totaldetectorcovariance"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- was converted into a fractional covariance matrix first.
- Let 
-\begin_inset Formula $\widetilde{V}_{i,j}^{\text{Det}}$
-\end_inset
-
- refer to the fractional covariance matrix, given explicitly as 
-\begin_inset Formula 
-\begin{equation}
-\widetilde{V}_{i,j}^{\text{Det}}=\frac{V_{i,j}^{\text{Det}}}{d_{i}d_{j}},\label{eq:fractionalcovariance}
-\end{equation}
-
-\end_inset
-
-where we recognize 
-\begin_inset Formula $\sqrt{\widetilde{V}_{i,i}^{\text{Det}}}$
-\end_inset
-
- as the fractional uncertainty in the 
-\begin_inset Formula $i$
-\end_inset
-
-th observable normalization parameter.
- The updated detector covariance matrix, 
-\begin_inset Formula $\acute{V}_{i,j}^{\text{Det}}$
-\end_inset
-
-, which accounts for the 
-\begin_inset Formula $\pod$
-\end_inset
-
- mass and TPC matching inefficiency systematics, is given by 
-\begin_inset Formula 
-\begin{equation}
-\acute{V}_{i,j}^{\text{Det}}=\left(\widetilde{V}_{i,j}^{\text{Det}}+\widetilde{\sigma}_{\text{Mass}}^{2}+\widetilde{\sigma}_{\text{Match}}^{2}\right)d_{i}d_{j}.\label{eq:covarupdatefrac}
-\end{equation}
-
-\end_inset
-
-Together, the two additional sources of uncertainty increase each term in
- the covariance matrix by 
-\begin_inset Formula $0.0005d_{i}d_{j}$
-\end_inset
-
-, which increases each bin normalization error by about 
-\begin_inset Formula $2.23\%$
-\end_inset
-
-.
- The updated covariance matrix used in this analysis is shown in 
+The updated covariance matrix used in this analysis is shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:The-updated-detector-covariance"
@@ -8333,7 +5597,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -8369,7 +5633,7 @@ Updated detector covariance matrix
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
