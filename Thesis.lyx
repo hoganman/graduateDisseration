@@ -66,6 +66,8 @@
 \usepackage{sectsty}
 \chapterfont{\centering}
 \usepackage{braket}
+%\usepackage{algorithm2e}
+\usepackage{algpseudocode}
 \end_preamble
 \options doctor, showframe
 \use_default_options true
@@ -73,6 +75,7 @@
 fixltx2e
 fix-cm
 hanging
+algorithm2e
 \end_modules
 \maintain_unincluded_children false
 \language english
@@ -143,7 +146,7 @@ hanging
 \color #faf0e6
 \end_branch
 \branch BANFFLikelihood
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
