@@ -4286,7 +4286,7 @@ status open
 \begin_inset Float algorithm
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -5481,22 +5481,6 @@ Event Variations in Observable Normalization Bins
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-todo{PCA discussion}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 The detector systematic that had the largest effect on the observable normalizat
 ion prediction was the 
 \begin_inset Formula $\pod$
@@ -5608,8 +5592,24 @@ A relationship between the prediction shape location and selection purity
 
 \begin_layout Standard
 The finalized observable normalization bins are listed below.
- Their respective fit index and prefit normalization values are tabulated
- in Appendix 
+ There are in total 
+\begin_inset Formula $N_{\text{d}}=461$
+\end_inset
+
+ bin normalization parameters.
+ The covariance matrix used in the BANFF fit is shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:The-updated-detector-covariance"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Their respective fit index, prefit value, and prefit standard deviation
+ are tabulated in Appendix 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "app:obsnorm"
@@ -5761,20 +5761,6 @@ noprefix "false"
 
 \end_deeper
 \begin_layout Standard
-The updated covariance matrix used in this analysis is shown in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:The-updated-detector-covariance"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -5803,15 +5789,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Updated detector covariance matrix
+Detector penalty covariance matrix
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -5821,7 +5803,7 @@ Updated detector covariance matrix
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -5839,7 +5821,14 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Difference from original detector covariance matrix
+\begin_inset Formula $\pod$
+\end_inset
+
+ mass and 
+\begin_inset Formula $\pod$
+\end_inset
+
+-TPC matching efficiency contribution
 \end_layout
 
 \end_inset
@@ -5875,7 +5864,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Updated detector correlation matrix
+Detector penalty correlation matrix
 \end_layout
 
 \end_inset
@@ -5892,8 +5881,18 @@ Updated detector correlation matrix
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Updated detector covariance matrix (a), the difference from the original
- matrix (b), and updated correlation matrix (c).
+Detector penalty covariance matrix.
+ Shown in figure (a) is covariance matrix, (b) is the is contribution from
+ the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ mass and 
+\begin_inset Formula $\pod$
+\end_inset
+
+-TPC matching efficiency ad-hoc contributions, and (c) is the correlation
+ matrix calculated from (a).
  Note that the parameter numbers here are offset from their fit index value
  by 99.
  
@@ -5908,7 +5907,7 @@ name "fig:The-updated-detector-covariance"
 status open
 
 \begin_layout Plain Layout
-Detector Covariance Matrix
+Detector Penalty Covariance Matrix
 \end_layout
 
 \end_inset
@@ -5921,13 +5920,100 @@ Detector Covariance Matrix
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+To anticipate the postfit values of the bin normalizations, principal component
+ analysis was performed on all the toy experiments.
+ Principal component analysis is the identical to performing the eigenvalue
+ decomposition of a square matrix 
+\begin_inset Formula $M$
+\end_inset
+
+ such that 
+\begin_inset Formula $M$
+\end_inset
+
+ is decomposed as
+\begin_inset Formula 
+\[
+M=U^{T}DU,
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $U$
+\end_inset
+
+ is a orthogonal matrix of the eigenvectors, and 
+\begin_inset Formula $D$
+\end_inset
+
+ is a diagonal matrix of the eigenvalues.
+ The principal components of 
+\begin_inset Formula $M$
+\end_inset
+
+ are the eigenvectors and their relative importance is set by the magnitude
+ of the associated eigenvalue
+\begin_inset CommandInset citation
+LatexCommand cite
+key "springer_series978-0-387-84858-7"
+literal "false"
+
+\end_inset
+
+.
+ Using this prescription, the sample variance, 
+\begin_inset Formula $S$
+\end_inset
+
+, of the toy experiments is defined as
+\begin_inset Formula 
+\[
+S=\frac{1}{N_{\text{toys}}}X^{T}X,
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $X$
+\end_inset
+
+ is a 
+\begin_inset Formula $N_{\text{d}}\times N_{\text{toys}}$
+\end_inset
+
+ matrix of the observed number of events (not the normalization!) predicted
+ in each normalization bin.
+ The eigenvalue decomposition is given by
+\begin_inset Formula 
+\[
+S=U^{T}V^{\prime}U,
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $U$
+\end_inset
+
+ is the eigenvector matrix of 
+\begin_inset Formula $S$
+\end_inset
+
+ and 
+\begin_inset Formula $V^{\prime}$
+\end_inset
+
+ is a diagonal matrix of the variance eigenvalues sorted from largest to
+ smallest variance.
+ If the first eigenvalue is much larger than the others, most of the bin-to-bin
+ variance can be explained by that associated eigenvector.
 \end_layout
 
 \end_inset
