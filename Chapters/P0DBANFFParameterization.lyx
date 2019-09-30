@@ -882,7 +882,7 @@ inverted 0
 status collapsed
 
 \begin_layout Subsection
-Flux Model
+Flux Model Parameters
 \end_layout
 
 \begin_layout Standard
@@ -2441,7 +2441,7 @@ inverted 0
 status open
 
 \begin_layout Subsection
-Detector Inefficiencies And Bins Normalizations
+Detector Inefficiencies And Bins Normalization Parameters
 \end_layout
 
 \begin_layout Standard
@@ -2490,116 +2490,85 @@ All the detector systematics are evaluated either as observable variations
 \end_inset
 
 -only, TPC-only, or both.
- A description of the systematic uncertainties and their treatments is discussed
- in the next section.
-\end_layout
-
-\begin_layout Subsubsection
-Systematic Treatments
 \end_layout
 
 \begin_layout Standard
-There are two types of systematic treatments in the BANFF analysis: observable
- variations and weights.
- Each relies on the method of throwing a random number, 
-\begin_inset Formula $x$
-\end_inset
-
-, to evaluate the systematic.
-\end_layout
-
-\begin_layout Standard
-Efficiency-like systematics are treated as weights to the MC predictions
- in order to evaluate the uncertainty the systematic has on an analysis.
- They are data-driven studies by comparing data and MC predictions in a
- control sample (CS).
- For instance, a collection of single, isolated cosmic ray tracks is a CS
- to calibrate the detector response for minimum ionizing tracks.
- In general, a CS may have different properties than the analysis sample,
- like event topology.
- In particular the cosmic ray CS cannot account for efficiency effects if
- other tracks are present.
- Therefore a model extrapolation is needed to map the CS to the analysis
- sample
-\begin_inset Foot
+This section is organized as follows.
+ The systematic uncertainties relevant to this analysis are described in
+ 
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-Each CS is validated in T2K prior to introduction to the BANFF analysis.
+
+
+\backslash
+mbox{Section~
+\backslash
+ref{subsec:Detector-Systematics}}
 \end_layout
 
 \end_inset
 
 .
- The model used in BANFF is that the efficiency of the data and MC is the
- same in both analysis sample and CS kinematics 
-\begin_inset Formula 
-\begin{equation}
-\epsilon_{\text{Data}}(o)=\left(\frac{\epsilon_{\text{Data}}(o)}{\epsilon_{\text{MC}}(o)}\right)_{\text{CS}}\epsilon_{\text{MC}}(o),\label{eq:effdatafromCS}
-\end{equation}
+ The systematics treatment model for the detector systematics developed
+ to evaluate their effects on the analysis is described in 
+\begin_inset ERT
+status open
 
-\end_inset
+\begin_layout Plain Layout
 
-where 
-\begin_inset Formula $\epsilon_{\text{MC}}/\epsilon_{\text{Data}}$
-\end_inset
 
- denotes the mean selection efficiency of the MC/data as a function of some
- observable kinematic 
-\begin_inset Formula $o$
+\backslash
+mbox{Section~
+\backslash
+ref{subsec:Systematic-Treatment-Models}}
+\end_layout
+
 \end_inset
 
 .
- We need to update this model to account for statistical uncertainties in
- the CS.
- The updated model, with 
-\begin_inset Formula $o$
-\end_inset
+ The detector systematics penalty term used in the BANFF fit is described
+ in 
+\begin_inset ERT
+status open
 
- dependence assumed, is now 
-\begin_inset Formula 
-\begin{equation}
-\epsilon_{\text{Data}}^{\prime}=\left(\frac{\epsilon_{\text{Data}}+x_{\text{Data}}\cdot\sigma_{\epsilon_{\text{Data}}}}{\epsilon_{\text{MC}}+x_{\text{MC}}\cdot\sigma_{\epsilon_{\text{MC}}}}\right)_{\text{CS}}\epsilon_{\text{MC}}\label{eq:effdataWithErrfromCS}
-\end{equation}
+\begin_layout Plain Layout
 
-\end_inset
 
-where 
-\begin_inset Formula $\sigma_{\epsilon_{\text{MC}}}/\sigma_{\epsilon_{\text{Data}}}$
-\end_inset
+\backslash
+mbox{Section~
+\backslash
+ref{subsec:Detector-Systematics-Penalty}}
+\end_layout
 
- is the standard deviation of the efficiency of the MC/Data and 
-\begin_inset Formula $x_{\text{Data}}$
-\end_inset
-
- and 
-\begin_inset Formula $x_{\text{MC}}$
-\end_inset
-
- are uncorrelated, random normally distributed numbers from 
-\begin_inset Formula $\mathcal{N}\left(\mu=0,\sigma^{2}=1\right)$
 \end_inset
 
 .
- All the variations are applied to the event, simultaneously affecting all
- observables, and the event selection is rerun.
- A weight is derived depending if the event is selected, 
-\begin_inset Formula $w_{\text{eff}}$
-\end_inset
+ Finally, the procedure to determine the initial bin normalization is presented
+ in 
+\begin_inset ERT
+status open
 
-, or not selected, 
-\begin_inset Formula $w_{\text{ineff}}$
+\begin_layout Plain Layout
+
+
+\backslash
+mbox{Section~
+\backslash
+ref{subsec:Bin-Normalization-Parameters}}
+\end_layout
+
 \end_inset
 
 .
- These weights are given below
-\begin_inset Formula 
-\begin{equation}
-\begin{aligned}w_{\text{eff}} & =\frac{\epsilon_{\text{Data}}^{\prime}}{\epsilon_{\text{MC}}}\\
-w_{\text{ineff}} & =\frac{1-\epsilon_{\text{Data}}^{\prime}}{1-\epsilon_{\text{MC}}}.
-\end{aligned}
-\label{eq:weighteff}
-\end{equation}
+\end_layout
+
+\begin_layout Subsubsection
+Detector Systematics
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Detector-Systematics"
 
 \end_inset
 
@@ -2607,170 +2576,28 @@ w_{\text{ineff}} & =\frac{1-\epsilon_{\text{Data}}^{\prime}}{1-\epsilon_{\text{M
 \end_layout
 
 \begin_layout Standard
-Observable variation systematics are evaluated as shifts to physically measured
- quantities like momentum and track length.
- The systematic can be evaluated in two different ways:
-\end_layout
-
-\begin_layout Enumerate
-If the reconstructed observable, 
-\begin_inset Formula $o_{\text{reco}}$
+The BANFF fit analysis has the ability to evaluate the effect of detector
+ systematic uncertainties on the analysis samples.
+ Since this analysis uses the 
+\begin_inset Formula $\pod$
 \end_inset
 
-, has a known true value, 
-\begin_inset Formula $o_{\text{true}}$
-\end_inset
-
-, then the difference between those two is used as scaling.
- The varied observable is given by
-\begin_inset Formula 
-\begin{equation}
-o^{\prime}=o_{\text{true}}+\left(o_{\text{reco}}-o_{\text{true}}\right)\left(s+x\sigma_{s}\right),\label{eq:recotrueobsvar}
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Formula $s$
-\end_inset
-
- is the mean scaling parameter used to match the true value, 
-\begin_inset Formula $\sigma_{s}$
-\end_inset
-
- is the uncertainty on 
-\begin_inset Formula $s$
-\end_inset
-
-, and 
-\begin_inset Formula $x$
-\end_inset
-
- is a random number from 
-\begin_inset Formula $\mathcal{N}\left(\mu=0,\sigma^{2}=1\right)$
-\end_inset
-
-.
- The mean scaling parameter and its uncertainty are determined from the
- standard deviations observed in the data and MC by
-\begin_inset Formula 
-\begin{equation}
-s=\frac{\delta^{\text{data}}}{\delta^{\text{MC}}}\quad\sigma_{s}=s\left|\frac{\sigma_{\delta^{\text{data}}}}{\delta^{\text{data}}}-\frac{\sigma_{\delta^{\text{MC}}}}{\delta^{\text{MC}}}\right|.\label{eq:scalingdefrecotrueobsvar}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-If the MC reconstructed observable is corrected to match the mean from some
- CS reconstructed observable.
- The varied observable in this case is given by
-\begin_inset Formula 
-\begin{equation}
-o^{\prime}=o_{\text{Nom}}+\Delta o+x\sigma_{\Delta o},\label{eq:obsvariation}
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Formula $o^{\prime}$
-\end_inset
-
- is the varied observable value, 
-\begin_inset Formula $o_{\text{Nom}}$
-\end_inset
-
- is the nominal MC value, 
-\begin_inset Formula $\Delta o$
-\end_inset
-
- is the average correction to the observable, 
-\begin_inset Formula $\sigma_{\Delta o}$
-\end_inset
-
- is the uncertainty on the correction, and 
-\begin_inset Formula $x$
-\end_inset
-
- is a random, normal number from 
-\begin_inset Formula $\mathcal{N}\left(\mu=0,\sigma^{2}=1\right)$
-\end_inset
-
-.
+ and TPC detectors, systematics that affect both must be included.
+ There are two types of systematic treatments in the BANFF analysis: observable
+ variations and weights.
+ Each treatment relies on the method of throwing a random number to evaluate
+ the systematic's impact on the sample observables.
+ Efficiency-like systematics are treated as weights to the MC predictions
+ in order to evaluate the uncertainty the systematic has on an analysis.
+ Observable variation systematics are evaluated as shifts to physically
+ measured quantities like momentum and track length.
+ Both rely on data-driven studies by comparing data and MC predictions in
+ a control sample.
 \end_layout
 
 \begin_layout Standard
-Additional uncertainties from the magnetic field are also special cases
- of the 2nd observable variation method specifically for the TPC momentum
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Wret2019"
-literal "false"
-
-\end_inset
-
-.
- They are:
-\end_layout
-
-\begin_layout Itemize
-The TPC laser calibration corrections are applied after the magnetic field
- (B-field) mapping corrections.
- The B-field corrections are applied at event reconstruction while the calibrati
-on corrections are treated as a systematic uncertainty.
- The varied momentum is given by
-\begin_inset Formula 
-\begin{equation}
-p^{\prime}=p_{\text{Nom}}+x\left(p_{\text{Map}}-p_{\text{Nom}}\right),\label{eq:obsvariationtpclaser}
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Formula $p_{\text{Nom}}$
-\end_inset
-
- is the nominal MC prediction using the B-field corrections and 
-\begin_inset Formula $p_{\text{Map}}$
-\end_inset
-
- is the updated momentum using the additional laser calibration mapping.
-\end_layout
-
-\begin_layout Itemize
-The momentum depends on some scale parameter 
-\begin_inset Formula $s$
-\end_inset
-
-.
- The varied momentum due to the scale uncertainty is given by
-\begin_inset Formula 
-\begin{equation}
-p^{\prime}=p_{\text{Nom}}\left(1+x\sigma_{s}\right),\label{eq:obsvariationtpcmomentumscale}
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Formula $\sigma_{s}$
-\end_inset
-
- is the uncertainty on the scale.
- In this parameterization, 
-\begin_inset Formula $s$
-\end_inset
-
- is the scale of the magnet current.
-\end_layout
-
-\begin_layout Standard
-After all observables are varied and applied to the event, the event selection
- cuts are rerun.
- In addition to bin migration within a sample, a given event can change
- samples as well.
- The full set of detector systematics in the analysis are listed in 
+The complete set of detector systematics and their treatment in the analysis
+ are listed in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:List-of-detector"
@@ -2781,11 +2608,87 @@ noprefix "false"
 \end_inset
 
 .
- The detector systematics unique to the 
+ The TPC-only systematics have been used in previous BANFF fit analysis
+ are included in this analysis.
+ Details on the TPC-only systematics are discussed in the following references
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abe:2017vif,Wret2019"
+literal "false"
+
+\end_inset
+
+.
+ There are four 
 \begin_inset Formula $\pod$
 \end_inset
 
- are described in below.
+-only detector systematics that are considered for this BANFF fit analysis:
+\end_layout
+
+\begin_layout Itemize
+The 
+\begin_inset Formula $\pod$
+\end_inset
+
+ detector energy loss scale,
+\end_layout
+
+\begin_layout Itemize
+The 
+\begin_inset Formula $\pod$
+\end_inset
+
+ detector energy loss resolution,
+\end_layout
+
+\begin_layout Itemize
+The 
+\begin_inset Formula $\pod$
+\end_inset
+
+-TPC inter-detector matching efficiency, and
+\end_layout
+
+\begin_layout Itemize
+The 
+\begin_inset Formula $\pod$
+\end_inset
+
+ detector fiducial mass.
+\end_layout
+
+\begin_layout Standard
+All of the 
+\begin_inset Formula $\pod$
+\end_inset
+
+-only systematics were initially analyzed in the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ 
+\begin_inset Formula $\numu$
+\end_inset
+
+ CC-
+\begin_inset Formula $0\pi$
+\end_inset
+
+ cross section analysis 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevD.97.012001"
+literal "false"
+
+\end_inset
+
+.
+ The 
+\begin_inset Formula $\pod$
+\end_inset
+
+-only systematics are discussed further below.
 \end_layout
 
 \begin_layout Standard
@@ -3272,8 +3175,7 @@ observable variation
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-List of detector systematic effects and the way each one is treated within
- the simulated samples to propagate the uncertainty.
+List of detector systematics in the analysis.
  The systematics listed above the horizontal line are discussed in the following
  reference
 \begin_inset CommandInset citation
@@ -3301,7 +3203,7 @@ name "tab:List-of-detector"
 status open
 
 \begin_layout Plain Layout
-List of Detector Systematic Effects and Treatment
+List of Detector Systematics in the Analysis
 \end_layout
 
 \end_inset
@@ -3319,75 +3221,12 @@ List of Detector Systematic Effects and Treatment
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Standard
 The 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-podtitle{}
-\end_layout
-
-\end_inset
-
- Detector Systematics
-\end_layout
-
-\begin_layout Standard
-There are four new 
 \begin_inset Formula $\pod$
 \end_inset
 
--only detector systematics that are considered for this BANFF fit analysis
- as listed in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "tab:List-of-detector"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
- All the new sources were initially analyzed in the 
-\begin_inset Formula $\pod$
-\end_inset
-
- 
-\begin_inset Formula $\numu$
-\end_inset
-
- CC-
-\begin_inset Formula $0\pi$
-\end_inset
-
- cross section analysis 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "PhysRevD.97.012001"
-literal "false"
-
-\end_inset
-
-.
- Details on the TPC-only systematics are discussed in the following references
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Abe:2017vif,Wret2019"
-literal "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-The energy loss scale and resolution affect the measured momentum in the
- 
+ energy loss scale and resolution affect the measured momentum in the 
 \begin_inset Formula $\pod$
 \end_inset
 
@@ -3404,8 +3243,8 @@ The energy loss scale and resolution affect the measured momentum in the
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC CC 1-Track selection, the scale and resolution contributed 1.3% and
- 6.7%, respectively, to the cross section uncertainty.
+ in FHC Mode CC 1-Track selection, the scale and resolution contributed
+ 1.3% and 6.7%, respectively, to the cross section uncertainty.
  Those large uncertainties are due to the inherent design of the 
 \begin_inset Formula $\pod$
 \end_inset
@@ -3519,7 +3358,7 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3726,18 +3565,316 @@ Now that we understand how the systematics affect our observables and by
 \end_layout
 
 \begin_layout Subsubsection
-Bin Normalization Parameters And Covariance Matrix
+Systematic Treatment Models
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Systematic-Treatment-Models"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-As stated before, the bin normalization penalty parameters are restrictions
- on freely varying fit bins.
- To determine the correlations between bins, many toy experiments are performed,
- which vary the observables 
-\begin_inset Formula $(p,\cos\theta)$
+As mentioned above, there are two types of systematic treatments: efficiency-lik
+e correction weights and observable variations.
+ This section will discuss both treatments and the model extrapolation methods
+ to evaluate their effects on all BANFF fit samples.
+ First is a description of efficiency-like systematic corrections and then
+ followed by a description of the observable variation methods.
+\end_layout
+
+\begin_layout Standard
+Efficiency-like corrections alter the number of predicted events as measured
+ by a control sample
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Each control sample is validated in T2K prior to introduction to the BANFF
+ analysis.
+\end_layout
+
+\end_inset
+
+ (CS).
+ The model used to evaluate efficiency-like systematics is given by
+\begin_inset Formula 
+\begin{equation}
+\epsilon_{\text{Data}}(o)=\left(\frac{\epsilon_{\text{Data}}(o)}{\epsilon_{\text{MC}}(o)}\right)_{\text{CS}}\epsilon_{\text{MC}}(o),\label{eq:effdatafromCS}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\epsilon_{\text{MC}}/\epsilon_{\text{Data}}$
+\end_inset
+
+ denotes the mean selection efficiency of the MC/data as a function of some
+ observable kinematic 
+\begin_inset Formula $o$
+\end_inset
+
+, and 
+\begin_inset Formula $\left(\ \right)_{\text{CS}}$
+\end_inset
+
+ refers to the efficiency measured in the CS.
+ We need to update this model to account for statistical uncertainties in
+ the CS.
+ The updated model, with 
+\begin_inset Formula $o$
+\end_inset
+
+ dependence assumed, is now 
+\begin_inset Formula 
+\begin{equation}
+\epsilon_{\text{Data}}^{\prime}=\left(\frac{\epsilon_{\text{Data}}+x_{\text{Data}}\cdot\sigma_{\epsilon_{\text{Data}}}}{\epsilon_{\text{MC}}+x_{\text{MC}}\cdot\sigma_{\epsilon_{\text{MC}}}}\right)_{\text{CS}}\epsilon_{\text{MC}}\label{eq:effdataWithErrfromCS}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\sigma_{\epsilon_{\text{MC}}}/\sigma_{\epsilon_{\text{Data}}}$
+\end_inset
+
+ is the standard deviation of the efficiency of the MC/Data and 
+\begin_inset Formula $x_{\text{Data}}$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{\text{MC}}$
+\end_inset
+
+ are uncorrelated, random normally distributed numbers from 
+\begin_inset Formula $\mathcal{N}\left(\mu=0,\sigma^{2}=1\right)$
 \end_inset
 
 .
+ All the variations are applied to the event, simultaneously affecting all
+ observables, and the event selection is rerun.
+ A weight is derived depending if the event is selected, 
+\begin_inset Formula $w_{\text{eff}}$
+\end_inset
+
+, or not selected, 
+\begin_inset Formula $w_{\text{ineff}}$
+\end_inset
+
+.
+ These weights are given below
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned}w_{\text{eff}} & =\frac{\epsilon_{\text{Data}}^{\prime}}{\epsilon_{\text{MC}}}\\
+w_{\text{ineff}} & =\frac{1-\epsilon_{\text{Data}}^{\prime}}{1-\epsilon_{\text{MC}}}.
+\end{aligned}
+\label{eq:weighteff}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Observable variation systematics are evaluated as shifts to physically measured
+ quantities like particle track momentum and track length.
+ The systematic can be evaluated in two different ways:
+\end_layout
+
+\begin_layout Enumerate
+If the reconstructed observable, 
+\begin_inset Formula $o_{\text{reco}}$
+\end_inset
+
+, has a known true value, 
+\begin_inset Formula $o_{\text{true}}$
+\end_inset
+
+, then the difference between those two is used as scaling.
+ The varied observable is given by
+\begin_inset Formula 
+\begin{equation}
+o^{\prime}=o_{\text{true}}+\left(o_{\text{reco}}-o_{\text{true}}\right)\left(s+x\sigma_{s}\right),\label{eq:recotrueobsvar}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $s$
+\end_inset
+
+ is the mean scaling parameter used to match the true value, 
+\begin_inset Formula $\sigma_{s}$
+\end_inset
+
+ is the uncertainty on 
+\begin_inset Formula $s$
+\end_inset
+
+, and 
+\begin_inset Formula $x$
+\end_inset
+
+ is a random number from 
+\begin_inset Formula $\mathcal{N}\left(\mu=0,\sigma^{2}=1\right)$
+\end_inset
+
+.
+ The mean scaling parameter and its uncertainty are determined from the
+ standard deviations observed in the data and MC by
+\begin_inset Formula 
+\begin{equation}
+s=\frac{\delta^{\text{data}}}{\delta^{\text{MC}}}\quad\sigma_{s}=s\left|\frac{\sigma_{\delta^{\text{data}}}}{\delta^{\text{data}}}-\frac{\sigma_{\delta^{\text{MC}}}}{\delta^{\text{MC}}}\right|.\label{eq:scalingdefrecotrueobsvar}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+If the MC reconstructed observable is corrected to match the mean from some
+ CS reconstructed observable.
+ The varied observable in this case is given by
+\begin_inset Formula 
+\begin{equation}
+o^{\prime}=o_{\text{Nom}}+\Delta o+x\sigma_{\Delta o},\label{eq:obsvariation}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $o^{\prime}$
+\end_inset
+
+ is the varied observable value, 
+\begin_inset Formula $o_{\text{Nom}}$
+\end_inset
+
+ is the nominal MC value, 
+\begin_inset Formula $\Delta o$
+\end_inset
+
+ is the average correction to the observable, 
+\begin_inset Formula $\sigma_{\Delta o}$
+\end_inset
+
+ is the uncertainty on the correction, and 
+\begin_inset Formula $x$
+\end_inset
+
+ is a random, normal number from 
+\begin_inset Formula $\mathcal{N}\left(\mu=0,\sigma^{2}=1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Additional uncertainties from the magnetic field are also special cases
+ of the 2nd observable variation method specifically for the TPC momentum
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Wret2019"
+literal "false"
+
+\end_inset
+
+.
+ They are:
+\end_layout
+
+\begin_layout Itemize
+The TPC laser calibration corrections are applied after the magnetic field
+ (B-field) mapping corrections.
+ The B-field corrections are applied at event reconstruction while the calibrati
+on corrections are treated as a systematic uncertainty.
+ The varied momentum is given by
+\begin_inset Formula 
+\begin{equation}
+p^{\prime}=p_{\text{Nom}}+x\left(p_{\text{Map}}-p_{\text{Nom}}\right),\label{eq:obsvariationtpclaser}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $p_{\text{Nom}}$
+\end_inset
+
+ is the nominal MC prediction using the B-field corrections and 
+\begin_inset Formula $p_{\text{Map}}$
+\end_inset
+
+ is the updated momentum using the additional laser calibration mapping.
+\end_layout
+
+\begin_layout Itemize
+The momentum depends on some scale parameter 
+\begin_inset Formula $s$
+\end_inset
+
+.
+ The varied momentum due to the scale uncertainty is given by
+\begin_inset Formula 
+\begin{equation}
+p^{\prime}=p_{\text{Nom}}\left(1+x\sigma_{s}\right),\label{eq:obsvariationtpcmomentumscale}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\sigma_{s}$
+\end_inset
+
+ is the uncertainty on the scale.
+ In this parameterization, 
+\begin_inset Formula $s$
+\end_inset
+
+ is the scale of the magnet current.
+\end_layout
+
+\begin_layout Standard
+After all observables are varied and applied to the event, the event selections
+ are applied again.
+ By applying the selection cuts after all variations, the full impact of
+ the systematic on the sample and analysis bins can be evaluated.
+\end_layout
+
+\begin_layout Subsubsection
+Detector Systematics Penalty
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Detector-Systematics-Penalty"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The bin normalization penalty parameters are restrictions on freely varying
+ fit bins.
+ To determine the correlations between bins, many toy experiments are performed.
+ As described in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+mbox{Section~
+\backslash
+ref{subsec:Systematic-Treatment-Models}}
+\end_layout
+
+\end_inset
+
+, each toy experiment varies event observables, i.e.
+ the momentum and angle of the main track, and number of events in a fit
+ bin.
  The bin normalization parameter for the 
 \begin_inset Formula $i$
 \end_inset
@@ -3845,7 +3982,7 @@ noprefix "false"
 \begin_inset Formula $i$
 \end_inset
 
-, averaged over all toys, is given by 
+, averaged over all toy experiments (toys), is given by 
 \begin_inset Formula 
 \begin{equation}
 \begin{aligned}\left\langle N_{i}\right\rangle _{\text{toys}} & =\frac{1}{N_{\text{toys}}}\sum_{t=1}^{N_{\text{toys}}}\left(N_{i}\right)_{t}\\
@@ -3867,7 +4004,7 @@ where now each MC event has a toy variation out of
 \begin_inset Formula $N_{\text{toys}}=2000$
 \end_inset
 
- toys were generated as to have a small uncertainty from the sample size.
+ toys were generated as to have a small sample size uncertainty.
 \end_layout
 
 \begin_layout Standard
@@ -3927,7 +4064,7 @@ where
 \end_inset
 
  is the Kronecker delta function.
- In order to use both 
+ In order to incorporate 
 \begin_inset Formula $V_{i,j}^{\text{Cov}}$
 \end_inset
 
@@ -3980,7 +4117,7 @@ noprefix "false"
  is updated to
 \begin_inset Formula 
 \begin{equation}
-V_{i,j}^{\text{Det}}\leftarrow\left(\widetilde{V}_{i,j}^{\text{Det}}+\widetilde{\sigma}_{\text{Mass}}^{2}+\widetilde{\sigma}_{\text{Match}}^{2}\right)d_{i}d_{j}.\label{eq:covarupdatefrac}
+V_{i,j}^{\text{Det}}\leftarrow\left(\widetilde{V}_{i,j}^{\text{Det}}+\widetilde{\sigma}_{\text{Mass}}^{2}+\widetilde{\sigma}_{\text{Match}}^{2}\right)d_{i}d_{j},\label{eq:covarupdatefrac}
 \end{equation}
 
 \end_inset
@@ -4016,8 +4153,49 @@ oot of the diagonal terms in the covariance matrix) increases by about
  mass and TPC matching inefficiency systematics.
 \end_layout
 
+\begin_layout Standard
+The penalty term, 
+\begin_inset Formula $\chi_{\text{Det}}^{2}$
+\end_inset
+
+, in the fit is given by
+\begin_inset Formula 
+\begin{equation}
+\chi_{\text{Det}}^{2}=\left(\systematics-\vec{d_{0}}\right)^{T}\left(V^{\text{Det}}\right)^{-1}\left(\systematics-\vec{d_{0}}\right)^{T},\label{eq:DetPenalty}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\vec{d_{0}}$
+\end_inset
+
+ is the initial set values of the parameters and 
+\begin_inset Formula $V^{\text{Det}}$
+\end_inset
+
+ is given by 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:covarupdatefrac"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Subsubsection
-Bin Normalization Edges
+Bin Normalization Parameters
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Bin-Normalization-Parameters"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4108,7 +4286,7 @@ status open
 \begin_inset Float algorithm
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -4494,6 +4672,9 @@ noprefix "false"
 \end_inset
 
 .
+ Finally, the min/max functions return the minimum/maximum element in a
+ tuple, respectively.
+ 
 \begin_inset Argument 1
 status open
 
@@ -4525,6 +4706,74 @@ name "alg:binedges"
 
 \begin_layout Standard
 The results of the procedure are shown visually in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Bin-normalization-edgesNumuFHC"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Bin-normalization-edgesNumubarRHC"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, and 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Bin-normalization-edgesNuMuRHC"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ While the problem of a few fit bins, each having large statistics, assigned
+ to a single observable normalization parameter is still present, fluctuations
+ between adjacent observable normalization parameters is iteratively minimized.
+ A considerable drawback to designing bin normalizations in this way of
+ varying detector systematics in toy experiments is that not all detector
+ systematics affect the fit observables 
+\begin_inset Formula $(p,\cos\theta)$
+\end_inset
+
+ in the same way.
+ There are non-symmetric systematics and they are especially non-Gaussian
+ in their effects.
+ Therefore, the covariance matrix from 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:totaldetectorcovariance"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is not an exact representation of the detector systematics.
+ To demonstrate this, results of varied number of events are shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Representative-event-variations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ However, the bin normalization standard deviations are very wide and able
+ to effectively cover the range of possible bin normalizations, which minimizes
+ the non-Gaussian effects of the systematic.
+ All the varied toy experiment results are provided in 
 \begin_inset ERT
 status open
 
@@ -4533,53 +4782,17 @@ status open
 
 \backslash
 mbox{
-\backslash
-Cref{
 \end_layout
 
 \end_inset
 
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-fig:Bin-normalization-edgesNumuFHC
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-,fig:Bin-normalization-edgesNumubarRHC
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-,fig:Bin-normalization-edgesNuMuRHC
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "app:NSigmaVariations"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -4595,9 +4808,6 @@ status open
 \end_inset
 
 .
- While the problem of a few observable normalization parameters having the
- majority of statistics is still present, fluctuations between adjacent
- observable normalization parameters is iteratively minimized.
 \end_layout
 
 \begin_layout Standard
@@ -4628,10 +4838,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+The 
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC CC 1-Track
+ in FHC Mode CC 1-Track sample
 \end_layout
 
 \end_inset
@@ -4666,10 +4877,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+The 
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC CC N-Tracks
+ in FHC Mode CC N-Tracks sample
 \end_layout
 
 \end_inset
@@ -4690,12 +4902,13 @@ Bin normalization edges for the
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC selections.
- There are two plots shown for each sub-figure.
+ in FHC Mode samples.
  The left and right plots show the bin normalization and the bin statistical
  fractional error, respectively, if each fit bin had a single bin normalization.
  The dashed lines indicate the edges of the bin normalization parameters
  finalized for this analysis.
+ Water-in and water-out modes are qualitatively the same.
+ 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Bin-normalization-edgesNumuFHC"
@@ -4707,11 +4920,7 @@ name "fig:Bin-normalization-edgesNumuFHC"
 status open
 
 \begin_layout Plain Layout
-Bin Normalizations for the 
-\begin_inset Formula $\pod$
-\end_inset
-
- Water-In 
+Bin Normalizations Edges for the 
 \begin_inset Formula $\numu$
 \end_inset
 
@@ -4761,10 +4970,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+The 
 \begin_inset Formula $\numubar$
 \end_inset
 
- in RHC CC 1-Track
+ in RHC Mode CC 1-Track sample
 \end_layout
 
 \end_inset
@@ -4799,10 +5009,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+The 
 \begin_inset Formula $\numubar$
 \end_inset
 
- in RHC CC N-Tracks
+ in RHC Mode CC N-Tracks sample
 \end_layout
 
 \end_inset
@@ -4823,12 +5034,14 @@ Bin normalization edges for the
 \begin_inset Formula $\numubar$
 \end_inset
 
- in RHC selections.
+ in RHC Mode samples.
  There are two plots shown for each sub-figure.
  The left and right plots show the bin normalization and the bin statistical
  fractional error, respectively, if each fit bin had a single bin normalization.
  The dashed lines indicate the edges of the bin normalization parameters
  finalized for this analysis.
+ Water-in and water-out modes are qualitatively the same.
+ 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Bin-normalization-edgesNumubarRHC"
@@ -4840,11 +5053,7 @@ name "fig:Bin-normalization-edgesNumubarRHC"
 status open
 
 \begin_layout Plain Layout
-Bin Normalizations for the 
-\begin_inset Formula $\pod$
-\end_inset
-
- Water-In 
+Bin Normalization Edges for the 
 \begin_inset Formula $\numubar$
 \end_inset
 
@@ -4894,10 +5103,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+The 
 \begin_inset Formula $\numu$
 \end_inset
 
- in RHC CC 1-Track
+ in RHC CC 1-Track sample
 \end_layout
 
 \end_inset
@@ -4932,10 +5142,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+The 
 \begin_inset Formula $\numu$
 \end_inset
 
- in RHC CC N-Tracks
+ in RHC CC N-Tracks sample
 \end_layout
 
 \end_inset
@@ -4962,6 +5173,7 @@ Bin normalization edges for the
  fractional error, respectively, if each fit bin had a single bin normalization.
  The dashed lines indicate the edges of the bin normalization parameters
  finalized for this analysis.
+ Water-in and water-out modes are qualitatively the same.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Bin-normalization-edgesNuMuRHC"
@@ -4974,10 +5186,6 @@ status open
 
 \begin_layout Plain Layout
 Bin Normalizations for the 
-\begin_inset Formula $\pod$
-\end_inset
-
- Water-In 
 \begin_inset Formula $\numu$
 \end_inset
 
@@ -5000,54 +5208,10 @@ Bin Normalizations for the
 \end_layout
 
 \begin_layout Standard
-A considerable drawback to designing normalizations in this way of varying
- detector systematics in toy experiments is that not all detector systematics
- affect the observables 
-\begin_inset Formula $(p,\cos\theta)$
-\end_inset
-
- in the same way.
- There are non-symmetric systematics and are especially non normal in their
- effects.
- Therefore, the covariance matrix from 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:totaldetectorcovariance"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- is not an exact representation of the detector systematics.
- To demonstrate this, results of varied number of events are shown in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:Representative-event-variations"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- with all the varied toy experiment results are provided in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "app:NSigmaVariations"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -5277,19 +5441,15 @@ status open
 \begin_layout Plain Layout
 Event variations in representative observable normalization bins.
  Shown in each sub-figure the varied event rate from all toy experiments
- in a particular observable normalization bin as shown in blue.
+ in a particular observable normalization bin.
+ The blue curve has all the systematics enabled while the red curve has
+ the ELossRes systematic disabled.
  Vertical dashed lines show the unvaried, weighted MC prediction and varied
  mean of all toy experiments.
  The ratio of the horizontal positions of each vertical line is the prefit
  normalization value for that bin.
- A Gaussian whose variance was extracted from covariance matrix is shown
+ A Gaussian with variance extracted from the covariance matrix is shown
  to illustrate the bin's estimate on the normalization uncertainty.
- The result of disabling the 
-\begin_inset Formula $\pod$
-\end_inset
-
- energy loss resolution systematic is shown in red to illustrate its effect
- on the mean and spread on the toy experiments.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -5321,6 +5481,22 @@ Event Variations in Observable Normalization Bins
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+todo{PCA discussion}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 The detector systematic that had the largest effect on the observable normalizat
 ion prediction was the 
 \begin_inset Formula $\pod$
@@ -5332,7 +5508,7 @@ ion prediction was the
 \end_inset
 
 .
- This systematic was first implemented for the 
+ This systematic was developed for the 
 \begin_inset Formula $\numu$
 \end_inset
 
@@ -5340,8 +5516,8 @@ ion prediction was the
 \begin_inset Formula $0\pi$
 \end_inset
 
- cross section analysis and was identified as the largest detector systematic
- uncertainty
+ cross section analysis, it was identified as the largest detector systematic
+ uncertainty in the cross section measurement
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Yuan2016"
@@ -5350,8 +5526,22 @@ literal "false"
 \end_inset
 
 .
- When the deposited energy is varied, it directly changes the distance the
- truth matched particle travels in the 
+ When the deposited energy in the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ is varied using 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:recotrueobsvar"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, it also changes the distance the truth matched particle travels in the
+ 
 \begin_inset Formula $\pod$
 \end_inset
 
@@ -5359,7 +5549,7 @@ literal "false"
  Hence, this systematic changes the likelihood of a particle being reconstructed
  as a track.
  The observed effect is that for bins with relatively low muon momentum,
- the number of predicted events can vary non-normally in shape as shown
+ the number of predicted events can vary in a non-Gaussian manner as shown
  in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -5371,8 +5561,6 @@ noprefix "false"
 \end_inset
 
 .
- The general trend is that the ELossRes variation broadens the number of
- predicted events and shifts the mean.
 \end_layout
 
 \begin_layout Standard
@@ -5633,7 +5821,7 @@ Updated detector covariance matrix
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -6761,7 +6949,7 @@ status open
 \begin_inset Graphics
 	filename Figures/P0DBANFFParameterization/cov_xsec_pref.png
 	lyxscale 50
-	width 48text%
+	height 45theight%
 
 \end_inset
 
@@ -6787,6 +6975,10 @@ Covariance
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Float figure
 wide false
 sideways false
@@ -6797,7 +6989,7 @@ status open
 \begin_inset Graphics
 	filename Figures/P0DBANFFParameterization/corr_xsec_pref.png
 	lyxscale 50
-	width 48text%
+	height 45theight%
 
 \end_inset
 
@@ -6879,7 +7071,7 @@ status open
 <column alignment="center" valignment="top" width="0pt">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
-<row endhead="true" endfirsthead="true" caption="true">
+<row endfirsthead="true" caption="true">
 <cell multicolumn="1" alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 

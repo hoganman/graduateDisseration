@@ -211,7 +211,7 @@ algorithm2e
 \color #faf0e6
 \end_branch
 \branch AppendixLikelihoodPenaltyScans
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -248,7 +248,7 @@ algorithm2e
 \topmargin 1in
 \rightmargin 1in
 \bottommargin 1in
-\secnumdepth 2
+\secnumdepth 3
 \tocdepth 2
 \paragraph_separation indent
 \paragraph_indentation default
