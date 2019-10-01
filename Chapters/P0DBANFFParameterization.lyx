@@ -5764,14 +5764,14 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -5803,7 +5803,7 @@ Detector penalty covariance matrix
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -5846,7 +5846,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -5893,8 +5893,8 @@ Detector penalty covariance matrix.
 
 -TPC matching efficiency ad-hoc contributions, and (c) is the correlation
  matrix calculated from (a).
- Note that the parameter numbers here are offset from their fit index value
- by 99.
+ Note that the parameter indices, which represent the bin normalization
+ indices, are offset from their fit indices value by 99.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -5926,10 +5926,12 @@ Detector Penalty Covariance Matrix
 \end_layout
 
 \begin_layout Standard
-To anticipate the postfit values of the bin normalizations, principal component
- analysis was performed on all the toy experiments.
- Principal component analysis is the identical to performing the eigenvalue
- decomposition of a square matrix 
+To estimate how the bin normalizations may respond in the BANFF fit, principal
+ component analysis was performed on all the toy experiments.
+ Principal component analysis allows one to understand the amount of variance
+ in the data.
+ The procedure is identical to performing the eigenvalue decomposition of
+ a square matrix 
 \begin_inset Formula $M$
 \end_inset
 
@@ -5940,13 +5942,13 @@ To anticipate the postfit values of the bin normalizations, principal component
  is decomposed as
 \begin_inset Formula 
 \[
-M=U^{T}DU,
+M=O^{T}DO,
 \]
 
 \end_inset
 
 where 
-\begin_inset Formula $U$
+\begin_inset Formula $O$
 \end_inset
 
  is a orthogonal matrix of the eigenvectors, and 
@@ -5959,7 +5961,49 @@ where
 \end_inset
 
  are the eigenvectors and their relative importance is set by the magnitude
- of the associated eigenvalue
+ of the associated eigenvalue.
+ Additionally, we can estimate the number of effective degrees of freedom
+ using 
+\begin_inset Formula 
+\begin{equation}
+\text{df}(\lambda)=\sum_{i=0}^{N_{\text{d}}}\frac{d_{i}}{d_{i}+\lambda},\label{eq:effective-degrees-of-freedom}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $d_{i}$
+\end_inset
+
+ are the eigenvalues of 
+\begin_inset Formula $D$
+\end_inset
+
+ and 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ is a tunable parameter.
+ The idea behind 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:effective-degrees-of-freedom"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is that although all 
+\begin_inset Formula $N_{\text{d}}$
+\end_inset
+
+ coefficients will be non-zero, they are restricted to vary by the scale
+ 
+\begin_inset Formula $\lambda$
+\end_inset
+
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "springer_series978-0-387-84858-7"
@@ -5968,11 +6012,16 @@ literal "false"
 \end_inset
 
 .
- Using this prescription, the sample variance, 
+\end_layout
+
+\begin_layout Standard
+Using this prescription, we can analyze the sample variance of the toy experimen
+ts.
+ The sample variance, 
 \begin_inset Formula $S$
 \end_inset
 
-, of the toy experiments is defined as
+, is defined as
 \begin_inset Formula 
 \[
 S=\frac{1}{N_{\text{toys}}}X^{T}X,
@@ -5985,12 +6034,16 @@ where
 \end_inset
 
  is a 
-\begin_inset Formula $N_{\text{d}}\times N_{\text{toys}}$
+\begin_inset Formula $N_{\text{toys}}\times N_{\text{d}}$
 \end_inset
 
- matrix of the observed number of events (not the normalization!) predicted
- in each normalization bin.
- The eigenvalue decomposition is given by
+ matrix of the predicted number of events (not the normalization!) in each
+ normalization bin.
+ The eigenvalue decomposition of 
+\begin_inset Formula $S$
+\end_inset
+
+ is given by
 \begin_inset Formula 
 \[
 S=U^{T}V^{\prime}U,
@@ -6010,10 +6063,389 @@ where
 \begin_inset Formula $V^{\prime}$
 \end_inset
 
- is a diagonal matrix of the variance eigenvalues sorted from largest to
- smallest variance.
- If the first eigenvalue is much larger than the others, most of the bin-to-bin
- variance can be explained by that associated eigenvector.
+ is a diagonal matrix of the sample covariance eigenvalues sorted from largest
+ to smallest magnitude.
+ The sample variance eigenvalues are shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Eigenvalues-sample-covariance"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ The first eigenvalue is two orders of magnitude larger than the second
+ one, which means that the majority of the bin-to-bin variance can be explained
+ by the first eigenvector.
+ The first eigenvector coefficients, and hence the principal component of
+ the sample variance, is shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Principal-components"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ We see that all the components are negative and centered around a central
+ value.
+ This result is interpreted to mean we can expect the bins normalizations
+ postfit values to shift all together and most likely smaller than their
+ prefit values.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="10">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Index
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\SpecialChar ldots
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+458
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+459
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+460
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+461
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Eigenvalue
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2029
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16.45
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12.87
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11.10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\SpecialChar ldots
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.05325
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.05129
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.04955
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.03992
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Eigenvalues of the sample covariance.
+ Note that the parameter indices, which represent the bin normalization
+ indices, are offset from their fit indices value by 99.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Eigenvalues-sample-covariance"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Eigenvalues of the Sample Covariance
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/P0DBANFFParameterization/EigenVector0.png
+	lyxscale 45
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Principal component for the sample variance.
+ Note that the parameter indices, which represent the bin normalization
+ indices, are offset from their fit indices value by 99.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Principal-components"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Principal Component for the Sample Variance
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:effective-degrees-of-freedom"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, we can estimate the effective degrees of freedom in the fit.
+ In the BANFF fit test statistic, the detector systematics penalty scale
+ is set to one (1), meaning that 
+\begin_inset Formula $\lambda=1$
+\end_inset
+
+ in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:effective-degrees-of-freedom"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ It is found that the effective degrees of freedom is about 137, which is
+ about 29% of 
+\begin_inset Formula $N_{\text{d}}$
+\end_inset
+
+.
+ This suggests that a smaller number bin normalization parameters can be
+ used in the BANFF fit analysis and have similar response to the data variance.
 \end_layout
 
 \end_inset
