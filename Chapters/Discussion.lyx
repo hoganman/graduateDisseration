@@ -269,7 +269,7 @@ Recall that the BANFF ND constraint test statistic is defined as
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\begin{aligned}\Delta\hat{\chi}_{\text{ND280}}^{2} & =\underset{\Delta\vec{y}\in\mathbb{R}^{d}}{\text{argmin}}\left\{ \Delta\chi_{\text{LLR}}^{2}\left(\vec{N}^{d},\vec{N}^{p}\right)+\Delta\chi_{\text{Penalty}}^{2}\left(\Delta\vec{y}\right)\right\} \end{aligned}
+\begin{aligned}\hat{\chi}_{\text{ND280}}^{2} & =\underset{\Delta\vec{y}\in\mathbb{R}^{d}}{\text{argmin}}\left\{ \chi_{\text{LLR}}^{2}\left(\vec{N}^{d},\vec{N}^{p}\right)+\Delta\chi_{\text{Penalty}}^{2}\left(\Delta\vec{y}\right)\right\} \end{aligned}
 \]
 
 \end_inset
@@ -354,11 +354,11 @@ where
 \end_inset
 
  is the log-likelihood ratio term 
-\begin_inset Formula $\Delta\chi_{\text{LLR}}^{2}$
+\begin_inset Formula $\chi_{\text{LLR}}^{2}$
 \end_inset
 
 , and penalty term is 
-\begin_inset Formula $J=\Delta\chi_{\text{Penalty}}^{2}$
+\begin_inset Formula $J=\chi_{\text{Penalty}}^{2}$
 \end_inset
 
  with regularization strength 
@@ -423,8 +423,8 @@ In this verification of the regularization strength, the test statistic
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\begin{aligned}\Delta\hat{\chi}_{\text{ND280}}^{2} & =\underset{\Delta\vec{y}\in\mathbb{R}^{d}}{\text{argmin}}\left\{ \Delta\chi_{\text{LLR}}^{2}+\lambda\Delta\chi_{\text{Penalty}}^{2}\left(\Delta\vec{y}\right)\right\} \\
- & =\underset{\Delta\vec{y}\in\mathbb{R}^{d}}{\text{argmin}}\left\{ \Delta\chi_{\text{LLR}}^{2}+\lambda\left(\Delta\vec{y}\right)^{T}\cdot V^{-1}\cdot\left(\Delta\vec{y}\right)\right\} ,
+\begin{aligned}\hat{\chi}_{\text{ND280}}^{2} & =\underset{\Delta\vec{y}\in\mathbb{R}^{d}}{\text{argmin}}\left\{ \chi_{\text{LLR}}^{2}+\lambda\chi_{\text{Penalty}}^{2}\right\} \\
+ & =\underset{\Delta\vec{y}\in\mathbb{R}^{d}}{\text{argmin}}\left\{ \chi_{\text{LLR}}^{2}+\lambda\left(\Delta\vec{y}\right)^{T}V^{-1}\left(\Delta\vec{y}\right)\right\} ,
 \end{aligned}
 \label{eq:RegularizedDeltaChi2ND280}
 \end{equation}
@@ -436,20 +436,20 @@ and the data is split into
 \end_inset
 
  partitions.
- The prediction error 
+ The prediction error, 
 \begin_inset Formula $P$
 \end_inset
 
- in this analysis is defined as 
+, in this analysis is defined as 
 \begin_inset Formula 
 \begin{equation}
-P_{k}\left(\left(\Delta\chi^{2}\right)_{\text{train}}^{-k},\left(\Delta\chi^{2}\right)_{\text{test}}^{k}\right)=\left|\left(\Delta\chi^{2}\right)_{\text{train}}^{-k}-\left(\Delta\chi^{2}\right)_{\text{test}}^{k}\right|\label{eq:predictionerror}
+P_{k}\left(\left(\chi_{\text{train}}^{2}\right)^{-k},\left(\chi_{\text{test}}^{2}\right)^{k}\right)=\left|\left(\chi_{\text{train}}^{2}\right)^{-k}-\left(\chi_{\text{test}}^{2}\right)^{k}\right|\label{eq:predictionerror}
 \end{equation}
 
 \end_inset
 
 where 
-\begin_inset Formula $\left(\Delta\chi^{2}\right)_{\text{train}}^{-k}$
+\begin_inset Formula $\left(\chi_{\text{train}}^{2}\right)^{-k}$
 \end_inset
 
  is the fitted model statistic on all but the 
@@ -457,7 +457,7 @@ where
 \end_inset
 
 th partition, and 
-\begin_inset Formula $\left(\Delta\chi^{2}\right)_{\text{test}}^{k}$
+\begin_inset Formula $\left(\chi_{\text{test}}^{2}\right)^{k}$
 \end_inset
 
  is prediction from the fitted model on the 
@@ -469,14 +469,14 @@ th partition.
 \begin_inset Formula $P$
 \end_inset
 
- is useful since the penalty terms cancel leaving only the difference in
+ is useful since the penalty terms cancel, leaving only the difference in
  log-likelihood terms.
  The optimal regularization strength is determined by minimizing the cross-valid
 ation error, 
 \begin_inset Formula 
 \begin{equation}
-\begin{aligned}\text{CV} & =\left\langle \left|\left(\Delta\chi^{2}\right)_{\text{train}}-\left(\Delta\chi^{2}\right)_{\text{test}}\right|\right\rangle \\
- & =\frac{1}{5}\sum_{k=1}^{5}P_{k}\left(\left(\Delta\chi^{2}\right)_{\text{train}}^{-k},\left(\Delta\chi^{2}\right)_{\text{test}}^{k}\right),
+\begin{aligned}\text{CV}\left(\lambda\right) & =\left\langle \left|\chi_{\text{train}}^{2}-\chi_{\text{test}}^{2}\right|\right\rangle \\
+ & =\frac{1}{5}\sum_{k=1}^{5}P_{k}\left(\left(\chi_{\text{train}}^{2}\right)^{-k},\left(\chi_{\text{test}}^{2}\right)^{k}\right),
 \end{aligned}
 \label{eq:CVerror}
 \end{equation}
@@ -484,6 +484,150 @@ ation error,
 \end_inset
 
 which is the average prediction error.
+\end_layout
+
+\begin_layout Standard
+Results of the cross-validation are shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Cross-validation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ We see that while the penalty strength of 
+\begin_inset Formula $\lambda=1$
+\end_inset
+
+ nearly minimizes the cross-validation error, slightly larger penalties
+ are preferred.
+ The cross-validation error curve is minimized at 
+\begin_inset Formula $\lambda=1.45$
+\end_inset
+
+, and it is roughly quadratic in the neighborhood around the minimum.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Discussion/CrossValidationScan.png
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Wide view
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Discussion/CrossValidationScanZoom.png
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Narrow view
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cross-validation curve for the BANFF fit regularization strength.
+ Figure (a) examines the cross-validation error for a wide range of regularizati
+on strengths.
+ Figure (b) zooms in on the minimized error.
+ The error bars shown are statistical only.
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Cross-Validation Curve for the BANFF Fit Regularization Strength.
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Cross-validation"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -494,7 +638,7 @@ Alternative Penalty
 Consider solving the linear regression problem 
 \begin_inset Formula 
 \begin{equation}
-\vec{\eta}=X\cdot\vec{\beta}\label{eq:LinearProblem}
+\vec{\eta}=X\vec{\beta}\label{eq:LinearProblem}
 \end{equation}
 
 \end_inset
@@ -588,7 +732,7 @@ where the sum of squares of the weights
  is using ordinary least squares 
 \begin_inset Formula 
 \[
-L\left(\vec{\eta},\vec{\beta}\right)=\sum_{j}\left|\vec{\eta}-X\cdot\vec{\beta}\right|^{2},
+L\left(\vec{\eta},\vec{\beta}\right)=\sum_{j}\left|\vec{\eta}-X\vec{\beta}\right|^{2},
 \]
 
 \end_inset
@@ -620,7 +764,7 @@ noprefix "false"
 
 .
  We again recognize 
-\begin_inset Formula $\Delta\chi_{\text{LLR}}^{2}$
+\begin_inset Formula $\chi_{\text{LLR}}^{2}$
 \end_inset
 
  is the loss function 
@@ -670,22 +814,22 @@ We can now rewrite the penalty term as an inner product of two vectors.
  
 \begin_inset Formula 
 \[
-\begin{aligned}\Delta\chi_{\text{Penalty}}^{2} & =\left(\Delta\vec{y}\right)^{T}\cdot V^{-1}\cdot\left(\Delta\vec{y}\right)\\
- & \left(\Delta\vec{y}\right)^{T}\cdot U\Gamma^{2}U^{T}\cdot\left(\Delta\vec{y}\right)\\
- & =\left[\Gamma U^{T}\cdot\Delta\vec{y}\right]^{T}\cdot\left[\Gamma U^{T}\cdot\Delta\vec{y}\right].
+\begin{aligned}\chi_{\text{Penalty}}^{2} & =\left(\Delta\vec{y}\right)^{T}V^{-1}\left(\Delta\vec{y}\right)\\
+ & \left(\Delta\vec{y}\right)^{T}U\Gamma^{2}U^{T}\left(\Delta\vec{y}\right)\\
+ & =\left[\Gamma U^{T}\Delta\vec{y}\right]^{T}\left[\Gamma U^{T}\Delta\vec{y}\right].
 \end{aligned}
 \]
 
 \end_inset
 
 If we let 
-\begin_inset Formula $\vec{\psi}=\Gamma U^{T}\cdot\Delta\vec{y}$
+\begin_inset Formula $\vec{\psi}=\Gamma U^{T}\Delta\vec{y}$
 \end_inset
 
 , then the penalty term becomes
 \begin_inset Formula 
 \[
-\begin{aligned}\Delta\chi_{\text{Penalty}}^{2} & =\sum_{j}\left|\psi_{j}\right|^{2}\end{aligned}
+\begin{aligned}\chi_{\text{Penalty}}^{2} & =\vec{\psi}^{T}\vec{\psi}=\sum_{j}\left|\psi_{j}\right|^{2}\end{aligned}
 \]
 
 \end_inset
@@ -693,7 +837,7 @@ If we let
 and test statistic is now
 \begin_inset Formula 
 \begin{equation}
-\begin{aligned}\Delta\hat{\chi}_{\text{ND280}}^{2} & =\underset{\vec{\psi}\in\mathbb{R}^{d}}{\text{argmin}}\left\{ \Delta\chi_{\text{LLR}}^{2}\left(N^{d},N^{p}\right)+\left|\left|\psi_{j}\right|\right|_{2}^{2}\right\} \end{aligned}
+\begin{aligned}\hat{\chi}_{\text{ND280}}^{2} & =\underset{\vec{\psi}\in\mathbb{R}^{d}}{\text{argmin}}\left\{ \chi_{\text{LLR}}^{2}\left(N^{d},N^{p}\right)+\left|\left|\psi_{j}\right|\right|_{2}^{2}\right\} \end{aligned}
 ,\label{eq:DeltaChiSqND280RidgeRegressionForm}
 \end{equation}
 
@@ -746,7 +890,7 @@ noprefix "false"
 -regularization constraint or least absolute shrinkage and selection operator
  (Lasso)
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 The Lasso or 
@@ -890,8 +1034,9 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The Lasso vs elastic net constraint with six variables, highly correlated
- in groups of three.
+The Lasso vs elastic net constraint.
+ Six variables are shown and the highly correlated variables are in groups
+ of three.
  The Lasso estimate, left, estimate exhibits erratic behavior as the regularizat
 ion strength 
 \begin_inset Formula $\lambda$
@@ -971,6 +1116,25 @@ noprefix "false"
  fit can be excluded or combined with important fit bins.
  Then the best fit parameters and covariance matrix using the current BANFF
  machinery can still be found.
+\end_layout
+
+\begin_layout Standard
+Another possibility in the future is for the BANFF fit to use the elastic
+ net to directly estimate the flux and cross section parameters.
+ The challenge with this approach is that using non-Gaussian priors, the
+ covariance matrix is no longer calculable using the Hess matrix.
+ This is a general critique of the BANFF fit postfit error estimates since
+ there are non-Gaussian priors for many of the cross section parameters.
+ Instead, bootstrap methods could be employed to infer the parameter covariances.
+ This is further discussed in the following reference 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "springer_series978-0-387-84858-7"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section

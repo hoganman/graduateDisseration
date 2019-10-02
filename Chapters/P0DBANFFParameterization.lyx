@@ -3245,11 +3245,16 @@ The
 
  in FHC Mode CC 1-Track selection, the scale and resolution contributed
  1.3% and 6.7%, respectively, to the cross section uncertainty.
- Those large uncertainties are due to the inherent design of the 
+ Those large uncertainties can be attributed to the design of the 
 \begin_inset Formula $\pod$
 \end_inset
 
- as a low resolution tracking detector.
+.
+ It is optimized for 
+\begin_inset Formula $\pi^{0}$
+\end_inset
+
+ detection as opposed to a dedicated tracking detector like the FGD.
  Slight variations in the track reconstruction can significantly alter the
  energy loss as measured in 
 \begin_inset CommandInset ref
@@ -3276,7 +3281,7 @@ The remaining systematics, the
 -TPC matching efficiency, were not available to analyze in toy experiments
  variations.
  They were not implemented in the BANFF framework and unavailable to implement
- due to time constraints on the author.
+ due to time constraints on this author.
  Instead, they were treated as additional uncorrelated systematics on each
  bin normalization uncertainty with the normalization value remaining fixed.
  The treatment of these two systematics will be discussed shortly.
@@ -3295,7 +3300,7 @@ The
  prevent uneven bulging.
  However, faulty sensors would provide poor quality data, hence bags were
  under and overfilled.
- This affect alters the expected event rate as a function of position.
+ This effect alters the expected event rate as a function of position.
 \end_layout
 
 \begin_layout Standard
@@ -3319,27 +3324,42 @@ Another problem with the mass uncertainty is due to structure deformations
 \end_inset
 
  is mounted to the ND280 basket leaving the those corners spatially fixed.
+ When the water bags are filled, the WT volume expanded or 
+\begin_inset Quotes eld
+\end_inset
+
+bulged
+\begin_inset Quotes erd
+\end_inset
+
+ from the middle filling small air gaps.
  The upstream end of the 
 \begin_inset Formula $\pod$
 \end_inset
 
- is also physically against the ND280 support structure.
- However, there is a physical gap between the 
-\begin_inset Formula $\pod$
+, the Upstream ECal, resisted deformations since it is physically against
+ the ND280 support structure.
+ However, the Central ECal (CECal) has no such restriction since there is
+ a 
+\begin_inset Formula $\bigO 1$
 \end_inset
 
- and the TPC.
- This permitted the downstream layers to expand or 
-\begin_inset Quotes eld
+ cm gap between it and the TPC.
+ The CECal, which has a design thickness of 304 mm, was observed to bulge
+ about 7-8 mm from its center as well
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Toki2016"
+literal "false"
+
 \end_inset
 
-bulge
-\begin_inset Quotes erd
-\end_inset
+.
+\end_layout
 
- from the middle into the air gap.
- Importantly, this left more water volume, and importantly more mass, in
- the most downstream water bags compared to the upstream bags.
+\begin_layout Standard
+This left more water volume, and importantly more mass, in the most downstream
+ water bags compared to the upstream bags.
  This additional mass or bulging effect is evident in the vertex distribution
  as a function of the Z-position as shown in 
 \begin_inset CommandInset ref
@@ -3480,25 +3500,8 @@ literal "false"
 \end_inset
 
  mass uncertainty estimate was determined using the same toy experiment
- variation method, 
-\shape italic
-a conservative estimate of 2% on the mass uncertainty included in this analysis
-\shape default
-.
- So for the 
-\begin_inset Formula $\pod$
-\end_inset
-
- mass systematic, let 
-\begin_inset Formula $\widetilde{\sigma}_{\text{Mass}}=2\%$
-\end_inset
-
-, where the tilde (
-\begin_inset Formula $\widetilde{\ }$
-\end_inset
-
-) refers to a fractional uncertainty.
- This will be used later.
+ variation method, a conservative estimate of 2% on the mass uncertainty
+ is included in this analysis.
 \end_layout
 
 \begin_layout Standard
@@ -3506,7 +3509,11 @@ The
 \begin_inset Formula $\pod$
 \end_inset
 
- and TPC matching efficiency is estimated to have a small systematic effect
+ and TPC (
+\begin_inset Formula $\pod$
+\end_inset
+
+-TPC) matching efficiency is estimated to have a small systematic effect
  on the analysis.
  It was analyzed to have over a 99.8% data and MC efficiency in the single
  track 
@@ -3517,11 +3524,15 @@ The
 \begin_inset Formula $0\pi$
 \end_inset
 
- analysis and thus neglected.
- However, since this analysis includes multiple track selections, that matching
- efficiency is unknown.
- Also, it is hard to imagine a CS that could constrain it.
- The best handle is from the private T2K technical note on the 
+ analysis and thus was neglected.
+ However, since this analysis includes 
+\begin_inset Formula $>1$
+\end_inset
+
+ track samples, the matching efficiency for non-single track samples is
+ unknown.
+ The best constraint is from the private T2K technical note on the single
+ bin 
 \begin_inset Formula $\numubar/\numu$
 \end_inset
 
@@ -3533,31 +3544,25 @@ literal "false"
 
 \end_inset
 
- which estimated the uncertainty at less than 0.14% using its in-house matching
+, which estimated the uncertainty at less than 0.14% using a in-house matching
  algorithm.
- Since that is was single bin measurement employing different matching algorithm
-, the uncertainty is not guaranteed to remain constant across 
+ Since this analysis uses a different track matching algorithm, the uncertainty
+ is not guaranteed to remain constant across 
 \begin_inset Formula $(p,\cos\theta)$
 \end_inset
 
  bins.
- 
-\shape italic
-A conservative estimate of 1% for the TPC matching efficiency was chosen
- in order to account for the inherent uncertainty in this systematic
-\shape default
-.
- So for the matching efficiency systematic, let 
-\begin_inset Formula $\widetilde{\sigma}_{\text{Match}}=1\%$
+ A conservative estimate of 1% for the 
+\begin_inset Formula $\pod$
 \end_inset
 
-.
+-TPC matching efficiency was chosen in order to account for the inherent
+ uncertainty in this systematic.
 \end_layout
 
 \begin_layout Standard
-Now that we understand how the systematics affect our observables and by
- using toy experiments to evaluate the systematics, we can now begin to
- understand how the detector systematic penalty term 
+Now that we know the systematics that affect the analysis, we can now begin
+ to understand how the detector systematic penalty term 
 \begin_inset Formula $\chi_{\text{Det}}^{2}$
 \end_inset
 
@@ -4114,7 +4119,8 @@ noprefix "false"
 
 \end_inset
 
- is updated to
+ needs to be updated.
+ The updated covariance matrix is given by 
 \begin_inset Formula 
 \begin{equation}
 V_{i,j}^{\text{Det}}\leftarrow\left(\widetilde{V}_{i,j}^{\text{Det}}+\widetilde{\sigma}_{\text{Mass}}^{2}+\widetilde{\sigma}_{\text{Match}}^{2}\right)d_{i}d_{j},\label{eq:covarupdatefrac}
@@ -4129,13 +4135,54 @@ where
  is the fractional covariance 
 \begin_inset Formula 
 \begin{equation}
-\widetilde{V}_{i,j}^{\text{Det}}=\frac{V_{i,j}^{\text{Det}}}{d_{i}d_{j}}.\label{eq:fractionalcovariance}
+\widetilde{V}_{i,j}^{\text{Det}}=\frac{V_{i,j}^{\text{Det}}}{d_{i}d_{j}},\label{eq:fractionalcovariance}
 \end{equation}
 
 \end_inset
 
-Together, the two additional sources of uncertainty increase each term in
- the covariance matrix by 
+
+\begin_inset Formula $d_{i}$
+\end_inset
+
+/
+\begin_inset Formula $d_{j}$
+\end_inset
+
+ are the bin normalization parameters, and 
+\begin_inset Formula $\widetilde{\sigma}_{\text{Mass}}^{2}=2\%$
+\end_inset
+
+ and 
+\begin_inset Formula $\widetilde{\sigma}_{\text{Match}}^{2}=1\%$
+\end_inset
+
+ are the is the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ mass and 
+\begin_inset Formula $\pod$
+\end_inset
+
+-TPC matching efficiency systematic uncertainties, respectively, estimated
+ in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+mbox{Section~
+\backslash
+ref{subsec:Detector-Systematics}}
+\end_layout
+
+\end_inset
+
+.
+ Together, the two additional sources of uncertainty increase each term
+ in the covariance matrix by 
 \begin_inset Formula $0.0005d_{i}d_{j}$
 \end_inset
 
@@ -5962,56 +6009,6 @@ where
 
  are the eigenvectors and their relative importance is set by the magnitude
  of the associated eigenvalue.
- Additionally, we can estimate the number of effective degrees of freedom
- using 
-\begin_inset Formula 
-\begin{equation}
-\text{df}(\lambda)=\sum_{i=0}^{N_{\text{d}}}\frac{d_{i}}{d_{i}+\lambda},\label{eq:effective-degrees-of-freedom}
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Formula $d_{i}$
-\end_inset
-
- are the eigenvalues of 
-\begin_inset Formula $D$
-\end_inset
-
- and 
-\begin_inset Formula $\lambda$
-\end_inset
-
- is a tunable parameter.
- The idea behind 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:effective-degrees-of-freedom"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- is that although all 
-\begin_inset Formula $N_{\text{d}}$
-\end_inset
-
- coefficients will be non-zero, they are restricted to vary by the scale
- 
-\begin_inset Formula $\lambda$
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "springer_series978-0-387-84858-7"
-literal "false"
-
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Standard
@@ -6076,11 +6073,10 @@ noprefix "false"
 \end_inset
 
 .
- The first eigenvalue is two orders of magnitude larger than the second
- one, which means that the majority of the bin-to-bin variance can be explained
- by the first eigenvector.
- The first eigenvector coefficients, and hence the principal component of
- the sample variance, is shown in 
+ The first, and hence largest, eigenvalue is two orders of magnitude larger
+ than the next largest eigenvalue, which means that the majority of the
+ bin-to-bin variance can be explained by the first eigenvector.
+ The first eigenvector coefficients is shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:Principal-components"
@@ -6094,8 +6090,8 @@ noprefix "false"
  We see that all the components are negative and centered around a central
  value.
  This result is interpreted to mean we can expect the bins normalizations
- postfit values to shift all together and most likely smaller than their
- prefit values.
+ postfit values to shift all together uniformly and most likely smaller
+ in magnitude than their prefit values.
 \end_layout
 
 \begin_layout Standard
@@ -6317,6 +6313,7 @@ Eigenvalue
 
 \begin_layout Plain Layout
 Eigenvalues of the sample covariance.
+ The values are sorted from largest to smallest in magnitude.
  Note that the parameter indices, which represent the bin normalization
  indices, are offset from their fit indices value by 99.
 \begin_inset CommandInset label
@@ -6375,6 +6372,13 @@ status open
 
 \begin_layout Plain Layout
 Principal component for the sample variance.
+ This is the eigenvector associated with the largest eigenvalue of magnitude
+ 2029.
+ Each parameter coefficient refers to the slope of the axis that describes
+ most of the variance in the sample.
+ The coefficients are all negative and are of similar magnitude.
+ Together, they suggest all the normalization parameters respond linearly
+ and uniformly.
  Note that the parameter indices, which represent the bin normalization
  indices, are offset from their fit indices value by 99.
 \begin_inset CommandInset label
@@ -6411,41 +6415,89 @@ Principal Component for the Sample Variance
 \end_layout
 
 \begin_layout Standard
-Using 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:effective-degrees-of-freedom"
-plural "false"
-caps "false"
-noprefix "false"
+Additionally, we can estimate the effective degrees of freedom for the bin
+ normalization parameters.
+ The effective degrees of freedom is given by
+\begin_inset Formula 
+\begin{equation}
+\text{df}(\lambda)=\sum_{i=0}^{N_{\text{d}}}\frac{v_{i}}{v_{i}+\lambda},\label{eq:effective-degrees-of-freedom}
+\end{equation}
 
 \end_inset
 
-, we can estimate the effective degrees of freedom in the fit.
- In the BANFF fit test statistic, the detector systematics penalty scale
- is set to one (1), meaning that 
-\begin_inset Formula $\lambda=1$
+where 
+\begin_inset Formula $v_{i}$
 \end_inset
 
- in 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:effective-degrees-of-freedom"
-plural "false"
-caps "false"
-noprefix "false"
+ are the eigenvalues of 
+\begin_inset Formula $V^{\prime}$
+\end_inset
+
+ and 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ is a tunable parameter
+\begin_inset CommandInset citation
+LatexCommand cite
+key "springer_series978-0-387-84858-7"
+literal "false"
 
 \end_inset
 
 .
- It is found that the effective degrees of freedom is about 137, which is
- about 29% of 
+ The idea behind 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:effective-degrees-of-freedom"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is that although all 
 \begin_inset Formula $N_{\text{d}}$
 \end_inset
 
+ coefficients will be non-zero, they are restricted to vary by the magnitude
+ of 
+\begin_inset Formula $\lambda$
+\end_inset
+
 .
- This suggests that a smaller number bin normalization parameters can be
- used in the BANFF fit analysis and have similar response to the data variance.
+ In particular, 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ represents the regularization strength for the detector systematics penalty,
+ which is set to one (
+\begin_inset Formula $\lambda=1$
+\end_inset
+
+) in the BANFF fit.
+ If there was no (regularization) penalty, or 
+\begin_inset Formula $\lambda=0$
+\end_inset
+
+, then the number of degrees of freedom is df(0)=
+\begin_inset Formula $N_{d}$
+\end_inset
+
+.
+ It is found that there are about 137 effective degrees of freedom for the
+ bin normalization parameters, or 29% of 
+\begin_inset Formula $N_{\text{d}}(=462)$
+\end_inset
+
+.
+ This suggests that a much smaller number bin normalization parameters can
+ be used in the BANFF fit analysis, and that they can have similar response
+ to the sample variance.
+ This is particularly important since this improves computational performance
+ while maintaining predictability power in the ND constraint measurement.
+ No further reduction in the number of bin normalization parameters were
+ pursued due to time constraints.
 \end_layout
 
 \end_inset
@@ -6463,16 +6515,14 @@ Cross Section Model
 \end_layout
 
 \begin_layout Standard
-There are a number of neutrino-nucleus model and other related systematics
- implemented in BANFF to account for the uncertainties in cross section
- measurements.
+There are a number of neutrino-nucleus interaction model parameters implemented
+ in BANFF to account for the uncertainties in cross section measurements.
  They are frequently updated to account for new models and constraints from
  external data.
  The cross section models used in this analysis use the T2K 2017 parameterizatio
 n, which is a canonical set of parameters shared among all analyses in T2K.
  A gross description of the cross section model is provided here with a
- full technical description of the parameterization is given in the following
- reference
+ full description in the following reference
 \begin_inset CommandInset citation
 LatexCommand cite
 key "PhysRevLett.121.171802"
@@ -6511,11 +6561,18 @@ where
 \end_inset
 
  are NEUT nominal and ND constrained parameters, respectively.
- The prefit values for the normalization parameters are set to (1) unless
- the prefit is different from the nominal NEUT model.
- And finally functional parameters are normalization factors for basis functions
- in a particular parameter space.
- For example the parameters 
+ The prefit values for the normalizations are set to (1) unless specified.
+ And finally functional parameters are scalars to model a cross section
+ of a true kinematic.
+ For example, if a cross section is linear in 
+\begin_inset Formula $Q^{2}$
+\end_inset
+
+ and is given by 
+\begin_inset Formula $\sigma(Q^{2})=AQ^{2}+B$
+\end_inset
+
+, 
 \begin_inset Formula $A$
 \end_inset
 
@@ -6523,15 +6580,7 @@ where
 \begin_inset Formula $B$
 \end_inset
 
- are normalizations for the slope and intercept for a linear curve 
-\begin_inset Formula $f(x)=$
-\end_inset
-
-
-\begin_inset Formula $Ax+B$
-\end_inset
-
-.
+ are the functional parameters in the model.
 \end_layout
 
 \begin_layout Standard
@@ -6548,11 +6597,20 @@ literal "false"
 \end_layout
 
 \begin_layout Subsubsection
-CCQE and CC-
-\begin_inset Formula $0\pi$
+The CCQE and CC-
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$0$
+\backslash
+pititle{}
+\end_layout
+
 \end_inset
 
-
+ Models
 \end_layout
 
 \begin_layout Standard
@@ -6567,11 +6625,11 @@ y are CCQE and CCQE-like interactions, collectively called CC-0
 \end_inset
 
  appearance maximum, 
-\begin_inset Formula $E_{\nu}=$
+\begin_inset Formula $E_{\nu}=0.6$
 \end_inset
 
-0.6 GeV, the CCQE interaction is the largest contributor to the neutrino
- cross section as shown in 
+ GeV, the CCQE interaction is the largest contributor to the neutrino cross
+ section as shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:PredictedCCincxsec"
@@ -6582,10 +6640,11 @@ noprefix "false"
 \end_inset
 
 .
- The nominal CCQE model in NEUT is a Spectral Function from Benhar and others
+ The nominal CCQE model in NEUT is a Spectral Function (SF) from Benhar
+ et al
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Benhar:1994hw"
+key "Benhar:1995"
 literal "false"
 
 \end_inset
@@ -6593,25 +6652,10 @@ literal "false"
 .
  
 \color black
-An alternative CCQE model uses the Llewellyn-Smith model
-\begin_inset CommandInset citation
-LatexCommand cite
-key "LlewellynSmith:1971uhs"
-literal "false"
-
-\end_inset
-
- 
+An alternative CCQE model incorporates the Llewellyn-Smith dipole axial
+ form factor
 \color inherit
-with a dipole
-\begin_inset CommandInset citation
-LatexCommand cite
-key "PhysRev.141.1298"
-literal "false"
 
-\end_inset
-
- axial form factor
 \begin_inset Foot
 status collapsed
 
@@ -6622,18 +6666,19 @@ A form factor is a measure of scattering amplitude in the form of the Fourier
 
 \end_inset
 
-, BBBA05 vector form factors
+
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Bradford2006"
+key "PhysRev.141.1298,LlewellynSmith:1971uhs"
 literal "false"
 
 \end_inset
 
- coupled to a Smith-Miniz Relativistic Fermi Gas
+ and BBBA05 vector form factors coupled to a Smith-Miniz Relativistic Fermi
+ Gas
 \begin_inset CommandInset citation
 LatexCommand cite
-key "SMITH1972605,Niewczas:2015iea"
+key "SMITH1972605,Niewczas:2015iea,Bradford2006"
 literal "false"
 
 \end_inset
@@ -6657,7 +6702,7 @@ literal "false"
 \end_inset
 
  (2p2h).
- An additional nuclear model called 
+ An additional nuclear model called the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -6692,8 +6737,7 @@ literal "false"
 Llewellyn-Smit
 \color inherit
 h+RFG model, 2p2h excitation, and RPA nuclear model.
- This combination was selected due to tension using the SF model to match
- with external data 
+ This combination was selected due to poor data matching with the SF model
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Wret2019"
@@ -6731,7 +6775,7 @@ ce{^{12}C}
 
 \end_inset
 
- and 
+ and one for 
 \begin_inset ERT
 status open
 
@@ -6745,8 +6789,8 @@ ce{^{16}O}
 \end_inset
 
  that describe the momentum of nucleons on the surface of a RFG.
- In the past, these parameters have been shown to work as effective models
- in T2K when unconstrained.
+ In the past, using these parameters has been shown to work as effective
+ parameters in T2K when unconstrained.
  In this analysis, these three parameter are unconstrained.
  In other words, a flat prior is used for 
 \begin_inset Formula $M_{A}^{\text{QE}}$
@@ -6765,7 +6809,7 @@ ce{^{16}O}
 
 \begin_layout Standard
 For the 2p2h excitation, there are a total of 5 parameters to describe the
- uncertainty in the model.
+ model.
  Three are three normalization terms: 
 \begin_inset Formula $\nu$
 \end_inset
@@ -6845,7 +6889,7 @@ ce{^{12}C}
 
 \end_inset
 
- and 
+ and one for 
 \begin_inset ERT
 status open
 
@@ -6858,19 +6902,22 @@ ce{^{16}O}
 
 \end_inset
 
-, to describe the uncertainties in the contributing modes in 2p2h.
- These modes are called Meson Exchange Current (MEC) which involve a virtual
- meson exchange between the nucleons, nucleon-nucleon correlations (NN)
- which involves virtual particle exchange, and the MEC-NN interference.
+.
+ They are used constrain the interplay of the contributing modes in 2p2h.
+ One contributing mode is the Meson Exchange Current (MEC) which involves
+ a virtual meson exchange between the nucleons.
+ The other mode is nucleon-nucleon (NN) correlations which involves virtual
+ particle exchange.
  A shape value of -1 determines 2p2h is completely due to MEC, 0 is the
  nominal MC 2p2h model, and +1 determines 2p2h is completely due to NN.
- Any value in between 
+ Any differences in the event rate in the region between 
 \begin_inset Formula $\pm1$
 \end_inset
 
- include uses the interference term to absorb differences in the event rate.
- However, since no T2K nor external neutrino data can constrain the neutrino-ind
-uced 2p2h interaction, a flat prior is set for all 2p2h parameters.
+ is absorbed by a interference term.
+ However, since no existing T2K nor external neutrino data can constrain
+ the neutrino-induced 2p2h interaction, a flat prior is set for all 2p2h
+ parameters.
 \end_layout
 
 \begin_layout Standard
@@ -6903,51 +6950,11 @@ literal "false"
 
  was found to work well to mimic the inherent uncertainties in the Nieves
  RPA model.
- Using a third order polynomial in the Bernstein polynomial basis 
-\begin_inset Formula $B_{i}^{n}$
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "FAROUKI2012379"
-literal "false"
-
-\end_inset
-
- 
+ The functional is given by
 \begin_inset Formula 
 \begin{equation}
-B_{i}^{n}\left(x\right)=\binom{n}{i}x^{i}\left(1-x\right)^{n-i}\quad x\in[0,1]\label{eq:BernsteinBasis}
-\end{equation}
-
-\end_inset
-
-where
-\begin_inset Formula 
-\begin{equation}
-\binom{n}{i}=\frac{n!}{\left(n-i\right)!\times i!}.\label{eq:nCr}
-\end{equation}
-
-\end_inset
-
-with a high-
-\begin_inset Formula $Q^{2}$
-\end_inset
-
- exponential tail, the 
-\begin_inset Quotes eld
-\end_inset
-
-BeRPA
-\begin_inset Quotes erd
-\end_inset
-
- model functional weight is parameterized as
-\begin_inset Formula 
-\begin{equation}
-w_{\text{BeRPA}}\left(Q^{2}\right)=\begin{cases}
-A\left(1-x\right)^{3}+3B\left(1-x\right)^{2}x+3p_{1}\left(1-x\right)x^{2}+Dx^{3} & Q^{2}\leq U\\
+w\left(Q^{2}\right)=\begin{cases}
+A\beta_{0}^{3}\left(x\right)+B\beta_{1}^{3}\left(x\right)+p_{1}\beta_{2}^{3}\left(x\right)+D\beta_{3}^{3}\left(x\right) & Q^{2}\leq U\\
 1+p_{2}\exp\left(-E\left[Q^{2}-U\right]\right), & Q^{2}>U
 \end{cases}\label{eq:BeRPA}
 \end{equation}
@@ -6959,6 +6966,42 @@ where
 \end_inset
 
 , 
+\begin_inset Formula $\beta_{i}^{n}\left(x\right)$
+\end_inset
+
+ are the Bernstein polynomials
+\begin_inset CommandInset citation
+LatexCommand cite
+key "FAROUKI2012379"
+literal "false"
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{equation}
+\beta_{i}^{n}\left(x\right)=\binom{n}{i}x^{i}\left(1-x\right)^{n-i}\quad x\in[0,1],\label{eq:BernsteinBasis}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula $p_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $p_{2}$
+\end_inset
+
+ absorb the continuity conditions, 
+\begin_inset Formula 
+\begin{equation}
+p_{1}=D+\frac{UE\left(D-1\right)}{3},\quad p_{2}=D-1,\label{eq:BeRPAContinuity}
+\end{equation}
+
+\end_inset
+
+and 
 \begin_inset Formula $A$
 \end_inset
 
@@ -6970,31 +7013,18 @@ where
 \begin_inset Formula $D$
 \end_inset
 
-, and 
+, 
 \begin_inset Formula $E$
 \end_inset
 
- are scale/normalization factors for the basis functions, and 
+, and 
 \begin_inset Formula $U$
 \end_inset
 
- signifies when the two functions intersect with 
-\begin_inset Formula $p_{1}$
-\end_inset
-
- and 
-\begin_inset Formula $p_{2}$
-\end_inset
-
- absorbing the continuity conditions
-\begin_inset Formula 
-\begin{equation}
-p_{1}=D+\frac{UE\left(D-1\right)}{3},\quad p_{2}=D-1.\label{eq:BeRPAContinuity}
-\end{equation}
-
-\end_inset
-
-The parameters 
+ are the functional parameters.
+ This functional form serve to correct for collective nuclear effects not
+ modeled in NEUT and is called the Bernstein RPA (BeRPA) model.
+ The parameters 
 \begin_inset Formula $A$
 \end_inset
 
@@ -7018,15 +7048,24 @@ The parameters
 \end_layout
 
 \begin_layout Subsubsection
-CC-
-\begin_inset Formula $1\pi$
+The CC-
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1$
+\backslash
+pititle{}
+\end_layout
+
 \end_inset
 
-
+ Model
 \end_layout
 
 \begin_layout Standard
-Another important exclusive channel in NEUT are resonance states that produce
+Another important exclusive channel in NEUT is resonance states that produce
  a single pion or CC-
 \begin_inset Formula $1\pi$
 \end_inset
@@ -7036,10 +7075,14 @@ Another important exclusive channel in NEUT are resonance states that produce
 \begin_inset Formula $1\pi$
 \end_inset
 
- model is based on the Rein-Seghal model
+ model incorporates the Rein-Seghal model of neutrino-induced 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ resonance decay
 \begin_inset CommandInset citation
 LatexCommand cite
-key "rein-sehgal"
+key "PhysRevD.90.093001,Graczyk:2009qm,PhysRevD.77.053001,rein-sehgal"
 literal "false"
 
 \end_inset
@@ -7052,25 +7095,8 @@ literal "false"
 
 \end_inset
 
- of neutrino-induced 
-\begin_inset Formula $\Delta$
-\end_inset
-
- resonance decay
-\begin_inset CommandInset citation
-LatexCommand cite
-key "PhysRevD.90.093001,Graczyk:2009qm,PhysRevD.77.053001"
-literal "false"
-
-\end_inset
-
 .
- There are three tunable parameters that describe the systematics in the
- CC-
-\begin_inset Formula $1\pi$
-\end_inset
-
- model.
+ There are just three tunable parameters in the model.
  They are resonant axial mass 
 \begin_inset Formula $M_{A}^{\text{Res}}$
 \end_inset
@@ -7084,24 +7110,8 @@ literal "false"
 \end_inset
 
  background.
- In particular, 
-\begin_inset Formula $M_{A}^{\text{Res}}$
-\end_inset
-
- and 
-\begin_inset Formula $C_{A}^{5}$
-\end_inset
-
- are strongly anticorrelated due to the parameterization of the form factor
-\begin_inset Formula 
-\begin{equation}
-f\left(Q^{2}\right)=C_{A}^{5}\left(1+\frac{Q^{2}}{\left(M_{A}^{\text{Res}}c^{2}\right)^{2}}\right)^{-2}.\label{eq:CC1piaxialformfactor}
-\end{equation}
-
-\end_inset
-
-Again, this model is an effective model since the uncertainties were tuned
- to bubble chamber data from Brookhaven National Laboratory
+ These three parameters are known to effectively describe neutrino-induced
+ single pion production data from Brookhaven National Laboratory
 \begin_inset CommandInset citation
 LatexCommand cite
 key "PhysRevD.34.2554"
@@ -7118,11 +7128,23 @@ literal "false"
 \end_inset
 
 .
-\end_layout
+ It is important to know that 
+\begin_inset Formula $M_{A}^{\text{Res}}$
+\end_inset
 
-\begin_layout Standard
-Harder to measure processes like coherent pion production are discussed
- next.
+ and 
+\begin_inset Formula $C_{A}^{5}$
+\end_inset
+
+ are strongly anticorrelated due to the parameterization of the form factor
+\begin_inset Formula 
+\begin{equation}
+f\left(Q^{2}\right)=C_{A}^{5}\left(1+\frac{Q^{2}}{\left(M_{A}^{\text{Res}}c^{2}\right)^{2}}\right)^{-2}.\label{eq:CC1piaxialformfactor}
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -7180,8 +7202,8 @@ literal "false"
 \end_inset
 
 .
- Three tunable normaliation parameters are used describe the uncertainties
- in coherent production: CC on 
+ Three tunable normalization parameters are used describe the coherent productio
+n model: CC on 
 \begin_inset ERT
 status open
 
@@ -7211,24 +7233,25 @@ ce{^{16}O}
 \end_layout
 
 \begin_layout Subsubsection
-CC DIS
+The CC DIS Model
 \end_layout
 
 \begin_layout Standard
-The CC DIS process, which also includes multiple pion production, systematic
- is treated as a normalization with a relatively simple uncertainty, 
-\begin_inset Formula $\tilde{\sigma}_{\text{CCDIS}}$
+The CC DIS process, which also includes multiple pion production, is modeled
+ as a shape parameter as a function of 
+\begin_inset Formula $E_{\nu}$
 \end_inset
 
-, of 
+.
+ The parameter is has a simple uncertainty relation of 
 \begin_inset Formula 
 \[
-\sigma_{\text{CCDIS}}\left(E_{\nu}\right)=\frac{0.4}{\Enu\text{ [GeV]}}
+\frac{0.4}{\Enu\text{ [GeV]}}(\%)
 \]
 
 \end_inset
 
-where the fractional uncertainty at 4.0 GeV is ~10%
+where the uncertainty at 4.0 GeV is 10%
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Wret2019"
@@ -7240,7 +7263,7 @@ literal "false"
 \end_layout
 
 \begin_layout Subsubsection
-NC Other
+The NC Other Model
 \end_layout
 
 \begin_layout Standard
@@ -7250,8 +7273,7 @@ There is one free normalization parameter for the NC processes.
 \begin_inset Formula $\eta$
 \end_inset
 
--meson production, and elastic processes with a conservative 30% fractional
- uncertainty
+-meson production, and elastic processes with a 30% fractional uncertainty
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Wret2019"
@@ -7298,12 +7320,12 @@ literal "false"
 \end_inset
 
 .
- These processes are divided into four classes: inelastic (INEL) scattering,
- pion absorption (ABS), pion production (PROD), and charge exchange (CEX).
- There are a total of six FSI shape parameters in the fit.
- The PROD and ABS classes are each single shape parameters.
- For the INEL and CEX classes, they divided into low (LO) and high (HI)
- energy regions where the transition occurs at 
+ These processes are divided into six classes with one parameter for each.
+ These classes are the low energy inelastic scattering (INEL), high energy
+ INEL, pion absorption (ABS), pion production (PROD), low energy charge
+ exchange (CEX), and high energy CEX.
+ The low and high energy transition for both the inelastic scattering and
+ charge exchange processes occurs at 
 \begin_inset Formula $p_{\pi}=500$
 \end_inset
 
@@ -7323,7 +7345,8 @@ As mentioned in the CC-
 \begin_inset Formula $U$
 \end_inset
 
- parameter is fixed to remove correlations with the other BeRPA scale parameters.
+ parameter is fixed to minimize correlations with the other BeRPA scale
+ parameters.
  However, there are four fixed normalization parameters in the BANFF fit
  since they correspond to SK only parameters.
  They are included in the fit in order to maintain consistency between the
@@ -7349,7 +7372,7 @@ As mentioned in the CC-
 \begin_inset Formula $1\gamma$
 \end_inset
 
- event rate, and NC other far event rate.
+ event rate, and NC other far detector event rate.
 \end_layout
 
 \begin_layout Subsubsection
@@ -7535,7 +7558,7 @@ Correlation
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Cross section parameters prefit covariance (a) and correlation (b) matrices.
+Cross section parameters prefit covariance and correlation matrices.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -7548,7 +7571,7 @@ name "fig:Cross-section-correlations-prefit"
 status open
 
 \begin_layout Plain Layout
-Cross Section Parameters Prefit Covariance Matrix
+Cross Section Parameters Prefit Covariance and Correlation Matrices
 \end_layout
 
 \end_inset
@@ -9774,12 +9797,12 @@ This chapter has described all the fit bins and systematic parameters that
  The flux model is constrained by T2K primary and secondary beamline data
  while the cross sections are constrained by external data.
  Finally, the detector systematics are determined via an ensemble of toy
- experiments based on well established control samples in the ND280.
+ experiments based on well established control samples in the ND280 detector.
 \end_layout
 
 \begin_layout Standard
-Next chapter explores the set of validation studies to examine how the BANFF
- fit works.
+The next chapter describe the set of validation studies used to examine
+ how the BANFF fit performs.
 \end_layout
 
 \end_inset
