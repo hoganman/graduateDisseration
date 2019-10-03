@@ -3637,7 +3637,7 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3771,8 +3771,8 @@ The
 \begin_inset Formula $\pod$
 \end_inset
 
--TPC) matching efficiency is estimated to have a small systematic effect
- on the analysis.
+-TPC) inter-detector track matching efficiency is estimated to have a small
+ systematic effect on the analysis.
  It was analyzed to have over a 99.8% data and MC efficiency in the single
  track 
 \begin_inset Formula $\numu$
@@ -3789,8 +3789,8 @@ The
 
  track samples, the matching efficiency for non-single track samples is
  unknown.
- The best constraint is from the private T2K technical note on the single
- bin 
+ The best constraint on multiple track inter-detector matching is from the
+ private T2K technical note on the single bin 
 \begin_inset Formula $\numubar/\numu$
 \end_inset
 
@@ -3802,14 +3802,29 @@ literal "false"
 
 \end_inset
 
-, which estimated the uncertainty at less than 0.14% using a in-house matching
- algorithm.
- Since this analysis uses a different track matching algorithm, the uncertainty
- is not guaranteed to remain constant across 
-\begin_inset Formula $(p,\cos\theta)$
+.
+ The analysis estimated the uncertainty at less than 0.14%, albeit using
+ the 
+\begin_inset Quotes eld
 \end_inset
 
- bins.
+pre-Global
+\begin_inset Quotes erd
+\end_inset
+
+ technique mentioned in Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:P0DSelections"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Because their track matching algorithm is different than Global's algorithm,
+ the uncertainty is not guaranteed to remain constant across the fit bins.
  A conservative estimate of 1% for the 
 \begin_inset Formula $\pod$
 \end_inset
@@ -3828,7 +3843,7 @@ Now that we know the systematics that affect the analysis, we can now begin
 \end_layout
 
 \begin_layout Subsubsection
-Detector Systematics Penalty
+Toy Experiments and the Detector Systematics Penalty
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:Detector-Systematics-Penalty"
