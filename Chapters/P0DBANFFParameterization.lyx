@@ -194,23 +194,12 @@
 \begin_body
 
 \begin_layout Standard
-In addition to the likelihood ratio maximization, the BANFF fit includes
- three sources of systematic uncertainties: neutrino flux, cross section
- model, and detector inefficiencies.
- This chapter explores the fit binning and penalty terms in the test statistic
+This chapter explores the fit binning and penalty terms in the test statistic
  used for this analysis.
+ The BANFF fit includes three sources of systematic uncertainties: neutrino
+ flux, cross section model, and detector inefficiencies.
  The sources of systematic uncertainty, also referred to just as systematics,
  will be defined and their effect on the analysis.
-\end_layout
-
-\begin_layout Standard
-This chapter is presented in the following order.
- The first section explores the method to define fit bins in the likelihood
- ratio.
- The second section is divided into three subsections to define the parameteriza
-tion of each penalty term in the test statistic.
- The penalty terms, discussed in order, are the neutrino flux model, the
- detector inefficiencies, and lastly the cross section model.
  These three terms directly affect the flux of neutrinos, efficiency of
  reconstruction, and the cross section for 
 \begin_inset Formula $\nu_{\alpha}$
@@ -227,6 +216,17 @@ noprefix "false"
 \end_inset
 
 .
+ 
+\end_layout
+
+\begin_layout Standard
+This chapter is presented in the following order.
+ The first section explores the method to define histogram fit bins in the
+ likelihood ratio.
+ The second section describes the parameterization of each penalty term
+ in the test statistic.
+ The penalty terms, discussed in order, are the neutrino flux model, the
+ detector inefficiencies, and lastly the cross section model.
 \end_layout
 
 \begin_layout Standard
@@ -273,9 +273,9 @@ The BANFF fit binning is optimized to ensure at least 1 predicted Monte
 
  sample when scaled to the collected data POT.
  The fit bins must also account for detector smearing effects.
- In order to mitigate smearing and event migration, the reconstructed kinematics
- were examined to their MC truth value using only correctly identified leptons
- in one-dimensional kinematic slices.
+ In order to mitigate smearing and event migration, the reconstructed muon
+ track kinematics were examined against correctly identified tracks in one-dimen
+sional kinematic slices.
  The kinematics are scanned across their full phase spaces in order to understan
 d the required width for a fit bin.
  The first fit bin is always defined starting from the kinematic maximum.
@@ -425,7 +425,7 @@ Main track momentum resolution for the
 \end_inset
 
  in FHC Mode CC 1-Track sample.
- Only correctly identified muons are shown.
+ Only correctly identified muons are used.
  The number of events is scaled to 
 \begin_inset Formula $10^{20}$
 \end_inset
@@ -500,7 +500,7 @@ residual
 \begin_inset Formula $\theta$
 \end_inset
 
- with respect to (wrt) the ND280 Z-axis were analyzed.
+ with respect to (wrt) the ND280 Z-axis was analyzed.
  The same bootstrapping algorithm described above was used to determine
  the mean and stddev of the 
 \begin_inset Formula $\theta$
@@ -605,7 +605,7 @@ Main track angular residuals for the
 \end_inset
 
  in FHC Mode CC 1-Track sample.
- Only correctly identified muons are shown.
+ Only correctly identified muons are used.
  The number of events is scaled to 
 \begin_inset Formula $10^{20}$
 \end_inset
@@ -677,20 +677,25 @@ ref{chap:BANFF-Likelihood}}
 \end_inset
 
 .
- This is discussed in the next section.
+ 
+\end_layout
+
+\begin_layout Subsection
+Fit Bin Edges
 \end_layout
 
 \begin_layout Standard
-The finalized fit bins are tabulated below.
- There are a total 988 fit bins with water-in and water-out modes sharing
+There are a total 988 fit bins with water-in and water-out modes sharing
  the same bin edges.
+ The finalized fit bins are tabulated below.
 \end_layout
 
 \begin_layout Itemize
+The 
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC Mode CC 1-Track:
+ in FHC Mode CC 1-Track water-in and water-out samples:
 \end_layout
 
 \begin_deeper
@@ -710,10 +715,11 @@ The finalized fit bins are tabulated below.
 
 \end_deeper
 \begin_layout Itemize
+The 
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC Mode CC N-Tracks:
+ in FHC Mode CC N-Tracks water-in and water-out samples:
 \end_layout
 
 \begin_deeper
@@ -733,10 +739,11 @@ The finalized fit bins are tabulated below.
 
 \end_deeper
 \begin_layout Itemize
+The 
 \begin_inset Formula $\numubar$
 \end_inset
 
- in RHC Mode CC 1-Track:
+ in RHC Mode CC 1-Track water-in and water-out samples:
 \end_layout
 
 \begin_deeper
@@ -756,10 +763,11 @@ The finalized fit bins are tabulated below.
 
 \end_deeper
 \begin_layout Itemize
+The 
 \begin_inset Formula $\numubar$
 \end_inset
 
- in RHC Mode CC N-Tracks:
+ in RHC Mode CC N-Tracks water-in and water-out samples:
 \end_layout
 
 \begin_deeper
@@ -779,10 +787,11 @@ The finalized fit bins are tabulated below.
 
 \end_deeper
 \begin_layout Itemize
+The 
 \begin_inset Formula $\numu$
 \end_inset
 
- in RHC CC 1-Track:
+ in RHC CC 1-Track water-in and water-out samples:
 \end_layout
 
 \begin_deeper
@@ -802,10 +811,11 @@ The finalized fit bins are tabulated below.
 
 \end_deeper
 \begin_layout Itemize
+The 
 \begin_inset Formula $\numu$
 \end_inset
 
- in RHC CC N-Tracks:
+ in RHC CC N-Tracks water-in and water-out samples:
 \end_layout
 
 \begin_deeper
@@ -871,7 +881,8 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-The first set of fit parameters described are the flux terms.
+The fit parameters are described in the following order.
+ The first set of parameters are the flux terms.
  This is followed by a description of the fit bin normalization parameters.
  The final topic is a description of the cross section parameters.
 \end_layout
@@ -886,8 +897,8 @@ Flux Model Parameters
 \end_layout
 
 \begin_layout Standard
-The T2K neutrino flux model is a description of the neutrino beam spectrum
- for each run period and flavor.
+The T2K neutrino flux model is a description of the neutrino beam energy
+ spectrum for each run period and flavor.
  This model includes simulations of the proton beam interactions and subsequent
  hadron production at the target.
  The predicted hadron production rate, including inside and outside the
@@ -926,140 +937,34 @@ literal "false"
 \end_inset
 
 .
+ The flux parameters are especially important since they are used as inputs
+ to the oscillation analysis.
+ 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/P0DBANFFParameterization/BANFF_Flux_matrix.png
-	lyxscale 50
-	width 45text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Covariance
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/P0DBANFFParameterization/BANFF_Flux_matrix_corr.png
-	lyxscale 50
-	width 45text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Correlation matrix
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-The BANFF prefit flux covariance matrix.
- Figure (a) is shows the covariance matrix which is the uncertainty of the
- normalization for the neutrino flux at both ND280 and SK.
- The covariance matrix is divided into submatrices in groups by detector,
- beam mode, and neutrino flavor.
- Figure (b) is the linear correlation coefficient for each covariance term.
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:BANFF-pre-fit-flux-covariance"
-
-\end_inset
-
-
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-The BANFF Prefit Flux Covariance Matrix
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The flux penalty term in the BANFF fit is defined, as previously seen in
- 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "chap:BANFF-Likelihood"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-, as
+The flux penalty term in the BANFF fit is defined as
 \begin_inset Formula 
 \begin{equation}
-\chi_{\text{Flux}}^{2}=\left(\flux-\flux_{0}\right)^{T}\left(V_{b}^{-1}\right)\left(\flux-\flux_{0}\right).\label{eq:DeltaChi2Flux}
+\chi_{\text{Flux}}^{2}=\left(\flux-\flux_{0}\right)^{T}\left(V^{-1}\right)\left(\flux-\flux_{0}\right),\label{eq:DeltaChi2Flux}
 \end{equation}
 
 \end_inset
 
-As a remainder, all penalty terms in this analysis have the form of 
+where 
+\begin_inset Formula $\vec{b}$
+\end_inset
+
+ is the vector of flux parameter values, 
+\begin_inset Formula $\vec{b}_{0}$
+\end_inset
+
+ is the vector of the initial parameter values, and 
+\begin_inset Formula $V$
+\end_inset
+
+ is the flux covariance matrix.
+ As a remainder, all penalty terms in this analysis have the form of 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:DeltaChi2Flux"
@@ -1070,12 +975,9 @@ noprefix "false"
 \end_inset
 
 .
- Each flux parameter, 
-\begin_inset Formula $b_{i}$
-\end_inset
-
- , is a neutrino energy bin normalization starting at one (1).
- Each parameter is defined as
+ Each flux parameter is a neutrino energy bin normalization starting at
+ one (1).
+ Formally, a flux bin is defined as 
 \begin_inset Formula 
 \begin{equation}
 b_{i}=\frac{N_{\nu_{\alpha},i}^{\prime}}{N_{\nu_{\alpha},i}},\label{eq:fluxtermdef}
@@ -1084,11 +986,11 @@ b_{i}=\frac{N_{\nu_{\alpha},i}^{\prime}}{N_{\nu_{\alpha},i}},\label{eq:fluxtermd
 \end_inset
 
 where 
-\begin_inset Formula $N_{\nu,i}$
+\begin_inset Formula $N_{\nu_{\alpha},i}$
 \end_inset
 
  and 
-\begin_inset Formula $N_{\nu,i}^{\prime}$
+\begin_inset Formula $N_{\nu_{\alpha},i}^{\prime}$
 \end_inset
 
  are the predicted and ND constrained 
@@ -1110,7 +1012,23 @@ each flux term is a ratio of rates
 Further, all penalty terms and covariance terms are dimensionless
 \shape default
 .
- The flux bins are differentiated by neutrino energy, horn current/polarity
+ A postfit value of 1.1 indicates that all events in that energy bin have
+ an additional weight of 1.1, signaling that the postfit prefers to increase
+ that neutrino flux by 10%.
+ Equivalently, this means 
+\begin_inset Formula $N_{\nu_{\alpha},i}^{\prime}$
+\end_inset
+
+ is 10% greater than 
+\begin_inset Formula $N_{\nu_{\alpha},i}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The flux bins are differentiated by neutrino energy, horn current/polarity
  (FHC mode and RHC mode), neutrino flavor (
 \begin_inset Formula $\numu$
 \end_inset
@@ -1128,53 +1046,21 @@ Further, all penalty terms and covariance terms are dimensionless
 \end_inset
 
 ), and detector (ND280 and SK).
- The flux binning and covariance matrix, shown in 
+ There are 50 ND280 and 50 SK flux parameters to yield a total of 100 flux
+ normalizations.
+ In addition, the bin edges are shared between the ND280 and SK.
+ The SK neutrino flux and the flux bin edges are shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "fig:BANFF-pre-fit-flux-covariance"
+reference "fig:UnoscillatedFluxSK"
 plural "false"
 caps "false"
 noprefix "false"
 
-\end_inset
-
-, is provided by the T2K flux group.
- Also shown in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:BANFF-pre-fit-flux-covariance"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- is the Pearson linear correlation coefficient matrix which is defined as
- 
-\begin_inset Formula 
-\begin{equation}
-\rho_{i,j}=\frac{V_{i,j}}{\sqrt{V_{i,i}V_{j,j}}},\label{eq:pearson-correlation}
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Formula $V$
-\end_inset
-
- is the covariance matrix and 
-\begin_inset Formula $i$
-\end_inset
-
- and 
-\begin_inset Formula $j$
-\end_inset
-
- are bins in 
-\begin_inset Formula $V$
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1291,24 +1177,11 @@ name "fig:UnoscillatedFluxSK"
 \end_layout
 
 \begin_layout Standard
-There are 50 ND280 and 50 SK flux parameters to yield a total of 100 flux
- normalizations.
- In addition, the bin edges are shared between the ND280 and SK.
- The SK neutrino flux and the flux bin edges are shown in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:UnoscillatedFluxSK"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
- In the BANFF fit, both ND280 and SK flux parameters are extracted simultaneousl
-y.
+In the BANFF fit, both ND280 and SK flux parameters are estimated simultaneously.
  This is achieved using correlations between ND280 and SK flux parameters
- as shown in 
+ in the covariance matrix.
+ The covariance matrix is provided by the T2K flux group and is shown in
+ 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:BANFF-pre-fit-flux-covariance"
@@ -1319,7 +1192,40 @@ noprefix "false"
 \end_inset
 
 .
- The tabulated flux parameters/bins in this analysis are given in 
+ Also shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:BANFF-pre-fit-flux-covariance"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is the Pearson linear correlation coefficient matrix which is defined as
+ 
+\begin_inset Formula 
+\begin{equation}
+\rho_{i,j}=\frac{V_{i,j}}{\sqrt{V_{i,i}V_{j,j}}},\label{eq:pearson-correlation}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $i$
+\end_inset
+
+ and 
+\begin_inset Formula $j$
+\end_inset
+
+ are bins in 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ The tabulated flux parameters/bins and uncertainties in this analysis are
+ given in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:Fluxbinning"
@@ -1330,20 +1236,118 @@ noprefix "false"
 \end_inset
 
 .
- Each flux bin is assigned an initial value of one (1) for all events in
- that neutrino energy bin.
- A postfit value of 1.1 indicates that all events in that energy bin have
- an additional weight of 1.1, signaling that the postfit prefers to increase
- that neutrino flux by 10%.
- Equivalently, this means 
-\begin_inset Formula $N_{\nu}^{\prime}$
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/P0DBANFFParameterization/BANFF_Flux_matrix.png
+	lyxscale 50
+	width 45text%
+
 \end_inset
 
- is 10% greater than 
-\begin_inset Formula $N_{\nu}$
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Covariance matrix
+\end_layout
+
 \end_inset
 
-.
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/P0DBANFFParameterization/BANFF_Flux_matrix_corr.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Correlation matrix
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The BANFF prefit flux covariance matrix.
+ Figure (a) is shows the covariance matrix which is the uncertainty of the
+ normalization for the neutrino flux at both ND280 and SK.
+ The covariance matrix is divided into submatrices in groups by detector,
+ beam mode, and neutrino flavor.
+ Figure (b) is the linear correlation coefficient for each covariance term.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:BANFF-pre-fit-flux-covariance"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+The BANFF Prefit Flux Covariance Matrix
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2445,14 +2449,15 @@ Detector Inefficiencies And Bins Normalization Parameters
 \end_layout
 
 \begin_layout Standard
-In the BANFF fit, bin normalization parameters are used to evaluate the
- detector inefficiency penalty term, 
+In the BANFF fit, fit bin normalization parameters are used to penalize
+ variations in the fit bins.
+ Varying fit bins without constraint is nonphysical due to known detector
+ inefficiencies and their systematic uncertainties.
+ This information is incorporated into the penalty term, 
 \begin_inset Formula $\chi_{\text{Det}}^{2}$
 \end_inset
 
 .
- Varying fit bins without constraint is nonphysical due to known detector
- inefficiencies and their systematic uncertainties.
  Since improperly modeled inefficiencies can cause events to migrate from
  bin-to-bin, numerous fake 
 \begin_inset Quotes eld
@@ -2494,23 +2499,6 @@ All the detector systematics are evaluated either as observable variations
 
 \begin_layout Standard
 This section is organized as follows.
- The systematic uncertainties relevant to this analysis are described in
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-mbox{Section~
-\backslash
-ref{subsec:Detector-Systematics}}
-\end_layout
-
-\end_inset
-
-.
  The systematics treatment model for the detector systematics developed
  to evaluate their effects on the analysis is described in 
 \begin_inset ERT
@@ -2523,6 +2511,23 @@ status open
 mbox{Section~
 \backslash
 ref{subsec:Systematic-Treatment-Models}}
+\end_layout
+
+\end_inset
+
+.
+ The specific systematic uncertainties relevant to this analysis are described
+ in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+mbox{Section~
+\backslash
+ref{subsec:Detector-Systematics}}
 \end_layout
 
 \end_inset
@@ -2565,6 +2570,290 @@ ref{subsec:Bin-Normalization-Parameters}}
 \end_layout
 
 \begin_layout Subsubsection
+Systematic Treatment Models
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Systematic-Treatment-Models"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The BANFF fit analysis uses toy experiment variations to evaluate the effect
+ of detector systematics on the analysis samples.
+ Each toy experiment loops over all the predicted events and varies the
+ known detector systematic effects.
+ Each systematic effect either varies the event's efficiency weight or event
+ observables.
+ Both the observable variation and efficiency-like weight treatments rely
+ on data-driven studies by comparing data and MC predictions in a control
+ sample
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Each control sample is validated in T2K prior to introduction to the BANFF
+ analysis.
+\end_layout
+
+\end_inset
+
+.
+ By using a large ensemble of toy experiments, the effect of the detector
+ systematics on the samples is evaluated.
+ 
+\end_layout
+
+\begin_layout Standard
+Efficiency-like corrections alter the number of predicted events as measured
+ by a control sample (CS).
+ The model used to evaluate efficiency-like systematics is given by
+\begin_inset Formula 
+\begin{equation}
+\epsilon_{\text{Data}}(o)=\left(\frac{\epsilon_{\text{Data}}(o)}{\epsilon_{\text{MC}}(o)}\right)_{\text{CS}}\epsilon_{\text{MC}}(o),\label{eq:effdatafromCS}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\epsilon_{\text{MC}}/\epsilon_{\text{Data}}$
+\end_inset
+
+ denotes the mean selection efficiency of the MC/data as a function of some
+ observable kinematic 
+\begin_inset Formula $o$
+\end_inset
+
+, and 
+\begin_inset Formula $\left(\ \right)_{\text{CS}}$
+\end_inset
+
+ refers to the efficiency measured in the CS.
+ We need to update this model to account for statistical uncertainties in
+ the CS.
+ The updated model, with 
+\begin_inset Formula $o$
+\end_inset
+
+ dependence assumed, is now 
+\begin_inset Formula 
+\begin{equation}
+\epsilon_{\text{Data}}^{\prime}=\left(\frac{\epsilon_{\text{Data}}+x_{\text{Data}}\cdot\sigma_{\epsilon_{\text{Data}}}}{\epsilon_{\text{MC}}+x_{\text{MC}}\cdot\sigma_{\epsilon_{\text{MC}}}}\right)_{\text{CS}}\epsilon_{\text{MC}}\label{eq:effdataWithErrfromCS}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\sigma_{\epsilon_{\text{MC}}}/\sigma_{\epsilon_{\text{Data}}}$
+\end_inset
+
+ is the standard deviation of the efficiency of the MC/Data and 
+\begin_inset Formula $x_{\text{Data}}$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{\text{MC}}$
+\end_inset
+
+ are uncorrelated, random normally distributed numbers from 
+\begin_inset Formula $\mathcal{N}\left(\mu=0,\sigma^{2}=1\right)$
+\end_inset
+
+.
+ All the variations are applied to the event, simultaneously affecting all
+ observables, and the event selection is rerun.
+ A weight is derived depending if the event is selected, 
+\begin_inset Formula $w_{\text{eff}}$
+\end_inset
+
+, or not selected, 
+\begin_inset Formula $w_{\text{ineff}}$
+\end_inset
+
+.
+ These weights are given below
+\begin_inset Formula 
+\begin{equation}
+\begin{aligned}w_{\text{eff}} & =\frac{\epsilon_{\text{Data}}^{\prime}}{\epsilon_{\text{MC}}}\\
+w_{\text{ineff}} & =\frac{1-\epsilon_{\text{Data}}^{\prime}}{1-\epsilon_{\text{MC}}}.
+\end{aligned}
+\label{eq:weighteff}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Observable variation systematics are evaluated as shifts to physically measured
+ quantities like particle track momentum and track length.
+ The systematic can be evaluated in two different ways:
+\end_layout
+
+\begin_layout Enumerate
+If the reconstructed observable, 
+\begin_inset Formula $o_{\text{reco}}$
+\end_inset
+
+, has a known true value, 
+\begin_inset Formula $o_{\text{true}}$
+\end_inset
+
+, then the difference between those two is used as scaling.
+ The varied observable is given by
+\begin_inset Formula 
+\begin{equation}
+o^{\prime}=o_{\text{true}}+\left(o_{\text{reco}}-o_{\text{true}}\right)\left(s+x\sigma_{s}\right),\label{eq:recotrueobsvar}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $s$
+\end_inset
+
+ is the mean scaling parameter used to match the true value, 
+\begin_inset Formula $\sigma_{s}$
+\end_inset
+
+ is the uncertainty on 
+\begin_inset Formula $s$
+\end_inset
+
+, and 
+\begin_inset Formula $x$
+\end_inset
+
+ is a random number from 
+\begin_inset Formula $\mathcal{N}\left(\mu=0,\sigma^{2}=1\right)$
+\end_inset
+
+.
+ The mean scaling parameter and its uncertainty are determined from the
+ standard deviations observed in the data and MC by
+\begin_inset Formula 
+\begin{equation}
+s=\frac{\delta^{\text{data}}}{\delta^{\text{MC}}}\quad\sigma_{s}=s\left|\frac{\sigma_{\delta^{\text{data}}}}{\delta^{\text{data}}}-\frac{\sigma_{\delta^{\text{MC}}}}{\delta^{\text{MC}}}\right|.\label{eq:scalingdefrecotrueobsvar}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+If the MC reconstructed observable is corrected to match the mean from some
+ CS reconstructed observable.
+ The varied observable in this case is given by
+\begin_inset Formula 
+\begin{equation}
+o^{\prime}=o_{\text{Nom}}+\Delta o+x\sigma_{\Delta o},\label{eq:obsvariation}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $o^{\prime}$
+\end_inset
+
+ is the varied observable value, 
+\begin_inset Formula $o_{\text{Nom}}$
+\end_inset
+
+ is the nominal MC value, 
+\begin_inset Formula $\Delta o$
+\end_inset
+
+ is the average correction to the observable, 
+\begin_inset Formula $\sigma_{\Delta o}$
+\end_inset
+
+ is the uncertainty on the correction, and 
+\begin_inset Formula $x$
+\end_inset
+
+ is a random, normal number from 
+\begin_inset Formula $\mathcal{N}\left(\mu=0,\sigma^{2}=1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Additional uncertainties from the magnetic field are also special cases
+ of the 2nd observable variation method specifically for the TPC momentum
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Wret2019"
+literal "false"
+
+\end_inset
+
+.
+ They are:
+\end_layout
+
+\begin_layout Itemize
+The TPC laser calibration corrections are applied after the magnetic field
+ (B-field) mapping corrections.
+ The B-field corrections are applied at event reconstruction while the calibrati
+on corrections are treated as a systematic uncertainty.
+ The varied momentum is given by
+\begin_inset Formula 
+\begin{equation}
+p^{\prime}=p_{\text{Nom}}+x\left(p_{\text{Map}}-p_{\text{Nom}}\right),\label{eq:obsvariationtpclaser}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $p_{\text{Nom}}$
+\end_inset
+
+ is the nominal MC prediction using the B-field corrections and 
+\begin_inset Formula $p_{\text{Map}}$
+\end_inset
+
+ is the updated momentum using the additional laser calibration mapping.
+\end_layout
+
+\begin_layout Itemize
+The momentum depends on some scale parameter 
+\begin_inset Formula $s$
+\end_inset
+
+.
+ The varied momentum due to the scale uncertainty is given by
+\begin_inset Formula 
+\begin{equation}
+p^{\prime}=p_{\text{Nom}}\left(1+x\sigma_{s}\right),\label{eq:obsvariationtpcmomentumscale}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\sigma_{s}$
+\end_inset
+
+ is the uncertainty on the scale.
+ In this parameterization, 
+\begin_inset Formula $s$
+\end_inset
+
+ is the scale of the magnet current.
+\end_layout
+
+\begin_layout Standard
+After all observables are varied and applied to the event, the event selections
+ are applied again.
+ By applying the selection cuts after all variations, the full impact of
+ the systematic on the sample and analysis bins can be evaluated.
+\end_layout
+
+\begin_layout Subsubsection
 Detector Systematics
 \begin_inset CommandInset label
 LatexCommand label
@@ -2576,27 +2865,13 @@ name "subsec:Detector-Systematics"
 \end_layout
 
 \begin_layout Standard
-The BANFF fit analysis has the ability to evaluate the effect of detector
- systematic uncertainties on the analysis samples.
- Since this analysis uses the 
+Since this analysis uses the 
 \begin_inset Formula $\pod$
 \end_inset
 
- and TPC detectors, systematics that affect both must be included.
- There are two types of systematic treatments in the BANFF analysis: observable
- variations and weights.
- Each treatment relies on the method of throwing a random number to evaluate
- the systematic's impact on the sample observables.
- Efficiency-like systematics are treated as weights to the MC predictions
- in order to evaluate the uncertainty the systematic has on an analysis.
- Observable variation systematics are evaluated as shifts to physically
- measured quantities like momentum and track length.
- Both rely on data-driven studies by comparing data and MC predictions in
- a control sample.
-\end_layout
-
-\begin_layout Standard
-The complete set of detector systematics and their treatment in the analysis
+ and TPC detectors, systematics that affect both must be included in the
+ toy experiments.
+ The complete set of detector systematics and their treatment in the analysis
  are listed in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -2608,7 +2883,7 @@ noprefix "false"
 \end_inset
 
 .
- The TPC-only systematics have been used in previous BANFF fit analysis
+ The TPC-only systematics that have been used in previous BANFF fit analysis
  are included in this analysis.
  Details on the TPC-only systematics are discussed in the following references
 \begin_inset CommandInset citation
@@ -2656,39 +2931,6 @@ The
 \end_inset
 
  detector fiducial mass.
-\end_layout
-
-\begin_layout Standard
-All of the 
-\begin_inset Formula $\pod$
-\end_inset
-
--only systematics were initially analyzed in the 
-\begin_inset Formula $\pod$
-\end_inset
-
- 
-\begin_inset Formula $\numu$
-\end_inset
-
- CC-
-\begin_inset Formula $0\pi$
-\end_inset
-
- cross section analysis 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "PhysRevD.97.012001"
-literal "false"
-
-\end_inset
-
-.
- The 
-\begin_inset Formula $\pod$
-\end_inset
-
--only systematics are discussed further below.
 \end_layout
 
 \begin_layout Standard
@@ -3239,7 +3481,15 @@ The
 \begin_inset Formula $0\pi$
 \end_inset
 
- cross section analysis, the same selection as the 
+ cross section analysis
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevD.97.012001"
+literal "false"
+
+\end_inset
+
+, the same selection as the 
 \begin_inset Formula $\numu$
 \end_inset
 
@@ -3284,7 +3534,7 @@ The remaining systematics, the
  due to time constraints on this author.
  Instead, they were treated as additional uncorrelated systematics on each
  bin normalization uncertainty with the normalization value remaining fixed.
- The treatment of these two systematics will be discussed shortly.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -3324,29 +3574,37 @@ Another problem with the mass uncertainty is due to structure deformations
 \end_inset
 
  is mounted to the ND280 basket leaving the those corners spatially fixed.
- When the water bags are filled, the WT volume expanded or 
+ When the water bags are filled, the WT volume expands or 
 \begin_inset Quotes eld
 \end_inset
 
-bulged
+bulges
 \begin_inset Quotes erd
 \end_inset
 
- from the middle filling small air gaps.
+ from the middle.
  The upstream end of the 
 \begin_inset Formula $\pod$
 \end_inset
 
-, the Upstream ECal, resisted deformations since it is physically against
- the ND280 support structure.
- However, the Central ECal (CECal) has no such restriction since there is
- a 
-\begin_inset Formula $\bigO 1$
+, the Upstream ECal, resists deformations since it is physically against
+ the ND280 support structure and magnet yoke.
+ The downstream end of the 
+\begin_inset Formula $\pod$
 \end_inset
 
- cm gap between it and the TPC.
- The CECal, which has a design thickness of 304 mm, was observed to bulge
- about 7-8 mm from its center as well
+, or the Central ECal (CECal), is free to deform, however, since there is
+ a few centimeters air gap between it and the TPC.
+ The CECal, which has a design thickness of 304 mm
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Assylbekov:2011sh"
+literal "false"
+
+\end_inset
+
+, was observed to bulge about 7-8 mm from its center due to WT bulging as
+ well
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Toki2016"
@@ -3355,6 +3613,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Standard
@@ -3378,13 +3637,12 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figures/Systematics/EvidenceOfP0DBulging.png
-	lyxscale 50
 	width 45text%
 
 \end_inset
@@ -3570,284 +3828,6 @@ Now that we know the systematics that affect the analysis, we can now begin
 \end_layout
 
 \begin_layout Subsubsection
-Systematic Treatment Models
-\begin_inset CommandInset label
-LatexCommand label
-name "subsec:Systematic-Treatment-Models"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-As mentioned above, there are two types of systematic treatments: efficiency-lik
-e correction weights and observable variations.
- This section will discuss both treatments and the model extrapolation methods
- to evaluate their effects on all BANFF fit samples.
- First is a description of efficiency-like systematic corrections and then
- followed by a description of the observable variation methods.
-\end_layout
-
-\begin_layout Standard
-Efficiency-like corrections alter the number of predicted events as measured
- by a control sample
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Each control sample is validated in T2K prior to introduction to the BANFF
- analysis.
-\end_layout
-
-\end_inset
-
- (CS).
- The model used to evaluate efficiency-like systematics is given by
-\begin_inset Formula 
-\begin{equation}
-\epsilon_{\text{Data}}(o)=\left(\frac{\epsilon_{\text{Data}}(o)}{\epsilon_{\text{MC}}(o)}\right)_{\text{CS}}\epsilon_{\text{MC}}(o),\label{eq:effdatafromCS}
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Formula $\epsilon_{\text{MC}}/\epsilon_{\text{Data}}$
-\end_inset
-
- denotes the mean selection efficiency of the MC/data as a function of some
- observable kinematic 
-\begin_inset Formula $o$
-\end_inset
-
-, and 
-\begin_inset Formula $\left(\ \right)_{\text{CS}}$
-\end_inset
-
- refers to the efficiency measured in the CS.
- We need to update this model to account for statistical uncertainties in
- the CS.
- The updated model, with 
-\begin_inset Formula $o$
-\end_inset
-
- dependence assumed, is now 
-\begin_inset Formula 
-\begin{equation}
-\epsilon_{\text{Data}}^{\prime}=\left(\frac{\epsilon_{\text{Data}}+x_{\text{Data}}\cdot\sigma_{\epsilon_{\text{Data}}}}{\epsilon_{\text{MC}}+x_{\text{MC}}\cdot\sigma_{\epsilon_{\text{MC}}}}\right)_{\text{CS}}\epsilon_{\text{MC}}\label{eq:effdataWithErrfromCS}
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Formula $\sigma_{\epsilon_{\text{MC}}}/\sigma_{\epsilon_{\text{Data}}}$
-\end_inset
-
- is the standard deviation of the efficiency of the MC/Data and 
-\begin_inset Formula $x_{\text{Data}}$
-\end_inset
-
- and 
-\begin_inset Formula $x_{\text{MC}}$
-\end_inset
-
- are uncorrelated, random normally distributed numbers from 
-\begin_inset Formula $\mathcal{N}\left(\mu=0,\sigma^{2}=1\right)$
-\end_inset
-
-.
- All the variations are applied to the event, simultaneously affecting all
- observables, and the event selection is rerun.
- A weight is derived depending if the event is selected, 
-\begin_inset Formula $w_{\text{eff}}$
-\end_inset
-
-, or not selected, 
-\begin_inset Formula $w_{\text{ineff}}$
-\end_inset
-
-.
- These weights are given below
-\begin_inset Formula 
-\begin{equation}
-\begin{aligned}w_{\text{eff}} & =\frac{\epsilon_{\text{Data}}^{\prime}}{\epsilon_{\text{MC}}}\\
-w_{\text{ineff}} & =\frac{1-\epsilon_{\text{Data}}^{\prime}}{1-\epsilon_{\text{MC}}}.
-\end{aligned}
-\label{eq:weighteff}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Observable variation systematics are evaluated as shifts to physically measured
- quantities like particle track momentum and track length.
- The systematic can be evaluated in two different ways:
-\end_layout
-
-\begin_layout Enumerate
-If the reconstructed observable, 
-\begin_inset Formula $o_{\text{reco}}$
-\end_inset
-
-, has a known true value, 
-\begin_inset Formula $o_{\text{true}}$
-\end_inset
-
-, then the difference between those two is used as scaling.
- The varied observable is given by
-\begin_inset Formula 
-\begin{equation}
-o^{\prime}=o_{\text{true}}+\left(o_{\text{reco}}-o_{\text{true}}\right)\left(s+x\sigma_{s}\right),\label{eq:recotrueobsvar}
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Formula $s$
-\end_inset
-
- is the mean scaling parameter used to match the true value, 
-\begin_inset Formula $\sigma_{s}$
-\end_inset
-
- is the uncertainty on 
-\begin_inset Formula $s$
-\end_inset
-
-, and 
-\begin_inset Formula $x$
-\end_inset
-
- is a random number from 
-\begin_inset Formula $\mathcal{N}\left(\mu=0,\sigma^{2}=1\right)$
-\end_inset
-
-.
- The mean scaling parameter and its uncertainty are determined from the
- standard deviations observed in the data and MC by
-\begin_inset Formula 
-\begin{equation}
-s=\frac{\delta^{\text{data}}}{\delta^{\text{MC}}}\quad\sigma_{s}=s\left|\frac{\sigma_{\delta^{\text{data}}}}{\delta^{\text{data}}}-\frac{\sigma_{\delta^{\text{MC}}}}{\delta^{\text{MC}}}\right|.\label{eq:scalingdefrecotrueobsvar}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-If the MC reconstructed observable is corrected to match the mean from some
- CS reconstructed observable.
- The varied observable in this case is given by
-\begin_inset Formula 
-\begin{equation}
-o^{\prime}=o_{\text{Nom}}+\Delta o+x\sigma_{\Delta o},\label{eq:obsvariation}
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Formula $o^{\prime}$
-\end_inset
-
- is the varied observable value, 
-\begin_inset Formula $o_{\text{Nom}}$
-\end_inset
-
- is the nominal MC value, 
-\begin_inset Formula $\Delta o$
-\end_inset
-
- is the average correction to the observable, 
-\begin_inset Formula $\sigma_{\Delta o}$
-\end_inset
-
- is the uncertainty on the correction, and 
-\begin_inset Formula $x$
-\end_inset
-
- is a random, normal number from 
-\begin_inset Formula $\mathcal{N}\left(\mu=0,\sigma^{2}=1\right)$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Additional uncertainties from the magnetic field are also special cases
- of the 2nd observable variation method specifically for the TPC momentum
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Wret2019"
-literal "false"
-
-\end_inset
-
-.
- They are:
-\end_layout
-
-\begin_layout Itemize
-The TPC laser calibration corrections are applied after the magnetic field
- (B-field) mapping corrections.
- The B-field corrections are applied at event reconstruction while the calibrati
-on corrections are treated as a systematic uncertainty.
- The varied momentum is given by
-\begin_inset Formula 
-\begin{equation}
-p^{\prime}=p_{\text{Nom}}+x\left(p_{\text{Map}}-p_{\text{Nom}}\right),\label{eq:obsvariationtpclaser}
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Formula $p_{\text{Nom}}$
-\end_inset
-
- is the nominal MC prediction using the B-field corrections and 
-\begin_inset Formula $p_{\text{Map}}$
-\end_inset
-
- is the updated momentum using the additional laser calibration mapping.
-\end_layout
-
-\begin_layout Itemize
-The momentum depends on some scale parameter 
-\begin_inset Formula $s$
-\end_inset
-
-.
- The varied momentum due to the scale uncertainty is given by
-\begin_inset Formula 
-\begin{equation}
-p^{\prime}=p_{\text{Nom}}\left(1+x\sigma_{s}\right),\label{eq:obsvariationtpcmomentumscale}
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Formula $\sigma_{s}$
-\end_inset
-
- is the uncertainty on the scale.
- In this parameterization, 
-\begin_inset Formula $s$
-\end_inset
-
- is the scale of the magnet current.
-\end_layout
-
-\begin_layout Standard
-After all observables are varied and applied to the event, the event selections
- are applied again.
- By applying the selection cuts after all variations, the full impact of
- the systematic on the sample and analysis bins can be evaluated.
-\end_layout
-
-\begin_layout Subsubsection
 Detector Systematics Penalty
 \begin_inset CommandInset label
 LatexCommand label
@@ -3861,7 +3841,8 @@ name "subsec:Detector-Systematics-Penalty"
 \begin_layout Standard
 The bin normalization penalty parameters are restrictions on freely varying
  fit bins.
- To determine the correlations between bins, many toy experiments are performed.
+ To determine the correlations between bins, a large ensemble of toy experiments
+ is generated.
  As described in 
 \begin_inset ERT
 status open
@@ -9783,7 +9764,7 @@ inverted 0
 status open
 
 \begin_layout Section
-BANFF Fit Parameterization Summary
+Chapter Summary
 \end_layout
 
 \begin_layout Standard
