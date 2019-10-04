@@ -2600,15 +2600,15 @@ Each control sample is validated in T2K prior to introduction to the BANFF
 
 \end_inset
 
-.
+ (CS).
  By using a large ensemble of toy experiments, the effect of the detector
  systematics on the samples is evaluated.
  
 \end_layout
 
 \begin_layout Standard
-Efficiency-like corrections alter the number of predicted events as measured
- by a control sample (CS).
+Efficiency-like corrections alter the number of predicted events in a fit
+ bin.
  The model used to evaluate efficiency-like systematics is given by
 \begin_inset Formula 
 \begin{equation}
@@ -2630,7 +2630,7 @@ where
 \begin_inset Formula $\left(\ \right)_{\text{CS}}$
 \end_inset
 
- refers to the efficiency measured in the CS.
+ refers to the selection efficiency measured in a CS.
  We need to update this model to account for statistical uncertainties in
  the CS.
  The updated model, with 
@@ -2843,14 +2843,14 @@ where
 \begin_inset Formula $s$
 \end_inset
 
- is the scale of the magnet current.
+ is the scale of the ND280 solenoid current.
 \end_layout
 
 \begin_layout Standard
-After all observables are varied and applied to the event, the event selections
- are applied again.
- By applying the selection cuts after all variations, the full impact of
- the systematic on the sample and analysis bins can be evaluated.
+After all observables are varied and applied to the event, the event selection
+ cuts are applied again.
+ By doing so after all variations are applied, the full impact of the systematic
+ on the sample and analysis bins can be evaluated.
 \end_layout
 
 \begin_layout Subsubsection
@@ -3873,9 +3873,8 @@ ref{subsec:Systematic-Treatment-Models}}
 
 \end_inset
 
-, each toy experiment varies event observables, i.e.
- the momentum and angle of the main track, and number of events in a fit
- bin.
+, each toy experiment varies event observables, the momentum and angle of
+ the main track, and number of events in a fit bin.
  The bin normalization parameter for the 
 \begin_inset Formula $i$
 \end_inset
@@ -4080,13 +4079,22 @@ where
 , in the BANFF fit is defined as 
 \begin_inset Formula 
 \begin{equation}
-V_{i,j}^{\text{Det}}=\frac{\left(V_{i,j}^{\text{Cov}}+V_{i,j}^{\text{Stat}}\right)}{N_{i}N_{j}},\label{eq:totaldetectorcovariance}
+V_{i,j}^{\text{Det}}=\frac{V_{i,j}^{\text{Cov}}+V_{i,j}^{\text{Stat}}}{N_{i}N_{j}},\label{eq:totaldetectorcovariance}
 \end{equation}
 
 \end_inset
 
-which is indeed dimensionless since we divided out the predicted event rate
- in bins 
+which is indeed dimensionless as required by 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:obsnormdef"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ since we divided out the predicted event rate in bins 
 \begin_inset Formula $i$
 \end_inset
 
@@ -4103,7 +4111,7 @@ As stated before, the
 \end_inset
 
  mass and track matching efficiency systematics are treated as uncorrelated
- systematics in the analysis.
+ systematics.
  In order to propagate their systematic uncertainties into the analysis,
  the detector covariance matrix given in 
 \begin_inset CommandInset ref
@@ -4152,7 +4160,7 @@ where
 \begin_inset Formula $\widetilde{\sigma}_{\text{Match}}^{2}=1\%$
 \end_inset
 
- are the is the 
+ are the 
 \begin_inset Formula $\pod$
 \end_inset
 
@@ -4288,37 +4296,13 @@ Starting with observable normalization bin with the highest statistics,
  Additionally if the two unmerged bin normalizations differ by more than
  10%, perform the bin merging.
  This step serves to smooth out the observable normalization prefit space.
- The procedure is also written in pseudocode in 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-mbox{
-\end_layout
-
-\end_inset
-
-Algorithm 
+ The procedure is also written in pseudocode in Algorithm 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "alg:binedges"
 plural "false"
 caps "false"
 noprefix "false"
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
 
 \end_inset
 
@@ -4779,12 +4763,16 @@ noprefix "false"
 \end_inset
 
 .
- While the problem of a few fit bins, each having large statistics, assigned
- to a single observable normalization parameter is still present, fluctuations
- between adjacent observable normalization parameters is iteratively minimized.
- A considerable drawback to designing bin normalizations in this way of
- varying detector systematics in toy experiments is that not all detector
- systematics affect the fit observables 
+ While the problem of the highest statistics bins being assigned to a single
+ observable normalization parameter is still present, fluctuations between
+ adjacent observable normalization parameters is iteratively minimized.
+ 
+\end_layout
+
+\begin_layout Standard
+A considerable drawback to using toy experiments to estimate the bin normalizati
+on values and covariance matrix is that not all detector systematics affect
+ the fit observables 
 \begin_inset Formula $(p,\cos\theta)$
 \end_inset
 
@@ -5557,18 +5545,8 @@ literal "false"
 \begin_inset Formula $\pod$
 \end_inset
 
- is varied using 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:recotrueobsvar"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-, it also changes the distance the truth matched particle travels in the
- 
+ is varied, it also changes the distance the truth matched particle travels
+ in the 
 \begin_inset Formula $\pod$
 \end_inset
 
