@@ -69,7 +69,7 @@
 %\usepackage{algorithm2e}
 \usepackage{algpseudocode}
 \end_preamble
-\options doctor, showframe
+\options doctor
 \use_default_options true
 \begin_modules
 fixltx2e
@@ -136,7 +136,7 @@ algorithm2e
 \use_refstyle 0
 \use_minted 0
 \branch Introduction
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -146,12 +146,12 @@ algorithm2e
 \color #faf0e6
 \end_branch
 \branch BANFFLikelihood
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch P0DSelections
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -166,52 +166,52 @@ algorithm2e
 \color #faf0e6
 \end_branch
 \branch FitterValidation
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch FitterResults
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch P0DFDGComparisons
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch Discussion
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixApplicationOfWeights
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixObsnorm
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixSigmaVariations
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixObsnormVariations
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixLikelihoodScans
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixLikelihoodPenaltyScans
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -221,12 +221,12 @@ algorithm2e
 \color #faf0e6
 \end_branch
 \branch AppendixPostfitParameters
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixCC1pi
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -249,7 +249,7 @@ algorithm2e
 \rightmargin 1in
 \bottommargin 1in
 \secnumdepth 3
-\tocdepth 2
+\tocdepth 1
 \paragraph_separation indent
 \paragraph_indentation default
 \is_math_indent 0
@@ -310,7 +310,7 @@ filename "macros/LyxTextMacros.lyx"
 \begin_layout Standard
 \begin_inset Branch PreambleAndMainMatter
 inverted 0
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset Branch Preamble

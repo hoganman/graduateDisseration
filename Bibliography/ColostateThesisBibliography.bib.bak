@@ -1571,6 +1571,22 @@
   Doi                      = {10.1103/PhysRevD.80.093001}
 }
 
+@Article{PhysRevD.77.053003,
+  Title                    = {Lepton mass effects in weak charged current single pion production},
+  Author                   = {Graczyk, K. M. and Sobczyk,  J.T.},
+  Journal                  = {Phys. Rev. D},
+  Year                     = {2008},
+
+  Month                    = mar,
+  Pages                    = {053003},
+  Volume                   = {77},
+
+  Doi                      = {10.1103/PhysRevD.77.053003},
+  Issue                    = {5},
+  Numpages                 = {7},
+  Publisher                = {American Physical Society}
+}
+
 @Article{PhysRevD.77.053001,
   Title                    = {Form factors in the quark resonance model},
   Author                   = {Graczyk, K. M. and Sobczyk, J. T.},
@@ -1584,22 +1600,6 @@
   Doi                      = {10.1103/PhysRevD.77.053001},
   Issue                    = {5},
   Numpages                 = {12},
-  Publisher                = {American Physical Society}
-}
-
-@Article{PhysRevD.77.053003,
-  Title                    = {Lepton mass effects in weak charged current single pion production},
-  Author                   = {Graczyk, Krzysztof M. and Sobczyk, Jan T.},
-  Journal                  = {Phys. Rev. D},
-  Year                     = {2008},
-
-  Month                    = mar,
-  Pages                    = {053003},
-  Volume                   = {77},
-
-  Doi                      = {10.1103/PhysRevD.77.053003},
-  Issue                    = {5},
-  Numpages                 = {7},
   Publisher                = {American Physical Society}
 }
 
@@ -2182,9 +2182,8 @@
 }
 
 @Article{Niewczas:2015iea,
-  Title                    = {Search for nucleon-nucleon correlations in
- neutrino-argon scattering},
-  Author                   = {Niewczas, Kajetan and Sobczyk, Jan T.},
+  Title                    = {Search for nucleon-nucleon correlations in neutrino-argon scattering},
+  Author                   = {Niewczas, K. and Sobczyk, J.T.},
   Journal                  = {Phys. Rev.},
   Year                     = {2016},
   Number                   = {3},
@@ -2315,7 +2314,7 @@
 
 @Article{rein-sehgal,
   Title                    = {Neutrino-excitation of baryon resonances and single pion production},
-  Author                   = {Dieter Rein and Lalit M Sehgal},
+  Author                   = {Rein, D. and Sehgal, L. M.},
   Journal                  = {Ann. Phys.},
   Year                     = {1981},
   Number                   = {1},
@@ -2554,6 +2553,18 @@
   Doi                      = {{10.1073/pnas.082099299}},
   ISSN                     = {{0027-8424}},
   Unique-id                = {{ISI:000175637300012}}
+}
+
+@Unpublished{Toki2016,
+  Title                    = {Update of P0D Inspection},
+  Author                   = {Toki, W.},
+  Note                     = {Private communication},
+
+  Month                    = {June},
+  Year                     = {2016},
+
+  Owner                    = {mhogan},
+  Timestamp                = {2019.10.02}
 }
 
 @Article{Walton:2014esl,

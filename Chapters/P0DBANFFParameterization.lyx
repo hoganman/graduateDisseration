@@ -232,7 +232,7 @@ This chapter is presented in the following order.
 \begin_layout Standard
 \begin_inset Branch P0DBANFFParameterizationFitBinning
 inverted 0
-status open
+status collapsed
 
 \begin_layout Section
 Fit Binning
@@ -1028,155 +1028,6 @@ Further, all penalty terms and covariance terms are dimensionless
 \end_layout
 
 \begin_layout Standard
-The flux bins are differentiated by neutrino energy, horn current/polarity
- (FHC mode and RHC mode), neutrino flavor (
-\begin_inset Formula $\numu$
-\end_inset
-
-, 
-\begin_inset Formula $\numubar$
-\end_inset
-
-, 
-\begin_inset Formula $\nue$
-\end_inset
-
-, and 
-\begin_inset Formula $\nuebar$
-\end_inset
-
-), and detector (ND280 and SK).
- There are 50 ND280 and 50 SK flux parameters to yield a total of 100 flux
- normalizations.
- In addition, the bin edges are shared between the ND280 and SK.
- The SK neutrino flux and the flux bin edges are shown in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:UnoscillatedFluxSK"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/Systematics/SKFHCFlux.png
-	lyxscale 50
-	width 45text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Unoscillated SK FHC flux
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/Systematics/SKRHCFlux.png
-	lyxscale 50
-	width 45text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Unoscillated SK RHC flux
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Neutrino Flux Prediction at SK and Flux Bin Edges.
- The flux prediction for FHC (RHC) mode is shown in figure on the left (right).
- The flux normalization parameters have an assigned energy range and are
- the same for both the SK and ND280 detectors.
- The energy binning used is shown below the plots.
- 
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Neutrino Flux Prediction at SK and Flux Bin Edges
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:UnoscillatedFluxSK"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 In the BANFF fit, both ND280 and SK flux parameters are estimated simultaneously.
  This is achieved using correlations between ND280 and SK flux parameters
  in the covariance matrix.
@@ -1224,19 +1075,6 @@ where
 \end_inset
 
 .
- The tabulated flux parameters/bins and uncertainties in this analysis are
- given in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "tab:Fluxbinning"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
- 
 \end_layout
 
 \begin_layout Standard
@@ -1348,6 +1186,168 @@ The BANFF Prefit Flux Covariance Matrix
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Systematics/SKFHCFlux.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Unoscillated SK FHC flux
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Systematics/SKRHCFlux.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Unoscillated SK RHC flux
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Neutrino flux prediction at SK and flux bin edges.
+ The flux prediction for FHC (RHC) mode is shown in figure on the left (right).
+ The flux normalization parameters have an assigned energy range and are
+ the same for both the SK and ND280 detectors.
+ The energy binning used is shown below the plots.
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Neutrino Flux Prediction at SK and Flux Bin Edges
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:UnoscillatedFluxSK"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The tabulated flux parameters/bins and uncertainties in this analysis are
+ given in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Fluxbinning"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ These are the first set of parameters in the fit.
+ The flux parameters are differentiated by neutrino energy, horn current/polarit
+y (FHC mode and RHC mode), neutrino flavor (
+\begin_inset Formula $\numu$
+\end_inset
+
+, 
+\begin_inset Formula $\numubar$
+\end_inset
+
+, 
+\begin_inset Formula $\nue$
+\end_inset
+
+, and 
+\begin_inset Formula $\nuebar$
+\end_inset
+
+), and detector (ND280 and SK).
+ There are 50 ND280 and 50 SK flux parameters to yield a total of 100 flux
+ normalizations.
+ In addition, the bin edges are shared between the ND280 and SK.
+ The SK neutrino flux and the flux bin edges are shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:UnoscillatedFluxSK"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1619,6 +1619,13 @@ tabularnewline
 
 \begin_layout Plain Layout
 
+
+\backslash
+newpage
+\end_layout
+
+\begin_layout Plain Layout
+
 16 & ND280 $
 \backslash
 nue$ FHC & 0.0 - 0.5 & 1$
@@ -1662,13 +1669,6 @@ tabularnewline
 pm$0.079766
 \backslash
 tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-newpage
 \end_layout
 
 \begin_layout Plain Layout
@@ -2412,6 +2412,13 @@ tabularnewline
 
 
 \backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
 end{longtable}
 \end_layout
 
@@ -2937,7 +2944,7 @@ The
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2961,7 +2968,7 @@ Systematic effect
 \begin_inset Text
 
 \begin_layout Plain Layout
-Affected Detector
+Affected detector
 \end_layout
 
 \end_inset
@@ -4804,37 +4811,13 @@ noprefix "false"
  However, the bin normalization standard deviations are very wide and able
  to effectively cover the range of possible bin normalizations, which minimizes
  the non-Gaussian effects of the systematic.
- All the varied toy experiment results are provided in 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-mbox{
-\end_layout
-
-\end_inset
-
-Appendix 
+ All the varied toy experiment results are provided in Appendix 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "app:NSigmaVariations"
 plural "false"
 caps "false"
 noprefix "false"
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
 
 \end_inset
 
@@ -5066,7 +5049,6 @@ Bin normalization edges for the
 \end_inset
 
  in RHC Mode samples.
- There are two plots shown for each sub-figure.
  The left and right plots show the bin normalization and the bin statistical
  fractional error, respectively, if each fit bin had a single bin normalization.
  The dashed lines indicate the edges of the bin normalization parameters
@@ -5199,7 +5181,6 @@ Bin normalization edges for the
 \end_inset
 
  Background in RHC Mode samples.
- There are two plots shown for each sub-figure.
  The left and right plots show the bin normalization and the bin statistical
  fractional error, respectively, if each fit bin had a single bin normalization.
  The dashed lines indicate the edges of the bin normalization parameters
@@ -5574,8 +5555,8 @@ An unexpected phenomenon was observed when comparing the toy experiments
  With the ELossRes variation disabled in the toy experiments, a relatively
  large shift in the bin prediction was observed compared to the nominal
  prediction.
- This shift was expected, but was not expected was the direction of the
- shift as shown in 
+ This shift was expected, but what was not expected was the direction of
+ the shift as shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:Representative-event-variations"
@@ -5644,10 +5625,11 @@ noprefix "false"
 \end_layout
 
 \begin_layout Itemize
+The 
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC CC 1-Track bin normalization edges:
+ in FHC Mode CC 1-Track samples bin normalization edges:
 \end_layout
 
 \begin_deeper
@@ -5667,10 +5649,11 @@ noprefix "false"
 
 \end_deeper
 \begin_layout Itemize
+The 
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC CC N-Tracks bin normalization edges:
+ in FHC Mode CC N-Tracks samples bin normalization edges:
 \end_layout
 
 \begin_deeper
@@ -5690,10 +5673,11 @@ noprefix "false"
 
 \end_deeper
 \begin_layout Itemize
+The 
 \begin_inset Formula $\numubar$
 \end_inset
 
- in RHC CC 1-Track bin normalization edges:
+ in RHC Mode CC 1-Track samples bin normalization edges:
 \end_layout
 
 \begin_deeper
@@ -5713,10 +5697,11 @@ noprefix "false"
 
 \end_deeper
 \begin_layout Itemize
+The 
 \begin_inset Formula $\numubar$
 \end_inset
 
- in RHC CC N-Tracks bin normalization edges:
+ in RHC Mode CC N-Tracks samples bin normalization edges:
 \end_layout
 
 \begin_deeper
@@ -5736,10 +5721,11 @@ noprefix "false"
 
 \end_deeper
 \begin_layout Itemize
+The 
 \begin_inset Formula $\numu$
 \end_inset
 
- in RHC CC T-track bin normalization edges:
+ in RHC Mode CC 1-Track samples bin normalization edges:
 \end_layout
 
 \begin_deeper
@@ -5759,10 +5745,11 @@ noprefix "false"
 
 \end_deeper
 \begin_layout Itemize
+The 
 \begin_inset Formula $\numu$
 \end_inset
 
- in RHC CC N-Tracks bin normalization edges:
+ in RHC Mode CC N-Tracks samples bin normalization edges:
 \end_layout
 
 \begin_deeper
@@ -5785,21 +5772,21 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figures/P0DBANFFParameterization/P0DMass_TPCMatch_study/obsNorm_cov_updated.png
 	lyxscale 50
-	height 2in
+	height 40theight%
 
 \end_inset
 
@@ -5810,46 +5797,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Detector penalty covariance matrix
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/P0DBANFFParameterization/P0DMass_TPCMatch_study/obsNorm_cov_updatedoriginaldifference.png
-	lyxscale 50
-	height 2in
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Formula $\pod$
-\end_inset
-
- mass and 
-\begin_inset Formula $\pod$
-\end_inset
-
--TPC matching efficiency contribution
+Covariance matrix
 \end_layout
 
 \end_inset
@@ -5867,14 +5815,14 @@ status collapsed
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figures/P0DBANFFParameterization/corr_dete_pref.png
 	lyxscale 50
-	height 4in
+	height 40theight%
 
 \end_inset
 
@@ -5885,7 +5833,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Detector penalty correlation matrix
+Correlation matrix
 \end_layout
 
 \end_inset
@@ -5903,17 +5851,7 @@ Detector penalty correlation matrix
 
 \begin_layout Plain Layout
 Detector penalty covariance matrix.
- Shown in figure (a) is covariance matrix, (b) is the is contribution from
- the 
-\begin_inset Formula $\pod$
-\end_inset
-
- mass and 
-\begin_inset Formula $\pod$
-\end_inset
-
--TPC matching efficiency ad-hoc contributions, and (c) is the correlation
- matrix calculated from (a).
+ Shown in figure (a) is covariance matrix and (b) is the correlation matrix.
  Note that the parameter indices, which represent the bin normalization
  indices, are offset from their fit indices value by 99.
  
@@ -5947,52 +5885,30 @@ Detector Penalty Covariance Matrix
 \end_layout
 
 \begin_layout Standard
-To estimate how the bin normalizations may respond in the BANFF fit, principal
- component analysis was performed on all the toy experiments.
- Principal component analysis allows one to understand the amount of variance
- in the data.
- The procedure is identical to performing the eigenvalue decomposition of
- a square matrix 
+To better understand how effective the choice of bin normalizations parameters
+ are at characterizing the data variance, principal component analysis was
+ performed using all the available toy experiments.
+ Principal component analysis is the process of a eigenvalue decomposition
+ of a square matrix, 
 \begin_inset Formula $M$
 \end_inset
 
- such that 
-\begin_inset Formula $M$
-\end_inset
-
- is decomposed as
-\begin_inset Formula 
-\[
-M=O^{T}DO,
-\]
-
-\end_inset
-
-where 
-\begin_inset Formula $O$
-\end_inset
-
- is a orthogonal matrix of the eigenvectors, and 
-\begin_inset Formula $D$
-\end_inset
-
- is a diagonal matrix of the eigenvalues.
+.
  The principal components of 
 \begin_inset Formula $M$
 \end_inset
 
- are the eigenvectors and their relative importance is set by the magnitude
- of the associated eigenvalue.
+, which describe the data variance, are the eigenvectors.
+ The relative importance of each eigenvector is set by the magnitude of
+ the associated eigenvalue.
 \end_layout
 
 \begin_layout Standard
-Using this prescription, we can analyze the sample variance of the toy experimen
-ts.
- The sample variance, 
+Using this prescription, we define the sample variance, 
 \begin_inset Formula $S$
 \end_inset
 
-, is defined as
+, as
 \begin_inset Formula 
 \[
 S=\frac{1}{N_{\text{toys}}}X^{T}X,
@@ -6034,8 +5950,13 @@ where
 \begin_inset Formula $V^{\prime}$
 \end_inset
 
- is a diagonal matrix of the sample covariance eigenvalues sorted from largest
- to smallest magnitude.
+ is a diagonal matrix of the 
+\begin_inset Formula $S$
+\end_inset
+
+ matrix eigenvalues.
+ What is useful using principal component analysis is that the eigenvalues
+ and eigenvectors are sorted from largest to smallest magnitude.
  The sample variance eigenvalues are shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -6050,7 +5971,7 @@ noprefix "false"
  The first, and hence largest, eigenvalue is two orders of magnitude larger
  than the next largest eigenvalue, which means that the majority of the
  bin-to-bin variance can be explained by the first eigenvector.
- The first eigenvector coefficients is shown in 
+ The first eigenvector's coefficients are shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:Principal-components"
@@ -6061,11 +5982,9 @@ noprefix "false"
 \end_inset
 
 .
- We see that all the components are negative and centered around a central
- value.
+ We see that all the components are negative and clustered.
  This result is interpreted to mean we can expect the bins normalizations
- postfit values to shift all together uniformly and most likely smaller
- in magnitude than their prefit values.
+ postfit values to shift all together uniformly.
 \end_layout
 
 \begin_layout Standard
@@ -6334,7 +6253,7 @@ status open
 \begin_inset Graphics
 	filename Figures/P0DBANFFParameterization/EigenVector0.png
 	lyxscale 45
-	width 60text%
+	width 98text%
 
 \end_inset
 
@@ -6346,8 +6265,7 @@ status open
 
 \begin_layout Plain Layout
 Principal component for the sample variance.
- This is the eigenvector associated with the largest eigenvalue of magnitude
- 2029.
+ This is the eigenvector associated with the largest eigenvalue of magnitude.
  Each parameter coefficient refers to the slope of the axis that describes
  most of the variance in the sample.
  The coefficients are all negative and are of similar magnitude.
@@ -6461,15 +6379,15 @@ noprefix "false"
 .
  It is found that there are about 137 effective degrees of freedom for the
  bin normalization parameters, or 29% of 
-\begin_inset Formula $N_{\text{d}}(=462)$
+\begin_inset Formula $N_{\text{d}}$
 \end_inset
 
 .
  This suggests that a much smaller number bin normalization parameters can
- be used in the BANFF fit analysis, and that they can have similar response
- to the sample variance.
- This is particularly important since this improves computational performance
- while maintaining predictability power in the ND constraint measurement.
+ effectively describe the sample variance.
+ This is particularly important to consider for a future BANFF fit analysis
+ since this can provide a computational performance while maintaining predictabi
+lity power in the ND constraint measurement.
  No further reduction in the number of bin normalization parameters were
  pursued due to time constraints.
 \end_layout
@@ -6490,7 +6408,7 @@ Cross Section Model
 
 \begin_layout Standard
 There are a number of neutrino-nucleus interaction model parameters implemented
- in BANFF to account for the uncertainties in cross section measurements.
+ in the BANFF fit to account for the uncertainties in cross section measurements.
  They are frequently updated to account for new models and constraints from
  external data.
  The cross section models used in this analysis use the T2K 2017 parameterizatio
@@ -6510,8 +6428,37 @@ literal "false"
 \begin_layout Standard
 There are three types of cross section parameters: shape, normalization,
  and functional.
- A cross section shape parameter is defined as a fractional shift in the
- location of a certain feature in some parameter space.
+ A cross section shape parameter, 
+\begin_inset Formula $x^{\text{Shape}}$
+\end_inset
+
+, is defined as a shift in the location of a certain feature in the cross
+ section.
+ The shape parameters are stored in one dimensional splines 
+\begin_inset Formula 
+\[
+w\left(x^{\text{Shape}}\right)=\frac{d^{n}\sigma\left(x^{\text{Shape}}\right)}{dz^{n}}/\frac{d^{n}\sigma\left(x_{0}^{\text{Shape}}\right)}{dz^{n}},
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $d^{n}\sigma/dz^{n}$
+\end_inset
+
+ is a 
+\begin_inset Formula $n$
+\end_inset
+
+ dimensional cross section of 
+\begin_inset Formula $z$
+\end_inset
+
+ dependent parameters, and 
+\begin_inset Formula $x_{0}^{\text{Shape}}$
+\end_inset
+
+ is the nominal value of the shape parameter.
  As a design choice, the shape location parameters all start with a prefit
  value of zero (0).
  A cross section normalization parameter, 
@@ -6521,7 +6468,7 @@ There are three types of cross section parameters: shape, normalization,
 , is defined as
 \begin_inset Formula 
 \begin{equation}
-x_{i}^{\text{Norm}}=\frac{p^{\prime}}{p},\label{eq:xsecnormdef}
+x^{\text{Norm}}=\frac{p^{\prime}}{p},\label{eq:xsecnormdef}
 \end{equation}
 
 \end_inset
@@ -6535,14 +6482,9 @@ where
 \end_inset
 
  are NEUT nominal and ND constrained parameters, respectively.
- The prefit values for the normalizations are set to (1) unless specified.
  And finally functional parameters are scalars to model a cross section
- of a true kinematic.
- For example, if a cross section is linear in 
-\begin_inset Formula $Q^{2}$
-\end_inset
-
- and is given by 
+ function of a true kinematic.
+ For example, if a cross section is by 
 \begin_inset Formula $\sigma(Q^{2})=AQ^{2}+B$
 \end_inset
 
@@ -6571,20 +6513,20 @@ literal "false"
 \end_layout
 
 \begin_layout Subsubsection
-The CCQE and CC-
+The CC-0
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-$0$
+
 \backslash
 pititle{}
 \end_layout
 
 \end_inset
 
- Models
+ Model
 \end_layout
 
 \begin_layout Standard
@@ -6687,21 +6629,13 @@ Random Phase Approximation
  (RPA)
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Co:2006wnm"
+key "Co:2006wnm,Nieves:2011pp"
 literal "false"
 
 \end_inset
 
  is used to to modify single nucleon scattering by accounting for nucleon
- correlations inside the nucleus
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Nieves:2011pp"
-literal "false"
-
-\end_inset
-
-.
+ correlations inside the nucleus.
  The default CC-
 \begin_inset Formula $0\pi$
 \end_inset
@@ -6723,8 +6657,11 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-The selected CCQE model has three free parameters: the dipole axial form
- factor mass 
+The CC-
+\begin_inset Formula $0\pi$
+\end_inset
+
+ model has three CCQE parameters: the dipole axial form factor mass 
 \begin_inset Formula $M_{A}^{\text{QE}}$
 \end_inset
 
@@ -6782,9 +6719,9 @@ ce{^{16}O}
 \end_layout
 
 \begin_layout Standard
-For the 2p2h excitation, there are a total of 5 parameters to describe the
- model.
- Three are three normalization terms: 
+For the 2p2h excitation, there are a total of five parameters to describe
+ the model.
+ Three are normalization terms: the 
 \begin_inset Formula $\nu$
 \end_inset
 
@@ -6801,7 +6738,7 @@ ce{^{12}C}
 
 \end_inset
 
-, 
+, the 
 \begin_inset Formula $\antinu$
 \end_inset
 
@@ -6818,7 +6755,7 @@ ce{^{12}C}
 
 \end_inset
 
-, and scaling for 
+, and the scaling for 
 \begin_inset ERT
 status open
 
@@ -6849,8 +6786,8 @@ ce{^{16}O}
 \end_inset
 
 .
- The remaining two systematic parameters in the 2p2h model are shape parameters,
- one for 
+ The remaining two systematic parameters in the 2p2h excitation are shape
+ parameters, one for 
 \begin_inset ERT
 status open
 
@@ -6918,13 +6855,21 @@ literal "false"
 \end_inset
 
 .
- A functional weighting scheme only in 
+ A functional weighting scheme called 
+\begin_inset Quotes eld
+\end_inset
+
+BeRPA
+\begin_inset Quotes erd
+\end_inset
+
+ having only 
 \begin_inset Formula $Q^{2}$
 \end_inset
 
- was found to work well to mimic the inherent uncertainties in the Nieves
- RPA model.
- The functional is given by
+ dependence was found to work well to mimic the inherent uncertainties in
+ the Nieves RPA model.
+ The BeRPA functional is given by
 \begin_inset Formula 
 \begin{equation}
 w\left(Q^{2}\right)=\begin{cases}
@@ -6996,25 +6941,7 @@ and
 \end_inset
 
  are the functional parameters.
- This functional form serve to correct for collective nuclear effects not
- modeled in NEUT and is called the Bernstein RPA (BeRPA) model.
- The parameters 
-\begin_inset Formula $A$
-\end_inset
-
-, 
-\begin_inset Formula $B$
-\end_inset
-
-, 
-\begin_inset Formula $D$
-\end_inset
-
-, and 
-\begin_inset Formula $E$
-\end_inset
-
- are allowed to vary while 
+ The parameter 
 \begin_inset Formula $U$
 \end_inset
 
@@ -7128,16 +7055,8 @@ Coherent Pion Production
 \begin_layout Standard
 Coherent scattering refers to scattering where the wavelength of the incoming
  particle is larger than the target.
- In the case of coherent neutrino-nucleus scattering, the neutrino's wavelength
- given by 
-\begin_inset Formula 
-\[
-\lambda=\frac{hc}{E_{\nu}}
-\]
-
-\end_inset
-
-is larger than the size of the nucleus.
+ In the case of coherent neutrino-nucleus scattering, the neutrino's de
+ Broglie wavelength is larger than the size of the nucleus.
  In the scattering, no quantum numbers are exchanged, but the nucleus experience
 s a momentum boost.
  In coherent pion production, the in-flight virtual boson is converted into
@@ -7204,50 +7123,56 @@ ce{^{16}O}
 \end_inset
 
 , and NC on all nuclei.
+ As a design choice, both CC parameters are 100% correlated with one another,
+ meaning that any change in one parameter changes the other identically.
 \end_layout
 
 \begin_layout Subsubsection
-The CC DIS Model
+High Energy Scattering Model
 \end_layout
 
 \begin_layout Standard
-The CC DIS process, which also includes multiple pion production, is modeled
- as a shape parameter as a function of 
-\begin_inset Formula $E_{\nu}$
+There are two parameters that describe high energy neutrino scattering.
+ One is a CC deep inelastic scattering (DIS) interaction shape parameter
+ called 
+\begin_inset Quotes eld
+\end_inset
+
+CC DIS
+\begin_inset Quotes erd
 \end_inset
 
 .
- The parameter is has a simple uncertainty relation of 
+ The other is a normalization for NC interactions called 
+\begin_inset Quotes eld
+\end_inset
+
+NC Other
+\begin_inset Quotes erd
+\end_inset
+
+.
+ The CC DIS parameter, which also includes multiple pion production, is
+ modeled as a function of 
+\begin_inset Formula $E_{\nu}$
+\end_inset
+
+ with a simple uncertainty relation of 
 \begin_inset Formula 
 \[
-\frac{0.4}{\Enu\text{ [GeV]}}(\%)
+\frac{0.4}{\Enu\text{ [GeV]}}(\%),
 \]
 
 \end_inset
 
-where the uncertainty at 4.0 GeV is 10%
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Wret2019"
-literal "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Subsubsection
-The NC Other Model
-\end_layout
-
-\begin_layout Standard
-There is one free normalization parameter for the NC processes.
- The NC other parameter contains the normalization uncertainties in NC DIS,
- single kaon production, single 
+where the uncertainty at 4.0 GeV is 10%.
+ The NC Other parameter is a normalization on NC DIS, single kaon production,
+ single 
 \begin_inset Formula $\eta$
 \end_inset
 
--meson production, and elastic processes with a 30% fractional uncertainty
+-meson production, and NC elastic processes with a flat 30% fractional uncertain
+ty
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Wret2019"
@@ -7283,9 +7208,7 @@ literal "false"
 \end_inset
 
  which describes interactions in the nucleus as probabilities of position
- and momentum.
- The systematics are parameterized as scattering probabilities for different
- interaction processes tuned to world data
+ and momentum tuned to the world data
 \begin_inset CommandInset citation
 LatexCommand cite
 key "PhysRevC.18.584"
@@ -7307,7 +7230,7 @@ literal "false"
 \end_layout
 
 \begin_layout Subsubsection
-Other Fixed Parameters
+Fixed Parameters
 \end_layout
 
 \begin_layout Standard
@@ -7321,8 +7244,8 @@ As mentioned in the CC-
 
  parameter is fixed to minimize correlations with the other BeRPA scale
  parameters.
- However, there are four fixed normalization parameters in the BANFF fit
- since they correspond to SK only parameters.
+ However, there are four other fixed normalization parameters in the BANFF
+ fit since they correspond to SK only parameters.
  They are included in the fit in order to maintain consistency between the
  ND280 constraint and oscillation analysis parameterizations.
  In other words, they are spectators in the BANFF fit.
@@ -7342,7 +7265,7 @@ As mentioned in the CC-
 \begin_inset Formula $\numubar$
 \end_inset
 
- event rate ratio, NC 
+ event rate ratio, NC-
 \begin_inset Formula $1\gamma$
 \end_inset
 
@@ -7354,7 +7277,7 @@ Fit Parameters
 \end_layout
 
 \begin_layout Standard
-There are a total of 31 cross section parameters in the BANFF fit, four
+There are a total of 31 cross section parameters in the BANFF fit, five
  of which are fixed.
  The fit parameters are listed in 
 \begin_inset CommandInset ref
@@ -7464,7 +7387,7 @@ status open
 \begin_inset Graphics
 	filename Figures/P0DBANFFParameterization/cov_xsec_pref.png
 	lyxscale 50
-	height 45theight%
+	height 40theight%
 
 \end_inset
 
@@ -7475,7 +7398,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Covariance
+Covariance matrix
 \end_layout
 
 \end_inset
@@ -7504,7 +7427,7 @@ status open
 \begin_inset Graphics
 	filename Figures/P0DBANFFParameterization/corr_xsec_pref.png
 	lyxscale 50
-	height 45theight%
+	height 40theight%
 
 \end_inset
 
@@ -7515,7 +7438,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Correlation
+Correlation correlation
 \end_layout
 
 \end_inset
@@ -7564,14 +7487,6 @@ Cross Section Parameters Prefit Covariance and Correlation Matrices
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage clearpage
-\end_inset
-
-
-\begin_inset Newpage newpage
-\end_inset
-
-
 \begin_inset Branch XSecBinsTable
 inverted 0
 status open
@@ -7731,7 +7646,7 @@ Prefit
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+All
 \end_layout
 
 \end_inset
@@ -7740,7 +7655,7 @@ Prefit
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+FSI
 \end_layout
 
 \end_inset
@@ -7827,7 +7742,7 @@ High energy INEL
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell multirow="3" alignment="center" valignment="middle" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -7840,7 +7755,7 @@ High energy INEL
 \begin_inset Text
 
 \begin_layout Plain Layout
-FSI
+
 \end_layout
 
 \end_inset
@@ -7877,7 +7792,7 @@ PROD
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -7890,7 +7805,7 @@ PROD
 \begin_inset Text
 
 \begin_layout Plain Layout
-shape
+
 \end_layout
 
 \end_inset
@@ -8034,6 +7949,12 @@ High energy CEX
 
 \begin_layout Plain Layout
 
+\color red
+CC-
+\begin_inset Formula $0\pi$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -8167,6 +8088,8 @@ Smith
 
 \begin_layout Plain Layout
 
+\color red
+RFG
 \end_layout
 
 \end_inset
@@ -8224,8 +8147,6 @@ Smith
 
 \begin_layout Plain Layout
 
-\color red
-RFG
 \end_layout
 
 \end_inset
@@ -8400,12 +8321,6 @@ RFG
 
 \begin_layout Plain Layout
 
-\color red
-CC-
-\begin_inset Formula $0\pi$
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -8415,6 +8330,8 @@ CC-
 
 \begin_layout Plain Layout
 
+\color red
+Nieves 2p2h
 \end_layout
 
 \end_inset
@@ -8561,8 +8478,6 @@ ce{^{12}C}
 
 \begin_layout Plain Layout
 
-\color red
-Nieves 2p2h
 \end_layout
 
 \end_inset
@@ -8753,7 +8668,7 @@ ce{^{12}O}
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8766,7 +8681,7 @@ ce{^{12}O}
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+BeRPA
 \end_layout
 
 \end_inset
@@ -8775,7 +8690,7 @@ ce{^{12}O}
 \begin_inset Text
 
 \begin_layout Plain Layout
-A scale
+A
 \end_layout
 
 \end_inset
@@ -8816,7 +8731,7 @@ A scale
 \begin_inset Text
 
 \begin_layout Plain Layout
-BeRPA
+
 \end_layout
 
 \end_inset
@@ -8825,7 +8740,7 @@ BeRPA
 \begin_inset Text
 
 \begin_layout Plain Layout
-B scale
+B
 \end_layout
 
 \end_inset
@@ -8866,7 +8781,7 @@ B scale
 \begin_inset Text
 
 \begin_layout Plain Layout
-nuclear
+
 \end_layout
 
 \end_inset
@@ -8875,7 +8790,7 @@ nuclear
 \begin_inset Text
 
 \begin_layout Plain Layout
-D scale
+D
 \end_layout
 
 \end_inset
@@ -8916,7 +8831,7 @@ D scale
 \begin_inset Text
 
 \begin_layout Plain Layout
-model
+
 \end_layout
 
 \end_inset
@@ -8925,7 +8840,7 @@ model
 \begin_inset Text
 
 \begin_layout Plain Layout
-E scale
+E
 \end_layout
 
 \end_inset
@@ -8943,8 +8858,8 @@ E scale
 \end_inset
 </cell>
 </row>
-<row newpage="true">
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8953,7 +8868,7 @@ E scale
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8962,20 +8877,20 @@ E scale
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-(functional)
+
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-U scale
+U
 \begin_inset Formula $^{*}$
 \end_inset
 
@@ -8984,7 +8899,7 @@ U scale
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9011,6 +8926,10 @@ U scale
 \begin_inset Text
 
 \begin_layout Plain Layout
+CC-
+\begin_inset Formula $1\pi$
+\end_inset
+
 
 \end_layout
 
@@ -9060,14 +8979,10 @@ Rein-Seghal
 
 \end_inset
 </cell>
-<cell multirow="3" alignment="center" valignment="middle" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-CC-
-\begin_inset Formula $1\pi$
-\end_inset
-
 
 \end_layout
 
@@ -9121,7 +9036,7 @@ resonant
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9237,7 +9152,7 @@ I=
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Other
 \end_layout
 
 \end_inset
@@ -9467,7 +9382,7 @@ ce{^{12}C}
 \begin_inset Text
 
 \begin_layout Plain Layout
-Other
+
 \end_layout
 
 \end_inset
@@ -9590,7 +9505,7 @@ NC norm.
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Event rate
 \end_layout
 
 \end_inset
@@ -9648,7 +9563,7 @@ NC-1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Event rate
+
 \end_layout
 
 \end_inset
@@ -9761,8 +9676,8 @@ Chapter Summary
 \end_layout
 
 \begin_layout Standard
-This chapter has described all the fit bins and systematic parameters that
- go into the BANFF fit.
+This chapter has described all the fit bins and parameters that go into
+ the BANFF fit.
  For the fit bins, they are used in the LLR term to model the best possible
  fit between data and MC without any constraints.
  However, since there are known systematic uncertainties in the flux, detector

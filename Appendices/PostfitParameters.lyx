@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass ../csuthesisLyx
+\textclass csuthesisLyx
 \begin_preamble
 % ams math packages
 \usepackage[cmex10]{amsmath}
@@ -217,7 +217,7 @@ status open
 <column alignment="left" valignment="top" width="0pt">
 <column alignment="right" valignment="top" width="0pt">
 <column alignment="left" valignment="top" width="0pt">
-<row endhead="true" endfirsthead="true" caption="true">
+<row endfirsthead="true" caption="true">
 <cell multicolumn="1" alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 

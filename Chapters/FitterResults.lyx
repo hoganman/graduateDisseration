@@ -6357,7 +6357,12 @@ There is good visual agreement between the
 \end_inset
 
 -only parameters having a higher expectation comparatively.
- If we examine the bin normalization parameters for the 
+ Also, the magnitude of the flux uncertainties is similar between the two,
+ which suggests the two configurations are statistically similar.
+\end_layout
+
+\begin_layout Standard
+If we examine the bin normalization parameters for the 
 \begin_inset Formula $\pod$
 \end_inset
 
@@ -6386,8 +6391,22 @@ noprefix "false"
 
 .
  This has been observed in previous BANFF analyses.
- Also, the magnitude of the flux uncertainties is similar between the two,
- which suggests the two configurations are statistically similar.
+ Interestingly, the results of the principal components analysis on the
+ bin normalizations in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Bin-Normalization-Parameters"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ are observed here as well.
+ The analysis predicted most of the parameters would shift in unison, and
+ we see that trend largely replicated in the postfit values.
+ This indicates that we can possibly reduce the number of bin normalizations
+ and still obtain a similar postfit result.
 \end_layout
 
 \begin_layout Standard
@@ -7262,7 +7281,7 @@ podtitle{}
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -7312,7 +7331,7 @@ CC-
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -7343,7 +7362,7 @@ BeRPA Parameters
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -7382,7 +7401,7 @@ CC-
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -7413,7 +7432,7 @@ FSI Parameters
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -7514,7 +7533,7 @@ status collapsed
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -7555,7 +7574,7 @@ Water-In
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -7617,10 +7636,6 @@ Prefit and Postfit Bin Normalization Parameters
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -7696,7 +7711,7 @@ The 2p2h Shape Mirrored Spline
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -7755,7 +7770,7 @@ Postfit Correlation Matrix
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -7878,7 +7893,7 @@ name "fig:Prefit-and-post-fluxxsec-correlation"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
