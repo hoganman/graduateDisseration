@@ -423,8 +423,8 @@ In this verification of the regularization strength, the test statistic
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\begin{aligned}\hat{\chi}_{\text{ND280}}^{2} & =\underset{\Delta\vec{y}\in\mathbb{R}^{d}}{\text{argmin}}\left\{ \chi_{\text{LLR}}^{2}+\lambda\chi_{\text{Penalty}}^{2}\right\} \\
- & =\underset{\Delta\vec{y}\in\mathbb{R}^{d}}{\text{argmin}}\left\{ \chi_{\text{LLR}}^{2}+\lambda\left(\Delta\vec{y}\right)^{T}V^{-1}\left(\Delta\vec{y}\right)\right\} ,
+\begin{aligned}\hat{\chi}_{\text{ND280}}^{2} & =\underset{\vec{y}\in\mathbb{R}^{d}}{\text{argmin}}\left\{ \chi_{\text{LLR}}^{2}+\lambda\chi_{\text{Penalty}}^{2}\left(\vec{y}\right)\right\} \\
+ & =\underset{\vec{y}\in\mathbb{R}^{d}}{\text{argmin}}\left\{ \chi_{\text{LLR}}^{2}+\lambda\left(\vec{y}-\vec{y}_{0}\right)^{T}V^{-1}\left(\vec{y}-\vec{y}_{0}\right)\right\} ,
 \end{aligned}
 \label{eq:RegularizedDeltaChi2ND280}
 \end{equation}
@@ -725,7 +725,7 @@ where the sum of squares of the weights
 \end_inset
 
  is the loss function.
- The usual choice of 
+ A popular choice of 
 \begin_inset Formula $L$
 \end_inset
 
@@ -776,7 +776,7 @@ noprefix "false"
  as
 \begin_inset Formula 
 \[
-V^{-1}=U\Lambda U^{T}
+V^{-1}=U^{T}\Lambda U
 \]
 
 \end_inset
@@ -786,7 +786,7 @@ where
 \end_inset
 
  and 
-\begin_inset Formula $V$
+\begin_inset Formula $\Lambda$
 \end_inset
 
  are the matrix of the eigenvectors and eigenvalues, respectively, of 
@@ -815,15 +815,15 @@ We can now rewrite the penalty term as an inner product of two vectors.
 \begin_inset Formula 
 \[
 \begin{aligned}\chi_{\text{Penalty}}^{2} & =\left(\Delta\vec{y}\right)^{T}V^{-1}\left(\Delta\vec{y}\right)\\
- & \left(\Delta\vec{y}\right)^{T}U\Gamma^{2}U^{T}\left(\Delta\vec{y}\right)\\
- & =\left[\Gamma U^{T}\Delta\vec{y}\right]^{T}\left[\Gamma U^{T}\Delta\vec{y}\right].
+ & \left(\Delta\vec{y}\right)^{T}U^{T}\Gamma^{2}U\left(\Delta\vec{y}\right)\\
+ & =\left[\Gamma U\Delta\vec{y}\right]^{T}\left[\Gamma U\Delta\vec{y}\right].
 \end{aligned}
 \]
 
 \end_inset
 
 If we let 
-\begin_inset Formula $\vec{\psi}=\Gamma U^{T}\Delta\vec{y}$
+\begin_inset Formula $\vec{\psi}=\Gamma U\Delta\vec{y}$
 \end_inset
 
 , then the penalty term becomes

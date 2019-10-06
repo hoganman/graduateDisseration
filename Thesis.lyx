@@ -787,7 +787,7 @@ inverted 0
 status open
 
 \begin_layout Chapter
-The BANFF Fit Model Parameters
+The BANFF Fit Parameters
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:P0DinBANFF"

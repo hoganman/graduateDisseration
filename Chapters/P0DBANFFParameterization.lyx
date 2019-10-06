@@ -890,7 +890,7 @@ The fit parameters are described in the following order.
 \begin_layout Standard
 \begin_inset Branch P0DBANFFParameterizationFlux
 inverted 0
-status collapsed
+status open
 
 \begin_layout Subsection
 Flux Model Parameters
@@ -946,7 +946,7 @@ literal "false"
 The flux penalty term in the BANFF fit is defined as
 \begin_inset Formula 
 \begin{equation}
-\chi_{\text{Flux}}^{2}=\left(\flux-\flux_{0}\right)^{T}\left(V^{-1}\right)\left(\flux-\flux_{0}\right),\label{eq:DeltaChi2Flux}
+\chi_{\text{Flux}}^{2}=\left(\flux-\flux_{0}\right)^{T}\left(V^{\text{Flux}}\right)^{-1}\left(\flux-\flux_{0}\right),\label{eq:DeltaChi2Flux}
 \end{equation}
 
 \end_inset
@@ -960,7 +960,7 @@ where
 \end_inset
 
  is the vector of the initial parameter values, and 
-\begin_inset Formula $V$
+\begin_inset Formula $V^{\text{Flux}}$
 \end_inset
 
  is the flux covariance matrix.
@@ -2968,7 +2968,7 @@ Systematic effect
 \begin_inset Text
 
 \begin_layout Plain Layout
-Affected detector
+Affected detectors
 \end_layout
 
 \end_inset
@@ -2985,296 +2985,6 @@ Treatment
 </row>
 <row>
 <cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-TPC cluster eff.
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-TPC
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-efficiency
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-TPC tracking eff.
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-TPC
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-efficiency
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-TPC charge misassignment
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-TPC
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-efficiency
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-TPC momentum resol.
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-TPC
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-observable variation
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-TPC momentum scale
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-TPC
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-observable variation
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-B field distortion
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-TPC
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-observable variation
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Pion secondary interactions
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-All
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-efficiency
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Proton secondary interactions
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-All
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-efficiency
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-TPC Particle ID
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-TPC
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-observable variation
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-TPC track quality eff.
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-TPC
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-efficiency
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3298,7 +3008,7 @@ efficiency
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3316,7 +3026,7 @@ observable variation
 \begin_inset Formula $\pod$
 \end_inset
 
- energy loss resol.
+ energy loss resolution
 \end_layout
 
 \end_inset
@@ -3379,7 +3089,7 @@ observable variation
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3391,14 +3101,301 @@ observable variation
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 \begin_inset Formula $\pod$
 \end_inset
 
-+TPC
+, TPC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(see text)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pion secondary interactions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\pod$
+\end_inset
+
+, TPC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+efficiency
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Proton secondary interactions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\pod$
+\end_inset
+
+, TPC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+efficiency
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Magnetic field distortion
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TPC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+observable variation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TPC charge misassignment
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TPC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+efficiency
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TPC cluster efficiency
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TPC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+efficiency
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TPC momentum resolution
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TPC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+observable variation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TPC momentum scale
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TPC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+observable variation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TPC particle identification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TPC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+observable variation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TPC track quality efficiency
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TPC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+efficiency
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TPC tracking efficiency
 \end_layout
 
 \end_inset
@@ -3407,7 +3404,16 @@ observable variation
 \begin_inset Text
 
 \begin_layout Plain Layout
-(see text)
+TPC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+efficiency
 \end_layout
 
 \end_inset
@@ -3425,8 +3431,7 @@ observable variation
 
 \begin_layout Plain Layout
 List of detector systematics in the analysis.
- The systematics listed above the horizontal line are discussed in the following
- reference
+ The TPC-only systematics are discussed in the following reference
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Abe:2017vif"
@@ -3440,7 +3445,8 @@ literal "false"
 \end_inset
 
  mass and track matching systematics were not available in the BANFF framework
- and treated as uncorrelated additions to the total covariance matrix.
+ and treated as uncorrelated additions to the covariance matrix.
+ 
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:List-of-detector"
@@ -4228,7 +4234,7 @@ where
 \begin_inset Formula $\vec{d_{0}}$
 \end_inset
 
- is the initial set values of the parameters and 
+ is the initial values of the parameters, and 
 \begin_inset Formula $V^{\text{Det}}$
 \end_inset
 
@@ -5610,7 +5616,7 @@ noprefix "false"
 \end_inset
 
 .
- Their respective fit index, prefit value, and prefit standard deviation
+ Their respective fit indices, prefit values, and prefit standard deviations
  are tabulated in Appendix 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -5933,7 +5939,7 @@ where
  is given by
 \begin_inset Formula 
 \[
-S=U^{T}V^{\prime}U,
+S=U^{T}\Lambda U,
 \]
 
 \end_inset
@@ -5947,7 +5953,7 @@ where
 \end_inset
 
  and 
-\begin_inset Formula $V^{\prime}$
+\begin_inset Formula $\Lambda$
 \end_inset
 
  is a diagonal matrix of the 
@@ -6312,21 +6318,21 @@ Additionally, we can estimate the effective degrees of freedom for the bin
  The effective degrees of freedom is given by
 \begin_inset Formula 
 \begin{equation}
-\text{df}(\lambda)=\sum_{i=0}^{N_{\text{d}}}\frac{v_{i}}{v_{i}+\lambda},\label{eq:effective-degrees-of-freedom}
+\text{df}(r)=\sum_{i=0}^{N_{\text{d}}}\frac{\lambda_{i}}{\lambda_{i}+r},\label{eq:effective-degrees-of-freedom}
 \end{equation}
 
 \end_inset
 
 where 
-\begin_inset Formula $v_{i}$
+\begin_inset Formula $\lambda_{i}$
 \end_inset
 
  are the eigenvalues of 
-\begin_inset Formula $V^{\prime}$
+\begin_inset Formula $\Lambda$
 \end_inset
 
  and 
-\begin_inset Formula $\lambda$
+\begin_inset Formula $r$
 \end_inset
 
  is a tunable parameter
@@ -6354,22 +6360,22 @@ noprefix "false"
 
  coefficients will be non-zero, they are restricted to vary by the magnitude
  of 
-\begin_inset Formula $\lambda$
+\begin_inset Formula $r$
 \end_inset
 
 .
  In particular, 
-\begin_inset Formula $\lambda$
+\begin_inset Formula $r$
 \end_inset
 
  represents the regularization strength for the detector systematics penalty,
  which is set to one (
-\begin_inset Formula $\lambda=1$
+\begin_inset Formula $r=1$
 \end_inset
 
 ) in the BANFF fit.
  If there was no (regularization) penalty, or 
-\begin_inset Formula $\lambda=0$
+\begin_inset Formula $r=0$
 \end_inset
 
 , then the number of degrees of freedom is df(0)=
@@ -6484,19 +6490,44 @@ where
  are NEUT nominal and ND constrained parameters, respectively.
  And finally functional parameters are scalars to model a cross section
  function of a true kinematic.
- For example, if a cross section is by 
-\begin_inset Formula $\sigma(Q^{2})=AQ^{2}+B$
+ For example, if a cross section is given by 
+\begin_inset Formula $\sigma(x)=mx+b$
 \end_inset
 
 , 
-\begin_inset Formula $A$
+\begin_inset Formula $m$
 \end_inset
 
  and 
-\begin_inset Formula $B$
+\begin_inset Formula $b$
 \end_inset
 
  are the functional parameters in the model.
+ Combining these parameters into a single vector 
+\begin_inset Formula $\vec{x}$
+\end_inset
+
+, the cross section penalty term, 
+\begin_inset Formula $\chi_{\text{Det}}^{2}$
+\end_inset
+
+, is given by
+\begin_inset Formula 
+\[
+\chi_{\text{Det}}^{2}=\left(\vec{x}-\vec{x}_{0}\right)^{T}\left(V^{\text{xsec}}\right)^{-1}\left(\vec{x}-\vec{x}_{0}\right),
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\vec{x}_{0}$
+\end_inset
+
+ is the initial values of the cross section parameters, and 
+\begin_inset Formula $V^{\text{xsec}}$
+\end_inset
+
+ is the cross section model covariance matrix.
 \end_layout
 
 \begin_layout Standard
@@ -6590,7 +6621,7 @@ literal "false"
 
 \end_inset
 
- and BBBA05 vector form factors coupled to a Smith-Miniz Relativistic Fermi
+ and BBBA05 vector form factors coupled to a Smith-Moniz Relativistic Fermi
  Gas
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -7184,7 +7215,7 @@ literal "false"
 \end_layout
 
 \begin_layout Subsubsection
-Final State Interactions (FSI)
+Final State Interactions
 \end_layout
 
 \begin_layout Standard
@@ -7196,8 +7227,8 @@ literal "false"
 
 \end_inset
 
- are effects that alter final state pions from neutrino-nucleus events before
- the pion exits the nucleus.
+ (FSI) are effects that alter final state pions from neutrino-nucleus events
+ before the pion exits the nucleus.
  The microscopic model in NEUT is a cascade implementation of the Salcedo-Oset
  model
 \begin_inset CommandInset citation
@@ -7273,7 +7304,7 @@ As mentioned in the CC-
 \end_layout
 
 \begin_layout Subsubsection
-Fit Parameters
+Prefit Values and Covariance Matrix
 \end_layout
 
 \begin_layout Standard
@@ -7949,7 +7980,7 @@ High energy CEX
 
 \begin_layout Plain Layout
 
-\color red
+\color black
 CC-
 \begin_inset Formula $0\pi$
 \end_inset
@@ -8495,7 +8526,9 @@ status open
 
 
 \backslash
-ce{^{12}C}$/$
+ce{^{12}C}$
+\backslash
+rightarrow$
 \backslash
 ce{^{16}O}
 \end_layout
@@ -8690,7 +8723,10 @@ BeRPA
 \begin_inset Text
 
 \begin_layout Plain Layout
-A
+\begin_inset Formula $A$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -8740,7 +8776,10 @@ A
 \begin_inset Text
 
 \begin_layout Plain Layout
-B
+\begin_inset Formula $B$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -8790,7 +8829,10 @@ B
 \begin_inset Text
 
 \begin_layout Plain Layout
-D
+\begin_inset Formula $D$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -8840,7 +8882,10 @@ D
 \begin_inset Text
 
 \begin_layout Plain Layout
-E
+\begin_inset Formula $E$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -8890,7 +8935,10 @@ E
 \begin_inset Text
 
 \begin_layout Plain Layout
-U
+\begin_inset Formula $U$
+\end_inset
+
+
 \begin_inset Formula $^{*}$
 \end_inset
 
@@ -9286,7 +9334,7 @@ CC-
 \begin_inset Text
 
 \begin_layout Plain Layout
-CC-DIS shape location
+CC DIS shape location
 \end_layout
 
 \end_inset
@@ -9672,7 +9720,7 @@ inverted 0
 status open
 
 \begin_layout Section
-Chapter Summary
+Summary
 \end_layout
 
 \begin_layout Standard

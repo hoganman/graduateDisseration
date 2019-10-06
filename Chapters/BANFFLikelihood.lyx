@@ -528,7 +528,7 @@ literal "false"
 , the likelihood is given by
 \begin_inset Formula 
 \begin{equation}
-\begin{aligned}\mathcal{L}\left(\vec{N}^{d}\left|\vec{N}^{p}\right.\right) & =\prod_{i=1}^{M}\left(\vec{N}_{i}^{p}\right)^{\vec{N}_{i}^{d}}\frac{e^{-\vec{N}_{i}^{p}}}{\vec{N}_{i}^{d}!}\end{aligned}
+\begin{aligned}\mathcal{L}\left(\vec{N}^{d}\left|\vec{N}^{p}\right.\right) & =\prod_{i=1}^{M}\frac{\left(\vec{N}_{i}^{p}\right)^{\vec{N}_{i}^{d}}\exp\left(-\vec{N}_{i}^{p}\right)}{\vec{N}_{i}^{d}!}\end{aligned}
 \label{eq:likelihoodPoisson}
 \end{equation}
 
@@ -1274,7 +1274,7 @@ The best fit parameters are those that minimizes the chi-squared statistic,
 , given by
 \begin_inset Formula 
 \begin{equation}
-\hat{\chi}_{\text{ND280}}^{2}=\underset{\vec{y}\in\mathbb{R}^{d}}{\text{argmin}}\left\{ \chi_{\text{LLR}}^{2}\left(\vec{N}^{d},\vec{N}^{p}\right)+\chi_{\text{Penalty}}^{2}\left(\vec{y}\right)\right\} ,\label{eq:minBANFFDeltaChiSqr}
+\hat{\chi}_{\text{ND280}}^{2}=\underset{\vec{y}\in\mathbb{R}^{d}}{\text{argmin}}\left\{ \chi_{\text{LLR}}^{2}\left(\vec{N}^{d},\vec{N}^{p}\left(\vec{y}\right)\right)+\chi_{\text{Penalty}}^{2}\left(\vec{y}\right)\right\} ,\label{eq:minBANFFDeltaChiSqr}
 \end{equation}
 
 \end_inset
@@ -1370,6 +1370,23 @@ noprefix "false"
 \end_inset
 
 , we find that the inverse of the Hessian matrix is the covariance matrix.
+\end_layout
+
+\begin_layout Section
+Summary
+\end_layout
+
+\begin_layout Standard
+This chapter describes the mathematical preliminaries of the BANFF fit analysis.
+ We first saw the role of the likelihood function to express the plausibility
+ of data samples given a set of model parameters.
+ We then define a binned likelihood function to estimate model parameters
+ in the oscillation analysis using the ND280 data.
+ Using Wilks' theorem, the likelihood maximization problem is converted
+ to a chi-squared test statistic minimization that is iteratively maximized.
+ Finally, penalty terms are included in the test statistic in order to assert
+ parameter estimates that are consistent with prior systematic uncertainty
+ measurements in T2K.
 \end_layout
 
 \end_inset

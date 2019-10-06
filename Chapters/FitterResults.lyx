@@ -466,7 +466,7 @@ Data and prefit expectation for the
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC CC 1-Track sample.
+ in FHC Mode CC 1-Track sample.
  Sub-figure (a) shows the momentum one-dimensional profile in all but the
  highest momentum fit bin.
  Sub-figure (b) shows the 
@@ -504,7 +504,7 @@ numutitle{}
 
 \end_inset
 
- in FHC CC 1-Track Sample
+ in FHC Mode CC 1-Track Sample
 \end_layout
 
 \end_inset
@@ -651,7 +651,7 @@ Data and prefit expectation for the
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC CC N-Tracks sample.
+ in FHC Mode CC N-Tracks sample.
  Sub-figure (a) shows the momentum one-dimensional profile in all but the
  highest momentum fit bin.
  Sub-figure (b) shows the 
@@ -688,7 +688,7 @@ numutitle{}
 
 \end_inset
 
- in FHC CC N-Tracks Sample
+ in FHC Mode CC N-Tracks Sample
 \end_layout
 
 \end_inset
@@ -835,7 +835,7 @@ Data and prefit expectation for the
 \begin_inset Formula $\numubar$
 \end_inset
 
- in RHC CC 1-Track sample.
+ in RHC Mode CC 1-Track sample.
  Sub-figure (a) shows the momentum one-dimensional profile in all but the
  highest momentum fit bin.
  Sub-figure (b) shows the 
@@ -872,7 +872,7 @@ numubartitle{}
 
 \end_inset
 
- in RHC CC 1-Track Sample
+ in RHC Mode CC 1-Track Sample
 \end_layout
 
 \end_inset
@@ -1019,7 +1019,7 @@ Data and prefit expectation for the
 \begin_inset Formula $\numubar$
 \end_inset
 
- in RHC CC N-Tracks sample.
+ in RHC Mode CC N-Tracks sample.
  Sub-figure (a) shows the momentum one-dimensional profile in all but the
  highest momentum fit bin.
  Sub-figure (b) shows the 
@@ -1056,7 +1056,7 @@ numubartitle{}
 
 \end_inset
 
- in RHC CC N-Tracks Sample
+ in RHC Mode CC N-Tracks Sample
 \end_layout
 
 \end_inset
@@ -1203,7 +1203,7 @@ Data and prefit expectation for the
 \begin_inset Formula $\numu$
 \end_inset
 
- in RHC CC 1-Track sample.
+ in RHC Mode CC 1-Track sample.
  Sub-figure (a) shows the momentum one-dimensional profile in all but the
  highest momentum fit bin.
  Sub-figure (b) shows the 
@@ -1240,7 +1240,7 @@ numutitle{}
 
 \end_inset
 
- in RHC CC 1-Track Sample
+ in RHC Mode CC 1-Track Sample
 \end_layout
 
 \end_inset
@@ -1387,7 +1387,7 @@ Data and prefit expectation for the
 \begin_inset Formula $\numu$
 \end_inset
 
- in RHC CC N-Tracks sample.
+ in RHC Mode CC N-Tracks sample.
  Sub-figure (a) shows the momentum one-dimensional profile in all but the
  highest momentum fit bin.
  Sub-figure (b) shows the 
@@ -1424,7 +1424,7 @@ numutitle{}
 
 \end_inset
 
- in RHC CC N-Tracks Sample
+ in RHC Mode CC N-Tracks Sample
 \end_layout
 
 \end_inset
@@ -1571,7 +1571,7 @@ Data and prefit expectation for the
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC CC 1-Track sample.
+ in FHC Mode CC 1-Track sample.
  Sub-figure (a) shows the momentum one-dimensional profile in all but the
  highest momentum fit bin.
  Sub-figure (b) shows the 
@@ -1609,7 +1609,7 @@ numutitle{}
 
 \end_inset
 
- in FHC CC 1-Track Sample
+ in FHC Mode CC 1-Track Sample
 \end_layout
 
 \end_inset
@@ -1756,7 +1756,7 @@ Data and prefit expectation for the
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC CC N-Tracks sample.
+ in FHC Mode CC N-Tracks sample.
  Sub-figure (a) shows the momentum one-dimensional profile in all but the
  highest momentum fit bin.
  Sub-figure (b) shows the 
@@ -1794,7 +1794,7 @@ numutitle{}
 
 \end_inset
 
- in FHC CC N-Tracks Sample
+ in FHC Mode CC N-Tracks Sample
 \end_layout
 
 \end_inset
@@ -1941,7 +1941,7 @@ Data and prefit expectation for the
 \begin_inset Formula $\numubar$
 \end_inset
 
- in RHC CC 1-Track sample.
+ in RHC Mode CC 1-Track sample.
  Sub-figure (a) shows the momentum one-dimensional profile in all but the
  highest momentum fit bin.
  Sub-figure (b) shows the 
@@ -1979,7 +1979,7 @@ numubartitle{}
 
 \end_inset
 
- in RHC CC 1-Track Sample
+ in RHC Mode CC 1-Track Sample
 \end_layout
 
 \end_inset
@@ -2126,7 +2126,7 @@ Data and prefit expectation for the
 \begin_inset Formula $\numubar$
 \end_inset
 
- in RHC CC N-Tracks sample.
+ in RHC Mode CC N-Tracks sample.
  Sub-figure (a) shows the momentum one-dimensional profile in all but the
  highest momentum fit bin.
  Sub-figure (b) shows the 
@@ -2164,7 +2164,7 @@ numubartitle{}
 
 \end_inset
 
- in RHC CC N-Tracks Sample
+ in RHC Mode CC N-Tracks Sample
 \end_layout
 
 \end_inset
@@ -2311,7 +2311,7 @@ Data and prefit expectation for the
 \begin_inset Formula $\numu$
 \end_inset
 
- in RHC CC 1-Track sample.
+ in RHC Mode CC 1-Track sample.
  Sub-figure (a) shows the momentum one-dimensional profile in all but the
  highest momentum fit bin.
  Sub-figure (b) shows the 
@@ -2349,7 +2349,7 @@ numutitle{}
 
 \end_inset
 
- in RHC CC 1-Track Sample
+ in RHC Mode CC 1-Track Sample
 \end_layout
 
 \end_inset
@@ -2496,7 +2496,7 @@ Data and prefit expectation for the
 \begin_inset Formula $\numu$
 \end_inset
 
- in RHC CC N-Tracks sample.
+ in RHC Mode CC N-Tracks sample.
  Sub-figure (a) shows the momentum one-dimensional profile in all but the
  highest momentum fit bin.
  Sub-figure (b) shows the 
@@ -2534,7 +2534,7 @@ numutitle{}
 
 \end_inset
 
- in RHC CC N-Tracks Sample
+ in RHC Mode CC N-Tracks Sample
 \end_layout
 
 \end_inset
@@ -2796,7 +2796,7 @@ Data and postfit for the
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC CC 1-Track sample.
+ in FHC Mode CC 1-Track sample.
  Sub-figure (a) shows the momentum one-dimensional profile in all but the
  highest momentum fit bin.
  Sub-figure (b) shows the 
@@ -2834,7 +2834,7 @@ numutitle{}
 
 \end_inset
 
- in FHC CC 1-Track Sample
+ in FHC Mode CC 1-Track Sample
 \end_layout
 
 \end_inset
@@ -2981,7 +2981,7 @@ Data and postfit for the
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC CC 1-Track sample.
+ in FHC Mode CC 1-Track sample.
  Sub-figure (a) shows the momentum one-dimensional profile in all but the
  highest momentum fit bin.
  Sub-figure (b) shows the 
@@ -3019,7 +3019,7 @@ numutitle{}
 
 \end_inset
 
- in FHC CC N-Tracks Sample
+ in FHC Mode CC N-Tracks Sample
 \end_layout
 
 \end_inset
@@ -3170,7 +3170,7 @@ Data and postfit for the
 \begin_inset Formula $\numubar$
 \end_inset
 
- in RHC CC 1-Track sample.
+ in RHC Mode CC 1-Track sample.
  Sub-figure (a) shows the momentum one-dimensional profile in all but the
  highest momentum fit bin.
  Sub-figure (b) shows the 
@@ -3208,7 +3208,7 @@ numubartitle{}
 
 \end_inset
 
- in RHC CC 1-Track Sample
+ in RHC Mode CC 1-Track Sample
 \end_layout
 
 \end_inset
@@ -3359,7 +3359,7 @@ Data and postfit for the
 \begin_inset Formula $\numubar$
 \end_inset
 
- in RHC CC N-Tracks sample.
+ in RHC Mode CC N-Tracks sample.
  Sub-figure (a) shows the momentum one-dimensional profile in all but the
  highest momentum fit bin.
  Sub-figure (b) shows the 
@@ -3397,7 +3397,7 @@ numubartitle{}
 
 \end_inset
 
- in RHC CC 1-Track Sample
+ in RHC Mode CC 1-Track Sample
 \end_layout
 
 \end_inset
@@ -3548,7 +3548,7 @@ Data and postfit for the
 \begin_inset Formula $\numu$
 \end_inset
 
- in RHC CC 1-Track sample.
+ in RHC Mode CC 1-Track sample.
  Sub-figure (a) shows the momentum one-dimensional profile in all but the
  highest momentum fit bin.
  Sub-figure (b) shows the 
@@ -3586,7 +3586,7 @@ numutitle{}
 
 \end_inset
 
- in RHC CC 1-Track Sample
+ in RHC Mode CC 1-Track Sample
 \end_layout
 
 \end_inset
@@ -3737,7 +3737,7 @@ Data and postfit for the
 \begin_inset Formula $\numu$
 \end_inset
 
- in RHC CC N-Tracks sample.
+ in RHC Mode CC N-Tracks sample.
  Sub-figure (a) shows the momentum one-dimensional profile in all but the
  highest momentum fit bin.
  Sub-figure (b) shows the 
@@ -3775,7 +3775,7 @@ numutitle{}
 
 \end_inset
 
- in RHC CC N-Tracks Sample
+ in RHC Mode CC N-Tracks Sample
 \end_layout
 
 \end_inset
@@ -3926,7 +3926,7 @@ Data and postfit for the
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC CC 1-Track sample.
+ in FHC Mode CC 1-Track sample.
  Sub-figure (a) shows the momentum one-dimensional profile in all but the
  highest momentum fit bin.
  Sub-figure (b) shows the 
@@ -3964,7 +3964,7 @@ numutitle{}
 
 \end_inset
 
- in FHC CC 1-Track Sample
+ in FHC Mode CC 1-Track Sample
 \end_layout
 
 \end_inset
@@ -4115,7 +4115,7 @@ Data and postfit for the
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC CC N-Tracks sample.
+ in FHC Mode CC N-Tracks sample.
  Sub-figure (a) shows the momentum one-dimensional profile in all but the
  highest momentum fit bin.
  Sub-figure (b) shows the 
@@ -4153,7 +4153,7 @@ numutitle{}
 
 \end_inset
 
- in FHC CC N-Tracks Sample
+ in FHC Mode CC N-Tracks Sample
 \end_layout
 
 \end_inset
@@ -4304,7 +4304,7 @@ Data and postfit for the
 \begin_inset Formula $\numubar$
 \end_inset
 
- in RHC CC 1-Track sample.
+ in RHC Mode CC 1-Track sample.
  Sub-figure (a) shows the momentum one-dimensional profile in all but the
  highest momentum fit bin.
  Sub-figure (b) shows the 
@@ -4342,7 +4342,7 @@ numubartitle{}
 
 \end_inset
 
- in RHC CC 1-Track Sample
+ in RHC Mode CC 1-Track Sample
 \end_layout
 
 \end_inset
@@ -4493,7 +4493,7 @@ Data and postfit for the
 \begin_inset Formula $\numubar$
 \end_inset
 
- in RHC CC N-Tracks sample.
+ in RHC Mode CC N-Tracks sample.
  Sub-figure (a) shows the momentum one-dimensional profile in all but the
  highest momentum fit bin.
  Sub-figure (b) shows the 
@@ -4531,7 +4531,7 @@ numubartitle{}
 
 \end_inset
 
- in RHC CC N-Tracks Sample
+ in RHC Mode CC N-Tracks Sample
 \end_layout
 
 \end_inset
@@ -4682,7 +4682,7 @@ Data and postfit for the
 \begin_inset Formula $\numu$
 \end_inset
 
- in RHC CC 1-Track sample.
+ in RHC Mode CC 1-Track sample.
  Sub-figure (a) shows the momentum one-dimensional profile in all but the
  highest momentum fit bin.
  Sub-figure (b) shows the 
@@ -4720,7 +4720,7 @@ numutitle{}
 
 \end_inset
 
- in RHC CC 1-Track Sample
+ in RHC Mode CC 1-Track Sample
 \end_layout
 
 \end_inset
@@ -4871,7 +4871,7 @@ Data and postfit for the
 \begin_inset Formula $\numu$
 \end_inset
 
- in RHC CC N-Tracks sample.
+ in RHC Mode CC N-Tracks sample.
  Sub-figure (a) shows the momentum one-dimensional profile in all but the
  highest momentum fit bin.
  Sub-figure (b) shows the 
@@ -4909,7 +4909,7 @@ numutitle{}
 
 \end_inset
 
- in RHC CC N-Tracks Sample
+ in RHC Mode CC N-Tracks Sample
 \end_layout
 
 \end_inset

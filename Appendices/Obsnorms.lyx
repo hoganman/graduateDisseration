@@ -160,6 +160,58 @@ The observable normalizations used in the
 \end_inset
 
 -only BANFF fit are tabulated here.
+ In the table, the FHC beam mode is assumed unless RHC mode is specified.
+ The initialisms 
+\begin_inset Quotes eld
+\end_inset
+
+1-Trk
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+N-Trks
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+Wtr
+\begin_inset Quotes erd
+\end_inset
+
+, and 
+\begin_inset Quotes eld
+\end_inset
+
+Air
+\begin_inset Quotes erd
+\end_inset
+
+ in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Observable-normalization-fit-bins"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ represent the 1-Track selection, N-Tracks selection, 
+\begin_inset Formula $\pod$
+\end_inset
+
+ water-in mode, and 
+\begin_inset Formula $\pod$
+\end_inset
+
+ water-out mode, respectively.
 \end_layout
 
 \begin_layout Standard

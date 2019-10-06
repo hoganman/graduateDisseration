@@ -141,7 +141,7 @@
 \begin_layout Standard
 \begin_inset Branch SelectionsIntroduction
 inverted 0
-status open
+status collapsed
 
 \begin_layout Standard
 This chapter describes the development of 
@@ -585,7 +585,7 @@ Global
 \begin_layout Standard
 \begin_inset Branch SelectionsGlobal
 inverted 0
-status open
+status collapsed
 
 \begin_layout Section
 Global Reconstruction
@@ -1810,7 +1810,7 @@ If the event passes these two cuts, the HMNT is the lepton candidate.
 \begin_inset Formula $\numu$
 \end_inset
 
- Background in RHC CC N-Tracks
+ Background in RHC Mode CC N-Tracks
 \begin_inset Quotes erd
 \end_inset
 
@@ -7415,7 +7415,7 @@ noprefix "false"
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC CC 1-Track topology efficiency with banded 
+ in FHC Mode CC 1-Track topology efficiency with banded 
 \begin_inset Formula $p-\theta$
 \end_inset
 
@@ -8413,7 +8413,7 @@ name "fig:numuRHCCCNTrkTrue"
 \end_layout
 
 \begin_layout Section
-Summary of Selections
+Summary
 \end_layout
 
 \begin_layout Standard

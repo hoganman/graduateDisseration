@@ -1700,7 +1700,7 @@ Asimov fit results for the obsnorm parameters.
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC CC 1-Track in 
+ in FHC Mode CC 1-Track in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:Bin-normalization-edgesNumuFHC"
@@ -2156,7 +2156,7 @@ status open
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC CC 1-Track
+ in FHC Mode CC 1-Track
 \end_layout
 
 \end_inset
@@ -2193,7 +2193,7 @@ status open
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC CC N-Tracks
+ in FHC Mode CC N-Tracks
 \end_layout
 
 \end_inset
@@ -2234,7 +2234,7 @@ status open
 \begin_inset Formula $\numubar$
 \end_inset
 
- in RHC CC 1-Track
+ in RHC Mode CC 1-Track
 \end_layout
 
 \end_inset
@@ -2271,7 +2271,7 @@ status open
 \begin_inset Formula $\numubar$
 \end_inset
 
- in RHC CC N-Tracks
+ in RHC Mode CC N-Tracks
 \end_layout
 
 \end_inset
@@ -2312,7 +2312,7 @@ status open
 \begin_inset Formula $\numu$
 \end_inset
 
- in RHC CC 1-Track
+ in RHC Mode CC 1-Track
 \end_layout
 
 \end_inset
@@ -2349,7 +2349,7 @@ status open
 \begin_inset Formula $\numu$
 \end_inset
 
- in RHC CC N-Tracks
+ in RHC Mode CC N-Tracks
 \end_layout
 
 \end_inset
@@ -2760,7 +2760,7 @@ status open
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC CC 1-Track
+ in FHC Mode CC 1-Track
 \end_layout
 
 \end_inset
@@ -2796,7 +2796,7 @@ status open
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC CC N-Tracks
+ in FHC Mode CC N-Tracks
 \end_layout
 
 \end_inset
@@ -2836,7 +2836,7 @@ status open
 \begin_inset Formula $\numubar$
 \end_inset
 
- in RHC CC 1-Track
+ in RHC Mode CC 1-Track
 \end_layout
 
 \end_inset
@@ -2872,7 +2872,7 @@ status open
 \begin_inset Formula $\numubar$
 \end_inset
 
- in RHC CC N-Tracks
+ in RHC Mode CC N-Tracks
 \end_layout
 
 \end_inset
@@ -2912,7 +2912,7 @@ status open
 \begin_inset Formula $\numu$
 \end_inset
 
- in RHC CC 1-Track
+ in RHC Mode CC 1-Track
 \end_layout
 
 \end_inset
@@ -2948,7 +2948,7 @@ status open
 \begin_inset Formula $\numu$
 \end_inset
 
- in RHC CC N-Tracks
+ in RHC Mode CC N-Tracks
 \end_layout
 
 \end_inset
