@@ -816,7 +816,7 @@ We can now rewrite the penalty term as an inner product of two vectors.
 \[
 \begin{aligned}\chi_{\text{Penalty}}^{2} & =\left(\Delta\vec{y}\right)^{T}V^{-1}\left(\Delta\vec{y}\right)\\
  & \left(\Delta\vec{y}\right)^{T}U^{T}\Gamma^{2}U\left(\Delta\vec{y}\right)\\
- & =\left[\Gamma U\Delta\vec{y}\right]^{T}\left[\Gamma U\Delta\vec{y}\right].
+ & =\left(\Gamma U\Delta\vec{y}\right)^{T}\left(\Gamma U\Delta\vec{y}\right).
 \end{aligned}
 \]
 
@@ -829,7 +829,7 @@ If we let
 , then the penalty term becomes
 \begin_inset Formula 
 \[
-\begin{aligned}\chi_{\text{Penalty}}^{2} & =\vec{\psi}^{T}\vec{\psi}=\sum_{j}\left|\psi_{j}\right|^{2}\end{aligned}
+\begin{aligned}\chi_{\text{Penalty}}^{2} & =\left(\vec{\psi}\right)^{T}\vec{\psi}=\sum_{j}\left|\psi_{j}\right|^{2}\end{aligned}
 \]
 
 \end_inset
