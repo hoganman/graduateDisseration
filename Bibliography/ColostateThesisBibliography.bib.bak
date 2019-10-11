@@ -9,6 +9,23 @@
   Year                     = {Forthcoming}
 }
 
+@Article{Abe:2018wpn,
+  Title                    = {Search for CP Violation in Neutrino and Antineutrino Oscillations by the T2K Experiment with $2.2\times10^{21}$ Protons on Target},
+  Author                   = {Abe, K. and others},
+  Journal                  = {Phys. Rev. Lett.},
+  Year                     = {2018},
+  Number                   = {17},
+  Pages                    = {171802},
+  Volume                   = {121},
+
+  Archiveprefix            = {arXiv},
+  Collaboration            = {T2K},
+  Doi                      = {10.1103/PhysRevLett.121.171802},
+  Eprint                   = {1807.07891},
+  Primaryclass             = {hep-ex},
+  Slaccitation             = {%%CITATION = ARXIV:1807.07891;%%}
+}
+
 @Article{PhysRevD.97.012001,
   Title                    = {First measurement of the ${\ensuremath{\nu}}_{\ensuremath{\mu}}$ charged-current cross section on a water target without pions in the final state},
   Author                   = {Abe, K. and others},
@@ -2570,6 +2587,23 @@
   Timestamp                = {2019.10.02}
 }
 
+@Article{TOKI201971,
+  Title                    = {Statistical significance of CP violation in long baseline neutrino experiments},
+  Author                   = {Toki, W. and others},
+  Journal                  = {Nucl. Instrum. Meth. A},
+  Year                     = {2019},
+
+  Month                    = {March},
+  Pages                    = {71 - 80},
+  Volume                   = {921},
+
+  Abstract                 = {The p-value or statistical significance of a CP conservation null hypothesis test is determined from counting electron neutrino and antineutrino appearance oscillation events. The statistical estimates include cases with background events and different data sample sizes, graphical plots to interpret results and methods to combine p-values from different experiments. These estimates are useful for optimizing the search for CP violation with different amounts of neutrino and antineutrino beam running, comparing results from different experiments and for simple cross checks of more elaborate statistical estimates that use likelihood fitting of neutrino parameters.},
+  Doi                      = {https://doi.org/10.1016/j.nima.2018.10.106},
+  ISSN                     = {0168-9002},
+  Keywords                 = {p-values, Significance tests, Neutrino oscillations, Neutrino masses and mixing, CP violation},
+  Url                      = {http://www.sciencedirect.com/science/article/pii/S0168900218314219}
+}
+
 @Article{Walton:2014esl,
   Title                    = {Measurement of muon plus proton final states in
  $\nu_{\mu}$ interactions on hydrocarbon at $ =
@@ -2720,7 +2754,7 @@
 
 @Book{Zuber2012,
   Title                    = {Neutrino Physics},
-  Author                   = {Kai Zuber},
+  Author                   = {Zuber, K.},
   Editor                   = {Foster, B. and Kolb, E.W.},
   Publisher                = {CRC Press, Boca Raton, FL.},
   Year                     = {2012},

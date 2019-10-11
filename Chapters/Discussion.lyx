@@ -174,7 +174,7 @@ This chapter serves to summarize the methods and results shown in this thesis.
  in the oscillation analysis.
  This thesis is an analysis of an independent measurement of the ND280 constrain
 t using a maximum likelihood estimate in the Beam and Near Detector Flux
- Task Flux (BANFF) framework with samples from the Pi-Zero Detector (
+ Task Flux (BANFF) framework with samples from the pi-zero detector (
 \begin_inset Formula $\pod$
 \end_inset
 
@@ -245,7 +245,700 @@ This is another way of saying the
 \end_layout
 
 \begin_layout Section
-Potential Impacts on the T2K Oscillation Analysis
+Prediction of the T2K Oscillation Analysis Samples
+\end_layout
+
+\begin_layout Standard
+In this section, we explore the potential impact of the ND constraint parameter
+ estimates on the oscillation analysis CCQE-enriched samples.
+ There are four CCQE-enriched samples: the 
+\begin_inset Formula $\nu$
+\end_inset
+
+-mode 
+\begin_inset Formula $\numu$
+\end_inset
+
+ sample, 
+\begin_inset Formula $\antinu$
+\end_inset
+
+-mode 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ sample, 
+\begin_inset Formula $\nu$
+\end_inset
+
+-mode 
+\begin_inset Formula $\nue$
+\end_inset
+
+ sample, and 
+\begin_inset Formula $\antinu$
+\end_inset
+
+-mode 
+\begin_inset Formula $\nuebar$
+\end_inset
+
+ sample.
+ We use the frequentist framework described in the 2017 oscillation analysis
+ publication
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abe:2017vif"
+literal "false"
+
+\end_inset
+
+ to predict the their energy distributions.
+ In this framework, the expected samples are produced with the full three-flavor
+ oscillation probabilities and nominal set of SK detector systematics.
+\end_layout
+
+\begin_layout Standard
+The prediction of the 
+\begin_inset Formula $\numu$
+\end_inset
+
+ CCQE and 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ CCQE-enriched samples with and without the ND constraint is shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Predicted-reconstructed-neutrino"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Discussion/numu_numubar_PRL1211718022018.png
+	lyxscale 50
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Reconstructed muon neutrino energy distributions at SK for the 
+\begin_inset Formula $\numu$
+\end_inset
+
+ CCQE (left) and 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ CCQE (right) -enriched samples.
+ The POT exposure is the same as given in Abe et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abe:2018wpn"
+literal "false"
+
+\end_inset
+
+ and the oscillation parameters used are given in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Oscillation-parameters-used"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Reconstructed Neutrino Energy Distributions at SK
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Predicted-reconstructed-neutrino-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Discussion/hNumuNumubarPrediction.png
+	lyxscale 50
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Predicted
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Predicted reconstructed muon neutrino energy distributions at SK.
+ The prediction is systematically higher than the prior for both the 
+\begin_inset Formula $\numu$
+\end_inset
+
+ CCQE (left) and 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ CCQE (right) -enriched samples.
+ The POT exposure is the same as given in reference 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abe:2018wpn"
+literal "false"
+
+\end_inset
+
+ and the oscillation parameters used are given in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Oscillation-parameters-used"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Predicted Reconstructed Neutrino Energy Distributions at SK
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Predicted-reconstructed-neutrino"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="12" columns="3">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Value
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Units
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Delta m_{21}^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.53
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $10^{-5}\text{ eV}^{2}/c^{4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left|\Delta m_{32}^{2}\right|$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.509
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $10^{-3}\text{ eV}^{2}/c^{4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sin^{2}\theta_{23}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.528
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sin^{2}2\theta_{12}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.846
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sin^{2}2\theta_{13}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0857
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\deltacp$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-1.601
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Radians
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Earth matter density
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\text{g}/\text{cm}^{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Baseline length
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+295
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+km
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mass hierarchy
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Normal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nu$
+\end_inset
+
+-mode exposure
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14.7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $10^{20}$
+\end_inset
+
+ POT
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\antinu$
+\end_inset
+
+-mode exposure
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $10^{20}$
+\end_inset
+
+ POT
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Oscillation parameters used as inputs for studies of simulated data.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Oscillation Parameters Used as Inputs for Studies of Simulated Data
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Oscillation-parameters-used"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -253,8 +946,15 @@ Analysis Improvements
 \end_layout
 
 \begin_layout Standard
+Discussed in this section are possible improvement to the ND constraint
+ analysis.
+ This section is quite general and relies on the fundamentals of parameter
+ estimation techniques in statistics.
+\end_layout
+
+\begin_layout Standard
 First is a discussion on applying a different regularization strength.
- The next topic is a method to reduce the number of effective bin normalization
+ Second is a method to reduce the number of effective bin normalization
  parameters using a different penalty function called the Lasso.
 \end_layout
 
@@ -269,7 +969,7 @@ Recall that the BANFF ND constraint test statistic is defined as
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\begin{aligned}\hat{\chi}_{\text{ND280}}^{2} & =\underset{\Delta\vec{y}\in\mathbb{R}^{d}}{\text{argmin}}\left\{ \chi_{\text{LLR}}^{2}\left(\vec{N}^{d},\vec{N}^{p}\right)+\Delta\chi_{\text{Penalty}}^{2}\left(\Delta\vec{y}\right)\right\} \end{aligned}
+\begin{aligned}\chi_{\text{ND280}}^{2} & =\chi_{\text{LLR}}^{2}\left(\vec{N}^{d},\vec{N}^{p}\right)+\chi_{\text{Penalty}}^{2}\left(\Delta\vec{y}\right)\end{aligned}
 \]
 
 \end_inset
@@ -299,7 +999,10 @@ literal "false"
  
 \begin_inset Formula 
 \begin{equation}
-\underset{f\in\mathcal{F}}{\text{argmin}}\left\{ L\left(\eta,f\left(\vec{\beta}\right)\right)+\lambda J\left(f\right)\right\} ,\label{eq:GeneralRegularization}
+\underset{\begin{split}f\in\mathcal{F}\\
+\vec{\beta}\in\mathbb{R}^{d}
+\end{split}
+}{\text{argmin}}\left\{ L\left(\eta,f\left(\vec{\beta}\right)\right)+\lambda J\left(f\right)\right\} ,\label{eq:GeneralRegularization}
 \end{equation}
 
 \end_inset
@@ -308,7 +1011,20 @@ where
 \begin_inset Formula $L$
 \end_inset
 
- is a loss function of measurements 
+ is a loss function
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $L$
+\end_inset
+
+ is also called an objective function.
+\end_layout
+
+\end_inset
+
+ of measurements 
 \begin_inset Formula $\eta$
 \end_inset
 
@@ -324,12 +1040,8 @@ where
 \begin_inset Formula $d$
 \end_inset
 
--dimensional function of parameters 
+-dimensional function of 
 \begin_inset Formula $\vec{\beta}$
-\end_inset
-
- in 
-\begin_inset Formula $\mathbb{R}^{d}$
 \end_inset
 
 , 
@@ -423,8 +1135,8 @@ In this verification of the regularization strength, the test statistic
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\begin{aligned}\hat{\chi}_{\text{ND280}}^{2} & =\underset{\vec{y}\in\mathbb{R}^{d}}{\text{argmin}}\left\{ \chi_{\text{LLR}}^{2}+\lambda\chi_{\text{Penalty}}^{2}\left(\vec{y}\right)\right\} \\
- & =\underset{\vec{y}\in\mathbb{R}^{d}}{\text{argmin}}\left\{ \chi_{\text{LLR}}^{2}+\lambda\left(\vec{y}-\vec{y}_{0}\right)^{T}V^{-1}\left(\vec{y}-\vec{y}_{0}\right)\right\} ,
+\begin{aligned}\chi_{\text{ND280}}^{2} & =\chi_{\text{LLR}}^{2}+\lambda\chi_{\text{Penalty}}^{2}\left(\vec{y}\right)\\
+ & =\chi_{\text{LLR}}^{2}+\lambda\left(\vec{y}-\vec{y}_{0}\right)^{T}V^{-1}\left(\vec{y}-\vec{y}_{0}\right),
 \end{aligned}
 \label{eq:RegularizedDeltaChi2ND280}
 \end{equation}
@@ -515,7 +1227,7 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -837,7 +1549,7 @@ If we let
 and test statistic is now
 \begin_inset Formula 
 \begin{equation}
-\begin{aligned}\hat{\chi}_{\text{ND280}}^{2} & =\underset{\vec{\psi}\in\mathbb{R}^{d}}{\text{argmin}}\left\{ \chi_{\text{LLR}}^{2}\left(N^{d},N^{p}\right)+\left|\left|\psi_{j}\right|\right|_{2}^{2}\right\} \end{aligned}
+\begin{aligned}\chi_{\text{ND280}}^{2} & =\chi_{\text{LLR}}^{2}\left(N^{d},N^{p}\right)+\left|\left|\psi\right|\right|_{2}^{2}\end{aligned}
 ,\label{eq:DeltaChiSqND280RidgeRegressionForm}
 \end{equation}
 
@@ -964,7 +1676,7 @@ where
 -regularization which is called the elastic net constraint
 \begin_inset Formula 
 \[
-\underset{\vec{\beta}\in\mathbb{R}^{d}}{\text{argmin}}\left\{ L\left(\vec{\eta},\vec{\beta}\right)+\lambda\left[\frac{1}{2}\left(1-\alpha\right)\left|\left|\beta_{i}\right|\right|_{2}^{2}+\alpha\left|\left|\beta_{i}\right|\right|_{1}\right]\right\} ,
+\underset{\vec{\beta}\in\mathbb{R}^{d}}{\text{argmin}}\left\{ L\left(\vec{\eta},\vec{\beta}\right)+\lambda\left(\frac{1}{2}\left(1-\alpha\right)\left|\left|\beta_{i}\right|\right|_{2}^{2}+\alpha\left|\left|\beta_{i}\right|\right|_{1}\right)\right\} ,
 \]
 
 \end_inset

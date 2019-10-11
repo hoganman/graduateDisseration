@@ -240,6 +240,11 @@ algorithm2e
 \filename_suffix 0
 \color #faf0e6
 \end_branch
+\branch AppendixProbCPC
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
 \index Index
 \shortcut idx
 \color #008000
@@ -1172,6 +1177,226 @@ filename "Appendices/PostfitParameters.lyx"
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch AppendixProbCPC
+inverted 0
+status open
+
+\begin_layout Chapter
+Null Hypothesis Test of CP Conservation in T2K
+\end_layout
+
+\begin_layout Standard
+The purpose of the ND constraint is to minimize the impact of systematic
+ uncertainties in the oscillation analysis.
+ Specifically, ND280 is well suited to constrain the 
+\begin_inset Formula $\numu$
+\end_inset
+
+ and 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ incident flux and cross section model parameters.
+ These two sources of systematic uncertainty together have the largest impact
+ on the oscillation analysis.
+ In FHC/RHC mode, the fractional uncertainty in the number of 
+\begin_inset Formula $\nue/\nuebar$
+\end_inset
+
+ events is reduced by more than a factor of 2 with the ND constraint using
+ large toy experiment sets
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abe:2017vif"
+literal "false"
+
+\end_inset
+
+.
+ These enhancements will improve the search for CP violation (CPV) in the
+ lepton sector.
+\end_layout
+
+\begin_layout Standard
+Observation of CPV is tied to the asymmetry of neutrino and antineutrino
+ oscillations.
+ The asymmetry parameter,
+\begin_inset Formula 
+\begin{equation}
+A=\frac{\mathcal{P}\left(\numu\rightarrow\nue\right)-\mathcal{P}\left(\numubar\rightarrow\nuebar\right)}{\mathcal{P}\left(\numu\rightarrow\nue\right)+\mathcal{P}\left(\numubar\rightarrow\nuebar\right)},\label{eq:assym-prob}
+\end{equation}
+
+\end_inset
+
+is a direct measure of CPV.
+ Having accurate knowledge of the unoscillated flux, which is provided by
+ the ND constraint, improves the asymmetry measurement.
+ While measuring the asymmetry is beyond the scope of this thesis, we can
+ roughly estimate importance the ND constraint has on observing CPV.
+ Using the prescription described in Toki et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "TOKI201971"
+literal "false"
+
+\end_inset
+
+, a 
+\begin_inset Formula $p$
+\end_inset
+
+-value can be calculated for a CP conservation (CPC) null hypothesis test.
+ The asymmetry can be expressed as
+\begin_inset Formula 
+\[
+A=\frac{N_{e}-R\overline{N}_{e}}{N_{e}+R\overline{N}_{e}}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $N_{e}$
+\end_inset
+
+ 
+\begin_inset Formula $\left(\overline{N}_{e}\right)$
+\end_inset
+
+ is the number of observed 
+\begin_inset Formula $\numu\rightarrow\nue$
+\end_inset
+
+ 
+\begin_inset Formula $\left(\numubar\rightarrow\nuebar\right)$
+\end_inset
+
+ events and 
+\begin_inset Formula $R$
+\end_inset
+
+ is a scale factor to account for unequal sample sizes and reconstruction
+ efficiencies.
+ The scale factor 
+\begin_inset Formula $R$
+\end_inset
+
+ is given explicitly as 
+\begin_inset Formula 
+\[
+R=\left(\frac{\overline{\epsilon}_{e}}{\epsilon_{e}}\right)\frac{N_{\mu}/\epsilon_{\mu}}{\overline{N}_{\mu}/\overline{\epsilon}_{\mu}},
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $N_{\mu}$
+\end_inset
+
+ 
+\begin_inset Formula $\left(\overline{N}_{\mu}\right)$
+\end_inset
+
+ is the number of observed 
+\begin_inset Formula $\numu\rightarrow\numu$
+\end_inset
+
+ 
+\begin_inset Formula $\left(\numubar\rightarrow\numubar\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\epsilon_{\alpha}$
+\end_inset
+
+ 
+\begin_inset Formula $\left(\overline{\epsilon}_{\alpha}\right)$
+\end_inset
+
+ is the reconstruction efficiency for particle (antiparticle) 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The statistical significance of CPC, 
+\begin_inset Formula $P_{\text{CPC}}$
+\end_inset
+
+, is given by
+\begin_inset Formula 
+\[
+P_{\text{CPC}}=\sum_{N_{e}=0}^{\infty}\sum_{\overline{N}_{e}=0}^{\infty}\theta\left(A-\hat{A}+\varepsilon\right)\mathcal{L}\left(N_{e}\left|\hat{N}_{e}^{\text{CPC}}\right.\right)\mathcal{L}\left(\overline{N}_{e}\left|\hat{\overline{N}}_{e}^{\text{CPC}}\right.\right),
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\theta$
+\end_inset
+
+ is the Heaviside step function, 
+\begin_inset Formula $\hat{A}$
+\end_inset
+
+ is the observed asymmetry, 
+\begin_inset Formula $\mathcal{L}$
+\end_inset
+
+ is the likelihood function given by 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:likelihoodPoisson"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\hat{N}_{e}^{\text{CPC}}$
+\end_inset
+
+ 
+\begin_inset Formula $\left(\hat{\overline{N}}_{e}^{\text{CPC}}\right)$
+\end_inset
+
+ is the number of expected 
+\begin_inset Formula $N_{e}$
+\end_inset
+
+ 
+\begin_inset Formula $\left(\overline{N}_{e}\right)$
+\end_inset
+
+ events with backgrounds for 
+\begin_inset Formula $\deltacp=0$
+\end_inset
+
+, and 
+\begin_inset Formula $\varepsilon\in(0,1)$
+\end_inset
+
+ is included since 
+\begin_inset Formula $\theta(0)$
+\end_inset
+
+ is undefined.
+ The step function serves to remove correctly non-contributing terms in
+ the probability 
+\begin_inset Formula $p$
+\end_inset
+
+-value.
 \end_layout
 
 \end_inset

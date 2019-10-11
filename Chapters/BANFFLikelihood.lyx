@@ -1266,15 +1266,15 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-The best fit parameters are those that minimizes the chi-squared statistic,
- 
-\begin_inset Formula $\hat{\chi}_{\text{ND280}}^{2}$
+The best fit parameters, 
+\begin_inset Formula $\hat{\vec{y}}$
 \end_inset
 
-, given by
+, are those that minimizes the chi-squared statistic
 \begin_inset Formula 
 \begin{equation}
-\hat{\chi}_{\text{ND280}}^{2}=\underset{\vec{y}\in\mathbb{R}^{d}}{\text{argmin}}\left\{ \chi_{\text{LLR}}^{2}\left(\vec{N}^{d},\vec{N}^{p}\left(\vec{y}\right)\right)+\chi_{\text{Penalty}}^{2}\left(\vec{y}\right)\right\} ,\label{eq:minBANFFDeltaChiSqr}
+\begin{aligned}\hat{\vec{y}} & =\underset{\vec{y}\in\mathbb{R}^{d}}{\text{argmin}}\left\{ \chi_{\text{LLR}}^{2}\left(\vec{N}^{d},\vec{N}^{p}\left(\vec{y}\right)\right)+\chi_{\text{Penalty}}^{2}\left(\vec{y}\right)\right\} \end{aligned}
+\label{eq:minBANFFDeltaChiSqr}
 \end{equation}
 
 \end_inset
