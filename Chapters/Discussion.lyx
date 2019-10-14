@@ -165,16 +165,15 @@ This chapter serves to summarize the methods and results shown in this thesis.
 \end_inset
 
 .
- With the aid of the world class Japan Proton Accelerator Research Complex
- (J-PARC), a dedicated near detector called ND280 is located downstream
- of the neutrino production source to observe the beam before oscillations
- occur.
- Since starting operations, the fine grain detector (FGD) in ND280 has provided
- constraints on the neutrino flux and neutrino-water interaction modes important
- in the oscillation analysis.
+ With the aid of the Japan Proton Accelerator Research Complex (J-PARC),
+ a dedicated near detector called ND280 is located downstream of the neutrino
+ production source to observe the beam before oscillations occur.
+ Since the start of data collection, the fine grain detector (FGD) in ND280
+ has provided constraints on the neutrino flux and neutrino-water interaction
+ modes important to the oscillation analysis.
  This thesis is an analysis of an independent measurement of the ND280 constrain
 t using a maximum likelihood estimate in the Beam and Near Detector Flux
- Task Flux (BANFF) framework with samples from the pi-zero detector (
+ Task Force (BANFF) framework with samples from the pi-zero detector (
 \begin_inset Formula $\pod$
 \end_inset
 
@@ -194,13 +193,13 @@ Analysis samples have been developed with the
 \end_inset
 
  has a larger volume compared to the FGD, which means it has more neutrino
- interactions to choose from, the 
+ interactions to select, the 
 \begin_inset Formula $\pod$
 \end_inset
 
- is less sensitive to harder to measure phenomena like CC single pion production.
+ is less sensitive to non-CCQE interactions like CC single pion production.
  This limitation is largely due to the design of the detector and sample
- cuts which reduce its 
+ selection which reduce its 
 \begin_inset Formula $\left(p,\cos\theta\right)$
 \end_inset
 
@@ -216,9 +215,9 @@ The
 
 -only data fit shows very good agreement with the FGD-only result using
  the same flux and cross section parameters.
- Trends in the data like shape dependence on the flux and accounting for
- quantum mechanical correlation effects the observable cross section where
- observed in both sets of fits.
+ Trends in the postfit parameters like the flux shape and the quantum mechanical
+ correlation affects on the observable cross section were observed in both
+ sets of fits.
  A hypothesis test was conducted to test if the 
 \begin_inset Formula $\pod$
 \end_inset
@@ -249,25 +248,38 @@ Prediction of the T2K Oscillation Analysis Samples
 \end_layout
 
 \begin_layout Standard
-In this section, we explore the potential impact of the ND constraint parameter
- estimates on the oscillation analysis CCQE-enriched samples.
- There are four CCQE-enriched samples: the 
+In this section, we analyze the BANFF fit as the input for the oscillation
+ analysis.
+ We are explicitly NOT performing the oscillation analysis, but we are building
+ a prediction of the oscillated neutrino samples using the frequentist framework
+ described in the 2017 oscillation analysis publication
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abe:2017vif"
+literal "false"
+
+\end_inset
+
+.
+ We then compare the prediction with the observed neutrino energy spectra
+ of the four CCQE-enriched samples at Super-Kamiokande (SK).
+ These samples are the FHC mode (
 \begin_inset Formula $\nu$
 \end_inset
 
--mode 
+-mode) 
 \begin_inset Formula $\numu$
 \end_inset
 
- sample, 
+ sample, the RHC mode (
 \begin_inset Formula $\antinu$
 \end_inset
 
--mode 
+-mode) 
 \begin_inset Formula $\numubar$
 \end_inset
 
- sample, 
+ sample, the 
 \begin_inset Formula $\nu$
 \end_inset
 
@@ -275,7 +287,7 @@ In this section, we explore the potential impact of the ND constraint parameter
 \begin_inset Formula $\nue$
 \end_inset
 
- sample, and 
+ sample, and the 
 \begin_inset Formula $\antinu$
 \end_inset
 
@@ -284,22 +296,45 @@ In this section, we explore the potential impact of the ND constraint parameter
 \end_inset
 
  sample.
- We use the frequentist framework described in the 2017 oscillation analysis
- publication
+\end_layout
+
+\begin_layout Standard
+The SK prediction is built with the following ingredients: the flux and
+ cross section parameter estimates from the BANFF fit parameter estimates
+ and covariance matrix, the nominal set of SK detector systematics in the
+ frequentist analysis software, and the full three-flavor oscillation probabilit
+ies.
+ The full three-flavor oscillation parameters used are the same as listed
+ in TABLE II in the 2018 CP violation search paper
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Abe:2017vif"
+key "Abe:2018wpn"
 literal "false"
 
 \end_inset
 
- to predict the their energy distributions.
- In this framework, the expected samples are produced with the full three-flavor
- oscillation probabilities and nominal set of SK detector systematics.
+, which are shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Oscillation-parameters-used"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ for convenience.
+ The observed spectra are also taken from the 2018 CP violation search paper,
+ which had a integrated luminosity of 
+\begin_inset Formula $2.2\times10^{21}$
+\end_inset
+
+ POT.
 \end_layout
 
 \begin_layout Standard
-The prediction of the 
+The spectra are shown in the following order.
+ First are the of the 
 \begin_inset Formula $\numu$
 \end_inset
 
@@ -307,7 +342,7 @@ The prediction of the
 \begin_inset Formula $\numubar$
 \end_inset
 
- CCQE-enriched samples with and without the ND constraint is shown in 
+ CCQE-enriched samples together shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:Predicted-reconstructed-neutrino"
@@ -318,192 +353,54 @@ noprefix "false"
 \end_inset
 
 .
+ Next is the 
+\begin_inset Formula $\nue$
+\end_inset
+
+ CCQE-enriched sample shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Reconstructed-nue-CCQE-enriched"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Finally is the 
+\begin_inset Formula $\nuebar$
+\end_inset
+
+ CCQE-enriched sample shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Reconstructed-nuebar-CCQE-enriched"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ The integrated spectra are tabulated in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Number-of-events-SK-CCQE"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/Discussion/numu_numubar_PRL1211718022018.png
-	lyxscale 50
-	width 60text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Reconstructed muon neutrino energy distributions at SK for the 
-\begin_inset Formula $\numu$
-\end_inset
-
- CCQE (left) and 
-\begin_inset Formula $\numubar$
-\end_inset
-
- CCQE (right) -enriched samples.
- The POT exposure is the same as given in Abe et al.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Abe:2018wpn"
-literal "false"
-
-\end_inset
-
- and the oscillation parameters used are given in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "tab:Oscillation-parameters-used"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
- 
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Reconstructed Neutrino Energy Distributions at SK
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Predicted-reconstructed-neutrino-1"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/Discussion/hNumuNumubarPrediction.png
-	lyxscale 50
-	width 60text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Predicted
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Predicted reconstructed muon neutrino energy distributions at SK.
- The prediction is systematically higher than the prior for both the 
-\begin_inset Formula $\numu$
-\end_inset
-
- CCQE (left) and 
-\begin_inset Formula $\numubar$
-\end_inset
-
- CCQE (right) -enriched samples.
- The POT exposure is the same as given in reference 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Abe:2018wpn"
-literal "false"
-
-\end_inset
-
- and the oscillation parameters used are given in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "tab:Oscillation-parameters-used"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
- 
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Predicted Reconstructed Neutrino Energy Distributions at SK
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Predicted-reconstructed-neutrino"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -547,6 +444,35 @@ Units
 \begin_inset Text
 
 \begin_layout Plain Layout
+Mass hierarchy
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Normal
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 \begin_inset Formula $\Delta m_{21}^{2}$
 \end_inset
 
@@ -555,7 +481,7 @@ Units
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -564,7 +490,7 @@ Units
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -578,7 +504,7 @@ Units
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -590,7 +516,7 @@ Units
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -599,7 +525,7 @@ Units
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -613,7 +539,7 @@ Units
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -625,7 +551,7 @@ Units
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -634,7 +560,7 @@ Units
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -645,7 +571,7 @@ Units
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -657,7 +583,7 @@ Units
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -666,7 +592,7 @@ Units
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -677,7 +603,7 @@ Units
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -689,7 +615,7 @@ Units
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -698,18 +624,18 @@ Units
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -721,7 +647,7 @@ Units
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -730,27 +656,30 @@ Units
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Radians
+rad
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Earth matter density
+\begin_inset Formula $e^{-}$
+\end_inset
+
+ density
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -759,7 +688,7 @@ Earth matter density
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -773,7 +702,7 @@ Earth matter density
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -782,7 +711,7 @@ Baseline length
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -791,7 +720,7 @@ Baseline length
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -802,48 +731,19 @@ km
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Mass hierarchy
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Normal
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 \begin_inset Formula $\nu$
 \end_inset
 
--mode exposure
+-mode luminosity
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -852,7 +752,7 @@ Normal
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -866,19 +766,19 @@ Normal
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 \begin_inset Formula $\antinu$
 \end_inset
 
--mode exposure
+-mode luminosity
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -887,7 +787,7 @@ Normal
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -941,15 +841,877 @@ name "tab:Oscillation-parameters-used"
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Discussion/hNumuNumubarPrediction.png
+	lyxscale 40
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Prediction
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Discussion/numu_numubar_PRL1211718022018.png
+	lyxscale 50
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Observed
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Reconstructed 
+\begin_inset Formula $\numu$
+\end_inset
+
+ (left) and 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ (right) CCQE-enriched energy distributions at SK.
+ The top figure is the predicted spectra while the bottom is the observed
+ spectra.
+ The observed spectra is taken from the 2018 CP violation search publication
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abe:2018wpn"
+literal "false"
+
+\end_inset
+
+.
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Reconstructed 
+\begin_inset Formula $\numu$
+\end_inset
+
+ and 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ CCQE-enriched Energy Distributions at SK
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Predicted-reconstructed-neutrino"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Discussion/hNueFHCPrediction.png
+	lyxscale 50
+	height 1.9in
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Prediction
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Discussion/nue_PRL1211718022018.png
+	lyxscale 25
+	height 1.9in
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Observed
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Reconstructed 
+\begin_inset Formula $\nue$
+\end_inset
+
+ CCQE-enriched energy distribution at SK.
+ The observed spectra is taken from the 2018 CP violation search publication
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abe:2018wpn"
+literal "false"
+
+\end_inset
+
+.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Reconstructed 
+\begin_inset Formula $\nue$
+\end_inset
+
+ CCQE-enriched Energy Distribution at SK
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Reconstructed-nue-CCQE-enriched"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Discussion/hNuebarRHCPrediction.png
+	lyxscale 50
+	height 1.9in
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Prediction
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Discussion/nuebar_PRL1211718022018.png
+	lyxscale 25
+	height 1.9in
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Observed
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Reconstructed 
+\begin_inset Formula $\nuebar$
+\end_inset
+
+ CCQE-enriched energy distribution at SK.
+ The observed spectra is taken from the 2018 CP violation search publication
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abe:2018wpn"
+literal "false"
+
+\end_inset
+
+.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Reconstructed 
+\begin_inset Formula $\nue$
+\end_inset
+
+ CCQE-Enriched Energy Distribution at SK
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Reconstructed-nuebar-CCQE-enriched"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Prefit
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\pod$
+\end_inset
+
+-only
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+FGD-only
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Observed
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\numu$
+\end_inset
+
+ CCQE (
+\begin_inset Formula $<2.3$
+\end_inset
+
+ GeV)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+207.34
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+252.41
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+228.07
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+201
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\numubar$
+\end_inset
+
+ CCQE (
+\begin_inset Formula $<2.3$
+\end_inset
+
+ GeV)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+49.67
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+58.14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+52.47
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+57
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nue$
+\end_inset
+
+ CCQE (
+\begin_inset Formula $<1.3$
+\end_inset
+
+ GeV)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+65.61
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+83.01
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+74.71
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+74
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nuebar$
+\end_inset
+
+ CCQE (
+\begin_inset Formula $<1.3$
+\end_inset
+
+ GeV)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.74
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.03
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.15
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Number of events expected in the SK CCQE-enriched samples.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Number of Events Expected in the SK CCQE-enriched Samples
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Number-of-events-SK-CCQE"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We observe that each 
+\begin_inset Formula $\pod$
+\end_inset
+
+-only predicted spectrum is systematically higher than each FGD-only predicted
+ spectrum.
+ However, the more interesting differences are the integrated prediction.
+ While the FGD-only prediction has better agreement with both the 
+\begin_inset Formula $\nue$
+\end_inset
+
+ and 
+\begin_inset Formula $\numu$
+\end_inset
+
+ CCQE samples, the 
+\begin_inset Formula $\pod$
+\end_inset
+
+-only prediction is agrees well with the 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ CCQE sample.
+ It is difficult to judge the agreement of the 
+\begin_inset Formula $\nuebar$
+\end_inset
+
+ CCQE sample due to small statistics.
+ However, this all suggests that including the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ data samples can improve the ND constraint in RHC mode.
+\end_layout
+
 \begin_layout Section
 Analysis Improvements
 \end_layout
 
 \begin_layout Standard
-Discussed in this section are possible improvement to the ND constraint
- analysis.
- This section is quite general and relies on the fundamentals of parameter
+Looking forward, the 
+\begin_inset Formula $\pod$
+\end_inset
+
+-only analysis can be improved significantly.
+ The 
+\begin_inset Formula $\pod$
+\end_inset
+
+ selections in this thesis are simplistic compared to the recent developments
+ in the T2K experiment.
+ The author was a part of the second generation cross section analysis of
+ single pion production in the 
+\begin_inset Formula $\pod$
+\end_inset
+
+, which utilized deep learning techniques, to select a relatively pure CC-
+\begin_inset Formula $1\pi$
+\end_inset
+
+ sample.
+ These details are provided in Appendix 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "app:podcc1pi"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Additionally, the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ CC-
+\begin_inset Formula $0\pi$
+\end_inset
+
+ analysis
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Campbell2018a"
+literal "false"
+
+\end_inset
+
+ was able to achieve a high-purity CCQE-like sample using almost identical
+ cuts as presented in this thesis.
+ However, both the CC-
+\begin_inset Formula $1\pi$
+\end_inset
+
+ and CC-
+\begin_inset Formula $0\pi$
+\end_inset
+
+ analyses use cuts that are not yet available in the BANFF framework due
+ to technical difficulties and lack of expertise in the collaboration.
+\end_layout
+
+\begin_layout Standard
+Also more validation studies could be done to understand the sensitivity
+ of the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ samples.
+ A test of the biases of the fit parameters requires fitting an ensemble
+ of 
+\begin_inset Quotes eld
+\end_inset
+
+fake data
+\begin_inset Quotes erd
+\end_inset
+
+ sets, which are variations of the Asimov set.
+ This all requires significant amount of computational time to complete
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Also not to mention the carbon footprint left afterwards.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+There are other possible improvements to the ND constraint analysis using
+ the methods developed for machine learning applications.
+ The following two sections are on topics to improve the BANFF fit analysis
+ in its current state.
+ These methods are quite general and rely on the fundamentals of parameter
  estimation techniques in statistics.
+ A section summary is provided to summarize their details.
 \end_layout
 
 \begin_layout Standard
@@ -999,10 +1761,8 @@ literal "false"
  
 \begin_inset Formula 
 \begin{equation}
-\underset{\begin{split}f\in\mathcal{F}\\
-\vec{\beta}\in\mathbb{R}^{d}
-\end{split}
-}{\text{argmin}}\left\{ L\left(\eta,f\left(\vec{\beta}\right)\right)+\lambda J\left(f\right)\right\} ,\label{eq:GeneralRegularization}
+\begin{aligned}\hat{\beta} & =\underset{f\in\mathcal{F},\beta\in\mathbb{R}^{d}}{\text{argmin}}\left\{ L\left(\eta,f\left(\vec{\beta}\right)\right)+\lambda J\left(f\right)\right\} \end{aligned}
+,\label{eq:GeneralRegularization}
 \end{equation}
 
 \end_inset
@@ -1216,11 +1976,12 @@ noprefix "false"
 
  nearly minimizes the cross-validation error, slightly larger penalties
  are preferred.
- The cross-validation error curve is minimized at 
-\begin_inset Formula $\lambda=1.45$
+ The cross-validation error curve is minimized roughly at 
+\begin_inset Formula $\lambda=1.4$
 \end_inset
 
 , and it is roughly quadratic in the neighborhood around the minimum.
+ Therefore, a more regularized solution is preferred with the data sample.
 \end_layout
 
 \begin_layout Standard
@@ -1340,6 +2101,72 @@ name "fig:Cross-validation"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Another data fit with 
+\begin_inset Formula $\lambda=1.4$
+\end_inset
+
+ was performed with the following results.
+ The MINUIT optimization routine required 175602 (149661) iterations to
+ find the global minimum at 
+\begin_inset Formula $\hat{\chi}_{\text{ND}280}^{2}=1344.89$
+\end_inset
+
+ (
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $1412.28$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+) with the regularized (non-regularized) penalty term.
+ The flux parameters have significantly reduced uncertainties compared to
+ the 
+\begin_inset Formula $\lambda=1$
+\end_inset
+
+ result.
+ The cross section parameters are relatively the same as before except for
+ the CC coherent uncertainties which are much smaller.
+ The was no observed changes in the bin normalization parameters as well.
+ This suggests that the flux covariance matrix input needs to reexamined
+ for future BANFF fit analyses.
+ The postfit parameters are presented in Appendix 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "app:Regularized-Solution"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
@@ -1728,7 +2555,7 @@ literal "false"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1849,8 +2676,54 @@ literal "false"
 .
 \end_layout
 
+\begin_layout Subsection
+Analysis Improvement Summary
+\end_layout
+
+\begin_layout Standard
+We have explored topics that can potentially improve the BANFF fit analysis.
+ Improved sensitivity to CC-
+\begin_inset Formula $0\pi$
+\end_inset
+
+ and CC-
+\begin_inset Formula $1\pi$
+\end_inset
+
+ model parameters using already developed 
+\begin_inset Formula $\pod$
+\end_inset
+
+ selections is possible if the BANFF software is updated.
+ We also examined two topics developed in machine learning practices to
+ improve parameter estimation.
+ The first was a study on the strength of the penalty term.
+ It was shown that we can find a tuning, or regularization, parameter for
+ the penalty term that reduces the parameter variance but at cost of some
+ parameter bias.
+ The second topic was a general discussion on using a different BANFF fit
+ test statistic called the Lasso.
+ The Lasso has the attractive feature, without user input, of determining
+ which parameters are unimportant in a model fit.
+ The implication here is that the number bin normalization parameters in
+ the BANFF fit can be effectively shrunk using the data itself.
+\end_layout
+
 \begin_layout Section
-Future Prospects
+Future Prospects: Joint 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+podtitle{}
+\end_layout
+
+\end_inset
+
++FGD Fit
 \end_layout
 
 \begin_layout Standard
@@ -1868,12 +2741,23 @@ joint
 
 +FGD BANFF fit for the T2K experiment.
  As shown in the previous chapter, the number of neutrino-carbon and neutrino-ox
-ygen events can be increased by including the 
+ygen events can be significantly increased by including the 
 \begin_inset Formula $\pod$
 \end_inset
 
  data.
- However, since the fits were performed on different T2K run periods, an
+ This will enhance the fit's sensitivity, and possibly improve constraints
+ on poorly constrained parameters like that of the 2p2h interaction.
+ There is an additional observed tension in the predicted SK samples' spectra
+ between the 
+\begin_inset Formula $\pod$
+\end_inset
+
+-only and FGD-only fits, which needs to be resolved.
+\end_layout
+
+\begin_layout Standard
+However, since the fits were performed on different T2K run periods, an
  equal POT exposure comparison is useful here.
  Proposing to run a 
 \begin_inset Quotes eld
@@ -1928,17 +2812,17 @@ noprefix "false"
  The fractional errors decrease approximately by
 \begin_inset Formula 
 \[
-\begin{aligned}\delta N_{^{12}C}^{\text{FGD1-FHC}} & =\frac{1}{\sqrt{N_{^{12}C}^{\text{FGD1-FHC}}}}\overset{+\pod\text{ Air}}{\longrightarrow}\frac{1}{\sqrt{(1+2.01)N_{^{12}C}^{\text{FGD1-FHC}}}}\sim\frac{1}{\sqrt{3.0}}\\
-\delta N_{^{16}O}^{\text{FGD2-FHC}} & =\frac{1}{\sqrt{N_{^{16}O}^{\text{FGD2-FHC}}}}\overset{+\pod\text{ Water}}{\longrightarrow}\frac{1}{\sqrt{(1+0.72)N_{^{12}C}^{\text{FGD1-FHC}}}}\sim\frac{1}{\sqrt{1.7}}\\
-\delta N_{^{12}C}^{\text{FGD1-RHC}} & =\frac{1}{\sqrt{N_{^{12}C}^{\text{FGD1-RHC}}}}\overset{+\pod\text{ Air}}{\longrightarrow}\frac{1}{\sqrt{(1+1.60)N_{^{12}C}^{\text{FGD1-RHC}}}}\sim\frac{1}{\sqrt{2.6}}\\
-\delta N_{^{16}O}^{\text{FGD2-RHC}} & =\frac{1}{\sqrt{N_{^{16}O}^{\text{FGD2-RHC}}}}\overset{+\pod\text{ Water}}{\longrightarrow}\frac{1}{\sqrt{(1+1.04)N_{^{12}C}^{\text{FGD2-RHC}}}}\sim\frac{1}{\sqrt{2.0}},
+\begin{aligned}\delta N_{^{12}C}^{\text{FGD1-FHC}} & =\frac{1}{\sqrt{N_{^{12}C}^{\text{FGD1-FHC}}}}\overset{+\pod\text{ Air}}{\longrightarrow}\frac{1}{\sqrt{(1+2.01)N_{^{12}C}^{\text{FGD1-FHC}}}}\sim\frac{1}{\sqrt{3.01}}\approx0.576\\
+\delta N_{^{16}O}^{\text{FGD2-FHC}} & =\frac{1}{\sqrt{N_{^{16}O}^{\text{FGD2-FHC}}}}\overset{+\pod\text{ Water}}{\longrightarrow}\frac{1}{\sqrt{(1+0.72)N_{^{12}C}^{\text{FGD1-FHC}}}}\sim\frac{1}{\sqrt{1.72}}\approx0.762\\
+\delta N_{^{12}C}^{\text{FGD1-RHC}} & =\frac{1}{\sqrt{N_{^{12}C}^{\text{FGD1-RHC}}}}\overset{+\pod\text{ Air}}{\longrightarrow}\frac{1}{\sqrt{(1+1.60)N_{^{12}C}^{\text{FGD1-RHC}}}}\sim\frac{1}{\sqrt{2.60}}\approx0.620\\
+\delta N_{^{16}O}^{\text{FGD2-RHC}} & =\frac{1}{\sqrt{N_{^{16}O}^{\text{FGD2-RHC}}}}\overset{+\pod\text{ Water}}{\longrightarrow}\frac{1}{\sqrt{(1+1.04)N_{^{12}C}^{\text{FGD2-RHC}}}}\sim\frac{1}{\sqrt{2.04}}\approx0.700,
 \end{aligned}
 \]
 
 \end_inset
 
 where combinations of FGD1/2 and FHC/RHC represent the FGD in the different
- beam modes, and an right-point arrow indicates adding the 
+ beam modes, and an right-pointing arrow indicates adding the 
 \begin_inset Formula $\pod$
 \end_inset
 
@@ -2699,17 +3583,6 @@ Neutrino-nucleon exposure on target elements in a joint
 \end_inset
 
  and FGD analysis using T2K runs 2 - 8.
- The original numbers can bin found in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "tab:Neutrino-exposure-P0DFGD"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:Neutrino-exposure-P0DFGD-EqualPOT"
@@ -2773,84 +3646,46 @@ Employing both the FGD and
 \begin_inset Formula $\pod$
 \end_inset
 
- in a joint BANFF fit has been attempted during the validation of the results.
- This requires updating to the newer canonical T2K 2018 cross section parameteri
-zation which impairs the ability to compare between fits.
- Also including both detectors more than doubles the number of parameters
- and events than for a single detector-only fit.
- The FGD run periods are also expanded to runs 7 and 8.
- With more events and parameters, computational limits are already occurring.
- On a modest high performance computing setup, the fit time for the 
-\begin_inset Quotes eld
+ in a joint BANFF fit was attempted, but the fit failed to converge due
+ to machine precision limits.
+ Including both detectors with the FGD parameterization described in reference
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bienstock2017"
+literal "false"
+
 \end_inset
 
-Asimov
-\begin_inset Quotes erd
+ more than doubles the number of parameters and events than a single detector-on
+ly fit.
+ This not only requires more iterations to ensure the test statistic global
+ minimum is found, but also requires more calculations per iteration as
+ well.
+ For instance, the required time to ensure the joint 
+\begin_inset Formula $\pod$
 \end_inset
 
- fit which starts at the likelihood minimum already, required two weeks
- to complete, or about 10 times longer than the 
++FGD Asimov fit started at the global minimum took 10 times larger than
+ the 
 \begin_inset Formula $\pod$
 \end_inset
 
 -only Asimov fit.
- 
-\shape italic
-The joint data fit also did not converge since it ran into machine precision
- limits
-\shape default
+ So parameter shrinkage must be performed on both analyses if reasonable
+ computational speed and maximum statistical power are desired in the BANFF
+ fit.
+ This is further discussed in Appendix 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "chap:Computing-Resources"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
 .
- So possible improvements must be considered if both computational speed
- and maximum statistical power are desired in the BANFF fit.
-\end_layout
-
-\begin_layout Standard
-Looking forward into the future, this analysis can be improved on significantly.
- Firstly, the selections are simplistic compared to the recent developments
- in the T2K experiment.
- The author was a part of the second generation cross section analysis of
- single pion production in the 
-\begin_inset Formula $\pod$
-\end_inset
-
-, which utilized deep learning techniques, to select a relatively pure CC-
-\begin_inset Formula $1\pi$
-\end_inset
-
- sample.
- Additionally, the 
-\begin_inset Formula $\pod$
-\end_inset
-
- 
-\begin_inset Formula $\numubar$
-\end_inset
-
- CC-
-\begin_inset Formula $0\pi$
-\end_inset
-
- analysis was able to achieve a high-purity CCQE-like sample using almost
- identical cuts as presented in this thesis.
- However, both analyses use cuts not yet available in the BANFF framework
- due to technical difficulties and lack of expertise in the collaboration.
-\end_layout
-
-\begin_layout Standard
-Secondly, more validation studies could be done to understand the sensitivity
- of the samples.
- A test of the biases of the fit parameters require fitting an ensemble
- of 
-\begin_inset Quotes eld
-\end_inset
-
-fake data
-\begin_inset Quotes erd
-\end_inset
-
- sets, which are normal variations of the Asimov set.
- This requires significant amount of computational time to complete, and
- not to mention the potential carbon footprint left afterwards.
 \end_layout
 
 \end_body

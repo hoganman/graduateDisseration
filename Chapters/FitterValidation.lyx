@@ -187,33 +187,29 @@
 This chapter will present the checks, tests and validations of the BANFF
  fit using the MC as input.
  The first such test is using the weighted MC as the data, referred to as
- an Asimov data fit.
- The next are two validation tests using two different data sets that have
- altered event weights compared to the MC.
- These are referred to as "fake data
-\begin_inset Quotes erd
+ an Asimov
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+An Asimov data refers replacing the ensemble of simulated data sets by a
+ single representative one.
+\end_layout
+
 \end_inset
 
- sets.
- One fake data set alters the flux prediction and is referred to as the
- 
-\begin_inset Quotes eld
+ data fit
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cowan:2010js"
+literal "false"
+
 \end_inset
 
-High Energy Neutrino Flux Variation
-\begin_inset Quotes erd
-\end_inset
-
- fake data set.
- The other is the 
-\begin_inset Quotes eld
-\end_inset
-
-Single Pion Event Rate Variation
-\begin_inset Quotes erd
-\end_inset
-
- fake data set.
+.
+ The next are two validation tests that use two different data sets that
+ have altered event weights compared to the MC.
+ These are referred to as fake data sets.
 \end_layout
 
 \begin_layout Standard
@@ -226,17 +222,7 @@ Asimov Data Fit
 \end_layout
 
 \begin_layout Standard
-Asimov data refers replacing the ensemble of simulated data sets by a single
- representative one
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Cowan:2010js"
-literal "false"
-
-\end_inset
-
-.
- In this analysis, this involves fitting the MC data set to itself for the
+In this analysis, this involves fitting the MC data set to itself for the
  primary purpose of checking the closure of the fitting framework.
  The Asimov set is produced with the same models as is implemented in the
  fitter and has all parameters set to their prior central values as defined
@@ -252,9 +238,9 @@ noprefix "false"
 
 .
  Instead of statistically sampling from the MC, which can insert statistical
- variations in the fit, the Asimov data set is created by scaling the set
- down to the full T2K POT with additional finer corrections like flux and
- cross section weights.
+ variations into the fit, the Asimov data set is created by scaling the
+ set down to the full T2K POT with additional finer corrections like flux
+ and cross section weights.
  The prefit correlation matrix is shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -335,13 +321,13 @@ In addition to running an Asimov fit, other metrics were examined in the
  Next is an examination of the cross section weight functions.
  Finally is a set of scans of the test statistic space to ensure the sample
  and penalty terms are behaving as expected.
- Then the Asimov data set fit is explored.
+ Then the Asimov data set fit is examined.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Branch ValidationAsimiovEventRate
 inverted 0
-status collapsed
+status open
 
 \begin_layout Subsection
 Event Rate
@@ -358,11 +344,12 @@ noprefix "false"
 
 \end_inset
 
- is the event rates for the various samples for the Asimov fit.
- The data events column refers to real T2K data collected in the sample
- with the rest are MC events.
- There are a weights that correct differences between the data and MC.
- The POT weight normalizes the MC event rate to data rate.
+ are the event rates for the various samples for the Asimov fit.
+ The data events column refers to real T2K data collected in ND280.
+ The proceeding columns refer to MC events only after applying different
+ weights.
+ The POT weight is a gross normalization that scales the MC event rate to
+ the data rate.
  The other weights, which where discussed in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -374,12 +361,12 @@ noprefix "false"
 \end_inset
 
 , are the flux, cross section, and detector corrections.
- We see that applying the POT weight scales the MC event rate close to that
- of the data.
+ As expected, we see that applying the POT weight scales the MC event rate
+ close to that of the data.
  The other weights are fine tuning corrections to the rate from known systematic
 s like flux and cross sections.
- Application of all the weights is the prefit event rate and is collectively
- referred to as Asimov data set.
+ The set of samples after applying all the weights is referred to as Asimov
+ data set.
 \end_layout
 
 \begin_layout Standard
@@ -549,19 +536,26 @@ end{landscape}
 \begin_layout Standard
 \begin_inset Branch ValidationAsimovVaryNSigma
 inverted 0
-status collapsed
+status open
 
 \begin_layout Subsection
 One Sigma Variation of Cross Section Parameters
 \end_layout
 
 \begin_layout Standard
-To ensure the cross section spline weight functions were functioning properly,
- the samples were analyzed when the parameters were set to their 
-\begin_inset Formula $\pm1\sigma$
+It is difficult to predict the impact of cross section parameters variations
+ in the BANFF fit since the fit samples contain many interaction modes themselve
+s.
+ In particular, a single parameter variation can also be explained by many
+ parameters individually varied.
+ To understand the effect of the cross section parameter variations on the
+ fit samples, each cross section parameter was varied by 
+\begin_inset Formula $\pm1$
 \end_inset
 
- values.
+ standard deviation.
+ This also ensures the spline weight functions, which are generated for
+ each event prior to the BANFF fit, are functioning properly.
  The results of the variations are shown in Appendix 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -572,7 +566,7 @@ noprefix "false"
 
 \end_inset
 
-, which show the samples are indeed affected by the weight functions.
+.
 \end_layout
 
 \end_inset
@@ -583,7 +577,7 @@ noprefix "false"
 \begin_layout Standard
 \begin_inset Branch ValidationAsimovScans
 inverted 0
-status collapsed
+status open
 
 \begin_layout Subsection
 Log-Likelihood Scans
@@ -607,18 +601,19 @@ noprefix "false"
 \end_inset
 
 -only samples and FGD-only samples shown.
- It demonstrates that same penalties are applied between the 
-\begin_inset Formula $\pod$
-\end_inset
-
--only and FGD-only analyses.
- Also observed is that the 
+ It can be seen that the 
 \begin_inset Formula $\pod$
 \end_inset
 
 -only data has similar sensitivity and shape dependence on the flux parameters
- with that of the FGD-only data.
- The complete set of scans are shown in Appendix 
+ to that of the FGD-only data.
+ Also observed is that the penalties are the identical for both 
+\begin_inset Formula $\pod$
+\end_inset
+
+- and FGD-only sets and parabolic in shape as expected since the penalties
+ are modeled using a Gaussian.
+ The complete set of scans is contained in Appendix 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "app:Log-Likelihood-Sample-Scans"
@@ -884,7 +879,7 @@ name "fig:TestStatisticScans"
 \begin_layout Standard
 \begin_inset Branch ValidationAsimovFitResults
 inverted 0
-status collapsed
+status open
 
 \begin_layout Subsection
 Fit Results
@@ -1886,7 +1881,7 @@ noprefix "false"
 \end_inset
 
 .
- We observe significant anti-correlations between each of the sub-matrices
+ We observe significant anti-correlations between each of the sub-matrices,
  which is predicted from 
 \begin_inset CommandInset ref
 LatexCommand eqref
@@ -2021,33 +2016,22 @@ inverted 0
 status open
 
 \begin_layout Section
-Fake Data
+Fake Data Fits
 \end_layout
 
 \begin_layout Standard
 In this section, we examine the results of BANFF fits when given data sets
  with nonphysical alterations.
- As stated earlier, these are called 
-\begin_inset Quotes eld
-\end_inset
-
-fake data
-\begin_inset Quotes erd
-\end_inset
-
- sets since we are treating these as data in the fit, but they are in fact
- generated starting with the MC.
- These data sets initially start with the Asimov data set and have variations
- applied to it.
+ As stated earlier, these are called fake data sets since we are treating
+ these as data in the fit.
+ The fake data sets initially start as the Asimov data set and have variations
+ applied to them.
  Here we are only interested in the results of the flux and cross section
  parameters since they are the parameters that are propagated to the oscillation
  analysis.
- The first fake data set is a variation of the high energy 
-\begin_inset Formula $\numu$
-\end_inset
-
- in FHC neutrino flux.
- The other test is a variation of the Single Pion Event Rate Variation.
+ There were two fake data sets generated for the tests.
+ One data set varies the neutrino flux in a single flux bin and the other
+ varies the single pion production rate.
 \end_layout
 
 \begin_layout Standard
@@ -2060,59 +2044,98 @@ The purpose of these tests is to show the fit can converge when provided
  with non-Asimov data sets and we can understand the results.
 
 \shape default
- The fitting software MINUIT in the BANFF fit is known to not converge on
- a global minimum when using altered Asimov data.
+ It is known in the BANFF group that the BANFF fitting software is not guarantee
+d to converge on a global minimum when using altered Asimov data.
  In particular, fitting FGD-only data generated from random and uncorrelated
  variations of all fit flux, cross section, and bin normalization parameters,
  127 out of 500 fits (~25%) reported fit convergence problems.
  So convergence is not assured in all situations, but is possible.
- The information it does provide is possible biases in the fit results for
- given systematic parameters.
- By demonstrating the BANFF fit converges with 
+ We can establish that a credible 
 \begin_inset Formula $\pod$
 \end_inset
 
--only fake data and we can sensibly understand the results, we establish
- that a credible 
+-only real data fit result is possible by demonstrating 1) the BANFF fit
+ converges with 
 \begin_inset Formula $\pod$
 \end_inset
 
--only real data fit result is possible.
-\end_layout
-
-\begin_layout Subsection
-High Energy 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-numutitle{}
-\end_layout
-
-\end_inset
-
- in FHC Flux Variation
+-only fake data and 2) that we can sensibly understand those fit results.
 \end_layout
 
 \begin_layout Standard
-This fake data set arbitrarily increases the 
+The information provided from fake data tests is also useful to understand
+ possible biases in the fit results.
+ For instance, since the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ samples have a relatively low sensitivity to CC-
+\begin_inset Formula $1\pi$
+\end_inset
+
+ interactions, real differences between data and MC could be explained by
+ variations in non CC-
+\begin_inset Formula $1\pi$
+\end_inset
+
+ model parameters.
+ We will get a sense of the biases in the following two fake data tests.
+ The first fake data test analyzed is referred to as the 
+\begin_inset Quotes eld
+\end_inset
+
+High Energy Neutrino Flux Variation
+\begin_inset Quotes erd
+\end_inset
+
+ which varies the high energy 
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC flux between 7 and 30 GeV by +25%.
+ flux in FHC mode.
+ The following fake data test is referred to as the 
+\begin_inset Quotes eld
+\end_inset
+
+Single Pion Event Rate Variation
+\begin_inset Quotes erd
+\end_inset
+
+ which alters the single pion production event rate uniformly.
+\end_layout
+
+\begin_layout Subsection
+High Energy Neutrino Flux Variation
+\end_layout
+
+\begin_layout Standard
+This fake data set is almost identical to the Asimov data set expect an
+ arbitrarily large increase in the 
+\begin_inset Formula $\numu$
+\end_inset
+
+ flux between 7 and 30 GeV by +25% in FHC mode only.
  This variation was chosen since this energy range corresponds precisely
  to flux parameter 
 \begin_inset Formula $b_{10}$
 \end_inset
 
  and it could affect all analysis bins.
- The input fake data in true neutrino energy is shown in 
+ The true neutrino energy distribution of the fake data used in this study
+ is shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:Neutrino-flux-fake-data-set"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Neutrino-flux-fake-data-set-1"
 plural "false"
 caps "false"
 noprefix "false"
@@ -2126,7 +2149,7 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2140,9 +2163,7 @@ status open
 \begin_inset Graphics
 	filename Figures/Validation/NuMuFluxVariationFakeData/NuMu1Trk.png
 	lyxscale 25
-	width 3in
-	height 2.25in
-	keepAspectRatio
+	height 40theight%
 
 \end_inset
 
@@ -2153,47 +2174,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+The 
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC Mode CC 1-Track
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/Validation/NuMuFluxVariationFakeData/NuMuNTrks.png
-	lyxscale 25
-	width 3in
-	height 2.25in
-	keepAspectRatio
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Formula $\numu$
-\end_inset
-
- in FHC Mode CC N-Tracks
+ in FHC Mode CC 1-Track sample
 \end_layout
 
 \end_inset
@@ -2216,11 +2201,9 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figures/Validation/NuMuFluxVariationFakeData/ANuMuRHC1Trk.png
+	filename Figures/Validation/NuMuFluxVariationFakeData/NuMuNTrks.png
 	lyxscale 25
-	width 3in
-	height 2.25in
-	keepAspectRatio
+	height 40theight%
 
 \end_inset
 
@@ -2231,125 +2214,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Formula $\numubar$
-\end_inset
-
- in RHC Mode CC 1-Track
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/Validation/NuMuFluxVariationFakeData/ANuMuRHCNTrks.png
-	lyxscale 25
-	width 3in
-	height 2.25in
-	keepAspectRatio
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Formula $\numubar$
-\end_inset
-
- in RHC Mode CC N-Tracks
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/Validation/NuMuFluxVariationFakeData/NuMuRHC1Trk.png
-	lyxscale 25
-	width 3in
-	height 2.25in
-	keepAspectRatio
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
+The 
 \begin_inset Formula $\numu$
 \end_inset
 
- in RHC Mode CC 1-Track
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/Validation/NuMuFluxVariationFakeData/NuMuRHCNTrks.png
-	lyxscale 25
-	width 3in
-	height 2.25in
-	keepAspectRatio
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Formula $\numu$
-\end_inset
-
- in RHC Mode CC N-Tracks
+ in FHC Mode CC N-Tracks sample
 \end_layout
 
 \end_inset
@@ -2366,11 +2235,14 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Neutrino flux before and after applying the +25% increase to 
+Neutrino energy distributions in the High Energy Neutrino Flux variation
+ fake data set.
+ The fake data (dashed-blue) is nearly identical to the Asimov set (black)
+ except the +25% increase in the 
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC flux in the High Energy Neutrino Flux Variation data set.
+ in FHC mode rate at energies greater than 7 GeV.
  In the figures, 
 \begin_inset Quotes eld
 \end_inset
@@ -2388,22 +2260,14 @@ Fake Data
 \end_inset
 
  is the altered data set.
- A ratio of the fake data to nominal MC is shown below each histogram to
- show the variation was applied correctly.
- The flux of neutrinos, both 
-\begin_inset Formula $\numu$
-\end_inset
-
- and 
-\begin_inset Formula $\numubar$
-\end_inset
-
-, in RHC are not affected.
+ The ratio of the fake data to the nominal MC is shown below each histogram
+ with the errors being statistical only.
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-Neutrino Flux in the High Energy Neutrino Flux Variation Fake Data Set
+Neutrino Energy Distributions in the High Energy Neutrino Flux Variation
+ Fake Data Set
 \end_layout
 
 \end_inset
@@ -2412,6 +2276,222 @@ Neutrino Flux in the High Energy Neutrino Flux Variation Fake Data Set
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Neutrino-flux-fake-data-set"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Validation/NuMuFluxVariationFakeData/ANuMuRHC1Trk.png
+	lyxscale 25
+	width 48text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ in RHC Mode CC 1-Track sample
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Validation/NuMuFluxVariationFakeData/ANuMuRHCNTrks.png
+	lyxscale 25
+	width 48text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The 
+\begin_inset Formula $\numubar$
+\end_inset
+
+ in RHC Mode CC N-Tracks sample
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Validation/NuMuFluxVariationFakeData/NuMuRHC1Trk.png
+	lyxscale 25
+	width 48text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The 
+\begin_inset Formula $\numu$
+\end_inset
+
+ in RHC Mode CC 1-Track sample
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Validation/NuMuFluxVariationFakeData/NuMuRHCNTrks.png
+	lyxscale 25
+	width 48text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The 
+\begin_inset Formula $\numu$
+\end_inset
+
+ in RHC Mode CC N-Tracks sample
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Neutrino energy distributions in the High Energy Neutrino Flux variation
+ fake data set (continued).
+ The fake data (dashed-blue) is nearly identical to the Asimov set (black)
+ except the +25% increase in the 
+\begin_inset Formula $\numu$
+\end_inset
+
+ in FHC mode rate at energies greater than 7 GeV.
+ In the figures, 
+\begin_inset Quotes eld
+\end_inset
+
+Nominal MC
+\begin_inset Quotes erd
+\end_inset
+
+ refers to the Asimov prediction and 
+\begin_inset Quotes eld
+\end_inset
+
+Fake Data
+\begin_inset Quotes erd
+\end_inset
+
+ is the altered data set.
+ The ratio of the fake data to the nominal MC is shown below each histogram
+ with the errors being statistical only.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Neutrino Energy Distributions in the High Energy Neutrino Flux Variation
+ Fake Data Set (Continued)
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Neutrino-flux-fake-data-set-1"
 
 \end_inset
 
@@ -2446,7 +2526,7 @@ noprefix "false"
 
  has significantly increased from its prefit value by almost +20%.
  However, due to correlations in the flux covariance matrix, other flux
- parameters have changed.
+ parameters have also changed.
  The BANFF fit prefers to increase the previous energy flux parameter and
  the high energy 
 \begin_inset Formula $\nue$
@@ -2457,15 +2537,16 @@ noprefix "false"
  RHC samples, the RHC flux parameters are also slightly affected.
  However, the RHC flux parameters are still well within prefit uncertainties.
  The statement is true for the cross section and FSI parameters.
- Therefore we can conclude that the fit prefers to resolve nonphysical changes
- large, singular changes with many correlated parameter variations.
+ We can conclude from this study that the fit will resolve large differences
+ between the Asimov prediction and the data with many correlated parameter
+ variations.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2479,7 +2560,7 @@ status open
 \begin_inset Graphics
 	filename Figures/Validation/NuMuFluxVariationFakeData/ND280NuMu_b10Shown.png
 	lyxscale 50
-	height 30theight%
+	width 48text%
 
 \end_inset
 
@@ -2490,7 +2571,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-ND280 FHC Flux
+The ND280 FHC mode flux parameters
 \end_layout
 
 \end_inset
@@ -2501,10 +2582,6 @@ ND280 FHC Flux
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-\align center
 \begin_inset Float figure
 wide false
 sideways false
@@ -2515,7 +2592,7 @@ status open
 \begin_inset Graphics
 	filename Figures/Validation/NuMuFluxVariationFakeData/ND280ANuMu.png
 	lyxscale 50
-	height 30theight%
+	width 48text%
 
 \end_inset
 
@@ -2526,7 +2603,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-ND280 RHC Flux
+The ND280 RHC mode flux parameters
 \end_layout
 
 \end_inset
@@ -2551,7 +2628,7 @@ status open
 \begin_inset Graphics
 	filename Figures/Validation/NuMuFluxVariationFakeData/XSec.png
 	lyxscale 50
-	width 45text%
+	width 48text%
 
 \end_inset
 
@@ -2583,7 +2660,7 @@ status open
 \begin_inset Graphics
 	filename Figures/Validation/NuMuFluxVariationFakeData/FSI.png
 	lyxscale 50
-	width 45text%
+	width 48text%
 
 \end_inset
 
@@ -2594,7 +2671,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-FSI parameters
+The FSI parameters
 \end_layout
 
 \end_inset
@@ -2623,20 +2700,7 @@ Postfit parameters for the high energy
 status open
 
 \begin_layout Plain Layout
-Postfit Parameters for the High Energy 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-numutitle{}
-\end_layout
-
-\end_inset
-
- in FHC Flux Fake Data fit
+Postfit Parameters for the High Energy Neutrino in FHC Flux Fake Data fit
 \end_layout
 
 \end_inset
@@ -2666,8 +2730,8 @@ Single Pion Event Rate Variation
 \end_layout
 
 \begin_layout Standard
-This fake data set arbitrarily increases the number of resonant single pion
- events by +25%.
+This fake data set is very to similar to the Asimov set except for a +25%
+ increase in the number of resonant single pion events in all analysis samples.
  This was implemented by taking all true NEUT CC-
 \begin_inset Formula $1\pi$
 \end_inset
@@ -2684,69 +2748,38 @@ noprefix "false"
 
 \end_inset
 
-.
- According to the CC-
-\begin_inset Formula $1\pi$
-\end_inset
-
- model, the event rate can be singly absorbed in 
-\begin_inset Formula $C_{A}^{5}$
-\end_inset
-
-.
- However as seen in Appendix 
+ and 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "app:NSigmaVariations"
+reference "fig:lepton-moentum-single-pion-fake-data-1"
 plural "false"
 caps "false"
 noprefix "false"
 
 \end_inset
 
-, increases in any CC-
-\begin_inset Formula $1\pi$
-\end_inset
-
- parameter will increase the event rate.
- Additionally, 
-\begin_inset Formula $C_{A}^{5}$
-\end_inset
-
- and 
-\begin_inset Formula $M_{A}^{\text{Res}}$
-\end_inset
-
- are anticorrelated with one another meaning that these parameters will
- be forced to shift in opposite directions together.
- Given the postfit results from the previous fake data fit, we should expect
- to see more than just the CC-
-\begin_inset Formula $1\pi$
-\end_inset
-
- parameters to vary.
+.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figures/Validation/CA5Variation/NuMu1Trk.png
 	lyxscale 50
-	width 3in
-	height 2.25in
+	height 40theight%
 
 \end_inset
 
@@ -2757,10 +2790,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+The 
 \begin_inset Formula $\numu$
 \end_inset
 
- in FHC Mode CC 1-Track
+ in FHC Mode CC 1-Track sample
 \end_layout
 
 \end_inset
@@ -2771,18 +2805,21 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figures/Validation/CA5Variation/NuMuNTrks.png
 	lyxscale 25
-	width 3in
-	height 2.25in
+	height 40theight%
 
 \end_inset
 
@@ -2810,163 +2847,11 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/Validation/CA5Variation/ANuMuRHC1Trk.png
-	lyxscale 25
-	width 3in
-	height 2.25in
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Formula $\numubar$
-\end_inset
-
- in RHC Mode CC 1-Track
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/Validation/CA5Variation/ANuMuRHCNTrks.png
-	lyxscale 25
-	width 3in
-	height 2.25in
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Formula $\numubar$
-\end_inset
-
- in RHC Mode CC N-Tracks
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/Validation/CA5Variation/NuMuRHC1Trk.png
-	lyxscale 25
-	width 3in
-	height 2.25in
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Formula $\numu$
-\end_inset
-
- in RHC Mode CC 1-Track
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/Validation/CA5Variation/NuMuRHCNTrks.png
-	lyxscale 50
-	width 3in
-	height 2.25in
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Formula $\numu$
-\end_inset
-
- in RHC Mode CC N-Tracks
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Lepton candidate momentum for the Single Pion Event Rate Variation fake
- data set.
+Lepton candidate momentum distributions in the Single Pion Event Rate Variation
+ fake data set.
  The nominal MC and fake data predictions are shown as solid and dashed
  lines, respectively.
  True CC-
@@ -2985,8 +2870,8 @@ Lepton candidate momentum for the Single Pion Event Rate Variation fake
 status open
 
 \begin_layout Plain Layout
-Lepton Candidate Momentum in the Single Pion Event Rate Variation Fake Data
- Set
+Lepton Candidate Momentum Distributions in the Single Pion Event Rate Variation
+ Fake Data Set
 \end_layout
 
 \end_inset
@@ -3009,6 +2894,253 @@ name "fig:lepton-moentum-single-pion-fake-data"
 \end_inset
 
 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Validation/CA5Variation/ANuMuRHC1Trk.png
+	lyxscale 25
+	width 48text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\numubar$
+\end_inset
+
+ in RHC Mode CC 1-Track
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Validation/CA5Variation/ANuMuRHCNTrks.png
+	lyxscale 25
+	width 48text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\numubar$
+\end_inset
+
+ in RHC Mode CC N-Tracks
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Validation/CA5Variation/NuMuRHC1Trk.png
+	lyxscale 25
+	width 48text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\numu$
+\end_inset
+
+ in RHC Mode CC 1-Track
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Validation/CA5Variation/NuMuRHCNTrks.png
+	lyxscale 50
+	width 48text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\numu$
+\end_inset
+
+ in RHC Mode CC N-Tracks
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Lepton candidate momentum distributions in the Single Pion Event Rate Variation
+ fake data set (continued).
+ The nominal MC and fake data predictions are shown as solid and dashed
+ lines, respectively.
+ True CC-
+\begin_inset Formula $1\pi$
+\end_inset
+
+ events are differentiated from all other interactions to illustrate the
+ event scaling applied.
+ A ratio plot of CC-
+\begin_inset Formula $1\pi$
+\end_inset
+
+ events to all other interaction events shown beneath each main histogram.
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Lepton Candidate Momentum Distributions in the Single Pion Event Rate Variation
+ Fake Data Set (Continued)
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:lepton-moentum-single-pion-fake-data-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This fake data test will help us understand the BANFF fit response due to
+ poor data matching with a cross section model.
+ The ideal result of this test is that the postfit value of 
+\begin_inset Formula $C_{A}^{5}$
+\end_inset
+
+ is increased by +25% and all other parameters are unchanged like the results
+ seen in Appendix 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "app:NSigmaVariations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ However, this is not a realistic expectation given that there are no dedicated
+ CC-
+\begin_inset Formula $1\pi$
+\end_inset
+
+ samples, thus the sensitivity to CC-
+\begin_inset Formula $1\pi$
+\end_inset
+
+ parameters is expected to be small.
+ In particular, the 
+\begin_inset Formula $C_{A}^{5}$
+\end_inset
+
+ and 
+\begin_inset Formula $M_{A}^{\text{Res}}$
+\end_inset
+
+ parameters are strongly anticorrelated with one another, meaning that these
+ parameters will be forced to shift in opposite directions.
+ From our intuition gained in the first fake data fit, we can expect non-CC-
+\begin_inset Formula $1\pi$
+\end_inset
+
+ parameters to vary especially groups of flux parameters together.
 \end_layout
 
 \begin_layout Standard
@@ -3037,14 +3169,14 @@ noprefix "false"
 \begin_inset Formula $M_{A}^{\text{Res}}$
 \end_inset
 
- was decreased by about several percent.
+ was decreased by several percent.
  What the fit prefers is to increase the isospin=
 \begin_inset Formula $\nicefrac{1}{2}$
 \end_inset
 
  background, 2p2h normalization, and all the flux parameters.
  Like the first fake data set, we see that in the presence of nonphysical
- variations to the Physics, the fit prefers to spread out variations among
+ variations to the physics, the fit prefers to spread out variations among
  the other parameters.
  However, this time the variations are shared among flux and cross section
  parameters.
@@ -3054,7 +3186,7 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3068,7 +3200,7 @@ status collapsed
 \begin_inset Graphics
 	filename Figures/Validation/CA5Variation/ND280NuMu.png
 	lyxscale 50
-	width 30text%
+	width 48text%
 
 \end_inset
 
@@ -3100,7 +3232,7 @@ status collapsed
 \begin_inset Graphics
 	filename Figures/Validation/CA5Variation/ND280ANuMu.png
 	lyxscale 50
-	width 30text%
+	width 48text%
 
 \end_inset
 
@@ -3122,6 +3254,10 @@ ND280 RHC Flux
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Float figure
 wide false
 sideways false
@@ -3132,7 +3268,7 @@ status collapsed
 \begin_inset Graphics
 	filename Figures/Validation/CA5Variation/FSI.png
 	lyxscale 50
-	width 30text%
+	width 48text%
 
 \end_inset
 
@@ -3154,20 +3290,16 @@ FSI parameters
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-\align center
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figures/Validation/CA5Variation/XSec.png
-	width 95text%
+	width 48text%
 
 \end_inset
 
@@ -3251,8 +3383,8 @@ Validation Summary
 \end_layout
 
 \begin_layout Standard
-We have validated the BANFF fit indeed works and tested its robustness in
- a variety of scenarios.
+We have validated the BANFF fit works and tested its robustness in a variety
+ of scenarios.
  We learned from the Asimov data set, which is the T2K nominal MC corrected
  to data POT with fine tuning corrections, in particular how the flux and
  cross section parameters affect the samples.
@@ -3265,15 +3397,11 @@ We have validated the BANFF fit indeed works and tested its robustness in
 \end_inset
 
  selections are possible.
- We can now examine the 
+ We will now use the real 
 \begin_inset Formula $\pod$
 \end_inset
 
--only data and be assured the BANFF can fit can converge with 
-\begin_inset Formula $\pod$
-\end_inset
-
--only data.
+ data in the BANFF fit.
 \end_layout
 
 \end_body

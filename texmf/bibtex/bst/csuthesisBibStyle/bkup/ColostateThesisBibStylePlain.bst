@@ -55,13 +55,13 @@ FUNCTION {output.nonnull}
   output.state mid.sentence =
     { ", " * write$ }
     { output.state after.block =
-	{ ", " * write$
+	{ add.period$ write$
 	  newline$
 	  "\newblock " write$
 	}
 	{ output.state before.all =
 	    'write$
-	    { ", " * write$ }
+	    { add.period$ " " * write$ }
 	  if$
 	}
       if$

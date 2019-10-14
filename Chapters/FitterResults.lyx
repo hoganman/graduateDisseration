@@ -170,8 +170,8 @@ This chapter explores the results of performing the BANFF fit using the
 \end_inset
 
 -only samples.
- We have confirmed the fit machinery is working and the samples demonstrate
- sensitivity to flux and cross section parameters.
+ We have confirmed that the fit machinery is working and that the samples
+ demonstrate sensitivity to flux and cross section parameters.
  The focus in this chapter is to examine the results of the 
 \begin_inset Formula $\pod$
 \end_inset
@@ -181,11 +181,11 @@ This chapter explores the results of performing the BANFF fit using the
 
 \begin_layout Standard
 The chapter will proceed in the following order.
- First the data will be examined since we have remained purposefully and
- mostly blind up to this state.
+ First the data will be examined since we have remained purposefully blind
+ up to this state.
  Next the postfit results will be carefully examined and compared with that
  of the FGD-only fit.
- Finally, a hypothesis test will performed to test the level of agreement
+ Finally, a hypothesis test will be performed to qualify the level of agreement
  between the two fits.
 \end_layout
 
@@ -196,7 +196,7 @@ Prefit Sample Distributions
 \begin_layout Standard
 \begin_inset Branch FitterResultsPrefitDistributions
 inverted 0
-status collapsed
+status open
 
 \begin_layout Standard
 This section presents the first look at the data for the 12 samples according
@@ -211,8 +211,8 @@ noprefix "false"
 \end_inset
 
 .
- The samples are categorized, as before seen, into four true interaction
- modes: 
+ The samples are categorized into four true interaction modes as described
+ earlier: 
 \begin_inset Formula $\nu$
 \end_inset
 
@@ -231,17 +231,6 @@ noprefix "false"
  non-CCQE.
  However, true fiducial volume (FV) and out of FV events are not differentiated
  in this case.
- The legend used to classify the data and prefit events is shown in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:Data-and-prefit-legend"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
  The prefit samples with the data shown are presented between 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -283,72 +272,21 @@ In general, we notice good agreement between the data and prefit distributions.
  particles with lower momenta are more likely to enter the TPC than predicted
  by the MC using the as-built mass.
  Better agreement is observed in the water-out periods, but there is some
- initial tension in the samples.
+ data tension.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/FitterResults/PrePostfitLegend.png
-	height 30theight%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Data and prefit legend
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Data and Prefit Legend
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Data-and-prefit-legend"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
 \begin_inset Float figure
 wide false
 sideways false
 status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -380,7 +318,7 @@ Momentum in MeV/c
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -526,7 +464,7 @@ numutitle{}
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -710,7 +648,7 @@ numutitle{}
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -894,7 +832,7 @@ numubartitle{}
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1078,7 +1016,7 @@ numubartitle{}
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1262,7 +1200,7 @@ numutitle{}
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1446,7 +1384,7 @@ numutitle{}
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1631,7 +1569,7 @@ numutitle{}
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1816,7 +1754,7 @@ numutitle{}
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2001,7 +1939,7 @@ numubartitle{}
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2186,7 +2124,7 @@ numubartitle{}
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2371,7 +2309,7 @@ numutitle{}
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2567,18 +2505,29 @@ The results of the
 \end_inset
 
 -only BANFF fit are presented here.
- MINUIT reported that it took between 149000 and 150000 iterations to find
- the 
-\begin_inset Formula $\Delta\chi_{\text{ND}280}^{2}$
+ Starting with an initial test statistic of 
+\begin_inset Formula $\chi_{\text{ND}280}^{2}=3022.2$
 \end_inset
 
- minimum with an additional 176000 iterations to calculate the Hessian matrix.
- The total time to load all the data and complete the Hessian calculation
- was 27.5 hours using OpenMP with 16 cores, which is not unreasonable in
- terms of large scale computational work.
- However, a significant fraction of the time, about 6.2 hours hours, was
- spent loading the data and cross section splines into memory which consumed
- about 40 GB of RAM.
+, the MINUIT optimization routine required 149661 iterations to find the
+ global minimum at 
+\begin_inset Formula $\hat{\chi}_{\text{ND}280}^{2}=1412.28$
+\end_inset
+
+.
+ An additional 176000 iterations were required to calculate the Hessian
+ matrix.
+ The computing resources used for the fit are presented in Appendix 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "chap:Computing-Resources"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -2590,8 +2539,8 @@ Specific topics on the postfit results are presented in the following order.
 \end_inset
 
 -only, and FGD-only results.
- And finally is a hypothesis test on the level of agreement between the
- 
+ And the final topic is a hypothesis test on the level of agreement between
+ the 
 \begin_inset Formula $\pod$
 \end_inset
 
@@ -2603,10 +2552,10 @@ Postfit Sample Distributions
 \end_layout
 
 \begin_layout Standard
-Presented below are the 12 samples again, but with the postfit parameters
- applied to the fit bins.
- This ensures we have not altered the data and the data to tuned prediction
- (postfit) ratios have improved as a result of the fit.
+Presented below are the 12 samples again, but with the parameters extracted
+ from the fit applied to the fit bins.
+ This ensures that we have a) not altered the data, and b) that the fitted
+ parameters (postfit) have improved the data matching as a result.
  The samples are shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -2632,34 +2581,28 @@ noprefix "false"
 
 \begin_layout Standard
 We see an improved agreement between the postfit prediction and the data.
- There still is tension, in particular, in the lowest momentum bins which
- could of been mitigated by having more bin normalization parameters.
- Between the water-in and water-out modes, disagreement between them is
- balanced since the flux affects them the same way.
+ Still, there is some poor data matching, in particular, in the lowest momentum
+ bins.
+ This seems to be balanced between the water-in and water-out modes since
+ the flux parameters affect the samples the same way.
  Given there still is tension in those lowest momentum bins, perhaps the
- water mass varied between T2K runs more than what could be accounted for
- using the static detector model in the BANFF fit.
+ water mass systematic uncertainty was under estimated in this analysis.
 \end_layout
 
 \begin_layout Standard
-To further explore this idea, a visual search was conducted of data to postfit
- ratio improvement in the water-in sample's lowest momentum bins with decreasing
- 
+It is hypothesized that if the mass systematic was indeed underestimated,
+ the data to postfit ratio would converge towards 1 with decreasing 
 \begin_inset Formula $\cos\theta$
 \end_inset
 
-, or equivalently increasing angle.
- If this trend is observed, it could indicate the mass variability and additiona
-l bulging were problematic in the fit.
- The higher angle tracks are more likely to originate upstream of the most
- bulging layer due to geometric considerations.
- If better agreement is observed in higher angle bins compared to lower,
- more forward-going track bins, this would support the mass variability
- idea.
- There was a weak observed trend in the water-in samples and such a weak
- one could be coincidental.
- Therefore, it is difficult to draw any conclusions at this stage about
- mass uncertainty contribution.
+ in the water-in sample's lowest momentum bins.
+ If better agreement is observed in those higher angle bins compared to
+ the lower angle bins, this would support the idea that the mass systematic
+ uncertainty is underestimated.
+ However, there was a weak observed trend in the water-in samples, and such
+ a weak one could be coincidental given the number of bins.
+ Therefore, it is difficult to draw any conclusions if the mass systematic
+ uncertainty was underestimated until other constraints are provided.
 \end_layout
 
 \begin_layout Standard
@@ -4984,145 +4927,80 @@ noprefix "false"
 \end_inset
 
 -only results with that of the FGD-only results.
- The legend used to compare between the 
-\begin_inset Formula $\pod$
-\end_inset
-
--only and FGD-only fits is shown in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:Legend-P0DFGD"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
  It must be stated that while the 
 \begin_inset Formula $\pod$
 \end_inset
 
 -only and FGD-only fits are using the same 2017 canonical cross section
  parameterization, the analyses had different POT exposures.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/FitterResults/P0DvsTN324/P0DFGDLegend.png
-	lyxscale 25
-	width 50text%
-	height 50theight%
-	keepAspectRatio
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Legend used to compare 
+ This 
 \begin_inset Formula $\pod$
 \end_inset
 
--only and FGD-only fit results.
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Legend Used to Compare 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-podtitle{}
-\end_layout
-
+-only analysis fit uses run periods 
+\begin_inset Formula $2-8$
 \end_inset
 
--only and FGD-only Fit Results
-\end_layout
-
+, or about 
+\begin_inset Formula $11.5\times10^{20}$
 \end_inset
 
-
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Legend-P0DFGD"
-
+ 
+\begin_inset Formula $\left(6.23\times10^{20}\right)$
 \end_inset
 
-
-\end_layout
-
+ POT in FHC (RHC) mode.
+ The FGD-only fit uses runs 
+\begin_inset Formula $2-6$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
+, or about 
+\begin_inset Formula $5.81\times10^{20}$
 \end_inset
 
+ 
+\begin_inset Formula $\left(2.84\times10^{20}\right)$
+\end_inset
 
-\end_layout
-
-\begin_layout Standard
-This 
+ POT in FHC (RHC) modes.
+ So the 
 \begin_inset Formula $\pod$
 \end_inset
 
--only analysis fit uses runs 2 - 8 while the FGD-only fit uses runs 2 -
- 6.
- In order to understand how the two analyses compare to each other in terms
- of sensitivity to the flux, and carbon and oxygen cross section parameters,
- we can examine 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "tab:Neutrino-exposure-P0DFGD"
-plural "false"
-caps "false"
-noprefix "false"
+-only fit has an additional statistical advantage.
+ This does not affect the actual fitting procedure since the POT weights
+ scale the MC prediction to the data.
+\end_layout
 
+\begin_layout Standard
+In order to understand how the two analyses compare to each other in terms
+ of sensitivity to the flux and cross section parameters, we need to examine
+ each detector's integrated mass-luminosity.
+ The number of incident neutrinos crossing either the FGD or 
+\begin_inset Formula $\pod$
 \end_inset
 
-.
- A proxy for the number of incident neutrinos to certain elements in the
- detector is the product of the fiducial mass and POT.
+ detector is the product of its respective fiducial mass and POT exposure.
  While the 
 \begin_inset Formula $\pod$
 \end_inset
 
  has much more mass, the water-in and water-out modes are mutually exclusive,
  resulting in a reduced aggregate POT exposure as compared to each static
- FGD.
+ FGD for each water-in and water-out running periods.
  Also since the FGD2 has a larger water mass fraction compared to the 
 \begin_inset Formula $\pod$
 \end_inset
 
- water-in mode, the amount of neutrino-oxygen interactions are very similar.
+ water-in mode, the expected number of neutrino-oxygen interaction events
+ are very similar.
  The comparative advantage of the 
 \begin_inset Formula $\pod$
 \end_inset
 
 -only data lies in the number of neutrino-carbon events, which is about
  10 times greater than the FGD.
- This is all assuming the comparisons from 
+ These numbers and more are tabulated in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:Neutrino-exposure-P0DFGD"
@@ -6343,22 +6221,19 @@ end{landscape}%
 \end_layout
 
 \begin_layout Standard
-There is good visual agreement between the 
+There is good agreement between the 
 \begin_inset Formula $\pod$
 \end_inset
 
--only and FGD-only BANFF parameter values.
- The flux parameters follow the same shape trends with the 
+-only and FGD-only BANFF flux parameter values.
+ The flux parameters in both fits follow the same shape trends, but with
+ the 
 \begin_inset Formula $\pod$
 \end_inset
 
--only fit, but with the 
-\begin_inset Formula $\pod$
-\end_inset
-
--only parameters having a higher expectation comparatively.
+-only fit parameters having a higher expectation comparatively.
  Also, the magnitude of the flux uncertainties is similar between the two,
- which suggests the two configurations are statistically similar.
+ which suggests that the two configurations are statistically similar.
 \end_layout
 
 \begin_layout Standard
@@ -6416,8 +6291,12 @@ The cross section parameters are also quite similar between the two fits,
 \end_inset
 
 -only result.
- The CCQE and BeRPA parameters are in very good agreement with both fits
- preferring a significant increase in the BeRPA B scale parameter.
+ The CCQE and BeRPA parameters are in very good agreement with both preferring
+ a significant increase in the BeRPA 
+\begin_inset Formula $B$
+\end_inset
+
+ scale parameter.
  There is tension in the fits with the 
 \begin_inset Formula $M_{A}^{\text{Res}}$
 \end_inset
@@ -6445,7 +6324,7 @@ A couple of interesting features are observed in the 2p2h parameters.
 \end_inset
 
  has nearly twice as much non-carbon and non-oxygen elements, which is mostly
- brass, by mass fraction as the FGD (see 
+ brass, by mass fraction as in the FGD (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:Neutrino-exposure-P0DFGD"
@@ -6460,12 +6339,35 @@ noprefix "false"
 \shape italic
 both of which have postfit values at the physical limit of +1
 \shape default
-, or +2 as shown graphically.
- This sets the 2p2h model to fully pionless-Delta-decay-like with the same
- event normalization.
- This result is also shared with the FGD result and is being addressed in
- the next generation BANFF analysis.
- To provide an uncertainty on those shape parameters, even though they are
+, or +2 as shown graphically in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Postfit-Xsec"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ This predicts that the 2p2h interaction has no nucleon-nucleon correlation
+ mode and is only due to the pionless-Delta-decay mode.
+ This result is an artifact of the cross section parameterization that is
+ also shared with the FGD result.
+ This issue has been addressed in the latest cross section parameterization
+ and BANFF analysis
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Morrison2019"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+To provide an uncertainty on those shape parameters, even though they are
  situated at a discontinuity in the derivative, a 
 \begin_inset Quotes eld
 \end_inset
@@ -6485,8 +6387,9 @@ noprefix "false"
 \end_inset
 
 .
- The mirrored spline was shown to not affect the fit result while providing
- a calculable uncertainty in MINUIT for the Hessian matrix
+ The mirrored spline was shown by the BANFF group to not affect the postfit
+ results while providing a calculable uncertainty in MINUIT for the Hessian
+ matrix
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Bienstock2017"
@@ -6495,6 +6398,22 @@ literal "false"
 \end_inset
 
 .
+ To further investigate the impact of a mirrored spline, the oscillation
+ analysis group used the same splines in the Bayesian analysis, which uses
+ a Markov chain Monte Carlo method to explore the parameter space.
+ The Bayesian analysis observed some small relative changes in the 2p2h
+ and 
+\begin_inset Formula $I_{1/2}$
+\end_inset
+
+ background normalizations and BeRPA 
+\begin_inset Formula $E$
+\end_inset
+
+ root-mean-square using the mirrored spline.
+ However, the parameters that received the largest shifts are already poorly
+ constrained by the ND280 data, and so they have a minuscule effect on the
+ fit.
 \end_layout
 
 \begin_layout Standard
@@ -6524,7 +6443,7 @@ noprefix "false"
 \end_inset
 
 .
- For the cross section parameters only, they are shown in 
+ For only the cross section parameters, the correlations are shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:Prefit-and-post-xsec-correlation"
@@ -6918,7 +6837,7 @@ status collapsed
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -7432,7 +7351,7 @@ FSI Parameters
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -7471,12 +7390,6 @@ Postfit cross section parameters for the
 \end_inset
 
 -only (green) and FGD-only (blue) BANFF fit.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Postfit-Xsec"
-
-\end_inset
-
  In these figures, all shape and scale factor parameters are adjusted to
  1 to provide a consistent graphical representation of all fit parameters.
  Shape parameters always have a prefit value of 0.
@@ -7488,20 +7401,18 @@ status open
 
 \begin_layout Plain Layout
 Postfit Cross Section Parameters for the 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-podtitle{}
-\end_layout
-
+\begin_inset Formula $\pod$
 \end_inset
 
 -only BANFF Fit
 \end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Postfit-Xsec"
 
 \end_inset
 
@@ -7784,7 +7695,7 @@ status open
 \begin_inset Graphics
 	filename Figures/FitterResults/Postfit/covariance/corr_flux_xsec_pref.png
 	lyxscale 50
-	height 45theight%
+	height 40theight%
 
 \end_inset
 
@@ -7821,7 +7732,7 @@ status open
 \begin_inset Graphics
 	filename Figures/FitterResults/Postfit/covariance/corr_flux_xsec.png
 	lyxscale 50
-	height 45theight%
+	height 40theight%
 
 \end_inset
 
@@ -7851,11 +7762,11 @@ Postfit flux and cross section correlations
 
 \begin_layout Plain Layout
 Prefit and post flux and cross section parameter correlations.
- In sub-figures (a) and (b), the prefit and postfit, respectively, correlation
- matrices for the flux and cross section parameters are shown.
- In both (a) and (b), the first 100 parameters are the flux parameters with
- the first 50 corresponding to ND280 and the last 50 with Super-K.
- The last 31 are the cross section parameters.
+ In (a) and (b), the prefit and postfit, respectively, correlation matrices
+ for the flux and cross section parameters are shown.
+ The first 50 parameters correspond to the ND280 flux with the last 50 with
+ the SK flux.
+ The final 31 parameters are for the cross section.
 \begin_inset Argument 1
 status open
 
@@ -7941,24 +7852,11 @@ Prefit and Post Flux and Cross Section Parameter Correlations
 \end_layout
 
 \begin_layout Subsection
-P-Value Between 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-podtitle{}
-\end_layout
-
-\end_inset
-
- and FGD Fits
+Statistical Significance of Parameter Agreement in the BANFF Fit
 \end_layout
 
 \begin_layout Standard
-We can now provide a quantification of the agreement between the 
+We can now quantify of the agreement between the 
 \begin_inset Formula $\pod$
 \end_inset
 
@@ -8015,7 +7913,7 @@ where
 \end_inset
 
  is the number of degrees of freedom (NDOF) and 
-\begin_inset Formula $\Gamma(x+1)=x!$
+\begin_inset Formula $\Gamma(x)$
 \end_inset
 
  is the Gamma function.
@@ -8075,7 +7973,10 @@ Since the purpose of the BANFF fit is to provide a constraint on the SK
  This simplifies the test statistic to
 \begin_inset Formula 
 \begin{equation}
-\chi_{\pod\text{vsFGD}}^{2}=\sum_{i}\frac{\left(p_{i}^{\pod}-p_{i}^{\text{FGD}}\right)^{2}}{V_{i,i}^{\pod}+V_{i,i}^{\text{FGD}}},\label{eq:chi2P0DFGD}
+\begin{aligned}\chi_{\text{PvF}}^{2} & =\sum_{i}\frac{\left(p_{i}^{\pod}-p_{i}^{\text{FGD}}\right)^{2}}{V_{i,i}^{\pod}+V_{i,i}^{\text{FGD}}}\\
+ & =\left(\chi_{\text{PvF}}^{2}\right)^{\text{Flux}}+\left(\chi_{\text{PvF}}^{2}\right)^{\text{xsec}}
+\end{aligned}
+,\label{eq:chi2P0DFGD}
 \end{equation}
 
 \end_inset
@@ -8088,12 +7989,17 @@ where
 \begin_inset Formula $i$
 \end_inset
 
-th parameter from the 
+th parameter in the 
 \begin_inset Formula $\pod$
 \end_inset
 
--/FGD-only BANFF fit measurement.
- We can calculate a p-value, 
+ versus FGD-only (PvF) BANFF fit measurements.
+ We have divided the test statistic into two terms: the flux and the cross
+ section (xsec) contributions.
+\end_layout
+
+\begin_layout Standard
+We can calculate a p-value, 
 \begin_inset Formula $p$
 \end_inset
 
@@ -8133,32 +8039,78 @@ Now let us count the NDOF for the p-value calculation.
  This leaves us with
 \begin_inset Formula 
 \[
-r=\underset{\text{SK Flux}}{\underbrace{50}}+\underset{\text{XSec}}{\underbrace{\left(31-5\right)}}-1=75\ \text{NDOF.}
+r=\underset{\text{Flux}}{\underbrace{50}}+\underset{\text{xsec}}{\underbrace{\left(31-5\right)}}-1=75\ \text{NDOF.}
 \]
 
 \end_inset
 
-If we wish to reject the null hypothesis at the 5% level, this requires
- a chi-squared value of 96.21 or greater.
+If we wish to reject the null hypothesis at the 5% level, a chi-squared
+ value of 96.21 or greater is required.
 \end_layout
 
 \begin_layout Standard
-If we calculate the test statistic as defined above, we find that 
+We must qualify the assumptions about the above null hypothesis test.
+ Assuming the two data fits are completely uncorrelated is not fully justified,
+ and the correct method would be to run a joint FGD-
+\begin_inset Formula $\pod$
+\end_inset
+
+ fit to extract the correlations.
+ 
+\shape italic
+By assuming that the fits are uncorrelated, this provides an upper limit
+ on rejecting the null hypothesis
+\shape default
+.
+ The reasoning for this is that the well constrained parameters in both
+ fits should be positively correlated since the same neutrino beam is being
+ observed, and this reduces the magnitude of the chi-squared test statistic.
+ We observe that the 
+\begin_inset Formula $\pod$
+\end_inset
+
+-only flux parameters are skewed above the FGD-only flux parameters, and,
+ therefore, their difference is not normally distributed about zero.
+ This indicates a large, positive correlation between the two measurements,
+ and this would decrease the magnitude of the 
+\begin_inset Formula $\left(\chi_{\text{PvF}}^{2}\right)^{\text{Flux}}$
+\end_inset
+
+ contribution in the test statistic as anticipated.
+ Since the ND280 data is most sensitive to the CC-
+\begin_inset Formula $0\pi$
+\end_inset
+
+ parameters, we observe most of the CC-
+\begin_inset Formula $0\pi$
+\end_inset
+
+ parameters in both fits are positively correlated.
+ Hence, the magnitude of the 
+\begin_inset Formula $\left(\chi_{\text{PvF}}^{2}\right)^{\text{xsec}}$
+\end_inset
+
+ term is decreased as well.
+ Since we now understand the limitations of the test statistic and its purpose,
+ we can proceed to calculate the p-value.
+\end_layout
+
+\begin_layout Standard
+We find that the reduced test statistic is 
 \begin_inset Formula 
 \[
-\tilde{\chi}_{\pod\text{vsFGD}}^{2}=\frac{\chi_{\pod\text{vsFGD}}^{2}}{r}=\frac{81.41}{75}\approx1.085,
+\tilde{\chi}_{\text{PvF}}^{2}=\frac{\chi_{\text{PvF}}^{2}}{r}=\frac{81.41}{75}\approx1.085,
 \]
 
 \end_inset
 
 of which indicates good agreement between the two measurements for the ND
- constraint since 
-\begin_inset Formula $\tilde{\chi}^{2}\sim1$
+ constraint.
+ This corresponds to a p-value of 
+\begin_inset Formula $p=0.2865$
 \end_inset
 
-.
- This corresponds to a p-value of 0.2865 or a 28.65% probability of obtaining
- a larger test statistic.
+ or a 28.65% probability of obtaining a larger test statistic.
  This result is visualized in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -8174,12 +8126,11 @@ noprefix "false"
  the null hypothesis.
  
 \shape italic
-We can conclude the 
+We can conclude that the 
 \begin_inset Formula $\pod$
 \end_inset
 
--only and FGD-only samples and subsequent BANFF fits describe the same data
- in T2K
+-only fit, FGD-only fit, and subsequent fits describe the same data in T2K
 \shape default
 .
 \end_layout
@@ -8188,13 +8139,12 @@ We can conclude the
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figures/FitterResults/P0DvsTN324/P0DFGDNDFluxSKFluxXSecChi2_alternative.png
-	lyxscale 50
 	width 60text%
 
 \end_inset
@@ -8259,23 +8209,32 @@ name "fig:P-value"
 
 \end_layout
 
+\begin_layout Subsection
+Receiver Operating Characteristic
+\end_layout
+
 \begin_layout Standard
-We must qualify the above conclusion given the flaws of the test statistic
- definition.
- The 
+To demonstrate the differences between the 
 \begin_inset Formula $\pod$
 \end_inset
 
--only flux parameters are clearly skewed above the FGD-only flux parameters,
- and, therefore, their difference is not normally distributed about zero.
- This indicates a large, positive correlation between the two measurements,
- and breaks the uncorrelated uncertainties assumption.
- Given this correlated result, we expect better agreement between the 
-\begin_inset Formula $\pod$
+ and FGD parameter estimates, receiver operating characteristic (ROC) curves
+ are provided in Appendix 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "app:Receiver-Operating-Characteristi"
+plural "false"
+caps "false"
+noprefix "false"
+
 \end_inset
 
--only and FGD-only fits as indicated with the above test statistic using
- a more accurate covariance matrix.
+.
+ The advantage of ROC curves over a p-value calculation is that the differences
+ between the two fits can be statistically quantified for all parameters.
+ These curves provide an indication of which fit has better constraints
+ in parameter space, suggest the limitation of each fit, and provide guidance
+ for future researchers.
 \end_layout
 
 \begin_layout Section
@@ -8293,11 +8252,12 @@ In this chapter, we have explored the postfit results for the
 \begin_inset Formula $\pod$
 \end_inset
 
--only data, which helps with the sensitivity to oxygen cross section parameters
- that affect SK more, the accumulated neutrino exposures are similar.
- We observe a good level of agreement between the two fits with moderate
- differences in some parameters.
- A hypothesis test was performed to test if the 
+-only data, which helps with sensitivity of the oxygen cross section parameters,
+ the accumulated neutrino exposures are similar.
+ Moreover, we observe a good level of agreement between the two fits with
+ the largest differences observed with less constrained parameters like
+ those that characterize the 2p2h interaction.
+ A hypothesis test was performed to quantify if the 
 \begin_inset Formula $\pod$
 \end_inset
 
@@ -8308,11 +8268,7 @@ In this chapter, we have explored the postfit results for the
 \end_inset
 
  of 96.21 or greater was needed.
- A 
-\begin_inset Formula $\chi^{2}$
-\end_inset
-
- of 
+ A chi-squared of 
 \family roman
 \series medium
 \shape up
@@ -8347,6 +8303,7 @@ In this chapter, we have explored the postfit results for the
  samples and cross section parameterization, the ND280 constraint is expected
  to be largely similar if propagated to the next stage in the oscillation
  analysis.
+ We will examine this in the final chapter.
 \end_layout
 
 \end_body

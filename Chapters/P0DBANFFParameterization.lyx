@@ -890,7 +890,7 @@ The fit parameters are described in the following order.
 \begin_layout Standard
 \begin_inset Branch P0DBANFFParameterizationFlux
 inverted 0
-status open
+status collapsed
 
 \begin_layout Subsection
 Flux Model Parameters
@@ -2449,7 +2449,7 @@ end{center}
 \begin_layout Standard
 \begin_inset Branch P0DBANFFParameterizationDetector
 inverted 0
-status open
+status collapsed
 
 \begin_layout Subsection
 Detector Inefficiencies And Bins Normalization Parameters
@@ -7041,7 +7041,11 @@ literal "false"
 \begin_inset Formula $\nicefrac{1}{2}$
 \end_inset
 
- background.
+ 
+\begin_inset Formula $\left(I_{1/2}\right)$
+\end_inset
+
+ background normalization.
  These three parameters are known to effectively describe neutrino-induced
  single pion production data from Brookhaven National Laboratory
 \begin_inset CommandInset citation
@@ -9163,8 +9167,7 @@ prodction
 \begin_inset Text
 
 \begin_layout Plain Layout
-I=
-\begin_inset Formula $\nicefrac{1}{2}$
+\begin_inset Formula $I_{1/2}$
 \end_inset
 
  bkg.
@@ -9717,7 +9720,7 @@ NC Other Far
 \begin_layout Standard
 \begin_inset Branch P0DBANFFParameterizationSummary
 inverted 0
-status open
+status collapsed
 
 \begin_layout Section
 Summary

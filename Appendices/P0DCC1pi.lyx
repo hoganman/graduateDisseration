@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass ../csuthesisLyx
+\textclass csuthesisLyx
 \begin_preamble
 % ams math packages
 \usepackage[cmex10]{amsmath}
@@ -266,6 +266,13 @@ Machine learning is a rapidly developing field of study in which a computer
 \begin_layout Standard
 The specific machine learning technique used in this analysis is a random
  forest method called Boosted Decision Tree (BDT) implemented in the ROOT
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BRUN199781"
+literal "false"
+
+\end_inset
+
  Toolkit for Multivariate Analysis (TMVA) package
 \begin_inset CommandInset citation
 LatexCommand cite
