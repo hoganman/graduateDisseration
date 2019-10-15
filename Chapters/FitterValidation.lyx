@@ -189,11 +189,15 @@ This chapter will present the checks, tests and validations of the BANFF
  The first such test is using the weighted MC as the data, referred to as
  an Asimov
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 An Asimov data refers replacing the ensemble of simulated data sets by a
  single representative one.
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -215,10 +219,20 @@ literal "false"
 \begin_layout Standard
 \begin_inset Branch ValidationAsimov
 inverted 0
-status open
+status collapsed
 
 \begin_layout Section
 Asimov Data Fit
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Asimov Fit
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2013,7 +2027,7 @@ Flux and Cross Section Postfit Correlation Matrix for the Asimov Data Fit
 \begin_layout Standard
 \begin_inset Branch ValidationFakeData
 inverted 0
-status open
+status collapsed
 
 \begin_layout Section
 Fake Data Fits
@@ -3379,7 +3393,7 @@ name "fig:Postfit-single-pion-fake-data"
 \end_layout
 
 \begin_layout Section
-Validation Summary
+Summary
 \end_layout
 
 \begin_layout Standard

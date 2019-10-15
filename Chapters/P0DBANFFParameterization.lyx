@@ -232,7 +232,7 @@ This chapter is presented in the following order.
 \begin_layout Standard
 \begin_inset Branch P0DBANFFParameterizationFitBinning
 inverted 0
-status collapsed
+status open
 
 \begin_layout Section
 Fit Binning
@@ -852,7 +852,17 @@ inverted 0
 status open
 
 \begin_layout Section
-Penalty Terms and Systematic Uncertainties
+Systematic Uncertainties and Penalty Terms 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Systematic Uncertainties
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -890,7 +900,7 @@ The fit parameters are described in the following order.
 \begin_layout Standard
 \begin_inset Branch P0DBANFFParameterizationFlux
 inverted 0
-status collapsed
+status open
 
 \begin_layout Subsection
 Flux Model Parameters
@@ -904,12 +914,16 @@ The T2K neutrino flux model is a description of the neutrino beam energy
  The predicted hadron production rate, including inside and outside the
  graphite target, is tuned to the results from the replica target
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 The NA61/SHINE experiment has two graphite targets.
  A thin 2 cm target and a thick 90 cm target.
  The thick target is a replica of the T2K graphite target.
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1055,6 +1069,10 @@ noprefix "false"
 
  is the Pearson linear correlation coefficient matrix which is defined as
  
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \begin_inset Formula 
 \begin{equation}
 \rho_{i,j}=\frac{V_{i,j}}{\sqrt{V_{i,i}V_{j,j}}},\label{eq:pearson-correlation}
@@ -1348,6 +1366,10 @@ noprefix "false"
 
 .
  
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1615,13 +1637,6 @@ tabularnewline
 pm$0.087735
 \backslash
 tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-newpage
 \end_layout
 
 \begin_layout Plain Layout
@@ -2449,7 +2464,7 @@ end{center}
 \begin_layout Standard
 \begin_inset Branch P0DBANFFParameterizationDetector
 inverted 0
-status collapsed
+status open
 
 \begin_layout Subsection
 Detector Inefficiencies And Bins Normalization Parameters
@@ -2598,11 +2613,15 @@ The BANFF fit analysis uses toy experiment variations to evaluate the effect
  on data-driven studies by comparing data and MC predictions in a control
  sample
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Each control sample is validated in T2K prior to introduction to the BANFF
  analysis.
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2922,6 +2941,13 @@ The
 \end_inset
 
  detector energy loss resolution,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -4300,7 +4326,11 @@ A new procedure was developed to improve the shortcomings of old procedure
 
 \begin_layout Standard
 Starting with observable normalization bin with the highest statistics,
- a decision is made to merge it with all immediate adjacent bins.
+ a decision is made 
+\begin_inset Newpage pagebreak
+\end_inset
+
+to merge it with all immediate adjacent bins.
  If the individual fractional errors differ significantly before the merge,
  do not merge them.
  In this analysis, a factor of 10 in fractional uncertainty was determined
@@ -5977,7 +6007,11 @@ noprefix "false"
  The first, and hence largest, eigenvalue is two orders of magnitude larger
  than the next largest eigenvalue, which means that the majority of the
  bin-to-bin variance can be explained by the first eigenvector.
- The first eigenvector's coefficients are shown in 
+ The first eigenvector's coefficients are shown
+\begin_inset Newpage pagebreak
+\end_inset
+
+ in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:Principal-components"
@@ -6406,7 +6440,7 @@ lity power in the ND constraint measurement.
 \begin_layout Standard
 \begin_inset Branch P0DBANFFParameterizationXSEC
 inverted 0
-status open
+status collapsed
 
 \begin_layout Subsection
 Cross Section Model
@@ -6604,11 +6638,15 @@ An alternative CCQE model incorporates the Llewellyn-Smith dipole axial
 \color inherit
 
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 A form factor is a measure of scattering amplitude in the form of the Fourier
  transform of some charge distribution.
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -9720,7 +9758,7 @@ NC Other Far
 \begin_layout Standard
 \begin_inset Branch P0DBANFFParameterizationSummary
 inverted 0
-status collapsed
+status open
 
 \begin_layout Section
 Summary

@@ -186,6 +186,10 @@ status open
 
 \begin_layout Plain Layout
 BANFF is a Canadian national park.
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -276,7 +280,17 @@ inverted 0
 status open
 
 \begin_layout Section
-Introduction to Conditional PDFs and Likelihoods
+Conditional Probability Density Functions
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Conditional PDFs
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -433,7 +447,24 @@ inverted 0
 status open
 
 \begin_layout Section
-BANFF Fit Test Statistic
+The BANFF Fit Test Statistic
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:The-BANFF-Fit"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Fit Test Statistic
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -483,7 +514,11 @@ literal "false"
 \end_inset
 
  and the PDG review on statistics.
- By invoking Wilks' theorem, also known as the likelihood ratio theorem,
+ 
+\begin_inset Newpage pagebreak
+\end_inset
+
+By invoking Wilks' theorem, also known as the likelihood ratio theorem,
  the likelihood maximization procedure is converted into a minimization
  problem involving a test statistic denoted as a chi-squared.
  Below is an explanation of the BANFF test statistic and the model terms.

@@ -1009,7 +1009,7 @@
 
 @Article{BRUN199781,
   Title                    = {ROOT - An object oriented data analysis framework},
-  Author                   = {Brun, R and Rademakers, F.},
+  Author                   = {Brun, R. and Rademakers, F.},
   Journal                  = {Nucl. Instrum. Meth. A},
   Year                     = {1997},
   Note                     = {See also \url{http://root.cern.ch/}},
@@ -1605,22 +1605,6 @@
   Doi                      = {10.1103/PhysRevD.80.093001}
 }
 
-@Article{PhysRevD.77.053001,
-  Title                    = {Form factors in the quark resonance model},
-  Author                   = {Graczyk, K. M. and Sobczyk, J.T.},
-  Journal                  = {Phys. Rev. D},
-  Year                     = {2008},
-
-  Month                    = mar,
-  Pages                    = {053001},
-  Volume                   = {77},
-
-  Doi                      = {10.1103/PhysRevD.77.053001},
-  Issue                    = {5},
-  Numpages                 = {12},
-  Publisher                = {American Physical Society}
-}
-
 @Article{PhysRevD.77.053003,
   Title                    = {Lepton mass effects in weak charged current single pion production},
   Author                   = {Graczyk, K. M. and Sobczyk, J.T.},
@@ -1634,6 +1618,22 @@
   Doi                      = {10.1103/PhysRevD.77.053003},
   Issue                    = {5},
   Numpages                 = {7},
+  Publisher                = {American Physical Society}
+}
+
+@Article{PhysRevD.77.053001,
+  Title                    = {Form factors in the quark resonance model\pagebreak{}},
+  Author                   = {Graczyk, K.~M. and Sobczyk, J.~T.},
+  Journal                  = {Phys. Rev. D},
+  Year                     = {2008},
+
+  Month                    = mar,
+  Pages                    = {053001},
+  Volume                   = {77},
+
+  Doi                      = {10.1103/PhysRevD.77.053001},
+  Issue                    = {5},
+  Numpages                 = {12},
   Publisher                = {American Physical Society}
 }
 
@@ -1945,8 +1945,8 @@
 }
 
 @Article{llewellyn-smith,
-  Title                    = {Neutrino Reactions at Accelerator Energies},
-  Author                   = {Llewellyn Smith, C. H.},
+  Title                    = {Neutrino Reactions at Accelerator Energies\pagebreak{}},
+  Author                   = {Llewellyn Smith, C.~H.},
   Journal                  = {Phys. Rept.},
   Year                     = {1972},
   Pages                    = {261--379},
@@ -1956,7 +1956,7 @@
 }
 
 @Article{LlewellynSmith:1971uhs,
-  Title                    = {Neutrino Reactions at Accelerator Energies},
+  Title                    = {Neutrino Reactions at Accelerator Energies\pagebreak{}},
   Author                   = {Llewellyn Smith, C. H.},
   Journal                  = {Phys. Rept.},
   Year                     = {1972},
@@ -2319,7 +2319,7 @@
 
 @Article{PhysRevD.25.1161,
   Title                    = {Study of single-pion production by weak charged currents in low-energy $\ensuremath{\nu}d$ interactions},
-  Author                   = {Radecky, G. M. and others},
+  Author                   = {Radecky, G. M. and others\pagebreak{}},
   Journal                  = {Phys. Rev. D},
   Year                     = {1982},
 
@@ -2486,7 +2486,7 @@
   Author                   = {Jaclyn Schwehr},
   School                   = {Colorado State University, Fort Collins, Colorado},
   Year                     = {2018},
-  Note                     = {Available at \href{https://hdl.handle.net/10217/189398}{https://hdl.handle.net/10217/189398}}
+  Note                     = {Available at \href{https://hdl.handle.net/10217/189398}{https://hdl.handle.net/10217/189398}\pagebreak{}}
 }
 
 @Standard{Schwehr2018a,
@@ -2500,7 +2500,7 @@
 }
 
 @Article{SEKIGUCHI201557,
-  Title                    = {Development and operational experience of magnetic horn system for T2{K} experiment},
+  Title                    = {Development and operational experience of magnetic horn system for T2K experiment},
   Author                   = {T. Sekiguchi and others},
   Journal                  = {Nucl. Instrum. Meth. A},
   Year                     = {2015},
@@ -2546,7 +2546,7 @@
   Author                   = {Alfonso Andr\'{e}s Garc\'{\i}a Soto},
   School                   = {Universitat Aut\`{o}noma de Barcelona},
   Year                     = {2017},
-  Note                     = {Available at  \href{http://hdl.handle.net/10803/405705}{http://hdl.handle.net/10803/405705}},
+  Note                     = {Available at \href{http://hdl.handle.net/10803/405705}{http://hdl.handle.net/10803/405705}},
 
   Owner                    = {mhogan},
   Timestamp                = {2019.09.23}
@@ -2733,11 +2733,11 @@
   Author                   = {Carl Vincent Clarence Wret},
   School                   = {Imperial College London},
   Year                     = {2019},
-  Note                     = {Available at \href{https://t2k.org/docs/thesis/097/clarencewretthesis}{https://t2k.org/docs/thesis/097/clarencewretthesis}}
+  Note                     = {Available at \href{https://t2k.org/docs/thesis/097/clarencewretthesis}{https://t2k.org/docs/thesis/097/clarencewretthesis}\pagebreak{}}
 }
 
 @TechReport{Yamazaki2003,
-  Title                    = {Accelerator technical design report for high-intensity proton accelerator facility project, J-PARC},
+  Title                    = {Accelerator technical design report for high-intensity proton accelerator facility project, J-PARC\pagebreak{}},
   Author                   = {Yamazaki, Y.},
   Institution              = {KEK},
   Year                     = {2003},

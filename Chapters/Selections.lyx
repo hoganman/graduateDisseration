@@ -141,7 +141,7 @@
 \begin_layout Standard
 \begin_inset Branch SelectionsIntroduction
 inverted 0
-status collapsed
+status open
 
 \begin_layout Standard
 This chapter describes the development of 
@@ -158,7 +158,7 @@ This chapter describes the development of
 
  charged current (CC) inclusive
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 A CC-inclusive selection is a set of criteria that select all CC neutrino
@@ -167,6 +167,10 @@ A CC-inclusive selection is a set of criteria that select all CC neutrino
 \end_inset
 
 .
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -212,6 +216,13 @@ Production
  The Production 5 software was actively used between 2012 and early 2014
  until it was replaced by Production 6.
  However, physics analyzers are not as rapid to adopt the software updates.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -269,6 +280,10 @@ Production 6
 \end_inset
 
  software was released in 2014 and is still in active use.
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -585,15 +600,29 @@ Global
 \begin_layout Standard
 \begin_inset Branch SelectionsGlobal
 inverted 0
-status collapsed
+status open
 
 \begin_layout Section
 Global Reconstruction
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Reconstruction
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 The task of the Global reconstruction is to combine all of the ND280 information
- into a combined reconstructed object.
+ into a 
+\begin_inset Newpage pagebreak
+\end_inset
+
+combined reconstructed object.
  It was originally designed to identify CC-
 \begin_inset Formula $0\pi$
 \end_inset
@@ -700,6 +729,16 @@ podtitle{}
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:The-P0D-Selection-Cuts"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Selection Cuts
+\end_layout
 
 \end_inset
 
@@ -4528,7 +4567,11 @@ noprefix "false"
 .
  These two variables are of theoretical importance since they are used to
  generate events using NEUT and are used in the BANFF fit.
- An interesting CCQE-like final state in this selection are correlated nucleon
+ 
+\begin_inset Newpage pagebreak
+\end_inset
+
+An interesting CCQE-like final state in this selection are correlated nucleon
  pair scattering called 
 \begin_inset Quotes eld
 \end_inset
@@ -4565,6 +4608,10 @@ hole
 \end_inset
 
  states (2h) behind.
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \end_inset

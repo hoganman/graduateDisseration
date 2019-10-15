@@ -1697,6 +1697,10 @@ status open
 
 \begin_layout Plain Layout
 Also not to mention the carbon footprint left afterwards.
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1780,6 +1784,10 @@ status open
 \end_inset
 
  is also called an objective function.
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2429,7 +2437,7 @@ noprefix "false"
 -regularization constraint or least absolute shrinkage and selection operator
  (Lasso)
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 The Lasso or 
@@ -2465,6 +2473,10 @@ literal "false"
 \end_inset
 
 .
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2724,6 +2736,16 @@ podtitle{}
 \end_inset
 
 +FGD Fit
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Future Prospects
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

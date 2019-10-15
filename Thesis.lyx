@@ -64,7 +64,7 @@
   bookmarksnumbered]{hyperref}
 \usepackage{cleveref}
 
-\setcounter{chapter}{-1}
+% \setcounter{chapter}{-1}
 % trys to prevent splitting the references between lines
 \let\realref=\ref
 \def\ref{\unskip~\realref}
@@ -140,7 +140,7 @@ algorithm2e
 \use_refstyle 0
 \use_minted 0
 \branch Introduction
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -150,12 +150,12 @@ algorithm2e
 \color #faf0e6
 \end_branch
 \branch BANFFLikelihood
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch P0DSelections
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -165,12 +165,12 @@ algorithm2e
 \color #faf0e6
 \end_branch
 \branch P0DBANFFParameterization
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch FitterValidation
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -195,27 +195,27 @@ algorithm2e
 \color #faf0e6
 \end_branch
 \branch AppendixObsnorm
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixSigmaVariations
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixObsnormVariations
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixLikelihoodScans
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixLikelihoodPenaltyScans
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -225,12 +225,12 @@ algorithm2e
 \color #faf0e6
 \end_branch
 \branch AppendixPostfitParameters
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch AppendixCC1pi
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -339,7 +339,7 @@ filename "macros/LyxTextMacros.lyx"
 \begin_layout Standard
 \begin_inset Branch PreambleAndMainMatter
 inverted 0
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset Branch Preamble
@@ -541,20 +541,9 @@ acknowledgements{ %
 \begin_layout Standard
 I would like to first thank Elliott Forney for making a publicly accessible
  \SpecialChar LaTeX
- template available at 
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-https://github.com/idfah/csuthesis
-\end_layout
-
-\end_inset
-
-.
- I also thank the T2K Beam and Near Detector Flux Task Force and the T2K
- collaboration for supporting this analysis.
+ template.
+ I also thank the T2K collaboration and the Beam and Near Detector Flux
+ Task Force in T2K for supporting this analysis.
  I give thanks to my loving wife Hannah who has supported me through my
  graduate career.
  I want to acknowledge the support from my family and friends.
@@ -673,13 +662,16 @@ mainmatter           % Main (arabic numbered) pages
 inverted 0
 status open
 
-\begin_layout Standard
+\begin_layout Chapter*
+Executive Summary
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-% When compiled, this turns into Chapter 0
+
+\backslash
+addcontentsline{toc}{chapter}{Executive Summary}
 \end_layout
 
 \end_inset
@@ -687,14 +679,10 @@ status open
 
 \end_layout
 
-\begin_layout Chapter
-Preliminaries
-\end_layout
-
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
-filename "Chapters/Preliminaries.lyx"
+filename "Chapters/ExecutiveSummary.lyx"
 
 \end_inset
 
@@ -745,10 +733,20 @@ inverted 1
 status open
 
 \begin_layout Chapter
-BANFF Likelihood
+The BANFF Fit Likelihood
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:BANFF-Likelihood"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+BANFF Fit Likelihood
+\end_layout
 
 \end_inset
 
@@ -797,6 +795,16 @@ name "chap:P0DSelections"
 \end_inset
 
 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Selections and Samples
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -828,6 +836,16 @@ name "chap:P0DinBANFF"
 \end_inset
 
 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Fit Parameters
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -855,6 +873,16 @@ Validation of the BANFF Fit Procedure
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Fitter-Validation"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Fit Procedure Validation
+\end_layout
 
 \end_inset
 
@@ -895,10 +923,20 @@ podtitle{}
 
 \end_inset
 
- Samples
+ Samples 
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Fitter-Results"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Fit Results
+\end_layout
 
 \end_inset
 
@@ -927,6 +965,13 @@ status open
 
 \begin_layout Chapter
 Discussion
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Discussion"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -996,6 +1041,41 @@ name "app:podcc1pi"
 \end_inset
 
 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+podtitle{}
+\end_layout
+
+\end_inset
+
+ CC-1
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pititle{}
+\end_layout
+
+\end_inset
+
+ Analysis
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1036,6 +1116,16 @@ podtitle{}
 \begin_inset CommandInset label
 LatexCommand label
 name "app:obsnorm"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Bin Normalizations
+\end_layout
 
 \end_inset
 
@@ -1094,7 +1184,17 @@ inverted 0
 status open
 
 \begin_layout Chapter
-Cross Section Parameters Variations
+Variations of the Cross Section Parameters
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Cross Section Variations
+\end_layout
+
+\end_inset
+
+ 
 \begin_inset CommandInset label
 LatexCommand label
 name "app:NSigmaVariations"
@@ -1184,7 +1284,7 @@ filename "Appendices/LikelihoodPenaltyScans.lyx"
 \begin_layout Standard
 \begin_inset Branch AppendixComputingCluster
 inverted 0
-status collapsed
+status open
 
 \begin_layout Chapter
 Computing Resources
@@ -1198,503 +1298,13 @@ name "chap:Computing-Resources"
 \end_layout
 
 \begin_layout Standard
-This appendix provides the details on the computing resources used to produce
- the BANFF fit.
- All the computing resources were provided by the 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-W.~M.~Keck
-\end_layout
+\begin_inset CommandInset include
+LatexCommand input
+filename "Appendices/ComputingResources.lyx"
 
 \end_inset
 
- high performance computing (HPC) cluster at Colorado State University.
- The HPC cluster is maintained by the Engineering Technology Services team
- at the Walter Scott
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-, Jr.~College
-\end_layout
-
-\end_inset
-
- of Engineering.
- A list of the computing resources used in this thesis is provided in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "tab:Computing-resources-used"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float table
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="5" columns="7">
-<features booktabs="true" tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="left" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-#nodes
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Node CPU
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-#CPUs/node
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-#cores/CPU
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Core clock rate
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Cache
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-RAM
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-19
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Xeon E5-2640
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-2
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-6
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-2.5 GHz
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-15 MB
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-256 GB
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-7
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Xeon E5-2620 v3
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-2.4 GHz
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-64 GB
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-4
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-256 GB
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-15
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Xeon E5-2620 v4
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-8
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-2.1 GHz
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-20 MB
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-64 GB
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Computing resources used in this thesis.
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Computing Resources Used in this Thesis
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:Computing-resources-used"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The HPC cluster has a dedicated batch queue scheduler which supports the
- OpenMP and MPI parallel processing environments.
- While the user can restrict jobs to specific compute nodes in the batch
- queue, the scheduler will assign jobs to any available nodes on a first
- come, first serve basis with some exceptions.
- The BANFF fit studies in this thesis usually used the default scheduler
- options except when to prioritize certain jobs over others.
- The typical resource usage is explained in the next paragraph.
-\end_layout
-
-\begin_layout Standard
-The 
-\begin_inset Formula $\pod$
-\end_inset
-
--only data BANFF fit result was calculated using a compute node with two
- E5-2620 v4 central processing units (CPUs) and 64 GB of random access memory
- (RAM).
- The data and Monte Carlo (MC) events are loaded in RAM from binary ROOT
-\begin_inset CommandInset citation
-LatexCommand cite
-key "BRUN199781"
-literal "false"
-
-\end_inset
-
- files that are stored on the HPC cluster's hard disk drives.
- The total job time was 27.5 hours using the OpenMP parallel processing environme
-nt with all 16 cores employed, which is reasonable in terms of large scale
- computational work.
- This includes loading the data and MC, finding the global minimum, and
- calculating the Hess matrix.
- However, a significant fraction of the time, about 6.2 hours hours, was
- spent preparing the fit by preloading the data and MC events into RAM.
- The maximum consumed RAM for the fit was about 40 GB.
-\end_layout
-
-\begin_layout Standard
-In exploring a joint 
-\begin_inset Formula $\pod$
-\end_inset
-
-+FGD BANFF fit using the canonical T2K 2018 cross section parameterization,
- the Asimov fit job required two weeks to complete, or about 10 times longer
- than the 
-\begin_inset Formula $\pod$
-\end_inset
-
--only Asimov fit.
- The significant increase in job 
-\begin_inset Quotes eld
-\end_inset
-
-walltime
-\begin_inset Quotes erd
-\end_inset
-
- is because the number of fit parameters almost doubled in comparison.
- This illustrates the nonlinear relationship between the required fit time
- versus number of fit parameters.
- Additionally, when using the actual 
-\begin_inset Formula $\pod$
-\end_inset
-
-+FGD data, the fit failed to converge on a global minimum due to machine
- precision limits.
- So for a future joint analysis, careful consideration on the number of
- needed fit parameters is necessary.
 \end_layout
 
 \end_inset
@@ -1705,7 +1315,7 @@ walltime
 \begin_layout Standard
 \begin_inset Branch AppendixPostfitParameters
 inverted 0
-status collapsed
+status open
 
 \begin_layout Chapter
 The 
@@ -1725,6 +1335,16 @@ podtitle{}
 \begin_inset CommandInset label
 LatexCommand label
 name "app:PostfitParameters"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Postfit Parameters
+\end_layout
 
 \end_inset
 
@@ -1752,7 +1372,17 @@ inverted 0
 status open
 
 \begin_layout Chapter
-Receiver Operating Characteristic Curves
+Postfit Receiver Operating Characteristic Curves 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Postfit ROC Curves
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset label
 LatexCommand label
 name "app:Receiver-Operating-Characteristi"
@@ -1783,7 +1413,7 @@ inverted 0
 status open
 
 \begin_layout Chapter
-Cross Validated 
+Cross-Validated 
 \begin_inset ERT
 status open
 
@@ -1796,7 +1426,17 @@ podtitle{}
 
 \end_inset
 
- Fit
+-Only BANFF Fit
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Cross-Validated Fit
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset label
 LatexCommand label
 name "app:Regularized-Solution"
@@ -1807,72 +1447,9 @@ name "app:Regularized-Solution"
 \end_layout
 
 \begin_layout Standard
-This appendix shows the postfit results of cross validated 
-\begin_inset Formula $\pod$
-\end_inset
-
--only fit.
- The cross validation error 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:Vcosdelta"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- was minimized with a regularization strength of 
-\begin_inset Formula $\lambda=1.4$
-\end_inset
-
-.
- That is to say the penalty term in the test statistic went from 
-\begin_inset Formula 
-\[
-\chi_{\text{Penalty}}^{2}=\left(\Delta\vec{y}\right)^{T}V^{-1}\left(\Delta\vec{y}\right)
-\]
-
-\end_inset
-
- to
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\chi_{\text{Penalty}}^{2}=\lambda\left(\Delta\vec{y}\right)^{T}V^{-1}\left(\Delta\vec{y}\right).
-\]
-
-\end_inset
-
-We generally see the flux parameters have a slightly larger bias, but reduced
- uncertainty.
- The cross section parameters are largely unchanged.
- The first eight figures are the ND280 flux parameters.
- The following eight are the unoscillated Super-Kamiokande (SK) flux parameters.
- The next five are the cross section parameters.
- The final two are the bin normalization parameters.
-\end_layout
-
-\begin_layout Standard
-\begin_inset External
-	template PDFPages
-	filename Chapters/Figures/Discussion/P0DRegularizedvsTN324.pdf
-	extra LaTeX "nup=2x4,pages={11-26,6-10},pagecommand=\thispagestyle{plain}"
-	width 2.9in
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset External
-	template PDFPages
-	filename Chapters/Figures/Discussion/Make2018PostFitFileAllParams_MultiTrackP0D_P0DOnly_Fit_v3r32_DataFit_WithSand_lambdaEq1.4_Sept15submit.pdf
-	extra LaTeX "nup=2x4,pages={5-6},pagecommand=\thispagestyle{plain}"
-	width 2.9in
+\begin_inset CommandInset include
+LatexCommand input
+filename "Appendices/CrossValidation.lyx"
 
 \end_inset
 

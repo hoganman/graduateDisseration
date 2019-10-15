@@ -191,20 +191,21 @@ The level of agreement is quantified using the Gini coefficient, which measures
  A Gini coefficient of 0 indicates maximal agreement of the mean and standard
  deviation, while a value of close to 1 indicates estimates are in strong
  tension.
- The coefficient is defined as the absolute difference in area above and
- below a diagonal line that represents maximal agreement.
- This diagonal line is provided in each curve for the readers convenience.
+ The coefficient is defined as the absolute difference in area between the
+ ROC curve and the diagonal (no-discrimination) line multiplied by two.
+ This no-discrimination line is provided in each curve for the readers convenien
+ce.
 \end_layout
 
 \begin_layout Standard
-When the ROC curve is only above (below) the diagonal line, that means the
- 
+When the ROC curve is only above (below) the no-discrimination line, that
+ means the 
 \begin_inset Formula $\pod$
 \end_inset
 
 -only fit estimate prefers parameter values larger (smaller) than the FGD-only
  estimate.
- If the curve crosses the diagonal line once between 
+ If the curve crosses the line once between 
 \begin_inset Formula $(0,1)$
 \end_inset
 

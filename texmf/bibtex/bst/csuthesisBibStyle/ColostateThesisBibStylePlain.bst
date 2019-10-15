@@ -1,5 +1,6 @@
 % Originally taken from the Lyx UCThesisBibStylePlain template
 % BibTeX standard bibliography style `UCThesisBibStylePlain'
+% ColostateThesisBibStylePlain.bst 2019-10-14 M. Hogan: Use a comma instead of period after each entry. Revtex-like
 % UCThesisBibStyle.bst 2013-01-04 jdreyer: References listed alphabetically
 % UCThesisBibStyle.bst 2012-05-14 jdreyer: Preserving all capitalization in title
 % UCThesisBibStyle.bst 2012-05-12 jdreyer: If author list greater than five display first three with et al.

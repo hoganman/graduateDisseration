@@ -191,12 +191,22 @@ The chapter will proceed in the following order.
 
 \begin_layout Section
 Prefit Sample Distributions
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Prefit Distributions
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset Branch FitterResultsPrefitDistributions
 inverted 0
-status open
+status collapsed
 
 \begin_layout Standard
 This section presents the first look at the data for the 12 samples according
@@ -7852,7 +7862,11 @@ Prefit and Post Flux and Cross Section Parameter Correlations
 \end_layout
 
 \begin_layout Subsection
-Statistical Significance of Parameter Agreement in the BANFF Fit
+Statistical Significance of Parameter Agreement Between the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ and FGD BANFF Fits
 \end_layout
 
 \begin_layout Standard

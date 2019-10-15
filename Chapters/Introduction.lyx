@@ -126,6 +126,16 @@ status open
 
 \begin_layout Section
 Introduction to Neutrinos
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Neutrinos
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Introduction-to-Neutrinos"
@@ -269,7 +279,7 @@ l is expected out of the
 
  incident on the Earth
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 To give some perspective to this number, this means 70 billion neutrinos
@@ -1198,6 +1208,10 @@ noprefix "false"
 \end_inset
 
  where
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \begin_inset Formula 
 \begin{equation}
 \psi=\left(\hat{O}_{P}+\hat{O}_{M}\right)\psi=\psi_{P}+\psi_{M}.\label{eq:chiralprojections}
@@ -2800,6 +2814,10 @@ plural "false"
 caps "false"
 noprefix "false"
 
+\end_inset
+
+
+\begin_inset Newpage pagebreak
 \end_inset
 
  
@@ -4664,7 +4682,17 @@ inverted 0
 status open
 
 \begin_layout Section
-Tokai to Kamioka Experiment
+The Tokai to Kamioka Experiment
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+The T2K Experiment
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:T2KExperiment"
@@ -8291,10 +8319,14 @@ name "fig:PredictedCCincxsec"
 \begin_layout Standard
 T2K uses the NEUT
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
-NEUT is neither an initialism nor acronym
+NEUT is neither an initialism nor acronym.
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \end_inset
