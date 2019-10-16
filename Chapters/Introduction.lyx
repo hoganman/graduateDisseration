@@ -126,16 +126,6 @@ status open
 
 \begin_layout Section
 Introduction to Neutrinos
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Neutrinos
-\end_layout
-
-\end_inset
-
-
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Introduction-to-Neutrinos"
@@ -178,9 +168,46 @@ The history of the neutrino can be traced back to the electron energy spectrum
 \begin_inset Quotes eld
 \end_inset
 
-energy conservation law is only valid statistically in such a process [...]
- or an additional undetectable new particle [...] carrying away the additional
- energy and spin [...] is emitted
+energy conservation law is only valid statistically in such a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+process~[
+\backslash
+textellipsis]~or
+\end_layout
+
+\end_inset
+
+ an additional undetectable new 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+particle~[
+\backslash
+textellipsis]~carrying
+\end_layout
+
+\end_inset
+
+ away the additional energy and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+spin~[
+\backslash
+textellipsis]~is
+\end_layout
+
+\end_inset
+
+ emitted
 \begin_inset Quotes erd
 \end_inset
 
@@ -210,7 +237,7 @@ neutron
 \end_inset
 
 , and not the neutrino.
- It would be Enrico Fermi who would coin the particle as a 
+ It was Enrico Fermi who would coin the particle as a 
 \begin_inset Quotes eld
 \end_inset
 
@@ -259,7 +286,7 @@ flavors
  also from unique sources like the Sun and a supernova.
  Neutrino physics continues to be an active area of fundamental research
  since the neutrino is a truly unique probe to subatomic processes.
- For instance they are observed to originate from the depths of the Sun's
+ For example they are observed to originate from the depths of the Sun's
  core (over 
 \begin_inset Formula $10^{7}$
 \end_inset
@@ -457,9 +484,9 @@ name "fig:TheStandardModel"
 
 \begin_layout Standard
 Neutrinos in the SM are electrically neutral, massless particles categorized
- into three generations based on their charged, more massive lepton cousins.
+ into three generations based on their more massive charged lepton cousins.
  In the SM, the three neutrinos and the three antineutrinos are the only
- spin 
+ neutral charge, spin 
 \begin_inset Formula $\nicefrac{1}{2}$
 \end_inset
 
@@ -532,7 +559,7 @@ U(1) where SU(2) is the special unitary group of
 \begin_layout Standard
 What follows is a brief introduction to weak interactions.
  This is followed by a exploration on the nature of neutrino handedness.
- Then this is proceeded by a discussion on neutrino scattering with matter.
+ Then this is followed by a discussion on neutrino scattering with matter.
 \end_layout
 
 \begin_layout Subsubsection
@@ -680,7 +707,7 @@ where
 
 , the probability of creating that particle will be infinitesimally small.
  Therefore to observe a single weak interaction requires a large number
- of weakly interacting particles.
+ of weakly interacting particles incident on a target.
 \end_layout
 
 \begin_layout Standard
@@ -726,7 +753,7 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1485,8 +1512,9 @@ where one recognizes that the helicity and chiral states are the same for
 \begin_layout Standard
 The observation of only LH neutrinos and RH antineutrinos is an important
  feature in the SM.
- However, since neutrinos are known to have mass, given that neutrinos oscillate
-, it is theoretically possible to observe a RH neutrino and a LH antineutrino.
+ However, since neutrinos are known to have mass and given that neutrinos
+ oscillate, it is theoretically possible to observe a RH neutrino and a
+ LH antineutrino.
  That would require boosting to a highly relativistic reference frame with
  respect to the laboratory.
 \end_layout
@@ -1874,7 +1902,7 @@ name "subsec:Neutrino-Oscillations"
 
 \begin_layout Standard
 Neutrino oscillations is the physical process of a neutrino produced with
- a particular, definite flavor and later observed as a different flavor.
+ a particular, definite flavor is later observed as a different flavor.
  This phenomenon was first observed as a deficit of neutrinos for a number
  of atmospheric and solar neutrino experiments.
  The deficit also seemed more pronounced for atmospheric neutrinos as the
@@ -1954,7 +1982,7 @@ Another outstanding problem emerged with measurements of atmospheric neutrinos,
  which is a 50 kt tank of pure water lined with thousands of photomultiplier
  tubes designed to observe solar and atmospheric neutrinos.
  It was the first experiment to perform a neutrino oscillation analysis
- that successfully explained the deficit.
+ that successfully and definitely explained the deficit.
 \end_layout
 
 \begin_layout Standard
@@ -2914,6 +2942,43 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Sensitivity of Different Oscillation Experiments
+\end_layout
+
+\end_inset
+
+Sensitivity of different oscillation experiments originally published in
+ reference
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Tanabashi2018"
+literal "false"
+
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:SensitivityOscill"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="7" columns="5">
@@ -3348,43 +3413,6 @@ Sun
 </cell>
 </row>
 </lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Sensitivity of Different Oscillation Experiments
-\end_layout
-
-\end_inset
-
-Sensitivity of different oscillation experiments originally published in
- reference
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Tanabashi2018"
-literal "false"
-
-\end_inset
-
-.
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:SensitivityOscill"
-
-\end_inset
-
-
-\end_layout
 
 \end_inset
 
@@ -3896,6 +3924,52 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Global Best Fit for the Oscillation Parameters
+\end_layout
+
+\end_inset
+
+Global best fit for the oscillation parameters.
+ All values except for 
+\begin_inset Formula $\deltacp$
+\end_inset
+
+ are combined values from the Particle Data Group and 
+\begin_inset Formula $\deltacp$
+\end_inset
+
+ is from the 2018 NuFit analysis 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Tanabashi2018,Esteban:2018azc"
+literal "false"
+
+\end_inset
+
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:mnspparameters"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="7" columns="4">
@@ -4245,52 +4319,6 @@ degrees
 
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Global Best Fit for the Oscillation Parameters
-\end_layout
-
-\end_inset
-
-Global best fit for the oscillation parameters.
- All values except for 
-\begin_inset Formula $\deltacp$
-\end_inset
-
- are combined values from the Particle Data Group and 
-\begin_inset Formula $\deltacp$
-\end_inset
-
- is from the 2018 NuFit analysis 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Tanabashi2018,Esteban:2018azc"
-literal "false"
-
-\end_inset
-
-.
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:mnspparameters"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \end_inset
 
 
@@ -4614,8 +4642,8 @@ t where researchers controlled the production and observation of neutrinos.
 on at KEK to the Kamioka Observatory at a distance of 250 km.
  While traveling through the Earth, the neutrinos oscillate before they
  are observed at Kamioka.
- Prior to K2K, neutrino sources included the atmosphere, the Sun, and one
- supernova.
+ Prior to K2K, neutrino sources only included the atmosphere, the Sun, and
+ one supernova.
 \end_layout
 
 \begin_layout Standard
@@ -4724,7 +4752,7 @@ noprefix "false"
 
 .
  It is the successor experiment to the K2K neutrino oscillation experiment
- also hosted in Japan.
+ that was also hosted in Japan.
  The T2K experiment produces a high intensity, relatively pure muon neutrino
  beam at the Japan Proton Accelerator Complex (J-PARC) which is a world
  class particle accelerator facility.
@@ -4853,7 +4881,7 @@ The T2K experiment was primarily designed to measure the last unknown MNSP
 \end_inset
 
  and 
-\begin_inset Formula $\Dm 23$
+\begin_inset Formula $\Dm23$
 \end_inset
 
  via the 
@@ -5741,7 +5769,7 @@ noprefix "false"
  To enhance the flux of neutrinos, a series of three current pulsed, focusing
  magnets called horns
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 The name horn derives from the fact that the focusing magnets are shaped
@@ -6378,7 +6406,8 @@ The ND280 detector consists of a pi-zero detector (
 ), a tracker region consisting of a fine grain detector (FGD) and a time
  projection chamber (TPC), an electromagnetic calorimeter (ECal), and a
  side muon range detector (SMRD).
- The ND280 subdetectors are instrumented inside the recycled UA1/NOMAD magnet
+ The ND280 subdetectors are instrumented inside the UA1/NOMAD magnet, that
+ was recycled from the European Organization for Nuclear Research (CERN),
  with the SMRD in the magnetic field return yoke itself.
  All but the FGD are instrumented with the same MPPC technology mentioned
  above.
@@ -6468,7 +6497,7 @@ The analysis in this thesis uses measurements from the
 The ND280 magnetic field is generated using electrical current fed through
  solenoid coils to generate a dipole field of strength 0.2 T
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 This is a powerful magnetic field.
@@ -6492,6 +6521,13 @@ literal "false"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -6545,7 +6581,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The ND280 detector magnetic field feasurement in all three directions.
+The ND280 detector magnetic field measurement in all three directions.
  Each of the magnetic field components are compared between a fit of the
  data and the actual measurements near the center of ND280.
  The systematic uncertainty on the field is extracted from the RMS of the
@@ -7004,6 +7040,17 @@ noprefix "false"
 \end_inset
 
 ) as shown in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+Figure~
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "subfig:p0dmoduleschematic"
@@ -7086,6 +7133,53 @@ noprefix "false"
 wide false
 sideways false
 status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Elemental composition of 
+\begin_inset Formula $\pod$
+\end_inset
+
+ water target region.
+ The table is sorted from top to bottom by fraction of mass.
+ This table was originally produced in reference 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "AbePhyRevD9652017"
+literal "false"
+
+\end_inset
+
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:P0DWaterTargetMass"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $\pod$
+\end_inset
+
+ Water Target Mass Composition
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -7328,53 +7422,6 @@ Ti
 </cell>
 </row>
 </lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Elemental composition of 
-\begin_inset Formula $\pod$
-\end_inset
-
- water target region.
- The table is sorted from top to bottom by fraction of mass.
- This table was originally produced in reference 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "AbePhyRevD9652017"
-literal "false"
-
-\end_inset
-
-.
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:P0DWaterTargetMass"
-
-\end_inset
-
-
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-\begin_inset Formula $\pod$
-\end_inset
-
- Water Target Mass Composition
-\end_layout
-
-\end_inset
-
-
-\end_layout
 
 \end_inset
 
@@ -7875,8 +7922,8 @@ Oscillation Analysis ND Constraint
 \end_layout
 
 \begin_layout Standard
-As started before, the primary goals of T2K are measure to measure the oscillati
-on parameters 
+As stated before, the primary goals of T2K are measure to measure the oscillatio
+n parameters 
 \begin_inset Formula $\theta_{13}$
 \end_inset
 

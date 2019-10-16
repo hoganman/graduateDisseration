@@ -243,8 +243,57 @@ This is another way of saying the
 .
 \end_layout
 
+\begin_layout Standard
+Other topics discussed in this chapter are presented in the following order.
+ First shown is a prediction of the oscillated samples at SK using the ND
+ constraint in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Prediction-of-the"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Possible analysis improvements are discussed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Analysis-Improvements"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Finally, the prospect of a joint 
+\begin_inset Formula $\pod$
+\end_inset
+
+ and FGD fit are discussed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Future-Prospects:-Joint"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Section
 Prediction of the T2K Oscillation Analysis Samples
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Prediction-of-the"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -400,7 +449,36 @@ noprefix "false"
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Oscillation parameters used as inputs for studies of simulated data.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Oscillation Parameters Used as Inputs for Studies of Simulated Data
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Oscillation-parameters-used"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -801,35 +879,6 @@ km
 </cell>
 </row>
 </lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Oscillation parameters used as inputs for studies of simulated data.
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Oscillation Parameters Used as Inputs for Studies of Simulated Data
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:Oscillation-parameters-used"
-
-\end_inset
-
-
-\end_layout
 
 \end_inset
 
@@ -1246,6 +1295,35 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Number of events expected in the SK CCQE-enriched samples.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Number of Events Expected in the SK CCQE-enriched Samples
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Number-of-events-SK-CCQE"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="5">
@@ -1528,39 +1606,6 @@ Observed
 
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Number of events expected in the SK CCQE-enriched samples.
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Number of Events Expected in the SK CCQE-enriched Samples
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:Number-of-events-SK-CCQE"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -1605,6 +1650,13 @@ We observe that each
 
 \begin_layout Section
 Analysis Improvements
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Analysis-Improvements"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2736,12 +2788,9 @@ podtitle{}
 \end_inset
 
 +FGD Fit
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Future Prospects
-\end_layout
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Future-Prospects:-Joint"
 
 \end_inset
 
@@ -2770,8 +2819,8 @@ ygen events can be significantly increased by including the
  data.
  This will enhance the fit's sensitivity, and possibly improve constraints
  on poorly constrained parameters like that of the 2p2h interaction.
- There is an additional observed tension in the predicted SK samples' spectra
- between the 
+ There is an additional observed tension in each of the predicted SK sample
+ spectrum between the 
 \begin_inset Formula $\pod$
 \end_inset
 
@@ -2879,6 +2928,43 @@ begin{landscape}%
 wide false
 sideways false
 status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Neutrino-nucleon exposure on target elements in a joint 
+\begin_inset Formula $\pod$
+\end_inset
+
+ and FGD analysis using T2K runs 2 - 8.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Neutrino-exposure-P0DFGD-EqualPOT"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Neutrino-Nucleon Exposure on Target Elements in a 
+\begin_inset Formula $\pod$
+\end_inset
+
++FGD Joint Fit
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -3590,52 +3676,6 @@ FGD2
 </cell>
 </row>
 </lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Neutrino-nucleon exposure on target elements in a joint 
-\begin_inset Formula $\pod$
-\end_inset
-
- and FGD analysis using T2K runs 2 - 8.
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:Neutrino-exposure-P0DFGD-EqualPOT"
-
-\end_inset
-
-
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Neutrino-Nucleon Exposure on Target Elements in a Run 2 - 8 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-podtitle{}
-\end_layout
-
-\end_inset
-
-+FGD Joint Fit
-\end_layout
-
-\end_inset
-
-
-\end_layout
 
 \end_inset
 

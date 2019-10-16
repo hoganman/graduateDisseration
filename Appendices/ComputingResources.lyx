@@ -202,6 +202,36 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Computing resources used in this thesis.
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Computing Resources Used in this Thesis
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Computing-resources-used"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="7">
@@ -604,36 +634,6 @@ Xeon E5-2620 v4
 </cell>
 </row>
 </lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Computing resources used in this thesis.
- 
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Computing Resources Used in this Thesis
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:Computing-resources-used"
-
-\end_inset
-
-
-\end_layout
 
 \end_inset
 

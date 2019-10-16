@@ -187,12 +187,32 @@ on.
 
 \begin_layout Standard
 The level of agreement is quantified using the Gini coefficient, which measures
- the inequality of parameter space coverage.
- A Gini coefficient of 0 indicates maximal agreement of the mean and standard
- deviation, while a value of close to 1 indicates estimates are in strong
- tension.
+ the inequality of the fit parameter space coverage.
+ A Gini coefficient of 0 indicates maximal agreement of the two parameters
+ mean and standard deviation, while a value of close to 1 indicates estimates
+ are in strong tension.
  The coefficient is defined as the absolute difference in area between the
  ROC curve and the diagonal (no-discrimination) line multiplied by two.
+ It is explicitly calculated as
+\begin_inset Formula 
+\[
+\begin{aligned}\text{Gini} & =2\left|\int_{0}^{1}\left(\text{ROC}(x)-x\right)dx\right|\\
+ & =\left|2\int_{0}^{1}\text{ROC}(x)dx-1\right|,
+\end{aligned}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\text{ROC}(x)$
+\end_inset
+
+ is the 
+\begin_inset Formula $\pod$
+\end_inset
+
+ fit parameter space ROC curve as a function of the FGD fit parameter space
+ coverage.
  This no-discrimination line is provided in each curve for the readers convenien
 ce.
 \end_layout

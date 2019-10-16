@@ -158,9 +158,10 @@
 Neutrinos are the most abundant particles in the Universe, yet their properties
  are least well understood.
  The observation of neutrinos changing from one type (flavor) to another
- have provided evidence of flavor mixing and nonzero neutrino masses.
- The framework describing flavor mixing, also called flavor oscillations,
- involves a phase parameter, 
+ have provided evidence of flavor mixing, also called flavor oscillations,
+ and nonzero neutrino masses.
+ The framework describing neutrino oscillations involves a phase parameter,
+ 
 \begin_inset Formula $\deltacp$
 \end_inset
 

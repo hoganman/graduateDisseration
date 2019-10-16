@@ -181,7 +181,7 @@ literal "false"
 .
  The primary goal of the analysis was to provide a differential measurement
  in muon kinematics.
- The challenges now were to identify the muon and pion while measuring their
+ The challenges were to identify the muon and pion while measuring their
  respective momenta.
  The results of the analysis are given in the following thesis
 \begin_inset CommandInset citation
@@ -581,6 +581,101 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Selection statistics for the CC-
+\begin_inset Formula $1\pi$
+\end_inset
+
+ analysis.
+ For each event passing the pre-selection cuts, to select 
+\begin_inset Formula $\numu$
+\end_inset
+
+ events, there must be one muon-like track passing the MIP BDT.
+ The result of the second track MIP BDT determined if it was selected as
+ a CC-
+\begin_inset Formula $1\pi$
+\end_inset
+
+ event or a sideband event.
+ Two sidebands, labeled 
+\begin_inset Quotes eld
+\end_inset
+
+near
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+far
+\begin_inset Quotes erd
+\end_inset
+
+, where used to help constrain backgrounds in the analysis 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Schwehr2018"
+literal "false"
+
+\end_inset
+
+.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Selection Statistics for the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+podtitle{}
+\end_layout
+
+\end_inset
+
+ CC-1
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pititle{}
+\end_layout
+
+\end_inset
+
+ Analysis
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Selection-statistics-for"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="5">
@@ -893,108 +988,6 @@ Far
 
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Selection statistics for the CC-
-\begin_inset Formula $1\pi$
-\end_inset
-
- analysis.
- For each event passing the pre-selection cuts, to select 
-\begin_inset Formula $\numu$
-\end_inset
-
- events, there must be one muon-like track passing the MIP BDT.
- The result of the second track MIP BDT determined if it was selected as
- a CC-
-\begin_inset Formula $1\pi$
-\end_inset
-
- event or a sideband event.
- Two sidebands, labeled 
-\begin_inset Quotes eld
-\end_inset
-
-near
-\begin_inset Quotes erd
-\end_inset
-
- and 
-\begin_inset Quotes eld
-\end_inset
-
-far
-\begin_inset Quotes erd
-\end_inset
-
-, where used to help constrain backgrounds in the analysis 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Schwehr2018"
-literal "false"
-
-\end_inset
-
-.
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Selection Statistics for the 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-podtitle{}
-\end_layout
-
-\end_inset
-
- CC-1
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-pititle{}
-\end_layout
-
-\end_inset
-
- Analysis
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:Selection-statistics-for"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
 \end_inset
 
 

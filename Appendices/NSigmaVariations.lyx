@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass ../csuthesisLyx
+\textclass csuthesisLyx
 \begin_preamble
 % ams math packages
 \usepackage[cmex10]{amsmath}
@@ -157,6 +157,20 @@
 \begin_layout Standard
 This appendix is a tabulation of variations of the cross section parameters
  and their uncorrelated affect on the analysis samples.
+ The variations are shown in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Cref{tab:Nsigma}
+\end_layout
+
+\end_inset
+
+.
  Note that the 
 \begin_inset Quotes eld
 \end_inset

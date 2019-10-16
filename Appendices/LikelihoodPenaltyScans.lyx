@@ -160,7 +160,7 @@ This appendix examines the
 \end_inset
 
 -only BANFF fit penalty terms 
-\begin_inset Formula $\Delta\chi_{\text{Flux}}^{2}+\Delta\chi_{\text{xsec}}^{2}+\Delta\chi_{\text{Det}}^{2}$
+\begin_inset Formula $\chi_{\text{Flux}}^{2}+\chi_{\text{xsec}}^{2}+\chi_{\text{Det}}^{2}$
 \end_inset
 
  response (scans) to variations in flux and cross section parameters.

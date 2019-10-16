@@ -185,11 +185,10 @@
 
 \begin_layout Standard
 This chapter will present the checks, tests and validations of the BANFF
- fit using the MC as input.
- The first such test is using the weighted MC as the data, referred to as
- an Asimov
+ fit using the MC simulation as input.
+ The test using the weighted MC as the data is referred as an Asimov
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 An Asimov data refers replacing the ensemble of simulated data sets by a
@@ -211,9 +210,47 @@ literal "false"
 \end_inset
 
 .
- The next are two validation tests that use two different data sets that
- have altered event weights compared to the MC.
+ There next are two other validation tests that use two different data sets
+ that have altered events weights (reweighted) compared to the MC.
  These are referred to as fake data sets.
+\end_layout
+
+\begin_layout Standard
+The chapter is presented in the following order.
+ The first topic is the Asimov data fit discussed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Asimov-Data-Fit"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ The following section explores the results of the two fake data fits in
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Fake-Data-Fits"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ A chapter summary is provided in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:ValidationSummary"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -223,12 +260,9 @@ status collapsed
 
 \begin_layout Section
 Asimov Data Fit
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Asimov Fit
-\end_layout
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Asimov-Data-Fit"
 
 \end_inset
 
@@ -236,7 +270,17 @@ Asimov Fit
 \end_layout
 
 \begin_layout Standard
-In this analysis, this involves fitting the MC data set to itself for the
+Asimov data refers to replacing the ensemble of simulated data sets by a
+ single representative one
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cowan:2010js"
+literal "false"
+
+\end_inset
+
+.
+ In this analysis, this involves fitting the MC data set to itself for the
  primary purpose of checking the closure of the fitting framework.
  The Asimov set is produced with the same models as is implemented in the
  fitter and has all parameters set to their prior central values as defined
@@ -333,8 +377,8 @@ In addition to running an Asimov fit, other metrics were examined in the
  Shown first is a comparison of the event rates before and after applying
  weights to the MC.
  Next is an examination of the cross section weight functions.
- Finally is a set of scans of the test statistic space to ensure the sample
- and penalty terms are behaving as expected.
+ Finally is a set of scans of the test statistic space to check that the
+ sample and penalty terms are behaving as expected.
  Then the Asimov data set fit is examined.
 \end_layout
 
@@ -364,7 +408,7 @@ noprefix "false"
  weights.
  The POT weight is a gross normalization that scales the MC event rate to
  the data rate.
- The other weights, which where discussed in 
+ The other weights, which were discussed in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "chap:BANFF-Likelihood"
@@ -411,17 +455,6 @@ begin{landscape}
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset CommandInset include
-LatexCommand input
-filename "Includes/Validation/EventTable.tex"
-
-\end_inset
-
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -511,6 +544,13 @@ name "tab:eventtable"
 \end_layout
 
 \begin_layout Plain Layout
+\align center
+\begin_inset CommandInset include
+LatexCommand input
+filename "Includes/Validation/EventTable.tex"
+
+\end_inset
+
 
 \end_layout
 
@@ -893,14 +933,14 @@ name "fig:TestStatisticScans"
 \begin_layout Standard
 \begin_inset Branch ValidationAsimovFitResults
 inverted 0
-status open
+status collapsed
 
 \begin_layout Subsection
 Fit Results
 \end_layout
 
 \begin_layout Standard
-The postfit results of the Asimov data fit are shown in 
+The postfit results of the Asimov data fit are shown from 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:Asimov-fit-resultsND"
@@ -2031,6 +2071,13 @@ status collapsed
 
 \begin_layout Section
 Fake Data Fits
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Fake-Data-Fits"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2040,9 +2087,8 @@ In this section, we examine the results of BANFF fits when given data sets
  these as data in the fit.
  The fake data sets initially start as the Asimov data set and have variations
  applied to them.
- Here we are only interested in the results of the flux and cross section
- parameters since they are the parameters that are propagated to the oscillation
- analysis.
+ Here we are only interested in varying the flux and cross section parameters
+ since they are the parameters that are propagated to the oscillation analysis.
  There were two fake data sets generated for the tests.
  One data set varies the neutrino flux in a single flux bin and the other
  varies the single pion production rate.
@@ -2551,9 +2597,9 @@ noprefix "false"
  RHC samples, the RHC flux parameters are also slightly affected.
  However, the RHC flux parameters are still well within prefit uncertainties.
  The statement is true for the cross section and FSI parameters.
- We can conclude from this study that the fit will resolve large differences
- between the Asimov prediction and the data with many correlated parameter
- variations.
+ We can conclude from this study that the fit will resolve large, nonphysical
+ differences between the Asimov prediction and the data with many correlated
+ parameter variations.
 \end_layout
 
 \begin_layout Standard
@@ -3189,11 +3235,11 @@ noprefix "false"
 \end_inset
 
  background, 2p2h normalization, and all the flux parameters.
- Like the first fake data set, we see that in the presence of nonphysical
+ As seen in the first fake data set, we see that in the presence of nonphysical
  variations to the physics, the fit prefers to spread out variations among
  the other parameters.
- However, this time the variations are shared among flux and cross section
- parameters.
+ However, this time the variations are shared among both the flux and cross
+ section parameters.
 \end_layout
 
 \begin_layout Standard
@@ -3394,11 +3440,18 @@ name "fig:Postfit-single-pion-fake-data"
 
 \begin_layout Section
 Summary
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:ValidationSummary"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-We have validated the BANFF fit works and tested its robustness in a variety
- of scenarios.
+We have validated that the BANFF fit works and tested its robustness in
+ a variety of scenarios.
  We learned from the Asimov data set, which is the T2K nominal MC corrected
  to data POT with fine tuning corrections, in particular how the flux and
  cross section parameters affect the samples.

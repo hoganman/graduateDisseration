@@ -14,11 +14,10 @@
 
 % graphics packages
 \usepackage{graphicx}
-%\graphicspath{{./figures/}} % this places all graphics in the figures subdirectory
 
 % allowed graphics extensions
 % uncomment if you prefer to add extension in \includegraphics
-\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\DeclareGraphicsExtensions{.pdf,.png}
 
 % allows the creation of subfigures
 \usepackage[caption=false]{subfig}
@@ -30,9 +29,7 @@
 \usepackage{url}
 \urlstyle{same} % same style as regular text
 
-% for defining colors
 \usepackage{xcolor}
-
 \usepackage{cancel}
 \usepackage{tocbibind}
 \usepackage{pdflscape}
@@ -50,21 +47,20 @@
 \usepackage{algpseudocode}
 
 \usepackage[%
+  pdftitle={Hogan_Matthew},
   pdfpagelabels,
   pdfusetitle,
-  %hidelinks,
-  %colorlinks=true,
-  %pdfborder={0 0 0},
-  pdftitle={HoganMThesis},
-  linkcolor=blue,
-  filecolor=magenta,
-  urlcolor=cyan,
+  pdfborderstyle={/S/U/W 1}, % underline
+  linkbordercolor=red,       % color of internal links
+  citebordercolor=green,     % color of links to bibliography
+  filebordercolor=magenta,   % color of file links
+  urlbordercolor=cyan,       % color of external links
   pagebackref,
   bookmarksopen,
+  linktocpage,
   bookmarksnumbered]{hyperref}
 \usepackage{cleveref}
 
-% \setcounter{chapter}{-1}
 % trys to prevent splitting the references between lines
 \let\realref=\ref
 \def\ref{\unskip~\realref}
@@ -73,7 +69,7 @@
 \let\realeqref=\eqref
 \def\eqref{Eqn.~\realeqref}
 \end_preamble
-\options doctor, showframe
+\options doctor
 \use_default_options true
 \begin_modules
 fixltx2e
@@ -286,7 +282,7 @@ algorithm2e
 \quotes_style english
 \dynamic_quotes 0
 \papercolumns 1
-\papersides 2
+\papersides 1
 \paperpagestyle default
 \tracking_changes false
 \output_changes false
@@ -339,7 +335,7 @@ filename "macros/LyxTextMacros.lyx"
 \begin_layout Standard
 \begin_inset Branch PreambleAndMainMatter
 inverted 0
-status collapsed
+status open
 
 \begin_layout Standard
 \begin_inset Branch Preamble
@@ -359,8 +355,8 @@ status open
 
 
 \backslash
-title{Independent Measurement of the T2K Near Detector Constraint Using
- the Off-Axis Pi-Zero Detector}
+title{Independent measurement of the T2K near detector constraint using
+ the off-axis pi-zero detector}
 \end_layout
 
 \begin_layout Plain Layout
@@ -426,11 +422,11 @@ committee{Wen Zhou}
 
 
 \backslash
-mycopyright{Copyright by Matthew Gregory Hogan 2019 
+mycopyright{Copyright by Matthew Gregory Hogan 2019
 \backslash
 
 \backslash
- All Rights Reserved}
+All Rights Reserved}
 \end_layout
 
 \end_inset
@@ -466,7 +462,7 @@ abstract{ %
 
 \begin_layout Standard
 The Tokai to Kamioka (T2K) experiment is a long-baseline neutrino oscillation
- experiment hosted in Japan in search for electron neutrino appearance in
+ experiment hosted in Japan searching for electron neutrino appearance in
  a high purity muon neutrino beam.
  In order to constrain the systematic uncertainties in the oscillation analysis,
  a dedicated near detector (ND) complex called ND280 is located 280 meters
@@ -474,8 +470,8 @@ The Tokai to Kamioka (T2K) experiment is a long-baseline neutrino oscillation
  To date, the Fine Grain Detector (FGD) in ND280 has provided the ND constraint
  using a binned maximum likelihood estimate fit.
  This thesis describes the effort to validate the ND constraint using the
- same framework, but with an independent data set from the ND280 Pi-Zero
- Detector (
+ same framework, but with an independent data set from the ND280 pi-zero
+ detector (
 \begin_inset Formula $\pod$
 \end_inset
 
@@ -616,7 +612,40 @@ makeabstract         % insert abstract page
 
 
 \backslash
-makeacknowledgements % insert acknowledgements page 
+makeacknowledgements % insert acknowledgements page
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+contentsname}{
+\backslash
+normalsize{TABLE OF CONTENTS}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+listfigurename}{
+\backslash
+normalsize{LIST OF FIGURES}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+listtablename}{
+\backslash
+normalsize{LIST OF TABLES}}
 \end_layout
 
 \begin_layout Plain Layout
@@ -741,16 +770,6 @@ name "chap:BANFF-Likelihood"
 \end_inset
 
 
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-BANFF Fit Likelihood
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -795,16 +814,6 @@ name "chap:P0DSelections"
 \end_inset
 
 
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Selections and Samples
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -836,16 +845,6 @@ name "chap:P0DinBANFF"
 \end_inset
 
 
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Fit Parameters
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -873,16 +872,6 @@ Validation of the BANFF Fit Procedure
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Fitter-Validation"
-
-\end_inset
-
-
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Fit Procedure Validation
-\end_layout
 
 \end_inset
 
@@ -927,16 +916,6 @@ podtitle{}
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Fitter-Results"
-
-\end_inset
-
-
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Fit Results
-\end_layout
 
 \end_inset
 

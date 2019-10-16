@@ -114,6 +114,11 @@
 \filename_suffix 0
 \color #faf0e6
 \end_branch
+\branch SelectionKinematics
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
 \index Index
 \shortcut idx
 \color #008000
@@ -203,7 +208,7 @@ Production 5
 status open
 
 \begin_layout Plain Layout
-The ND280 detector reconstruction and monte carlo official software updates
+The ND280 detector reconstruction and Monte Carlo official software updates
  are given a 
 \begin_inset Quotes eld
 \end_inset
@@ -564,7 +569,7 @@ numubartitle{}
 
 \begin_layout Standard
 This paragraph is a layout of the topics in the chapter.
- The first topic is the event reconstruction using the 
+ First discussed is the event reconstruction using the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -572,24 +577,65 @@ Global
 \begin_inset Quotes erd
 \end_inset
 
- reconstruction software.
- Next is the pre-selection cut flow.
- With the pre-selection cuts established, three CC-inclusive selection are
- described in the following order: the 
+ reconstruction software in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:The-ND280-Global-Reco"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ The next discussion is on the sample selections in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:The-P0D-Selection-Cuts"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ With the selections established, three CC-inclusive selection are described
+ in the following order: the 
 \begin_inset Formula $\numu$
 \end_inset
 
- in foreword horn current (FHC) mode selection, 
+ in foreword horn current (FHC) mode selection, the 
 \begin_inset Formula $\numubar$
 \end_inset
 
- in reverse horn current (RHC) mode selection, and 
+ in reverse horn current (RHC) mode selection, and the 
 \begin_inset Formula $\numu$
 \end_inset
 
  background in RHC mode selection.
- Concluding this section is a discussion of the collected samples and their
- kinematic properties.
+ The penultimate topic is an examination of the collected samples and their
+ kinematic properties in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Selection-Kinematics"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Finally, the chapter summary is provided in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:SelectionSummary"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -603,13 +649,10 @@ inverted 0
 status open
 
 \begin_layout Section
-Global Reconstruction
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Reconstruction
-\end_layout
+The ND280 Global Reconstruction
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:The-ND280-Global-Reco"
 
 \end_inset
 
@@ -618,11 +661,7 @@ Reconstruction
 
 \begin_layout Standard
 The task of the Global reconstruction is to combine all of the ND280 information
- into a 
-\begin_inset Newpage pagebreak
-\end_inset
-
-combined reconstructed object.
+ into a combined reconstructed object.
  It was originally designed to identify CC-
 \begin_inset Formula $0\pi$
 \end_inset
@@ -709,7 +748,7 @@ literal "false"
 \begin_layout Standard
 \begin_inset Branch SelectionsCuts
 inverted 0
-status open
+status collapsed
 
 \begin_layout Section
 The 
@@ -1054,6 +1093,57 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+The 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+podtitle{}
+\end_layout
+
+\end_inset
+
+ Water Target Fiducial Volume and Veto Corridor Definitions
+\end_layout
+
+\end_inset
+
+The 
+\begin_inset Formula $\pod$
+\end_inset
+
+ WT FV (left) and veto corridor volume (right) in the ND280 coordinate system.
+ The corridor spans from the 5th (8th) to 40th (80th) 
+\begin_inset Formula $\pod$
+\end_inset
+
+ule (scintillator layer).
+ All the units are given in millimeters.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:FVDef"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="2">
@@ -1162,57 +1252,6 @@ Corridor Volume
 </cell>
 </row>
 </lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-The 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-podtitle{}
-\end_layout
-
-\end_inset
-
- Water Target Fiducial Volume and Veto Corridor Definitions
-\end_layout
-
-\end_inset
-
-The 
-\begin_inset Formula $\pod$
-\end_inset
-
- WT FV (left) and veto corridor volume (right) in the ND280 coordinate system.
- The corridor spans from the 5th (8th) to 40th (80th) 
-\begin_inset Formula $\pod$
-\end_inset
-
-ule (scintillator layer).
- All the units are given in millimeters.
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:FVDef"
-
-\end_inset
-
-
-\end_layout
 
 \end_inset
 
@@ -1856,6 +1895,16 @@ If the event passes these two cuts, the HMNT is the lepton candidate.
  event.
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch SelectionKinematics
+inverted 0
+status collapsed
+
 \begin_layout Section
 Selection Kinematics
 \begin_inset CommandInset label
@@ -1895,6 +1944,43 @@ noprefix "false"
 wide false
 sideways false
 status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+T2K data-taking periods and collected POT used in the analysis.
+ The bottom four rows are the aggregated periods grouped by horn current
+ and 
+\begin_inset Formula $\pod$
+\end_inset
+
+ status, which is how the data analysis is performed.
+ Note that the horns were run briefly at +205 kA for Run 3b when operations
+ resumed after 2011 Tōhoku earthquake.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:T2K-MC-Data-POT"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+T2K Data-Taking Periods and Collected POT Used in the Analysis
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -2956,43 +3042,6 @@ Water
 
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-T2K data-taking periods and collected POT used in the analysis.
- The bottom four rows are the aggregated periods grouped by horn current
- and 
-\begin_inset Formula $\pod$
-\end_inset
-
- status, which is how the data analysis is performed.
- Note that the horns were run briefly at +205 kA for Run 3b when operations
- resumed after 2011 Tōhoku earthquake.
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:T2K-MC-Data-POT"
-
-\end_inset
-
-
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-T2K Data-Taking Periods and Collected POT Used in the Analysis
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \end_inset
 
 
@@ -3121,6 +3170,47 @@ noprefix "false"
 wide false
 sideways false
 status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Enumeration of NEUT Interaction Modes
+\end_layout
+
+\end_inset
+
+Enumeration of the NEUT interaction modes which are also used in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:enlarged_legends"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ An arrow indicates a sequence of integer steps from left to right of the
+ arrow.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:NEUTReaction"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -3427,47 +3517,6 @@ NC
 </cell>
 </row>
 </lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Enumeration of NEUT Interaction Modes
-\end_layout
-
-\end_inset
-
-Enumeration of the NEUT interaction modes which are also used in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:enlarged_legends"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
- An arrow indicates a sequence of integer steps from left to right of the
- arrow.
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:NEUTReaction"
-
-\end_inset
-
-
-\end_layout
 
 \end_inset
 
@@ -4862,8 +4911,8 @@ noprefix "false"
 \end_inset
 
 .
- Otherwise, the vertex position and target materials are quite similar between
- the 1-Track and N-Tracks selections.
+ The vertex position and target materials are quite similar between the
+ 1-Track and N-Tracks selections.
 \end_layout
 
 \begin_layout Standard
@@ -8459,8 +8508,20 @@ name "fig:numuRHCCCNTrkTrue"
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Summary
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:SelectionSummary"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -8489,11 +8550,6 @@ s that will used in the BANFF fit.
 ) backgrounds in RHC mode, which are very important in the oscillation analysis.
  We can now move forward to the next chapter to describe the fit parameters
  and the systematic uncertainties present in the analysis.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_body

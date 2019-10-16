@@ -135,6 +135,21 @@
 \filename_suffix 0
 \color #faf0e6
 \end_branch
+\branch FitterResultsPostfit
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch FitterResultsPostfitExposureTable
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch FitterResultsPValueAndROC
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
 \index Index
 \shortcut idx
 \color #008000
@@ -181,32 +196,70 @@ This chapter explores the results of performing the BANFF fit using the
 
 \begin_layout Standard
 The chapter will proceed in the following order.
- First the data will be examined since we have remained purposefully blind
- up to this state.
- Next the postfit results will be carefully examined and compared with that
- of the FGD-only fit.
- Finally, a hypothesis test will be performed to qualify the level of agreement
- between the two fits.
-\end_layout
-
-\begin_layout Section
-Prefit Sample Distributions
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Prefit Distributions
-\end_layout
+ First, since we have remained purposefully blind up to this state in the
+ analysis, the data will be examined in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Prefit-Sample-Distributions"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+.
+ Next the postfit results will be carefully examined and compared with that
+ of the FGD-only fit in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Postfit-Results"
+plural "false"
+caps "false"
+noprefix "false"
 
+\end_inset
+
+.
+ A hypothesis test is performed to qualify the level of agreement between
+ the two fits in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Statistical-Significance-of"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Finally, a chapter summary is provided in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:ResultsSummary"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Branch FitterResultsPrefitDistributions
 inverted 0
 status collapsed
+
+\begin_layout Section
+Prefit Sample Distributions
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Prefit-Sample-Distributions"
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Standard
 This section presents the first look at the data for the 12 samples according
@@ -2505,8 +2558,20 @@ numutitle{}
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Branch FitterResultsPostfit
+inverted 0
+status collapsed
+
 \begin_layout Section
 Postfit Results
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Postfit-Results"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2609,7 +2674,7 @@ It is hypothesized that if the mass systematic was indeed underestimated,
  If better agreement is observed in those higher angle bins compared to
  the lower angle bins, this would support the idea that the mass systematic
  uncertainty is underestimated.
- However, there was a weak observed trend in the water-in samples, and such
+ However, there was a weak trend observed in the water-in samples, and such
  a weak one could be coincidental given the number of bins.
  Therefore, it is difficult to draw any conclusions if the mass systematic
  uncertainty was underestimated until other constraints are provided.
@@ -5024,6 +5089,11 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Branch FitterResultsPostfitExposureTable
+inverted 0
+status collapsed
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -5044,6 +5114,62 @@ begin{landscape}%
 wide false
 sideways false
 status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Neutrino-nucleon exposure on target elements in the 
+\begin_inset Formula $\pod$
+\end_inset
+
+-only and FGD-only analyses.
+ The FGD1 and FGD2 masses were calculated using the following sources
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Amaudruz:2012agx,Longhin2016,Lodovico2017"
+literal "false"
+
+\end_inset
+
+.
+ The 
+\begin_inset Formula $\pod$
+\end_inset
+
+ mass was taken from the following source
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Schwehr2018"
+literal "false"
+
+\end_inset
+
+.
+ The other mass elements include hydrogen, copper, and heavier elements.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Neutrino-exposure-P0DFGD"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Neutrino-Nucleon Exposure on Target Elements
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -5261,7 +5387,6 @@ RHC
 \begin_inset Text
 
 \begin_layout Plain Layout
- 
 \begin_inset Formula $\left(10^{24}\right)$
 \end_inset
 
@@ -6149,66 +6274,6 @@ FGD2
 
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Neutrino-nucleon exposure on target elements in the 
-\begin_inset Formula $\pod$
-\end_inset
-
--only and FGD-only analyses.
- The FGD1 and FGD2 masses were calculated using the following sources
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Amaudruz:2012agx,Longhin2016,Lodovico2017"
-literal "false"
-
-\end_inset
-
-.
- The 
-\begin_inset Formula $\pod$
-\end_inset
-
- mass was taken from the following source
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Schwehr2018"
-literal "false"
-
-\end_inset
-
-.
- The other mass elements include hydrogen, copper, and heavier elements.
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:Neutrino-exposure-P0DFGD"
-
-\end_inset
-
-
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Neutrino-Nucleon Exposure on Target Elements
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -6223,6 +6288,11 @@ status open
 
 \backslash
 end{landscape}%
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -6313,7 +6383,7 @@ The cross section parameters are also quite similar between the two fits,
 
  parameter which is not currently understood.
  However, if the difference in the postfit parameters is distributed according
- to a chi-squared distribution, then a deviation such as this is not unexpected.
+ to a chi-squared distribution, then this deviation is not unexpected.
  We will explore this idea further with a hypothesis test in the next section.
 \end_layout
 
@@ -7246,10 +7316,6 @@ CC-
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -7434,10 +7500,6 @@ name "fig:Postfit-Xsec"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -7478,10 +7540,6 @@ Water-In
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -7678,10 +7736,6 @@ Postfit Correlation Matrix
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -7801,10 +7855,6 @@ name "fig:Prefit-and-post-fluxxsec-correlation"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -7861,12 +7911,38 @@ Prefit and Post Flux and Cross Section Parameter Correlations
 
 \end_layout
 
-\begin_layout Subsection
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch FitterResultsPValueAndROC
+inverted 0
+status collapsed
+
+\begin_layout Section
 Statistical Significance of Parameter Agreement Between the 
-\begin_inset Formula $\pod$
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+podtitle{}
+\end_layout
+
 \end_inset
 
  and FGD BANFF Fits
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Statistical-Significance-of"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -7979,7 +8055,7 @@ Since the purpose of the BANFF fit is to provide a constraint on the SK
  bin normalization parameters
 \shape default
 .
- Also assume for simplicity that the 
+ Also we assume for simplicity that the 
 \begin_inset Formula $\pod$
 \end_inset
 
@@ -8125,7 +8201,7 @@ of which indicates good agreement between the two measurements for the ND
 \end_inset
 
  or a 28.65% probability of obtaining a larger test statistic.
- This result is visualized in 
+ This result is shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:P-value"
@@ -8251,8 +8327,20 @@ noprefix "false"
  for future researchers.
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Summary
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:ResultsSummary"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

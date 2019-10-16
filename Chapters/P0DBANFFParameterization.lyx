@@ -199,7 +199,7 @@ This chapter explores the fit binning and penalty terms in the test statistic
  The BANFF fit includes three sources of systematic uncertainties: neutrino
  flux, cross section model, and detector inefficiencies.
  The sources of systematic uncertainty, also referred to just as systematics,
- will be defined and their effect on the analysis.
+ will be defined and their effects on the analysis will be examined.
  These three terms directly affect the flux of neutrinos, efficiency of
  reconstruction, and the cross section for 
 \begin_inset Formula $\nu_{\alpha}$
@@ -221,21 +221,58 @@ noprefix "false"
 
 \begin_layout Standard
 This chapter is presented in the following order.
- The first section explores the method to define histogram fit bins in the
- likelihood ratio.
- The second section describes the parameterization of each penalty term
- in the test statistic.
- The penalty terms, discussed in order, are the neutrino flux model, the
- detector inefficiencies, and lastly the cross section model.
+ The method to define histogram fit bins in the likelihood ratio is discussed
+ in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Fit-Binning"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ The parameterization of each penalty term in the test statistic is described
+ in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Systematic-Uncertainties-and"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ in the following order: the neutrino flux model, the detector inefficiencies,
+ and the cross section model.
+ The chapter summary is provided in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:ParameterizationSummary"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Branch P0DBANFFParameterizationFitBinning
 inverted 0
-status open
+status collapsed
 
 \begin_layout Section
 Fit Binning
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Fit-Binning"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -849,16 +886,13 @@ The
 \begin_layout Standard
 \begin_inset Branch P0DBANFFParameterizationPenaltySystematics
 inverted 0
-status open
+status collapsed
 
 \begin_layout Section
-Systematic Uncertainties and Penalty Terms 
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Systematic Uncertainties
-\end_layout
+Systematic Uncertainties and Penalty Terms
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Systematic-Uncertainties-and"
 
 \end_inset
 
@@ -866,8 +900,8 @@ Systematic Uncertainties
 \end_layout
 
 \begin_layout Standard
-This section expands on the penalty terms, and hence fit parameters, in
- the BANFF fit.
+This section provides details on the penalty terms, and hence fit parameters,
+ in the BANFF fit.
  The cross section and flux penalty terms in this analysis are identical
  to the previous near detector constraint studies
 \begin_inset CommandInset citation
@@ -2973,6 +3007,51 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+List of detector systematics in the analysis.
+ The TPC-only systematics are discussed in the following reference
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abe:2017vif"
+literal "false"
+
+\end_inset
+
+.
+ The 
+\begin_inset Formula $\pod$
+\end_inset
+
+ mass and track matching systematics were not available in the BANFF framework
+ and treated as uncorrelated additions to the covariance matrix.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:List-of-detector"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+List of Detector Systematics in the Analysis
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="15" columns="3">
@@ -3452,51 +3531,6 @@ efficiency
 
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-List of detector systematics in the analysis.
- The TPC-only systematics are discussed in the following reference
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Abe:2017vif"
-literal "false"
-
-\end_inset
-
-.
- The 
-\begin_inset Formula $\pod$
-\end_inset
-
- mass and track matching systematics were not available in the BANFF framework
- and treated as uncorrelated additions to the covariance matrix.
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:List-of-detector"
-
-\end_inset
-
-
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-List of Detector Systematics in the Analysis
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \end_inset
 
 
@@ -3572,7 +3606,11 @@ The remaining systematics, the
  They were not implemented in the BANFF framework and unavailable to implement
  due to time constraints on this author.
  Instead, they were treated as additional uncorrelated systematics on each
- bin normalization uncertainty with the normalization value remaining fixed.
+ bin normalization
+\begin_inset Newpage pagebreak
+\end_inset
+
+ uncertainty with the normalization value remaining fixed.
  
 \end_layout
 
@@ -4326,11 +4364,7 @@ A new procedure was developed to improve the shortcomings of old procedure
 
 \begin_layout Standard
 Starting with observable normalization bin with the highest statistics,
- a decision is made 
-\begin_inset Newpage pagebreak
-\end_inset
-
-to merge it with all immediate adjacent bins.
+ a decision is made to merge it with all immediate adjacent bins.
  If the individual fractional errors differ significantly before the merge,
  do not merge them.
  In this analysis, a factor of 10 in fractional uncertainty was determined
@@ -6034,6 +6068,38 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Eigenvalues of the sample covariance.
+ The values are sorted from largest to smallest in magnitude.
+ Note that the parameter indices, which represent the bin normalization
+ indices, are offset from their fit indices value by 99.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Eigenvalues-sample-covariance"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Eigenvalues of the Sample Covariance
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="10">
@@ -6235,38 +6301,6 @@ Eigenvalue
 </cell>
 </row>
 </lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Eigenvalues of the sample covariance.
- The values are sorted from largest to smallest in magnitude.
- Note that the parameter indices, which represent the bin normalization
- indices, are offset from their fit indices value by 99.
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:Eigenvalues-sample-covariance"
-
-\end_inset
-
-
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Eigenvalues of the Sample Covariance
-\end_layout
-
-\end_inset
-
-
-\end_layout
 
 \end_inset
 
@@ -6622,7 +6656,11 @@ noprefix "false"
 
 .
  The nominal CCQE model in NEUT is a Spectral Function (SF) from Benhar
- et al
+ 
+\shape italic
+et al
+\shape default
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Benhar:1995"
@@ -9762,6 +9800,13 @@ status open
 
 \begin_layout Section
 Summary
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:ParameterizationSummary"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

@@ -185,7 +185,7 @@ Beam And Near detector Flux task Force (BANFF)
 status open
 
 \begin_layout Plain Layout
-BANFF is a Canadian national park.
+Banff is a national park in Canada.
 \begin_inset VSpace defskip
 \end_inset
 
@@ -241,7 +241,7 @@ divide-and-conquer
  approach allows for more rapidly completed studies on the effects of model
  parameters and biases present.
  However, information encoded in the ND280 measurements for shared nuisances
- like the neutrino flux is inevitably lost in the BANFF fit.
+ such as the neutrino flux is inevitably lost in the BANFF fit.
 \end_layout
 
 \begin_layout Standard
@@ -262,11 +262,40 @@ literal "false"
 
 \begin_layout Standard
 This chapter describes the BANFF fit and overview of the fitting procedure.
- First we introduce the concept of likelihood functions.
- Then we examine the use of likelihood functions to extract model parameters
- from histogram fits.
- The final topic is a basic description of the fitting procedure and uncertainty
- calculation.
+ First we introduce the concept of likelihood functions in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Conditional-Probability-Density"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Then we explore the mechanics of the BANFF fit using likelihood functions
+ in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:The-BANFF-Fit"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ The final topic is a chapter summary in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:LikielihoodSummary"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -277,16 +306,13 @@ This chapter describes the BANFF fit and overview of the fitting procedure.
 \begin_layout Standard
 \begin_inset Branch BANFFLikelihoodIntroToPDFs
 inverted 0
-status open
+status collapsed
 
 \begin_layout Section
 Conditional Probability Density Functions
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Conditional PDFs
-\end_layout
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Conditional-Probability-Density"
 
 \end_inset
 
@@ -315,8 +341,8 @@ Consider the problem of extracting physics parameters
 
 \end_inset
 
-where anything right of the vertical lines represents a condition on the
- probability.
+where everything on the right of the vertical lines represents a condition
+ on the probability.
  
 \begin_inset Formula $\mathcal{L}\left(\left.\vec{N}\right|\vec{y}\right)$
 \end_inset
@@ -451,16 +477,6 @@ The BANFF Fit Test Statistic
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:The-BANFF-Fit"
-
-\end_inset
-
-
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Fit Test Statistic
-\end_layout
 
 \end_inset
 
@@ -775,6 +791,38 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Parameters that affect the analysis bins.
+ The top three parameters are fit while the others are constants set by
+ the input data and bookkeeping.
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Parameters that Affect the Analysis Bins
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Parameters-to-calculate"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="9" columns="3">
@@ -1068,38 +1116,6 @@ No
 </cell>
 </row>
 </lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Parameters that affect the analysis bins.
- The top three parameters are fit while the others are constants set by
- the input data and bookkeeping.
- 
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Parameters that Affect the Analysis Bins
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:Parameters-to-calculate"
-
-\end_inset
-
-
-\end_layout
 
 \end_inset
 
@@ -1407,8 +1423,20 @@ noprefix "false"
 , we find that the inverse of the Hessian matrix is the covariance matrix.
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Summary
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:LikielihoodSummary"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1422,11 +1450,6 @@ This chapter describes the mathematical preliminaries of the BANFF fit analysis.
  Finally, penalty terms are included in the test statistic in order to assert
  parameter estimates that are consistent with prior systematic uncertainty
  measurements in T2K.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_body

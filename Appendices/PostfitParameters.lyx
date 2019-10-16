@@ -162,6 +162,17 @@
 \begin_layout Standard
 In this appendix is the complete listing of the fit parameters, both in
  prefit and postfit values.
+ The parameters are listed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Prefit-and-postfit"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
  The first 50 are ND280 flux parameters then followed by 50 SK flux parameters
  as defined in 
 \begin_inset CommandInset ref
@@ -226,6 +237,13 @@ status open
 
 \begin_layout Plain Layout
 Prefit and postfit parameters with errors.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Prefit-and-postfit"
+
+\end_inset
+
+
 \begin_inset Argument 1
 status open
 

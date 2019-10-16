@@ -160,8 +160,17 @@ The observable normalizations used in the
 \end_inset
 
 -only BANFF fit are tabulated here.
- In the table, the FHC beam mode is assumed unless RHC mode is specified.
- The initialisms 
+ In 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Observable-normalization-fit-bins"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, FHC mode is assumed unless RHC mode is specified and the initialisms 
 \begin_inset Quotes eld
 \end_inset
 
@@ -191,16 +200,6 @@ Wtr
 
 Air
 \begin_inset Quotes erd
-\end_inset
-
- in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "tab:Observable-normalization-fit-bins"
-plural "false"
-caps "false"
-noprefix "false"
-
 \end_inset
 
  represent the 1-Track selection, N-Tracks selection, 
