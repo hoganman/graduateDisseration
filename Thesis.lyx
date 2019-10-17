@@ -691,21 +691,8 @@ mainmatter           % Main (arabic numbered) pages
 inverted 0
 status open
 
-\begin_layout Chapter*
+\begin_layout Chapter
 Executive Summary
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-addcontentsline{toc}{chapter}{Executive Summary}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
