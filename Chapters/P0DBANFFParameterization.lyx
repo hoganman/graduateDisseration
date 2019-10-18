@@ -262,7 +262,7 @@ noprefix "false"
 \begin_layout Standard
 \begin_inset Branch P0DBANFFParameterizationFitBinning
 inverted 0
-status collapsed
+status open
 
 \begin_layout Section
 Fit Binning
@@ -886,7 +886,7 @@ The
 \begin_layout Standard
 \begin_inset Branch P0DBANFFParameterizationPenaltySystematics
 inverted 0
-status collapsed
+status open
 
 \begin_layout Section
 Systematic Uncertainties and Penalty Terms
@@ -1103,10 +1103,6 @@ noprefix "false"
 
  is the Pearson linear correlation coefficient matrix which is defined as
  
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \begin_inset Formula 
 \begin{equation}
 \rho_{i,j}=\frac{V_{i,j}}{\sqrt{V_{i,i}V_{j,j}}},\label{eq:pearson-correlation}
@@ -1356,9 +1352,13 @@ name "fig:UnoscillatedFluxSK"
 \begin_layout Standard
 The tabulated flux parameters/bins and uncertainties in this analysis are
  given in 
+\begin_inset Newline linebreak
+\end_inset
+
+Appendix 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "tab:Fluxbinning"
+reference "app:Flux-Bin-Parameters"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1400,1094 +1400,6 @@ noprefix "false"
 
 .
  
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Branch P0DBANFFFluxBinsTable
-inverted 0
-status collapsed
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{longtable}[c]{cccc}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-caption[Flux Binning and Uncertainties]{Flux binning and uncertainties used
- in the BANFF fit.
-\backslash
-label{tab:Fluxbinning}}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-textbf{Fit index} & 
-\backslash
-textbf{Beam mode} & 
-\backslash
-textbf{Bin edges {[}GeV{]}} & 
-\backslash
-textbf{Prefit}
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-endfirsthead
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-textbf{Fit index} & 
-\backslash
-textbf{Beam mode} & 
-\backslash
-textbf{Bin edges {[}GeV{]}} & 
-\backslash
-textbf{Prefit}
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-endhead 
-\end_layout
-
-\begin_layout Plain Layout
-
-0 & ND280 $
-\backslash
-numu$ FHC & 0.0 - 0.4 & 1$
-\backslash
-pm$0.100909
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-1 &  & 0.4 - 0.5 & 1$
-\backslash
-pm$0.099431
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-2 &  & 0.5 - 0.6 & 1$
-\backslash
-pm$0.092025
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-3 &  & 0.6 - 0.7 & 1$
-\backslash
-pm$0.085239
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-4 &  & 0.7 - 1.0 & 1$
-\backslash
-pm$0.105356
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-5 &  & 1.0 - 1.5 & 1$
-\backslash
-pm$0.104375
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-6 &  & 1.5 - 2.5 & 1$
-\backslash
-pm$0.073612
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-7 &  & 2.5 - 3.5 & 1$
-\backslash
-pm$0.068993
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-8 &  & 3.5 - 5.0 & 1$
-\backslash
-pm$0.082334
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-9 &  & 5.0 - 7.0 & 1$
-\backslash
-pm$0.097308
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-10 &  & 7.0 - 30 & 1$
-\backslash
-pm$0.114706
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-11 & ND280 $
-\backslash
-numubar$ FHC & 0.0 - 0.7 & 1$
-\backslash
-pm$0.103804
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-12 &  & 0.7 - 1.0 & 1$
-\backslash
-pm$0.084158
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-13 &  & 1.0 - 1.5 & 1$
-\backslash
-pm$0.081349
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-14 &  & 1.5 - 2.5 & 1$
-\backslash
-pm$0.085208
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-15 &  & 2.5 - 30 & 1$
-\backslash
-pm$0.087735
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-16 & ND280 $
-\backslash
-nue$ FHC & 0.0 - 0.5 & 1$
-\backslash
-pm$0.091336
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-17 &  & 0.5 - 0.7 & 1$
-\backslash
-pm$0.089699
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-18 &  & 0.7 - 0.8 & 1$
-\backslash
-pm$0.084648
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-19 &  & 0.8 - 1.5 & 1$
-\backslash
-pm$0.079722
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-20 &  & 1.5 - 2.5 & 1$
-\backslash
-pm$0.079766
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-21 &  & 2.5 - 4.0 & 1$
-\backslash
-pm$0.081399
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-22 &  & 4.0 - 30 & 1$
-\backslash
-pm$0.095795
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-23 & ND280 $
-\backslash
-nuebar$ FHC & 0.0 - 2.5 & 1$
-\backslash
-pm$0.072069
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-24 &  & 2.5 - 30 & 1$
-\backslash
-pm$0.142921
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-25 & ND280 $
-\backslash
-numu$ RHC & 0.0 - 0.7 & 1$
-\backslash
-pm$0.094066
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-26 &  & 0.7 - 1.0 & 1$
-\backslash
-pm$0.079866
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-27 &  & 1.0 - 1.5 & 1$
-\backslash
-pm$0.080948
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-28 &  & 1.5 - 2.5 & 1$
-\backslash
-pm$0.083251
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-29 &  & 2.5 - 30 & 1$
-\backslash
-pm$0.082653
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-30 & ND280 $
-\backslash
-numubar$ RHC & 0.0 - 0.4 & 1$
-\backslash
-pm$0.107277
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-31 &  & 0.4 - 0.5 & 1$
-\backslash
-pm$0.098851
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-32 &  & 0.5 - 0.6 & 1$
-\backslash
-pm$0.089710
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-33 &  & 0.6 - 0.7 & 1$
-\backslash
-pm$0.084692
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-34 &  & 0.7 - 1.0 & 1$
-\backslash
-pm$0.106871
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-35 &  & 1.0 - 1.5 & 1$
-\backslash
-pm$0.098711
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-36 &  & 1.5 - 2.5 & 1$
-\backslash
-pm$0.073350
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-37 &  & 2.5 - 3.5 & 1$
-\backslash
-pm$0.070520
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-38 &  & 3.5 - 5.0 & 1$
-\backslash
-pm$0.092905
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-39 &  & 5.0 - 7.0 & 1$
-\backslash
-pm$0.089083
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-40 &  & 7.0 - 30 & 1$
-\backslash
-pm$0.134911
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-41 & ND280 $
-\backslash
-nue$ RHC & 0.0 - 2.5 & 1$
-\backslash
-pm$0.066214
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-42 &  & 2.5 - 30 & 1$
-\backslash
-pm$0.086977
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-43 & ND280 $
-\backslash
-nuebar$ RHC & 0.0 - 0.5 & 1$
-\backslash
-pm$0.095575
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-44 &  & 0.5 - 0.7 & 1$
-\backslash
-pm$0.089033
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-45 &  & 0.7 - 0.8 & 1$
-\backslash
-pm$0.088406
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-46 &  & 0.8 - 1.5 & 1$
-\backslash
-pm$0.081472
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-47 &  & 1.5 - 2.5 & 1$
-\backslash
-pm$0.078353
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-48 &  & 2.5 - 4.0 & 1$
-\backslash
-pm$0.089427
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-49 &  & 4.0 - 30 & 1$
-\backslash
-pm$0.156972
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-50 & SK $
-\backslash
-numu$ FHC & 0.0 - 0.4 & 1$
-\backslash
-pm$0.102555
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-51 &  & 0.4 - 0.5 & 1$
-\backslash
-pm$0.101771
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-52 &  & 0.5 - 0.6 & 1$
-\backslash
-pm$0.092573
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-53 &  & 0.6 - 0.7 & 1$
-\backslash
-pm$0.084265
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-54 &  & 0.7 - 1.0 & 1$
-\backslash
-pm$0.102271
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-55 &  & 1.0 - 1.5 & 1$
-\backslash
-pm$0.084528
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-56 &  & 1.5 - 2.5 & 1$
-\backslash
-pm$0.066909
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-57 &  & 2.5 - 3.5 & 1$
-\backslash
-pm$0.072355
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-58 &  & 3.5 - 5.0 & 1$
-\backslash
-pm$0.085299
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-59 &  & 5.0 - 7.0 & 1$
-\backslash
-pm$0.096725
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-60 &  & 7.0 - 30 & 1$
-\backslash
-pm$0.114112
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-61 & SK $
-\backslash
-numubar$ FHC & 0.0 - 0.7 & 1$
-\backslash
-pm$0.103129
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-62 &  & 0.7 - 1.0 & 1$
-\backslash
-pm$0.078327
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-63 &  & 1.0 - 1.5 & 1$
-\backslash
-pm$0.082367
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-64 &  & 1.5 - 2.5 & 1$
-\backslash
-pm$0.082121
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-65 &  & 2.5 - 30 & 1$
-\backslash
-pm$0.085123
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-66 & SK $
-\backslash
-nue$ FHC & 0.0 - 0.5 & 1$
-\backslash
-pm$0.090918
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-67 &  & 0.5 - 0.7 & 1$
-\backslash
-pm$0.087065
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-68 &  & 0.7 - 0.8 & 1$
-\backslash
-pm$0.082527
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-69 &  & 0.8 - 1.5 & 1$
-\backslash
-pm$0.076514
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-70 &  & 1.5 - 2.5 & 1$
-\backslash
-pm$0.075773
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-71 &  & 2.5 - 4.0 & 1$
-\backslash
-pm$0.082078
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-72 &  & 4.0 - 30 & 1$
-\backslash
-pm$0.092882
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-73 & SK $
-\backslash
-nuebar$ FHC & 0.0 - 2.5 & 1$
-\backslash
-pm$0.071921
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-74 &  & 2.5 - 30 & 1$
-\backslash
-pm$0.128982
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-75 & SK $
-\backslash
-numu$ RHC & 0.0 - 0.7 & 1$
-\backslash
-pm$0.093954
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-76 &  & 0.7 - 1.0 & 1$
-\backslash
-pm$0.076369
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-77 &  & 1.0 - 1.5 & 1$
-\backslash
-pm$0.074900
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-78 &  & 1.5 - 2.5 & 1$
-\backslash
-pm$0.078108
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-79 &  & 2.5 - 30 & 1$
-\backslash
-pm$0.077505
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-80 & SK $
-\backslash
-numubar$ RHC & 0.0 - 0.4 & 1$
-\backslash
-pm$0.108593
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-81 &  & 0.4 - 0.5 & 1$
-\backslash
-pm$0.101912
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-82 &  & 0.5 - 0.6 & 1$
-\backslash
-pm$0.092787
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-83 &  & 0.6 - 0.7 & 1$
-\backslash
-pm$0.082669
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-84 &  & 0.7 - 1.0 & 1$
-\backslash
-pm$0.102090
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-85 &  & 1.0 - 1.5 & 1$
-\backslash
-pm$0.087732
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-86 &  & 1.5 - 2.5 & 1$
-\backslash
-pm$0.068117
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-87 &  & 2.5 - 3.5 & 1$
-\backslash
-pm$0.069902
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-88 &  & 3.5 - 5.0 & 1$
-\backslash
-pm$0.091711
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-89 &  & 5.0 - 7.0 & 1$
-\backslash
-pm$0.084736
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-90 &  & 7.0 - 30 & 1$
-\backslash
-pm$0.115488
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-91 & SK $
-\backslash
-nue$ RHC & 0.0 - 2.5 & 1$
-\backslash
-pm$0.066204
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-92 &  & 2.5 - 30 & 1$
-\backslash
-pm$0.082645
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-93 & SK $
-\backslash
-nuebar$ RHC & 0.0 - 0.5 & 1$
-\backslash
-pm$0.095453
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-94 &  & 0.5 - 0.7 & 1$
-\backslash
-pm$0.088889
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-95 &  & 0.7 - 0.8 & 1$
-\backslash
-pm$0.085644
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-96 &  & 0.8 - 1.5 & 1$
-\backslash
-pm$0.078536
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-97 &  & 1.5 - 2.5 & 1$
-\backslash
-pm$0.075246
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-98 &  & 2.5 - 4.0 & 1$
-\backslash
-pm$0.086384
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-99 &  & 4.0 - 30 & 1$
-\backslash
-pm$0.152507
-\backslash
-tabularnewline
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{longtable}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-par
-\backslash
-end{center}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -2643,9 +1555,12 @@ The BANFF fit analysis uses toy experiment variations to evaluate the effect
  known detector systematic effects.
  Each systematic effect either varies the event's efficiency weight or event
  observables.
- Both the observable variation and efficiency-like weight treatments rely
- on data-driven studies by comparing data and MC predictions in a control
- sample
+ Both the observable variation and efficiency
+\begin_inset Newpage pagebreak
+\end_inset
+
+-like weight treatments rely on data-driven studies by comparing data and
+ MC predictions in a control sample
 \begin_inset Foot
 status open
 
@@ -2975,13 +1890,6 @@ The
 \end_inset
 
  detector energy loss resolution,
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Itemize
@@ -3545,7 +2453,11 @@ The
 \begin_inset Formula $\pod$
 \end_inset
 
- and are very significant sources of uncertainty.
+,
+\begin_inset Newpage pagebreak
+\end_inset
+
+ and they are very significant sources of uncertainty.
  In the 
 \begin_inset Formula $\numu$
 \end_inset
@@ -3606,11 +2518,7 @@ The remaining systematics, the
  They were not implemented in the BANFF framework and unavailable to implement
  due to time constraints on this author.
  Instead, they were treated as additional uncorrelated systematics on each
- bin normalization
-\begin_inset Newpage pagebreak
-\end_inset
-
- uncertainty with the normalization value remaining fixed.
+ bin normalization uncertainty with the normalization value remaining fixed.
  
 \end_layout
 
@@ -3961,6 +2869,10 @@ th bin, or
 \end_inset
 
 , is defined as
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \begin_inset Formula 
 \begin{equation}
 d_{i}=\frac{\left\langle N_{i}\right\rangle _{\text{toys}}}{N_{i}},\label{eq:obsnormdef}
@@ -6041,11 +4953,11 @@ noprefix "false"
  The first, and hence largest, eigenvalue is two orders of magnitude larger
  than the next largest eigenvalue, which means that the majority of the
  bin-to-bin variance can be explained by the first eigenvector.
- The first eigenvector's coefficients are shown
+ The first eigenvector's coefficients are
 \begin_inset Newpage pagebreak
 \end_inset
 
- in 
+ shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:Principal-components"
@@ -6474,7 +5386,7 @@ lity power in the ND constraint measurement.
 \begin_layout Standard
 \begin_inset Branch P0DBANFFParameterizationXSEC
 inverted 0
-status collapsed
+status open
 
 \begin_layout Subsection
 Cross Section Model
@@ -6491,7 +5403,7 @@ n, which is a canonical set of parameters shared among all analyses in T2K.
  full description in the following reference
 \begin_inset CommandInset citation
 LatexCommand cite
-key "PhysRevLett.121.171802"
+key "Abe:2018wpn"
 literal "false"
 
 \end_inset
@@ -7309,8 +6221,11 @@ literal "false"
 
  (FSI) are effects that alter final state pions from neutrino-nucleus events
  before the pion exits the nucleus.
- The microscopic model in NEUT is a cascade implementation of the Salcedo-Oset
- model
+ The microscopic model in NEUT is a 
+\begin_inset Newpage pagebreak
+\end_inset
+
+cascade implementation of the Salcedo-Oset model
 \begin_inset CommandInset citation
 LatexCommand cite
 key "SALCEDO1988557"
@@ -7478,123 +6393,6 @@ bkg
  Parameters with physical units are shown in both dimensionless and dimensional
  values for comparison.
  Prefit values are relative to the NEUT nominal value.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/P0DBANFFParameterization/cov_xsec_pref.png
-	lyxscale 50
-	height 40theight%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Covariance matrix
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/P0DBANFFParameterization/corr_xsec_pref.png
-	lyxscale 50
-	height 40theight%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Correlation correlation
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Cross section parameters prefit covariance and correlation matrices.
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Cross-section-correlations-prefit"
-
-\end_inset
-
-
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Cross Section Parameters Prefit Covariance and Correlation Matrices
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -8983,8 +7781,8 @@ BeRPA
 \end_inset
 </cell>
 </row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<row newpage="true">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8993,7 +7791,7 @@ BeRPA
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9002,7 +7800,7 @@ BeRPA
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9011,7 +7809,7 @@ BeRPA
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9027,7 +7825,7 @@ BeRPA
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9041,7 +7839,7 @@ BeRPA
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9050,7 +7848,7 @@ BeRPA
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9063,7 +7861,7 @@ CC-
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9072,7 +7870,7 @@ Rein-Seghal
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9084,7 +7882,7 @@ Rein-Seghal
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9778,6 +8576,119 @@ NC Other Far
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/P0DBANFFParameterization/cov_xsec_pref.png
+	lyxscale 50
+	height 40theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Covariance matrix
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/P0DBANFFParameterization/corr_xsec_pref.png
+	lyxscale 50
+	height 40theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Correlation correlation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cross section parameters prefit covariance and correlation matrices.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Cross-section-correlations-prefit"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Cross Section Parameters Prefit Covariance and Correlation Matrices
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -9821,10 +8732,7 @@ This chapter has described all the fit bins and parameters that go into
  while the cross sections are constrained by external data.
  Finally, the detector systematics are determined via an ensemble of toy
  experiments based on well established control samples in the ND280 detector.
-\end_layout
-
-\begin_layout Standard
-The next chapter describe the set of validation studies used to examine
+ The next chapter describe the set of validation studies used to examine
  how the BANFF fit performs.
 \end_layout
 

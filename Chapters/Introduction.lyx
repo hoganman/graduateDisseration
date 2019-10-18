@@ -418,14 +418,14 @@ noprefix "false"
 placement t
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figures/Introduction/StandardModel.png
 	lyxscale 50
-	width 50text%
+	width 60text%
 
 \end_inset
 
@@ -453,7 +453,7 @@ The Standard Model of particle physics consists of six quarks (up, down,
  field.
  The focus of this thesis are the neutrinos which are classified according
  to their charged, more massive lepton cousins.
- Image taken from 
+ Image taken from reference 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Adams:2013qkq"
@@ -517,7 +517,7 @@ U(1) symmetry which leads to the postulated existence of the photon, the
  bosons.
  They are necessary to enable local gauge invariance
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 A gauge theory describes ways to measure physical forces or fields through
@@ -750,6 +750,9 @@ noprefix "false"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -1235,10 +1238,6 @@ noprefix "false"
 \end_inset
 
  where
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \begin_inset Formula 
 \begin{equation}
 \psi=\left(\hat{O}_{P}+\hat{O}_{M}\right)\psi=\psi_{P}+\psi_{M}.\label{eq:chiralprojections}
@@ -2844,10 +2843,6 @@ noprefix "false"
 
 \end_inset
 
-
-\begin_inset Newpage pagebreak
-\end_inset
-
  
 \begin_inset Formula 
 \begin{equation}
@@ -3609,7 +3604,7 @@ noprefix "false"
 placement t
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Float figure
@@ -4881,7 +4876,7 @@ The T2K experiment was primarily designed to measure the last unknown MNSP
 \end_inset
 
  and 
-\begin_inset Formula $\Dm23$
+\begin_inset Formula $\Dm 23$
 \end_inset
 
  via the 
@@ -4918,7 +4913,7 @@ literal "false"
  level
 \begin_inset CommandInset citation
 LatexCommand cite
-key "PhysRevLett.121.171802"
+key "Abe:2018wpn"
 literal "false"
 
 \end_inset
@@ -5610,7 +5605,11 @@ noprefix "false"
 \begin_inset Formula $3.637\text{°}$
 \end_inset
 
- with respect to the local horizontal.
+ with respect
+\begin_inset Newpage pagebreak
+\end_inset
+
+ to the local horizontal.
  Since a well-tuned and stable proton beam is necessary for neutrino production,
  numerous beam monitors are installed along the primary beamline to measure
  any losses.
@@ -6403,9 +6402,12 @@ The ND280 detector consists of a pi-zero detector (
 \begin_inset Formula $\pod$
 \end_inset
 
-), a tracker region consisting of a fine grain detector (FGD) and a time
- projection chamber (TPC), an electromagnetic calorimeter (ECal), and a
- side muon range detector (SMRD).
+), a tracker region consisting of a fine
+\begin_inset Newpage pagebreak
+\end_inset
+
+ grain detector (FGD) and a time projection chamber (TPC), an electromagnetic
+ calorimeter (ECal), and a side muon range detector (SMRD).
  The ND280 subdetectors are instrumented inside the UA1/NOMAD magnet, that
  was recycled from the European Organization for Nuclear Research (CERN),
  with the SMRD in the magnetic field return yoke itself.
@@ -8535,20 +8537,6 @@ The neutrino is an elusive particle to detect.
  To facilitate these goals, constraining all forms of uncertainty in neutrino-nu
 clear interactions and flux help improve its sensitivity to the oscillation
  predictions.
-\end_layout
-
-\begin_layout Standard
-The next chapters in this thesis are presented in the following order.
- First is the ND280 constraint on the flux and cross section models using
- the beam and near detector flux task force (BANFF) maximum likelihood fit.
- Next is the description of the analysis samples that are used in the BANFF
- fit.
- With the samples defined, the parameterization of the fit bins and penalty
- terms are defined for this analysis.
- This is followed by the validation of the BANFF fit in a few scenarios.
- Then the BANFF postfit results are analyzed in relation to previous analyses.
- The final chapter is a discussion of the results and prospects for the
- future.
 \end_layout
 
 \end_inset

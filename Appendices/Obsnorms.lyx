@@ -159,7 +159,7 @@ The observable normalizations used in the
 \begin_inset Formula $\pod$
 \end_inset
 
--only BANFF fit are tabulated here.
+-only BANFF fit are tabulated in this appendix.
  In 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -211,6 +211,10 @@ Air
 \end_inset
 
  water-out mode, respectively.
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

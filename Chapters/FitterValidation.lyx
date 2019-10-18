@@ -256,7 +256,7 @@ noprefix "false"
 \begin_layout Standard
 \begin_inset Branch ValidationAsimov
 inverted 0
-status collapsed
+status open
 
 \begin_layout Section
 Asimov Data Fit
@@ -427,11 +427,45 @@ s like flux and cross sections.
  data set.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage newpage
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch ValidationAsimovVaryNSigma
+inverted 0
+status open
+
+\begin_layout Subsection
+One Sigma Variation of Cross Section Parameters
+\end_layout
+
+\begin_layout Standard
+It is difficult to predict the impact of cross section parameters variations
+ in the BANFF fit since the fit samples contain many interaction modes themselve
+s.
+ In particular, a single parameter variation can also be explained by many
+ parameters individually varied.
+ To understand the effect of the cross section parameter variations on the
+ fit samples, each cross section parameter was varied by 
+\begin_inset Formula $\pm1$
+\end_inset
+
+ standard deviation.
+ This also ensures the spline weight functions, which are generated for
+ each event prior to the BANFF fit, are functioning properly.
+ The results of the variations are shown in Appendix 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "app:NSigmaVariations"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -575,54 +609,6 @@ end{landscape}
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Branch ValidationAsimovVaryNSigma
-inverted 0
-status open
-
-\begin_layout Subsection
-One Sigma Variation of Cross Section Parameters
-\end_layout
-
-\begin_layout Standard
-It is difficult to predict the impact of cross section parameters variations
- in the BANFF fit since the fit samples contain many interaction modes themselve
-s.
- In particular, a single parameter variation can also be explained by many
- parameters individually varied.
- To understand the effect of the cross section parameter variations on the
- fit samples, each cross section parameter was varied by 
-\begin_inset Formula $\pm1$
-\end_inset
-
- standard deviation.
- This also ensures the spline weight functions, which are generated for
- each event prior to the BANFF fit, are functioning properly.
- The results of the variations are shown in Appendix 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "app:NSigmaVariations"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
-\end_layout
-
 \end_inset
 
 
@@ -694,7 +680,7 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2067,7 +2053,7 @@ Flux and Cross Section Postfit Correlation Matrix for the Asimov Data Fit
 \begin_layout Standard
 \begin_inset Branch ValidationFakeData
 inverted 0
-status collapsed
+status open
 
 \begin_layout Section
 Fake Data Fits
@@ -3159,7 +3145,11 @@ name "fig:lepton-moentum-single-pion-fake-data-1"
 
 \begin_layout Standard
 This fake data test will help us understand the BANFF fit response due to
- poor data matching with a cross section model.
+ poor data
+\begin_inset Newpage pagebreak
+\end_inset
+
+ matching with a cross section model.
  The ideal result of this test is that the postfit value of 
 \begin_inset Formula $C_{A}^{5}$
 \end_inset

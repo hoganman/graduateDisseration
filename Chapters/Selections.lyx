@@ -748,7 +748,7 @@ literal "false"
 \begin_layout Standard
 \begin_inset Branch SelectionsCuts
 inverted 0
-status collapsed
+status open
 
 \begin_layout Section
 The 
@@ -1787,7 +1787,11 @@ As explained in the previous subsection, the
 
  interaction rate.
  Having a measurement of this background is critical for the oscillation
- analysis due to the small number of expected 
+ analysis due to the small number of expected
+\begin_inset Newpage pagebreak
+\end_inset
+
+ 
 \begin_inset Formula $\numubar\rightarrow\nuebar$
 \end_inset
 
@@ -1903,7 +1907,7 @@ If the event passes these two cuts, the HMNT is the lepton candidate.
 \begin_layout Standard
 \begin_inset Branch SelectionKinematics
 inverted 0
-status collapsed
+status open
 
 \begin_layout Section
 Selection Kinematics
@@ -4616,11 +4620,7 @@ noprefix "false"
 .
  These two variables are of theoretical importance since they are used to
  generate events using NEUT and are used in the BANFF fit.
- 
-\begin_inset Newpage pagebreak
-\end_inset
-
-An interesting CCQE-like final state in this selection are correlated nucleon
+ An interesting CCQE-like final state in this selection are correlated nucleon
  pair scattering called 
 \begin_inset Quotes eld
 \end_inset
@@ -8345,7 +8345,7 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center

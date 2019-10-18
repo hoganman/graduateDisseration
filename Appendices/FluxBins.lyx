@@ -1,0 +1,1188 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass csuthesisLyx
+\use_default_options true
+\master ../Thesis.lyx
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\branch P0DBANFFFluxBinsTable
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+This appendix provides the of flux bin parameters and prefit values in the
+ BANFF fit tabulated in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Cref{tab:Fluxbinning}
+\end_layout
+
+\end_inset
+
+ on the following page.
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{longtable}[c]{cccc}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption[Flux Binning and Uncertainties]{Flux binning and uncertainties used
+ in the BANFF fit.
+\backslash
+label{tab:Fluxbinning}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+textbf{Fit index} & 
+\backslash
+textbf{Beam mode} & 
+\backslash
+textbf{Bin edges {[}GeV{]}} & 
+\backslash
+textbf{Prefit}
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+endfirsthead
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+textbf{Fit index} & 
+\backslash
+textbf{Beam mode} & 
+\backslash
+textbf{Bin edges {[}GeV{]}} & 
+\backslash
+textbf{Prefit}
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+endhead 
+\end_layout
+
+\begin_layout Plain Layout
+
+0 & ND280 $
+\backslash
+numu$ FHC & 0.0 - 0.4 & 1$
+\backslash
+pm$0.100909
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+1 &  & 0.4 - 0.5 & 1$
+\backslash
+pm$0.099431
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+2 &  & 0.5 - 0.6 & 1$
+\backslash
+pm$0.092025
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+3 &  & 0.6 - 0.7 & 1$
+\backslash
+pm$0.085239
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+4 &  & 0.7 - 1.0 & 1$
+\backslash
+pm$0.105356
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+5 &  & 1.0 - 1.5 & 1$
+\backslash
+pm$0.104375
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+6 &  & 1.5 - 2.5 & 1$
+\backslash
+pm$0.073612
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+7 &  & 2.5 - 3.5 & 1$
+\backslash
+pm$0.068993
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+8 &  & 3.5 - 5.0 & 1$
+\backslash
+pm$0.082334
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+9 &  & 5.0 - 7.0 & 1$
+\backslash
+pm$0.097308
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+10 &  & 7.0 - 30 & 1$
+\backslash
+pm$0.114706
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+11 & ND280 $
+\backslash
+numubar$ FHC & 0.0 - 0.7 & 1$
+\backslash
+pm$0.103804
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+12 &  & 0.7 - 1.0 & 1$
+\backslash
+pm$0.084158
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+13 &  & 1.0 - 1.5 & 1$
+\backslash
+pm$0.081349
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+14 &  & 1.5 - 2.5 & 1$
+\backslash
+pm$0.085208
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+15 &  & 2.5 - 30 & 1$
+\backslash
+pm$0.087735
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+16 & ND280 $
+\backslash
+nue$ FHC & 0.0 - 0.5 & 1$
+\backslash
+pm$0.091336
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+17 &  & 0.5 - 0.7 & 1$
+\backslash
+pm$0.089699
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+18 &  & 0.7 - 0.8 & 1$
+\backslash
+pm$0.084648
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+19 &  & 0.8 - 1.5 & 1$
+\backslash
+pm$0.079722
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+20 &  & 1.5 - 2.5 & 1$
+\backslash
+pm$0.079766
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+21 &  & 2.5 - 4.0 & 1$
+\backslash
+pm$0.081399
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+22 &  & 4.0 - 30 & 1$
+\backslash
+pm$0.095795
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\begin_layout Plain Layout
+
+23 & ND280 $
+\backslash
+nuebar$ FHC & 0.0 - 2.5 & 1$
+\backslash
+pm$0.072069
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+24 &  & 2.5 - 30 & 1$
+\backslash
+pm$0.142921
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+25 & ND280 $
+\backslash
+numu$ RHC & 0.0 - 0.7 & 1$
+\backslash
+pm$0.094066
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+26 &  & 0.7 - 1.0 & 1$
+\backslash
+pm$0.079866
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+27 &  & 1.0 - 1.5 & 1$
+\backslash
+pm$0.080948
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+28 &  & 1.5 - 2.5 & 1$
+\backslash
+pm$0.083251
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+29 &  & 2.5 - 30 & 1$
+\backslash
+pm$0.082653
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+30 & ND280 $
+\backslash
+numubar$ RHC & 0.0 - 0.4 & 1$
+\backslash
+pm$0.107277
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+31 &  & 0.4 - 0.5 & 1$
+\backslash
+pm$0.098851
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+32 &  & 0.5 - 0.6 & 1$
+\backslash
+pm$0.089710
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+33 &  & 0.6 - 0.7 & 1$
+\backslash
+pm$0.084692
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+34 &  & 0.7 - 1.0 & 1$
+\backslash
+pm$0.106871
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+35 &  & 1.0 - 1.5 & 1$
+\backslash
+pm$0.098711
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+36 &  & 1.5 - 2.5 & 1$
+\backslash
+pm$0.073350
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+37 &  & 2.5 - 3.5 & 1$
+\backslash
+pm$0.070520
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+38 &  & 3.5 - 5.0 & 1$
+\backslash
+pm$0.092905
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+39 &  & 5.0 - 7.0 & 1$
+\backslash
+pm$0.089083
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+40 &  & 7.0 - 30 & 1$
+\backslash
+pm$0.134911
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+41 & ND280 $
+\backslash
+nue$ RHC & 0.0 - 2.5 & 1$
+\backslash
+pm$0.066214
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+42 &  & 2.5 - 30 & 1$
+\backslash
+pm$0.086977
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+43 & ND280 $
+\backslash
+nuebar$ RHC & 0.0 - 0.5 & 1$
+\backslash
+pm$0.095575
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+44 &  & 0.5 - 0.7 & 1$
+\backslash
+pm$0.089033
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+45 &  & 0.7 - 0.8 & 1$
+\backslash
+pm$0.088406
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+46 &  & 0.8 - 1.5 & 1$
+\backslash
+pm$0.081472
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+47 &  & 1.5 - 2.5 & 1$
+\backslash
+pm$0.078353
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+48 &  & 2.5 - 4.0 & 1$
+\backslash
+pm$0.089427
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+49 &  & 4.0 - 30 & 1$
+\backslash
+pm$0.156972
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+50 & SK $
+\backslash
+numu$ FHC & 0.0 - 0.4 & 1$
+\backslash
+pm$0.102555
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+51 &  & 0.4 - 0.5 & 1$
+\backslash
+pm$0.101771
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+52 &  & 0.5 - 0.6 & 1$
+\backslash
+pm$0.092573
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+53 &  & 0.6 - 0.7 & 1$
+\backslash
+pm$0.084265
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+54 &  & 0.7 - 1.0 & 1$
+\backslash
+pm$0.102271
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+55 &  & 1.0 - 1.5 & 1$
+\backslash
+pm$0.084528
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+56 &  & 1.5 - 2.5 & 1$
+\backslash
+pm$0.066909
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+57 &  & 2.5 - 3.5 & 1$
+\backslash
+pm$0.072355
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+58 &  & 3.5 - 5.0 & 1$
+\backslash
+pm$0.085299
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+59 &  & 5.0 - 7.0 & 1$
+\backslash
+pm$0.096725
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+60 &  & 7.0 - 30 & 1$
+\backslash
+pm$0.114112
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+61 & SK $
+\backslash
+numubar$ FHC & 0.0 - 0.7 & 1$
+\backslash
+pm$0.103129
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+62 &  & 0.7 - 1.0 & 1$
+\backslash
+pm$0.078327
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+63 &  & 1.0 - 1.5 & 1$
+\backslash
+pm$0.082367
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+64 &  & 1.5 - 2.5 & 1$
+\backslash
+pm$0.082121
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+65 &  & 2.5 - 30 & 1$
+\backslash
+pm$0.085123
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+66 & SK $
+\backslash
+nue$ FHC & 0.0 - 0.5 & 1$
+\backslash
+pm$0.090918
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+67 &  & 0.5 - 0.7 & 1$
+\backslash
+pm$0.087065
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+68 &  & 0.7 - 0.8 & 1$
+\backslash
+pm$0.082527
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+69 &  & 0.8 - 1.5 & 1$
+\backslash
+pm$0.076514
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+70 &  & 1.5 - 2.5 & 1$
+\backslash
+pm$0.075773
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+71 &  & 2.5 - 4.0 & 1$
+\backslash
+pm$0.082078
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+72 &  & 4.0 - 30 & 1$
+\backslash
+pm$0.092882
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+73 & SK $
+\backslash
+nuebar$ FHC & 0.0 - 2.5 & 1$
+\backslash
+pm$0.071921
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+74 &  & 2.5 - 30 & 1$
+\backslash
+pm$0.128982
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+75 & SK $
+\backslash
+numu$ RHC & 0.0 - 0.7 & 1$
+\backslash
+pm$0.093954
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+76 &  & 0.7 - 1.0 & 1$
+\backslash
+pm$0.076369
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+77 &  & 1.0 - 1.5 & 1$
+\backslash
+pm$0.074900
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+78 &  & 1.5 - 2.5 & 1$
+\backslash
+pm$0.078108
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+79 &  & 2.5 - 30 & 1$
+\backslash
+pm$0.077505
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+80 & SK $
+\backslash
+numubar$ RHC & 0.0 - 0.4 & 1$
+\backslash
+pm$0.108593
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+81 &  & 0.4 - 0.5 & 1$
+\backslash
+pm$0.101912
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+82 &  & 0.5 - 0.6 & 1$
+\backslash
+pm$0.092787
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+83 &  & 0.6 - 0.7 & 1$
+\backslash
+pm$0.082669
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+84 &  & 0.7 - 1.0 & 1$
+\backslash
+pm$0.102090
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+85 &  & 1.0 - 1.5 & 1$
+\backslash
+pm$0.087732
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+86 &  & 1.5 - 2.5 & 1$
+\backslash
+pm$0.068117
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+87 &  & 2.5 - 3.5 & 1$
+\backslash
+pm$0.069902
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+88 &  & 3.5 - 5.0 & 1$
+\backslash
+pm$0.091711
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+89 &  & 5.0 - 7.0 & 1$
+\backslash
+pm$0.084736
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+90 &  & 7.0 - 30 & 1$
+\backslash
+pm$0.115488
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+91 & SK $
+\backslash
+nue$ RHC & 0.0 - 2.5 & 1$
+\backslash
+pm$0.066204
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+92 &  & 2.5 - 30 & 1$
+\backslash
+pm$0.082645
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+93 & SK $
+\backslash
+nuebar$ RHC & 0.0 - 0.5 & 1$
+\backslash
+pm$0.095453
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+94 &  & 0.5 - 0.7 & 1$
+\backslash
+pm$0.088889
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+95 &  & 0.7 - 0.8 & 1$
+\backslash
+pm$0.085644
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+96 &  & 0.8 - 1.5 & 1$
+\backslash
+pm$0.078536
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+97 &  & 1.5 - 2.5 & 1$
+\backslash
+pm$0.075246
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+98 &  & 2.5 - 4.0 & 1$
+\backslash
+pm$0.086384
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+99 &  & 4.0 - 30 & 1$
+\backslash
+pm$0.152507
+\backslash
+tabularnewline
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{longtable}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

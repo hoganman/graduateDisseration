@@ -275,7 +275,7 @@ noprefix "false"
  and FGD fit are discussed in 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sec:Future-Prospects:-Joint"
+reference "sec:Future-Prospects"
 plural "false"
 caps "false"
 noprefix "false"
@@ -894,7 +894,7 @@ km
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1034,7 +1034,7 @@ name "fig:Predicted-reconstructed-neutrino"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2790,7 +2790,7 @@ podtitle{}
 +FGD Fit
 \begin_inset CommandInset label
 LatexCommand label
-name "sec:Future-Prospects:-Joint"
+name "sec:Future-Prospects"
 
 \end_inset
 
@@ -2908,6 +2908,53 @@ where combinations of FGD1/2 and FHC/RHC represent the FGD in the different
 \end_layout
 
 \begin_layout Standard
+Employing both the FGD and 
+\begin_inset Formula $\pod$
+\end_inset
+
+ in a joint BANFF fit was attempted, but the fit failed to converge due
+ to machine precision limits.
+ Including both detectors with the FGD parameterization described in reference
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bienstock2017"
+literal "false"
+
+\end_inset
+
+ more than doubles the number of parameters and events than a single detector-on
+ly fit.
+ This not only requires more iterations to ensure the test statistic global
+ minimum is found, but also requires more calculations per iteration as
+ well.
+ For instance, the required time to ensure the joint 
+\begin_inset Formula $\pod$
+\end_inset
+
++FGD Asimov fit started at the global minimum took 10 times larger than
+ the 
+\begin_inset Formula $\pod$
+\end_inset
+
+-only Asimov fit.
+ So parameter shrinkage must be performed on both analyses if reasonable
+ computational speed and maximum statistical power are desired in the BANFF
+ fit.
+ This is further discussed in Appendix 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "chap:Computing-Resources"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -2927,7 +2974,7 @@ begin{landscape}%
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -3082,7 +3129,6 @@ RHC
 \begin_inset Text
 
 \begin_layout Plain Layout
- 
 \begin_inset Formula $\left(10^{24}\right)$
 \end_inset
 
@@ -3701,53 +3747,6 @@ end{landscape}%
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-Employing both the FGD and 
-\begin_inset Formula $\pod$
-\end_inset
-
- in a joint BANFF fit was attempted, but the fit failed to converge due
- to machine precision limits.
- Including both detectors with the FGD parameterization described in reference
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Bienstock2017"
-literal "false"
-
-\end_inset
-
- more than doubles the number of parameters and events than a single detector-on
-ly fit.
- This not only requires more iterations to ensure the test statistic global
- minimum is found, but also requires more calculations per iteration as
- well.
- For instance, the required time to ensure the joint 
-\begin_inset Formula $\pod$
-\end_inset
-
-+FGD Asimov fit started at the global minimum took 10 times larger than
- the 
-\begin_inset Formula $\pod$
-\end_inset
-
--only Asimov fit.
- So parameter shrinkage must be performed on both analyses if reasonable
- computational speed and maximum statistical power are desired in the BANFF
- fit.
- This is further discussed in Appendix 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "chap:Computing-Resources"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
 \end_layout
 
 \end_body

@@ -31,7 +31,6 @@
 
 \usepackage{xcolor}
 \usepackage{cancel}
-\usepackage{tocbibind}
 \usepackage{pdflscape}
 \usepackage{pdfpages}
 \usepackage{lmodern}
@@ -41,8 +40,6 @@
 \usepackage{hepunits}
 \usepackage{hepnames}
 \usepackage{physics}
-\usepackage{sectsty}
-\chapterfont{\centering}
 \usepackage{braket}
 \usepackage{algpseudocode}
 
@@ -72,10 +69,10 @@
 \options doctor
 \use_default_options true
 \begin_modules
-fixltx2e
-fix-cm
-hanging
 algorithm2e
+fix-cm
+fixltx2e
+fixme
 \end_modules
 \maintain_unincluded_children false
 \language english
@@ -127,7 +124,7 @@ algorithm2e
 \use_package undertilde 0
 \cite_engine basic
 \cite_engine_type default
-\biblio_style apsrev
+\biblio_style ieeetr
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -261,6 +258,11 @@ algorithm2e
 \color #faf0e6
 \end_branch
 \branch AppendixRegularizedResult
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch AppendixFluxParameters
 \selected 1
 \filename_suffix 0
 \color #faf0e6
@@ -619,39 +621,6 @@ makeacknowledgements % insert acknowledgements page
 
 
 \backslash
-renewcommand{
-\backslash
-contentsname}{
-\backslash
-normalsize{TABLE OF CONTENTS}}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-listfigurename}{
-\backslash
-normalsize{LIST OF FIGURES}}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-listtablename}{
-\backslash
-normalsize{LIST OF TABLES}}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
 tableofcontents      % insert table of contents 
 \end_layout
 
@@ -958,8 +927,9 @@ filename "Chapters/Discussion.lyx"
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
+btprint "btPrintCited"
 bibfiles "Bibliography/ColostateThesisBibliography"
-options "ColostateThesisBibStylePlain"
+options "ieeetr"
 
 \end_inset
 
@@ -1048,6 +1018,37 @@ pititle{}
 \begin_inset CommandInset include
 LatexCommand input
 filename "Appendices/P0DCC1pi.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch AppendixFluxParameters
+inverted 0
+status open
+
+\begin_layout Chapter
+Flux Bin Parameters
+\begin_inset CommandInset label
+LatexCommand label
+name "app:Flux-Bin-Parameters"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "Appendices/FluxBins.lyx"
 
 \end_inset
 

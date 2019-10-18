@@ -2561,7 +2561,7 @@ numutitle{}
 \begin_layout Standard
 \begin_inset Branch FitterResultsPostfit
 inverted 0
-status collapsed
+status open
 
 \begin_layout Section
 Postfit Results
@@ -5089,6 +5089,93 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
+There is good agreement between the 
+\begin_inset Formula $\pod$
+\end_inset
+
+-only and FGD-only BANFF flux parameter values.
+ The flux parameters in both fits follow the same shape trends, but with
+ the 
+\begin_inset Formula $\pod$
+\end_inset
+
+-only fit parameters having a higher expectation comparatively.
+ Also, the magnitude of the flux uncertainties is similar between the two,
+ which suggests that the two configurations are statistically similar.
+\end_layout
+
+\begin_layout Standard
+If we examine the bin normalization parameters for the 
+\begin_inset Formula $\pod$
+\end_inset
+
+-only fit in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Prefit-and-postfit-bin-normalization"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, they are suggesting a reduction in the event rate across most bins.
+ This high flux, low bin normalization result is likely due to the anticorrelate
+d relationship between them as indicated in the correlation matrix shown
+ in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Postfit-correlation-matrix"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ This has been observed in previous BANFF analyses.
+ Interestingly, the results of the principal components analysis on the
+ bin normalizations in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Bin-Normalization-Parameters"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ are observed here as well.
+ The analysis predicted most of the parameters would shift in unison, and
+ we see that trend largely replicated in the postfit values.
+ This indicates that we can possibly reduce the number of bin normalizations
+ and still obtain a similar postfit result.
+\end_layout
+
+\begin_layout Standard
+The cross section parameters are also quite similar between the two fits,
+ with some larger uncertainties in the 
+\begin_inset Formula $\pod$
+\end_inset
+
+-only result.
+ The CCQE and BeRPA parameters are in very good agreement with both preferring
+ a significant increase in the BeRPA 
+\begin_inset Formula $B$
+\end_inset
+
+ scale parameter.
+ There is tension in the fits with the 
+\begin_inset Formula $M_{A}^{\text{Res}}$
+\end_inset
+
+ parameter which is not currently understood.
+ However, if the difference in the postfit parameters is distributed according
+ to a chi-squared distribution, then this deviation is not unexpected.
+ We will explore this idea further with a hypothesis test in the next section.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Branch FitterResultsPostfitExposureTable
 inverted 0
 status collapsed
@@ -6298,93 +6385,6 @@ end{landscape}%
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-There is good agreement between the 
-\begin_inset Formula $\pod$
-\end_inset
-
--only and FGD-only BANFF flux parameter values.
- The flux parameters in both fits follow the same shape trends, but with
- the 
-\begin_inset Formula $\pod$
-\end_inset
-
--only fit parameters having a higher expectation comparatively.
- Also, the magnitude of the flux uncertainties is similar between the two,
- which suggests that the two configurations are statistically similar.
-\end_layout
-
-\begin_layout Standard
-If we examine the bin normalization parameters for the 
-\begin_inset Formula $\pod$
-\end_inset
-
--only fit in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:Prefit-and-postfit-bin-normalization"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-, they are suggesting a reduction in the event rate across most bins.
- This high flux, low bin normalization result is likely due to the anticorrelate
-d relationship between them as indicated in the correlation matrix shown
- in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:Postfit-correlation-matrix"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
- This has been observed in previous BANFF analyses.
- Interestingly, the results of the principal components analysis on the
- bin normalizations in Section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "subsec:Bin-Normalization-Parameters"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- are observed here as well.
- The analysis predicted most of the parameters would shift in unison, and
- we see that trend largely replicated in the postfit values.
- This indicates that we can possibly reduce the number of bin normalizations
- and still obtain a similar postfit result.
-\end_layout
-
-\begin_layout Standard
-The cross section parameters are also quite similar between the two fits,
- with some larger uncertainties in the 
-\begin_inset Formula $\pod$
-\end_inset
-
--only result.
- The CCQE and BeRPA parameters are in very good agreement with both preferring
- a significant increase in the BeRPA 
-\begin_inset Formula $B$
-\end_inset
-
- scale parameter.
- There is tension in the fits with the 
-\begin_inset Formula $M_{A}^{\text{Res}}$
-\end_inset
-
- parameter which is not currently understood.
- However, if the difference in the postfit parameters is distributed according
- to a chi-squared distribution, then this deviation is not unexpected.
- We will explore this idea further with a hypothesis test in the next section.
 \end_layout
 
 \begin_layout Standard
@@ -7919,10 +7919,14 @@ Prefit and Post Flux and Cross Section Parameter Correlations
 \begin_layout Standard
 \begin_inset Branch FitterResultsPValueAndROC
 inverted 0
-status collapsed
+status open
 
 \begin_layout Section
-Statistical Significance of Parameter Agreement Between the 
+Statistical Significance of Parameter Agreement
+\begin_inset Newline linebreak
+\end_inset
+
+ Between the 
 \begin_inset ERT
 status open
 
@@ -8354,8 +8358,12 @@ In this chapter, we have explored the postfit results for the
 \begin_inset Formula $\pod$
 \end_inset
 
--only data, which helps with sensitivity of the oxygen cross section parameters,
- the accumulated neutrino exposures are similar.
+-only data, which helps with sensitivity of
+\begin_inset Newpage pagebreak
+\end_inset
+
+ the oxygen cross section parameters, the accumulated neutrino exposures
+ are similar.
  Moreover, we observe a good level of agreement between the two fits with
  the largest differences observed with less constrained parameters like
  those that characterize the 2p2h interaction.

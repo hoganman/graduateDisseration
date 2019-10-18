@@ -530,11 +530,7 @@ literal "false"
 \end_inset
 
  and the PDG review on statistics.
- 
-\begin_inset Newpage pagebreak
-\end_inset
-
-By invoking Wilks' theorem, also known as the likelihood ratio theorem,
+ By invoking Wilks' theorem, also known as the likelihood ratio theorem,
  the likelihood maximization procedure is converted into a minimization
  problem involving a test statistic denoted as a chi-squared.
  Below is an explanation of the BANFF test statistic and the model terms.
@@ -727,6 +723,10 @@ The number of events in a given analysis bin is varied in the BANFF fit
 \end_inset
 
 th analysis bin is given by
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \begin_inset Formula 
 \begin{equation}
 \vec{N}_{i}^{p}\left(\flux,\xsec,\systematics\right)=\sum_{j=1}^{N_{i}^{\text{MC}}}\left\{ w_{i}^{\text{POT}}\sum_{k=1}^{N^{\text{Flux}}}\left(\delta_{j,k}^{\text{Flux}}\flux_{k}\right)\times\left[\prod_{l=1}^{N^{\text{xsec}}}w_{j,l}\left(\xsec_{l}\right)\right]\times\systematics_{i}\right\} ,\label{eq:n-predicted-BANFF}
