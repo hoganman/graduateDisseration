@@ -469,8 +469,8 @@ The Tokai to Kamioka (T2K) experiment is a long-baseline neutrino oscillation
  In order to constrain the systematic uncertainties in the oscillation analysis,
  a dedicated near detector (ND) complex called ND280 is located 280 meters
  from the neutrino production source in line of the beam.
- To date, the Fine Grain Detector (FGD) in ND280 has provided the ND constraint
- using a binned maximum likelihood estimate fit.
+ To date, the fine-grained detector (FGD) in ND280 has provided the ND constrain
+t using a binned maximum likelihood estimate fit.
  This thesis describes the effort to validate the ND constraint using the
  same framework, but with an independent data set from the ND280 pi-zero
  detector (
