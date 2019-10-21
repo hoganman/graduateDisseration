@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass ../csuthesisLyx
+\textclass csuthesisLyx
 \begin_preamble
 % ams math packages
 \usepackage[cmex10]{amsmath}
@@ -160,7 +160,7 @@ This appendix examines the
 \end_inset
 
 -only BANFF fit likelihood term 
-\begin_inset Formula $\Delta\chi_{\text{LLR}}^{2}=\chi_{\text{sample}}^{2}$
+\begin_inset Formula $\chi_{\text{LLR}}^{2}=\chi_{\text{sample}}^{2}$
 \end_inset
 
  response (scans) to variations in flux and cross section parameters.
