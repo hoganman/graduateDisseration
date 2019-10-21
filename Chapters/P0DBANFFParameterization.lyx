@@ -1555,12 +1555,9 @@ The BANFF fit analysis uses toy experiment variations to evaluate the effect
  known detector systematic effects.
  Each systematic effect either varies the event's efficiency weight or event
  observables.
- Both the observable variation and efficiency
-\begin_inset Newpage pagebreak
-\end_inset
-
--like weight treatments rely on data-driven studies by comparing data and
- MC predictions in a control sample
+ Both the observable variation and efficiency-like weight treatments rely
+ on data-driven studies by comparing data and MC predictions in a control
+ sample
 \begin_inset Foot
 status open
 
@@ -2453,11 +2450,7 @@ The
 \begin_inset Formula $\pod$
 \end_inset
 
-,
-\begin_inset Newpage pagebreak
-\end_inset
-
- and they are very significant sources of uncertainty.
+, and they are very significant sources of uncertainty.
  In the 
 \begin_inset Formula $\numu$
 \end_inset
@@ -2869,10 +2862,6 @@ th bin, or
 \end_inset
 
 , is defined as
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \begin_inset Formula 
 \begin{equation}
 d_{i}=\frac{\left\langle N_{i}\right\rangle _{\text{toys}}}{N_{i}},\label{eq:obsnormdef}
@@ -4953,11 +4942,7 @@ noprefix "false"
  The first, and hence largest, eigenvalue is two orders of magnitude larger
  than the next largest eigenvalue, which means that the majority of the
  bin-to-bin variance can be explained by the first eigenvector.
- The first eigenvector's coefficients are
-\begin_inset Newpage pagebreak
-\end_inset
-
- shown in 
+ The first eigenvector's coefficients are shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:Principal-components"
@@ -6221,11 +6206,8 @@ literal "false"
 
  (FSI) are effects that alter final state pions from neutrino-nucleus events
  before the pion exits the nucleus.
- The microscopic model in NEUT is a 
-\begin_inset Newpage pagebreak
-\end_inset
-
-cascade implementation of the Salcedo-Oset model
+ The microscopic model in NEUT is a cascade implementation of the Salcedo-Oset
+ model
 \begin_inset CommandInset citation
 LatexCommand cite
 key "SALCEDO1988557"
